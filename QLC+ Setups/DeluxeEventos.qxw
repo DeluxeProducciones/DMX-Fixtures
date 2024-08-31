@@ -4,13 +4,15 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.1</Version>
-  <Author>Oficina</Author>
+  <Author>Cristian Deluxe</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A50285BI)" Line="0">
+     <PluginParameters UniverseChannels="298"/>
+    </Output>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -253,6 +255,26 @@
    <Address>266</Address>
    <Channels>16</Channels>
   </Fixture>
+  <Fixture>
+   <Manufacturer>HYULIGHTS</Manufacturer>
+   <Model>WX-60WPS-48PARTITION</Model>
+   <Mode>A MODE - DMX 8 CH</Mode>
+   <ID>24</ID>
+   <Name>WX-60WPS-48PARTITION #1</Name>
+   <Universe>0</Universe>
+   <Address>282</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HYULIGHTS</Manufacturer>
+   <Model>WX-60WPS-48PARTITION</Model>
+   <Mode>A MODE - DMX 8 CH</Mode>
+   <ID>25</ID>
+   <Name>WX-60WPS-48PARTITION #2</Name>
+   <Universe>0</Universe>
+   <Address>290</Address>
+   <Channels>8</Channels>
+  </Fixture>
   <FixtureGroup ID="0">
    <Name>BarrasLed</Name>
    <Size X="8" Y="2"/>
@@ -276,6 +298,8 @@
    <Head X="1" Y="2" Fixture="21">0</Head>
    <Head X="2" Y="2" Fixture="22">0</Head>
    <Head X="3" Y="2" Fixture="23">0</Head>
+   <Head X="4" Y="2" Fixture="24">0</Head>
+   <Head X="5" Y="2" Fixture="25">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>Cabezas</Name>
@@ -5529,8 +5553,8 @@
    <MonoColor>4283760895</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="213" Type="RGBMatrix" Name="Barras LED - Alternate Azul / Rojo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5668,8 +5692,8 @@
    <MonoColor>4294948608</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="226" Type="RGBMatrix" Name="Barras LED - Waves Azul">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5679,8 +5703,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="227" Type="RGBMatrix" Name="Barras LED - Waves Cyan">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5690,8 +5714,8 @@
    <MonoColor>4278241023</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="228" Type="RGBMatrix" Name="Barras LED - Waves Naranja">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5701,8 +5725,8 @@
    <MonoColor>4294934528</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="229" Type="RGBMatrix" Name="Barras LED - Waves Rojo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5712,8 +5736,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="230" Type="RGBMatrix" Name="Barras LED - Waves Rosa">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5723,8 +5747,8 @@
    <MonoColor>4294901936</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="231" Type="RGBMatrix" Name="Barras LED - Waves Verde">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5734,8 +5758,8 @@
    <MonoColor>4278255360</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="232" Type="RGBMatrix" Name="Barras LED - Waves VerdeMar">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5745,8 +5769,8 @@
    <MonoColor>4278255488</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="233" Type="RGBMatrix" Name="Barras LED - Strobe Amarillo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -6520,11 +6544,221 @@
    <Step Number="18" FadeIn="0" Hold="0" FadeOut="0">297</Step>
    <Step Number="19" FadeIn="0" Hold="0" FadeOut="0">293</Step>
   </Function>
-  <Function ID="322" Type="Scene" Name="HUMO ON">
+  <Function ID="322" Type="Scene" Name="Strobo LED - Effect 1" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,2</FixtureVal>
+   <FixtureVal ID="25">5,130,6,2</FixtureVal>
+  </Function>
+  <Function ID="323" Type="Scene" Name="Strobo LED - Effect 2" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,8</FixtureVal>
+   <FixtureVal ID="25">5,130,6,8</FixtureVal>
+  </Function>
+  <Function ID="324" Type="Scene" Name="Strobo LED - Effect 3" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,14</FixtureVal>
+   <FixtureVal ID="25">5,130,6,14</FixtureVal>
+  </Function>
+  <Function ID="325" Type="Scene" Name="Strobo LED - Effect 4" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,20</FixtureVal>
+   <FixtureVal ID="25">5,130,6,20</FixtureVal>
+  </Function>
+  <Function ID="326" Type="Scene" Name="Strobo LED - Effect 5" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,26</FixtureVal>
+   <FixtureVal ID="25">5,130,6,26</FixtureVal>
+  </Function>
+  <Function ID="327" Type="Scene" Name="Strobo LED - Effect 6" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,32</FixtureVal>
+   <FixtureVal ID="25">5,130,6,32</FixtureVal>
+  </Function>
+  <Function ID="328" Type="Scene" Name="Strobo LED - Effect 7" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,38</FixtureVal>
+   <FixtureVal ID="25">5,130,6,38</FixtureVal>
+  </Function>
+  <Function ID="329" Type="Scene" Name="Strobo LED - Effect 8" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,44</FixtureVal>
+   <FixtureVal ID="25">5,130,6,44</FixtureVal>
+  </Function>
+  <Function ID="330" Type="Scene" Name="Strobo LED - Effect 9" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,50</FixtureVal>
+   <FixtureVal ID="25">5,130,6,50</FixtureVal>
+  </Function>
+  <Function ID="331" Type="Scene" Name="Strobo LED - Effect 10" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,56</FixtureVal>
+   <FixtureVal ID="25">5,130,6,56</FixtureVal>
+  </Function>
+  <Function ID="332" Type="Scene" Name="Strobo LED - Effect 11" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,62</FixtureVal>
+   <FixtureVal ID="25">5,130,6,62</FixtureVal>
+  </Function>
+  <Function ID="333" Type="Scene" Name="Strobo LED - Effect 12" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,68</FixtureVal>
+   <FixtureVal ID="25">5,130,6,68</FixtureVal>
+  </Function>
+  <Function ID="334" Type="Scene" Name="Strobo LED - Effect 13" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,74</FixtureVal>
+   <FixtureVal ID="25">5,130,6,74</FixtureVal>
+  </Function>
+  <Function ID="335" Type="Scene" Name="Strobo LED - Effect 14" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,80</FixtureVal>
+   <FixtureVal ID="25">5,130,6,80</FixtureVal>
+  </Function>
+  <Function ID="336" Type="Scene" Name="Strobo LED - Effect 15" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,86</FixtureVal>
+   <FixtureVal ID="25">5,130,6,86</FixtureVal>
+  </Function>
+  <Function ID="337" Type="Scene" Name="Strobo LED - Effect 16" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,92</FixtureVal>
+   <FixtureVal ID="25">5,130,6,92</FixtureVal>
+  </Function>
+  <Function ID="338" Type="Scene" Name="Strobo LED - Effect 17" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,98</FixtureVal>
+   <FixtureVal ID="25">5,130,6,98</FixtureVal>
+  </Function>
+  <Function ID="339" Type="Scene" Name="Strobo LED - Effect 18" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,104</FixtureVal>
+   <FixtureVal ID="25">5,130,6,104</FixtureVal>
+  </Function>
+  <Function ID="340" Type="Scene" Name="Strobo LED - Effect 19" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,110</FixtureVal>
+   <FixtureVal ID="25">5,130,6,110</FixtureVal>
+  </Function>
+  <Function ID="341" Type="Scene" Name="Strobo LED - Effect 20" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,116</FixtureVal>
+   <FixtureVal ID="25">5,130,6,116</FixtureVal>
+  </Function>
+  <Function ID="342" Type="Scene" Name="Strobo LED - Effect 21" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,122</FixtureVal>
+   <FixtureVal ID="25">5,130,6,122</FixtureVal>
+  </Function>
+  <Function ID="343" Type="Scene" Name="Strobo LED - Effect 22" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,128</FixtureVal>
+   <FixtureVal ID="25">5,130,6,128</FixtureVal>
+  </Function>
+  <Function ID="344" Type="Scene" Name="Strobo LED - Effect 23" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,134</FixtureVal>
+   <FixtureVal ID="25">5,130,6,134</FixtureVal>
+  </Function>
+  <Function ID="345" Type="Scene" Name="Strobo LED - Effect 24" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,140</FixtureVal>
+   <FixtureVal ID="25">5,130,6,140</FixtureVal>
+  </Function>
+  <Function ID="346" Type="Scene" Name="Strobo LED - Effect 25" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,146</FixtureVal>
+   <FixtureVal ID="25">5,130,6,146</FixtureVal>
+  </Function>
+  <Function ID="347" Type="Scene" Name="Strobo LED - Effect 26" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,152</FixtureVal>
+   <FixtureVal ID="25">5,130,6,152</FixtureVal>
+  </Function>
+  <Function ID="348" Type="Scene" Name="Strobo LED - Effect 27" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,158</FixtureVal>
+   <FixtureVal ID="25">5,130,6,158</FixtureVal>
+  </Function>
+  <Function ID="349" Type="Scene" Name="Strobo LED - Effect 28" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,164</FixtureVal>
+   <FixtureVal ID="25">5,130,6,164</FixtureVal>
+  </Function>
+  <Function ID="350" Type="Scene" Name="Strobo LED - Effect 29" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,170</FixtureVal>
+   <FixtureVal ID="25">5,130,6,170</FixtureVal>
+  </Function>
+  <Function ID="351" Type="Scene" Name="Strobo LED - Effect 30" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,176</FixtureVal>
+   <FixtureVal ID="25">5,130,6,176</FixtureVal>
+  </Function>
+  <Function ID="352" Type="Scene" Name="Strobo LED - Effect 31" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,182</FixtureVal>
+   <FixtureVal ID="25">5,130,6,182</FixtureVal>
+  </Function>
+  <Function ID="353" Type="Scene" Name="Strobo LED - Effect 32" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,188</FixtureVal>
+   <FixtureVal ID="25">5,130,6,188</FixtureVal>
+  </Function>
+  <Function ID="354" Type="Scene" Name="Strobo LED - Effect 33" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,194</FixtureVal>
+   <FixtureVal ID="25">5,130,6,194</FixtureVal>
+  </Function>
+  <Function ID="355" Type="Scene" Name="Strobo LED - Effect 34" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,200</FixtureVal>
+   <FixtureVal ID="25">5,130,6,200</FixtureVal>
+  </Function>
+  <Function ID="356" Type="Scene" Name="Strobo LED - Effect 35" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,206</FixtureVal>
+   <FixtureVal ID="25">5,130,6,206</FixtureVal>
+  </Function>
+  <Function ID="357" Type="Scene" Name="Strobo LED - Effect 36" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,212</FixtureVal>
+   <FixtureVal ID="25">5,130,6,212</FixtureVal>
+  </Function>
+  <Function ID="358" Type="Scene" Name="Strobo LED - Effect 37" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,218</FixtureVal>
+   <FixtureVal ID="25">5,130,6,218</FixtureVal>
+  </Function>
+  <Function ID="359" Type="Scene" Name="Strobo LED - Effect 38" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,224</FixtureVal>
+   <FixtureVal ID="25">5,130,6,224</FixtureVal>
+  </Function>
+  <Function ID="360" Type="Scene" Name="Strobo LED - Effect 39" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,230</FixtureVal>
+   <FixtureVal ID="25">5,130,6,230</FixtureVal>
+  </Function>
+  <Function ID="361" Type="Scene" Name="Strobo LED - Effect 40" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,236</FixtureVal>
+   <FixtureVal ID="25">5,130,6,236</FixtureVal>
+  </Function>
+  <Function ID="362" Type="Scene" Name="Strobo LED - Effect 41" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,242</FixtureVal>
+   <FixtureVal ID="25">5,130,6,242</FixtureVal>
+  </Function>
+  <Function ID="363" Type="Scene" Name="Strobo LED - Effect 42" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,130,6,250</FixtureVal>
+   <FixtureVal ID="25">5,130,6,250</FixtureVal>
+  </Function>
+  <Function ID="364" Type="Scene" Name="HUMO ON">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17">0,255</FixtureVal>
   </Function>
-  <Function ID="323" Type="Script" Name="HUMO Auto">
+  <Function ID="365" Type="Script" Name="HUMO Auto">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -6533,11 +6767,11 @@
    <Command>stopfunction%3A322%20%2F%2F%20HUMO%20ON</Command>
    <Command>wait%3A2s</Command>
   </Function>
-  <Function ID="324" Type="Scene" Name="HUMO OFF">
+  <Function ID="366" Type="Scene" Name="HUMO OFF">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17">0,0</FixtureVal>
   </Function>
-  <Function ID="325" Type="Chaser" Name="Humo Auto">
+  <Function ID="367" Type="Chaser" Name="Humo Auto">
    <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -7982,11 +8216,11 @@
     <Control ID="15">
      <Type>Animation</Type>
      <Resource>Alternate</Resource>
+     <Property Name="align">Left</Property>
      <Property Name="orientation">Horizontal</Property>
      <Property Name="offset">0</Property>
      <Property Name="color2Index">Blue</Property>
      <Property Name="color1Index">Red</Property>
-     <Property Name="align">Left</Property>
      <Property Name="blockSize">1</Property>
     </Control>
     <Control ID="16">
@@ -7998,8 +8232,8 @@
      <Resource>Waves</Resource>
      <Property Name="orientation">Horizontal</Property>
      <Property Name="direction">Right</Property>
-     <Property Name="tailfade">Yes</Property>
      <Property Name="taillength">50</Property>
+     <Property Name="tailfade">Yes</Property>
     </Control>
     <Control ID="18">
      <Type>Animation</Type>
@@ -8924,7 +9158,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="HUMO" ID="125" Icon="">
-    <WindowState Visible="True" X="360" Y="65" Width="105" Height="45"/>
+    <WindowState Visible="True" X="360" Y="70" Width="105" Height="45"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -8932,13 +9166,13 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="322"/>
+    <Function ID="364"/>
     <Action Override="0" ForceLTP="0">Flash</Action>
     <Key>H</Key>
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="HUMO AUTO" ID="126" Icon="">
-    <WindowState Visible="True" X="360" Y="110" Width="105" Height="45"/>
+    <WindowState Visible="True" X="360" Y="115" Width="105" Height="45"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -8946,7 +9180,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="325"/>
+    <Function ID="367"/>
     <Action>Toggle</Action>
     <Key>J</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -8962,14 +9196,14 @@
    <CueStack ID="0">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 1">
-     <Value Channel="5">134</Value>
-     <Value Channel="6">255</Value>
-     <Value Channel="22">255</Value>
      <Value Channel="33">134</Value>
-     <Value Channel="34">255</Value>
-     <Value Channel="50">255</Value>
-     <Value Channel="19">134</Value>
+     <Value Channel="5">134</Value>
      <Value Channel="47">134</Value>
+     <Value Channel="19">134</Value>
+     <Value Channel="50">255</Value>
+     <Value Channel="34">255</Value>
+     <Value Channel="22">255</Value>
+     <Value Channel="6">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
