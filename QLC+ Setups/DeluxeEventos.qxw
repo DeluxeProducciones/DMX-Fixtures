@@ -494,6 +494,8 @@
    <FixtureVal ID="21">5,255,6,255</FixtureVal>
    <FixtureVal ID="22">5,255,6,255</FixtureVal>
    <FixtureVal ID="23">5,255,6,255</FixtureVal>
+   <FixtureVal ID="24">0,255,4,0</FixtureVal>
+   <FixtureVal ID="25">0,255,4,0</FixtureVal>
   </Function>
   <Function ID="4" Type="Scene" Name="Negro C" Path="Colores Cabezas">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -708,7 +710,7 @@
    <Step Number="0" FadeIn="10000" Hold="10000" FadeOut="10000">12</Step>
   </Function>
   <Function ID="14" Type="Chaser" Name="Rueda Colores Simples">
-   <Speed FadeIn="0" FadeOut="0" Duration="1224"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="76"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -722,7 +724,7 @@
    <Step Number="7" FadeIn="0" Hold="600" FadeOut="0">9</Step>
   </Function>
   <Function ID="15" Type="Chaser" Name="Rueda Colores Dobles">
-   <Speed FadeIn="0" FadeOut="0" Duration="1224"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="76"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -826,7 +828,7 @@
    <FixtureVal ID="23">7,0</FixtureVal>
   </Function>
   <Function ID="20" Type="Chaser" Name="Rueda Colores Cabezas">
-   <Speed FadeIn="0" FadeOut="0" Duration="1224"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="76"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
@@ -1211,7 +1213,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="9792"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="608"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1506,7 +1508,7 @@
     <StartOffset>180</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="9792"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="608"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1663,7 +1665,7 @@
    <FixtureVal ID="12">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="38" Type="Chaser" Name="Rueda Colores LEDs">
-   <Speed FadeIn="0" FadeOut="0" Duration="1224"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="76"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1731,6 +1733,8 @@
    <FixtureVal ID="21">5,190,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,255</FixtureVal>
    <FixtureVal ID="22">5,190,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,255</FixtureVal>
    <FixtureVal ID="23">5,190,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,255</FixtureVal>
+   <FixtureVal ID="24">0,255,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+   <FixtureVal ID="25">0,255,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
   </Function>
   <Function ID="44" Type="Scene" Name="Flash 50%" Path="Strobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1757,6 +1761,8 @@
    <FixtureVal ID="21">5,120,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
    <FixtureVal ID="22">5,120,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
    <FixtureVal ID="23">5,120,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
+   <FixtureVal ID="24">0,255,1,255,2,255,3,255,4,140,5,0,6,0</FixtureVal>
+   <FixtureVal ID="25">0,255,1,255,2,255,3,255,4,140,5,0,6,0</FixtureVal>
   </Function>
   <Function ID="45" Type="Collection" Name="Rueda Colores">
    <Step Number="0">20</Step>
@@ -2903,6 +2909,8 @@
    <FixtureVal ID="21">7,0</FixtureVal>
    <FixtureVal ID="22">7,0</FixtureVal>
    <FixtureVal ID="23">7,0</FixtureVal>
+   <FixtureVal ID="24">1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="25">1,255,2,255,3,255</FixtureVal>
   </Function>
   <Function ID="83" Type="Scene" Name="Ultravioleta LEDs" Path="Colores LEDs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3966,6 +3974,8 @@
    <FixtureVal ID="21">5,255,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,255</FixtureVal>
    <FixtureVal ID="22">5,255,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,255</FixtureVal>
    <FixtureVal ID="23">5,255,6,255,7,0,8,0,9,0,10,0,11,0,12,0,13,255</FixtureVal>
+   <FixtureVal ID="24">0,255,4,0</FixtureVal>
+   <FixtureVal ID="25">0,255,4,0</FixtureVal>
   </Function>
   <Function ID="104" Type="EFX" Name="Dimmer Chase MinWash">
    <Fixture>
@@ -4864,8 +4874,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="139" Type="RGBMatrix" Name="Barras LED - Alternate Azul">
@@ -4876,8 +4886,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Blue"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="140" Type="RGBMatrix" Name="Barras LED - Alternate Verde">
@@ -4888,8 +4898,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Green"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="141" Type="RGBMatrix" Name="Barras LED - Alternate Rosa">
@@ -4900,8 +4910,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Hot Pink"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="142" Type="RGBMatrix" Name="Barras LED - Alternate Violeta">
@@ -4912,8 +4922,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Purple"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="143" Type="RGBMatrix" Name="Barras LED - Alternate Cyan">
@@ -4924,8 +4934,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Cyan"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="144" Type="RGBMatrix" Name="Barras LED - Alternate VerdeMar">
@@ -4936,8 +4946,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Seafoam"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="145" Type="RGBMatrix" Name="Barras LED - Alternate Amarillo">
@@ -4958,8 +4968,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="OFF"/>
    <Property Name="color1Index" Value="Orange"/>
+   <Property Name="color2Index" Value="OFF"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="147" Type="RGBMatrix" Name="Barras LED - Even/Odd Azul">
@@ -5299,8 +5309,8 @@
    <MonoColor>4283760895</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="8"/>
    <Property Name="presetIndex" Value="Rainbow"/>
+   <Property Name="presetSize" Value="8"/>
   </Function>
   <Function ID="185" Type="RGBMatrix" Name="Barras LED - OneByOne Violeta">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5553,8 +5563,8 @@
    <MonoColor>4283760895</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="213" Type="RGBMatrix" Name="Barras LED - Alternate Azul / Rojo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5564,8 +5574,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Red"/>
    <Property Name="color1Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="214" Type="RGBMatrix" Name="Barras LED - Alternate Cyan / Amarillo">
@@ -5576,8 +5586,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Cyan"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="215" Type="RGBMatrix" Name="Barras LED - Alternate Rosa / Cyan">
@@ -5588,8 +5598,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="color1Index" Value="Hot Pink"/>
+   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="216" Type="RGBMatrix" Name="Barras LED - Alternate Verde / Amarillo">
@@ -5600,8 +5610,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Green"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="217" Type="RGBMatrix" Name="Barras LED - Even/Odd Azul / Rojo">
@@ -5692,8 +5702,8 @@
    <MonoColor>4294948608</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="226" Type="RGBMatrix" Name="Barras LED - Waves Azul">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5703,8 +5713,8 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="227" Type="RGBMatrix" Name="Barras LED - Waves Cyan">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5714,8 +5724,8 @@
    <MonoColor>4278241023</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="228" Type="RGBMatrix" Name="Barras LED - Waves Naranja">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5725,8 +5735,8 @@
    <MonoColor>4294934528</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="229" Type="RGBMatrix" Name="Barras LED - Waves Rojo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5736,8 +5746,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="230" Type="RGBMatrix" Name="Barras LED - Waves Rosa">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5747,8 +5757,8 @@
    <MonoColor>4294901936</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="231" Type="RGBMatrix" Name="Barras LED - Waves Verde">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5758,8 +5768,8 @@
    <MonoColor>4278255360</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="232" Type="RGBMatrix" Name="Barras LED - Waves VerdeMar">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5769,8 +5779,8 @@
    <MonoColor>4278255488</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="233" Type="RGBMatrix" Name="Barras LED - Strobe Amarillo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -6121,6 +6131,8 @@
    <FixtureVal ID="21">5,181,6,255,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
    <FixtureVal ID="22">5,181,6,255,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
    <FixtureVal ID="23">5,181,6,255,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
+   <FixtureVal ID="24">0,255,4,255</FixtureVal>
+   <FixtureVal ID="25">0,255,4,255</FixtureVal>
   </Function>
   <Function ID="277" Type="Chaser" Name="Ping Pong Parrillas LED">
    <Speed FadeIn="0" FadeOut="0" Duration="307"/>
@@ -6762,9 +6774,9 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Command>startfunction%3A322%20%2F%2F%20HUMO%20ON</Command>
+   <Command>startfunction%3A364%20%2F%2F%20HUMO%20ON</Command>
    <Command>wait%3A1s</Command>
-   <Command>stopfunction%3A322%20%2F%2F%20HUMO%20ON</Command>
+   <Command>stopfunction%3A364%20%2F%2F%20HUMO%20ON</Command>
    <Command>wait%3A2s</Command>
   </Function>
   <Function ID="366" Type="Scene" Name="HUMO OFF">
@@ -6778,6 +6790,123 @@
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="60000" FadeOut="0">322</Step>
    <Step Number="1" FadeIn="0" Hold="600000" FadeOut="0">324</Step>
+  </Function>
+  <Function ID="368" Type="Chaser" Name="Strobo LED - Effects">
+   <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">342</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">325</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">336</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">348</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">356</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">333</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">332</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">363</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">354</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">347</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">351</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">331</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">344</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">355</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">340</Step>
+   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">353</Step>
+   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">326</Step>
+   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0">339</Step>
+   <Step Number="18" FadeIn="0" Hold="0" FadeOut="0">350</Step>
+   <Step Number="19" FadeIn="0" Hold="0" FadeOut="0">362</Step>
+   <Step Number="20" FadeIn="0" Hold="0" FadeOut="0">335</Step>
+   <Step Number="21" FadeIn="0" Hold="0" FadeOut="0">322</Step>
+   <Step Number="22" FadeIn="0" Hold="0" FadeOut="0">346</Step>
+   <Step Number="23" FadeIn="0" Hold="0" FadeOut="0">345</Step>
+   <Step Number="24" FadeIn="0" Hold="0" FadeOut="0">352</Step>
+   <Step Number="25" FadeIn="0" Hold="0" FadeOut="0">330</Step>
+   <Step Number="26" FadeIn="0" Hold="0" FadeOut="0">327</Step>
+   <Step Number="27" FadeIn="0" Hold="0" FadeOut="0">329</Step>
+   <Step Number="28" FadeIn="0" Hold="0" FadeOut="0">357</Step>
+   <Step Number="29" FadeIn="0" Hold="0" FadeOut="0">338</Step>
+   <Step Number="30" FadeIn="0" Hold="0" FadeOut="0">324</Step>
+   <Step Number="31" FadeIn="0" Hold="0" FadeOut="0">334</Step>
+   <Step Number="32" FadeIn="0" Hold="0" FadeOut="0">343</Step>
+   <Step Number="33" FadeIn="0" Hold="0" FadeOut="0">360</Step>
+   <Step Number="34" FadeIn="0" Hold="0" FadeOut="0">341</Step>
+   <Step Number="35" FadeIn="0" Hold="0" FadeOut="0">358</Step>
+   <Step Number="36" FadeIn="0" Hold="0" FadeOut="0">323</Step>
+   <Step Number="37" FadeIn="0" Hold="0" FadeOut="0">337</Step>
+   <Step Number="38" FadeIn="0" Hold="0" FadeOut="0">359</Step>
+   <Step Number="39" FadeIn="0" Hold="0" FadeOut="0">328</Step>
+   <Step Number="40" FadeIn="0" Hold="0" FadeOut="0">349</Step>
+  </Function>
+  <Function ID="369" Type="Scene" Name="Strobo LED - Effect OFF" Path="Strobo LED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">5,0,6,0</FixtureVal>
+   <FixtureVal ID="25">5,0,6,0</FixtureVal>
+  </Function>
+  <Function ID="370" Type="EFX" Name="Strobo Leds Effects Speed">
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="371" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">7,0</FixtureVal>
+   <FixtureVal ID="25">7,0</FixtureVal>
+  </Function>
+  <Function ID="372" Type="Sequence" Name="Strobo LED - Random SPEED " BoundScene="371">
+   <Speed FadeIn="45000" FadeOut="0" Duration="105000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">24:7,160:25:7,160</Step>
+   <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0" Values="2">24:7,232:25:7,232</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="2">24:7,200:25:7,200</Step>
+   <Step Number="3" FadeIn="0" Hold="60000" FadeOut="0" Values="2">24:7,255:25:7,255</Step>
+  </Function>
+  <Function ID="373" Type="Chaser" Name="Prisma Animacion">
+   <Speed FadeIn="0" FadeOut="0" Duration="63000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">308</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">312</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">305</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">306</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">309</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">307</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">311</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">310</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -6800,7 +6929,7 @@
     <Font>Default</Font>
    </Appearance>
    <XYPad Caption="Movimiento Cabezas" ID="0" InvertedAppearance="0">
-    <WindowState Visible="True" X="1105" Y="150" Width="275" Height="225"/>
+    <WindowState Visible="True" X="1080" Y="250" Width="275" Height="225"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -6861,7 +6990,7 @@
     <Tilt Position="130"/>
    </XYPad>
    <Label Caption="Movimiento Cabezas" ID="2">
-    <WindowState Visible="True" X="1105" Y="130" Width="275" Height="20"/>
+    <WindowState Visible="True" X="1080" Y="230" Width="275" Height="20"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -6878,7 +7007,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="260" Width="505" Height="185"/>
+    <WindowState Visible="True" X="0" Y="260" Width="455" Height="180"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -7013,7 +7142,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="26" Icon="">
-     <WindowState Visible="True" X="50" Y="90" Width="35" Height="35"/>
+     <WindowState Visible="True" X="210" Y="50" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7173,7 +7302,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="72" Icon="">
-     <WindowState Visible="True" X="250" Y="50" Width="35" Height="35"/>
+     <WindowState Visible="True" X="50" Y="90" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7186,7 +7315,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="73" Icon="">
-     <WindowState Visible="True" X="290" Y="50" Width="35" Height="35"/>
+     <WindowState Visible="True" X="250" Y="50" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7199,7 +7328,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="74" Icon="">
-     <WindowState Visible="True" X="330" Y="50" Width="35" Height="35"/>
+     <WindowState Visible="True" X="290" Y="50" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7212,7 +7341,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="75" Icon="">
-     <WindowState Visible="True" X="370" Y="50" Width="35" Height="35"/>
+     <WindowState Visible="True" X="330" Y="50" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7225,7 +7354,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="76" Icon="">
-     <WindowState Visible="True" X="410" Y="50" Width="35" Height="35"/>
+     <WindowState Visible="True" X="370" Y="50" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7238,7 +7367,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="77" Icon="">
-     <WindowState Visible="True" X="250" Y="90" Width="35" Height="35"/>
+     <WindowState Visible="True" X="210" Y="90" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7251,7 +7380,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="78" Icon="">
-     <WindowState Visible="True" X="290" Y="90" Width="35" Height="35"/>
+     <WindowState Visible="True" X="250" Y="90" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7264,7 +7393,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="79" Icon="">
-     <WindowState Visible="True" X="330" Y="90" Width="35" Height="35"/>
+     <WindowState Visible="True" X="290" Y="90" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7277,7 +7406,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="80" Icon="">
-     <WindowState Visible="True" X="370" Y="90" Width="35" Height="35"/>
+     <WindowState Visible="True" X="330" Y="90" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7290,7 +7419,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="81" Icon="">
-     <WindowState Visible="True" X="410" Y="90" Width="35" Height="35"/>
+     <WindowState Visible="True" X="370" Y="90" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7303,7 +7432,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="82" Icon="">
-     <WindowState Visible="True" X="450" Y="50" Width="35" Height="35"/>
+     <WindowState Visible="True" X="370" Y="130" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7355,7 +7484,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="86" Icon="">
-     <WindowState Visible="True" X="130" Y="130" Width="35" Height="35"/>
+     <WindowState Visible="True" X="330" Y="130" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7381,7 +7510,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="88" Icon="">
-     <WindowState Visible="True" X="250" Y="130" Width="35" Height="35"/>
+     <WindowState Visible="True" X="210" Y="130" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7394,7 +7523,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="89" Icon="">
-     <WindowState Visible="True" X="290" Y="130" Width="35" Height="35"/>
+     <WindowState Visible="True" X="250" Y="130" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7407,7 +7536,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="90" Icon="">
-     <WindowState Visible="True" X="330" Y="130" Width="35" Height="35"/>
+     <WindowState Visible="True" X="410" Y="50" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7420,7 +7549,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="91" Icon="">
-     <WindowState Visible="True" X="370" Y="130" Width="35" Height="35"/>
+     <WindowState Visible="True" X="130" Y="130" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7433,7 +7562,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="" ID="92" Icon="">
-     <WindowState Visible="True" X="410" Y="130" Width="35" Height="35"/>
+     <WindowState Visible="True" X="290" Y="130" Width="35" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -7447,7 +7576,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="Flash 100%" ID="112" Icon="">
-    <WindowState Visible="True" X="550" Y="5" Width="110" Height="120"/>
+    <WindowState Visible="True" X="550" Y="5" Width="115" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -7461,7 +7590,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="Flash 50%" ID="113" Icon="">
-    <WindowState Visible="True" X="665" Y="5" Width="110" Height="120"/>
+    <WindowState Visible="True" X="665" Y="5" Width="115" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -7718,7 +7847,7 @@
     </Appearance>
    </Label>
    <SpeedDial Caption="Duración Colores" ID="23">
-    <WindowState Visible="True" X="830" Y="375" Width="275" Height="285"/>
+    <WindowState Visible="True" X="830" Y="480" Width="275" Height="230"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -7891,7 +8020,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Movimiento Diamante (S)" ID="60" Icon="">
-     <WindowState Visible="True" X="500" Y="5" Width="95" Height="50"/>
+     <WindowState Visible="True" X="500" Y="0" Width="95" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -7967,7 +8096,7 @@
     </Appearance>
    </Label>
    <SpeedDial Caption="Duración Movimientos" ID="38">
-    <WindowState Visible="True" X="1105" Y="375" Width="275" Height="285"/>
+    <WindowState Visible="True" X="1100" Y="480" Width="285" Height="230"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -8016,7 +8145,7 @@
     </Preset>
    </SpeedDial>
    <Slider Caption="Velocidad Cabezas" ID="1" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
-    <WindowState Visible="True" X="1030" Y="130" Width="75" Height="245"/>
+    <WindowState Visible="True" X="960" Y="245" Width="50" Height="235"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -8204,7 +8333,7 @@
     <SpectrumBar Name="#2 (1000Hz - 2000Hz)" Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="1" WidgetID="23"/>
    </AudioTriggers>
    <Matrix Caption="Cabezas LED" ID="42">
-    <WindowState Visible="True" X="1245" Y="0" Width="170" Height="165"/>
+    <WindowState Visible="True" X="1355" Y="0" Width="85" Height="475"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>4294967295</ForegroundColor>
@@ -8216,11 +8345,11 @@
     <Control ID="15">
      <Type>Animation</Type>
      <Resource>Alternate</Resource>
+     <Property Name="color1Index">Red</Property>
      <Property Name="align">Left</Property>
-     <Property Name="orientation">Horizontal</Property>
      <Property Name="offset">0</Property>
      <Property Name="color2Index">Blue</Property>
-     <Property Name="color1Index">Red</Property>
+     <Property Name="orientation">Horizontal</Property>
      <Property Name="blockSize">1</Property>
     </Control>
     <Control ID="16">
@@ -8230,10 +8359,10 @@
     <Control ID="17">
      <Type>Animation</Type>
      <Resource>Waves</Resource>
+     <Property Name="tailfade">Yes</Property>
+     <Property Name="taillength">50</Property>
      <Property Name="orientation">Horizontal</Property>
      <Property Name="direction">Right</Property>
-     <Property Name="taillength">50</Property>
-     <Property Name="tailfade">Yes</Property>
     </Control>
     <Control ID="18">
      <Type>Animation</Type>
@@ -8253,7 +8382,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="180" Width="485" Height="55"/>
+    <WindowState Visible="True" X="0" Y="180" Width="360" Height="55"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -8262,7 +8391,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Dimmer Chase" ID="52" Icon="">
-     <WindowState Visible="True" X="240" Y="5" Width="115" Height="45"/>
+     <WindowState Visible="True" X="200" Y="5" Width="80" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -8276,7 +8405,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Dimmer Chase 2" ID="53" Icon="">
-     <WindowState Visible="True" X="360" Y="5" Width="115" Height="45"/>
+     <WindowState Visible="True" X="280" Y="5" Width="75" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -8304,7 +8433,7 @@
      <Intensity Adjust="False">50</Intensity>
     </Button>
     <Button Caption="Ping Pong Dimmer" ID="39" Icon="">
-     <WindowState Visible="True" X="120" Y="5" Width="115" Height="45"/>
+     <WindowState Visible="True" X="120" Y="5" Width="75" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
@@ -8319,7 +8448,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Duración Chasers" ID="54">
-    <WindowState Visible="True" X="550" Y="375" Width="275" Height="290"/>
+    <WindowState Visible="True" X="545" Y="480" Width="285" Height="230"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -8361,7 +8490,7 @@
     </Preset>
    </SpeedDial>
    <Button Caption="Dimmer Secuencia" ID="35" Icon="">
-    <WindowState Visible="True" X="895" Y="5" Width="115" Height="120"/>
+    <WindowState Visible="True" X="895" Y="5" Width="120" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -8608,7 +8737,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="Flash Colores" ID="121" Icon="">
-    <WindowState Visible="True" X="780" Y="5" Width="110" Height="120"/>
+    <WindowState Visible="True" X="780" Y="5" Width="115" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294967295</ForegroundColor>
@@ -8629,7 +8758,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="510" Y="190" Width="505" Height="120"/>
+    <WindowState Visible="True" X="455" Y="355" Width="505" Height="120"/>
     <AllowChildren>False</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -8880,7 +9009,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="550" Y="125" Width="420" Height="70"/>
+    <WindowState Visible="True" X="455" Y="215" Width="420" Height="70"/>
     <AllowChildren>False</AllowChildren>
     <AllowResize>False</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -9001,7 +9130,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="550" Y="315" Width="420" Height="70"/>
+    <WindowState Visible="True" X="455" Y="285" Width="420" Height="70"/>
     <AllowChildren>False</AllowChildren>
     <AllowResize>False</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -9158,7 +9287,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="HUMO" ID="125" Icon="">
-    <WindowState Visible="True" X="360" Y="70" Width="105" Height="45"/>
+    <WindowState Visible="True" X="550" Y="70" Width="115" Height="50"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -9172,7 +9301,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="HUMO AUTO" ID="126" Icon="">
-    <WindowState Visible="True" X="360" Y="115" Width="105" Height="45"/>
+    <WindowState Visible="True" X="665" Y="70" Width="115" Height="50"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -9185,6 +9314,124 @@
     <Key>J</Key>
     <Intensity Adjust="False">100</Intensity>
    </Button>
+   <SoloFrame Caption="" ID="127">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="385" Y="480" Width="160" Height="95"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Strobo LED - Effects" ID="128" Icon="">
+     <WindowState Visible="True" X="10" Y="10" Width="65" Height="80"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="368"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Strobo LED - Effect OFF" ID="129" Icon="">
+     <WindowState Visible="True" X="80" Y="10" Width="65" Height="80"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="369"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <Slider Caption="Strobo LED Effect Speed" ID="130" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <WindowState Visible="True" X="1010" Y="125" Width="65" Height="350"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+    <Reset/>
+    <Level LowLimit="0" HighLimit="255" Value="160">
+     <Channel Fixture="24">7</Channel>
+     <Channel Fixture="25">7</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Button Caption="Strobo LED - Speed Auto" ID="131" Icon="">
+    <WindowState Visible="True" X="385" Y="580" Width="150" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="372"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <SoloFrame Caption="" ID="132">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="365" Y="70" Width="185" Height="60"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Prisma Animacion" ID="133" Icon="">
+     <WindowState Visible="True" X="10" Y="5" Width="80" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="373"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Prisma Off" ID="134" Icon="">
+     <WindowState Visible="True" X="95" Y="5" Width="75" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="310"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
   </Frame>
   <Properties>
    <Size Width="1440" Height="900"/>
@@ -9196,14 +9443,14 @@
    <CueStack ID="0">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 1">
-     <Value Channel="33">134</Value>
+     <Value Channel="6">255</Value>
      <Value Channel="5">134</Value>
-     <Value Channel="47">134</Value>
      <Value Channel="19">134</Value>
      <Value Channel="50">255</Value>
      <Value Channel="34">255</Value>
+     <Value Channel="33">134</Value>
+     <Value Channel="47">134</Value>
      <Value Channel="22">255</Value>
-     <Value Channel="6">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
