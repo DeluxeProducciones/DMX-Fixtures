@@ -6520,6 +6520,31 @@
    <Step Number="18" FadeIn="0" Hold="0" FadeOut="0">297</Step>
    <Step Number="19" FadeIn="0" Hold="0" FadeOut="0">293</Step>
   </Function>
+  <Function ID="322" Type="Scene" Name="HUMO ON">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="17">0,255</FixtureVal>
+  </Function>
+  <Function ID="323" Type="Script" Name="HUMO Auto">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>startfunction%3A322%20%2F%2F%20HUMO%20ON</Command>
+   <Command>wait%3A1s</Command>
+   <Command>stopfunction%3A322%20%2F%2F%20HUMO%20ON</Command>
+   <Command>wait%3A2s</Command>
+  </Function>
+  <Function ID="324" Type="Scene" Name="HUMO OFF">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="17">0,0</FixtureVal>
+  </Function>
+  <Function ID="325" Type="Chaser" Name="Humo Auto">
+   <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="60000" FadeOut="0">322</Step>
+   <Step Number="1" FadeIn="0" Hold="600000" FadeOut="0">324</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>1</ChannelStyle>
@@ -6759,7 +6784,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Azul-Rojo.png</BackgroundImage>
+      <BackgroundImage>Colores/Azul-Rojo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="30"/>
@@ -6773,7 +6798,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rojo-Azul.png</BackgroundImage>
+      <BackgroundImage>Colores/Rojo-Azul.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="29"/>
@@ -6787,7 +6812,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4286218751</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Arcoiris.png</BackgroundImage>
+      <BackgroundImage>Colores/Arcoiris.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="25"/>
@@ -6801,7 +6826,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4285790841</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Arcoiris.png</BackgroundImage>
+      <BackgroundImage>Colores/Arcoiris.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="26"/>
@@ -6815,7 +6840,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rojo-Amarillo.png</BackgroundImage>
+      <BackgroundImage>Colores/Rojo-Amarillo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="58"/>
@@ -6828,7 +6853,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rojo-Blanco.png</BackgroundImage>
+      <BackgroundImage>Colores/Rojo-Blanco.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="63"/>
@@ -6841,7 +6866,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rojo-Magenta.png</BackgroundImage>
+      <BackgroundImage>Colores/Rojo-Magenta.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="74"/>
@@ -6854,7 +6879,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rojo-Verde.png</BackgroundImage>
+      <BackgroundImage>Colores/Rojo-Verde.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="62"/>
@@ -6867,7 +6892,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Azul-Amarillo.png</BackgroundImage>
+      <BackgroundImage>Colores/Azul-Amarillo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="55"/>
@@ -6880,7 +6905,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Azul-Blanco.png</BackgroundImage>
+      <BackgroundImage>Colores/Azul-Blanco.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="61"/>
@@ -6893,7 +6918,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Azul-Magenta.png</BackgroundImage>
+      <BackgroundImage>Colores/Azul-Magenta.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="72"/>
@@ -6906,7 +6931,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Azul-Verde.png</BackgroundImage>
+      <BackgroundImage>Colores/Azul-Verde.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="32"/>
@@ -6919,7 +6944,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-Azul.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-Azul.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="56"/>
@@ -6932,7 +6957,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-Blanco.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-Blanco.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="60"/>
@@ -6945,7 +6970,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-Magenta.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-Magenta.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="71"/>
@@ -6958,7 +6983,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-Rojo.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-Rojo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="57"/>
@@ -6971,7 +6996,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-UV.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-UV.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="84"/>
@@ -6984,7 +7009,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Blanco-Amarillo.png</BackgroundImage>
+      <BackgroundImage>Colores/Blanco-Amarillo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="67"/>
@@ -6997,7 +7022,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Blanco-Azul.png</BackgroundImage>
+      <BackgroundImage>Colores/Blanco-Azul.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="66"/>
@@ -7010,7 +7035,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Blanco-Magenta.png</BackgroundImage>
+      <BackgroundImage>Colores/Blanco-Magenta.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="73"/>
@@ -7023,7 +7048,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Blanco-Rojo.png</BackgroundImage>
+      <BackgroundImage>Colores/Blanco-Rojo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="64"/>
@@ -7036,7 +7061,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Blanco-Verde.png</BackgroundImage>
+      <BackgroundImage>Colores/Blanco-Verde.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="65"/>
@@ -7049,7 +7074,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-Verde.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-Verde.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="59"/>
@@ -7062,7 +7087,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Magenta-Amarillo.png</BackgroundImage>
+      <BackgroundImage>Colores/Magenta-Amarillo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="80"/>
@@ -7075,7 +7100,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Magenta-Azul.png</BackgroundImage>
+      <BackgroundImage>Colores/Magenta-Azul.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="76"/>
@@ -7088,7 +7113,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Magenta-Blanco.png</BackgroundImage>
+      <BackgroundImage>Colores/Magenta-Blanco.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="77"/>
@@ -7101,7 +7126,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Magenta-Rojo.png</BackgroundImage>
+      <BackgroundImage>Colores/Magenta-Rojo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="78"/>
@@ -7114,7 +7139,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Magenta-Verde.png</BackgroundImage>
+      <BackgroundImage>Colores/Magenta-Verde.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="79"/>
@@ -7127,7 +7152,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Verde-Amarillo.png</BackgroundImage>
+      <BackgroundImage>Colores/Verde-Amarillo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="69"/>
@@ -7140,7 +7165,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Verde-Azul.png</BackgroundImage>
+      <BackgroundImage>Colores/Verde-Azul.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="46"/>
@@ -7153,7 +7178,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Verde-Blanco.png</BackgroundImage>
+      <BackgroundImage>Colores/Verde-Blanco.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="70"/>
@@ -7166,7 +7191,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Verde-Magenta.png</BackgroundImage>
+      <BackgroundImage>Colores/Verde-Magenta.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="75"/>
@@ -7179,7 +7204,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Verde-Rojo.png</BackgroundImage>
+      <BackgroundImage>Colores/Verde-Rojo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="68"/>
@@ -7363,7 +7388,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4278465535</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Azul-Rojo.png</BackgroundImage>
+      <BackgroundImage>Colores/Azul-Rojo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="123"/>
@@ -7377,7 +7402,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4278245887</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rojo-Azul.png</BackgroundImage>
+      <BackgroundImage>Colores/Rojo-Azul.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="122"/>
@@ -7391,7 +7416,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4280024832</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Verde-Amarillo.png</BackgroundImage>
+      <BackgroundImage>Colores/Verde-Amarillo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="124"/>
@@ -7404,7 +7429,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294966016</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-Verde.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-Verde.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="125"/>
@@ -7417,7 +7442,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4278255103</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Cyan-Rosa.png</BackgroundImage>
+      <BackgroundImage>Colores/Cyan-Rosa.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="126"/>
@@ -7430,7 +7455,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294918399</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rosa-Cyan.png</BackgroundImage>
+      <BackgroundImage>Colores/Rosa-Cyan.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="127"/>
@@ -8273,7 +8298,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4278465535</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Azul-Rojo.png</BackgroundImage>
+      <BackgroundImage>Colores/Azul-Rojo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="259"/>
@@ -8287,7 +8312,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294911488</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rojo-Azul.png</BackgroundImage>
+      <BackgroundImage>Colores/Rojo-Azul.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="267"/>
@@ -8301,7 +8326,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4280024832</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Verde-Amarillo.png</BackgroundImage>
+      <BackgroundImage>Colores/Verde-Amarillo.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="271"/>
@@ -8314,7 +8339,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294966016</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Amarillo-Verde.png</BackgroundImage>
+      <BackgroundImage>Colores/Amarillo-Verde.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="257"/>
@@ -8327,7 +8352,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4278255103</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Cyan-Rosa.png</BackgroundImage>
+      <BackgroundImage>Colores/Cyan-Rosa.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="262"/>
@@ -8340,7 +8365,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294918399</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Google Drive/Deluxe Sonido e Iluminación/Colores/Rosa-Cyan.png</BackgroundImage>
+      <BackgroundImage>Colores/Rosa-Cyan.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="268"/>
@@ -8384,7 +8409,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo1.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo1.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="288"/>
@@ -8397,7 +8422,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo10.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo10.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="297"/>
@@ -8410,7 +8435,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo11.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo11.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="298"/>
@@ -8423,7 +8448,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo12.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo12.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="299"/>
@@ -8436,7 +8461,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo13.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo13.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="300"/>
@@ -8449,7 +8474,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo14.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo14.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="301"/>
@@ -8462,7 +8487,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo15.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo15.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="302"/>
@@ -8475,7 +8500,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo16.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo16.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="303"/>
@@ -8488,7 +8513,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo17.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo17.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="304"/>
@@ -8501,7 +8526,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo2.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo2.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="289"/>
@@ -8514,7 +8539,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo3.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo3.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="290"/>
@@ -8527,7 +8552,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo4.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo4.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="291"/>
@@ -8540,7 +8565,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo5.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="292"/>
@@ -8553,7 +8578,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo6.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo6.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="293"/>
@@ -8566,7 +8591,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo7.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo7.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="294"/>
@@ -8579,7 +8604,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo8.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo8.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="295"/>
@@ -8592,7 +8617,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Gobo9.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Gobo9.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="296"/>
@@ -8605,7 +8630,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>/Users/cristiandeluxe/Desktop/Gobos/Opened.png</BackgroundImage>
+      <BackgroundImage>Gobos/BEAM-LIGHT-230W-7R/Opened.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="287"/>
@@ -8898,6 +8923,34 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </SoloFrame>
+   <Button Caption="HUMO" ID="125" Icon="">
+    <WindowState Visible="True" X="365" Y="5" Width="130" Height="120"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="322"/>
+    <Action Override="0" ForceLTP="0">Flash</Action>
+    <Key>H</Key>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="HUMO AUTO" ID="126" Icon="">
+    <WindowState Visible="True" X="495" Y="5" Width="150" Height="120"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="325"/>
+    <Action>Toggle</Action>
+    <Key>J</Key>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1440" Height="900"/>
