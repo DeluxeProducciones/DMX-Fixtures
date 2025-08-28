@@ -10,7 +10,7 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0">
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A50285BI)" Line="0">
      <PluginParameters UniverseChannels="300"/>
     </Output>
    </Universe>
@@ -432,18 +432,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
-   <Width>30</Width>
-   <Height>30</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>202</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -696,18 +696,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
-   <Width>30</Width>
-   <Height>30</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>202</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -720,7 +720,7 @@
    <Step Number="0" FadeIn="10000" Hold="10000" FadeOut="10000">12</Step>
   </Function>
   <Function ID="14" Type="Chaser" Name="Rueda Colores Simples">
-   <Speed FadeIn="0" FadeOut="0" Duration="856"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1712"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -734,7 +734,7 @@
    <Step Number="7" FadeIn="0" Hold="600" FadeOut="0">9</Step>
   </Function>
   <Function ID="15" Type="Chaser" Name="Rueda Colores Dobles">
-   <Speed FadeIn="0" FadeOut="0" Duration="856"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1712"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -838,7 +838,7 @@
    <FixtureVal ID="23">7,0</FixtureVal>
   </Function>
   <Function ID="20" Type="Chaser" Name="Rueda Colores Cabezas">
-   <Speed FadeIn="0" FadeOut="0" Duration="856"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1712"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
@@ -1223,7 +1223,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="13696"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1518,7 +1518,7 @@
     <StartOffset>180</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="13696"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1675,7 +1675,7 @@
    <FixtureVal ID="12">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="38" Type="Chaser" Name="Rueda Colores LEDs">
-   <Speed FadeIn="0" FadeOut="0" Duration="856"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1712"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1887,18 +1887,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Eight</Algorithm>
-   <Width>30</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>222</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -1994,7 +1994,7 @@
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
    <Width>0</Width>
-   <Height>40</Height>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
@@ -2004,7 +2004,7 @@
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>43</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -2099,18 +2099,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Diamond</Algorithm>
-   <Width>40</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>229</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -2205,18 +2205,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Square</Algorithm>
-   <Width>30</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>90</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>230</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -2311,18 +2311,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Leaf</Algorithm>
-   <Width>40</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>222</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -2417,18 +2417,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
-   <Width>40</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>87</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>222</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3193,18 +3193,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
-   <Width>30</Width>
-   <Height>30</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>222</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3299,18 +3299,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Square</Algorithm>
-   <Width>30</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>90</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>220</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3405,18 +3405,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Diamond</Algorithm>
-   <Width>40</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>229</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3511,18 +3511,18 @@
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm>Leaf</Algorithm>
-   <Width>40</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>222</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3618,7 +3618,7 @@
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
    <Width>0</Width>
-   <Height>40</Height>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
@@ -3628,7 +3628,7 @@
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>43</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3723,18 +3723,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
-   <Width>40</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>87</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>222</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3829,18 +3829,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Eight</Algorithm>
-   <Width>30</Width>
-   <Height>20</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>222</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -3935,18 +3935,18 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
-   <Width>25</Width>
-   <Height>40</Height>
+   <Width>100</Width>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>88</Offset>
+    <Offset>130</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>200</Offset>
+    <Offset>130</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -4884,9 +4884,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="139" Type="RGBMatrix" Name="Barras LED - Alternate Azul">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -4896,9 +4896,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Blue"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="140" Type="RGBMatrix" Name="Barras LED - Alternate Verde">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -4908,9 +4908,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Green"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Green"/>
   </Function>
   <Function ID="141" Type="RGBMatrix" Name="Barras LED - Alternate Rosa">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -4920,9 +4920,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Hot Pink"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Hot Pink"/>
   </Function>
   <Function ID="142" Type="RGBMatrix" Name="Barras LED - Alternate Violeta">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -4932,9 +4932,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Purple"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Purple"/>
   </Function>
   <Function ID="143" Type="RGBMatrix" Name="Barras LED - Alternate Cyan">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -4944,9 +4944,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Cyan"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="144" Type="RGBMatrix" Name="Barras LED - Alternate VerdeMar">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -4956,9 +4956,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Seafoam"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Seafoam"/>
   </Function>
   <Function ID="145" Type="RGBMatrix" Name="Barras LED - Alternate Amarillo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -4978,9 +4978,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Orange"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="OFF"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Orange"/>
   </Function>
   <Function ID="147" Type="RGBMatrix" Name="Barras LED - Even/Odd Azul">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5584,9 +5584,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Blue"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Red"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="214" Type="RGBMatrix" Name="Barras LED - Alternate Cyan / Amarillo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5596,9 +5596,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Cyan"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Yellow"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="215" Type="RGBMatrix" Name="Barras LED - Alternate Rosa / Cyan">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5608,9 +5608,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Hot Pink"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Cyan"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Hot Pink"/>
   </Function>
   <Function ID="216" Type="RGBMatrix" Name="Barras LED - Alternate Verde / Amarillo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -5620,9 +5620,9 @@
    <MonoColor>4278190335</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Green"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Yellow"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Green"/>
   </Function>
   <Function ID="217" Type="RGBMatrix" Name="Barras LED - Even/Odd Azul / Rojo">
    <Speed FadeIn="0" FadeOut="0" Duration="478"/>
@@ -6928,6 +6928,17 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="376" Type="Scene" Name="Escenario">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="20">0,156,1,196</FixtureVal>
+   <FixtureVal ID="21">0,159,1,204</FixtureVal>
+   <FixtureVal ID="22">0,159,1,192</FixtureVal>
+   <FixtureVal ID="23">0,162,1,189</FixtureVal>
+   <FixtureVal ID="0">0,161,2,49</FixtureVal>
+   <FixtureVal ID="1">0,176,2,43</FixtureVal>
+   <FixtureVal ID="13"/>
+   <FixtureVal ID="14"/>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -8290,7 +8301,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="120" Width="360" Height="60"/>
+    <WindowState Visible="True" X="0" Y="120" Width="485" Height="55"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -8340,6 +8351,20 @@
      <Key>S</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
+    <Button Caption="Escenario" ID="136" Icon="">
+     <WindowState Visible="True" X="360" Y="5" Width="115" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4278228735</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="376"/>
+     <Action>Toggle</Action>
+     <Key>D</Key>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
    </SoloFrame>
    <AudioTriggers BarsNumber="5" Caption="" ID="25">
     <WindowState Visible="True" X="1015" Y="5" Width="265" Height="120"/>
@@ -8366,12 +8391,12 @@
     <Control ID="15">
      <Type>Animation</Type>
      <Resource>Alternate</Resource>
-     <Property Name="offset">0</Property>
-     <Property Name="align">Left</Property>
-     <Property Name="color1Index">Red</Property>
-     <Property Name="blockSize">1</Property>
      <Property Name="color2Index">Blue</Property>
      <Property Name="orientation">Horizontal</Property>
+     <Property Name="blockSize">1</Property>
+     <Property Name="offset">0</Property>
+     <Property Name="color1Index">Red</Property>
+     <Property Name="align">Left</Property>
     </Control>
     <Control ID="16">
      <Type>Animation</Type>
@@ -8380,10 +8405,10 @@
     <Control ID="17">
      <Type>Animation</Type>
      <Resource>Waves</Resource>
+     <Property Name="orientation">Horizontal</Property>
      <Property Name="taillength">50</Property>
      <Property Name="direction">Right</Property>
      <Property Name="tailfade">Yes</Property>
-     <Property Name="orientation">Horizontal</Property>
     </Control>
     <Control ID="18">
      <Type>Animation</Type>
@@ -9389,7 +9414,7 @@
     </Appearance>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
     <Reset/>
-    <Level LowLimit="0" HighLimit="255" Value="221">
+    <Level LowLimit="0" HighLimit="255" Value="253">
      <Channel Fixture="24">7</Channel>
      <Channel Fixture="25">7</Channel>
     </Level>
@@ -9418,7 +9443,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="365" Y="70" Width="185" Height="60"/>
+    <WindowState Visible="True" X="585" Y="125" Width="185" Height="60"/>
     <AllowChildren>False</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -9453,6 +9478,19 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </SoloFrame>
+   <Button Caption="Luz Escenario" ID="135" Icon="">
+    <WindowState Visible="True" X="815" Y="115" Width="115" Height="45"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="376"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1440" Height="900"/>
@@ -9464,13 +9502,13 @@
    <CueStack ID="0">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 1">
-     <Value Channel="5">134</Value>
-     <Value Channel="22">255</Value>
-     <Value Channel="6">255</Value>
      <Value Channel="19">134</Value>
-     <Value Channel="33">134</Value>
-     <Value Channel="50">255</Value>
      <Value Channel="34">255</Value>
+     <Value Channel="50">255</Value>
+     <Value Channel="6">255</Value>
+     <Value Channel="22">255</Value>
+     <Value Channel="33">134</Value>
+     <Value Channel="5">134</Value>
      <Value Channel="47">134</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
