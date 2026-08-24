@@ -3591,64 +3591,207 @@
       <Step Number="18" FadeIn="0" Hold="4000" FadeOut="0">250</Step>
       <Step Number="19" FadeIn="0" Hold="4000" FadeOut="0">251</Step>
     </Function>
-    <Function ID="253" Type="Scene" Name="Prisma - None" Path="Prisma">
+    <Function ID="253" Type="Scene" Name="Color Beam - White" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,4,8,4</FixtureVal>
+      <FixtureVal ID="21">6,255,7,4,8,4</FixtureVal>
+      <FixtureVal ID="22">6,255,7,4,8,4</FixtureVal>
+      <FixtureVal ID="23">6,255,7,4,8,4</FixtureVal>
+    </Function>
+    <Function ID="254" Type="Scene" Name="Color Beam - Red" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,12,8,12</FixtureVal>
+      <FixtureVal ID="21">6,255,7,12,8,12</FixtureVal>
+      <FixtureVal ID="22">6,255,7,12,8,12</FixtureVal>
+      <FixtureVal ID="23">6,255,7,12,8,12</FixtureVal>
+    </Function>
+    <Function ID="255" Type="Scene" Name="Color Beam - Orange" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,19,8,19</FixtureVal>
+      <FixtureVal ID="21">6,255,7,19,8,19</FixtureVal>
+      <FixtureVal ID="22">6,255,7,19,8,19</FixtureVal>
+      <FixtureVal ID="23">6,255,7,19,8,19</FixtureVal>
+    </Function>
+    <Function ID="256" Type="Scene" Name="Color Beam - Yellow" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,27,8,27</FixtureVal>
+      <FixtureVal ID="21">6,255,7,27,8,27</FixtureVal>
+      <FixtureVal ID="22">6,255,7,27,8,27</FixtureVal>
+      <FixtureVal ID="23">6,255,7,27,8,27</FixtureVal>
+    </Function>
+    <Function ID="257" Type="Scene" Name="Color Beam - Green" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,35,8,35</FixtureVal>
+      <FixtureVal ID="21">6,255,7,35,8,35</FixtureVal>
+      <FixtureVal ID="22">6,255,7,35,8,35</FixtureVal>
+      <FixtureVal ID="23">6,255,7,35,8,35</FixtureVal>
+    </Function>
+    <Function ID="258" Type="Scene" Name="Color Beam - Blue" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,43,8,43</FixtureVal>
+      <FixtureVal ID="21">6,255,7,43,8,43</FixtureVal>
+      <FixtureVal ID="22">6,255,7,43,8,43</FixtureVal>
+      <FixtureVal ID="23">6,255,7,43,8,43</FixtureVal>
+    </Function>
+    <Function ID="259" Type="Scene" Name="Color Beam - Pink" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,51,8,51</FixtureVal>
+      <FixtureVal ID="21">6,255,7,51,8,51</FixtureVal>
+      <FixtureVal ID="22">6,255,7,51,8,51</FixtureVal>
+      <FixtureVal ID="23">6,255,7,51,8,51</FixtureVal>
+    </Function>
+    <Function ID="260" Type="Scene" Name="Color Beam - Ice" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,59,8,59</FixtureVal>
+      <FixtureVal ID="21">6,255,7,59,8,59</FixtureVal>
+      <FixtureVal ID="22">6,255,7,59,8,59</FixtureVal>
+      <FixtureVal ID="23">6,255,7,59,8,59</FixtureVal>
+    </Function>
+    <Function ID="261" Type="Scene" Name="Color Beam - Light Pink" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,67,8,67</FixtureVal>
+      <FixtureVal ID="21">6,255,7,67,8,67</FixtureVal>
+      <FixtureVal ID="22">6,255,7,67,8,67</FixtureVal>
+      <FixtureVal ID="23">6,255,7,67,8,67</FixtureVal>
+    </Function>
+    <Function ID="262" Type="Scene" Name="Color Beam - Light White" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,75,8,75</FixtureVal>
+      <FixtureVal ID="21">6,255,7,75,8,75</FixtureVal>
+      <FixtureVal ID="22">6,255,7,75,8,75</FixtureVal>
+      <FixtureVal ID="23">6,255,7,75,8,75</FixtureVal>
+    </Function>
+    <Function ID="263" Type="Scene" Name="Color Beam - Light Blue" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,83,8,83</FixtureVal>
+      <FixtureVal ID="21">6,255,7,83,8,83</FixtureVal>
+      <FixtureVal ID="22">6,255,7,83,8,83</FixtureVal>
+      <FixtureVal ID="23">6,255,7,83,8,83</FixtureVal>
+    </Function>
+    <Function ID="264" Type="Scene" Name="Color Beam - Calid White" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,91,8,91</FixtureVal>
+      <FixtureVal ID="21">6,255,7,91,8,91</FixtureVal>
+      <FixtureVal ID="22">6,255,7,91,8,91</FixtureVal>
+      <FixtureVal ID="23">6,255,7,91,8,91</FixtureVal>
+    </Function>
+    <Function ID="265" Type="Scene" Name="Color Beam - UV" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,99,8,99</FixtureVal>
+      <FixtureVal ID="21">6,255,7,99,8,99</FixtureVal>
+      <FixtureVal ID="22">6,255,7,99,8,99</FixtureVal>
+      <FixtureVal ID="23">6,255,7,99,8,99</FixtureVal>
+    </Function>
+    <Function ID="266" Type="Scene" Name="Color Beam - Grey" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,107,8,107</FixtureVal>
+      <FixtureVal ID="21">6,255,7,107,8,107</FixtureVal>
+      <FixtureVal ID="22">6,255,7,107,8,107</FixtureVal>
+      <FixtureVal ID="23">6,255,7,107,8,107</FixtureVal>
+    </Function>
+    <Function ID="267" Type="Scene" Name="Color Beam - Light Yellow" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,119,8,119</FixtureVal>
+      <FixtureVal ID="21">6,255,7,119,8,119</FixtureVal>
+      <FixtureVal ID="22">6,255,7,119,8,119</FixtureVal>
+      <FixtureVal ID="23">6,255,7,119,8,119</FixtureVal>
+    </Function>
+    <Function ID="268" Type="Scene" Name="Color Beam - Rainbow effect fast to slow" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,159,8,159</FixtureVal>
+      <FixtureVal ID="21">6,255,7,159,8,159</FixtureVal>
+      <FixtureVal ID="22">6,255,7,159,8,159</FixtureVal>
+      <FixtureVal ID="23">6,255,7,159,8,159</FixtureVal>
+    </Function>
+    <Function ID="269" Type="Scene" Name="Color Beam - Rainbow effect reverse slow to fast" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">6,255,7,223,8,223</FixtureVal>
+      <FixtureVal ID="21">6,255,7,223,8,223</FixtureVal>
+      <FixtureVal ID="22">6,255,7,223,8,223</FixtureVal>
+      <FixtureVal ID="23">6,255,7,223,8,223</FixtureVal>
+    </Function>
+    <Function ID="270" Type="Chaser" Name="Color Beam Animacion" Path="Color Beam">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Random</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+      <Step Number="0" FadeIn="0" Hold="6000" FadeOut="0">253</Step>
+      <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0">254</Step>
+      <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">255</Step>
+      <Step Number="3" FadeIn="0" Hold="6000" FadeOut="0">256</Step>
+      <Step Number="4" FadeIn="0" Hold="6000" FadeOut="0">257</Step>
+      <Step Number="5" FadeIn="0" Hold="6000" FadeOut="0">258</Step>
+      <Step Number="6" FadeIn="0" Hold="6000" FadeOut="0">259</Step>
+      <Step Number="7" FadeIn="0" Hold="6000" FadeOut="0">260</Step>
+      <Step Number="8" FadeIn="0" Hold="6000" FadeOut="0">261</Step>
+      <Step Number="9" FadeIn="0" Hold="6000" FadeOut="0">262</Step>
+      <Step Number="10" FadeIn="0" Hold="6000" FadeOut="0">263</Step>
+      <Step Number="11" FadeIn="0" Hold="6000" FadeOut="0">264</Step>
+      <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0">265</Step>
+      <Step Number="13" FadeIn="0" Hold="6000" FadeOut="0">266</Step>
+      <Step Number="14" FadeIn="0" Hold="6000" FadeOut="0">267</Step>
+      <Step Number="15" FadeIn="0" Hold="6000" FadeOut="0">268</Step>
+      <Step Number="16" FadeIn="0" Hold="6000" FadeOut="0">269</Step>
+    </Function>
+    <Function ID="271" Type="Scene" Name="Prisma - None" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">6,255,13,63</FixtureVal>
       <FixtureVal ID="21">6,255,13,63</FixtureVal>
       <FixtureVal ID="22">6,255,13,63</FixtureVal>
       <FixtureVal ID="23">6,255,13,63</FixtureVal>
     </Function>
-    <Function ID="254" Type="Scene" Name="Prisma - Insert Prism" Path="Prisma">
+    <Function ID="272" Type="Scene" Name="Prisma - Insert Prism" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">6,255,13,191</FixtureVal>
       <FixtureVal ID="21">6,255,13,191</FixtureVal>
       <FixtureVal ID="22">6,255,13,191</FixtureVal>
       <FixtureVal ID="23">6,255,13,191</FixtureVal>
     </Function>
-    <Function ID="255" Type="Chaser" Name="Prisma Animacion" Path="Prisma">
+    <Function ID="273" Type="Chaser" Name="Prisma Animacion" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">253</Step>
-      <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0">254</Step>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">271</Step>
+      <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0">272</Step>
     </Function>
-    <Function ID="256" Type="Scene" Name="Humo ON" Path="Humo">
+    <Function ID="274" Type="Scene" Name="Humo ON" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="17">0,255</FixtureVal>
       <FixtureVal ID="26">0,255</FixtureVal>
     </Function>
-    <Function ID="257" Type="Scene" Name="Humo OFF" Path="Humo">
+    <Function ID="275" Type="Scene" Name="Humo OFF" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="26">0,0</FixtureVal>
     </Function>
-    <Function ID="258" Type="Chaser" Name="Humo Auto" Path="Humo">
+    <Function ID="276" Type="Chaser" Name="Humo Auto" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">256</Step>
-      <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0">257</Step>
+      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">274</Step>
+      <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0">275</Step>
     </Function>
-    <Function ID="259" Type="Collection" Name="Rueda Colores" Path="Show">
+    <Function ID="277" Type="Collection" Name="Rueda Colores" Path="Show">
       <Step Number="0">45</Step>
       <Step Number="1">87</Step>
       <Step Number="2">129</Step>
     </Function>
-    <Function ID="260" Type="Collection" Name="Rueda Mezcla" Path="Show">
+    <Function ID="278" Type="Collection" Name="Rueda Mezcla" Path="Show">
       <Step Number="0">46</Step>
       <Step Number="1">88</Step>
       <Step Number="2">130</Step>
     </Function>
-    <Function ID="261" Type="Collection" Name="AUTO" Path="Show">
-      <Step Number="0">259</Step>
+    <Function ID="279" Type="Collection" Name="AUTO" Path="Show">
+      <Step Number="0">277</Step>
       <Step Number="1">231</Step>
       <Step Number="2">252</Step>
-      <Step Number="3">258</Step>
-      <Step Number="4">161</Step>
-      <Step Number="5">192</Step>
-      <Step Number="6">223</Step>
+      <Step Number="3">270</Step>
+      <Step Number="4">276</Step>
+      <Step Number="5">161</Step>
+      <Step Number="6">192</Step>
+      <Step Number="7">223</Step>
     </Function>
   </Engine>
   <VirtualConsole>
@@ -3660,7 +3803,7 @@
         <BackgroundImage>None</BackgroundImage>
         <Font>Default</Font>
       </Appearance>
-      <SoloFrame Caption="Gobos" ID="0">
+      <SoloFrame Caption="Color Beam" ID="0">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -3676,7 +3819,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Gobo Animacion" ID="1" Icon="">
+        <Button Caption="Color Beam Animacion" ID="1" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3685,13 +3828,13 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="252"/>
+          <Function ID="270"/>
           <Action>Toggle</Action>
-          <Key>G</Key>
+          <Key>C</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Humo" ID="2">
+      <SoloFrame Caption="Gobos" ID="2">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -3707,7 +3850,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Humo Auto" ID="3" Icon="">
+        <Button Caption="Gobo Animacion" ID="3" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3716,13 +3859,13 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="258"/>
+          <Function ID="252"/>
           <Action>Toggle</Action>
-          <Key>J</Key>
+          <Key>G</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Movimiento" ID="4">
+      <SoloFrame Caption="Humo" ID="4">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -3738,7 +3881,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Movimientos Cabezas" ID="5" Icon="">
+        <Button Caption="Humo Auto" ID="5" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3747,13 +3890,13 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="231"/>
+          <Function ID="276"/>
           <Action>Toggle</Action>
-          <Key>A</Key>
+          <Key>J</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Prisma" ID="6">
+      <SoloFrame Caption="Movimiento" ID="6">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -3769,7 +3912,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Prisma Animacion" ID="7" Icon="">
+        <Button Caption="Movimientos Cabezas" ID="7" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3778,13 +3921,13 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="255"/>
+          <Function ID="231"/>
           <Action>Toggle</Action>
-          <Key>P</Key>
+          <Key>A</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Show" ID="8">
+      <SoloFrame Caption="Prisma" ID="8">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -3792,7 +3935,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="342" Width="762" Height="124"/>
+        <WindowState Visible="True" X="6" Y="342" Width="762" Height="78"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -3800,7 +3943,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="AUTO" ID="9" Icon="">
+        <Button Caption="Prisma Animacion" ID="9" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3809,12 +3952,43 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="261"/>
+          <Function ID="273"/>
+          <Action>Toggle</Action>
+          <Key>P</Key>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+      </SoloFrame>
+      <SoloFrame Caption="Show" ID="10">
+        <Appearance>
+          <FrameStyle>Sunken</FrameStyle>
+          <ForegroundColor>Default</ForegroundColor>
+          <BackgroundColor>Default</BackgroundColor>
+          <BackgroundImage>None</BackgroundImage>
+          <Font>Default</Font>
+        </Appearance>
+        <WindowState Visible="True" X="6" Y="426" Width="762" Height="124"/>
+        <AllowChildren>True</AllowChildren>
+        <AllowResize>True</AllowResize>
+        <ShowHeader>True</ShowHeader>
+        <ShowEnableButton>False</ShowEnableButton>
+        <Mixing>False</Mixing>
+        <Collapsed>False</Collapsed>
+        <Disabled>False</Disabled>
+        <Button Caption="AUTO" ID="11" Icon="">
+          <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="279"/>
           <Action>Toggle</Action>
           <Key>Q</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Flash 100%" ID="10" Icon="">
+        <Button Caption="Flash 100%" ID="12" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3828,7 +4002,7 @@
           <Key>Space</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Flash 50%" ID="11" Icon="">
+        <Button Caption="Flash 50%" ID="13" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3842,7 +4016,7 @@
           <Key>-</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Luces ON" ID="12" Icon="">
+        <Button Caption="Luces ON" ID="14" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3856,7 +4030,7 @@
           <Key>X</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Colores" ID="13" Icon="">
+        <Button Caption="Rueda Colores" ID="15" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3865,12 +4039,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="259"/>
+          <Function ID="277"/>
           <Action>Toggle</Action>
           <Key>W</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Mezcla" ID="14" Icon="">
+        <Button Caption="Rueda Mezcla" ID="16" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3879,12 +4053,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="260"/>
+          <Function ID="278"/>
           <Action>Toggle</Action>
           <Key>E</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Todo Blanco" ID="15" Icon="">
+        <Button Caption="Todo Blanco" ID="17" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3898,7 +4072,7 @@
           <Key>B</Key>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Todo Negro" ID="16" Icon="">
+        <Button Caption="Todo Negro" ID="18" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3913,7 +4087,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Colores BarrasLed" ID="17">
+      <SoloFrame Caption="Color Beam" ID="19">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -3921,7 +4095,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="472" Width="1266" Height="262"/>
+        <WindowState Visible="True" X="6" Y="556" Width="1266" Height="124"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -3929,7 +4103,276 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Amarillo / Azul BarrasLed" ID="18" Icon="">
+        <Button Caption="Color Beam - Blue" ID="20" Icon="">
+          <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="258"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Calid White" ID="21" Icon="">
+          <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="264"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Green" ID="22" Icon="">
+          <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="257"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Grey" ID="23" Icon="">
+          <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="266"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Ice" ID="24" Icon="">
+          <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="260"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Light Blue" ID="25" Icon="">
+          <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="263"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Light Pink" ID="26" Icon="">
+          <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="261"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Light White" ID="27" Icon="">
+          <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="262"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Light Yellow" ID="28" Icon="">
+          <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="267"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Orange" ID="29" Icon="">
+          <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="255"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Pink" ID="30" Icon="">
+          <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="259"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Rainbow effect fast to slow" ID="31" Icon="">
+          <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="268"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Rainbow effect reverse slow to fast" ID="32" Icon="">
+          <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="269"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Red" ID="33" Icon="">
+          <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="254"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - UV" ID="34" Icon="">
+          <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="265"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - White" ID="35" Icon="">
+          <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="253"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam - Yellow" ID="36" Icon="">
+          <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="256"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Beam Animacion" ID="37" Icon="">
+          <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="270"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+      </SoloFrame>
+      <SoloFrame Caption="Colores BarrasLed" ID="38">
+        <Appearance>
+          <FrameStyle>Sunken</FrameStyle>
+          <ForegroundColor>Default</ForegroundColor>
+          <BackgroundColor>Default</BackgroundColor>
+          <BackgroundImage>None</BackgroundImage>
+          <Font>Default</Font>
+        </Appearance>
+        <WindowState Visible="True" X="6" Y="686" Width="1266" Height="262"/>
+        <AllowChildren>True</AllowChildren>
+        <AllowResize>True</AllowResize>
+        <ShowHeader>True</ShowHeader>
+        <ShowEnableButton>False</ShowEnableButton>
+        <Mixing>False</Mixing>
+        <Collapsed>False</Collapsed>
+        <Disabled>False</Disabled>
+        <Button Caption="Amarillo / Azul BarrasLed" ID="39" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3943,7 +4386,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Blanco BarrasLed" ID="19" Icon="">
+        <Button Caption="Amarillo / Blanco BarrasLed" ID="40" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3957,7 +4400,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Magenta BarrasLed" ID="20" Icon="">
+        <Button Caption="Amarillo / Magenta BarrasLed" ID="41" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3971,7 +4414,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Rojo BarrasLed" ID="21" Icon="">
+        <Button Caption="Amarillo / Rojo BarrasLed" ID="42" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3985,7 +4428,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Verde BarrasLed" ID="22" Icon="">
+        <Button Caption="Amarillo / Verde BarrasLed" ID="43" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -3999,7 +4442,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo BarrasLed" ID="23" Icon="">
+        <Button Caption="Amarillo BarrasLed" ID="44" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4013,7 +4456,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Amarillo BarrasLed" ID="24" Icon="">
+        <Button Caption="Azul / Amarillo BarrasLed" ID="45" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4027,7 +4470,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Blanco BarrasLed" ID="25" Icon="">
+        <Button Caption="Azul / Blanco BarrasLed" ID="46" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4041,7 +4484,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Magenta BarrasLed" ID="26" Icon="">
+        <Button Caption="Azul / Magenta BarrasLed" ID="47" Icon="">
           <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4055,7 +4498,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Rojo BarrasLed" ID="27" Icon="">
+        <Button Caption="Azul / Rojo BarrasLed" ID="48" Icon="">
           <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4069,7 +4512,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Verde BarrasLed" ID="28" Icon="">
+        <Button Caption="Azul / Verde BarrasLed" ID="49" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4083,7 +4526,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul BarrasLed" ID="29" Icon="">
+        <Button Caption="Azul BarrasLed" ID="50" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4097,7 +4540,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Amarillo BarrasLed" ID="30" Icon="">
+        <Button Caption="Blanco / Amarillo BarrasLed" ID="51" Icon="">
           <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4111,7 +4554,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Azul BarrasLed" ID="31" Icon="">
+        <Button Caption="Blanco / Azul BarrasLed" ID="52" Icon="">
           <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4125,7 +4568,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Magenta BarrasLed" ID="32" Icon="">
+        <Button Caption="Blanco / Magenta BarrasLed" ID="53" Icon="">
           <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4139,7 +4582,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Rojo BarrasLed" ID="33" Icon="">
+        <Button Caption="Blanco / Rojo BarrasLed" ID="54" Icon="">
           <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4153,7 +4596,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Verde BarrasLed" ID="34" Icon="">
+        <Button Caption="Blanco / Verde BarrasLed" ID="55" Icon="">
           <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4167,7 +4610,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco BarrasLed" ID="35" Icon="">
+        <Button Caption="Blanco BarrasLed" ID="56" Icon="">
           <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4181,7 +4624,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cyan BarrasLed" ID="36" Icon="">
+        <Button Caption="Cyan BarrasLed" ID="57" Icon="">
           <WindowState Visible="True" X="1014" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4195,7 +4638,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Amarillo BarrasLed" ID="37" Icon="">
+        <Button Caption="Magenta / Amarillo BarrasLed" ID="58" Icon="">
           <WindowState Visible="True" X="1140" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4209,7 +4652,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Azul BarrasLed" ID="38" Icon="">
+        <Button Caption="Magenta / Azul BarrasLed" ID="59" Icon="">
           <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4223,7 +4666,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Blanco BarrasLed" ID="39" Icon="">
+        <Button Caption="Magenta / Blanco BarrasLed" ID="60" Icon="">
           <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4237,7 +4680,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Rojo BarrasLed" ID="40" Icon="">
+        <Button Caption="Magenta / Rojo BarrasLed" ID="61" Icon="">
           <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4251,7 +4694,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Verde BarrasLed" ID="41" Icon="">
+        <Button Caption="Magenta / Verde BarrasLed" ID="62" Icon="">
           <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4265,7 +4708,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta BarrasLed" ID="42" Icon="">
+        <Button Caption="Magenta BarrasLed" ID="63" Icon="">
           <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4279,7 +4722,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Naranja BarrasLed" ID="43" Icon="">
+        <Button Caption="Naranja BarrasLed" ID="64" Icon="">
           <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4293,7 +4736,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Amarillo BarrasLed" ID="44" Icon="">
+        <Button Caption="Rojo / Amarillo BarrasLed" ID="65" Icon="">
           <WindowState Visible="True" X="762" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4307,7 +4750,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Azul BarrasLed" ID="45" Icon="">
+        <Button Caption="Rojo / Azul BarrasLed" ID="66" Icon="">
           <WindowState Visible="True" X="888" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4321,7 +4764,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Blanco BarrasLed" ID="46" Icon="">
+        <Button Caption="Rojo / Blanco BarrasLed" ID="67" Icon="">
           <WindowState Visible="True" X="1014" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4335,7 +4778,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Magenta BarrasLed" ID="47" Icon="">
+        <Button Caption="Rojo / Magenta BarrasLed" ID="68" Icon="">
           <WindowState Visible="True" X="1140" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4349,7 +4792,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Verde BarrasLed" ID="48" Icon="">
+        <Button Caption="Rojo / Verde BarrasLed" ID="69" Icon="">
           <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4363,7 +4806,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo BarrasLed" ID="49" Icon="">
+        <Button Caption="Rojo BarrasLed" ID="70" Icon="">
           <WindowState Visible="True" X="132" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4377,7 +4820,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rosa BarrasLed" ID="50" Icon="">
+        <Button Caption="Rosa BarrasLed" ID="71" Icon="">
           <WindowState Visible="True" X="258" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4391,7 +4834,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Colores BarrasLed" ID="51" Icon="">
+        <Button Caption="Rueda Colores BarrasLed" ID="72" Icon="">
           <WindowState Visible="True" X="384" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4405,7 +4848,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Mezcla BarrasLed" ID="52" Icon="">
+        <Button Caption="Rueda Mezcla BarrasLed" ID="73" Icon="">
           <WindowState Visible="True" X="510" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4419,7 +4862,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="UltraVioleta BarrasLed" ID="53" Icon="">
+        <Button Caption="UltraVioleta BarrasLed" ID="74" Icon="">
           <WindowState Visible="True" X="636" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4433,7 +4876,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Amarillo BarrasLed" ID="54" Icon="">
+        <Button Caption="Verde / Amarillo BarrasLed" ID="75" Icon="">
           <WindowState Visible="True" X="762" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4447,7 +4890,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Azul BarrasLed" ID="55" Icon="">
+        <Button Caption="Verde / Azul BarrasLed" ID="76" Icon="">
           <WindowState Visible="True" X="888" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4461,7 +4904,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Blanco BarrasLed" ID="56" Icon="">
+        <Button Caption="Verde / Blanco BarrasLed" ID="77" Icon="">
           <WindowState Visible="True" X="1014" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4475,7 +4918,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Magenta BarrasLed" ID="57" Icon="">
+        <Button Caption="Verde / Magenta BarrasLed" ID="78" Icon="">
           <WindowState Visible="True" X="1140" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4489,7 +4932,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Rojo BarrasLed" ID="58" Icon="">
+        <Button Caption="Verde / Rojo BarrasLed" ID="79" Icon="">
           <WindowState Visible="True" X="6" Y="210" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4503,7 +4946,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde BarrasLed" ID="59" Icon="">
+        <Button Caption="Verde BarrasLed" ID="80" Icon="">
           <WindowState Visible="True" X="132" Y="210" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4518,7 +4961,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Colores Cabezas" ID="60">
+      <SoloFrame Caption="Colores Cabezas" ID="81">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -4526,7 +4969,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="740" Width="1266" Height="262"/>
+        <WindowState Visible="True" X="6" Y="954" Width="1266" Height="262"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -4534,7 +4977,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Amarillo / Azul Cabezas" ID="61" Icon="">
+        <Button Caption="Amarillo / Azul Cabezas" ID="82" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4548,7 +4991,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Blanco Cabezas" ID="62" Icon="">
+        <Button Caption="Amarillo / Blanco Cabezas" ID="83" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4562,7 +5005,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Magenta Cabezas" ID="63" Icon="">
+        <Button Caption="Amarillo / Magenta Cabezas" ID="84" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4576,7 +5019,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Rojo Cabezas" ID="64" Icon="">
+        <Button Caption="Amarillo / Rojo Cabezas" ID="85" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4590,7 +5033,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Verde Cabezas" ID="65" Icon="">
+        <Button Caption="Amarillo / Verde Cabezas" ID="86" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4604,7 +5047,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo Cabezas" ID="66" Icon="">
+        <Button Caption="Amarillo Cabezas" ID="87" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4618,7 +5061,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Amarillo Cabezas" ID="67" Icon="">
+        <Button Caption="Azul / Amarillo Cabezas" ID="88" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4632,7 +5075,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Blanco Cabezas" ID="68" Icon="">
+        <Button Caption="Azul / Blanco Cabezas" ID="89" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4646,7 +5089,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Magenta Cabezas" ID="69" Icon="">
+        <Button Caption="Azul / Magenta Cabezas" ID="90" Icon="">
           <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4660,7 +5103,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Rojo Cabezas" ID="70" Icon="">
+        <Button Caption="Azul / Rojo Cabezas" ID="91" Icon="">
           <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4674,7 +5117,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Verde Cabezas" ID="71" Icon="">
+        <Button Caption="Azul / Verde Cabezas" ID="92" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4688,7 +5131,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul Cabezas" ID="72" Icon="">
+        <Button Caption="Azul Cabezas" ID="93" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4702,7 +5145,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Amarillo Cabezas" ID="73" Icon="">
+        <Button Caption="Blanco / Amarillo Cabezas" ID="94" Icon="">
           <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4716,7 +5159,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Azul Cabezas" ID="74" Icon="">
+        <Button Caption="Blanco / Azul Cabezas" ID="95" Icon="">
           <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4730,7 +5173,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Magenta Cabezas" ID="75" Icon="">
+        <Button Caption="Blanco / Magenta Cabezas" ID="96" Icon="">
           <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4744,7 +5187,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Rojo Cabezas" ID="76" Icon="">
+        <Button Caption="Blanco / Rojo Cabezas" ID="97" Icon="">
           <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4758,7 +5201,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Verde Cabezas" ID="77" Icon="">
+        <Button Caption="Blanco / Verde Cabezas" ID="98" Icon="">
           <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4772,7 +5215,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco Cabezas" ID="78" Icon="">
+        <Button Caption="Blanco Cabezas" ID="99" Icon="">
           <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4786,7 +5229,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cyan Cabezas" ID="79" Icon="">
+        <Button Caption="Cyan Cabezas" ID="100" Icon="">
           <WindowState Visible="True" X="1014" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4800,7 +5243,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Amarillo Cabezas" ID="80" Icon="">
+        <Button Caption="Magenta / Amarillo Cabezas" ID="101" Icon="">
           <WindowState Visible="True" X="1140" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4814,7 +5257,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Azul Cabezas" ID="81" Icon="">
+        <Button Caption="Magenta / Azul Cabezas" ID="102" Icon="">
           <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4828,7 +5271,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Blanco Cabezas" ID="82" Icon="">
+        <Button Caption="Magenta / Blanco Cabezas" ID="103" Icon="">
           <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4842,7 +5285,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Rojo Cabezas" ID="83" Icon="">
+        <Button Caption="Magenta / Rojo Cabezas" ID="104" Icon="">
           <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4856,7 +5299,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Verde Cabezas" ID="84" Icon="">
+        <Button Caption="Magenta / Verde Cabezas" ID="105" Icon="">
           <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4870,7 +5313,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta Cabezas" ID="85" Icon="">
+        <Button Caption="Magenta Cabezas" ID="106" Icon="">
           <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4884,7 +5327,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Naranja Cabezas" ID="86" Icon="">
+        <Button Caption="Naranja Cabezas" ID="107" Icon="">
           <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4898,7 +5341,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Amarillo Cabezas" ID="87" Icon="">
+        <Button Caption="Rojo / Amarillo Cabezas" ID="108" Icon="">
           <WindowState Visible="True" X="762" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4912,7 +5355,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Azul Cabezas" ID="88" Icon="">
+        <Button Caption="Rojo / Azul Cabezas" ID="109" Icon="">
           <WindowState Visible="True" X="888" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4926,7 +5369,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Blanco Cabezas" ID="89" Icon="">
+        <Button Caption="Rojo / Blanco Cabezas" ID="110" Icon="">
           <WindowState Visible="True" X="1014" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4940,7 +5383,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Magenta Cabezas" ID="90" Icon="">
+        <Button Caption="Rojo / Magenta Cabezas" ID="111" Icon="">
           <WindowState Visible="True" X="1140" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4954,7 +5397,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Verde Cabezas" ID="91" Icon="">
+        <Button Caption="Rojo / Verde Cabezas" ID="112" Icon="">
           <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4968,7 +5411,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo Cabezas" ID="92" Icon="">
+        <Button Caption="Rojo Cabezas" ID="113" Icon="">
           <WindowState Visible="True" X="132" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4982,7 +5425,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rosa Cabezas" ID="93" Icon="">
+        <Button Caption="Rosa Cabezas" ID="114" Icon="">
           <WindowState Visible="True" X="258" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -4996,7 +5439,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Colores Cabezas" ID="94" Icon="">
+        <Button Caption="Rueda Colores Cabezas" ID="115" Icon="">
           <WindowState Visible="True" X="384" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5010,7 +5453,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Mezcla Cabezas" ID="95" Icon="">
+        <Button Caption="Rueda Mezcla Cabezas" ID="116" Icon="">
           <WindowState Visible="True" X="510" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5024,7 +5467,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="UltraVioleta Cabezas" ID="96" Icon="">
+        <Button Caption="UltraVioleta Cabezas" ID="117" Icon="">
           <WindowState Visible="True" X="636" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5038,7 +5481,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Amarillo Cabezas" ID="97" Icon="">
+        <Button Caption="Verde / Amarillo Cabezas" ID="118" Icon="">
           <WindowState Visible="True" X="762" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5052,7 +5495,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Azul Cabezas" ID="98" Icon="">
+        <Button Caption="Verde / Azul Cabezas" ID="119" Icon="">
           <WindowState Visible="True" X="888" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5066,7 +5509,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Blanco Cabezas" ID="99" Icon="">
+        <Button Caption="Verde / Blanco Cabezas" ID="120" Icon="">
           <WindowState Visible="True" X="1014" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5080,7 +5523,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Magenta Cabezas" ID="100" Icon="">
+        <Button Caption="Verde / Magenta Cabezas" ID="121" Icon="">
           <WindowState Visible="True" X="1140" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5094,7 +5537,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Rojo Cabezas" ID="101" Icon="">
+        <Button Caption="Verde / Rojo Cabezas" ID="122" Icon="">
           <WindowState Visible="True" X="6" Y="210" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5108,7 +5551,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde Cabezas" ID="102" Icon="">
+        <Button Caption="Verde Cabezas" ID="123" Icon="">
           <WindowState Visible="True" X="132" Y="210" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5123,7 +5566,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Colores PAR" ID="103">
+      <SoloFrame Caption="Colores PAR" ID="124">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -5131,7 +5574,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="1008" Width="1266" Height="262"/>
+        <WindowState Visible="True" X="6" Y="1222" Width="1266" Height="262"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -5139,7 +5582,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Amarillo / Azul PAR" ID="104" Icon="">
+        <Button Caption="Amarillo / Azul PAR" ID="125" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5153,7 +5596,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Blanco PAR" ID="105" Icon="">
+        <Button Caption="Amarillo / Blanco PAR" ID="126" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5167,7 +5610,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Magenta PAR" ID="106" Icon="">
+        <Button Caption="Amarillo / Magenta PAR" ID="127" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5181,7 +5624,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Rojo PAR" ID="107" Icon="">
+        <Button Caption="Amarillo / Rojo PAR" ID="128" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5195,7 +5638,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo / Verde PAR" ID="108" Icon="">
+        <Button Caption="Amarillo / Verde PAR" ID="129" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5209,7 +5652,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Amarillo PAR" ID="109" Icon="">
+        <Button Caption="Amarillo PAR" ID="130" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5223,7 +5666,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Amarillo PAR" ID="110" Icon="">
+        <Button Caption="Azul / Amarillo PAR" ID="131" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5237,7 +5680,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Blanco PAR" ID="111" Icon="">
+        <Button Caption="Azul / Blanco PAR" ID="132" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5251,7 +5694,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Magenta PAR" ID="112" Icon="">
+        <Button Caption="Azul / Magenta PAR" ID="133" Icon="">
           <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5265,7 +5708,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Rojo PAR" ID="113" Icon="">
+        <Button Caption="Azul / Rojo PAR" ID="134" Icon="">
           <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5279,7 +5722,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul / Verde PAR" ID="114" Icon="">
+        <Button Caption="Azul / Verde PAR" ID="135" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5293,7 +5736,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Azul PAR" ID="115" Icon="">
+        <Button Caption="Azul PAR" ID="136" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5307,7 +5750,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Amarillo PAR" ID="116" Icon="">
+        <Button Caption="Blanco / Amarillo PAR" ID="137" Icon="">
           <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5321,7 +5764,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Azul PAR" ID="117" Icon="">
+        <Button Caption="Blanco / Azul PAR" ID="138" Icon="">
           <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5335,7 +5778,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Magenta PAR" ID="118" Icon="">
+        <Button Caption="Blanco / Magenta PAR" ID="139" Icon="">
           <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5349,7 +5792,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Rojo PAR" ID="119" Icon="">
+        <Button Caption="Blanco / Rojo PAR" ID="140" Icon="">
           <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5363,7 +5806,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco / Verde PAR" ID="120" Icon="">
+        <Button Caption="Blanco / Verde PAR" ID="141" Icon="">
           <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5377,7 +5820,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Blanco PAR" ID="121" Icon="">
+        <Button Caption="Blanco PAR" ID="142" Icon="">
           <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5391,7 +5834,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cyan PAR" ID="122" Icon="">
+        <Button Caption="Cyan PAR" ID="143" Icon="">
           <WindowState Visible="True" X="1014" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5405,7 +5848,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Amarillo PAR" ID="123" Icon="">
+        <Button Caption="Magenta / Amarillo PAR" ID="144" Icon="">
           <WindowState Visible="True" X="1140" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5419,7 +5862,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Azul PAR" ID="124" Icon="">
+        <Button Caption="Magenta / Azul PAR" ID="145" Icon="">
           <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5433,7 +5876,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Blanco PAR" ID="125" Icon="">
+        <Button Caption="Magenta / Blanco PAR" ID="146" Icon="">
           <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5447,7 +5890,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Rojo PAR" ID="126" Icon="">
+        <Button Caption="Magenta / Rojo PAR" ID="147" Icon="">
           <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5461,7 +5904,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta / Verde PAR" ID="127" Icon="">
+        <Button Caption="Magenta / Verde PAR" ID="148" Icon="">
           <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5475,7 +5918,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Magenta PAR" ID="128" Icon="">
+        <Button Caption="Magenta PAR" ID="149" Icon="">
           <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5489,7 +5932,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Naranja PAR" ID="129" Icon="">
+        <Button Caption="Naranja PAR" ID="150" Icon="">
           <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5503,7 +5946,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Amarillo PAR" ID="130" Icon="">
+        <Button Caption="Rojo / Amarillo PAR" ID="151" Icon="">
           <WindowState Visible="True" X="762" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5517,7 +5960,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Azul PAR" ID="131" Icon="">
+        <Button Caption="Rojo / Azul PAR" ID="152" Icon="">
           <WindowState Visible="True" X="888" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5531,7 +5974,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Blanco PAR" ID="132" Icon="">
+        <Button Caption="Rojo / Blanco PAR" ID="153" Icon="">
           <WindowState Visible="True" X="1014" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5545,7 +5988,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Magenta PAR" ID="133" Icon="">
+        <Button Caption="Rojo / Magenta PAR" ID="154" Icon="">
           <WindowState Visible="True" X="1140" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5559,7 +6002,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo / Verde PAR" ID="134" Icon="">
+        <Button Caption="Rojo / Verde PAR" ID="155" Icon="">
           <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5573,7 +6016,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rojo PAR" ID="135" Icon="">
+        <Button Caption="Rojo PAR" ID="156" Icon="">
           <WindowState Visible="True" X="132" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5587,7 +6030,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rosa PAR" ID="136" Icon="">
+        <Button Caption="Rosa PAR" ID="157" Icon="">
           <WindowState Visible="True" X="258" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5601,7 +6044,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Colores PAR" ID="137" Icon="">
+        <Button Caption="Rueda Colores PAR" ID="158" Icon="">
           <WindowState Visible="True" X="384" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5615,7 +6058,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Mezcla PAR" ID="138" Icon="">
+        <Button Caption="Rueda Mezcla PAR" ID="159" Icon="">
           <WindowState Visible="True" X="510" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5629,7 +6072,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="UltraVioleta PAR" ID="139" Icon="">
+        <Button Caption="UltraVioleta PAR" ID="160" Icon="">
           <WindowState Visible="True" X="636" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5643,7 +6086,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Amarillo PAR" ID="140" Icon="">
+        <Button Caption="Verde / Amarillo PAR" ID="161" Icon="">
           <WindowState Visible="True" X="762" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5657,7 +6100,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Azul PAR" ID="141" Icon="">
+        <Button Caption="Verde / Azul PAR" ID="162" Icon="">
           <WindowState Visible="True" X="888" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5671,7 +6114,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Blanco PAR" ID="142" Icon="">
+        <Button Caption="Verde / Blanco PAR" ID="163" Icon="">
           <WindowState Visible="True" X="1014" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5685,7 +6128,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Magenta PAR" ID="143" Icon="">
+        <Button Caption="Verde / Magenta PAR" ID="164" Icon="">
           <WindowState Visible="True" X="1140" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5699,7 +6142,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde / Rojo PAR" ID="144" Icon="">
+        <Button Caption="Verde / Rojo PAR" ID="165" Icon="">
           <WindowState Visible="True" X="6" Y="210" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5713,7 +6156,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Verde PAR" ID="145" Icon="">
+        <Button Caption="Verde PAR" ID="166" Icon="">
           <WindowState Visible="True" X="132" Y="210" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5728,7 +6171,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Gobos" ID="146">
+      <SoloFrame Caption="Gobos" ID="167">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -5736,7 +6179,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="1276" Width="1266" Height="170"/>
+        <WindowState Visible="True" X="6" Y="1490" Width="1266" Height="170"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -5744,7 +6187,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Gobo - Gobo 1" ID="147" Icon="">
+        <Button Caption="Gobo - Gobo 1" ID="168" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5758,7 +6201,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 10" ID="148" Icon="">
+        <Button Caption="Gobo - Gobo 10" ID="169" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5772,7 +6215,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 11" ID="149" Icon="">
+        <Button Caption="Gobo - Gobo 11" ID="170" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5786,7 +6229,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 12" ID="150" Icon="">
+        <Button Caption="Gobo - Gobo 12" ID="171" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5800,7 +6243,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 13" ID="151" Icon="">
+        <Button Caption="Gobo - Gobo 13" ID="172" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5814,7 +6257,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 14" ID="152" Icon="">
+        <Button Caption="Gobo - Gobo 14" ID="173" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5828,7 +6271,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 15" ID="153" Icon="">
+        <Button Caption="Gobo - Gobo 15" ID="174" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5842,7 +6285,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 16" ID="154" Icon="">
+        <Button Caption="Gobo - Gobo 16" ID="175" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5856,7 +6299,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 17" ID="155" Icon="">
+        <Button Caption="Gobo - Gobo 17" ID="176" Icon="">
           <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5870,7 +6313,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 2" ID="156" Icon="">
+        <Button Caption="Gobo - Gobo 2" ID="177" Icon="">
           <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5884,7 +6327,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 3" ID="157" Icon="">
+        <Button Caption="Gobo - Gobo 3" ID="178" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5898,7 +6341,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 4" ID="158" Icon="">
+        <Button Caption="Gobo - Gobo 4" ID="179" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5912,7 +6355,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 5" ID="159" Icon="">
+        <Button Caption="Gobo - Gobo 5" ID="180" Icon="">
           <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5926,7 +6369,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 6" ID="160" Icon="">
+        <Button Caption="Gobo - Gobo 6" ID="181" Icon="">
           <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5940,7 +6383,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 7" ID="161" Icon="">
+        <Button Caption="Gobo - Gobo 7" ID="182" Icon="">
           <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5954,7 +6397,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 8" ID="162" Icon="">
+        <Button Caption="Gobo - Gobo 8" ID="183" Icon="">
           <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5968,7 +6411,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Gobo 9" ID="163" Icon="">
+        <Button Caption="Gobo - Gobo 9" ID="184" Icon="">
           <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5982,7 +6425,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Rainbow effect fast to slow" ID="164" Icon="">
+        <Button Caption="Gobo - Rainbow effect fast to slow" ID="185" Icon="">
           <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -5996,7 +6439,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - Rainbow effect reverse slow to fast" ID="165" Icon="">
+        <Button Caption="Gobo - Rainbow effect reverse slow to fast" ID="186" Icon="">
           <WindowState Visible="True" X="1014" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6010,7 +6453,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo - White Light" ID="166" Icon="">
+        <Button Caption="Gobo - White Light" ID="187" Icon="">
           <WindowState Visible="True" X="1140" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6024,7 +6467,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Gobo Animacion" ID="167" Icon="">
+        <Button Caption="Gobo Animacion" ID="188" Icon="">
           <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6039,7 +6482,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Humo" ID="168">
+      <SoloFrame Caption="Humo" ID="189">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -6047,7 +6490,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="1452" Width="1266" Height="78"/>
+        <WindowState Visible="True" X="6" Y="1666" Width="1266" Height="78"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -6055,7 +6498,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Humo Auto" ID="169" Icon="">
+        <Button Caption="Humo Auto" ID="190" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6064,12 +6507,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="258"/>
+          <Function ID="276"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Humo OFF" ID="170" Icon="">
+        <Button Caption="Humo OFF" ID="191" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6078,12 +6521,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="257"/>
+          <Function ID="275"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Humo ON" ID="171" Icon="">
+        <Button Caption="Humo ON" ID="192" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6092,13 +6535,13 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="256"/>
+          <Function ID="274"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Matrices BarrasLed" ID="172">
+      <SoloFrame Caption="Matrices BarrasLed" ID="193">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -6106,7 +6549,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="1536" Width="1266" Height="216"/>
+        <WindowState Visible="True" X="6" Y="1750" Width="1266" Height="216"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -6114,7 +6557,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="BarrasLed - Even/Odd Ambar" ID="173" Icon="">
+        <Button Caption="BarrasLed - Even/Odd Ambar" ID="194" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6128,7 +6571,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Even/Odd Azul" ID="174" Icon="">
+        <Button Caption="BarrasLed - Even/Odd Azul" ID="195" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6142,7 +6585,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Even/Odd Blanco" ID="175" Icon="">
+        <Button Caption="BarrasLed - Even/Odd Blanco" ID="196" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6156,7 +6599,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Even/Odd Magenta" ID="176" Icon="">
+        <Button Caption="BarrasLed - Even/Odd Magenta" ID="197" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6170,7 +6613,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Even/Odd Rojo" ID="177" Icon="">
+        <Button Caption="BarrasLed - Even/Odd Rojo" ID="198" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6184,7 +6627,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Even/Odd Verde" ID="178" Icon="">
+        <Button Caption="BarrasLed - Even/Odd Verde" ID="199" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6198,7 +6641,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Fill Ambar" ID="179" Icon="">
+        <Button Caption="BarrasLed - Fill Ambar" ID="200" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6212,7 +6655,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Fill Azul" ID="180" Icon="">
+        <Button Caption="BarrasLed - Fill Azul" ID="201" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6226,7 +6669,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Fill Blanco" ID="181" Icon="">
+        <Button Caption="BarrasLed - Fill Blanco" ID="202" Icon="">
           <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6240,7 +6683,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Fill Magenta" ID="182" Icon="">
+        <Button Caption="BarrasLed - Fill Magenta" ID="203" Icon="">
           <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6254,7 +6697,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Fill Rojo" ID="183" Icon="">
+        <Button Caption="BarrasLed - Fill Rojo" ID="204" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6268,7 +6711,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Fill Verde" ID="184" Icon="">
+        <Button Caption="BarrasLed - Fill Verde" ID="205" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6282,7 +6725,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Solid Ambar" ID="185" Icon="">
+        <Button Caption="BarrasLed - Solid Ambar" ID="206" Icon="">
           <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6296,7 +6739,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Solid Azul" ID="186" Icon="">
+        <Button Caption="BarrasLed - Solid Azul" ID="207" Icon="">
           <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6310,7 +6753,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Solid Blanco" ID="187" Icon="">
+        <Button Caption="BarrasLed - Solid Blanco" ID="208" Icon="">
           <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6324,7 +6767,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Solid Magenta" ID="188" Icon="">
+        <Button Caption="BarrasLed - Solid Magenta" ID="209" Icon="">
           <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6338,7 +6781,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Solid Rojo" ID="189" Icon="">
+        <Button Caption="BarrasLed - Solid Rojo" ID="210" Icon="">
           <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6352,7 +6795,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Solid Verde" ID="190" Icon="">
+        <Button Caption="BarrasLed - Solid Verde" ID="211" Icon="">
           <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6366,7 +6809,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Strobe Ambar" ID="191" Icon="">
+        <Button Caption="BarrasLed - Strobe Ambar" ID="212" Icon="">
           <WindowState Visible="True" X="1014" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6380,7 +6823,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Strobe Azul" ID="192" Icon="">
+        <Button Caption="BarrasLed - Strobe Azul" ID="213" Icon="">
           <WindowState Visible="True" X="1140" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6394,7 +6837,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Strobe Blanco" ID="193" Icon="">
+        <Button Caption="BarrasLed - Strobe Blanco" ID="214" Icon="">
           <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6408,7 +6851,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Strobe Magenta" ID="194" Icon="">
+        <Button Caption="BarrasLed - Strobe Magenta" ID="215" Icon="">
           <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6422,7 +6865,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Strobe Rojo" ID="195" Icon="">
+        <Button Caption="BarrasLed - Strobe Rojo" ID="216" Icon="">
           <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6436,7 +6879,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Strobe Verde" ID="196" Icon="">
+        <Button Caption="BarrasLed - Strobe Verde" ID="217" Icon="">
           <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6450,7 +6893,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Waves Ambar" ID="197" Icon="">
+        <Button Caption="BarrasLed - Waves Ambar" ID="218" Icon="">
           <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6464,7 +6907,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Waves Azul" ID="198" Icon="">
+        <Button Caption="BarrasLed - Waves Azul" ID="219" Icon="">
           <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6478,7 +6921,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Waves Blanco" ID="199" Icon="">
+        <Button Caption="BarrasLed - Waves Blanco" ID="220" Icon="">
           <WindowState Visible="True" X="762" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6492,7 +6935,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Waves Magenta" ID="200" Icon="">
+        <Button Caption="BarrasLed - Waves Magenta" ID="221" Icon="">
           <WindowState Visible="True" X="888" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6506,7 +6949,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Waves Rojo" ID="201" Icon="">
+        <Button Caption="BarrasLed - Waves Rojo" ID="222" Icon="">
           <WindowState Visible="True" X="1014" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6520,7 +6963,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="BarrasLed - Waves Verde" ID="202" Icon="">
+        <Button Caption="BarrasLed - Waves Verde" ID="223" Icon="">
           <WindowState Visible="True" X="1140" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6534,7 +6977,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Ciclo Matrices BarrasLed" ID="203" Icon="">
+        <Button Caption="Ciclo Matrices BarrasLed" ID="224" Icon="">
           <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6549,7 +6992,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Matrices Cabezas" ID="204">
+      <SoloFrame Caption="Matrices Cabezas" ID="225">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -6557,7 +7000,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="1758" Width="1266" Height="216"/>
+        <WindowState Visible="True" X="6" Y="1972" Width="1266" Height="216"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -6565,7 +7008,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Cabezas - Even/Odd Ambar" ID="205" Icon="">
+        <Button Caption="Cabezas - Even/Odd Ambar" ID="226" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6579,7 +7022,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Even/Odd Azul" ID="206" Icon="">
+        <Button Caption="Cabezas - Even/Odd Azul" ID="227" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6593,7 +7036,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Even/Odd Blanco" ID="207" Icon="">
+        <Button Caption="Cabezas - Even/Odd Blanco" ID="228" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6607,7 +7050,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Even/Odd Magenta" ID="208" Icon="">
+        <Button Caption="Cabezas - Even/Odd Magenta" ID="229" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6621,7 +7064,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Even/Odd Rojo" ID="209" Icon="">
+        <Button Caption="Cabezas - Even/Odd Rojo" ID="230" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6635,7 +7078,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Even/Odd Verde" ID="210" Icon="">
+        <Button Caption="Cabezas - Even/Odd Verde" ID="231" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6649,7 +7092,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Fill Ambar" ID="211" Icon="">
+        <Button Caption="Cabezas - Fill Ambar" ID="232" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6663,7 +7106,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Fill Azul" ID="212" Icon="">
+        <Button Caption="Cabezas - Fill Azul" ID="233" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6677,7 +7120,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Fill Blanco" ID="213" Icon="">
+        <Button Caption="Cabezas - Fill Blanco" ID="234" Icon="">
           <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6691,7 +7134,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Fill Magenta" ID="214" Icon="">
+        <Button Caption="Cabezas - Fill Magenta" ID="235" Icon="">
           <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6705,7 +7148,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Fill Rojo" ID="215" Icon="">
+        <Button Caption="Cabezas - Fill Rojo" ID="236" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6719,7 +7162,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Fill Verde" ID="216" Icon="">
+        <Button Caption="Cabezas - Fill Verde" ID="237" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6733,7 +7176,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Solid Ambar" ID="217" Icon="">
+        <Button Caption="Cabezas - Solid Ambar" ID="238" Icon="">
           <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6747,7 +7190,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Solid Azul" ID="218" Icon="">
+        <Button Caption="Cabezas - Solid Azul" ID="239" Icon="">
           <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6761,7 +7204,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Solid Blanco" ID="219" Icon="">
+        <Button Caption="Cabezas - Solid Blanco" ID="240" Icon="">
           <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6775,7 +7218,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Solid Magenta" ID="220" Icon="">
+        <Button Caption="Cabezas - Solid Magenta" ID="241" Icon="">
           <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6789,7 +7232,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Solid Rojo" ID="221" Icon="">
+        <Button Caption="Cabezas - Solid Rojo" ID="242" Icon="">
           <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6803,7 +7246,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Solid Verde" ID="222" Icon="">
+        <Button Caption="Cabezas - Solid Verde" ID="243" Icon="">
           <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6817,7 +7260,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Strobe Ambar" ID="223" Icon="">
+        <Button Caption="Cabezas - Strobe Ambar" ID="244" Icon="">
           <WindowState Visible="True" X="1014" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6831,7 +7274,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Strobe Azul" ID="224" Icon="">
+        <Button Caption="Cabezas - Strobe Azul" ID="245" Icon="">
           <WindowState Visible="True" X="1140" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6845,7 +7288,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Strobe Blanco" ID="225" Icon="">
+        <Button Caption="Cabezas - Strobe Blanco" ID="246" Icon="">
           <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6859,7 +7302,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Strobe Magenta" ID="226" Icon="">
+        <Button Caption="Cabezas - Strobe Magenta" ID="247" Icon="">
           <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6873,7 +7316,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Strobe Rojo" ID="227" Icon="">
+        <Button Caption="Cabezas - Strobe Rojo" ID="248" Icon="">
           <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6887,7 +7330,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Strobe Verde" ID="228" Icon="">
+        <Button Caption="Cabezas - Strobe Verde" ID="249" Icon="">
           <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6901,7 +7344,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Waves Ambar" ID="229" Icon="">
+        <Button Caption="Cabezas - Waves Ambar" ID="250" Icon="">
           <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6915,7 +7358,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Waves Azul" ID="230" Icon="">
+        <Button Caption="Cabezas - Waves Azul" ID="251" Icon="">
           <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6929,7 +7372,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Waves Blanco" ID="231" Icon="">
+        <Button Caption="Cabezas - Waves Blanco" ID="252" Icon="">
           <WindowState Visible="True" X="762" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6943,7 +7386,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Waves Magenta" ID="232" Icon="">
+        <Button Caption="Cabezas - Waves Magenta" ID="253" Icon="">
           <WindowState Visible="True" X="888" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6957,7 +7400,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Waves Rojo" ID="233" Icon="">
+        <Button Caption="Cabezas - Waves Rojo" ID="254" Icon="">
           <WindowState Visible="True" X="1014" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6971,7 +7414,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Cabezas - Waves Verde" ID="234" Icon="">
+        <Button Caption="Cabezas - Waves Verde" ID="255" Icon="">
           <WindowState Visible="True" X="1140" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -6985,7 +7428,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Ciclo Matrices Cabezas" ID="235" Icon="">
+        <Button Caption="Ciclo Matrices Cabezas" ID="256" Icon="">
           <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7000,7 +7443,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Matrices PAR" ID="236">
+      <SoloFrame Caption="Matrices PAR" ID="257">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -7008,7 +7451,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="1980" Width="1266" Height="216"/>
+        <WindowState Visible="True" X="6" Y="2194" Width="1266" Height="216"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -7016,7 +7459,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Ciclo Matrices PAR" ID="237" Icon="">
+        <Button Caption="Ciclo Matrices PAR" ID="258" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7030,7 +7473,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Even/Odd Ambar" ID="238" Icon="">
+        <Button Caption="PAR - Even/Odd Ambar" ID="259" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7044,7 +7487,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Even/Odd Azul" ID="239" Icon="">
+        <Button Caption="PAR - Even/Odd Azul" ID="260" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7058,7 +7501,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Even/Odd Blanco" ID="240" Icon="">
+        <Button Caption="PAR - Even/Odd Blanco" ID="261" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7072,7 +7515,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Even/Odd Magenta" ID="241" Icon="">
+        <Button Caption="PAR - Even/Odd Magenta" ID="262" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7086,7 +7529,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Even/Odd Rojo" ID="242" Icon="">
+        <Button Caption="PAR - Even/Odd Rojo" ID="263" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7100,7 +7543,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Even/Odd Verde" ID="243" Icon="">
+        <Button Caption="PAR - Even/Odd Verde" ID="264" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7114,7 +7557,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Fill Ambar" ID="244" Icon="">
+        <Button Caption="PAR - Fill Ambar" ID="265" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7128,7 +7571,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Fill Azul" ID="245" Icon="">
+        <Button Caption="PAR - Fill Azul" ID="266" Icon="">
           <WindowState Visible="True" X="1014" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7142,7 +7585,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Fill Blanco" ID="246" Icon="">
+        <Button Caption="PAR - Fill Blanco" ID="267" Icon="">
           <WindowState Visible="True" X="1140" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7156,7 +7599,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Fill Magenta" ID="247" Icon="">
+        <Button Caption="PAR - Fill Magenta" ID="268" Icon="">
           <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7170,7 +7613,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Fill Rojo" ID="248" Icon="">
+        <Button Caption="PAR - Fill Rojo" ID="269" Icon="">
           <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7184,7 +7627,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Fill Verde" ID="249" Icon="">
+        <Button Caption="PAR - Fill Verde" ID="270" Icon="">
           <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7198,7 +7641,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Solid Ambar" ID="250" Icon="">
+        <Button Caption="PAR - Solid Ambar" ID="271" Icon="">
           <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7212,7 +7655,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Solid Azul" ID="251" Icon="">
+        <Button Caption="PAR - Solid Azul" ID="272" Icon="">
           <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7226,7 +7669,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Solid Blanco" ID="252" Icon="">
+        <Button Caption="PAR - Solid Blanco" ID="273" Icon="">
           <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7240,7 +7683,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Solid Magenta" ID="253" Icon="">
+        <Button Caption="PAR - Solid Magenta" ID="274" Icon="">
           <WindowState Visible="True" X="762" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7254,7 +7697,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Solid Rojo" ID="254" Icon="">
+        <Button Caption="PAR - Solid Rojo" ID="275" Icon="">
           <WindowState Visible="True" X="888" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7268,7 +7711,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Solid Verde" ID="255" Icon="">
+        <Button Caption="PAR - Solid Verde" ID="276" Icon="">
           <WindowState Visible="True" X="1014" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7282,7 +7725,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Strobe Ambar" ID="256" Icon="">
+        <Button Caption="PAR - Strobe Ambar" ID="277" Icon="">
           <WindowState Visible="True" X="1140" Y="72" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7296,7 +7739,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Strobe Azul" ID="257" Icon="">
+        <Button Caption="PAR - Strobe Azul" ID="278" Icon="">
           <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7310,7 +7753,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Strobe Blanco" ID="258" Icon="">
+        <Button Caption="PAR - Strobe Blanco" ID="279" Icon="">
           <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7324,7 +7767,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Strobe Magenta" ID="259" Icon="">
+        <Button Caption="PAR - Strobe Magenta" ID="280" Icon="">
           <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7338,7 +7781,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Strobe Rojo" ID="260" Icon="">
+        <Button Caption="PAR - Strobe Rojo" ID="281" Icon="">
           <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7352,7 +7795,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Strobe Verde" ID="261" Icon="">
+        <Button Caption="PAR - Strobe Verde" ID="282" Icon="">
           <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7366,7 +7809,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Waves Ambar" ID="262" Icon="">
+        <Button Caption="PAR - Waves Ambar" ID="283" Icon="">
           <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7380,7 +7823,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Waves Azul" ID="263" Icon="">
+        <Button Caption="PAR - Waves Azul" ID="284" Icon="">
           <WindowState Visible="True" X="762" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7394,7 +7837,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Waves Blanco" ID="264" Icon="">
+        <Button Caption="PAR - Waves Blanco" ID="285" Icon="">
           <WindowState Visible="True" X="888" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7408,7 +7851,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Waves Magenta" ID="265" Icon="">
+        <Button Caption="PAR - Waves Magenta" ID="286" Icon="">
           <WindowState Visible="True" X="1014" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7422,7 +7865,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Waves Rojo" ID="266" Icon="">
+        <Button Caption="PAR - Waves Rojo" ID="287" Icon="">
           <WindowState Visible="True" X="1140" Y="118" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7436,7 +7879,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="PAR - Waves Verde" ID="267" Icon="">
+        <Button Caption="PAR - Waves Verde" ID="288" Icon="">
           <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7451,7 +7894,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Movimiento" ID="268">
+      <SoloFrame Caption="Movimiento" ID="289">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -7459,7 +7902,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="2202" Width="1266" Height="78"/>
+        <WindowState Visible="True" X="6" Y="2416" Width="1266" Height="78"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -7467,7 +7910,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Movimiento Circulo" ID="269" Icon="">
+        <Button Caption="Movimiento Circulo" ID="290" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7481,7 +7924,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Movimiento Cuadrado" ID="270" Icon="">
+        <Button Caption="Movimiento Cuadrado" ID="291" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7495,7 +7938,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Movimiento Diamante" ID="271" Icon="">
+        <Button Caption="Movimiento Diamante" ID="292" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7509,7 +7952,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Movimiento Hoja" ID="272" Icon="">
+        <Button Caption="Movimiento Hoja" ID="293" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7523,7 +7966,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Movimiento Linea" ID="273" Icon="">
+        <Button Caption="Movimiento Linea" ID="294" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7537,7 +7980,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Movimiento Lissajous" ID="274" Icon="">
+        <Button Caption="Movimiento Lissajous" ID="295" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7551,7 +7994,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Movimiento Ocho" ID="275" Icon="">
+        <Button Caption="Movimiento Ocho" ID="296" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7565,7 +8008,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Movimientos Cabezas" ID="276" Icon="">
+        <Button Caption="Movimientos Cabezas" ID="297" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7580,7 +8023,7 @@
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Prisma" ID="277">
+      <SoloFrame Caption="Prisma" ID="298">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -7588,7 +8031,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="2286" Width="1266" Height="78"/>
+        <WindowState Visible="True" X="6" Y="2500" Width="1266" Height="78"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -7596,7 +8039,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="Prisma - Insert Prism" ID="278" Icon="">
+        <Button Caption="Prisma - Insert Prism" ID="299" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7605,12 +8048,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="254"/>
+          <Function ID="272"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Prisma - None" ID="279" Icon="">
+        <Button Caption="Prisma - None" ID="300" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7619,12 +8062,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="253"/>
+          <Function ID="271"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Prisma Animacion" ID="280" Icon="">
+        <Button Caption="Prisma Animacion" ID="301" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7633,13 +8076,13 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="255"/>
+          <Function ID="273"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
       </SoloFrame>
-      <SoloFrame Caption="Show" ID="281">
+      <SoloFrame Caption="Show" ID="302">
         <Appearance>
           <FrameStyle>Sunken</FrameStyle>
           <ForegroundColor>Default</ForegroundColor>
@@ -7647,7 +8090,7 @@
           <BackgroundImage>None</BackgroundImage>
           <Font>Default</Font>
         </Appearance>
-        <WindowState Visible="True" X="6" Y="2370" Width="1266" Height="78"/>
+        <WindowState Visible="True" X="6" Y="2584" Width="1266" Height="78"/>
         <AllowChildren>True</AllowChildren>
         <AllowResize>True</AllowResize>
         <ShowHeader>True</ShowHeader>
@@ -7655,7 +8098,7 @@
         <Mixing>False</Mixing>
         <Collapsed>False</Collapsed>
         <Disabled>False</Disabled>
-        <Button Caption="AUTO" ID="282" Icon="">
+        <Button Caption="AUTO" ID="303" Icon="">
           <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7664,12 +8107,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="261"/>
+          <Function ID="279"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Flash 100%" ID="283" Icon="">
+        <Button Caption="Flash 100%" ID="304" Icon="">
           <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7683,7 +8126,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Flash 50%" ID="284" Icon="">
+        <Button Caption="Flash 50%" ID="305" Icon="">
           <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7697,7 +8140,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Luces ON" ID="285" Icon="">
+        <Button Caption="Luces ON" ID="306" Icon="">
           <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7711,7 +8154,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Colores" ID="286" Icon="">
+        <Button Caption="Rueda Colores" ID="307" Icon="">
           <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7720,12 +8163,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="259"/>
+          <Function ID="277"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Rueda Mezcla" ID="287" Icon="">
+        <Button Caption="Rueda Mezcla" ID="308" Icon="">
           <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7734,12 +8177,12 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="260"/>
+          <Function ID="278"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Todo Blanco" ID="288" Icon="">
+        <Button Caption="Todo Blanco" ID="309" Icon="">
           <WindowState Visible="True" X="762" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7753,7 +8196,7 @@
           <Key/>
           <Intensity Adjust="False">100</Intensity>
         </Button>
-        <Button Caption="Todo Negro" ID="289" Icon="">
+        <Button Caption="Todo Negro" ID="310" Icon="">
           <WindowState Visible="True" X="888" Y="26" Width="120" Height="40"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -7770,7 +8213,7 @@
       </SoloFrame>
     </Frame>
     <Properties>
-      <Size Width="1440" Height="2454"/>
+      <Size Width="1440" Height="2668"/>
       <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
     </Properties>
   </VirtualConsole>
