@@ -1,0 +1,3815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+  <Creator>
+    <Name>Q Light Controller Plus</Name>
+    <Version>4.13.1</Version>
+    <Author>Oficina</Author>
+  </Creator>
+  <Engine>
+    <InputOutputMap>
+      <BeatGenerator BeatType="Disabled" BPM="0"/>
+      <Universe Name="Universe 1" ID="0">
+        <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A50285BI)" Line="0">
+          <PluginParameters UniverseChannels="300"/>
+        </Output>
+      </Universe>
+    </InputOutputMap>
+    <Fixture>
+      <Manufacturer>Pro-Lights</Manufacturer>
+      <Model>CromoWash100</Model>
+      <Mode>Advanced</Mode>
+      <ID>0</ID>
+      <Name>CromoWash100 #1</Name>
+      <Universe>0</Universe>
+      <Address>0</Address>
+      <Channels>12</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Pro-Lights</Manufacturer>
+      <Model>CromoWash100</Model>
+      <Mode>Advanced</Mode>
+      <ID>1</ID>
+      <Name>CromoWash100 #2</Name>
+      <Universe>0</Universe>
+      <Address>12</Address>
+      <Channels>12</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Stairville</Manufacturer>
+      <Model>LED Bar 240/8 RGB</Model>
+      <Mode>24-channel</Mode>
+      <ID>2</ID>
+      <Name>LED Bar 240/8 RGB #1</Name>
+      <Universe>0</Universe>
+      <Address>24</Address>
+      <Channels>24</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Stairville</Manufacturer>
+      <Model>LED Bar 240/8 RGB</Model>
+      <Mode>24-channel</Mode>
+      <ID>3</ID>
+      <Name>LED Bar 240/8 RGB #2</Name>
+      <Universe>0</Universe>
+      <Address>48</Address>
+      <Channels>24</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Stairville</Manufacturer>
+      <Model>CLB2.4 Compact LED PAR System</Model>
+      <Mode>14 Channel</Mode>
+      <ID>4</ID>
+      <Name>CLB2.4 Compact LED PAR System #1</Name>
+      <Universe>0</Universe>
+      <Address>72</Address>
+      <Channels>14</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Stairville</Manufacturer>
+      <Model>CLB2.4 Compact LED PAR System</Model>
+      <Mode>14 Channel</Mode>
+      <ID>5</ID>
+      <Name>CLB2.4 Compact LED PAR System #2</Name>
+      <Universe>0</Universe>
+      <Address>86</Address>
+      <Channels>14</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Vortex</Manufacturer>
+      <Model>PC-64 LED S</Model>
+      <Mode>Default</Mode>
+      <ID>6</ID>
+      <Name>PC-64 LED S #1</Name>
+      <Universe>0</Universe>
+      <Address>100</Address>
+      <Channels>5</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Vortex</Manufacturer>
+      <Model>PC-64 LED S</Model>
+      <Mode>Default</Mode>
+      <ID>7</ID>
+      <Name>PC-64 LED S #2</Name>
+      <Universe>0</Universe>
+      <Address>105</Address>
+      <Channels>5</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Vortex</Manufacturer>
+      <Model>PC-64 LED S</Model>
+      <Mode>Default</Mode>
+      <ID>8</ID>
+      <Name>PC-64 LED S #3</Name>
+      <Universe>0</Universe>
+      <Address>110</Address>
+      <Channels>5</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Vortex</Manufacturer>
+      <Model>PC-64 LED S</Model>
+      <Mode>Default</Mode>
+      <ID>9</ID>
+      <Name>PC-64 LED S #4</Name>
+      <Universe>0</Universe>
+      <Address>115</Address>
+      <Channels>5</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Vortex</Manufacturer>
+      <Model>PC-64 LED S</Model>
+      <Mode>Default</Mode>
+      <ID>10</ID>
+      <Name>PC-64 LED S #5</Name>
+      <Universe>0</Universe>
+      <Address>120</Address>
+      <Channels>5</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Vortex</Manufacturer>
+      <Model>PC-64 LED S</Model>
+      <Mode>Default</Mode>
+      <ID>11</ID>
+      <Name>PC-64 LED S #6</Name>
+      <Universe>0</Universe>
+      <Address>125</Address>
+      <Channels>5</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Vortex</Manufacturer>
+      <Model>PC-64 LED S</Model>
+      <Mode>Default</Mode>
+      <ID>12</ID>
+      <Name>PC-64 LED S #7</Name>
+      <Universe>0</Universe>
+      <Address>130</Address>
+      <Channels>5</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Pro-Lights</Manufacturer>
+      <Model>CromoWash100</Model>
+      <Mode>Advanced</Mode>
+      <ID>13</ID>
+      <Name>CromoWash100 #3</Name>
+      <Universe>0</Universe>
+      <Address>135</Address>
+      <Channels>12</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Pro-Lights</Manufacturer>
+      <Model>CromoWash100</Model>
+      <Mode>Advanced</Mode>
+      <ID>14</ID>
+      <Name>CromoWash100 #4</Name>
+      <Universe>0</Universe>
+      <Address>147</Address>
+      <Channels>12</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Chauvet</Manufacturer>
+      <Model>MiN Wash</Model>
+      <Mode>13 Channel</Mode>
+      <ID>15</ID>
+      <Name>MiN Wash #1</Name>
+      <Universe>0</Universe>
+      <Address>159</Address>
+      <Channels>13</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Chauvet</Manufacturer>
+      <Model>MiN Wash</Model>
+      <Mode>13 Channel</Mode>
+      <ID>16</ID>
+      <Name>MiN Wash #2</Name>
+      <Universe>0</Universe>
+      <Address>172</Address>
+      <Channels>13</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Generic</Manufacturer>
+      <Model>Generic Smoke</Model>
+      <Mode>Amount</Mode>
+      <ID>17</ID>
+      <Name>Stairville AF-150</Name>
+      <Universe>0</Universe>
+      <Address>185</Address>
+      <Channels>1</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>LED Beam</Manufacturer>
+      <Model>Mini Led Moving Head</Model>
+      <Mode>16 Channels</Mode>
+      <ID>18</ID>
+      <Name>Mini Led Moving Head</Name>
+      <Universe>0</Universe>
+      <Address>186</Address>
+      <Channels>16</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>LED Beam</Manufacturer>
+      <Model>Mini Led Moving Head</Model>
+      <Mode>16 Channels</Mode>
+      <ID>19</ID>
+      <Name>Mini Led Moving Head</Name>
+      <Universe>0</Universe>
+      <Address>202</Address>
+      <Channels>16</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Generic</Manufacturer>
+      <Model>BEAM 230W 7R</Model>
+      <Mode>16 channel</Mode>
+      <ID>20</ID>
+      <Name>BEAM 230W 7R #1</Name>
+      <Universe>0</Universe>
+      <Address>218</Address>
+      <Channels>16</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Generic</Manufacturer>
+      <Model>BEAM 230W 7R</Model>
+      <Mode>16 channel</Mode>
+      <ID>21</ID>
+      <Name>BEAM 230W 7R #2</Name>
+      <Universe>0</Universe>
+      <Address>234</Address>
+      <Channels>16</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Generic</Manufacturer>
+      <Model>BEAM 230W 7R</Model>
+      <Mode>16 channel</Mode>
+      <ID>22</ID>
+      <Name>BEAM 230W 7R #3</Name>
+      <Universe>0</Universe>
+      <Address>250</Address>
+      <Channels>16</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Generic</Manufacturer>
+      <Model>BEAM 230W 7R</Model>
+      <Mode>16 channel</Mode>
+      <ID>23</ID>
+      <Name>BEAM 230W 7R #4</Name>
+      <Universe>0</Universe>
+      <Address>266</Address>
+      <Channels>16</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>HYULIGHTS</Manufacturer>
+      <Model>WX-60WPS-48PARTITION</Model>
+      <Mode>A MODE - DMX 8 CH</Mode>
+      <ID>24</ID>
+      <Name>WX-60WPS-48PARTITION #1</Name>
+      <Universe>0</Universe>
+      <Address>282</Address>
+      <Channels>8</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>HYULIGHTS</Manufacturer>
+      <Model>WX-60WPS-48PARTITION</Model>
+      <Mode>A MODE - DMX 8 CH</Mode>
+      <ID>25</ID>
+      <Name>WX-60WPS-48PARTITION #2</Name>
+      <Universe>0</Universe>
+      <Address>290</Address>
+      <Channels>8</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>Generic</Manufacturer>
+      <Model>Generic Smoke</Model>
+      <Mode>Normal</Mode>
+      <ID>26</ID>
+      <Name>Generic Smoke</Name>
+      <Universe>0</Universe>
+      <Address>298</Address>
+      <Channels>2</Channels>
+    </Fixture>
+    <FixtureGroup ID="0">
+      <Name>BarrasLed</Name>
+      <Size X="8" Y="2"/>
+      <Head X="0" Y="0" Fixture="2">0</Head>
+      <Head X="1" Y="0" Fixture="2">1</Head>
+      <Head X="2" Y="0" Fixture="2">2</Head>
+      <Head X="3" Y="0" Fixture="2">3</Head>
+      <Head X="4" Y="0" Fixture="2">4</Head>
+      <Head X="5" Y="0" Fixture="2">5</Head>
+      <Head X="6" Y="0" Fixture="2">6</Head>
+      <Head X="7" Y="0" Fixture="2">7</Head>
+      <Head X="0" Y="1" Fixture="3">0</Head>
+      <Head X="1" Y="1" Fixture="3">1</Head>
+      <Head X="2" Y="1" Fixture="3">2</Head>
+      <Head X="3" Y="1" Fixture="3">3</Head>
+      <Head X="4" Y="1" Fixture="3">4</Head>
+      <Head X="5" Y="1" Fixture="3">5</Head>
+      <Head X="6" Y="1" Fixture="3">6</Head>
+      <Head X="7" Y="1" Fixture="3">7</Head>
+      <Head X="0" Y="2" Fixture="20">0</Head>
+      <Head X="1" Y="2" Fixture="21">0</Head>
+      <Head X="2" Y="2" Fixture="22">0</Head>
+      <Head X="3" Y="2" Fixture="23">0</Head>
+      <Head X="4" Y="2" Fixture="24">0</Head>
+      <Head X="5" Y="2" Fixture="25">0</Head>
+    </FixtureGroup>
+    <FixtureGroup ID="1">
+      <Name>Cabezas</Name>
+      <Size X="8" Y="1"/>
+      <Head X="0" Y="0" Fixture="0">0</Head>
+      <Head X="1" Y="0" Fixture="1">0</Head>
+      <Head X="2" Y="0" Fixture="13">0</Head>
+      <Head X="3" Y="0" Fixture="14">0</Head>
+      <Head X="4" Y="0" Fixture="15">0</Head>
+      <Head X="5" Y="0" Fixture="16">0</Head>
+      <Head X="6" Y="0" Fixture="18">0</Head>
+      <Head X="7" Y="0" Fixture="19">0</Head>
+      <Head X="0" Y="1" Fixture="20">0</Head>
+      <Head X="1" Y="1" Fixture="21">0</Head>
+      <Head X="2" Y="1" Fixture="22">0</Head>
+      <Head X="3" Y="1" Fixture="23">0</Head>
+    </FixtureGroup>
+    <FixtureGroup ID="2">
+      <Name>PAR</Name>
+      <Size X="3" Y="3"/>
+      <Head X="0" Y="0" Fixture="6">0</Head>
+      <Head X="1" Y="0" Fixture="7">0</Head>
+      <Head X="2" Y="0" Fixture="8">0</Head>
+      <Head X="0" Y="1" Fixture="9">0</Head>
+      <Head X="1" Y="1" Fixture="10">0</Head>
+      <Head X="2" Y="1" Fixture="11">0</Head>
+      <Head X="0" Y="2" Fixture="12">0</Head>
+    </FixtureGroup>
+    <ChannelsGroup ID="0" Name="Rojo Cabezas" Value="0">0,5,1,5,13,5,14,5,15,6,16,6,18,3,19,3</ChannelsGroup>
+    <ChannelsGroup ID="1" Name="Verde Cabezas" Value="0">0,6,1,6,13,6,14,6,15,7,16,7,18,4,19,4</ChannelsGroup>
+    <ChannelsGroup ID="2" Name="Azul Cabezas" Value="0">0,7,1,7,13,7,14,7,15,8,16,8,18,5,19,5</ChannelsGroup>
+    <ChannelsGroup ID="3" Name="Blanco Cabezas" Value="0">18,6,19,6</ChannelsGroup>
+    <Monitor DisplayMode="0" ShowLabels="1">
+      <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+      <ChannelStyle>1</ChannelStyle>
+      <ValueStyle>1</ValueStyle>
+      <Grid Width="5" Height="3" Depth="5" Units="0"/>
+      <FxItem ID="20" XPos="0" YPos="0"/>
+      <FxItem ID="21" XPos="2854.37" YPos="1009.71"/>
+      <FxItem ID="22" XPos="2038.83" YPos="1242.72"/>
+      <FxItem ID="23" XPos="570.175" YPos="1526.32"/>
+    </Monitor>
+    <Function ID="0" Type="Scene" Name="Color Rojo" Path="Colores (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255</FixtureVal>
+      <FixtureVal ID="2">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
+      <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
+      <FixtureVal ID="4">0,255,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0</FixtureVal>
+      <FixtureVal ID="5">0,255,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0</FixtureVal>
+      <FixtureVal ID="6">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="7">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="8">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="9">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="10">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="11">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="12">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255</FixtureVal>
+      <FixtureVal ID="15">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="16">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,0,5,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,0,5,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,0,3,0</FixtureVal>
+    </Function>
+    <Function ID="1" Type="Scene" Name="Color Verde" Path="Colores (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255</FixtureVal>
+      <FixtureVal ID="2">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
+      <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
+      <FixtureVal ID="4">0,255,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0</FixtureVal>
+      <FixtureVal ID="5">0,255,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0</FixtureVal>
+      <FixtureVal ID="6">0,0,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="7">0,0,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="8">0,0,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="9">0,0,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="10">0,0,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="11">0,0,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="12">0,0,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255</FixtureVal>
+      <FixtureVal ID="15">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,0,4,255,5,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,0,4,255,5,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,0,2,255,3,0</FixtureVal>
+    </Function>
+    <Function ID="2" Type="Scene" Name="Color Azul" Path="Colores (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="2">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
+      <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
+      <FixtureVal ID="4">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255</FixtureVal>
+      <FixtureVal ID="5">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255</FixtureVal>
+      <FixtureVal ID="6">0,0,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="7">0,0,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="8">0,0,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="9">0,0,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="10">0,0,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="11">0,0,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="12">0,0,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="15">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="18">2,255,3,0,4,0,5,255</FixtureVal>
+      <FixtureVal ID="19">2,255,3,0,4,0,5,255</FixtureVal>
+      <FixtureVal ID="24">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="25">0,255,1,0,2,0,3,255</FixtureVal>
+    </Function>
+    <Function ID="3" Type="Scene" Name="Color Ambar" Path="Colores (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,140,7,20,9,255</FixtureVal>
+      <FixtureVal ID="1">5,255,6,140,7,20,9,255</FixtureVal>
+      <FixtureVal ID="2">0,255,1,140,2,20,3,255,4,140,5,20,6,255,7,140,8,20,9,255,10,140,11,20,12,255,13,140,14,20,15,255,16,140,17,20,18,255,19,140,20,20,21,255,22,140,23,20</FixtureVal>
+      <FixtureVal ID="3">0,255,1,140,2,20,3,255,4,140,5,20,6,255,7,140,8,20,9,255,10,140,11,20,12,255,13,140,14,20,15,255,16,140,17,20,18,255,19,140,20,20,21,255,22,140,23,20</FixtureVal>
+      <FixtureVal ID="4">0,255,1,255,2,140,3,20,4,255,5,140,6,20,7,255,8,140,9,20,10,255,11,140,12,20</FixtureVal>
+      <FixtureVal ID="5">0,255,1,255,2,140,3,20,4,255,5,140,6,20,7,255,8,140,9,20,10,255,11,140,12,20</FixtureVal>
+      <FixtureVal ID="6">0,255,1,140,2,20,3,255</FixtureVal>
+      <FixtureVal ID="7">0,255,1,140,2,20,3,255</FixtureVal>
+      <FixtureVal ID="8">0,255,1,140,2,20,3,255</FixtureVal>
+      <FixtureVal ID="9">0,255,1,140,2,20,3,255</FixtureVal>
+      <FixtureVal ID="10">0,255,1,140,2,20,3,255</FixtureVal>
+      <FixtureVal ID="11">0,255,1,140,2,20,3,255</FixtureVal>
+      <FixtureVal ID="12">0,255,1,140,2,20,3,255</FixtureVal>
+      <FixtureVal ID="13">5,255,6,140,7,20,9,255</FixtureVal>
+      <FixtureVal ID="14">5,255,6,140,7,20,9,255</FixtureVal>
+      <FixtureVal ID="15">6,255,7,140,8,20</FixtureVal>
+      <FixtureVal ID="16">6,255,7,140,8,20</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,140,5,20</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,140,5,20</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,140,3,20</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,140,3,20</FixtureVal>
+    </Function>
+    <Function ID="4" Type="Scene" Name="Color Magenta" Path="Colores (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="2">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
+      <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
+      <FixtureVal ID="4">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255</FixtureVal>
+      <FixtureVal ID="5">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255</FixtureVal>
+      <FixtureVal ID="6">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="7">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="8">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="9">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="10">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="11">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="12">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255</FixtureVal>
+      <FixtureVal ID="15">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,0,5,255</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,0,5,255</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,0,3,255</FixtureVal>
+    </Function>
+    <Function ID="5" Type="Scene" Name="Color Blanco" Path="Colores (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
+      <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="4">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255</FixtureVal>
+      <FixtureVal ID="5">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255</FixtureVal>
+      <FixtureVal ID="6">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="7">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="9">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="10">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="11">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="12">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
+      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+    </Function>
+    <Function ID="6" Type="Chaser" Name="Ciclo Colores" Path="Colores (generado)">
+      <Speed FadeIn="500" FadeOut="500" Duration="0"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+      <Step Number="0" FadeIn="500" Hold="1000" FadeOut="500">0</Step>
+      <Step Number="1" FadeIn="500" Hold="1000" FadeOut="500">1</Step>
+      <Step Number="2" FadeIn="500" Hold="1000" FadeOut="500">2</Step>
+      <Step Number="3" FadeIn="500" Hold="1000" FadeOut="500">3</Step>
+      <Step Number="4" FadeIn="500" Hold="1000" FadeOut="500">4</Step>
+      <Step Number="5" FadeIn="500" Hold="1000" FadeOut="500">5</Step>
+    </Function>
+    <Function ID="7" Type="RGBMatrix" Name="BarrasLed - Fill Rojo" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="8" Type="RGBMatrix" Name="BarrasLed - Fill Verde" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="9" Type="RGBMatrix" Name="BarrasLed - Fill Azul" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="10" Type="RGBMatrix" Name="BarrasLed - Fill Ambar" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="11" Type="RGBMatrix" Name="BarrasLed - Fill Magenta" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="12" Type="RGBMatrix" Name="BarrasLed - Fill Blanco" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="13" Type="RGBMatrix" Name="BarrasLed - Even/Odd Rojo" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="14" Type="RGBMatrix" Name="BarrasLed - Even/Odd Verde" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="15" Type="RGBMatrix" Name="BarrasLed - Even/Odd Azul" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="16" Type="RGBMatrix" Name="BarrasLed - Even/Odd Ambar" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="17" Type="RGBMatrix" Name="BarrasLed - Even/Odd Magenta" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="18" Type="RGBMatrix" Name="BarrasLed - Even/Odd Blanco" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="19" Type="RGBMatrix" Name="BarrasLed - Strobe Rojo" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="20" Type="RGBMatrix" Name="BarrasLed - Strobe Verde" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="21" Type="RGBMatrix" Name="BarrasLed - Strobe Azul" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="22" Type="RGBMatrix" Name="BarrasLed - Strobe Ambar" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="23" Type="RGBMatrix" Name="BarrasLed - Strobe Magenta" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="24" Type="RGBMatrix" Name="BarrasLed - Strobe Blanco" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="25" Type="RGBMatrix" Name="BarrasLed - Waves Rojo" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="26" Type="RGBMatrix" Name="BarrasLed - Waves Verde" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="27" Type="RGBMatrix" Name="BarrasLed - Waves Azul" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="28" Type="RGBMatrix" Name="BarrasLed - Waves Ambar" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="29" Type="RGBMatrix" Name="BarrasLed - Waves Magenta" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="30" Type="RGBMatrix" Name="BarrasLed - Waves Blanco" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="31" Type="RGBMatrix" Name="BarrasLed - Solid Rojo" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="32" Type="RGBMatrix" Name="BarrasLed - Solid Verde" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="33" Type="RGBMatrix" Name="BarrasLed - Solid Azul" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="34" Type="RGBMatrix" Name="BarrasLed - Solid Ambar" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="35" Type="RGBMatrix" Name="BarrasLed - Solid Magenta" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="36" Type="RGBMatrix" Name="BarrasLed - Solid Blanco" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>0</FixtureGroup>
+    </Function>
+    <Function ID="37" Type="Chaser" Name="Ciclo Matrices BarrasLed" Path="Matrices BarrasLed (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">7</Step>
+      <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">8</Step>
+      <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0">9</Step>
+      <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">10</Step>
+      <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">11</Step>
+      <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">12</Step>
+      <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0">13</Step>
+      <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0">14</Step>
+      <Step Number="8" FadeIn="0" Hold="2000" FadeOut="0">15</Step>
+      <Step Number="9" FadeIn="0" Hold="2000" FadeOut="0">16</Step>
+      <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">17</Step>
+      <Step Number="11" FadeIn="0" Hold="2000" FadeOut="0">18</Step>
+      <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0">19</Step>
+      <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">20</Step>
+      <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">21</Step>
+      <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">22</Step>
+      <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">23</Step>
+      <Step Number="17" FadeIn="0" Hold="2000" FadeOut="0">24</Step>
+      <Step Number="18" FadeIn="0" Hold="2000" FadeOut="0">25</Step>
+      <Step Number="19" FadeIn="0" Hold="2000" FadeOut="0">26</Step>
+      <Step Number="20" FadeIn="0" Hold="2000" FadeOut="0">27</Step>
+      <Step Number="21" FadeIn="0" Hold="2000" FadeOut="0">28</Step>
+      <Step Number="22" FadeIn="0" Hold="2000" FadeOut="0">29</Step>
+      <Step Number="23" FadeIn="0" Hold="2000" FadeOut="0">30</Step>
+      <Step Number="24" FadeIn="0" Hold="2000" FadeOut="0">31</Step>
+      <Step Number="25" FadeIn="0" Hold="2000" FadeOut="0">32</Step>
+      <Step Number="26" FadeIn="0" Hold="2000" FadeOut="0">33</Step>
+      <Step Number="27" FadeIn="0" Hold="2000" FadeOut="0">34</Step>
+      <Step Number="28" FadeIn="0" Hold="2000" FadeOut="0">35</Step>
+      <Step Number="29" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+    </Function>
+    <Function ID="38" Type="RGBMatrix" Name="Cabezas - Fill Rojo" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="39" Type="RGBMatrix" Name="Cabezas - Fill Verde" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="40" Type="RGBMatrix" Name="Cabezas - Fill Azul" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="41" Type="RGBMatrix" Name="Cabezas - Fill Ambar" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="42" Type="RGBMatrix" Name="Cabezas - Fill Magenta" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="43" Type="RGBMatrix" Name="Cabezas - Fill Blanco" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="44" Type="RGBMatrix" Name="Cabezas - Even/Odd Rojo" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="45" Type="RGBMatrix" Name="Cabezas - Even/Odd Verde" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="46" Type="RGBMatrix" Name="Cabezas - Even/Odd Azul" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="47" Type="RGBMatrix" Name="Cabezas - Even/Odd Ambar" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="48" Type="RGBMatrix" Name="Cabezas - Even/Odd Magenta" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="49" Type="RGBMatrix" Name="Cabezas - Even/Odd Blanco" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="50" Type="RGBMatrix" Name="Cabezas - Strobe Rojo" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="51" Type="RGBMatrix" Name="Cabezas - Strobe Verde" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="52" Type="RGBMatrix" Name="Cabezas - Strobe Azul" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="53" Type="RGBMatrix" Name="Cabezas - Strobe Ambar" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="54" Type="RGBMatrix" Name="Cabezas - Strobe Magenta" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="55" Type="RGBMatrix" Name="Cabezas - Strobe Blanco" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="56" Type="RGBMatrix" Name="Cabezas - Waves Rojo" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="57" Type="RGBMatrix" Name="Cabezas - Waves Verde" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="58" Type="RGBMatrix" Name="Cabezas - Waves Azul" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="59" Type="RGBMatrix" Name="Cabezas - Waves Ambar" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="60" Type="RGBMatrix" Name="Cabezas - Waves Magenta" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="61" Type="RGBMatrix" Name="Cabezas - Waves Blanco" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="62" Type="RGBMatrix" Name="Cabezas - Solid Rojo" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="63" Type="RGBMatrix" Name="Cabezas - Solid Verde" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="64" Type="RGBMatrix" Name="Cabezas - Solid Azul" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="65" Type="RGBMatrix" Name="Cabezas - Solid Ambar" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="66" Type="RGBMatrix" Name="Cabezas - Solid Magenta" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="67" Type="RGBMatrix" Name="Cabezas - Solid Blanco" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>1</FixtureGroup>
+    </Function>
+    <Function ID="68" Type="Chaser" Name="Ciclo Matrices Cabezas" Path="Matrices Cabezas (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">38</Step>
+      <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">39</Step>
+      <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0">40</Step>
+      <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">41</Step>
+      <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">42</Step>
+      <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">43</Step>
+      <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0">44</Step>
+      <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0">45</Step>
+      <Step Number="8" FadeIn="0" Hold="2000" FadeOut="0">46</Step>
+      <Step Number="9" FadeIn="0" Hold="2000" FadeOut="0">47</Step>
+      <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">48</Step>
+      <Step Number="11" FadeIn="0" Hold="2000" FadeOut="0">49</Step>
+      <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0">50</Step>
+      <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">51</Step>
+      <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">52</Step>
+      <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">53</Step>
+      <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">54</Step>
+      <Step Number="17" FadeIn="0" Hold="2000" FadeOut="0">55</Step>
+      <Step Number="18" FadeIn="0" Hold="2000" FadeOut="0">56</Step>
+      <Step Number="19" FadeIn="0" Hold="2000" FadeOut="0">57</Step>
+      <Step Number="20" FadeIn="0" Hold="2000" FadeOut="0">58</Step>
+      <Step Number="21" FadeIn="0" Hold="2000" FadeOut="0">59</Step>
+      <Step Number="22" FadeIn="0" Hold="2000" FadeOut="0">60</Step>
+      <Step Number="23" FadeIn="0" Hold="2000" FadeOut="0">61</Step>
+      <Step Number="24" FadeIn="0" Hold="2000" FadeOut="0">62</Step>
+      <Step Number="25" FadeIn="0" Hold="2000" FadeOut="0">63</Step>
+      <Step Number="26" FadeIn="0" Hold="2000" FadeOut="0">64</Step>
+      <Step Number="27" FadeIn="0" Hold="2000" FadeOut="0">65</Step>
+      <Step Number="28" FadeIn="0" Hold="2000" FadeOut="0">66</Step>
+      <Step Number="29" FadeIn="0" Hold="2000" FadeOut="0">67</Step>
+    </Function>
+    <Function ID="69" Type="RGBMatrix" Name="PAR - Fill Rojo" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="70" Type="RGBMatrix" Name="PAR - Fill Verde" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="71" Type="RGBMatrix" Name="PAR - Fill Azul" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="72" Type="RGBMatrix" Name="PAR - Fill Ambar" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="73" Type="RGBMatrix" Name="PAR - Fill Magenta" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="74" Type="RGBMatrix" Name="PAR - Fill Blanco" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Fill</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="75" Type="RGBMatrix" Name="PAR - Even/Odd Rojo" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="76" Type="RGBMatrix" Name="PAR - Even/Odd Verde" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="77" Type="RGBMatrix" Name="PAR - Even/Odd Azul" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="78" Type="RGBMatrix" Name="PAR - Even/Odd Ambar" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="79" Type="RGBMatrix" Name="PAR - Even/Odd Magenta" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="80" Type="RGBMatrix" Name="PAR - Even/Odd Blanco" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Even/Odd</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="81" Type="RGBMatrix" Name="PAR - Strobe Rojo" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="82" Type="RGBMatrix" Name="PAR - Strobe Verde" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="83" Type="RGBMatrix" Name="PAR - Strobe Azul" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="84" Type="RGBMatrix" Name="PAR - Strobe Ambar" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="85" Type="RGBMatrix" Name="PAR - Strobe Magenta" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="86" Type="RGBMatrix" Name="PAR - Strobe Blanco" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Strobe</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="87" Type="RGBMatrix" Name="PAR - Waves Rojo" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="88" Type="RGBMatrix" Name="PAR - Waves Verde" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="89" Type="RGBMatrix" Name="PAR - Waves Azul" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="90" Type="RGBMatrix" Name="PAR - Waves Ambar" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="91" Type="RGBMatrix" Name="PAR - Waves Magenta" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="92" Type="RGBMatrix" Name="PAR - Waves Blanco" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Script">Waves</Algorithm>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="93" Type="RGBMatrix" Name="PAR - Solid Rojo" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294901760</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="94" Type="RGBMatrix" Name="PAR - Solid Verde" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4278255360</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="95" Type="RGBMatrix" Name="PAR - Solid Azul" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4278190335</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="96" Type="RGBMatrix" Name="PAR - Solid Ambar" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294937620</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="97" Type="RGBMatrix" Name="PAR - Solid Magenta" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294902015</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="98" Type="RGBMatrix" Name="PAR - Solid Blanco" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="478"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm Type="Plain"/>
+      <MonoColor>4294967295</MonoColor>
+      <ControlMode>RGB</ControlMode>
+      <FixtureGroup>2</FixtureGroup>
+    </Function>
+    <Function ID="99" Type="Chaser" Name="Ciclo Matrices PAR" Path="Matrices PAR (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">69</Step>
+      <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">70</Step>
+      <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0">71</Step>
+      <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">72</Step>
+      <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">73</Step>
+      <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">74</Step>
+      <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0">75</Step>
+      <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0">76</Step>
+      <Step Number="8" FadeIn="0" Hold="2000" FadeOut="0">77</Step>
+      <Step Number="9" FadeIn="0" Hold="2000" FadeOut="0">78</Step>
+      <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">79</Step>
+      <Step Number="11" FadeIn="0" Hold="2000" FadeOut="0">80</Step>
+      <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+      <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">82</Step>
+      <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">83</Step>
+      <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">84</Step>
+      <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">85</Step>
+      <Step Number="17" FadeIn="0" Hold="2000" FadeOut="0">86</Step>
+      <Step Number="18" FadeIn="0" Hold="2000" FadeOut="0">87</Step>
+      <Step Number="19" FadeIn="0" Hold="2000" FadeOut="0">88</Step>
+      <Step Number="20" FadeIn="0" Hold="2000" FadeOut="0">89</Step>
+      <Step Number="21" FadeIn="0" Hold="2000" FadeOut="0">90</Step>
+      <Step Number="22" FadeIn="0" Hold="2000" FadeOut="0">91</Step>
+      <Step Number="23" FadeIn="0" Hold="2000" FadeOut="0">92</Step>
+      <Step Number="24" FadeIn="0" Hold="2000" FadeOut="0">93</Step>
+      <Step Number="25" FadeIn="0" Hold="2000" FadeOut="0">94</Step>
+      <Step Number="26" FadeIn="0" Hold="2000" FadeOut="0">95</Step>
+      <Step Number="27" FadeIn="0" Hold="2000" FadeOut="0">96</Step>
+      <Step Number="28" FadeIn="0" Hold="2000" FadeOut="0">97</Step>
+      <Step Number="29" FadeIn="0" Hold="2000" FadeOut="0">98</Step>
+    </Function>
+    <Function ID="100" Type="EFX" Name="Movimiento Circulo" Path="Movimiento (generado)">
+      <Fixture>
+        <ID>0</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>1</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>30</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>13</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>60</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>14</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>15</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>120</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>16</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>150</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>18</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>19</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>210</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>240</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>300</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>330</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Circle</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="101" Type="EFX" Name="Movimiento Ocho" Path="Movimiento (generado)">
+      <Fixture>
+        <ID>0</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>1</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>30</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>13</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>60</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>14</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>15</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>120</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>16</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>150</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>18</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>19</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>210</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>240</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>300</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>330</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Eight</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="102" Type="EFX" Name="Movimiento Linea" Path="Movimiento (generado)">
+      <Fixture>
+        <ID>0</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>1</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>30</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>13</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>60</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>14</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>15</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>120</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>16</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>150</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>18</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>19</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>210</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>240</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>300</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>330</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Line</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="103" Type="EFX" Name="Movimiento Diamante" Path="Movimiento (generado)">
+      <Fixture>
+        <ID>0</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>1</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>30</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>13</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>60</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>14</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>15</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>120</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>16</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>150</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>18</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>19</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>210</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>240</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>300</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>330</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Diamond</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="104" Type="EFX" Name="Movimiento Cuadrado" Path="Movimiento (generado)">
+      <Fixture>
+        <ID>0</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>1</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>30</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>13</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>60</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>14</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>15</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>120</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>16</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>150</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>18</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>19</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>210</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>240</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>300</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>330</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Square</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="105" Type="EFX" Name="Movimiento Hoja" Path="Movimiento (generado)">
+      <Fixture>
+        <ID>0</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>1</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>30</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>13</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>60</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>14</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>15</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>120</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>16</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>150</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>18</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>19</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>210</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>240</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>300</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>330</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Leaf</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="106" Type="EFX" Name="Movimiento Lissajous" Path="Movimiento (generado)">
+      <Fixture>
+        <ID>0</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>1</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>30</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>13</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>60</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>14</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>15</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>120</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>16</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>150</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>18</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>19</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>210</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>240</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>300</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>330</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Lissajous</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="107" Type="Chaser" Name="Ciclo Movimiento" Path="Movimiento (generado)">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+      <Step Number="0" FadeIn="0" Hold="4000" FadeOut="0">100</Step>
+      <Step Number="1" FadeIn="0" Hold="4000" FadeOut="0">101</Step>
+      <Step Number="2" FadeIn="0" Hold="4000" FadeOut="0">102</Step>
+      <Step Number="3" FadeIn="0" Hold="4000" FadeOut="0">103</Step>
+      <Step Number="4" FadeIn="0" Hold="4000" FadeOut="0">104</Step>
+      <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0">105</Step>
+      <Step Number="6" FadeIn="0" Hold="4000" FadeOut="0">106</Step>
+    </Function>
+  </Engine>
+  <VirtualConsole>
+    <Frame Caption="">
+      <Appearance>
+        <FrameStyle>None</FrameStyle>
+        <ForegroundColor>Default</ForegroundColor>
+        <BackgroundColor>Default</BackgroundColor>
+        <BackgroundImage>None</BackgroundImage>
+        <Font>Default</Font>
+      </Appearance>
+      <SoloFrame Caption="Colores (generado)" ID="0">
+        <Appearance>
+          <FrameStyle>Sunken</FrameStyle>
+          <ForegroundColor>Default</ForegroundColor>
+          <BackgroundColor>Default</BackgroundColor>
+          <BackgroundImage>None</BackgroundImage>
+          <Font>Default</Font>
+        </Appearance>
+        <WindowState Visible="True" X="6" Y="6" Width="762" Height="124"/>
+        <AllowChildren>True</AllowChildren>
+        <AllowResize>True</AllowResize>
+        <ShowHeader>True</ShowHeader>
+        <ShowEnableButton>False</ShowEnableButton>
+        <Mixing>False</Mixing>
+        <Collapsed>False</Collapsed>
+        <Disabled>False</Disabled>
+        <Button Caption="Ciclo Colores" ID="1" Icon="">
+          <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="6"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Ambar" ID="2" Icon="">
+          <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="3"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Azul" ID="3" Icon="">
+          <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="2"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Blanco" ID="4" Icon="">
+          <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="5"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Magenta" ID="5" Icon="">
+          <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="4"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Rojo" ID="6" Icon="">
+          <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="0"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Color Verde" ID="7" Icon="">
+          <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="1"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+      </SoloFrame>
+      <SoloFrame Caption="Matrices BarrasLed (generado)" ID="8">
+        <Appearance>
+          <FrameStyle>Sunken</FrameStyle>
+          <ForegroundColor>Default</ForegroundColor>
+          <BackgroundColor>Default</BackgroundColor>
+          <BackgroundImage>None</BackgroundImage>
+          <Font>Default</Font>
+        </Appearance>
+        <WindowState Visible="True" X="6" Y="136" Width="762" Height="308"/>
+        <AllowChildren>True</AllowChildren>
+        <AllowResize>True</AllowResize>
+        <ShowHeader>True</ShowHeader>
+        <ShowEnableButton>False</ShowEnableButton>
+        <Mixing>False</Mixing>
+        <Collapsed>False</Collapsed>
+        <Disabled>False</Disabled>
+        <Button Caption="BarrasLed - Even/Odd Ambar" ID="9" Icon="">
+          <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="16"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Even/Odd Azul" ID="10" Icon="">
+          <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="15"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Even/Odd Blanco" ID="11" Icon="">
+          <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="18"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Even/Odd Magenta" ID="12" Icon="">
+          <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="17"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Even/Odd Rojo" ID="13" Icon="">
+          <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="13"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Even/Odd Verde" ID="14" Icon="">
+          <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="14"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Fill Ambar" ID="15" Icon="">
+          <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="10"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Fill Azul" ID="16" Icon="">
+          <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="9"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Fill Blanco" ID="17" Icon="">
+          <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="12"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Fill Magenta" ID="18" Icon="">
+          <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="11"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Fill Rojo" ID="19" Icon="">
+          <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="7"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Fill Verde" ID="20" Icon="">
+          <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="8"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Solid Ambar" ID="21" Icon="">
+          <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="34"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Solid Azul" ID="22" Icon="">
+          <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="33"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Solid Blanco" ID="23" Icon="">
+          <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="36"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Solid Magenta" ID="24" Icon="">
+          <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="35"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Solid Rojo" ID="25" Icon="">
+          <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="31"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Solid Verde" ID="26" Icon="">
+          <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="32"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Strobe Ambar" ID="27" Icon="">
+          <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="22"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Strobe Azul" ID="28" Icon="">
+          <WindowState Visible="True" X="132" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="21"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Strobe Blanco" ID="29" Icon="">
+          <WindowState Visible="True" X="258" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="24"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Strobe Magenta" ID="30" Icon="">
+          <WindowState Visible="True" X="384" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="23"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Strobe Rojo" ID="31" Icon="">
+          <WindowState Visible="True" X="510" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="19"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Strobe Verde" ID="32" Icon="">
+          <WindowState Visible="True" X="636" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="20"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Waves Ambar" ID="33" Icon="">
+          <WindowState Visible="True" X="6" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="28"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Waves Azul" ID="34" Icon="">
+          <WindowState Visible="True" X="132" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="27"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Waves Blanco" ID="35" Icon="">
+          <WindowState Visible="True" X="258" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="30"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Waves Magenta" ID="36" Icon="">
+          <WindowState Visible="True" X="384" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="29"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Waves Rojo" ID="37" Icon="">
+          <WindowState Visible="True" X="510" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="25"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="BarrasLed - Waves Verde" ID="38" Icon="">
+          <WindowState Visible="True" X="636" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="26"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Ciclo Matrices BarrasLed" ID="39" Icon="">
+          <WindowState Visible="True" X="6" Y="256" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="37"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+      </SoloFrame>
+      <SoloFrame Caption="Matrices Cabezas (generado)" ID="40">
+        <Appearance>
+          <FrameStyle>Sunken</FrameStyle>
+          <ForegroundColor>Default</ForegroundColor>
+          <BackgroundColor>Default</BackgroundColor>
+          <BackgroundImage>None</BackgroundImage>
+          <Font>Default</Font>
+        </Appearance>
+        <WindowState Visible="True" X="6" Y="450" Width="762" Height="308"/>
+        <AllowChildren>True</AllowChildren>
+        <AllowResize>True</AllowResize>
+        <ShowHeader>True</ShowHeader>
+        <ShowEnableButton>False</ShowEnableButton>
+        <Mixing>False</Mixing>
+        <Collapsed>False</Collapsed>
+        <Disabled>False</Disabled>
+        <Button Caption="Cabezas - Even/Odd Ambar" ID="41" Icon="">
+          <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="47"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Even/Odd Azul" ID="42" Icon="">
+          <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="46"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Even/Odd Blanco" ID="43" Icon="">
+          <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="49"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Even/Odd Magenta" ID="44" Icon="">
+          <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="48"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Even/Odd Rojo" ID="45" Icon="">
+          <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="44"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Even/Odd Verde" ID="46" Icon="">
+          <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="45"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Fill Ambar" ID="47" Icon="">
+          <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="41"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Fill Azul" ID="48" Icon="">
+          <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="40"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Fill Blanco" ID="49" Icon="">
+          <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="43"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Fill Magenta" ID="50" Icon="">
+          <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="42"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Fill Rojo" ID="51" Icon="">
+          <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="38"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Fill Verde" ID="52" Icon="">
+          <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="39"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Solid Ambar" ID="53" Icon="">
+          <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="65"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Solid Azul" ID="54" Icon="">
+          <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="64"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Solid Blanco" ID="55" Icon="">
+          <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="67"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Solid Magenta" ID="56" Icon="">
+          <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="66"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Solid Rojo" ID="57" Icon="">
+          <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="62"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Solid Verde" ID="58" Icon="">
+          <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="63"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Strobe Ambar" ID="59" Icon="">
+          <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="53"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Strobe Azul" ID="60" Icon="">
+          <WindowState Visible="True" X="132" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="52"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Strobe Blanco" ID="61" Icon="">
+          <WindowState Visible="True" X="258" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="55"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Strobe Magenta" ID="62" Icon="">
+          <WindowState Visible="True" X="384" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="54"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Strobe Rojo" ID="63" Icon="">
+          <WindowState Visible="True" X="510" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="50"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Strobe Verde" ID="64" Icon="">
+          <WindowState Visible="True" X="636" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="51"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Waves Ambar" ID="65" Icon="">
+          <WindowState Visible="True" X="6" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="59"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Waves Azul" ID="66" Icon="">
+          <WindowState Visible="True" X="132" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="58"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Waves Blanco" ID="67" Icon="">
+          <WindowState Visible="True" X="258" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="61"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Waves Magenta" ID="68" Icon="">
+          <WindowState Visible="True" X="384" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="60"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Waves Rojo" ID="69" Icon="">
+          <WindowState Visible="True" X="510" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="56"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Cabezas - Waves Verde" ID="70" Icon="">
+          <WindowState Visible="True" X="636" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="57"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Ciclo Matrices Cabezas" ID="71" Icon="">
+          <WindowState Visible="True" X="6" Y="256" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="68"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+      </SoloFrame>
+      <SoloFrame Caption="Matrices PAR (generado)" ID="72">
+        <Appearance>
+          <FrameStyle>Sunken</FrameStyle>
+          <ForegroundColor>Default</ForegroundColor>
+          <BackgroundColor>Default</BackgroundColor>
+          <BackgroundImage>None</BackgroundImage>
+          <Font>Default</Font>
+        </Appearance>
+        <WindowState Visible="True" X="6" Y="764" Width="762" Height="308"/>
+        <AllowChildren>True</AllowChildren>
+        <AllowResize>True</AllowResize>
+        <ShowHeader>True</ShowHeader>
+        <ShowEnableButton>False</ShowEnableButton>
+        <Mixing>False</Mixing>
+        <Collapsed>False</Collapsed>
+        <Disabled>False</Disabled>
+        <Button Caption="Ciclo Matrices PAR" ID="73" Icon="">
+          <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="99"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Even/Odd Ambar" ID="74" Icon="">
+          <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="78"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Even/Odd Azul" ID="75" Icon="">
+          <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="77"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Even/Odd Blanco" ID="76" Icon="">
+          <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="80"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Even/Odd Magenta" ID="77" Icon="">
+          <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="79"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Even/Odd Rojo" ID="78" Icon="">
+          <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="75"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Even/Odd Verde" ID="79" Icon="">
+          <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="76"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Fill Ambar" ID="80" Icon="">
+          <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="72"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Fill Azul" ID="81" Icon="">
+          <WindowState Visible="True" X="258" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="71"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Fill Blanco" ID="82" Icon="">
+          <WindowState Visible="True" X="384" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="74"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Fill Magenta" ID="83" Icon="">
+          <WindowState Visible="True" X="510" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="73"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Fill Rojo" ID="84" Icon="">
+          <WindowState Visible="True" X="636" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="69"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Fill Verde" ID="85" Icon="">
+          <WindowState Visible="True" X="6" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="70"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Solid Ambar" ID="86" Icon="">
+          <WindowState Visible="True" X="132" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="96"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Solid Azul" ID="87" Icon="">
+          <WindowState Visible="True" X="258" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="95"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Solid Blanco" ID="88" Icon="">
+          <WindowState Visible="True" X="384" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="98"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Solid Magenta" ID="89" Icon="">
+          <WindowState Visible="True" X="510" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="97"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Solid Rojo" ID="90" Icon="">
+          <WindowState Visible="True" X="636" Y="118" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="93"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Solid Verde" ID="91" Icon="">
+          <WindowState Visible="True" X="6" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="94"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Strobe Ambar" ID="92" Icon="">
+          <WindowState Visible="True" X="132" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="84"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Strobe Azul" ID="93" Icon="">
+          <WindowState Visible="True" X="258" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="83"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Strobe Blanco" ID="94" Icon="">
+          <WindowState Visible="True" X="384" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="86"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Strobe Magenta" ID="95" Icon="">
+          <WindowState Visible="True" X="510" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="85"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Strobe Rojo" ID="96" Icon="">
+          <WindowState Visible="True" X="636" Y="164" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="81"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Strobe Verde" ID="97" Icon="">
+          <WindowState Visible="True" X="6" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="82"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Waves Ambar" ID="98" Icon="">
+          <WindowState Visible="True" X="132" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294937620</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="90"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Waves Azul" ID="99" Icon="">
+          <WindowState Visible="True" X="258" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278190335</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="89"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Waves Blanco" ID="100" Icon="">
+          <WindowState Visible="True" X="384" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294967295</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="92"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Waves Magenta" ID="101" Icon="">
+          <WindowState Visible="True" X="510" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294902015</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="91"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Waves Rojo" ID="102" Icon="">
+          <WindowState Visible="True" X="636" Y="210" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4294901760</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="87"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="PAR - Waves Verde" ID="103" Icon="">
+          <WindowState Visible="True" X="6" Y="256" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>4278255360</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="88"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+      </SoloFrame>
+      <SoloFrame Caption="Movimiento (generado)" ID="104">
+        <Appearance>
+          <FrameStyle>Sunken</FrameStyle>
+          <ForegroundColor>Default</ForegroundColor>
+          <BackgroundColor>Default</BackgroundColor>
+          <BackgroundImage>None</BackgroundImage>
+          <Font>Default</Font>
+        </Appearance>
+        <WindowState Visible="True" X="6" Y="1078" Width="762" Height="124"/>
+        <AllowChildren>True</AllowChildren>
+        <AllowResize>True</AllowResize>
+        <ShowHeader>True</ShowHeader>
+        <ShowEnableButton>False</ShowEnableButton>
+        <Mixing>False</Mixing>
+        <Collapsed>False</Collapsed>
+        <Disabled>False</Disabled>
+        <Button Caption="Ciclo Movimiento" ID="105" Icon="">
+          <WindowState Visible="True" X="6" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="107"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Movimiento Circulo" ID="106" Icon="">
+          <WindowState Visible="True" X="132" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="100"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Movimiento Cuadrado" ID="107" Icon="">
+          <WindowState Visible="True" X="258" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="104"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Movimiento Diamante" ID="108" Icon="">
+          <WindowState Visible="True" X="384" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="103"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Movimiento Hoja" ID="109" Icon="">
+          <WindowState Visible="True" X="510" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="105"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Movimiento Linea" ID="110" Icon="">
+          <WindowState Visible="True" X="636" Y="26" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="102"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Movimiento Lissajous" ID="111" Icon="">
+          <WindowState Visible="True" X="6" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="106"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+        <Button Caption="Movimiento Ocho" ID="112" Icon="">
+          <WindowState Visible="True" X="132" Y="72" Width="120" Height="40"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Default</Font>
+          </Appearance>
+          <Function ID="101"/>
+          <Action>Toggle</Action>
+          <Key/>
+          <Intensity Adjust="False">100</Intensity>
+        </Button>
+      </SoloFrame>
+    </Frame>
+    <Properties>
+      <Size Width="1440" Height="1208"/>
+      <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+    </Properties>
+  </VirtualConsole>
+  <SimpleDesk>
+    <Engine>
+      <CueStack ID="0">
+        <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
+        <Cue Name="Cue 1">
+          <Value Channel="19">134</Value>
+          <Value Channel="34">255</Value>
+          <Value Channel="50">255</Value>
+          <Value Channel="6">255</Value>
+          <Value Channel="22">255</Value>
+          <Value Channel="33">134</Value>
+          <Value Channel="5">134</Value>
+          <Value Channel="47">134</Value>
+          <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+        </Cue>
+      </CueStack>
+    </Engine>
+  </SimpleDesk>
+</Workspace>
