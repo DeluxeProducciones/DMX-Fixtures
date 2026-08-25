@@ -29,16 +29,47 @@ is the check the toolkit uses instead of a hardcoded list.
 The rig has **not** been confirmed against the physical hardware. That check is
 an on-site job.
 
-## Where they stand
+## Where they stand - the montage we always build
 
-Neither has the *plot* - nobody has measured the venue. `qlctool stage` writes
-a generated starting layout into `<Monitor>` on a 12 x 6 x 8 m stage: beams
-upstage on the truss, washes downstage on the truss, the two LED bars on the
-floor at the back, PARs and blinders at the front, smoke in the back corners.
-It exists so the 2D and 3D views are readable at all - before it, the show
-carried positions for four fixtures out of twenty-seven and drew the other
-twenty-three on top of each other. Drag them where they really are in QLC+ and
-save; the toolkit only rewrites the node when `stage` or `newshow` is run.
+Described by the owner on 2026-08-25 from a video of a get-in, and written down
+in [`QLC+ Setups/vibra-stage-plot.json`](../QLC+%20Setups/vibra-stage-plot.json)
+so it never has to be described again. `qlctool stage --plot` applies it
+verbatim; `newshow --plot` builds the show on it.
+
+**Back truss, ten positions, house left to house right:**
+
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| PAR | **7R** | PAR | **wash** | PAR | PAR | **wash** | PAR | **7R** | PAR |
+
+The PARs are Vortex PC-64, the 7R are BEAM 230W, the washes are CromoWash100.
+Symmetric: beams at 2 and 9, washes at 4 and 7.
+
+**The rest:**
+
+| Where | What |
+| --- | --- |
+| Either side of the DJ table | the other two BEAM 230W, standing on the floor |
+| Over the DJ booth | the two Stairville LED Bar 240/8 |
+| Downstage, lighting the stage | the two Stairville CLB2.4 grids, four cells each |
+| Front edge, facing the audience | the two HYULIGHTS pixel panels |
+| One side, upstage | the smoke machine |
+
+**Nineteen fixtures rigged out of twenty-seven patched.** The other eight come
+from bigger setups and are not built: the third and fourth CromoWash100, both
+MiN Wash, both LED Beam Mini, the seventh Vortex PC-64 and the second smoke
+machine. They keep a parking spot in the plot and carry QLC+'s `Hidden` flag, so
+the 2D and 3D views show the montage rather than the whole patch, and unhiding
+one does not drop it on top of another.
+
+A plot is bound to a patch - fixture IDs are how `<Monitor>` addresses anything.
+So the file names the model it expects at every ID and `load_stage_plot` refuses
+a workspace where they no longer match, rather than hanging a beam where the
+smoke machine is.
+
+Distances are a guess at the venue, not a survey: a 12 x 6 x 8 m stage with the
+truss at 4 m. The *order and the grouping* are real; the metres are there so the
+preview reads correctly and can be dragged.
 
 ## Fixture groups
 
