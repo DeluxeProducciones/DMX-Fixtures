@@ -8,7 +8,7 @@
  </Creator>
  <Manufacturer>HYULIGHTS</Manufacturer>
  <Model>WX-60WPS-48PARTITION</Model>
- <Type>Color Changer</Type>
+ <Type>LED Bar (Pixels)</Type>
  <Channel Name="Dimmer" Preset="IntensityDimmer"/>
  <Channel Name="Red" Preset="IntensityRed"/>
  <Channel Name="Green" Preset="IntensityGreen"/>
@@ -99,6 +99,11 @@
   <Channel Number="5">Function</Channel>
   <Channel Number="6">Effect Modes (Auto Mode)</Channel>
   <Channel Number="7">Effect Speed</Channel>
+  <Head>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+  </Head>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="3456" ColourTemperature="0"/>

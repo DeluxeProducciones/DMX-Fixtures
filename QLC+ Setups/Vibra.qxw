@@ -285,9 +285,29 @@
       <Address>298</Address>
       <Channels>2</Channels>
     </Fixture>
+    <Fixture>
+      <Manufacturer>HYULIGHTS</Manufacturer>
+      <Model>WX-60WPS-48PARTITION</Model>
+      <Mode>A MODE - DMX 8 CH</Mode>
+      <ID>27</ID>
+      <Name>WX-60WPS-48PARTITION #3</Name>
+      <Universe>0</Universe>
+      <Address>300</Address>
+      <Channels>8</Channels>
+    </Fixture>
+    <Fixture>
+      <Manufacturer>HYULIGHTS</Manufacturer>
+      <Model>WX-60WPS-48PARTITION</Model>
+      <Mode>A MODE - DMX 8 CH</Mode>
+      <ID>28</ID>
+      <Name>WX-60WPS-48PARTITION #4</Name>
+      <Universe>0</Universe>
+      <Address>308</Address>
+      <Channels>8</Channels>
+    </Fixture>
     <FixtureGroup ID="0">
       <Name>BarrasLed</Name>
-      <Size X="8" Y="2"/>
+      <Size X="8" Y="3"/>
       <Head X="0" Y="0" Fixture="2">0</Head>
       <Head X="1" Y="0" Fixture="2">1</Head>
       <Head X="2" Y="0" Fixture="2">2</Head>
@@ -310,6 +330,8 @@
       <Head X="3" Y="2" Fixture="23">0</Head>
       <Head X="4" Y="2" Fixture="24">0</Head>
       <Head X="5" Y="2" Fixture="25">0</Head>
+      <Head X="6" Y="2" Fixture="27">0</Head>
+      <Head X="7" Y="2" Fixture="28">0</Head>
     </FixtureGroup>
     <FixtureGroup ID="1">
       <Name>Cabezas</Name>
@@ -348,18 +370,18 @@
       <ValueStyle>1</ValueStyle>
       <Grid Width="12" Height="6" Depth="8" Units="0" POV="2"/>
       <StageItem>0</StageItem>
-      <FxItem ID="0" XPos="4170" YPos="4000" ZPos="6500"/>
-      <FxItem ID="1" XPos="7440" YPos="4000" ZPos="6500"/>
-      <FxItem ID="2" XPos="4900" YPos="2200" ZPos="3500"/>
-      <FxItem ID="3" XPos="6040" YPos="2200" ZPos="3500"/>
-      <FxItem ID="4" XPos="2000" YPos="1600" ZPos="1500"/>
-      <FxItem ID="5" XPos="9000" YPos="1600" ZPos="1500"/>
-      <FxItem ID="6" XPos="900" YPos="4000" ZPos="6500"/>
-      <FxItem ID="7" XPos="3080" YPos="4000" ZPos="6500"/>
-      <FxItem ID="8" XPos="5260" YPos="4000" ZPos="6500"/>
-      <FxItem ID="9" XPos="6350" YPos="4000" ZPos="6500"/>
-      <FxItem ID="10" XPos="8530" YPos="4000" ZPos="6500"/>
-      <FxItem ID="11" XPos="10710" YPos="4000" ZPos="6500"/>
+      <FxItem ID="0" XPos="4185" YPos="4000" ZPos="6500"/>
+      <FxItem ID="1" XPos="7519" YPos="4000" ZPos="6500"/>
+      <FxItem ID="2" XPos="5468" YPos="3000" ZPos="1200"/>
+      <FxItem ID="3" XPos="5468" YPos="2200" ZPos="3500"/>
+      <FxItem ID="4" XPos="896" YPos="3000" ZPos="1200"/>
+      <FxItem ID="5" XPos="10096" YPos="3000" ZPos="1200"/>
+      <FxItem ID="6" XPos="854" YPos="4000" ZPos="6500"/>
+      <FxItem ID="7" XPos="3076" YPos="4000" ZPos="6500"/>
+      <FxItem ID="8" XPos="5298" YPos="4000" ZPos="6500"/>
+      <FxItem ID="9" XPos="6410" YPos="4000" ZPos="6500"/>
+      <FxItem ID="10" XPos="8632" YPos="4000" ZPos="6500"/>
+      <FxItem ID="11" XPos="10854" YPos="4000" ZPos="6500"/>
       <FxItem ID="12" XPos="600" YPos="0" ZPos="7700" Hidden="True"/>
       <FxItem ID="13" XPos="1800" YPos="0" ZPos="7700" Hidden="True"/>
       <FxItem ID="14" XPos="3000" YPos="0" ZPos="7700" Hidden="True"/>
@@ -368,13 +390,15 @@
       <FxItem ID="17" XPos="300" YPos="0" ZPos="6000"/>
       <FxItem ID="18" XPos="6600" YPos="0" ZPos="7700" Hidden="True"/>
       <FxItem ID="19" XPos="7800" YPos="0" ZPos="7700" Hidden="True"/>
-      <FxItem ID="20" XPos="1990" YPos="4000" ZPos="6500"/>
-      <FxItem ID="21" XPos="9620" YPos="4000" ZPos="6500"/>
-      <FxItem ID="22" XPos="4200" YPos="0" ZPos="3500"/>
-      <FxItem ID="23" XPos="7400" YPos="0" ZPos="3500"/>
-      <FxItem ID="24" XPos="3800" YPos="400" ZPos="400"/>
-      <FxItem ID="25" XPos="7800" YPos="400" ZPos="400"/>
+      <FxItem ID="20" XPos="1916" YPos="4000" ZPos="6500"/>
+      <FxItem ID="21" XPos="9694" YPos="4000" ZPos="6500"/>
+      <FxItem ID="22" XPos="4200" YPos="0" ZPos="3500" XRot="180"/>
+      <FxItem ID="23" XPos="7400" YPos="0" ZPos="3500" XRot="180"/>
+      <FxItem ID="24" XPos="2808" YPos="3000" ZPos="1200"/>
+      <FxItem ID="25" XPos="4342" YPos="3000" ZPos="1200"/>
       <FxItem ID="26" XPos="9000" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="27" XPos="7408" YPos="3000" ZPos="1200"/>
+      <FxItem ID="28" XPos="8942" YPos="3000" ZPos="1200"/>
     </Monitor>
     <Function ID="0" Type="Scene" Name="Luces ON" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -399,6 +423,8 @@
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="1" Type="Scene" Name="Todo Blanco" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -423,6 +449,8 @@
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="2" Type="Scene" Name="Todo Negro" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -451,6 +479,8 @@
       <FixtureVal ID="23">6,0</FixtureVal>
       <FixtureVal ID="24">0,0,1,0,2,0,3,0</FixtureVal>
       <FixtureVal ID="25">0,0,1,0,2,0,3,0</FixtureVal>
+      <FixtureVal ID="27">0,0,1,0,2,0,3,0</FixtureVal>
+      <FixtureVal ID="28">0,0,1,0,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="3" Type="Scene" Name="Flash 100%" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -475,6 +505,8 @@
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="4" Type="Scene" Name="Flash 50%" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -499,6 +531,8 @@
       <FixtureVal ID="19">2,255,3,128,4,128,5,128</FixtureVal>
       <FixtureVal ID="24">0,255,1,128,2,128,3,128</FixtureVal>
       <FixtureVal ID="25">0,255,1,128,2,128,3,128</FixtureVal>
+      <FixtureVal ID="27">0,255,1,128,2,128,3,128</FixtureVal>
+      <FixtureVal ID="28">0,255,1,128,2,128,3,128</FixtureVal>
     </Function>
     <Function ID="5" Type="Scene" Name="Rojo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -506,6 +540,8 @@
       <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="6" Type="Scene" Name="Verde BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -513,6 +549,8 @@
       <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="7" Type="Scene" Name="Azul BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -520,6 +558,8 @@
       <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="8" Type="Scene" Name="UltraVioleta BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -527,6 +567,8 @@
       <FixtureVal ID="3">0,160,1,0,2,255,3,160,4,0,5,255,6,160,7,0,8,255,9,160,10,0,11,255,12,160,13,0,14,255,15,160,16,0,17,255,18,160,19,0,20,255,21,160,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,160,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,160,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,160,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,160,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="9" Type="Scene" Name="Amarillo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -534,6 +576,8 @@
       <FixtureVal ID="3">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="10" Type="Scene" Name="Cyan BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -541,6 +585,8 @@
       <FixtureVal ID="3">0,0,1,255,2,255,3,0,4,255,5,255,6,0,7,255,8,255,9,0,10,255,11,255,12,0,13,255,14,255,15,0,16,255,17,255,18,0,19,255,20,255,21,0,22,255,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="11" Type="Scene" Name="Magenta BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -548,6 +594,8 @@
       <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="12" Type="Scene" Name="Blanco BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -555,6 +603,8 @@
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="13" Type="Scene" Name="Naranja BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -562,6 +612,8 @@
       <FixtureVal ID="3">0,255,1,127,2,0,3,255,4,127,5,0,6,255,7,127,8,0,9,255,10,127,11,0,12,255,13,127,14,0,15,255,16,127,17,0,18,255,19,127,20,0,21,255,22,127,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,127,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,127,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,127,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,127,3,0</FixtureVal>
     </Function>
     <Function ID="14" Type="Scene" Name="Rosa BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -569,6 +621,8 @@
       <FixtureVal ID="3">0,255,1,0,2,100,3,255,4,0,5,100,6,255,7,0,8,100,9,255,10,0,11,100,12,255,13,0,14,100,15,255,16,0,17,100,18,255,19,0,20,100,21,255,22,0,23,100</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,100</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,100</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,100</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,100</FixtureVal>
     </Function>
     <Function ID="15" Type="Scene" Name="Rojo / Azul BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -576,6 +630,8 @@
       <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="16" Type="Scene" Name="Rojo / Verde BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -583,6 +639,8 @@
       <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="17" Type="Scene" Name="Rojo / Amarillo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -590,6 +648,8 @@
       <FixtureVal ID="3">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="18" Type="Scene" Name="Rojo / Magenta BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -597,6 +657,8 @@
       <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="19" Type="Scene" Name="Rojo / Blanco BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -604,6 +666,8 @@
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="20" Type="Scene" Name="Azul / Rojo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -611,6 +675,8 @@
       <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="21" Type="Scene" Name="Azul / Verde BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -618,6 +684,8 @@
       <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="22" Type="Scene" Name="Azul / Amarillo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -625,6 +693,8 @@
       <FixtureVal ID="3">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="23" Type="Scene" Name="Azul / Magenta BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -632,6 +702,8 @@
       <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="24" Type="Scene" Name="Azul / Blanco BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -639,6 +711,8 @@
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="25" Type="Scene" Name="Verde / Rojo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -646,6 +720,8 @@
       <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="26" Type="Scene" Name="Verde / Azul BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -653,6 +729,8 @@
       <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="27" Type="Scene" Name="Verde / Amarillo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -660,6 +738,8 @@
       <FixtureVal ID="3">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="28" Type="Scene" Name="Verde / Magenta BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -667,6 +747,8 @@
       <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="29" Type="Scene" Name="Verde / Blanco BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -674,6 +756,8 @@
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,0,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="30" Type="Scene" Name="Amarillo / Rojo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -681,6 +765,8 @@
       <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="31" Type="Scene" Name="Amarillo / Azul BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -688,6 +774,8 @@
       <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="32" Type="Scene" Name="Amarillo / Verde BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -695,6 +783,8 @@
       <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="33" Type="Scene" Name="Amarillo / Magenta BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -702,6 +792,8 @@
       <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="34" Type="Scene" Name="Amarillo / Blanco BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -709,6 +801,8 @@
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,0</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="35" Type="Scene" Name="Magenta / Rojo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -716,6 +810,8 @@
       <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="36" Type="Scene" Name="Magenta / Azul BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -723,6 +819,8 @@
       <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="37" Type="Scene" Name="Magenta / Verde BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -730,6 +828,8 @@
       <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="38" Type="Scene" Name="Magenta / Amarillo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -737,6 +837,8 @@
       <FixtureVal ID="3">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="39" Type="Scene" Name="Magenta / Blanco BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -744,6 +846,8 @@
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,0,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255</FixtureVal>
     </Function>
     <Function ID="40" Type="Scene" Name="Blanco / Rojo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -751,6 +855,8 @@
       <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="41" Type="Scene" Name="Blanco / Azul BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -758,6 +864,8 @@
       <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="42" Type="Scene" Name="Blanco / Verde BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -765,6 +873,8 @@
       <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="43" Type="Scene" Name="Blanco / Amarillo BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -772,6 +882,8 @@
       <FixtureVal ID="3">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,0</FixtureVal>
     </Function>
     <Function ID="44" Type="Scene" Name="Blanco / Magenta BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -779,6 +891,8 @@
       <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="25">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,255</FixtureVal>
     </Function>
     <Function ID="45" Type="Chaser" Name="Rueda Colores BarrasLed" Path="Colores BarrasLed">
       <Speed FadeIn="400" FadeOut="400" Duration="1900"/>
@@ -3810,140 +3924,154 @@
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>17</StartOffset>
+        <StartOffset>16</StartOffset>
       </Fixture>
       <Fixture>
         <ID>4</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>34</StartOffset>
+        <StartOffset>31</StartOffset>
       </Fixture>
       <Fixture>
         <ID>5</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>51</StartOffset>
+        <StartOffset>47</StartOffset>
       </Fixture>
       <Fixture>
         <ID>6</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>69</StartOffset>
+        <StartOffset>63</StartOffset>
       </Fixture>
       <Fixture>
         <ID>7</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>86</StartOffset>
+        <StartOffset>78</StartOffset>
       </Fixture>
       <Fixture>
         <ID>8</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>103</StartOffset>
+        <StartOffset>94</StartOffset>
       </Fixture>
       <Fixture>
         <ID>9</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>110</StartOffset>
       </Fixture>
       <Fixture>
         <ID>10</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>137</StartOffset>
+        <StartOffset>125</StartOffset>
       </Fixture>
       <Fixture>
         <ID>11</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>154</StartOffset>
+        <StartOffset>141</StartOffset>
       </Fixture>
       <Fixture>
         <ID>12</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>171</StartOffset>
+        <StartOffset>157</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>189</StartOffset>
+        <StartOffset>172</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>206</StartOffset>
+        <StartOffset>188</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>223</StartOffset>
+        <StartOffset>203</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
+        <StartOffset>219</StartOffset>
       </Fixture>
       <Fixture>
         <ID>20</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>257</StartOffset>
+        <StartOffset>235</StartOffset>
       </Fixture>
       <Fixture>
         <ID>21</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>274</StartOffset>
+        <StartOffset>250</StartOffset>
       </Fixture>
       <Fixture>
         <ID>22</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>291</StartOffset>
+        <StartOffset>266</StartOffset>
       </Fixture>
       <Fixture>
         <ID>23</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>309</StartOffset>
+        <StartOffset>282</StartOffset>
       </Fixture>
       <Fixture>
         <ID>24</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>326</StartOffset>
+        <StartOffset>297</StartOffset>
       </Fixture>
       <Fixture>
         <ID>25</ID>
         <Head>0</Head>
         <Mode>1</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>343</StartOffset>
+        <StartOffset>313</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>27</ID>
+        <Head>0</Head>
+        <Mode>1</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>329</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>28</ID>
+        <Head>0</Head>
+        <Mode>1</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>344</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
@@ -3989,6 +4117,8 @@
       <FixtureVal ID="23">5,248,6,255</FixtureVal>
       <FixtureVal ID="24">0,0</FixtureVal>
       <FixtureVal ID="25">0,255</FixtureVal>
+      <FixtureVal ID="27">0,0</FixtureVal>
+      <FixtureVal ID="28">0,255</FixtureVal>
     </Function>
     <Function ID="279" Type="Scene" Name="Dimmer Impares" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -4013,6 +4143,8 @@
       <FixtureVal ID="23">6,0</FixtureVal>
       <FixtureVal ID="24">0,255</FixtureVal>
       <FixtureVal ID="25">0,0</FixtureVal>
+      <FixtureVal ID="27">0,255</FixtureVal>
+      <FixtureVal ID="28">0,0</FixtureVal>
     </Function>
     <Function ID="280" Type="Chaser" Name="Dimmer PingPong" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="400"/>
