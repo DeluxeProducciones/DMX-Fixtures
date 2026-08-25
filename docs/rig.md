@@ -77,26 +77,30 @@ crowd.
 
 **Which way things point.** `x_rot` is degrees about the horizontal axis. Light
 leaves a fixture along `(0, -1, 0)` and the rotation turns it, so the direction
-is `(0, -cos, -sin)`:
+is `(0, -cos, -sin)`: **negative leans out over the audience, positive leans back
+over the stage.**
 
-| `x_rot` | Where the light goes |
-| --- | --- |
-| `0` | straight down - how a light hangs, and where every QLC+ mesh starts |
-| `180` | straight up - a fixture standing on the floor |
-| `-135` | up at 45 degrees and out over the audience |
-| **negative** | leans out over the audience |
-| **positive** | leans back over the stage |
+**A moving head is mounted, not aimed.** Its rotation says how the body hangs -
+`0` from a truss, `180` standing on the floor - and where the light goes is pan
+and tilt, which the show drives. Tilting the mounting of a mover does not aim
+it; it leaves it sitting crooked on its clamp and the beam still sweeps wherever
+the EFX sends it. `test_a_moving_head_is_mounted_never_aimed` holds the rule.
 
-So the six truss PARs sit at `-35`, tilted out to colour the room rather than
-pointing flat at it; the four pixel panels and both LED bars at `-90`, facing
-the audience square on; the two downstage grids at `+35`, leaning back at the
-DJ; and the two beams on the flightcases at `-135`, which throws them up and
-over the crowd rather than straight at the ceiling. Without any of it they all
-fire upwards, and with the sign the wrong way round they fire at the back wall.
+For everything else the rotation *is* the aim, and it is worked out rather than
+eyeballed. `qlctool stage --plot` prints where each beam meets the floor, and
+`beam_landing` is the arithmetic behind it:
 
-The DJ stands **behind** the deck - smaller z than it, since the audience is the
-high z - so "the front of the table" is the audience side, and that is the way
-his two beams cross.
+| Fixture | `x_rot` | Where the beam lands |
+| --- | --- | --- |
+| Six truss PARs | `-60` | z = 8612, past the front of the stage, clearing the DJ's head by 2,8 m |
+| Four pixel panels, both LED bars | `-90` | never - level, straight at the room |
+| Two downstage grids | `+35` | z = 4731, on the DJ deck |
+| Two beams on flightcases | `180` | mover: standing upright, base down |
+| Four truss movers | `0` | mover: hanging |
+
+The PARs were at `-35` first, which looked like "tilted towards the audience"
+and landed at **z = 4485** - the DJ deck is at 4500. They were lighting him in
+the face. That is the whole reason the landing calculation exists.
 
 ### The wash heads barely move, and it is not the show
 
@@ -111,6 +115,11 @@ the problem. With AUTO running, the DMX view reads:
 
 The wash's *coarse* channels never leave zero and only the fine ones move, so
 the head travels one 256th of its range: invisible. The beams are fine.
+
+This is also why **the washes sit pointing at the ceiling**. Tilt is not just
+frozen, it is frozen at zero, which is one end of a 270 degree travel - so the
+heads park at the top of their range and stay there. Same cause, and the same
+two ways out.
 
 **The definition is right.** `Manual/ProLights - CromoWash 100.pdf` section
 3.12 gives both tables and ours matches them channel for channel: ADVANCED is
