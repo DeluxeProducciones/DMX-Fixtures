@@ -68,32 +68,29 @@ the plot: QLC+ `MeshItem` entries built from its own bundled primitives
 (`generic/cube.obj`, `cylinder.obj`, `sphere.obj`). They are scenery, not
 fixtures, and exist so the preview looks like the room.
 
-**Which way things point.** `x_rot` is degrees about the horizontal axis, and 0
-is straight down, because that is how a light hangs and how every QLC+ mesh
-starts. 180 aims a fixture standing on the floor at the ceiling; **90 turns one
-out towards the audience** - which is also the rotation QLC+ applies by itself
-when a pixel bar is dropped into the 2D front view. The six truss PARs, the four
-pixel panels and both LED bars carry 90; without it the panels and the bars fire
-straight up.
+**Which way is the audience.** `z` grows **towards** them. QLC+'s 3D camera
+starts at `(0, 3, 7.5)` looking at the origin
+(`MainView3D::resetCameraPosition`), so it sits on the +Z side: the far end of
+the stage is small z and the front edge is large z. This plot had it backwards
+once and the whole rig came out mirrored, with the back truss hanging over the
+crowd.
 
-**Twenty-one fixtures rigged out of twenty-nine patched.** The other eight come
-from bigger setups and are not built: the third and fourth CromoWash100, both
-MiN Wash, both LED Beam Mini, the seventh Vortex PC-64 and the second smoke
-machine. They keep a parking spot in the plot and carry QLC+'s `Hidden` flag, so
-the 2D and 3D views show the montage rather than the whole patch, and unhiding
-one does not drop it on top of another.
+**Which way things point.** `x_rot` is degrees about the horizontal axis. Light
+leaves a fixture along `(0, -1, 0)` and the rotation turns it, so the direction
+is `(0, -cos, -sin)`:
 
-A plot is bound to a patch - fixture IDs are how `<Monitor>` addresses anything.
-So the file names the model it expects at every ID and `load_stage_plot` refuses
-a workspace where they no longer match, rather than hanging a beam where the
-smoke machine is.
+| `x_rot` | Where the light goes |
+| --- | --- |
+| `0` | straight down - how a light hangs, and where every QLC+ mesh starts |
+| `180` | straight up - a fixture standing on the floor |
+| **negative** | leans out over the audience |
+| **positive** | leans back over the stage |
 
-Distances are a guess at the venue, not a survey: a 12 x 6 x 8 m stage, back
-truss at 4 m and front truss at 3 m. The *order and the grouping* are real; the
-metres are there so the preview reads correctly and can be dragged. Each x is
-its slot centre minus half the fixture's own width, because QLC+ stores the near
-corner - that is what makes a row read as evenly spaced rather than evenly
-left-aligned.
+So the six truss PARs sit at `-35`, tilted out to colour the room rather than
+pointing flat at it; the four pixel panels and both LED bars at `-90`, facing
+the audience square on; and the two downstage grids at `+35`, leaning back at
+the DJ. Without any of it they all fire at the ceiling, and with the sign the
+wrong way round they fire at the back wall.
 
 ### The wash heads barely move, and it is not the show
 

@@ -8,9 +8,14 @@
     "stores. A fixture position is its near corner, not its centre, so each one",
     "here is its slot centre minus half the fixture's own width - that is what",
     "makes a row read as evenly spaced rather than evenly left-aligned.",
-    "x_rot is degrees about the horizontal axis. QLC+'s meshes all point down by",
-    "default, because that is how a light hangs: 180 aims a fixture standing on",
-    "the floor at the ceiling, 90 turns a hanging one out towards the audience.",
+    "z grows TOWARDS THE AUDIENCE. QLC+'s 3D camera starts at +Z looking at -Z",
+    "(MainView3D::resetCameraPosition), so the far side of the stage is small z",
+    "and the front edge is large z. Getting this backwards mirrors the whole rig.",
+    "x_rot is degrees about the horizontal axis. Light leaves a fixture along",
+    "(0,-1,0) and the rotation turns it, so the direction is (0, -cos, -sin):",
+    "0 is straight down, which is how a light hangs and how every QLC+ mesh",
+    "starts; 180 aims a fixture standing on the floor at the ceiling; NEGATIVE",
+    "leans it out over the audience and positive leans it back over the stage.",
     "props are scenery, not fixtures - given as a centre and a size in mm.",
     "Eight patched fixtures are not built into this montage - they come from",
     "bigger setups. They keep a parking spot and are marked hidden so the 2D and",
@@ -29,8 +34,8 @@
       "place": "Back truss 1 of 10, aimed at the audience",
       "x": 854,
       "y": 4000,
-      "z": 6500,
-      "x_rot": 90
+      "z": 1500,
+      "x_rot": -35
     },
     {
       "id": 20,
@@ -38,7 +43,7 @@
       "place": "Back truss 2 of 10",
       "x": 1916,
       "y": 4000,
-      "z": 6500
+      "z": 1500
     },
     {
       "id": 7,
@@ -46,8 +51,8 @@
       "place": "Back truss 3 of 10, aimed at the audience",
       "x": 3076,
       "y": 4000,
-      "z": 6500,
-      "x_rot": 90
+      "z": 1500,
+      "x_rot": -35
     },
     {
       "id": 0,
@@ -55,7 +60,7 @@
       "place": "Back truss 4 of 10",
       "x": 4185,
       "y": 4000,
-      "z": 6500
+      "z": 1500
     },
     {
       "id": 8,
@@ -63,8 +68,8 @@
       "place": "Back truss 5 of 10, aimed at the audience",
       "x": 5298,
       "y": 4000,
-      "z": 6500,
-      "x_rot": 90
+      "z": 1500,
+      "x_rot": -35
     },
     {
       "id": 9,
@@ -72,8 +77,8 @@
       "place": "Back truss 6 of 10, aimed at the audience",
       "x": 6410,
       "y": 4000,
-      "z": 6500,
-      "x_rot": 90
+      "z": 1500,
+      "x_rot": -35
     },
     {
       "id": 1,
@@ -81,7 +86,7 @@
       "place": "Back truss 7 of 10",
       "x": 7519,
       "y": 4000,
-      "z": 6500
+      "z": 1500
     },
     {
       "id": 10,
@@ -89,8 +94,8 @@
       "place": "Back truss 8 of 10, aimed at the audience",
       "x": 8632,
       "y": 4000,
-      "z": 6500,
-      "x_rot": 90
+      "z": 1500,
+      "x_rot": -35
     },
     {
       "id": 21,
@@ -98,7 +103,7 @@
       "place": "Back truss 9 of 10",
       "x": 9694,
       "y": 4000,
-      "z": 6500
+      "z": 1500
     },
     {
       "id": 11,
@@ -106,8 +111,8 @@
       "place": "Back truss 10 of 10, aimed at the audience",
       "x": 10854,
       "y": 4000,
-      "z": 6500,
-      "x_rot": 90
+      "z": 1500,
+      "x_rot": -35
     },
     {
       "id": 4,
@@ -115,7 +120,8 @@
       "place": "Front truss 1 of 7, aimed back at the DJ",
       "x": 896,
       "y": 3000,
-      "z": 1200
+      "z": 6800,
+      "x_rot": 35
     },
     {
       "id": 24,
@@ -123,8 +129,8 @@
       "place": "Front truss 2 of 7, aimed at the audience",
       "x": 2808,
       "y": 3000,
-      "z": 1200,
-      "x_rot": 90
+      "z": 6800,
+      "x_rot": -90
     },
     {
       "id": 25,
@@ -132,8 +138,8 @@
       "place": "Front truss 3 of 7, aimed at the audience",
       "x": 4342,
       "y": 3000,
-      "z": 1200,
-      "x_rot": 90
+      "z": 6800,
+      "x_rot": -90
     },
     {
       "id": 2,
@@ -141,8 +147,8 @@
       "place": "Front truss 4 of 7, dead centre, aimed at the audience",
       "x": 5468,
       "y": 3000,
-      "z": 1200,
-      "x_rot": 90
+      "z": 6800,
+      "x_rot": -90
     },
     {
       "id": 27,
@@ -150,8 +156,8 @@
       "place": "Front truss 5 of 7, aimed at the audience",
       "x": 7408,
       "y": 3000,
-      "z": 1200,
-      "x_rot": 90
+      "z": 6800,
+      "x_rot": -90
     },
     {
       "id": 28,
@@ -159,8 +165,8 @@
       "place": "Front truss 6 of 7, aimed at the audience",
       "x": 8942,
       "y": 3000,
-      "z": 1200,
-      "x_rot": 90
+      "z": 6800,
+      "x_rot": -90
     },
     {
       "id": 5,
@@ -168,7 +174,8 @@
       "place": "Front truss 7 of 7, aimed back at the DJ",
       "x": 10096,
       "y": 3000,
-      "z": 1200
+      "z": 6800,
+      "x_rot": 35
     },
     {
       "id": 3,
@@ -176,8 +183,8 @@
       "place": "Over the DJ booth",
       "x": 5468,
       "y": 2200,
-      "z": 3500,
-      "x_rot": 90
+      "z": 4500,
+      "x_rot": -90
     },
     {
       "id": 22,
@@ -185,7 +192,7 @@
       "place": "On a flightcase beside the DJ deck, house left, aimed up",
       "x": 4405,
       "y": 600,
-      "z": 3335,
+      "z": 4665,
       "x_rot": 180
     },
     {
@@ -194,7 +201,7 @@
       "place": "On a flightcase beside the DJ deck, house right, aimed up",
       "x": 7205,
       "y": 600,
-      "z": 3335,
+      "z": 4665,
       "x_rot": 180
     },
     {
@@ -203,7 +210,7 @@
       "place": "Upstage side, house left",
       "x": 300,
       "y": 0,
-      "z": 6000
+      "z": 2000
     },
     {
       "id": 12,
@@ -211,7 +218,7 @@
       "place": "Spare, not rigged",
       "x": 600,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     },
     {
@@ -220,7 +227,7 @@
       "place": "Spare, not rigged",
       "x": 1800,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     },
     {
@@ -229,7 +236,7 @@
       "place": "Spare, not rigged",
       "x": 3000,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     },
     {
@@ -238,7 +245,7 @@
       "place": "Spare, not rigged",
       "x": 4200,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     },
     {
@@ -247,7 +254,7 @@
       "place": "Spare, not rigged",
       "x": 5400,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     },
     {
@@ -256,7 +263,7 @@
       "place": "Spare, not rigged",
       "x": 6600,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     },
     {
@@ -265,7 +272,7 @@
       "place": "Spare, not rigged",
       "x": 7800,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     },
     {
@@ -274,7 +281,7 @@
       "place": "Spare, not rigged",
       "x": 9000,
       "y": 0,
-      "z": 7700,
+      "z": 300,
       "hidden": true
     }
   ],
@@ -285,7 +292,7 @@
       "name": "DJ deck top",
       "cx": 6000,
       "cy": 860,
-      "cz": 3500,
+      "cz": 4500,
       "w": 2000,
       "h": 80,
       "d": 1000
@@ -296,7 +303,7 @@
       "name": "DJ deck leg, downstage left",
       "cx": 5100,
       "cy": 410,
-      "cz": 3100,
+      "cz": 4900,
       "w": 60,
       "h": 820,
       "d": 60
@@ -307,7 +314,7 @@
       "name": "DJ deck leg, downstage right",
       "cx": 6900,
       "cy": 410,
-      "cz": 3100,
+      "cz": 4900,
       "w": 60,
       "h": 820,
       "d": 60
@@ -318,7 +325,7 @@
       "name": "DJ deck leg, upstage left",
       "cx": 5100,
       "cy": 410,
-      "cz": 3900,
+      "cz": 4100,
       "w": 60,
       "h": 820,
       "d": 60
@@ -329,7 +336,7 @@
       "name": "DJ deck leg, upstage right",
       "cx": 6900,
       "cy": 410,
-      "cz": 3900,
+      "cz": 4100,
       "w": 60,
       "h": 820,
       "d": 60
@@ -340,7 +347,7 @@
       "name": "Flightcase, house left",
       "cx": 4600,
       "cy": 300,
-      "cz": 3500,
+      "cz": 4500,
       "w": 600,
       "h": 600,
       "d": 600
@@ -351,7 +358,7 @@
       "name": "Flightcase, house right",
       "cx": 7400,
       "cy": 300,
-      "cz": 3500,
+      "cz": 4500,
       "w": 600,
       "h": 600,
       "d": 600
@@ -362,7 +369,7 @@
       "name": "DJ legs",
       "cx": 6000,
       "cy": 425,
-      "cz": 4250,
+      "cz": 3750,
       "w": 340,
       "h": 850,
       "d": 240
@@ -373,7 +380,7 @@
       "name": "DJ torso",
       "cx": 6000,
       "cy": 1160,
-      "cz": 4250,
+      "cz": 3750,
       "w": 440,
       "h": 620,
       "d": 260
@@ -384,7 +391,7 @@
       "name": "DJ head",
       "cx": 6000,
       "cy": 1590,
-      "cz": 4250,
+      "cz": 3750,
       "w": 230,
       "h": 250,
       "d": 230
@@ -395,7 +402,7 @@
       "name": "DJ arm, house left",
       "cx": 5760,
       "cy": 1000,
-      "cz": 3950,
+      "cz": 4050,
       "w": 90,
       "h": 90,
       "d": 700
@@ -406,7 +413,7 @@
       "name": "DJ arm, house right",
       "cx": 6240,
       "cy": 1000,
-      "cz": 3950,
+      "cz": 4050,
       "w": 90,
       "h": 90,
       "d": 700
