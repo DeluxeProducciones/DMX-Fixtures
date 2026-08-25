@@ -109,6 +109,13 @@ the problem. With AUTO running, the DMX view reads:
 The wash's *coarse* channels never leave zero and only the fine ones move, so
 the head travels one 256th of its range: invisible. The beams are fine.
 
+**The definition is right.** `Manual/ProLights - CromoWash 100.pdf` section
+3.12 gives both tables and ours matches them channel for channel: ADVANCED is
+`Pan, Pan fine, Tilt, Tilt fine, Pan/tilt speed, Red, Green, Blue,
+Color/white macro, Dimmer, Strobe, Control`, BASIC is the same without the two
+fine channels and the speed. Nothing drives channel 12 either, which matters -
+20-39 there arms *Pan/tilt black* after three seconds and 200-219 is a reset.
+
 The difference is the channel order. `QLCFixtureMode::cacheHeads` pairs a fine
 channel with the coarse one **only when it directly follows it in the same
 group**. The CromoWash is `Pan, Pan fine, Tilt, Tilt fine`, so both pairs are
@@ -118,15 +125,40 @@ low byte and leaves the high byte at zero. The BEAM is `Pan, Tilt, Pan fine,
 Tilt fine`: nothing is adjacent to its own coarse channel, no pair is mapped,
 and QLC+ writes plain 8-bit that works.
 
+The manual says exactly how little that is: *Pan = 2,10°, Pan Fine = 0,008°,
+Tilt = 1,05°, Tilt Fine = 0,004°*. A full sweep of the fine channel alone is
+**256 x 0,008 = 2,05° of pan out of 540°**, and 1,02° of tilt out of 270°. The
+heads are not stuck - they are moving two degrees.
+
 So this is the QLC+ engine, not the definition and not the generated show, and
 **the real fixtures get the same DMX** - they will barely move on the rig too.
 Two ways out, both the owner's call:
 
-- patch the CromoWash100 in its **`Basic` 9-channel mode**, which has `Pan, Tilt`
-  and no fine channels at all, and set the fixtures to that mode in their menu;
+- patch the CromoWash100 in its **`Basic` 9-channel mode** - `Pan, Tilt` with no
+  fine channels at all, confirmed against the manual - and set the fixtures to
+  that mode from their own control panel ([Channels] in the menu);
 - or try a QLC+ newer than 5.2.2 - the current source carries a reworked
   `GenericFader::updateChannel` with exactly this secondary-channel handling in
   it.
+
+### What the manual corrected
+
+Reading `Manual/ProLights - CromoWash 100.pdf` end to end against the definition
+confirmed the channel map exactly - both modes, and every range of the colour
+macro, strobe and control channels. Three things did not match:
+
+- **`Lumens="4500"`**, against the manual's `> 2800 lm` (1.3). Now 2800, and the
+  bulb is named for what it is: 37 x 3W RGB LEDs.
+- **A colour-macro label with two rows glued together.** 151-170 read
+  `R: Down / G: Down / B: 100% R: 100% / G: 100% / B: 100%` - the manual's table
+  is two columns and the next row came along with it. 171-200 already carries
+  the second half on its own. Nothing had leaked into the show, because the
+  generated colour work uses the palette rather than this fixture's macros.
+- **The reset range carried no preset.** 200-219 is now `ResetAll`, as the
+  beams' is.
+
+Everything else in the physical block was already right and now has a source:
+296 x 344 x 184 mm, 6,5 kg, 130 W, a 6 degree beam, pan 540 and tilt 270.
 
 ### Smoke does not show in the 3D view
 
@@ -199,7 +231,7 @@ resolves even when the custom definitions are not installed.
 
 | Fixture | Status |
 | --- | --- |
-| Pro-Lights CromoWash100 | Verified against the repo manual (Basic 9ch, Advanced 12ch) |
+| Pro-Lights CromoWash100 | **Fully verified** against `Manual/ProLights - CromoWash 100.pdf` on 2026-08-25: both modes channel for channel (3.12), every capability range of the colour macro, strobe and control channels, and the whole physical block (1.3). Three things were wrong and are fixed - see [What the manual corrected](#what-the-manual-corrected). The 12-channel Advanced order is `Pan, Pan fine, Tilt, Tilt fine, Pan/tilt speed, ...`, which is what stops it moving: see [The wash heads barely move](#the-wash-heads-barely-move-and-it-is-not-the-show) |
 | Audibax IOWA70 | Verified against the repo manual; orphan, not patched |
 | Chauvet MiN Wash | **Verified online** (2026-08-24): the manufacturer manual's 13-channel mode matches channels 1-10 - Pan, Pan fine, Tilt, Tilt fine, Vector speed, Dimmer/Strobe, R, G, B, Color Macros - which is everything the toolkit drives. The manual edition found calls 11-13 "Reserved" where the definition says "Vector Speed (Color)" and "Movement Macros"; unused either way. **Its `5 Channel` mode is wrong** - it lists no Tilt - but the patch does not use it |
 | HYULIGHTS WX-60WPS | Definition declares 10 channels, the used mode exposes 8, matching the patch. Not otherwise verified |
