@@ -378,8 +378,8 @@
     </Monitor>
     <Function ID="0" Type="Scene" Name="Luces ON" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
       <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="4">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255</FixtureVal>
@@ -391,10 +391,10 @@
       <FixtureVal ID="10">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="11">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="12">0,255,1,255,2,255,3,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
@@ -402,8 +402,8 @@
     </Function>
     <Function ID="1" Type="Scene" Name="Todo Blanco" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
       <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="4">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255</FixtureVal>
@@ -415,10 +415,10 @@
       <FixtureVal ID="10">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="11">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="12">0,255,1,255,2,255,3,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
@@ -454,8 +454,8 @@
     </Function>
     <Function ID="3" Type="Scene" Name="Flash 100%" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
       <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
       <FixtureVal ID="4">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255</FixtureVal>
@@ -467,10 +467,10 @@
       <FixtureVal ID="10">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="11">0,255,1,255,2,255,3,255</FixtureVal>
       <FixtureVal ID="12">0,255,1,255,2,255,3,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="24">0,255,1,255,2,255,3,255</FixtureVal>
@@ -478,8 +478,8 @@
     </Function>
     <Function ID="4" Type="Scene" Name="Flash 50%" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,128,6,128,7,128,9,255</FixtureVal>
-      <FixtureVal ID="1">5,128,6,128,7,128,9,255</FixtureVal>
+      <FixtureVal ID="0">5,128,6,128,7,128,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,128,6,128,7,128,9,255,10,4</FixtureVal>
       <FixtureVal ID="2">0,128,1,128,2,128,3,128,4,128,5,128,6,128,7,128,8,128,9,128,10,128,11,128,12,128,13,128,14,128,15,128,16,128,17,128,18,128,19,128,20,128,21,128,22,128,23,128</FixtureVal>
       <FixtureVal ID="3">0,128,1,128,2,128,3,128,4,128,5,128,6,128,7,128,8,128,9,128,10,128,11,128,12,128,13,128,14,128,15,128,16,128,17,128,18,128,19,128,20,128,21,128,22,128,23,128</FixtureVal>
       <FixtureVal ID="4">0,255,1,128,2,128,3,128,4,128,5,128,6,128,7,128,8,128,9,128,10,128,11,128,12,128</FixtureVal>
@@ -491,10 +491,10 @@
       <FixtureVal ID="10">0,128,1,128,2,128,3,255</FixtureVal>
       <FixtureVal ID="11">0,128,1,128,2,128,3,255</FixtureVal>
       <FixtureVal ID="12">0,128,1,128,2,128,3,255</FixtureVal>
-      <FixtureVal ID="13">5,128,6,128,7,128,9,255</FixtureVal>
-      <FixtureVal ID="14">5,128,6,128,7,128,9,255</FixtureVal>
-      <FixtureVal ID="15">6,128,7,128,8,128</FixtureVal>
-      <FixtureVal ID="16">6,128,7,128,8,128</FixtureVal>
+      <FixtureVal ID="13">5,128,6,128,7,128,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,128,6,128,7,128,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,128,7,128,8,128</FixtureVal>
+      <FixtureVal ID="16">5,247,6,128,7,128,8,128</FixtureVal>
       <FixtureVal ID="18">2,255,3,128,4,128,5,128</FixtureVal>
       <FixtureVal ID="19">2,255,3,128,4,128,5,128</FixtureVal>
       <FixtureVal ID="24">0,255,1,128,2,128,3,128</FixtureVal>
@@ -834,441 +834,441 @@
     </Function>
     <Function ID="47" Type="Scene" Name="Rojo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,0</FixtureVal>
     </Function>
     <Function ID="48" Type="Scene" Name="Verde Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="49" Type="Scene" Name="Azul Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="50" Type="Scene" Name="UltraVioleta Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,160,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,160,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,160,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,160,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,160,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,160,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,160,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,160,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,160,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,160,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,160,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,160,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,160,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,160,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="51" Type="Scene" Name="Amarillo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="52" Type="Scene" Name="Cyan Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,0,7,255,8,255</FixtureVal>
+      <FixtureVal ID="0">5,0,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,255,5,255</FixtureVal>
     </Function>
     <Function ID="53" Type="Scene" Name="Magenta Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="54" Type="Scene" Name="Blanco Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
     </Function>
     <Function ID="55" Type="Scene" Name="Naranja Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,127,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,127,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,127,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,127,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,127,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,127,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,127,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,127,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,127,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,127,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,127,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,127,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,127,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,127,5,0</FixtureVal>
     </Function>
     <Function ID="56" Type="Scene" Name="Rosa Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,100,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,100,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,100,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,100,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,100</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,100</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,100,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,100,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,100,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,100,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,100</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,100</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,100</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,100</FixtureVal>
     </Function>
     <Function ID="57" Type="Scene" Name="Rojo / Azul Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,0</FixtureVal>
-      <FixtureVal ID="16">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="58" Type="Scene" Name="Rojo / Verde Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,0</FixtureVal>
-      <FixtureVal ID="16">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="59" Type="Scene" Name="Rojo / Amarillo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="60" Type="Scene" Name="Rojo / Magenta Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="61" Type="Scene" Name="Rojo / Blanco Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
     </Function>
     <Function ID="62" Type="Scene" Name="Azul / Rojo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,0</FixtureVal>
     </Function>
     <Function ID="63" Type="Scene" Name="Azul / Verde Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="64" Type="Scene" Name="Azul / Amarillo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="65" Type="Scene" Name="Azul / Magenta Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="66" Type="Scene" Name="Azul / Blanco Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
     </Function>
     <Function ID="67" Type="Scene" Name="Verde / Rojo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,0</FixtureVal>
     </Function>
     <Function ID="68" Type="Scene" Name="Verde / Azul Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="69" Type="Scene" Name="Verde / Amarillo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="70" Type="Scene" Name="Verde / Magenta Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="71" Type="Scene" Name="Verde / Blanco Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,0,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,0,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
     </Function>
     <Function ID="72" Type="Scene" Name="Amarillo / Rojo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,0</FixtureVal>
     </Function>
     <Function ID="73" Type="Scene" Name="Amarillo / Azul Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="74" Type="Scene" Name="Amarillo / Verde Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="75" Type="Scene" Name="Amarillo / Magenta Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="76" Type="Scene" Name="Amarillo / Blanco Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,0</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
     </Function>
     <Function ID="77" Type="Scene" Name="Magenta / Rojo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,0</FixtureVal>
     </Function>
     <Function ID="78" Type="Scene" Name="Magenta / Azul Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="79" Type="Scene" Name="Magenta / Verde Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="80" Type="Scene" Name="Magenta / Amarillo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="81" Type="Scene" Name="Magenta / Blanco Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,0,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,0,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,255</FixtureVal>
     </Function>
     <Function ID="82" Type="Scene" Name="Blanco / Rojo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,0</FixtureVal>
     </Function>
     <Function ID="83" Type="Scene" Name="Blanco / Azul Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,0,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,0,5,255</FixtureVal>
     </Function>
     <Function ID="84" Type="Scene" Name="Blanco / Verde Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,0,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,0,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,0,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,0,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="85" Type="Scene" Name="Blanco / Amarillo Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,255,7,0,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,255,8,0</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,0,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,255,8,0</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,255,5,0</FixtureVal>
     </Function>
     <Function ID="86" Type="Scene" Name="Blanco / Magenta Cabezas" Path="Colores Cabezas">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="1">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="13">5,255,6,255,7,255,9,255</FixtureVal>
-      <FixtureVal ID="14">5,255,6,0,7,255,9,255</FixtureVal>
-      <FixtureVal ID="15">6,255,7,255,8,255</FixtureVal>
-      <FixtureVal ID="16">6,255,7,0,8,255</FixtureVal>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255,10,4</FixtureVal>
+      <FixtureVal ID="15">5,247,6,255,7,255,8,255</FixtureVal>
+      <FixtureVal ID="16">5,247,6,255,7,0,8,255</FixtureVal>
       <FixtureVal ID="18">2,255,3,255,4,255,5,255</FixtureVal>
       <FixtureVal ID="19">2,255,3,255,4,0,5,255</FixtureVal>
     </Function>
@@ -3451,143 +3451,143 @@
     </Function>
     <Function ID="232" Type="Scene" Name="Gobo - White Light" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,3</FixtureVal>
-      <FixtureVal ID="21">6,255,9,3</FixtureVal>
-      <FixtureVal ID="22">6,255,9,3</FixtureVal>
-      <FixtureVal ID="23">6,255,9,3</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,3</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,3</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,3</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,3</FixtureVal>
     </Function>
     <Function ID="233" Type="Scene" Name="Gobo - Gobo 1" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,10</FixtureVal>
-      <FixtureVal ID="21">6,255,9,10</FixtureVal>
-      <FixtureVal ID="22">6,255,9,10</FixtureVal>
-      <FixtureVal ID="23">6,255,9,10</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,10</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,10</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,10</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,10</FixtureVal>
     </Function>
     <Function ID="234" Type="Scene" Name="Gobo - Gobo 2" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,17</FixtureVal>
-      <FixtureVal ID="21">6,255,9,17</FixtureVal>
-      <FixtureVal ID="22">6,255,9,17</FixtureVal>
-      <FixtureVal ID="23">6,255,9,17</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,17</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,17</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,17</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,17</FixtureVal>
     </Function>
     <Function ID="235" Type="Scene" Name="Gobo - Gobo 3" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,24</FixtureVal>
-      <FixtureVal ID="21">6,255,9,24</FixtureVal>
-      <FixtureVal ID="22">6,255,9,24</FixtureVal>
-      <FixtureVal ID="23">6,255,9,24</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,24</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,24</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,24</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,24</FixtureVal>
     </Function>
     <Function ID="236" Type="Scene" Name="Gobo - Gobo 4" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,31</FixtureVal>
-      <FixtureVal ID="21">6,255,9,31</FixtureVal>
-      <FixtureVal ID="22">6,255,9,31</FixtureVal>
-      <FixtureVal ID="23">6,255,9,31</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,31</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,31</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,31</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,31</FixtureVal>
     </Function>
     <Function ID="237" Type="Scene" Name="Gobo - Gobo 5" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,38</FixtureVal>
-      <FixtureVal ID="21">6,255,9,38</FixtureVal>
-      <FixtureVal ID="22">6,255,9,38</FixtureVal>
-      <FixtureVal ID="23">6,255,9,38</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,38</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,38</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,38</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,38</FixtureVal>
     </Function>
     <Function ID="238" Type="Scene" Name="Gobo - Gobo 6" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,45</FixtureVal>
-      <FixtureVal ID="21">6,255,9,45</FixtureVal>
-      <FixtureVal ID="22">6,255,9,45</FixtureVal>
-      <FixtureVal ID="23">6,255,9,45</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,45</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,45</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,45</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,45</FixtureVal>
     </Function>
     <Function ID="239" Type="Scene" Name="Gobo - Gobo 7" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,52</FixtureVal>
-      <FixtureVal ID="21">6,255,9,52</FixtureVal>
-      <FixtureVal ID="22">6,255,9,52</FixtureVal>
-      <FixtureVal ID="23">6,255,9,52</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,52</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,52</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,52</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,52</FixtureVal>
     </Function>
     <Function ID="240" Type="Scene" Name="Gobo - Gobo 8" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,59</FixtureVal>
-      <FixtureVal ID="21">6,255,9,59</FixtureVal>
-      <FixtureVal ID="22">6,255,9,59</FixtureVal>
-      <FixtureVal ID="23">6,255,9,59</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,59</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,59</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,59</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,59</FixtureVal>
     </Function>
     <Function ID="241" Type="Scene" Name="Gobo - Gobo 9" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,66</FixtureVal>
-      <FixtureVal ID="21">6,255,9,66</FixtureVal>
-      <FixtureVal ID="22">6,255,9,66</FixtureVal>
-      <FixtureVal ID="23">6,255,9,66</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,66</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,66</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,66</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,66</FixtureVal>
     </Function>
     <Function ID="242" Type="Scene" Name="Gobo - Gobo 10" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,73</FixtureVal>
-      <FixtureVal ID="21">6,255,9,73</FixtureVal>
-      <FixtureVal ID="22">6,255,9,73</FixtureVal>
-      <FixtureVal ID="23">6,255,9,73</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,73</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,73</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,73</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,73</FixtureVal>
     </Function>
     <Function ID="243" Type="Scene" Name="Gobo - Gobo 11" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,80</FixtureVal>
-      <FixtureVal ID="21">6,255,9,80</FixtureVal>
-      <FixtureVal ID="22">6,255,9,80</FixtureVal>
-      <FixtureVal ID="23">6,255,9,80</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,80</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,80</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,80</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,80</FixtureVal>
     </Function>
     <Function ID="244" Type="Scene" Name="Gobo - Gobo 12" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,87</FixtureVal>
-      <FixtureVal ID="21">6,255,9,87</FixtureVal>
-      <FixtureVal ID="22">6,255,9,87</FixtureVal>
-      <FixtureVal ID="23">6,255,9,87</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,87</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,87</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,87</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,87</FixtureVal>
     </Function>
     <Function ID="245" Type="Scene" Name="Gobo - Gobo 13" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,94</FixtureVal>
-      <FixtureVal ID="21">6,255,9,94</FixtureVal>
-      <FixtureVal ID="22">6,255,9,94</FixtureVal>
-      <FixtureVal ID="23">6,255,9,94</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,94</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,94</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,94</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,94</FixtureVal>
     </Function>
     <Function ID="246" Type="Scene" Name="Gobo - Gobo 14" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,101</FixtureVal>
-      <FixtureVal ID="21">6,255,9,101</FixtureVal>
-      <FixtureVal ID="22">6,255,9,101</FixtureVal>
-      <FixtureVal ID="23">6,255,9,101</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,101</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,101</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,101</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,101</FixtureVal>
     </Function>
     <Function ID="247" Type="Scene" Name="Gobo - Gobo 15" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,108</FixtureVal>
-      <FixtureVal ID="21">6,255,9,108</FixtureVal>
-      <FixtureVal ID="22">6,255,9,108</FixtureVal>
-      <FixtureVal ID="23">6,255,9,108</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,108</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,108</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,108</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,108</FixtureVal>
     </Function>
     <Function ID="248" Type="Scene" Name="Gobo - Gobo 16" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,115</FixtureVal>
-      <FixtureVal ID="21">6,255,9,115</FixtureVal>
-      <FixtureVal ID="22">6,255,9,115</FixtureVal>
-      <FixtureVal ID="23">6,255,9,115</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,115</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,115</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,115</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,115</FixtureVal>
     </Function>
     <Function ID="249" Type="Scene" Name="Gobo - Gobo 17" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,123</FixtureVal>
-      <FixtureVal ID="21">6,255,9,123</FixtureVal>
-      <FixtureVal ID="22">6,255,9,123</FixtureVal>
-      <FixtureVal ID="23">6,255,9,123</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,123</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,123</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,123</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,123</FixtureVal>
     </Function>
     <Function ID="250" Type="Scene" Name="Gobo - Rainbow effect fast to slow" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,159</FixtureVal>
-      <FixtureVal ID="21">6,255,9,159</FixtureVal>
-      <FixtureVal ID="22">6,255,9,159</FixtureVal>
-      <FixtureVal ID="23">6,255,9,159</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,159</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,159</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,159</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,159</FixtureVal>
     </Function>
     <Function ID="251" Type="Scene" Name="Gobo - Rainbow effect reverse slow to fast" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,9,223</FixtureVal>
-      <FixtureVal ID="21">6,255,9,223</FixtureVal>
-      <FixtureVal ID="22">6,255,9,223</FixtureVal>
-      <FixtureVal ID="23">6,255,9,223</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,9,223</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,9,223</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,9,223</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,9,223</FixtureVal>
     </Function>
     <Function ID="252" Type="Chaser" Name="Gobo Animacion" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
@@ -3617,122 +3617,122 @@
     </Function>
     <Function ID="253" Type="Scene" Name="Color Beam - White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,4</FixtureVal>
-      <FixtureVal ID="21">6,255,7,4</FixtureVal>
-      <FixtureVal ID="22">6,255,7,4</FixtureVal>
-      <FixtureVal ID="23">6,255,7,4</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,4</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,4</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,4</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,4</FixtureVal>
     </Function>
     <Function ID="254" Type="Scene" Name="Color Beam - Red" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,12</FixtureVal>
-      <FixtureVal ID="21">6,255,7,12</FixtureVal>
-      <FixtureVal ID="22">6,255,7,12</FixtureVal>
-      <FixtureVal ID="23">6,255,7,12</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,12</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,12</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,12</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,12</FixtureVal>
     </Function>
     <Function ID="255" Type="Scene" Name="Color Beam - Orange" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,19</FixtureVal>
-      <FixtureVal ID="21">6,255,7,19</FixtureVal>
-      <FixtureVal ID="22">6,255,7,19</FixtureVal>
-      <FixtureVal ID="23">6,255,7,19</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,19</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,19</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,19</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,19</FixtureVal>
     </Function>
     <Function ID="256" Type="Scene" Name="Color Beam - Yellow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,27</FixtureVal>
-      <FixtureVal ID="21">6,255,7,27</FixtureVal>
-      <FixtureVal ID="22">6,255,7,27</FixtureVal>
-      <FixtureVal ID="23">6,255,7,27</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,27</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,27</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,27</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,27</FixtureVal>
     </Function>
     <Function ID="257" Type="Scene" Name="Color Beam - Green" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,35</FixtureVal>
-      <FixtureVal ID="21">6,255,7,35</FixtureVal>
-      <FixtureVal ID="22">6,255,7,35</FixtureVal>
-      <FixtureVal ID="23">6,255,7,35</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,35</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,35</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,35</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,35</FixtureVal>
     </Function>
     <Function ID="258" Type="Scene" Name="Color Beam - Blue" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,43</FixtureVal>
-      <FixtureVal ID="21">6,255,7,43</FixtureVal>
-      <FixtureVal ID="22">6,255,7,43</FixtureVal>
-      <FixtureVal ID="23">6,255,7,43</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,43</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,43</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,43</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,43</FixtureVal>
     </Function>
     <Function ID="259" Type="Scene" Name="Color Beam - Pink" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,51</FixtureVal>
-      <FixtureVal ID="21">6,255,7,51</FixtureVal>
-      <FixtureVal ID="22">6,255,7,51</FixtureVal>
-      <FixtureVal ID="23">6,255,7,51</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,51</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,51</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,51</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,51</FixtureVal>
     </Function>
     <Function ID="260" Type="Scene" Name="Color Beam - Ice" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,59</FixtureVal>
-      <FixtureVal ID="21">6,255,7,59</FixtureVal>
-      <FixtureVal ID="22">6,255,7,59</FixtureVal>
-      <FixtureVal ID="23">6,255,7,59</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,59</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,59</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,59</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,59</FixtureVal>
     </Function>
     <Function ID="261" Type="Scene" Name="Color Beam - Light Pink" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,67</FixtureVal>
-      <FixtureVal ID="21">6,255,7,67</FixtureVal>
-      <FixtureVal ID="22">6,255,7,67</FixtureVal>
-      <FixtureVal ID="23">6,255,7,67</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,67</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,67</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,67</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,67</FixtureVal>
     </Function>
     <Function ID="262" Type="Scene" Name="Color Beam - Light White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,75</FixtureVal>
-      <FixtureVal ID="21">6,255,7,75</FixtureVal>
-      <FixtureVal ID="22">6,255,7,75</FixtureVal>
-      <FixtureVal ID="23">6,255,7,75</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,75</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,75</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,75</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,75</FixtureVal>
     </Function>
     <Function ID="263" Type="Scene" Name="Color Beam - Light Blue" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,83</FixtureVal>
-      <FixtureVal ID="21">6,255,7,83</FixtureVal>
-      <FixtureVal ID="22">6,255,7,83</FixtureVal>
-      <FixtureVal ID="23">6,255,7,83</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,83</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,83</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,83</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,83</FixtureVal>
     </Function>
     <Function ID="264" Type="Scene" Name="Color Beam - Calid White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,91</FixtureVal>
-      <FixtureVal ID="21">6,255,7,91</FixtureVal>
-      <FixtureVal ID="22">6,255,7,91</FixtureVal>
-      <FixtureVal ID="23">6,255,7,91</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,91</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,91</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,91</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,91</FixtureVal>
     </Function>
     <Function ID="265" Type="Scene" Name="Color Beam - UV" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,99</FixtureVal>
-      <FixtureVal ID="21">6,255,7,99</FixtureVal>
-      <FixtureVal ID="22">6,255,7,99</FixtureVal>
-      <FixtureVal ID="23">6,255,7,99</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,99</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,99</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,99</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,99</FixtureVal>
     </Function>
     <Function ID="266" Type="Scene" Name="Color Beam - Grey" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,107</FixtureVal>
-      <FixtureVal ID="21">6,255,7,107</FixtureVal>
-      <FixtureVal ID="22">6,255,7,107</FixtureVal>
-      <FixtureVal ID="23">6,255,7,107</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,107</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,107</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,107</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,107</FixtureVal>
     </Function>
     <Function ID="267" Type="Scene" Name="Color Beam - Light Yellow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,119</FixtureVal>
-      <FixtureVal ID="21">6,255,7,119</FixtureVal>
-      <FixtureVal ID="22">6,255,7,119</FixtureVal>
-      <FixtureVal ID="23">6,255,7,119</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,119</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,119</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,119</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,119</FixtureVal>
     </Function>
     <Function ID="268" Type="Scene" Name="Color Beam - Rainbow effect fast to slow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,159</FixtureVal>
-      <FixtureVal ID="21">6,255,7,159</FixtureVal>
-      <FixtureVal ID="22">6,255,7,159</FixtureVal>
-      <FixtureVal ID="23">6,255,7,159</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,159</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,159</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,159</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,159</FixtureVal>
     </Function>
     <Function ID="269" Type="Scene" Name="Color Beam - Rainbow effect reverse slow to fast" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,223</FixtureVal>
-      <FixtureVal ID="21">6,255,7,223</FixtureVal>
-      <FixtureVal ID="22">6,255,7,223</FixtureVal>
-      <FixtureVal ID="23">6,255,7,223</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,7,223</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,7,223</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,7,223</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,7,223</FixtureVal>
     </Function>
     <Function ID="270" Type="Chaser" Name="Color Beam Animacion" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
@@ -3759,17 +3759,17 @@
     </Function>
     <Function ID="271" Type="Scene" Name="Prisma - None" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,13,63</FixtureVal>
-      <FixtureVal ID="21">6,255,13,63</FixtureVal>
-      <FixtureVal ID="22">6,255,13,63</FixtureVal>
-      <FixtureVal ID="23">6,255,13,63</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,13,63</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,13,63</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,13,63</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,13,63</FixtureVal>
     </Function>
     <Function ID="272" Type="Scene" Name="Prisma - Insert Prism" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,13,191</FixtureVal>
-      <FixtureVal ID="21">6,255,13,191</FixtureVal>
-      <FixtureVal ID="22">6,255,13,191</FixtureVal>
-      <FixtureVal ID="23">6,255,13,191</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255,13,191</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255,13,191</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255,13,191</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255,13,191</FixtureVal>
     </Function>
     <Function ID="273" Type="Chaser" Name="Prisma Animacion" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
@@ -3968,7 +3968,7 @@
     </Function>
     <Function ID="278" Type="Scene" Name="Dimmer Pares" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="0">9,255</FixtureVal>
+      <FixtureVal ID="0">9,255,10,4</FixtureVal>
       <FixtureVal ID="1">9,0</FixtureVal>
       <FixtureVal ID="4">0,255</FixtureVal>
       <FixtureVal ID="5">0,0</FixtureVal>
@@ -3980,20 +3980,20 @@
       <FixtureVal ID="11">3,0</FixtureVal>
       <FixtureVal ID="12">3,255</FixtureVal>
       <FixtureVal ID="13">9,0</FixtureVal>
-      <FixtureVal ID="14">9,255</FixtureVal>
+      <FixtureVal ID="14">9,255,10,4</FixtureVal>
       <FixtureVal ID="18">2,0</FixtureVal>
       <FixtureVal ID="19">2,255</FixtureVal>
       <FixtureVal ID="20">6,0</FixtureVal>
-      <FixtureVal ID="21">6,255</FixtureVal>
+      <FixtureVal ID="21">5,248,6,255</FixtureVal>
       <FixtureVal ID="22">6,0</FixtureVal>
-      <FixtureVal ID="23">6,255</FixtureVal>
+      <FixtureVal ID="23">5,248,6,255</FixtureVal>
       <FixtureVal ID="24">0,0</FixtureVal>
       <FixtureVal ID="25">0,255</FixtureVal>
     </Function>
     <Function ID="279" Type="Scene" Name="Dimmer Impares" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">9,0</FixtureVal>
-      <FixtureVal ID="1">9,255</FixtureVal>
+      <FixtureVal ID="1">9,255,10,4</FixtureVal>
       <FixtureVal ID="4">0,0</FixtureVal>
       <FixtureVal ID="5">0,255</FixtureVal>
       <FixtureVal ID="6">3,0</FixtureVal>
@@ -4003,13 +4003,13 @@
       <FixtureVal ID="10">3,0</FixtureVal>
       <FixtureVal ID="11">3,255</FixtureVal>
       <FixtureVal ID="12">3,0</FixtureVal>
-      <FixtureVal ID="13">9,255</FixtureVal>
+      <FixtureVal ID="13">9,255,10,4</FixtureVal>
       <FixtureVal ID="14">9,0</FixtureVal>
       <FixtureVal ID="18">2,255</FixtureVal>
       <FixtureVal ID="19">2,0</FixtureVal>
-      <FixtureVal ID="20">6,255</FixtureVal>
+      <FixtureVal ID="20">5,248,6,255</FixtureVal>
       <FixtureVal ID="21">6,0</FixtureVal>
-      <FixtureVal ID="22">6,255</FixtureVal>
+      <FixtureVal ID="22">5,248,6,255</FixtureVal>
       <FixtureVal ID="23">6,0</FixtureVal>
       <FixtureVal ID="24">0,255</FixtureVal>
       <FixtureVal ID="25">0,0</FixtureVal>
