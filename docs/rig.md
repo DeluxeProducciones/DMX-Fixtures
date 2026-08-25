@@ -148,10 +148,30 @@ Two ways out, both the owner's call:
 
 - patch the CromoWash100 in its **`Basic` 9-channel mode** - `Pan, Tilt` with no
   fine channels at all, confirmed against the manual - and set the fixtures to
-  that mode from their own control panel ([Channels] in the menu);
-- or try a QLC+ newer than 5.2.2 - the current source carries a reworked
-  `GenericFader::updateChannel` with exactly this secondary-channel handling in
-  it.
+  that mode from their own control panel ([Channels] in the menu, 3.7);
+- a QLC+ newer than 5.2.2 does **not** help, which was measured rather than
+  assumed. See below.
+
+**Basic mode was tested, not guessed.** A throwaway copy of the show with the
+four CromoWash switched to 9 channels, AUTO running, read on the DMX view:
+
+| | pan | tilt |
+| --- | --- | --- |
+| CromoWash #1, sample A | 126 | 219 |
+| CromoWash #1, sample B | 126 | 27 |
+| CromoWash #2, sample A | 96 | 188 |
+| CromoWash #2, sample B | 113 | 63 |
+
+Full travel on the coarse channels, where Advanced mode had them pinned at 0.
+
+**A newer QLC+ does not fix it.** 5.2.2 is the latest release; the project's
+nightlies are GitHub Actions artifacts, and the macOS one for 5.3.0 GIT was
+downloaded and run against this very show. CromoWash #1 read
+`pan=0, pan fine=97, tilt=0, tilt fine=227` - identical to 5.2.2. The engine
+symbols say why the hunch was wrong: `FadeChannel::primaryChannel`, `addChannel`
+and `channelCount` are all already exported by 5.2.2, so the secondary-channel
+machinery is not new in 5.3.0 and `updateChannel` is a refactor of
+`getChannelFader`, not a fix. Building from source would buy nothing.
 
 ### What the manual corrected
 
