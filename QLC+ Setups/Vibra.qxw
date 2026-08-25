@@ -2820,7 +2820,7 @@
       <Step Number="28" FadeIn="0" Hold="2000" FadeOut="0">221</Step>
       <Step Number="29" FadeIn="0" Hold="2000" FadeOut="0">222</Step>
     </Function>
-    <Function ID="224" Type="EFX" Name="Movimiento Circulo" Path="Movimiento">
+    <Function ID="224" Type="EFX" Name="Movimiento Circulo (16 bit)" Path="Movimiento/Partes">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -2833,77 +2833,49 @@
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>30</StartOffset>
+        <StartOffset>45</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>60</StartOffset>
+        <StartOffset>90</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>90</StartOffset>
+        <StartOffset>135</StartOffset>
       </Fixture>
       <Fixture>
         <ID>15</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>180</StartOffset>
       </Fixture>
       <Fixture>
         <ID>16</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>150</StartOffset>
+        <StartOffset>225</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>180</StartOffset>
+        <StartOffset>270</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>210</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>20</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>21</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>270</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>22</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>300</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>23</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>330</StartOffset>
+        <StartOffset>315</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -2926,7 +2898,61 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="225" Type="EFX" Name="Movimiento Ocho" Path="Movimiento">
+    <Function ID="225" Type="EFX" Name="Movimiento Circulo (8 bit)" Path="Movimiento/Partes">
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Circle</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="226" Type="Collection" Name="Movimiento Circulo" Path="Movimiento">
+      <Step Number="0">224</Step>
+      <Step Number="1">225</Step>
+    </Function>
+    <Function ID="227" Type="EFX" Name="Movimiento Ocho (16 bit)" Path="Movimiento/Partes">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -2939,77 +2965,49 @@
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>30</StartOffset>
+        <StartOffset>45</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>60</StartOffset>
+        <StartOffset>90</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>90</StartOffset>
+        <StartOffset>135</StartOffset>
       </Fixture>
       <Fixture>
         <ID>15</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>180</StartOffset>
       </Fixture>
       <Fixture>
         <ID>16</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>150</StartOffset>
+        <StartOffset>225</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>180</StartOffset>
+        <StartOffset>270</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>210</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>20</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>21</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>270</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>22</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>300</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>23</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>330</StartOffset>
+        <StartOffset>315</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -3032,7 +3030,61 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="226" Type="EFX" Name="Movimiento Linea" Path="Movimiento">
+    <Function ID="228" Type="EFX" Name="Movimiento Ocho (8 bit)" Path="Movimiento/Partes">
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Eight</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="229" Type="Collection" Name="Movimiento Ocho" Path="Movimiento">
+      <Step Number="0">227</Step>
+      <Step Number="1">228</Step>
+    </Function>
+    <Function ID="230" Type="EFX" Name="Movimiento Linea (16 bit)" Path="Movimiento/Partes">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -3045,77 +3097,49 @@
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>30</StartOffset>
+        <StartOffset>45</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>60</StartOffset>
+        <StartOffset>90</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>90</StartOffset>
+        <StartOffset>135</StartOffset>
       </Fixture>
       <Fixture>
         <ID>15</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>180</StartOffset>
       </Fixture>
       <Fixture>
         <ID>16</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>150</StartOffset>
+        <StartOffset>225</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>180</StartOffset>
+        <StartOffset>270</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>210</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>20</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>21</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>270</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>22</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>300</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>23</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>330</StartOffset>
+        <StartOffset>315</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -3138,7 +3162,61 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="227" Type="EFX" Name="Movimiento Diamante" Path="Movimiento">
+    <Function ID="231" Type="EFX" Name="Movimiento Linea (8 bit)" Path="Movimiento/Partes">
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Line</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="232" Type="Collection" Name="Movimiento Linea" Path="Movimiento">
+      <Step Number="0">230</Step>
+      <Step Number="1">231</Step>
+    </Function>
+    <Function ID="233" Type="EFX" Name="Movimiento Diamante (16 bit)" Path="Movimiento/Partes">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -3151,77 +3229,49 @@
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>30</StartOffset>
+        <StartOffset>45</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>60</StartOffset>
+        <StartOffset>90</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>90</StartOffset>
+        <StartOffset>135</StartOffset>
       </Fixture>
       <Fixture>
         <ID>15</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>180</StartOffset>
       </Fixture>
       <Fixture>
         <ID>16</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>150</StartOffset>
+        <StartOffset>225</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>180</StartOffset>
+        <StartOffset>270</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>210</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>20</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>21</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>270</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>22</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>300</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>23</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>330</StartOffset>
+        <StartOffset>315</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -3244,7 +3294,61 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="228" Type="EFX" Name="Movimiento Cuadrado" Path="Movimiento">
+    <Function ID="234" Type="EFX" Name="Movimiento Diamante (8 bit)" Path="Movimiento/Partes">
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Diamond</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="235" Type="Collection" Name="Movimiento Diamante" Path="Movimiento">
+      <Step Number="0">233</Step>
+      <Step Number="1">234</Step>
+    </Function>
+    <Function ID="236" Type="EFX" Name="Movimiento Cuadrado (16 bit)" Path="Movimiento/Partes">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -3257,77 +3361,49 @@
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>30</StartOffset>
+        <StartOffset>45</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>60</StartOffset>
+        <StartOffset>90</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>90</StartOffset>
+        <StartOffset>135</StartOffset>
       </Fixture>
       <Fixture>
         <ID>15</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>180</StartOffset>
       </Fixture>
       <Fixture>
         <ID>16</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>150</StartOffset>
+        <StartOffset>225</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>180</StartOffset>
+        <StartOffset>270</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>210</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>20</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>21</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>270</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>22</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>300</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>23</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>330</StartOffset>
+        <StartOffset>315</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -3350,7 +3426,61 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="229" Type="EFX" Name="Movimiento Hoja" Path="Movimiento">
+    <Function ID="237" Type="EFX" Name="Movimiento Cuadrado (8 bit)" Path="Movimiento/Partes">
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Square</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="238" Type="Collection" Name="Movimiento Cuadrado" Path="Movimiento">
+      <Step Number="0">236</Step>
+      <Step Number="1">237</Step>
+    </Function>
+    <Function ID="239" Type="EFX" Name="Movimiento Hoja (16 bit)" Path="Movimiento/Partes">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -3363,77 +3493,49 @@
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>30</StartOffset>
+        <StartOffset>45</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>60</StartOffset>
+        <StartOffset>90</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>90</StartOffset>
+        <StartOffset>135</StartOffset>
       </Fixture>
       <Fixture>
         <ID>15</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>180</StartOffset>
       </Fixture>
       <Fixture>
         <ID>16</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>150</StartOffset>
+        <StartOffset>225</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>180</StartOffset>
+        <StartOffset>270</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>210</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>20</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>21</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>270</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>22</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>300</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>23</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>330</StartOffset>
+        <StartOffset>315</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -3456,7 +3558,61 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="230" Type="EFX" Name="Movimiento Lissajous" Path="Movimiento">
+    <Function ID="240" Type="EFX" Name="Movimiento Hoja (8 bit)" Path="Movimiento/Partes">
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Leaf</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="241" Type="Collection" Name="Movimiento Hoja" Path="Movimiento">
+      <Step Number="0">239</Step>
+      <Step Number="1">240</Step>
+    </Function>
+    <Function ID="242" Type="EFX" Name="Movimiento Lissajous (16 bit)" Path="Movimiento/Partes">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -3469,77 +3625,49 @@
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>30</StartOffset>
+        <StartOffset>45</StartOffset>
       </Fixture>
       <Fixture>
         <ID>13</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>60</StartOffset>
+        <StartOffset>90</StartOffset>
       </Fixture>
       <Fixture>
         <ID>14</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>90</StartOffset>
+        <StartOffset>135</StartOffset>
       </Fixture>
       <Fixture>
         <ID>15</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>120</StartOffset>
+        <StartOffset>180</StartOffset>
       </Fixture>
       <Fixture>
         <ID>16</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>150</StartOffset>
+        <StartOffset>225</StartOffset>
       </Fixture>
       <Fixture>
         <ID>18</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>180</StartOffset>
+        <StartOffset>270</StartOffset>
       </Fixture>
       <Fixture>
         <ID>19</ID>
         <Head>0</Head>
         <Mode>0</Mode>
         <Direction>Forward</Direction>
-        <StartOffset>210</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>20</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>240</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>21</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>270</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>22</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>300</StartOffset>
-      </Fixture>
-      <Fixture>
-        <ID>23</ID>
-        <Head>0</Head>
-        <Mode>0</Mode>
-        <Direction>Forward</Direction>
-        <StartOffset>330</StartOffset>
+        <StartOffset>315</StartOffset>
       </Fixture>
       <PropagationMode>Parallel</PropagationMode>
       <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -3562,368 +3690,422 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="231" Type="Chaser" Name="Movimientos Cabezas" Path="Movimiento">
+    <Function ID="243" Type="EFX" Name="Movimiento Lissajous (8 bit)" Path="Movimiento/Partes">
+      <Fixture>
+        <ID>20</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>0</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>21</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>90</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>22</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>180</StartOffset>
+      </Fixture>
+      <Fixture>
+        <ID>23</ID>
+        <Head>0</Head>
+        <Mode>0</Mode>
+        <Direction>Forward</Direction>
+        <StartOffset>270</StartOffset>
+      </Fixture>
+      <PropagationMode>Parallel</PropagationMode>
+      <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
+      <Direction>Forward</Direction>
+      <RunOrder>Loop</RunOrder>
+      <Algorithm>Lissajous</Algorithm>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Rotation>0</Rotation>
+      <StartOffset>0</StartOffset>
+      <IsRelative>0</IsRelative>
+      <Axis Name="X">
+        <Offset>127</Offset>
+        <Frequency>2</Frequency>
+        <Phase>90</Phase>
+      </Axis>
+      <Axis Name="Y">
+        <Offset>127</Offset>
+        <Frequency>3</Frequency>
+        <Phase>0</Phase>
+      </Axis>
+    </Function>
+    <Function ID="244" Type="Collection" Name="Movimiento Lissajous" Path="Movimiento">
+      <Step Number="0">242</Step>
+      <Step Number="1">243</Step>
+    </Function>
+    <Function ID="245" Type="Chaser" Name="Movimientos Cabezas" Path="Movimiento">
       <Speed FadeIn="0" FadeOut="0" Duration="10000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0">224</Step>
-      <Step Number="1" FadeIn="0" Hold="10000" FadeOut="0">225</Step>
-      <Step Number="2" FadeIn="0" Hold="10000" FadeOut="0">226</Step>
-      <Step Number="3" FadeIn="0" Hold="10000" FadeOut="0">227</Step>
-      <Step Number="4" FadeIn="0" Hold="10000" FadeOut="0">228</Step>
-      <Step Number="5" FadeIn="0" Hold="10000" FadeOut="0">229</Step>
-      <Step Number="6" FadeIn="0" Hold="10000" FadeOut="0">230</Step>
+      <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0">226</Step>
+      <Step Number="1" FadeIn="0" Hold="10000" FadeOut="0">229</Step>
+      <Step Number="2" FadeIn="0" Hold="10000" FadeOut="0">232</Step>
+      <Step Number="3" FadeIn="0" Hold="10000" FadeOut="0">235</Step>
+      <Step Number="4" FadeIn="0" Hold="10000" FadeOut="0">238</Step>
+      <Step Number="5" FadeIn="0" Hold="10000" FadeOut="0">241</Step>
+      <Step Number="6" FadeIn="0" Hold="10000" FadeOut="0">244</Step>
     </Function>
-    <Function ID="232" Type="Scene" Name="Gobo - White Light" Path="Gobos">
+    <Function ID="246" Type="Scene" Name="Gobo - White Light" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,3</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,3</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,3</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,3</FixtureVal>
     </Function>
-    <Function ID="233" Type="Scene" Name="Gobo - Gobo 1" Path="Gobos">
+    <Function ID="247" Type="Scene" Name="Gobo - Gobo 1" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,10</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,10</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,10</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,10</FixtureVal>
     </Function>
-    <Function ID="234" Type="Scene" Name="Gobo - Gobo 2" Path="Gobos">
+    <Function ID="248" Type="Scene" Name="Gobo - Gobo 2" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,17</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,17</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,17</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,17</FixtureVal>
     </Function>
-    <Function ID="235" Type="Scene" Name="Gobo - Gobo 3" Path="Gobos">
+    <Function ID="249" Type="Scene" Name="Gobo - Gobo 3" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,24</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,24</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,24</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,24</FixtureVal>
     </Function>
-    <Function ID="236" Type="Scene" Name="Gobo - Gobo 4" Path="Gobos">
+    <Function ID="250" Type="Scene" Name="Gobo - Gobo 4" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,31</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,31</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,31</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,31</FixtureVal>
     </Function>
-    <Function ID="237" Type="Scene" Name="Gobo - Gobo 5" Path="Gobos">
+    <Function ID="251" Type="Scene" Name="Gobo - Gobo 5" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,38</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,38</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,38</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,38</FixtureVal>
     </Function>
-    <Function ID="238" Type="Scene" Name="Gobo - Gobo 6" Path="Gobos">
+    <Function ID="252" Type="Scene" Name="Gobo - Gobo 6" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,45</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,45</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,45</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,45</FixtureVal>
     </Function>
-    <Function ID="239" Type="Scene" Name="Gobo - Gobo 7" Path="Gobos">
+    <Function ID="253" Type="Scene" Name="Gobo - Gobo 7" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,52</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,52</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,52</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,52</FixtureVal>
     </Function>
-    <Function ID="240" Type="Scene" Name="Gobo - Gobo 8" Path="Gobos">
+    <Function ID="254" Type="Scene" Name="Gobo - Gobo 8" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,59</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,59</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,59</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,59</FixtureVal>
     </Function>
-    <Function ID="241" Type="Scene" Name="Gobo - Gobo 9" Path="Gobos">
+    <Function ID="255" Type="Scene" Name="Gobo - Gobo 9" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,66</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,66</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,66</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,66</FixtureVal>
     </Function>
-    <Function ID="242" Type="Scene" Name="Gobo - Gobo 10" Path="Gobos">
+    <Function ID="256" Type="Scene" Name="Gobo - Gobo 10" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,73</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,73</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,73</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,73</FixtureVal>
     </Function>
-    <Function ID="243" Type="Scene" Name="Gobo - Gobo 11" Path="Gobos">
+    <Function ID="257" Type="Scene" Name="Gobo - Gobo 11" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,80</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,80</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,80</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,80</FixtureVal>
     </Function>
-    <Function ID="244" Type="Scene" Name="Gobo - Gobo 12" Path="Gobos">
+    <Function ID="258" Type="Scene" Name="Gobo - Gobo 12" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,87</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,87</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,87</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,87</FixtureVal>
     </Function>
-    <Function ID="245" Type="Scene" Name="Gobo - Gobo 13" Path="Gobos">
+    <Function ID="259" Type="Scene" Name="Gobo - Gobo 13" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,94</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,94</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,94</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,94</FixtureVal>
     </Function>
-    <Function ID="246" Type="Scene" Name="Gobo - Gobo 14" Path="Gobos">
+    <Function ID="260" Type="Scene" Name="Gobo - Gobo 14" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,101</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,101</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,101</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,101</FixtureVal>
     </Function>
-    <Function ID="247" Type="Scene" Name="Gobo - Gobo 15" Path="Gobos">
+    <Function ID="261" Type="Scene" Name="Gobo - Gobo 15" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,108</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,108</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,108</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,108</FixtureVal>
     </Function>
-    <Function ID="248" Type="Scene" Name="Gobo - Gobo 16" Path="Gobos">
+    <Function ID="262" Type="Scene" Name="Gobo - Gobo 16" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,115</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,115</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,115</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,115</FixtureVal>
     </Function>
-    <Function ID="249" Type="Scene" Name="Gobo - Gobo 17" Path="Gobos">
+    <Function ID="263" Type="Scene" Name="Gobo - Gobo 17" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,123</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,123</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,123</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,123</FixtureVal>
     </Function>
-    <Function ID="250" Type="Scene" Name="Gobo - Rainbow effect fast to slow" Path="Gobos">
+    <Function ID="264" Type="Scene" Name="Gobo - Rainbow effect fast to slow" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,159</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,159</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,159</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,159</FixtureVal>
     </Function>
-    <Function ID="251" Type="Scene" Name="Gobo - Rainbow effect reverse slow to fast" Path="Gobos">
+    <Function ID="265" Type="Scene" Name="Gobo - Rainbow effect reverse slow to fast" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,9,223</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,9,223</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,9,223</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,9,223</FixtureVal>
     </Function>
-    <Function ID="252" Type="Chaser" Name="Gobo Animacion" Path="Gobos">
+    <Function ID="266" Type="Chaser" Name="Gobo Animacion" Path="Gobos">
       <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="4000" FadeOut="0">232</Step>
-      <Step Number="1" FadeIn="0" Hold="4000" FadeOut="0">233</Step>
-      <Step Number="2" FadeIn="0" Hold="4000" FadeOut="0">234</Step>
-      <Step Number="3" FadeIn="0" Hold="4000" FadeOut="0">235</Step>
-      <Step Number="4" FadeIn="0" Hold="4000" FadeOut="0">236</Step>
-      <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0">237</Step>
-      <Step Number="6" FadeIn="0" Hold="4000" FadeOut="0">238</Step>
-      <Step Number="7" FadeIn="0" Hold="4000" FadeOut="0">239</Step>
-      <Step Number="8" FadeIn="0" Hold="4000" FadeOut="0">240</Step>
-      <Step Number="9" FadeIn="0" Hold="4000" FadeOut="0">241</Step>
-      <Step Number="10" FadeIn="0" Hold="4000" FadeOut="0">242</Step>
-      <Step Number="11" FadeIn="0" Hold="4000" FadeOut="0">243</Step>
-      <Step Number="12" FadeIn="0" Hold="4000" FadeOut="0">244</Step>
-      <Step Number="13" FadeIn="0" Hold="4000" FadeOut="0">245</Step>
-      <Step Number="14" FadeIn="0" Hold="4000" FadeOut="0">246</Step>
-      <Step Number="15" FadeIn="0" Hold="4000" FadeOut="0">247</Step>
-      <Step Number="16" FadeIn="0" Hold="4000" FadeOut="0">248</Step>
-      <Step Number="17" FadeIn="0" Hold="4000" FadeOut="0">249</Step>
-      <Step Number="18" FadeIn="0" Hold="4000" FadeOut="0">250</Step>
-      <Step Number="19" FadeIn="0" Hold="4000" FadeOut="0">251</Step>
+      <Step Number="0" FadeIn="0" Hold="4000" FadeOut="0">246</Step>
+      <Step Number="1" FadeIn="0" Hold="4000" FadeOut="0">247</Step>
+      <Step Number="2" FadeIn="0" Hold="4000" FadeOut="0">248</Step>
+      <Step Number="3" FadeIn="0" Hold="4000" FadeOut="0">249</Step>
+      <Step Number="4" FadeIn="0" Hold="4000" FadeOut="0">250</Step>
+      <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0">251</Step>
+      <Step Number="6" FadeIn="0" Hold="4000" FadeOut="0">252</Step>
+      <Step Number="7" FadeIn="0" Hold="4000" FadeOut="0">253</Step>
+      <Step Number="8" FadeIn="0" Hold="4000" FadeOut="0">254</Step>
+      <Step Number="9" FadeIn="0" Hold="4000" FadeOut="0">255</Step>
+      <Step Number="10" FadeIn="0" Hold="4000" FadeOut="0">256</Step>
+      <Step Number="11" FadeIn="0" Hold="4000" FadeOut="0">257</Step>
+      <Step Number="12" FadeIn="0" Hold="4000" FadeOut="0">258</Step>
+      <Step Number="13" FadeIn="0" Hold="4000" FadeOut="0">259</Step>
+      <Step Number="14" FadeIn="0" Hold="4000" FadeOut="0">260</Step>
+      <Step Number="15" FadeIn="0" Hold="4000" FadeOut="0">261</Step>
+      <Step Number="16" FadeIn="0" Hold="4000" FadeOut="0">262</Step>
+      <Step Number="17" FadeIn="0" Hold="4000" FadeOut="0">263</Step>
+      <Step Number="18" FadeIn="0" Hold="4000" FadeOut="0">264</Step>
+      <Step Number="19" FadeIn="0" Hold="4000" FadeOut="0">265</Step>
     </Function>
-    <Function ID="253" Type="Scene" Name="Color Beam - White" Path="Color Beam">
+    <Function ID="267" Type="Scene" Name="Color Beam - White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,4</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,4</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,4</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,4</FixtureVal>
     </Function>
-    <Function ID="254" Type="Scene" Name="Color Beam - Red" Path="Color Beam">
+    <Function ID="268" Type="Scene" Name="Color Beam - Red" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,12</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,12</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,12</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,12</FixtureVal>
     </Function>
-    <Function ID="255" Type="Scene" Name="Color Beam - Orange" Path="Color Beam">
+    <Function ID="269" Type="Scene" Name="Color Beam - Orange" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,19</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,19</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,19</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,19</FixtureVal>
     </Function>
-    <Function ID="256" Type="Scene" Name="Color Beam - Yellow" Path="Color Beam">
+    <Function ID="270" Type="Scene" Name="Color Beam - Yellow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,27</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,27</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,27</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,27</FixtureVal>
     </Function>
-    <Function ID="257" Type="Scene" Name="Color Beam - Green" Path="Color Beam">
+    <Function ID="271" Type="Scene" Name="Color Beam - Green" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,35</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,35</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,35</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,35</FixtureVal>
     </Function>
-    <Function ID="258" Type="Scene" Name="Color Beam - Blue" Path="Color Beam">
+    <Function ID="272" Type="Scene" Name="Color Beam - Blue" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,43</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,43</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,43</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,43</FixtureVal>
     </Function>
-    <Function ID="259" Type="Scene" Name="Color Beam - Pink" Path="Color Beam">
+    <Function ID="273" Type="Scene" Name="Color Beam - Pink" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,51</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,51</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,51</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,51</FixtureVal>
     </Function>
-    <Function ID="260" Type="Scene" Name="Color Beam - Ice" Path="Color Beam">
+    <Function ID="274" Type="Scene" Name="Color Beam - Ice" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,59</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,59</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,59</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,59</FixtureVal>
     </Function>
-    <Function ID="261" Type="Scene" Name="Color Beam - Light Pink" Path="Color Beam">
+    <Function ID="275" Type="Scene" Name="Color Beam - Light Pink" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,67</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,67</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,67</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,67</FixtureVal>
     </Function>
-    <Function ID="262" Type="Scene" Name="Color Beam - Light White" Path="Color Beam">
+    <Function ID="276" Type="Scene" Name="Color Beam - Light White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,75</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,75</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,75</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,75</FixtureVal>
     </Function>
-    <Function ID="263" Type="Scene" Name="Color Beam - Light Blue" Path="Color Beam">
+    <Function ID="277" Type="Scene" Name="Color Beam - Light Blue" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,83</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,83</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,83</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,83</FixtureVal>
     </Function>
-    <Function ID="264" Type="Scene" Name="Color Beam - Calid White" Path="Color Beam">
+    <Function ID="278" Type="Scene" Name="Color Beam - Calid White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,91</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,91</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,91</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,91</FixtureVal>
     </Function>
-    <Function ID="265" Type="Scene" Name="Color Beam - UV" Path="Color Beam">
+    <Function ID="279" Type="Scene" Name="Color Beam - UV" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,99</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,99</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,99</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,99</FixtureVal>
     </Function>
-    <Function ID="266" Type="Scene" Name="Color Beam - Grey" Path="Color Beam">
+    <Function ID="280" Type="Scene" Name="Color Beam - Grey" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,107</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,107</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,107</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,107</FixtureVal>
     </Function>
-    <Function ID="267" Type="Scene" Name="Color Beam - Light Yellow" Path="Color Beam">
+    <Function ID="281" Type="Scene" Name="Color Beam - Light Yellow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,119</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,119</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,119</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,119</FixtureVal>
     </Function>
-    <Function ID="268" Type="Scene" Name="Color Beam - Rainbow effect fast to slow" Path="Color Beam">
+    <Function ID="282" Type="Scene" Name="Color Beam - Rainbow effect fast to slow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,159</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,159</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,159</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,159</FixtureVal>
     </Function>
-    <Function ID="269" Type="Scene" Name="Color Beam - Rainbow effect reverse slow to fast" Path="Color Beam">
+    <Function ID="283" Type="Scene" Name="Color Beam - Rainbow effect reverse slow to fast" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,7,223</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,7,223</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,7,223</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,7,223</FixtureVal>
     </Function>
-    <Function ID="270" Type="Chaser" Name="Color Beam Animacion" Path="Color Beam">
+    <Function ID="284" Type="Chaser" Name="Color Beam Animacion" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="6000" FadeOut="0">253</Step>
-      <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0">254</Step>
-      <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">255</Step>
-      <Step Number="3" FadeIn="0" Hold="6000" FadeOut="0">256</Step>
-      <Step Number="4" FadeIn="0" Hold="6000" FadeOut="0">257</Step>
-      <Step Number="5" FadeIn="0" Hold="6000" FadeOut="0">258</Step>
-      <Step Number="6" FadeIn="0" Hold="6000" FadeOut="0">259</Step>
-      <Step Number="7" FadeIn="0" Hold="6000" FadeOut="0">260</Step>
-      <Step Number="8" FadeIn="0" Hold="6000" FadeOut="0">261</Step>
-      <Step Number="9" FadeIn="0" Hold="6000" FadeOut="0">262</Step>
-      <Step Number="10" FadeIn="0" Hold="6000" FadeOut="0">263</Step>
-      <Step Number="11" FadeIn="0" Hold="6000" FadeOut="0">264</Step>
-      <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0">265</Step>
-      <Step Number="13" FadeIn="0" Hold="6000" FadeOut="0">266</Step>
-      <Step Number="14" FadeIn="0" Hold="6000" FadeOut="0">267</Step>
-      <Step Number="15" FadeIn="0" Hold="6000" FadeOut="0">268</Step>
-      <Step Number="16" FadeIn="0" Hold="6000" FadeOut="0">269</Step>
+      <Step Number="0" FadeIn="0" Hold="6000" FadeOut="0">267</Step>
+      <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0">268</Step>
+      <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">269</Step>
+      <Step Number="3" FadeIn="0" Hold="6000" FadeOut="0">270</Step>
+      <Step Number="4" FadeIn="0" Hold="6000" FadeOut="0">271</Step>
+      <Step Number="5" FadeIn="0" Hold="6000" FadeOut="0">272</Step>
+      <Step Number="6" FadeIn="0" Hold="6000" FadeOut="0">273</Step>
+      <Step Number="7" FadeIn="0" Hold="6000" FadeOut="0">274</Step>
+      <Step Number="8" FadeIn="0" Hold="6000" FadeOut="0">275</Step>
+      <Step Number="9" FadeIn="0" Hold="6000" FadeOut="0">276</Step>
+      <Step Number="10" FadeIn="0" Hold="6000" FadeOut="0">277</Step>
+      <Step Number="11" FadeIn="0" Hold="6000" FadeOut="0">278</Step>
+      <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0">279</Step>
+      <Step Number="13" FadeIn="0" Hold="6000" FadeOut="0">280</Step>
+      <Step Number="14" FadeIn="0" Hold="6000" FadeOut="0">281</Step>
+      <Step Number="15" FadeIn="0" Hold="6000" FadeOut="0">282</Step>
+      <Step Number="16" FadeIn="0" Hold="6000" FadeOut="0">283</Step>
     </Function>
-    <Function ID="271" Type="Scene" Name="Prisma - None" Path="Prisma">
+    <Function ID="285" Type="Scene" Name="Prisma - None" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,13,63</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,13,63</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,13,63</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,13,63</FixtureVal>
     </Function>
-    <Function ID="272" Type="Scene" Name="Prisma - Insert Prism" Path="Prisma">
+    <Function ID="286" Type="Scene" Name="Prisma - Insert Prism" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="20">5,248,6,255,13,191</FixtureVal>
       <FixtureVal ID="21">5,248,6,255,13,191</FixtureVal>
       <FixtureVal ID="22">5,248,6,255,13,191</FixtureVal>
       <FixtureVal ID="23">5,248,6,255,13,191</FixtureVal>
     </Function>
-    <Function ID="273" Type="Chaser" Name="Prisma Animacion" Path="Prisma">
+    <Function ID="287" Type="Chaser" Name="Prisma Animacion" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">271</Step>
-      <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0">272</Step>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">285</Step>
+      <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0">286</Step>
     </Function>
-    <Function ID="274" Type="Scene" Name="Humo ON" Path="Humo">
+    <Function ID="288" Type="Scene" Name="Humo ON" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="17">0,255</FixtureVal>
       <FixtureVal ID="26">0,255</FixtureVal>
     </Function>
-    <Function ID="275" Type="Scene" Name="Humo OFF" Path="Humo">
+    <Function ID="289" Type="Scene" Name="Humo OFF" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="26">0,0</FixtureVal>
     </Function>
-    <Function ID="276" Type="Chaser" Name="Humo Auto" Path="Humo">
+    <Function ID="290" Type="Chaser" Name="Humo Auto" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
-      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">274</Step>
-      <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0">275</Step>
+      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">288</Step>
+      <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0">289</Step>
     </Function>
-    <Function ID="277" Type="EFX" Name="Dimmer Chase" Path="Dimmers">
+    <Function ID="291" Type="EFX" Name="Dimmer Chase" Path="Dimmers">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -4106,7 +4288,7 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="278" Type="Scene" Name="Dimmer Pares" Path="Dimmers">
+    <Function ID="292" Type="Scene" Name="Dimmer Pares" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">9,255,10,4</FixtureVal>
       <FixtureVal ID="1">9,0</FixtureVal>
@@ -4132,7 +4314,7 @@
       <FixtureVal ID="27">0,0</FixtureVal>
       <FixtureVal ID="28">0,255</FixtureVal>
     </Function>
-    <Function ID="279" Type="Scene" Name="Dimmer Impares" Path="Dimmers">
+    <Function ID="293" Type="Scene" Name="Dimmer Impares" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">9,0</FixtureVal>
       <FixtureVal ID="1">9,255,10,4</FixtureVal>
@@ -4158,15 +4340,15 @@
       <FixtureVal ID="27">0,255</FixtureVal>
       <FixtureVal ID="28">0,0</FixtureVal>
     </Function>
-    <Function ID="280" Type="Chaser" Name="Dimmer PingPong" Path="Dimmers">
+    <Function ID="294" Type="Chaser" Name="Dimmer PingPong" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="400"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="400" FadeOut="0">278</Step>
-      <Step Number="1" FadeIn="0" Hold="400" FadeOut="0">279</Step>
+      <Step Number="0" FadeIn="0" Hold="400" FadeOut="0">292</Step>
+      <Step Number="1" FadeIn="0" Hold="400" FadeOut="0">293</Step>
     </Function>
-    <Function ID="281" Type="Scene" Name="Strobo ON" Path="Strobos">
+    <Function ID="295" Type="Scene" Name="Strobo ON" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">10,132</FixtureVal>
       <FixtureVal ID="1">10,132</FixtureVal>
@@ -4179,7 +4361,7 @@
       <FixtureVal ID="22">5,145</FixtureVal>
       <FixtureVal ID="23">5,145</FixtureVal>
     </Function>
-    <Function ID="282" Type="Scene" Name="Strobo OFF" Path="Strobos">
+    <Function ID="296" Type="Scene" Name="Strobo OFF" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">10,4</FixtureVal>
       <FixtureVal ID="1">10,4</FixtureVal>
@@ -4192,7 +4374,7 @@
       <FixtureVal ID="22">5,26</FixtureVal>
       <FixtureVal ID="23">5,26</FixtureVal>
     </Function>
-    <Function ID="283" Type="Chaser" Name="Strobo Rapido" Path="Strobos">
+    <Function ID="297" Type="Chaser" Name="Strobo Rapido" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="50"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
@@ -4200,7 +4382,7 @@
       <Step Number="0" FadeIn="0" Hold="50" FadeOut="0">3</Step>
       <Step Number="1" FadeIn="0" Hold="50" FadeOut="0">2</Step>
     </Function>
-    <Function ID="284" Type="Chaser" Name="Strobo Medio" Path="Strobos">
+    <Function ID="298" Type="Chaser" Name="Strobo Medio" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="250"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
@@ -4208,22 +4390,22 @@
       <Step Number="0" FadeIn="0" Hold="250" FadeOut="0">3</Step>
       <Step Number="1" FadeIn="0" Hold="250" FadeOut="0">2</Step>
     </Function>
-    <Function ID="285" Type="Collection" Name="Rueda Colores" Path="Show">
+    <Function ID="299" Type="Collection" Name="Rueda Colores" Path="Show">
       <Step Number="0">45</Step>
       <Step Number="1">87</Step>
       <Step Number="2">129</Step>
     </Function>
-    <Function ID="286" Type="Collection" Name="Rueda Mezcla" Path="Show">
+    <Function ID="300" Type="Collection" Name="Rueda Mezcla" Path="Show">
       <Step Number="0">46</Step>
       <Step Number="1">88</Step>
       <Step Number="2">130</Step>
     </Function>
-    <Function ID="287" Type="Collection" Name="AUTO" Path="Show">
-      <Step Number="0">285</Step>
-      <Step Number="1">231</Step>
-      <Step Number="2">252</Step>
-      <Step Number="3">270</Step>
-      <Step Number="4">276</Step>
+    <Function ID="301" Type="Collection" Name="AUTO" Path="Show">
+      <Step Number="0">299</Step>
+      <Step Number="1">245</Step>
+      <Step Number="2">266</Step>
+      <Step Number="3">284</Step>
+      <Step Number="4">290</Step>
       <Step Number="5">161</Step>
       <Step Number="6">192</Step>
       <Step Number="7">223</Step>
@@ -4262,7 +4444,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="287"/>
+          <Function ID="301"/>
           <Action>Toggle</Action>
           <Key>Q</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -4276,7 +4458,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="285"/>
+          <Function ID="299"/>
           <Action>Toggle</Action>
           <Key>W</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -4290,7 +4472,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="286"/>
+          <Function ID="300"/>
           <Action>Toggle</Action>
           <Key>E</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -4362,7 +4544,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="231"/>
+          <Function ID="245"/>
           <Action>Toggle</Action>
           <Key>A</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -4376,7 +4558,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="252"/>
+          <Function ID="266"/>
           <Action>Toggle</Action>
           <Key>G</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -4390,7 +4572,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="270"/>
+          <Function ID="284"/>
           <Action>Toggle</Action>
           <Key>C</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -4404,7 +4586,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="273"/>
+          <Function ID="287"/>
           <Action>Toggle</Action>
           <Key>P</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -4418,7 +4600,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="276"/>
+          <Function ID="290"/>
           <Action>Toggle</Action>
           <Key>J</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -6232,7 +6414,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="224"/>
+          <Function ID="226"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6246,7 +6428,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="225"/>
+          <Function ID="229"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6260,7 +6442,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="226"/>
+          <Function ID="232"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6274,7 +6456,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="227"/>
+          <Function ID="235"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6288,7 +6470,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="228"/>
+          <Function ID="238"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6302,7 +6484,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="229"/>
+          <Function ID="241"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6316,7 +6498,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="230"/>
+          <Function ID="244"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6348,7 +6530,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="232"/>
+          <Function ID="246"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6362,7 +6544,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="233"/>
+          <Function ID="247"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6376,7 +6558,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="234"/>
+          <Function ID="248"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6390,7 +6572,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="235"/>
+          <Function ID="249"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6404,7 +6586,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="236"/>
+          <Function ID="250"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6418,7 +6600,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="237"/>
+          <Function ID="251"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6432,7 +6614,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="238"/>
+          <Function ID="252"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6446,7 +6628,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="239"/>
+          <Function ID="253"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6460,7 +6642,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="240"/>
+          <Function ID="254"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6474,7 +6656,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="241"/>
+          <Function ID="255"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6488,7 +6670,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="242"/>
+          <Function ID="256"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6502,7 +6684,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="243"/>
+          <Function ID="257"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6516,7 +6698,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="244"/>
+          <Function ID="258"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6530,7 +6712,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="245"/>
+          <Function ID="259"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6544,7 +6726,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="246"/>
+          <Function ID="260"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6558,7 +6740,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="247"/>
+          <Function ID="261"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6572,7 +6754,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="248"/>
+          <Function ID="262"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6586,7 +6768,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="249"/>
+          <Function ID="263"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6600,7 +6782,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="250"/>
+          <Function ID="264"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6614,7 +6796,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="251"/>
+          <Function ID="265"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6646,7 +6828,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="253"/>
+          <Function ID="267"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6660,7 +6842,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="254"/>
+          <Function ID="268"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6674,7 +6856,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="255"/>
+          <Function ID="269"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6688,7 +6870,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="256"/>
+          <Function ID="270"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6702,7 +6884,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="257"/>
+          <Function ID="271"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6716,7 +6898,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="258"/>
+          <Function ID="272"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6730,7 +6912,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="259"/>
+          <Function ID="273"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6744,7 +6926,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="260"/>
+          <Function ID="274"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6758,7 +6940,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="261"/>
+          <Function ID="275"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6772,7 +6954,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="262"/>
+          <Function ID="276"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6786,7 +6968,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="263"/>
+          <Function ID="277"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6800,7 +6982,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="264"/>
+          <Function ID="278"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6814,7 +6996,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="265"/>
+          <Function ID="279"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6828,7 +7010,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="266"/>
+          <Function ID="280"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6842,7 +7024,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="267"/>
+          <Function ID="281"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6856,7 +7038,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="268"/>
+          <Function ID="282"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6870,7 +7052,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="269"/>
+          <Function ID="283"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6902,7 +7084,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="271"/>
+          <Function ID="285"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -6916,7 +7098,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="272"/>
+          <Function ID="286"/>
           <Action>Toggle</Action>
           <Key/>
           <Intensity Adjust="False">100</Intensity>
@@ -8443,7 +8625,7 @@
         </Appearance>
         <AbsoluteValue Minimum="0" Maximum="40000"/>
         <Time>10000</Time>
-        <Function FadeIn="0" FadeOut="0" Duration="6">231</Function>
+        <Function FadeIn="0" FadeOut="0" Duration="6">245</Function>
       </SpeedDial>
       <SoloFrame Caption="Dimmers" ID="294">
         <Appearance>
@@ -8471,7 +8653,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="277"/>
+          <Function ID="291"/>
           <Action>Toggle</Action>
           <Key>V</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -8485,7 +8667,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="280"/>
+          <Function ID="294"/>
           <Action>Toggle</Action>
           <Key>Z</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -8517,7 +8699,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="281"/>
+          <Function ID="295"/>
           <Action>Toggle</Action>
           <Key>S</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -8531,7 +8713,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="282"/>
+          <Function ID="296"/>
           <Action>Toggle</Action>
           <Key>D</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -8545,7 +8727,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="283"/>
+          <Function ID="297"/>
           <Action>Toggle</Action>
           <Key>F</Key>
           <Intensity Adjust="False">100</Intensity>
@@ -8559,7 +8741,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <Function ID="284"/>
+          <Function ID="298"/>
           <Action>Toggle</Action>
           <Key>T</Key>
           <Intensity Adjust="False">100</Intensity>

@@ -102,95 +102,69 @@ The PARs were at `-35` first, which looked like "tilted towards the audience"
 and landed at **z = 4485** - the DJ deck is at 4500. They were lighting him in
 the face. That is the whole reason the landing calculation exists.
 
-### The wash heads barely move, and it is not the show
+### Why the wash heads would not move
 
-The CromoWash100 receive the movement EFX like everything else - they are in it,
-and the EFX geometry matches the hand-built one node for node. What arrives is
-the problem. With AUTO running, the DMX view reads:
+They received the movement EFX like everything else, and the EFX geometry
+matched the hand-built one node for node. What arrived was the problem. With
+AUTO running, the DMX view read:
 
 | | ch1 Pan | ch2 Pan fine | ch3 Tilt | ch4 Tilt fine |
 | --- | --- | --- | --- | --- |
 | CromoWash100 #1 | **0** | 0 -> 31 | **0** | 57 -> 21 |
 | BEAM 230W 7R #1 | 92 -> 127 | - | 227 -> 28 | - |
 
-The wash's *coarse* channels never leave zero and only the fine ones move, so
-the head travels one 256th of its range: invisible. The beams are fine.
+The wash's *coarse* channels never left zero and only the fine ones moved, so
+the head travelled one 256th of its range - and, being stuck at zero rather than
+merely frozen, parked at one end of 270 degrees of tilt and sat pointing at the
+ceiling. The manual prices the movement exactly: *Pan Fine = 0,008 degrees*, so
+a full sweep of the fine channel alone is **2,05 degrees out of 540**.
 
-This is also why **the washes sit pointing at the ceiling**. Tilt is not just
-frozen, it is frozen at zero, which is one end of a 270 degree travel - so the
-heads park at the top of their range and stay there. Same cause, and the same
-two ways out.
+**It was our EFX, not QLC+ and not the definition.** `EFXFixture` caches its pan
+and tilt channels when an EFX starts and, if a fine channel is not directly
+after its coarse one, calls `fader->setHandleSecondary(false)`. That fader
+belongs to the **EFX**, not to the fixture - so one badly ordered fixture turns
+16 bit off for every fixture sharing that EFX.
 
-**The definition is right.** `Manual/ProLights - CromoWash 100.pdf` section
-3.12 gives both tables and ours matches them channel for channel: ADVANCED is
-`Pan, Pan fine, Tilt, Tilt fine, Pan/tilt speed, Red, Green, Blue,
-Color/white macro, Dimmer, Strobe, Control`, BASIC is the same without the two
-fine channels and the speed. Nothing drives channel 12 either, which matters -
-20-39 there arms *Pan/tilt black* after three seconds and 200-219 is a reset.
-
-The difference is the channel order. `QLCFixtureMode::cacheHeads` pairs a fine
-channel with the coarse one **only when it directly follows it in the same
-group**. The CromoWash is `Pan, Pan fine, Tilt, Tilt fine`, so both pairs are
-mapped and the EFX writes a 16-bit value through
-`EFXFixture::setPointPanTilt`'s secondary path - which on QLC+ 5.2.2 lands the
-low byte and leaves the high byte at zero. The BEAM is `Pan, Tilt, Pan fine,
-Tilt fine`: nothing is adjacent to its own coarse channel, no pair is mapped,
-and QLC+ writes plain 8-bit that works.
-
-The manual says exactly how little that is: *Pan = 2,10°, Pan Fine = 0,008°,
-Tilt = 1,05°, Tilt Fine = 0,004°*. A full sweep of the fine channel alone is
-**256 x 0,008 = 2,05° of pan out of 540°**, and 1,02° of tilt out of 270°. The
-heads are not stuck - they are moving two degrees.
-
-So this is the QLC+ engine, not the definition and not the generated show, and
-**the real fixtures get the same DMX** - they will barely move on the rig too.
-Two ways out, both the owner's call:
-
-- patch the CromoWash100 in its **`Basic` 9-channel mode** - `Pan, Tilt` with no
-  fine channels at all, confirmed against the manual - and set the fixtures to
-  that mode from their own control panel ([Channels] in the menu, 3.7);
-- a QLC+ newer than 5.2.2 does **not** help, which was measured rather than
-  assumed. See below.
-
-**Basic mode was tested, not guessed.** A throwaway copy of the show with the
-four CromoWash switched to 9 channels, AUTO running, read on the DMX view:
-
-| | pan | tilt |
+| Fixture | Channel order | Pairs |
 | --- | --- | --- |
-| CromoWash #1, sample A | 126 | 219 |
-| CromoWash #1, sample B | 126 | 27 |
-| CromoWash #2, sample A | 96 | 188 |
-| CromoWash #2, sample B | 113 | 63 |
+| CromoWash100 | `Pan, Pan fine, Tilt, Tilt fine` | yes |
+| MiN Wash | `Pan, Pan fine, Tilt, Tilt fine` | yes |
+| LED Beam Mini | `Pan, Tilt`, no fine channels | never trips it |
+| **BEAM 230W 7R** | `Pan, Tilt, Pan fine, Tilt fine` | **no - two apart** |
 
-Full travel on the coarse channels, where Advanced mode had them pinned at 0.
+All twelve movers were in one EFX, so the four beams switched 16 bit off for the
+four washes and the two MiN Wash, whose coarse channels were then written as
+part of a 16-bit value that nothing split.
 
-**A newer QLC+ does not fix it.** 5.2.2 is the latest release; the project's
-nightlies are GitHub Actions artifacts, and the macOS one for 5.3.0 GIT was
-downloaded and run against this very show. CromoWash #1 read
-`pan=0, pan fine=97, tilt=0, tilt fine=227` - identical to 5.2.2. The engine
-symbols say why the hunch was wrong: `FadeChannel::primaryChannel`, `addChannel`
-and `channelCount` are all already exported by 5.2.2, so the secondary-channel
-machinery is not new in 5.3.0 and `updateChannel` is a refactor of
-`getChannelFader`, not a fix. Building from source would buy nothing.
+The generator now puts them in separate EFX and runs the pair from a Collection,
+so the Virtual Console and the chaser still see one function per shape. Measured
+after the split, with AUTO running:
 
-### What the manual corrected
+| | ch1 Pan | ch2 Pan fine | ch3 Tilt | ch4 Tilt fine |
+| --- | --- | --- | --- | --- |
+| CromoWash100 #1 | **30** | 95 | **30** | 95 |
+| CromoWash100 #2 | **40** | 116 | **40** | 116 |
+| BEAM 230W 7R #1 | 30 | - | 30 | - |
 
-Reading `Manual/ProLights - CromoWash 100.pdf` end to end against the definition
-confirmed the channel map exactly - both modes, and every range of the colour
-macro, strobe and control channels. Three things did not match:
+Both kinds move, in Advanced 12-channel mode, on QLC+ 5.2.2, with nothing
+changed on the fixtures.
 
-- **`Lumens="4500"`**, against the manual's `> 2800 lm` (1.3). Now 2800, and the
-  bulb is named for what it is: 37 x 3W RGB LEDs.
-- **A colour-macro label with two rows glued together.** 151-170 read
-  `R: Down / G: Down / B: 100% R: 100% / G: 100% / B: 100%` - the manual's table
-  is two columns and the next row came along with it. 171-200 already carries
-  the second half on its own. Nothing had leaked into the show, because the
-  generated colour work uses the palette rather than this fixture's macros.
-- **The reset range carried no preset.** 200-219 is now `ResetAll`, as the
-  beams' is.
+**The Dimmer-mode EFX has the identical hazard** on the *intensity* channels
+instead. Nothing in this rig has a 16-bit dimmer, so `Dimmer Chase` may hold
+anything; patch one that does and it will need the same split.
 
-Everything else in the physical block was already right and now has a source:
-296 x 344 x 184 mm, 6,5 kg, 130 W, a 6 degree beam, pan 540 and tilt 270.
+### Two things that were ruled out, with evidence
+
+- **`Basic` 9-channel mode works but is not needed.** A throwaway copy with the
+  four CromoWash switched to it read full travel on the coarse channels. It was
+  the right diagnosis of the symptom and the wrong cure - and it would have
+  meant changing the mode on every fixture from its own panel.
+- **A newer QLC+ changes nothing.** 5.2.2 is the latest release, so the only
+  newer thing is a nightly; the macOS artifact for 5.3.0 GIT was downloaded and
+  run against this show and read exactly what 5.2.2 reads. The engine symbols
+  say why: `FadeChannel::primaryChannel`, `addChannel` and `channelCount` are
+  all already exported by 5.2.2, so the secondary-channel machinery is not new
+  and `updateChannel` is a refactor of `getChannelFader`, not a fix.
 
 ### Smoke does not show in the 3D view
 
@@ -263,7 +237,7 @@ resolves even when the custom definitions are not installed.
 
 | Fixture | Status |
 | --- | --- |
-| Pro-Lights CromoWash100 | **Fully verified** against `Manual/ProLights - CromoWash 100.pdf` on 2026-08-25: both modes channel for channel (3.12), every capability range of the colour macro, strobe and control channels, and the whole physical block (1.3). Three things were wrong and are fixed - see [What the manual corrected](#what-the-manual-corrected). The 12-channel Advanced order is `Pan, Pan fine, Tilt, Tilt fine, Pan/tilt speed, ...`, which is what stops it moving: see [The wash heads barely move](#the-wash-heads-barely-move-and-it-is-not-the-show) |
+| Pro-Lights CromoWash100 | **Fully verified** against `Manual/ProLights - CromoWash 100.pdf` on 2026-08-25: both modes channel for channel (3.12), every capability range of the colour macro, strobe and control channels, and the whole physical block (1.3). Three things were wrong and are fixed - see [What the manual corrected](#what-the-manual-corrected). The 12-channel Advanced order is `Pan, Pan fine, Tilt, Tilt fine, Pan/tilt speed, ...`, which is what used to stop it moving: see [Why the wash heads would not move](#why-the-wash-heads-would-not-move) |
 | Audibax IOWA70 | Verified against the repo manual; orphan, not patched |
 | Chauvet MiN Wash | **Verified online** (2026-08-24): the manufacturer manual's 13-channel mode matches channels 1-10 - Pan, Pan fine, Tilt, Tilt fine, Vector speed, Dimmer/Strobe, R, G, B, Color Macros - which is everything the toolkit drives. The manual edition found calls 11-13 "Reserved" where the definition says "Vector Speed (Color)" and "Movement Macros"; unused either way. **Its `5 Channel` mode is wrong** - it lists no Tilt - but the patch does not use it |
 | HYULIGHTS WX-60WPS | Definition declares 10 channels, the used mode exposes 8, matching the patch. Not otherwise verified |
