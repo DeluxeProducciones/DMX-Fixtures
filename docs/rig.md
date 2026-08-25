@@ -29,6 +29,17 @@ is the check the toolkit uses instead of a hardcoded list.
 The rig has **not** been confirmed against the physical hardware. That check is
 an on-site job.
 
+## Where they stand
+
+Neither has the *plot* - nobody has measured the venue. `qlctool stage` writes
+a generated starting layout into `<Monitor>` on a 12 x 6 x 8 m stage: beams
+upstage on the truss, washes downstage on the truss, the two LED bars on the
+floor at the back, PARs and blinders at the front, smoke in the back corners.
+It exists so the 2D and 3D views are readable at all - before it, the show
+carried positions for four fixtures out of twenty-seven and drew the other
+twenty-three on top of each other. Drag them where they really are in QLC+ and
+save; the toolkit only rewrites the node when `stage` or `newshow` is run.
+
 ## Fixture groups
 
 | ID | Name | Grid | Fixtures |
