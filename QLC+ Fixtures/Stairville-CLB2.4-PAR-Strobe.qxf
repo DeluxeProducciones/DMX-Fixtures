@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.2.2</Version>
+  <Author>Vibra Eventos</Author>
+ </Creator>
+ <Manufacturer>Stairville</Manufacturer>
+ <Model>CLB2.4 PAR (split)</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="0" Preset="ShutterOpen">No strobe</Capability>
+  <Capability Min="1" Max="255" Preset="StrobeSlowToFast">Strobe, slow to fast</Capability>
+ </Channel>
+ <Mode Name="PAR">
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+ </Mode>
+ <Mode Name="Master + PAR">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
+ </Mode>
+ <Mode Name="PAR + Strobe">
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+  <Channel Number="3">Strobe</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="341" ColourTemperature="0"/>
+  <Dimensions Weight="1.4" Width="252" Height="305" Depth="63"/>
+  <Lens Name="Other" DegreesMin="30" DegreesMax="30"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="1" Height="1"/>
+  <Technical PowerConsumption="13" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

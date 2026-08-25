@@ -235,6 +235,48 @@ fixture**: four 3-channel RGB fixtures on the head triples, plus something to
 hold the bar's master dimmer at full. That is a patch decision, not a plot one -
 it does not change a cable, only how QLC+ sees the same 14 channels.
 
+### The split, as a copy to look at (2026-08-25)
+
+`QLC+ Setups/Vibra-split.qxw` is the same rig with each CLB2.4 patched **four
+times, one per head**, so all eight can be aimed and coloured separately. The
+cabling does not change: the bar still sees the same 14 channels, and the split
+works because the two channels that are not a head's RGB sit next to one.
+
+| DMX (bar 1) | Fixture | Mode |
+| --- | --- | --- |
+| 73-76 | CLB2.4 1 PAR 1 (master) | `Master + PAR` - the bar's dimmer plus head 1 |
+| 77-79 | CLB2.4 1 PAR 2 | `PAR` |
+| 80-82 | CLB2.4 1 PAR 3 | `PAR` |
+| 83-86 | CLB2.4 1 PAR 4 (strobe) | `PAR + Strobe` - head 4 plus the bar's strobe |
+
+Bar 2 repeats it at 87-100. The master dimmer riding with head 1 is what keeps
+the bar lit: that fixture has RGB, so every colour scene raises its dimmer, and
+`Todo Negro` takes it down again. The strobe riding with head 4 is what puts the
+CLB2.4 into `Strobo ON` / `Strobo OFF` for the first time - the manufacturer
+definition's shutter channel carries no labelled range, so the generator
+deliberately left it alone.
+
+Built with the toolkit, not by hand:
+
+```bash
+qlctool patch Vibra.qxw --remove 4 --remove 5 --out step1.qxw
+qlctool patch step1.qxw --add "Stairville|CLB2.4 PAR (split)|Master + PAR|0|73|CLB2.4 1 PAR 1 (master)" ... --out step2.qxw
+qlctool patch step2.qxw --group-size "2=7x3" --group-add "2=29@3,0" ... --out split-patch.qxw
+qlctool newshow split-patch.qxw --plot "QLC+ Setups/vibra-stage-plot-split.json" \
+  --out "QLC+ Setups/Vibra-split.qxw" --validate
+```
+
+The plot for it is `vibra-stage-plot-split.json`: each head sits at the centre
+of its quarter of the 1007 mm bar, aimed back at the DJ at `-35` like the bar
+was. Fan them apart there and each head goes its own way.
+
+**It found a real bug in the strobe generator.** The new definition labels DMX 0
+`No strobe` and marks it `ShutterOpen`, with the strobe on 1-255. The generator
+picked its strobe range **by name**, matched "No strobe" first, and wrote
+`Strobo ON` as a zero - the one value that guarantees no strobe. It reads the
+`Strobe*` **preset** now and falls back to the name only when a definition
+carries none, which is how the BEAM and the MiN Wash still work.
+
 ### They looked like PAR cans in 3D
 
 The pixel panels were `<Type>Color Changer</Type>`, and the 3D view picks the
