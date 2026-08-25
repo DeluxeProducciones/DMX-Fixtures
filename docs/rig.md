@@ -72,7 +72,7 @@ resolves even when the custom definitions are not installed.
 | Audibax IOWA70 | Verified against the repo manual; orphan, not patched |
 | Chauvet MiN Wash | **Verified online** (2026-08-24): the manufacturer manual's 13-channel mode matches channels 1-10 - Pan, Pan fine, Tilt, Tilt fine, Vector speed, Dimmer/Strobe, R, G, B, Color Macros - which is everything the toolkit drives. The manual edition found calls 11-13 "Reserved" where the definition says "Vector Speed (Color)" and "Movement Macros"; unused either way. **Its `5 Channel` mode is wrong** - it lists no Tilt - but the patch does not use it |
 | HYULIGHTS WX-60WPS | Definition declares 10 channels, the used mode exposes 8, matching the patch. Not otherwise verified |
-| Generic BEAM 230W 7R | **Channel order still not verifiable online**, and needs the on-site probe: generic 7R lamps ship with different layouts, and one manual found (Rambo 230) puts Color on ch1, Gobo on ch4, Pan on ch10 where our definition starts at Pan. The *physical* side is settled - see [Where the beams came from](#where-the-beams-came-from) |
+| Generic BEAM 230W 7R | **Verified on the hardware by the owner**, who states he tested the channel order when he wrote the definition (2026-08-25). The hand-built show corroborates the two channels that matter most: `Luz ON Cabezas` sends 255 to channel 6 and 255 to channel 7, `Luz OFF Cabezas` sends 0 to both - so channel 6 is the shutter, shut at 0, and channel 7 is the dimmer. No manual matches it (one found for a Rambo 230 puts Color on ch1 and Pan on ch10), so the hardware is the only reference there will be. Physical side: see [Where the beams came from](#where-the-beams-came-from) |
 | Vortex PC-64 LED S | No manual found anywhere. 5ch RGB + dimmer + strobe is the usual LED PAR layout, order unconfirmed |
 | LED Beam Mini | Declares 16ch with channels 9-16 "No function". Generic unit, nothing online. The wasted eight channels suggest a mode where they do something |
 
@@ -139,6 +139,26 @@ ranges than the prism itself would capture the prism role and make
 The Vortex PC-64 also carried `Weight="0"`, which QLC+'s schema rejects; it is
 now 3 kg, an estimate for a LED PAR of that size and used for nothing but the
 fixture list.
+
+### A dimmer at full is not a light that is on
+
+The four beams have a **mechanical shutter on channel 6, shut at DMX 0**, and
+the two MiN Wash keep their whole intensity on a shutter-style channel with no
+separate dimmer at all. Raising the dimmer does nothing for either. The
+hand-built show knew it - `Luz ON Cabezas` sends 255 to the beams' channel 6 and
+`Luz OFF Cabezas` sends 0 - and the generators did not, so every generated
+colour, gobo and dimmer scene left six of the twelve heads dark.
+
+It stayed invisible because QLC+ could not tell either: the definition's
+"Closed" range carried no preset, so the 3D view drew light the rig would never
+have produced. Tagging it `ShutterClose` made the preview honest, and the
+darkness it then showed was real.
+
+`shutter_open_pairs` reads the open value out of the definition - the range
+marked `ShutterOpen`, or failing that one named "open" - and every generator that
+raises a dimmer to make a fixture visible now opens its shutter too. Fixtures
+whose shutter channel is a strobe and nothing else, which is every LED PAR here,
+are left alone.
 
 ### Settling the unverified ones
 
