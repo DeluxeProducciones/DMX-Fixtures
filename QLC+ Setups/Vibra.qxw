@@ -370,35 +370,35 @@
       <ValueStyle>1</ValueStyle>
       <Grid Width="12" Height="6" Depth="8" Units="0" POV="2"/>
       <StageItem>0</StageItem>
-      <FxItem ID="0" XPos="4185" YPos="4000" ZPos="1500"/>
-      <FxItem ID="1" XPos="7519" YPos="4000" ZPos="1500"/>
-      <FxItem ID="2" XPos="5468" YPos="3000" ZPos="6800" XRot="-90"/>
-      <FxItem ID="3" XPos="5468" YPos="2200" ZPos="4500" XRot="-90"/>
-      <FxItem ID="4" XPos="896" YPos="3000" ZPos="6800" XRot="35"/>
-      <FxItem ID="5" XPos="10096" YPos="3000" ZPos="6800" XRot="35"/>
-      <FxItem ID="6" XPos="854" YPos="4000" ZPos="1500" XRot="-60"/>
-      <FxItem ID="7" XPos="3076" YPos="4000" ZPos="1500" XRot="-60"/>
-      <FxItem ID="8" XPos="5298" YPos="4000" ZPos="1500" XRot="-60"/>
-      <FxItem ID="9" XPos="6410" YPos="4000" ZPos="1500" XRot="-60"/>
-      <FxItem ID="10" XPos="8632" YPos="4000" ZPos="1500" XRot="-60"/>
-      <FxItem ID="11" XPos="10854" YPos="4000" ZPos="1500" XRot="-60"/>
-      <FxItem ID="12" XPos="600" YPos="0" ZPos="300" Hidden="True"/>
-      <FxItem ID="13" XPos="1800" YPos="0" ZPos="300" Hidden="True"/>
-      <FxItem ID="14" XPos="3000" YPos="0" ZPos="300" Hidden="True"/>
-      <FxItem ID="15" XPos="4200" YPos="0" ZPos="300" Hidden="True"/>
-      <FxItem ID="16" XPos="5400" YPos="0" ZPos="300" Hidden="True"/>
+      <FxItem ID="0" XPos="4185" YPos="4000" ZPos="1558"/>
+      <FxItem ID="1" XPos="7519" YPos="4000" ZPos="1558"/>
+      <FxItem ID="2" XPos="5468" YPos="3000" ZPos="6818" XRot="-90"/>
+      <FxItem ID="3" XPos="5468" YPos="2200" ZPos="4498" XRot="-90"/>
+      <FxItem ID="4" XPos="896" YPos="3000" ZPos="6818" XRot="35"/>
+      <FxItem ID="5" XPos="10096" YPos="3000" ZPos="6818" XRot="35"/>
+      <FxItem ID="6" XPos="854" YPos="4000" ZPos="1466" XRot="-60"/>
+      <FxItem ID="7" XPos="3076" YPos="4000" ZPos="1466" XRot="-60"/>
+      <FxItem ID="8" XPos="5298" YPos="4000" ZPos="1466" XRot="-60"/>
+      <FxItem ID="9" XPos="6410" YPos="4000" ZPos="1466" XRot="-60"/>
+      <FxItem ID="10" XPos="8632" YPos="4000" ZPos="1466" XRot="-60"/>
+      <FxItem ID="11" XPos="10854" YPos="4000" ZPos="1466" XRot="-60"/>
+      <FxItem ID="12" XPos="600" YPos="0" ZPos="316" Hidden="True"/>
+      <FxItem ID="13" XPos="1800" YPos="0" ZPos="408" Hidden="True"/>
+      <FxItem ID="14" XPos="3000" YPos="0" ZPos="408" Hidden="True"/>
+      <FxItem ID="15" XPos="4200" YPos="0" ZPos="376" Hidden="True"/>
+      <FxItem ID="16" XPos="5400" YPos="0" ZPos="376" Hidden="True"/>
       <FxItem ID="17" XPos="300" YPos="0" ZPos="2000"/>
-      <FxItem ID="18" XPos="6600" YPos="0" ZPos="300" Hidden="True"/>
-      <FxItem ID="19" XPos="7800" YPos="0" ZPos="300" Hidden="True"/>
-      <FxItem ID="20" XPos="1916" YPos="4000" ZPos="1500"/>
-      <FxItem ID="21" XPos="9694" YPos="4000" ZPos="1500"/>
+      <FxItem ID="18" XPos="6600" YPos="0" ZPos="318" Hidden="True"/>
+      <FxItem ID="19" XPos="7800" YPos="0" ZPos="318" Hidden="True"/>
+      <FxItem ID="20" XPos="1916" YPos="4000" ZPos="1485"/>
+      <FxItem ID="21" XPos="9694" YPos="4000" ZPos="1485"/>
       <FxItem ID="22" XPos="4405" YPos="600" ZPos="4335" XRot="180"/>
       <FxItem ID="23" XPos="7205" YPos="600" ZPos="4335" XRot="180"/>
-      <FxItem ID="24" XPos="2808" YPos="3000" ZPos="6800" XRot="-90"/>
-      <FxItem ID="25" XPos="4342" YPos="3000" ZPos="6800" XRot="-90"/>
+      <FxItem ID="24" XPos="2808" YPos="3000" ZPos="6815" XRot="-90"/>
+      <FxItem ID="25" XPos="4342" YPos="3000" ZPos="6815" XRot="-90"/>
       <FxItem ID="26" XPos="9000" YPos="0" ZPos="300" Hidden="True"/>
-      <FxItem ID="27" XPos="7408" YPos="3000" ZPos="6800" XRot="-90"/>
-      <FxItem ID="28" XPos="8942" YPos="3000" ZPos="6800" XRot="-90"/>
+      <FxItem ID="27" XPos="7408" YPos="3000" ZPos="6815" XRot="-90"/>
+      <FxItem ID="28" XPos="8942" YPos="3000" ZPos="6815" XRot="-90"/>
       <MeshItem ID="1" Res="generic/cube.obj" Name="DJ deck top" XPos="5000" YPos="-140" ZPos="3500" XScale="1" YScale="0.04" ZScale="0.5"/>
       <MeshItem ID="2" Res="generic/cylinder.obj" Name="DJ deck leg, downstage left" XPos="4100" YPos="-590" ZPos="3900" XScale="0.03" YScale="0.41" ZScale="0.03"/>
       <MeshItem ID="3" Res="generic/cylinder.obj" Name="DJ deck leg, downstage right" XPos="5900" YPos="-590" ZPos="3900" XScale="0.03" YScale="0.41" ZScale="0.03"/>
@@ -4369,10 +4369,10 @@
       <FixtureVal ID="14">10,4</FixtureVal>
       <FixtureVal ID="15">5,247</FixtureVal>
       <FixtureVal ID="16">5,247</FixtureVal>
-      <FixtureVal ID="20">5,26</FixtureVal>
-      <FixtureVal ID="21">5,26</FixtureVal>
-      <FixtureVal ID="22">5,26</FixtureVal>
-      <FixtureVal ID="23">5,26</FixtureVal>
+      <FixtureVal ID="20">5,248</FixtureVal>
+      <FixtureVal ID="21">5,248</FixtureVal>
+      <FixtureVal ID="22">5,248</FixtureVal>
+      <FixtureVal ID="23">5,248</FixtureVal>
     </Function>
     <Function ID="297" Type="Chaser" Name="Strobo Rapido" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="50"/>
