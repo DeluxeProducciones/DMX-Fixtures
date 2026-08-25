@@ -75,10 +75,20 @@ the stage is small z and the front edge is large z. This plot had it backwards
 once and the whole rig came out mirrored, with the back truss hanging over the
 crowd.
 
-**Which way things point.** `x_rot` is degrees about the horizontal axis. Light
-leaves a fixture along `(0, -1, 0)` and the rotation turns it, so the direction
-is `(0, -cos, -sin)`: **negative leans out over the audience, positive leans back
-over the stage.**
+**Which way things point.** `x_rot` is degrees about the horizontal axis, and
+QLC+ turns the fixture by **minus** the stored angle -
+`MonitorProperties::fixtureRotationMatrix` builds it as
+`fromAxisAndAngle(QVector3D(1, 0, 0), -rot.x())`, matching
+`Qt3DCore::QTransform::fromAxesAndAngles` in the 3D view. Light leaving along
+`(0, -1, 0)` therefore ends up going `(0, -cos, +sin)`: **positive leans out
+over the audience, negative leans back over the stage.**
+
+The plot had that backwards until 2026-08-25, and everything downstream agreed
+with it - the landing arithmetic, its tests, and this page - so the checks all
+passed while the entire back truss lit the wall behind the stage. The owner
+found it in the 3D view. The lesson is narrow and worth keeping: a sign
+convention is read out of the renderer's source, not inferred from what a
+preview looks like.
 
 **A moving head is mounted, not aimed.** Its rotation says how the body hangs -
 `0` from a truss, `180` standing on the floor - and where the light goes is pan
@@ -92,17 +102,18 @@ eyeballed. `qlctool stage --plot` prints where each beam meets the floor, and
 
 | Fixture | `x_rot` | Where the beam lands |
 | --- | --- | --- |
-| Six truss PARs | `-50` | z = 6417, 1,9 m past the DJ deck, passing 35 cm over his head |
-| Four pixel panels, both LED bars | `-90` | never - level, straight at the room |
-| Two downstage grids | `+35` | z = 4749, on the DJ deck |
+| Six truss PARs | `50` | z = 6417, 1,9 m past the DJ deck, passing 35 cm over his head |
+| Four pixel panels, both LED bars | `90` | never - level, straight at the room |
+| Two downstage grids | `-35` | z = 4749, on the DJ deck |
 | Two beams on flightcases | `180` | mover: standing upright, base down |
 | Four truss movers | `0` | mover: hanging |
 
-The PARs were at `-35` first, which looked like "tilted towards the audience"
-and landed at **z = 4485** - the DJ deck is at 4500. They were lighting him in
-the face. That is the whole reason the landing calculation exists. `-50` is the
-angle the owner measured on the real truss on 2026-08-25; `-60`, which the plot
-carried before, threw them 2,2 m further out than the rig actually does.
+The PARs were at 35 degrees first, which looked like "tilted towards the
+audience" and landed at **z = 4485** - the DJ deck is at 4500. They were
+lighting him in the face. That is the whole reason the landing calculation
+exists. 50 is the angle the owner measured on the real truss on 2026-08-25; 60,
+which the plot carried before, threw them 2,2 m further out than the rig
+actually does.
 
 ### Why the wash heads would not move
 
