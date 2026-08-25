@@ -278,7 +278,7 @@
     },
     {
       "id": 29,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 1 of 7, head 1 of 4",
       "x": 896,
       "y": 3000,
@@ -287,7 +287,7 @@
     },
     {
       "id": 30,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 1 of 7, head 2 of 4",
       "x": 1148,
       "y": 3000,
@@ -296,7 +296,7 @@
     },
     {
       "id": 31,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 1 of 7, head 3 of 4",
       "x": 1399,
       "y": 3000,
@@ -305,7 +305,7 @@
     },
     {
       "id": 32,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 1 of 7, head 4 of 4",
       "x": 1651,
       "y": 3000,
@@ -314,7 +314,7 @@
     },
     {
       "id": 33,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 7 of 7, head 1 of 4",
       "x": 10096,
       "y": 3000,
@@ -323,7 +323,7 @@
     },
     {
       "id": 34,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 7 of 7, head 2 of 4",
       "x": 10348,
       "y": 3000,
@@ -332,7 +332,7 @@
     },
     {
       "id": 35,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 7 of 7, head 3 of 4",
       "x": 10599,
       "y": 3000,
@@ -341,7 +341,7 @@
     },
     {
       "id": 36,
-      "model": "CLB2.4 PAR (split)",
+      "model": "CLB2.4 PAR head (split)",
       "place": "Front truss 7 of 7, head 4 of 4",
       "x": 10851,
       "y": 3000,

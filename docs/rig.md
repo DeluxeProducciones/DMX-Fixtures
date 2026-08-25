@@ -256,6 +256,21 @@ CLB2.4 into `Strobo ON` / `Strobo OFF` for the first time - the manufacturer
 definition's shutter channel carries no labelled range, so the generator
 deliberately left it alone.
 
+**The definition is repo-local and says so.** `CLB2.4 PAR head (split)` is not a
+manufacturer mode - the bar's six live in `Stairville-CLB2.4-CompactLED.qxf` -
+and its header comment says as much, because in two years the name alone would
+not. Each mode declares its own `<Head>` over the three colour channels rather
+than leaning on the default QLC+ builds when a mode declares none
+(`fixture.cpp:685` inserts one head with *all* channels, strobe included).
+
+Its physical block is per head and derived, not measured: the manual gives the
+bar as 1007 x 305 x 63 mm with the spots and 982 x 55 x 55 without, so a can
+hangs about 250 mm below the bar and is 63 mm deep; 230 mm of width is read off
+the product photo against the 252 mm spacing. Weight and power are the bar's
+divided by four, so a rig total still adds up, and `Lumens` is 0 because the
+manual gives **lux at 2 m**, not lumens - a distinction QLC+'s own definition
+loses when it writes `Lumens="1364"`.
+
 Built with the toolkit, not by hand:
 
 ```bash
