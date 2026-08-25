@@ -72,9 +72,73 @@ resolves even when the custom definitions are not installed.
 | Audibax IOWA70 | Verified against the repo manual; orphan, not patched |
 | Chauvet MiN Wash | **Verified online** (2026-08-24): the manufacturer manual's 13-channel mode matches channels 1-10 - Pan, Pan fine, Tilt, Tilt fine, Vector speed, Dimmer/Strobe, R, G, B, Color Macros - which is everything the toolkit drives. The manual edition found calls 11-13 "Reserved" where the definition says "Vector Speed (Color)" and "Movement Macros"; unused either way. **Its `5 Channel` mode is wrong** - it lists no Tilt - but the patch does not use it |
 | HYULIGHTS WX-60WPS | Definition declares 10 channels, the used mode exposes 8, matching the patch. Not otherwise verified |
-| Generic BEAM 230W 7R | **Not verifiable online.** Generic 7R lamps ship with different layouts: one manual found (Rambo 230) puts Color on ch1, Gobo on ch4, Pan on ch10, while our definition starts at Pan. Needs the on-site probe |
+| Generic BEAM 230W 7R | **Channel order still not verifiable online**, and needs the on-site probe: generic 7R lamps ship with different layouts, and one manual found (Rambo 230) puts Color on ch1, Gobo on ch4, Pan on ch10 where our definition starts at Pan. The *physical* side is settled - see [Where the beams came from](#where-the-beams-came-from) |
 | Vortex PC-64 LED S | No manual found anywhere. 5ch RGB + dimmer + strobe is the usual LED PAR layout, order unconfirmed |
 | LED Beam Mini | Declares 16ch with channels 9-16 "No function". Generic unit, nothing online. The wasted eight channels suggest a mode where they do something |
+
+### Where the beams came from
+
+The four beams were bought on AliExpress on **2024-08-20**, order
+`3040202209874050`, four units for **1.070,34 €** (~267 € each). The listing is
+`Haz de luz de escenario 7R ... 1PCS 230W 7R Beam`, and it has since been
+delisted; its product image survives at
+`https://ae01.alicdn.com/kf/S213c94a06db2438db482281ea8adc4089.jpg` and shows a
+full-size Sharpy clone with the **8+16+24 prism**. The order mail is the only
+record - AliExpress order mails link to the order page, never to the product, so
+there is no item ID to go back to.
+
+That image plus our own definition (17 gobos + open, 14 colours + open, pan 540,
+tilt 270, 16 channels) matches the **ERA Lighting 230W 7R Sharpy Beam** spec
+exactly, which is where the body dimensions now come from: **330 x 390 x 490 mm**,
+mapped into the definition as `Width="390" Height="490" Depth="330"` (the tall
+axis is the one that matters - QLC+ scales the 3D mesh to these numbers).
+
+What was there before was `Height="40"`, which drew the four beams as flat
+slivers in the 2D and 3D views. Sources that agree on the body shape for this
+class: 350 x 320 x 505 mm / 20.1 kg, 410 x 290 x 510 mm / 15.7 kg, and beamZ's
+lighter Tiger 7RC at 280 x 240 x 470 mm / 11.5 kg. Width and depth are within
+60 mm of each other across all of them and are invisible at this scale; the
+height is not.
+
+### What the beam definition had wrong
+
+The channel *order* is still only as good as the seller's chart, but everything
+around it has been corrected against QLC+'s own schema and its Clay Paky Sharpy
+definition, which is the same class of fixture:
+
+- **`Height="40"`** in the physical block drew the four beams as flat slivers in
+  the 2D and 3D views. Now 390 x 490 x 330 mm - see above.
+- **The maintenance channel was machine-translated.** "Quench" is the lamp being
+  put out and "Bubble" is it being struck: 100-105 is **lamp off**, 106-205 is
+  lamp on, 206-255 is reset. Nothing on the console said that sending 100 to
+  channel 16 kills a 230 W lamp mid-show. They now carry QLC+'s `LampOff`,
+  `LampOn` and `ResetAll` presets and say so in words.
+- **The gobo thumbnails pointed at `~/Desktop/Gobos/`**, a folder that no longer
+  exists on either machine. The images live in
+  `QLC+ Setups/Gobos/BEAM-LIGHT-230W-7R/`; the definition now names them
+  relatively (`BEAM-230W-7R/Gobo1.png`), which QLC+ resolves against its own
+  Gobos folder - see [qlcplus-environment.md](qlcplus-environment.md).
+- **Presets that did not match their own labels**: prism rotation was
+  `RotationIndexed` ("park at an angle") on a range labelled "forward slow to
+  fast", the shutter's open and closed ranges carried no preset, and the gobo
+  wheel's two rainbow ranges were unmarked where the colour wheel's were not.
+- **`Res1="0"` on the prism** - that field is the facet count, and the unit has
+  an 8-facet prism.
+- **Lamp figures**: the Osram Sirius HRI 230W datasheet gives 9500 lm at 8000 K,
+  not the 23000 lm / 8500 K that was there. Beam angle follows QLC+'s Sharpy:
+  a fixed 3.8 degrees, not a 0-5 degree PC lens. `PowerConsumption` stays at the
+  lamp's 230 W, which is the convention QLC+'s own definitions use.
+- **"Invalid"** as a capability name became "No function", QLC+'s own word.
+
+One thing deliberately *not* changed: **Prism Rotation stays in the `Speed`
+group**, where QLC+'s Sharpy would put it in `Prism`. The toolkit resolves roles
+from the channel group, and a second Prism-group channel with more labelled
+ranges than the prism itself would capture the prism role and make
+"Prisma Animacion" drive rotation instead of insertion.
+
+The Vortex PC-64 also carried `Weight="0"`, which QLC+'s schema rejects; it is
+now 3 kg, an estimate for a LED PAR of that size and used for nothing but the
+fixture list.
 
 ### Settling the unverified ones
 
