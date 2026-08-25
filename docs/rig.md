@@ -75,20 +75,31 @@ the stage is small z and the front edge is large z. This plot had it backwards
 once and the whole rig came out mirrored, with the back truss hanging over the
 crowd.
 
-**Which way things point.** `x_rot` is degrees about the horizontal axis, and
-QLC+ turns the fixture by **minus** the stored angle -
+**Which way things point, and it is not one rule.** `x_rot` is degrees about the
+horizontal axis, and QLC+ turns the fixture by **minus** the stored angle -
 `MonitorProperties::fixtureRotationMatrix` builds it as
 `fromAxisAndAngle(QVector3D(1, 0, 0), -rot.x())`, matching
-`Qt3DCore::QTransform::fromAxesAndAngles` in the 3D view. Light leaving along
-`(0, -1, 0)` therefore ends up going `(0, -cos, +sin)`: **positive leans out
-over the audience, negative leans back over the stage.**
+`Qt3DCore::QTransform::fromAxesAndAngles` in the 3D view. What that does to the
+light depends on **how QLC+ draws the fixture**:
 
-The plot had that backwards until 2026-08-25, and everything downstream agreed
-with it - the landing arithmetic, its tests, and this page - so the checks all
-passed while the entire back truss lit the wall behind the stage. The owner
-found it in the 3D view. The lesson is narrow and worth keeping: a sign
-convention is read out of the renderer's source, not inferred from what a
-preview looks like.
+| Drawn as | Emits | Aimed at the audience with |
+| --- | --- | --- |
+| a mesh - PAR, moving head, smoke | `(0, -1, 0)`, down | **positive** `x_rot` |
+| QLC+'s own geometry - `LED Bar (Pixels)`, `LED Bar (Beams)`, `Strobe` | `(0, +1, 0)`, up | **negative** `x_rot` |
+
+The second row is not a quirk of this rig: `PixelBar3DItem.qml` puts each head's
+`PlaneMesh` at `+(phySize.y / 2)` and a Qt3D plane faces `+Y`, so a pixel bar
+lights out of its top face. `Strobe3DItem.qml` and `MultiBeams3DItem.qml` do the
+same.
+
+Both halves of this were wrong on 2026-08-25, one after the other. The plot
+started with the sign inverted for everything, and the landing arithmetic, its
+tests and this page all agreed with it - so every check passed while the six
+truss PARs lit the wall behind the stage. Flipping it uniformly fixed the PARs
+and turned the pixel panels and the LED bars around, which had been right all
+along. Both were caught in the 3D view, by the owner, in minutes. A sign
+convention comes out of the renderer's source, per fixture type - never out of
+what one fixture looks like in a preview.
 
 **A moving head is mounted, not aimed.** Its rotation says how the body hangs -
 `0` from a truss, `180` standing on the floor - and where the light goes is pan
@@ -103,7 +114,7 @@ eyeballed. `qlctool stage --plot` prints where each beam meets the floor, and
 | Fixture | `x_rot` | Where the beam lands |
 | --- | --- | --- |
 | Six truss PARs | `50` | z = 6417, 1,9 m past the DJ deck, passing 35 cm over his head |
-| Four pixel panels, both LED bars | `90` | never - level, straight at the room |
+| Four pixel panels, both LED bars | `-90` | never - level, straight at the room (top-face emitter: the sign is inverted) |
 | Two downstage grids | `-35` | z = 4749, on the DJ deck |
 | Two beams on flightcases | `180` | mover: standing upright, base down |
 | Four truss movers | `0` | mover: hanging |

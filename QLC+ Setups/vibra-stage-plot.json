@@ -12,12 +12,16 @@
     "z grows TOWARDS THE AUDIENCE. QLC+'s 3D camera starts at +Z looking at -Z",
     "(MainView3D::resetCameraPosition), so the far side of the stage is small z",
     "and the front edge is large z. Getting this backwards mirrors the whole rig.",
-    "x_rot is degrees about the horizontal axis. QLC+ turns the fixture by MINUS",
-    "the stored angle (MonitorProperties::fixtureRotationMatrix), so light that",
-    "leaves along (0,-1,0) ends up going (0, -cos, +sin): 0 is straight down,",
-    "which is how a light hangs and how every QLC+ mesh starts; POSITIVE leans it",
-    "out over the audience and negative back over the stage. The plot had this",
-    "backwards until 2026-08-25 and the whole back truss lit the rear wall.",
+    "x_rot is degrees about the horizontal axis, and QLC+ turns the fixture by",
+    "MINUS the stored angle (MonitorProperties::fixtureRotationMatrix). WHICH WAY",
+    "THE LIGHT THEN GOES DEPENDS ON THE FIXTURE TYPE. A fixture with a mesh - PAR,",
+    "moving head - emits down (0,-1,0), so POSITIVE leans it out over the audience",
+    "and negative back over the stage: the truss PARs are at 50 and the two",
+    "downstage grids at -35. A fixture QLC+ draws itself - LED Bar (Pixels), LED",
+    "Bar (Beams), Strobe - emits from its TOP face (PixelBar3DItem.qml puts each",
+    "head's plane at +phySize.y/2), so the sign is the other way round: the pixel",
+    "panels and the LED bars face the room at -90. Both halves of this were found",
+    "in the 3D view on 2026-08-25, one flip at a time.",
     "A MOVING HEAD is mounted, not aimed - 0 hanging, 180 standing on the",
     "floor - because pan and tilt are what point it, and the show drives those.",
     "`qlctool stage --plot` prints where every beam meets the floor; use it.",
@@ -135,7 +139,7 @@
       "x": 2808,
       "y": 3000,
       "z": 6815,
-      "x_rot": 90
+      "x_rot": -90
     },
     {
       "id": 25,
@@ -144,7 +148,7 @@
       "x": 4342,
       "y": 3000,
       "z": 6815,
-      "x_rot": 90
+      "x_rot": -90
     },
     {
       "id": 2,
@@ -153,7 +157,7 @@
       "x": 5468,
       "y": 3000,
       "z": 6818,
-      "x_rot": 90
+      "x_rot": -90
     },
     {
       "id": 27,
@@ -162,7 +166,7 @@
       "x": 7408,
       "y": 3000,
       "z": 6815,
-      "x_rot": 90
+      "x_rot": -90
     },
     {
       "id": 28,
@@ -171,7 +175,7 @@
       "x": 8942,
       "y": 3000,
       "z": 6815,
-      "x_rot": 90
+      "x_rot": -90
     },
     {
       "id": 5,
@@ -189,7 +193,7 @@
       "x": 5468,
       "y": 2200,
       "z": 4498,
-      "x_rot": 90
+      "x_rot": -90
     },
     {
       "id": 22,
