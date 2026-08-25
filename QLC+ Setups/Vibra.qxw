@@ -348,33 +348,33 @@
       <ValueStyle>1</ValueStyle>
       <Grid Width="12" Height="6" Depth="8" Units="0" POV="2"/>
       <StageItem>0</StageItem>
-      <FxItem ID="0" XPos="1200" YPos="3480" ZPos="1600"/>
-      <FxItem ID="1" XPos="2571" YPos="3480" ZPos="1600"/>
-      <FxItem ID="2" XPos="1200" YPos="120" ZPos="7040"/>
-      <FxItem ID="3" XPos="10800" YPos="120" ZPos="7040"/>
-      <FxItem ID="4" XPos="1200" YPos="360" ZPos="800"/>
-      <FxItem ID="5" XPos="2160" YPos="360" ZPos="800"/>
-      <FxItem ID="6" XPos="3120" YPos="360" ZPos="800"/>
-      <FxItem ID="7" XPos="4080" YPos="360" ZPos="800"/>
-      <FxItem ID="8" XPos="5040" YPos="360" ZPos="800"/>
-      <FxItem ID="9" XPos="6000" YPos="360" ZPos="800"/>
-      <FxItem ID="10" XPos="6960" YPos="360" ZPos="800"/>
-      <FxItem ID="11" XPos="7920" YPos="360" ZPos="800"/>
-      <FxItem ID="12" XPos="8880" YPos="360" ZPos="800"/>
-      <FxItem ID="13" XPos="3943" YPos="3480" ZPos="1600"/>
-      <FxItem ID="14" XPos="5314" YPos="3480" ZPos="1600"/>
-      <FxItem ID="15" XPos="6686" YPos="3480" ZPos="1600"/>
-      <FxItem ID="16" XPos="8057" YPos="3480" ZPos="1600"/>
-      <FxItem ID="17" XPos="1200" YPos="0" ZPos="7600"/>
-      <FxItem ID="18" XPos="9429" YPos="3480" ZPos="1600"/>
-      <FxItem ID="19" XPos="10800" YPos="3480" ZPos="1600"/>
-      <FxItem ID="20" XPos="1200" YPos="4800" ZPos="6560"/>
-      <FxItem ID="21" XPos="4400" YPos="4800" ZPos="6560"/>
-      <FxItem ID="22" XPos="7600" YPos="4800" ZPos="6560"/>
-      <FxItem ID="23" XPos="10800" YPos="4800" ZPos="6560"/>
-      <FxItem ID="24" XPos="9840" YPos="360" ZPos="800"/>
-      <FxItem ID="25" XPos="10800" YPos="360" ZPos="800"/>
-      <FxItem ID="26" XPos="10800" YPos="0" ZPos="7600"/>
+      <FxItem ID="0" XPos="4170" YPos="4000" ZPos="6500"/>
+      <FxItem ID="1" XPos="7440" YPos="4000" ZPos="6500"/>
+      <FxItem ID="2" XPos="4900" YPos="2200" ZPos="3500"/>
+      <FxItem ID="3" XPos="6040" YPos="2200" ZPos="3500"/>
+      <FxItem ID="4" XPos="2000" YPos="1600" ZPos="1500"/>
+      <FxItem ID="5" XPos="9000" YPos="1600" ZPos="1500"/>
+      <FxItem ID="6" XPos="900" YPos="4000" ZPos="6500"/>
+      <FxItem ID="7" XPos="3080" YPos="4000" ZPos="6500"/>
+      <FxItem ID="8" XPos="5260" YPos="4000" ZPos="6500"/>
+      <FxItem ID="9" XPos="6350" YPos="4000" ZPos="6500"/>
+      <FxItem ID="10" XPos="8530" YPos="4000" ZPos="6500"/>
+      <FxItem ID="11" XPos="10710" YPos="4000" ZPos="6500"/>
+      <FxItem ID="12" XPos="600" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="13" XPos="1800" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="14" XPos="3000" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="15" XPos="4200" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="16" XPos="5400" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="17" XPos="300" YPos="0" ZPos="6000"/>
+      <FxItem ID="18" XPos="6600" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="19" XPos="7800" YPos="0" ZPos="7700" Hidden="True"/>
+      <FxItem ID="20" XPos="1990" YPos="4000" ZPos="6500"/>
+      <FxItem ID="21" XPos="9620" YPos="4000" ZPos="6500"/>
+      <FxItem ID="22" XPos="4200" YPos="0" ZPos="3500"/>
+      <FxItem ID="23" XPos="7400" YPos="0" ZPos="3500"/>
+      <FxItem ID="24" XPos="3800" YPos="400" ZPos="400"/>
+      <FxItem ID="25" XPos="7800" YPos="400" ZPos="400"/>
+      <FxItem ID="26" XPos="9000" YPos="0" ZPos="7700" Hidden="True"/>
     </Monitor>
     <Function ID="0" Type="Scene" Name="Luces ON" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>

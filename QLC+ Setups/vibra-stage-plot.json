@@ -1,0 +1,50 @@
+{
+  "name": "Vibra - the montage we always build",
+  "note": [
+    "The real rig, position by position, as described by the owner on 2026-08-25",
+    "from a video of the get-in. This is a written plot, not a generated one:",
+    "`qlctool stage --plot` writes it into the workspace's <Monitor> verbatim.",
+    "Distances are the stage in metres and the positions in millimetres, which is",
+    "what QLC+ stores. A position is the fixture's near corner, not its centre.",
+    "Eight patched fixtures are not built into this montage - they come from",
+    "bigger setups. They keep a parking spot and are marked hidden so the 2D and",
+    "3D views only show what is actually rigged."
+  ],
+  "stage": [12, 6, 8],
+  "point_of_view": "front",
+  "fixtures": [
+    {"id": 6,  "model": "PC-64 LED S",                 "place": "Back truss 1 of 10",  "x": 900,   "y": 4000, "z": 6500},
+    {"id": 20, "model": "BEAM 230W 7R",                "place": "Back truss 2 of 10",  "x": 1990,  "y": 4000, "z": 6500},
+    {"id": 7,  "model": "PC-64 LED S",                 "place": "Back truss 3 of 10",  "x": 3080,  "y": 4000, "z": 6500},
+    {"id": 0,  "model": "CromoWash100",                "place": "Back truss 4 of 10",  "x": 4170,  "y": 4000, "z": 6500},
+    {"id": 8,  "model": "PC-64 LED S",                 "place": "Back truss 5 of 10",  "x": 5260,  "y": 4000, "z": 6500},
+    {"id": 9,  "model": "PC-64 LED S",                 "place": "Back truss 6 of 10",  "x": 6350,  "y": 4000, "z": 6500},
+    {"id": 1,  "model": "CromoWash100",                "place": "Back truss 7 of 10",  "x": 7440,  "y": 4000, "z": 6500},
+    {"id": 10, "model": "PC-64 LED S",                 "place": "Back truss 8 of 10",  "x": 8530,  "y": 4000, "z": 6500},
+    {"id": 21, "model": "BEAM 230W 7R",                "place": "Back truss 9 of 10",  "x": 9620,  "y": 4000, "z": 6500},
+    {"id": 11, "model": "PC-64 LED S",                 "place": "Back truss 10 of 10", "x": 10710, "y": 4000, "z": 6500},
+
+    {"id": 22, "model": "BEAM 230W 7R",                "place": "DJ booth, house left",  "x": 4200, "y": 0,    "z": 3500},
+    {"id": 23, "model": "BEAM 230W 7R",                "place": "DJ booth, house right", "x": 7400, "y": 0,    "z": 3500},
+
+    {"id": 2,  "model": "LED Bar 240/8 RGB",           "place": "Over the DJ booth, left",  "x": 4900, "y": 2200, "z": 3500},
+    {"id": 3,  "model": "LED Bar 240/8 RGB",           "place": "Over the DJ booth, right", "x": 6040, "y": 2200, "z": 3500},
+
+    {"id": 4,  "model": "CLB2.4 Compact LED PAR System", "place": "Downstage grid lighting the stage, left",  "x": 2000, "y": 1600, "z": 1500},
+    {"id": 5,  "model": "CLB2.4 Compact LED PAR System", "place": "Downstage grid lighting the stage, right", "x": 9000, "y": 1600, "z": 1500},
+
+    {"id": 24, "model": "WX-60WPS-48PARTITION",        "place": "Front edge, facing the audience, left",  "x": 3800, "y": 400,  "z": 400},
+    {"id": 25, "model": "WX-60WPS-48PARTITION",        "place": "Front edge, facing the audience, right", "x": 7800, "y": 400,  "z": 400},
+
+    {"id": 17, "model": "Generic Smoke",               "place": "Upstage side, house left", "x": 300, "y": 0, "z": 6000},
+
+    {"id": 12, "model": "PC-64 LED S",                 "place": "Spare, not rigged", "x": 600,  "y": 0, "z": 7700, "hidden": true},
+    {"id": 13, "model": "CromoWash100",                "place": "Spare, not rigged", "x": 1800, "y": 0, "z": 7700, "hidden": true},
+    {"id": 14, "model": "CromoWash100",                "place": "Spare, not rigged", "x": 3000, "y": 0, "z": 7700, "hidden": true},
+    {"id": 15, "model": "MiN Wash",                    "place": "Spare, not rigged", "x": 4200, "y": 0, "z": 7700, "hidden": true},
+    {"id": 16, "model": "MiN Wash",                    "place": "Spare, not rigged", "x": 5400, "y": 0, "z": 7700, "hidden": true},
+    {"id": 18, "model": "Mini Led Moving Head",        "place": "Spare, not rigged", "x": 6600, "y": 0, "z": 7700, "hidden": true},
+    {"id": 19, "model": "Mini Led Moving Head",        "place": "Spare, not rigged", "x": 7800, "y": 0, "z": 7700, "hidden": true},
+    {"id": 26, "model": "Generic Smoke",               "place": "Spare, not rigged", "x": 9000, "y": 0, "z": 7700, "hidden": true}
+  ]
+}
