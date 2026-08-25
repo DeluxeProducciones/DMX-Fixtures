@@ -161,17 +161,21 @@ that button started it or when the function is the workspace's startup function
 
 For somebody who does know the rig: the layers, on top of whatever page 1 is
 running. The colour bank per fixture group on keys 1-0 (now with the colour
-named on the button), the wheels, the movement shapes, the XY pad over the
-twelve heads, the two speed dials, the dimmer looks, the fixture strobes, and
-the audio triggers.
+named on the button), the wheels, the movement shapes, the beams' gobos and
+colour-wheel positions, a pad over the twelve heads big enough to aim with, the
+two speed dials, the dimmer looks, the fixture strobes, and the audio triggers.
+
+The beams' wheels are here rather than in the library because picking a gobo is
+a live decision: somebody does it while the show runs.
 
 ### Page 3 - Librería
 
 The material the show is built from, not buttons for a set: 90 two-colour
-mixes, 90 matrix effects, the beams' 20 gobos and 17 colour-wheel positions,
-the prism, and the per-group wheels and matrix cycles. The two multipage frames
-inside carry a label per page naming the group, because three pages of
-identically captioned buttons is not a page count, it is a guess.
+mixes, 90 matrix effects, and the per-group wheels and matrix cycles. The two
+multipage frames inside carry a label per page naming the group, because three
+pages of identically captioned buttons is not a page count, it is a guess - and
+the page carries a paragraph saying what it is for, because 180 buttons
+otherwise read as something somebody is supposed to be using.
 
 Two rules shape all three pages:
 
