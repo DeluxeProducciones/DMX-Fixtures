@@ -35,7 +35,7 @@
       "x": 854,
       "y": 4000,
       "z": 1500,
-      "x_rot": -35
+      "x_rot": -60
     },
     {
       "id": 20,
@@ -52,7 +52,7 @@
       "x": 3076,
       "y": 4000,
       "z": 1500,
-      "x_rot": -35
+      "x_rot": -60
     },
     {
       "id": 0,
@@ -69,7 +69,7 @@
       "x": 5298,
       "y": 4000,
       "z": 1500,
-      "x_rot": -35
+      "x_rot": -60
     },
     {
       "id": 9,
@@ -78,7 +78,7 @@
       "x": 6410,
       "y": 4000,
       "z": 1500,
-      "x_rot": -35
+      "x_rot": -60
     },
     {
       "id": 1,
@@ -95,7 +95,7 @@
       "x": 8632,
       "y": 4000,
       "z": 1500,
-      "x_rot": -35
+      "x_rot": -60
     },
     {
       "id": 21,
@@ -112,7 +112,7 @@
       "x": 10854,
       "y": 4000,
       "z": 1500,
-      "x_rot": -35
+      "x_rot": -60
     },
     {
       "id": 4,
@@ -189,20 +189,20 @@
     {
       "id": 22,
       "model": "BEAM 230W 7R",
-      "place": "On a flightcase beside the DJ deck, house left, aimed up and out over the room",
+      "place": "On a flightcase beside the DJ deck, house left, standing upright, base down",
       "x": 4405,
       "y": 600,
       "z": 4335,
-      "x_rot": -135
+      "x_rot": 180
     },
     {
       "id": 23,
       "model": "BEAM 230W 7R",
-      "place": "On a flightcase beside the DJ deck, house right, aimed up and out over the room",
+      "place": "On a flightcase beside the DJ deck, house right, standing upright, base down",
       "x": 7205,
       "y": 600,
       "z": 4335,
-      "x_rot": -135
+      "x_rot": 180
     },
     {
       "id": 17,
