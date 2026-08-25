@@ -287,7 +287,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>Master + PAR</Mode>
       <ID>29</ID>
       <Name>CLB2.4 1 PAR 1 (master)</Name>
@@ -297,7 +297,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>PAR</Mode>
       <ID>30</ID>
       <Name>CLB2.4 1 PAR 2</Name>
@@ -307,7 +307,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>PAR</Mode>
       <ID>31</ID>
       <Name>CLB2.4 1 PAR 3</Name>
@@ -317,7 +317,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>PAR + Strobe</Mode>
       <ID>32</ID>
       <Name>CLB2.4 1 PAR 4 (strobe)</Name>
@@ -327,7 +327,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>Master + PAR</Mode>
       <ID>33</ID>
       <Name>CLB2.4 2 PAR 1 (master)</Name>
@@ -337,7 +337,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>PAR</Mode>
       <ID>34</ID>
       <Name>CLB2.4 2 PAR 2</Name>
@@ -347,7 +347,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>PAR</Mode>
       <ID>35</ID>
       <Name>CLB2.4 2 PAR 3</Name>
@@ -357,7 +357,7 @@
     </Fixture>
     <Fixture>
       <Manufacturer>Stairville</Manufacturer>
-      <Model>CLB2.4 PAR (split)</Model>
+      <Model>CLB2.4 PAR head (split)</Model>
       <Mode>PAR + Strobe</Mode>
       <ID>36</ID>
       <Name>CLB2.4 2 PAR 4 (strobe)</Name>
