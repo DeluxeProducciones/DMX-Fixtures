@@ -42,20 +42,27 @@ verbatim; `newshow --plot` builds the show on it.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PAR | **7R** | PAR | **wash** | PAR | PAR | **wash** | PAR | **7R** | PAR |
 
-The PARs are Vortex PC-64, the 7R are BEAM 230W, the washes are CromoWash100.
-Symmetric: beams at 2 and 9, washes at 4 and 7.
+PARs are Vortex PC-64, 7R are BEAM 230W, washes are CromoWash100. Symmetric:
+beams at 2 and 9, washes at 4 and 7.
+
+**Front truss, seven positions, the same way round:**
+
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| --- | --- | --- | --- | --- | --- | --- |
+| **grid** | pixel | pixel | **bar** | pixel | pixel | **grid** |
+
+The two CLB2.4 grids at the ends aim *back at the DJ*; the four pixel panels and
+the LED bar dead centre aim *out at the audience*.
 
 **The rest:**
 
 | Where | What |
 | --- | --- |
-| Either side of the DJ table | the other two BEAM 230W, standing on the floor |
-| Over the DJ booth | the two Stairville LED Bar 240/8 |
-| Downstage, lighting the stage | the two Stairville CLB2.4 grids, four cells each |
-| Front edge, facing the audience | the two HYULIGHTS pixel panels |
+| Either side of the DJ table | the other two BEAM 230W, on the floor **aimed up** (`x_rot: 180`) |
+| Over the DJ booth | the second Stairville LED Bar 240/8 |
 | One side, upstage | the smoke machine |
 
-**Nineteen fixtures rigged out of twenty-seven patched.** The other eight come
+**Twenty-one fixtures rigged out of twenty-nine patched.** The other eight come
 from bigger setups and are not built: the third and fourth CromoWash100, both
 MiN Wash, both LED Beam Mini, the seventh Vortex PC-64 and the second smoke
 machine. They keep a parking spot in the plot and carry QLC+'s `Hidden` flag, so
@@ -67,20 +74,58 @@ So the file names the model it expects at every ID and `load_stage_plot` refuses
 a workspace where they no longer match, rather than hanging a beam where the
 smoke machine is.
 
-Distances are a guess at the venue, not a survey: a 12 x 6 x 8 m stage with the
-truss at 4 m. The *order and the grouping* are real; the metres are there so the
-preview reads correctly and can be dragged.
+Distances are a guess at the venue, not a survey: a 12 x 6 x 8 m stage, back
+truss at 4 m and front truss at 3 m. The *order and the grouping* are real; the
+metres are there so the preview reads correctly and can be dragged. Each x is
+its slot centre minus half the fixture's own width, because QLC+ stores the near
+corner - that is what makes a row read as evenly spaced rather than evenly
+left-aligned.
+
+### Two pixel panels were missing from the patch
+
+There are four HYULIGHTS WX-60WPS-48PARTITION on the front truss and the patch
+had two. AliExpress order `3040390036254050`, 2024-08-22, says
+`WX-60WPS-48PARTITION x4` for 88,69 € - four were bought. The other two are now
+patched at DMX 301 and 309, continuing the universe, as fixtures 27 and 28.
+
+They also had to be **put into the `BarrasLed` group**. Colour banks and matrices
+are both generated per group, so a fixture in no group gets only the handful of
+rig-wide scenes: the two new panels came out with 7 scene values against their
+neighbours' 47. See [Fixture groups](#fixture-groups).
+
+**The current patch is `Vibra.qxw`, not `DeluxeEventos2.qxw`.** The hand-built
+original stays as the reference the builders are tested against, but it is two
+fixtures behind the rig now, so `newshow` runs from `Vibra.qxw` itself.
+
+### They looked like PAR cans in 3D
+
+The pixel panels were `<Type>Color Changer</Type>`, and the 3D view picks the
+mesh from the type: Color Changer loads `par.dae`, a PAR can. A flat panel is
+`LED Bar (Pixels)`, which QLC+ draws procedurally from the fixture's own heads
+and physical size instead of loading a mesh at all - a 250 x 130 mm rectangle,
+which is what they are.
+
+That needed a `<Head>` as well. A pixel bar is drawn one cell per head and this
+definition declared none, so as an LED bar it would have been drawn as nothing.
+The panel is 48 LEDs but a single addressable RGB, so it gets the one head it
+really has.
 
 ## Fixture groups
 
 | ID | Name | Grid | Fixtures |
 | --- | --- | --- | --- |
-| 0 | BarrasLed | 8x2 | 2, 3, 20, 21, 22, 23, 24, 25 |
+| 0 | BarrasLed | 8x3 | 2, 3, 20, 21, 22, 23, 24, 25, 27, 28 |
 | 1 | Cabezas | 8x1 | 0, 1, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23 |
 | 2 | PAR | 3x3 | 6-12 |
 
 Groups are what an RGBMatrix paints onto, and what the colour banks are built
-per.
+per - so a fixture in no group gets neither.
+
+**`BarrasLed` declared 8x2 over three rows of heads.** An RGBMatrix paints the
+cells a group *declares*, not the heads it holds, so row 2 - the four beams and
+the pixel panels - was unreachable by every matrix in the show. The grid is now
+8x3 and row 2 holds the four beams and the four pixel panels. The beams have no
+RGB and stay dark in a matrix either way; the panels no longer do.
 
 ## Smoke machines
 
