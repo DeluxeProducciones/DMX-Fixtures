@@ -92,15 +92,17 @@ eyeballed. `qlctool stage --plot` prints where each beam meets the floor, and
 
 | Fixture | `x_rot` | Where the beam lands |
 | --- | --- | --- |
-| Six truss PARs | `-60` | z = 8612, past the front of the stage, clearing the DJ's head by 2,8 m |
+| Six truss PARs | `-50` | z = 6417, 1,9 m past the DJ deck, passing 35 cm over his head |
 | Four pixel panels, both LED bars | `-90` | never - level, straight at the room |
-| Two downstage grids | `+35` | z = 4731, on the DJ deck |
+| Two downstage grids | `+35` | z = 4749, on the DJ deck |
 | Two beams on flightcases | `180` | mover: standing upright, base down |
 | Four truss movers | `0` | mover: hanging |
 
 The PARs were at `-35` first, which looked like "tilted towards the audience"
 and landed at **z = 4485** - the DJ deck is at 4500. They were lighting him in
-the face. That is the whole reason the landing calculation exists.
+the face. That is the whole reason the landing calculation exists. `-50` is the
+angle the owner measured on the real truss on 2026-08-25; `-60`, which the plot
+carried before, threw them 2,2 m further out than the rig actually does.
 
 ### Why the wash heads would not move
 
