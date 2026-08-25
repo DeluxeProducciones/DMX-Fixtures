@@ -150,8 +150,9 @@ Both kinds move, in Advanced 12-channel mode, on QLC+ 5.2.2, with nothing
 changed on the fixtures.
 
 **The Dimmer-mode EFX has the identical hazard** on the *intensity* channels
-instead. Nothing in this rig has a 16-bit dimmer, so `Dimmer Chase` may hold
-anything; patch one that does and it will need the same split.
+instead, and is now split the same way. Nothing in this rig has a 16-bit dimmer,
+so nothing is split today and `Dimmer Chase` is a plain EFX - but patch a
+fixture that does and it will divide rather than take the rest down with it.
 
 ### Two things that were ruled out, with evidence
 
