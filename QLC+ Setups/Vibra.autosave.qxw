@@ -4185,47 +4185,47 @@
    <ValueStyle>1</ValueStyle>
    <Grid Width="12" Height="6" Depth="8" Units="0" POV="2"/>
    <StageItem>0</StageItem>
-   <FxItem ID="0" XPos="4185" YPos="4000" ZPos="6500"/>
-   <FxItem ID="1" XPos="7519" YPos="4000" ZPos="6500"/>
-   <FxItem ID="2" XPos="5468" YPos="3000" ZPos="1200" XRot="90"/>
-   <FxItem ID="3" XPos="5468" YPos="2200" ZPos="3500" XRot="90"/>
-   <FxItem ID="4" XPos="896" YPos="3000" ZPos="1200"/>
-   <FxItem ID="5" XPos="10096" YPos="3000" ZPos="1200"/>
-   <FxItem ID="6" XPos="854" YPos="4000" ZPos="6500" XRot="90"/>
-   <FxItem ID="7" XPos="3076" YPos="4000" ZPos="6500" XRot="90"/>
-   <FxItem ID="8" XPos="5298" YPos="4000" ZPos="6500" XRot="90"/>
-   <FxItem ID="9" XPos="6410" YPos="4000" ZPos="6500" XRot="90"/>
-   <FxItem ID="10" XPos="8632" YPos="4000" ZPos="6500" XRot="90"/>
-   <FxItem ID="11" XPos="10854" YPos="4000" ZPos="6500" XRot="90"/>
-   <FxItem ID="12" Hidden="True" XPos="600" YPos="0" ZPos="7700"/>
-   <FxItem ID="13" Hidden="True" XPos="1800" YPos="0" ZPos="7700"/>
-   <FxItem ID="14" Hidden="True" XPos="3000" YPos="0" ZPos="7700"/>
-   <FxItem ID="15" Hidden="True" XPos="4200" YPos="0" ZPos="7700"/>
-   <FxItem ID="16" Hidden="True" XPos="5400" YPos="0" ZPos="7700"/>
-   <FxItem ID="17" XPos="300" YPos="0" ZPos="6000"/>
-   <FxItem ID="18" Hidden="True" XPos="6600" YPos="0" ZPos="7700"/>
-   <FxItem ID="19" Hidden="True" XPos="7800" YPos="0" ZPos="7700"/>
-   <FxItem ID="20" XPos="1916" YPos="4000" ZPos="6500"/>
-   <FxItem ID="21" XPos="9694" YPos="4000" ZPos="6500"/>
-   <FxItem ID="22" XPos="4405" YPos="600" ZPos="3335" XRot="180"/>
-   <FxItem ID="23" XPos="7205" YPos="600" ZPos="3335" XRot="180"/>
-   <FxItem ID="24" XPos="2808" YPos="3000" ZPos="1200" XRot="90"/>
-   <FxItem ID="25" XPos="4342" YPos="3000" ZPos="1200" XRot="90"/>
-   <FxItem ID="26" Hidden="True" XPos="9000" YPos="0" ZPos="7700"/>
-   <FxItem ID="27" XPos="7408" YPos="3000" ZPos="1200" XRot="90"/>
-   <FxItem ID="28" XPos="8942" YPos="3000" ZPos="1200" XRot="90"/>
-   <MeshItem ID="1" XPos="5000" YPos="-140" ZPos="2500" YScale="0.04" ZScale="0.5" Res="generic/cube.obj" Name="DJ deck top"/>
-   <MeshItem ID="2" XPos="4100" YPos="-590" ZPos="2100" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, downstage left"/>
-   <MeshItem ID="3" XPos="5900" YPos="-590" ZPos="2100" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, downstage right"/>
-   <MeshItem ID="4" XPos="4100" YPos="-590" ZPos="2900" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, upstage left"/>
-   <MeshItem ID="5" XPos="5900" YPos="-590" ZPos="2900" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, upstage right"/>
-   <MeshItem ID="6" XPos="3600" YPos="-700" ZPos="2500" XScale="0.3" YScale="0.3" ZScale="0.3" Res="generic/cube.obj" Name="Flightcase, house left"/>
-   <MeshItem ID="7" XPos="6400" YPos="-700" ZPos="2500" XScale="0.3" YScale="0.3" ZScale="0.3" Res="generic/cube.obj" Name="Flightcase, house right"/>
-   <MeshItem ID="8" XPos="5000" YPos="-575" ZPos="3250" XScale="0.17" YScale="0.425" ZScale="0.12" Res="generic/cube.obj" Name="DJ legs"/>
-   <MeshItem ID="9" XPos="5000" YPos="160" ZPos="3250" XScale="0.22" YScale="0.31" ZScale="0.13" Res="generic/cube.obj" Name="DJ torso"/>
-   <MeshItem ID="10" XPos="5000" YPos="590" ZPos="3250" XScale="0.115" YScale="0.125" ZScale="0.115" Res="generic/sphere.obj" Name="DJ head"/>
-   <MeshItem ID="11" XPos="4760" YPos="0" ZPos="2950" XScale="0.045" YScale="0.045" ZScale="0.35" Res="generic/cube.obj" Name="DJ arm, house left"/>
-   <MeshItem ID="12" XPos="5240" YPos="0" ZPos="2950" XScale="0.045" YScale="0.045" ZScale="0.35" Res="generic/cube.obj" Name="DJ arm, house right"/>
+   <FxItem ID="0" XPos="4185" YPos="4000" ZPos="1500"/>
+   <FxItem ID="1" XPos="7519" YPos="4000" ZPos="1500"/>
+   <FxItem ID="2" XPos="5468" YPos="3000" ZPos="6800" XRot="-90"/>
+   <FxItem ID="3" XPos="5468" YPos="2200" ZPos="4500" XRot="-90"/>
+   <FxItem ID="4" XPos="896" YPos="3000" ZPos="6800" XRot="35"/>
+   <FxItem ID="5" XPos="10096" YPos="3000" ZPos="6800" XRot="35"/>
+   <FxItem ID="6" XPos="854" YPos="4000" ZPos="1500" XRot="-35"/>
+   <FxItem ID="7" XPos="3076" YPos="4000" ZPos="1500" XRot="-35"/>
+   <FxItem ID="8" XPos="5298" YPos="4000" ZPos="1500" XRot="-35"/>
+   <FxItem ID="9" XPos="6410" YPos="4000" ZPos="1500" XRot="-35"/>
+   <FxItem ID="10" XPos="8632" YPos="4000" ZPos="1500" XRot="-35"/>
+   <FxItem ID="11" XPos="10854" YPos="4000" ZPos="1500" XRot="-35"/>
+   <FxItem ID="12" Hidden="True" XPos="600" YPos="0" ZPos="300"/>
+   <FxItem ID="13" Hidden="True" XPos="1800" YPos="0" ZPos="300"/>
+   <FxItem ID="14" Hidden="True" XPos="3000" YPos="0" ZPos="300"/>
+   <FxItem ID="15" Hidden="True" XPos="4200" YPos="0" ZPos="300"/>
+   <FxItem ID="16" Hidden="True" XPos="5400" YPos="0" ZPos="300"/>
+   <FxItem ID="17" XPos="300" YPos="0" ZPos="2000"/>
+   <FxItem ID="18" Hidden="True" XPos="6600" YPos="0" ZPos="300"/>
+   <FxItem ID="19" Hidden="True" XPos="7800" YPos="0" ZPos="300"/>
+   <FxItem ID="20" XPos="1916" YPos="4000" ZPos="1500"/>
+   <FxItem ID="21" XPos="9694" YPos="4000" ZPos="1500"/>
+   <FxItem ID="22" XPos="4405" YPos="600" ZPos="4665" XRot="180"/>
+   <FxItem ID="23" XPos="7205" YPos="600" ZPos="4665" XRot="180"/>
+   <FxItem ID="24" XPos="2808" YPos="3000" ZPos="6800" XRot="-90"/>
+   <FxItem ID="25" XPos="4342" YPos="3000" ZPos="6800" XRot="-90"/>
+   <FxItem ID="26" Hidden="True" XPos="9000" YPos="0" ZPos="300"/>
+   <FxItem ID="27" XPos="7408" YPos="3000" ZPos="6800" XRot="-90"/>
+   <FxItem ID="28" XPos="8942" YPos="3000" ZPos="6800" XRot="-90"/>
+   <MeshItem ID="1" XPos="5000" YPos="-140" ZPos="3500" YScale="0.04" ZScale="0.5" Res="generic/cube.obj" Name="DJ deck top"/>
+   <MeshItem ID="2" XPos="4100" YPos="-590" ZPos="3900" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, downstage left"/>
+   <MeshItem ID="3" XPos="5900" YPos="-590" ZPos="3900" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, downstage right"/>
+   <MeshItem ID="4" XPos="4100" YPos="-590" ZPos="3100" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, upstage left"/>
+   <MeshItem ID="5" XPos="5900" YPos="-590" ZPos="3100" XScale="0.03" YScale="0.41" ZScale="0.03" Res="generic/cylinder.obj" Name="DJ deck leg, upstage right"/>
+   <MeshItem ID="6" XPos="3600" YPos="-700" ZPos="3500" XScale="0.3" YScale="0.3" ZScale="0.3" Res="generic/cube.obj" Name="Flightcase, house left"/>
+   <MeshItem ID="7" XPos="6400" YPos="-700" ZPos="3500" XScale="0.3" YScale="0.3" ZScale="0.3" Res="generic/cube.obj" Name="Flightcase, house right"/>
+   <MeshItem ID="8" XPos="5000" YPos="-575" ZPos="2750" XScale="0.17" YScale="0.425" ZScale="0.12" Res="generic/cube.obj" Name="DJ legs"/>
+   <MeshItem ID="9" XPos="5000" YPos="160" ZPos="2750" XScale="0.22" YScale="0.31" ZScale="0.13" Res="generic/cube.obj" Name="DJ torso"/>
+   <MeshItem ID="10" XPos="5000" YPos="590" ZPos="2750" XScale="0.115" YScale="0.125" ZScale="0.115" Res="generic/sphere.obj" Name="DJ head"/>
+   <MeshItem ID="11" XPos="4760" YPos="0" ZPos="3050" XScale="0.045" YScale="0.045" ZScale="0.35" Res="generic/cube.obj" Name="DJ arm, house left"/>
+   <MeshItem ID="12" XPos="5240" YPos="0" ZPos="3050" XScale="0.045" YScale="0.045" ZScale="0.35" Res="generic/cube.obj" Name="DJ arm, house right"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -4239,304 +4239,818 @@
    <ShowEnableButton>True</ShowEnableButton>
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
+   <SpeedDial Caption="Vel. Colores" ID="292">
+    <WindowState Visible="True" X="1176" Y="270" Width="124" Height="150"/>
+    <Visibility>644</Visibility>
+    <Time>1900</Time>
+    <AbsoluteValue Minimum="0" Maximum="7600"/>
+    <Function FadeIn="0" FadeOut="0" Duration="6">45</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">46</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">87</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">88</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">129</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">130</Function>
+   </SpeedDial>
+   <Matrix Caption="Matriz" ID="302">
+    <WindowState Visible="True" X="1176" Y="638" Width="256" Height="146"/>
+    <Function ID="131" InstantApply="true"/>
+   </Matrix>
+   <AudioTriggers BarsNumber="5" Caption="Audio" ID="303">
+    <WindowState Visible="True" X="1176" Y="790" Width="256" Height="100"/>
+    <Bar Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="0" WidgetID="5"/>
+    <Bar Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="3" WidgetID="300"/>
+   </AudioTriggers>
+   <SpeedDial Caption="Vel. Movimiento" ID="293">
+    <WindowState Visible="True" X="1308" Y="270" Width="124" Height="150"/>
+    <Visibility>644</Visibility>
+    <Time>10000</Time>
+    <AbsoluteValue Minimum="0" Maximum="40000"/>
+    <Function FadeIn="0" FadeOut="0" Duration="6">231</Function>
+   </SpeedDial>
    <Label Caption="Cabezas" ID="290">
     <WindowState Visible="True" X="1176" Y="8" Width="256" Height="20"/>
    </Label>
-   <SoloFrame Caption="Colores BarrasLed" ID="15">
-    <WindowState Visible="True" X="8" Y="280" Width="524" Height="122"/>
+   <SoloFrame Caption="Strobos" ID="297">
+    <WindowState Visible="True" X="1176" Y="508" Width="256" Height="124"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <ExcludeMonitored>True</ExcludeMonitored>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="" ID="16">
-     <WindowState Visible="True" X="6" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294901760</BackgroundColor>
-     </Appearance>
-     <Function ID="5"/>
+    <Button Caption="ON" ID="298">
+     <WindowState Visible="True" X="6" Y="26" Width="118" Height="44"/>
+     <Function ID="281"/>
      <Action>Toggle</Action>
-     <Key>1</Key>
+     <Key>S</Key>
     </Button>
-    <Button Caption="" ID="17">
-     <WindowState Visible="True" X="56" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278255360</BackgroundColor>
-     </Appearance>
-     <Function ID="6"/>
+    <Button Caption="OFF" ID="299">
+     <WindowState Visible="True" X="130" Y="26" Width="118" Height="44"/>
+     <Function ID="282"/>
      <Action>Toggle</Action>
-     <Key>2</Key>
+     <Key>D</Key>
     </Button>
-    <Button Caption="" ID="18">
-     <WindowState Visible="True" X="106" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278190335</BackgroundColor>
-     </Appearance>
-     <Function ID="7"/>
+    <Button Caption="Rapido" ID="300">
+     <WindowState Visible="True" X="6" Y="76" Width="118" Height="44"/>
+     <Function ID="283"/>
      <Action>Toggle</Action>
-     <Key>3</Key>
+     <Key>F</Key>
     </Button>
-    <Button Caption="" ID="19">
-     <WindowState Visible="True" X="156" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4288676095</BackgroundColor>
-     </Appearance>
-     <Function ID="8"/>
+    <Button Caption="Medio" ID="301">
+     <WindowState Visible="True" X="130" Y="76" Width="118" Height="44"/>
+     <Function ID="284"/>
      <Action>Toggle</Action>
-     <Key>4</Key>
-    </Button>
-    <Button Caption="" ID="20">
-     <WindowState Visible="True" X="206" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294967040</BackgroundColor>
-     </Appearance>
-     <Function ID="9"/>
-     <Action>Toggle</Action>
-     <Key>5</Key>
-    </Button>
-    <Button Caption="" ID="21">
-     <WindowState Visible="True" X="256" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278255615</BackgroundColor>
-     </Appearance>
-     <Function ID="10"/>
-     <Action>Toggle</Action>
-     <Key>6</Key>
-    </Button>
-    <Button Caption="" ID="22">
-     <WindowState Visible="True" X="306" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294902015</BackgroundColor>
-     </Appearance>
-     <Function ID="11"/>
-     <Action>Toggle</Action>
-     <Key>7</Key>
-    </Button>
-    <Button Caption="" ID="23">
-     <WindowState Visible="True" X="356" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294967295</BackgroundColor>
-     </Appearance>
-     <Function ID="12"/>
-     <Action>Toggle</Action>
-     <Key>8</Key>
-    </Button>
-    <Button Caption="" ID="24">
-     <WindowState Visible="True" X="406" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294934272</BackgroundColor>
-     </Appearance>
-     <Function ID="13"/>
-     <Action>Toggle</Action>
-     <Key>9</Key>
-    </Button>
-    <Button Caption="" ID="25">
-     <WindowState Visible="True" X="456" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294901860</BackgroundColor>
-     </Appearance>
-     <Function ID="14"/>
-     <Action>Toggle</Action>
-     <Key>0</Key>
+     <Key>T</Key>
     </Button>
    </SoloFrame>
-   <SoloFrame Caption="Colores Cabezas" ID="26">
-    <WindowState Visible="True" X="8" Y="408" Width="524" Height="122"/>
+   <SoloFrame Caption="Dimmers" ID="294">
+    <WindowState Visible="True" X="1176" Y="428" Width="256" Height="74"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <ExcludeMonitored>True</ExcludeMonitored>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="" ID="27">
-     <WindowState Visible="True" X="6" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294901760</BackgroundColor>
-     </Appearance>
-     <Function ID="47"/>
+    <Button Caption="Dimmer Chase" ID="295">
+     <WindowState Visible="True" X="6" Y="26" Width="118" Height="44"/>
+     <Function ID="277"/>
      <Action>Toggle</Action>
-     <Key>1</Key>
+     <Key>V</Key>
     </Button>
-    <Button Caption="" ID="28">
-     <WindowState Visible="True" X="56" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278255360</BackgroundColor>
-     </Appearance>
-     <Function ID="48"/>
+    <Button Caption="Dimmer PingPong" ID="296">
+     <WindowState Visible="True" X="130" Y="26" Width="118" Height="44"/>
+     <Function ID="280"/>
      <Action>Toggle</Action>
-     <Key>2</Key>
-    </Button>
-    <Button Caption="" ID="29">
-     <WindowState Visible="True" X="106" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278190335</BackgroundColor>
-     </Appearance>
-     <Function ID="49"/>
-     <Action>Toggle</Action>
-     <Key>3</Key>
-    </Button>
-    <Button Caption="" ID="30">
-     <WindowState Visible="True" X="156" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4288676095</BackgroundColor>
-     </Appearance>
-     <Function ID="50"/>
-     <Action>Toggle</Action>
-     <Key>4</Key>
-    </Button>
-    <Button Caption="" ID="31">
-     <WindowState Visible="True" X="206" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294967040</BackgroundColor>
-     </Appearance>
-     <Function ID="51"/>
-     <Action>Toggle</Action>
-     <Key>5</Key>
-    </Button>
-    <Button Caption="" ID="32">
-     <WindowState Visible="True" X="256" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278255615</BackgroundColor>
-     </Appearance>
-     <Function ID="52"/>
-     <Action>Toggle</Action>
-     <Key>6</Key>
-    </Button>
-    <Button Caption="" ID="33">
-     <WindowState Visible="True" X="306" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294902015</BackgroundColor>
-     </Appearance>
-     <Function ID="53"/>
-     <Action>Toggle</Action>
-     <Key>7</Key>
-    </Button>
-    <Button Caption="" ID="34">
-     <WindowState Visible="True" X="356" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294967295</BackgroundColor>
-     </Appearance>
-     <Function ID="54"/>
-     <Action>Toggle</Action>
-     <Key>8</Key>
-    </Button>
-    <Button Caption="" ID="35">
-     <WindowState Visible="True" X="406" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294934272</BackgroundColor>
-     </Appearance>
-     <Function ID="55"/>
-     <Action>Toggle</Action>
-     <Key>9</Key>
-    </Button>
-    <Button Caption="" ID="36">
-     <WindowState Visible="True" X="456" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294901860</BackgroundColor>
-     </Appearance>
-     <Function ID="56"/>
-     <Action>Toggle</Action>
-     <Key>0</Key>
+     <Key>Z</Key>
     </Button>
    </SoloFrame>
-   <SoloFrame Caption="Colores PAR" ID="37">
-    <WindowState Visible="True" X="8" Y="536" Width="524" Height="122"/>
+   <SoloFrame Caption="Matrices" ID="189">
+    <WindowState Visible="True" X="540" Y="484" Width="628" Height="260"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <ExcludeMonitored>True</ExcludeMonitored>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="" ID="38">
-     <WindowState Visible="True" X="6" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294901760</BackgroundColor>
-     </Appearance>
-     <Function ID="89"/>
+    <Multipage PagesNum="3" CurrentPage="0" PagesLoop="True"/>
+    <Shortcut Page="0" Name="Página 1"/>
+    <Shortcut Page="1" Name="Página 2"/>
+    <Shortcut Page="2" Name="Página 3"/>
+    <Button Caption="Fill Rojo" ID="190">
+     <WindowState Visible="True" X="6" Y="26" Width="96" Height="40"/>
+     <Function ID="131"/>
      <Action>Toggle</Action>
-     <Key>1</Key>
     </Button>
-    <Button Caption="" ID="39">
-     <WindowState Visible="True" X="56" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278255360</BackgroundColor>
-     </Appearance>
-     <Function ID="90"/>
+    <Button Caption="Fill Verde" ID="191">
+     <WindowState Visible="True" X="108" Y="26" Width="96" Height="40"/>
+     <Function ID="132"/>
      <Action>Toggle</Action>
-     <Key>2</Key>
     </Button>
-    <Button Caption="" ID="40">
-     <WindowState Visible="True" X="106" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278190335</BackgroundColor>
-     </Appearance>
-     <Function ID="91"/>
+    <Button Caption="Fill Azul" ID="192">
+     <WindowState Visible="True" X="210" Y="26" Width="96" Height="40"/>
+     <Function ID="133"/>
      <Action>Toggle</Action>
-     <Key>3</Key>
     </Button>
-    <Button Caption="" ID="41">
-     <WindowState Visible="True" X="156" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4288676095</BackgroundColor>
-     </Appearance>
-     <Function ID="92"/>
+    <Button Caption="Fill Ambar" ID="193">
+     <WindowState Visible="True" X="312" Y="26" Width="96" Height="40"/>
+     <Function ID="134"/>
      <Action>Toggle</Action>
-     <Key>4</Key>
     </Button>
-    <Button Caption="" ID="42">
-     <WindowState Visible="True" X="206" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294967040</BackgroundColor>
-     </Appearance>
-     <Function ID="93"/>
+    <Button Caption="Fill Magenta" ID="194">
+     <WindowState Visible="True" X="414" Y="26" Width="96" Height="40"/>
+     <Function ID="135"/>
      <Action>Toggle</Action>
-     <Key>5</Key>
     </Button>
-    <Button Caption="" ID="43">
-     <WindowState Visible="True" X="256" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4278255615</BackgroundColor>
-     </Appearance>
-     <Function ID="94"/>
+    <Button Caption="Fill Blanco" ID="195">
+     <WindowState Visible="True" X="516" Y="26" Width="96" Height="40"/>
+     <Function ID="136"/>
      <Action>Toggle</Action>
-     <Key>6</Key>
     </Button>
-    <Button Caption="" ID="44">
-     <WindowState Visible="True" X="306" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294902015</BackgroundColor>
-     </Appearance>
-     <Function ID="95"/>
+    <Button Caption="Even/Odd Rojo" ID="196">
+     <WindowState Visible="True" X="6" Y="72" Width="96" Height="40"/>
+     <Function ID="137"/>
      <Action>Toggle</Action>
-     <Key>7</Key>
     </Button>
-    <Button Caption="" ID="45">
-     <WindowState Visible="True" X="356" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294967295</BackgroundColor>
-     </Appearance>
-     <Function ID="96"/>
+    <Button Caption="Even/Odd Verde" ID="197">
+     <WindowState Visible="True" X="108" Y="72" Width="96" Height="40"/>
+     <Function ID="138"/>
      <Action>Toggle</Action>
-     <Key>8</Key>
     </Button>
-    <Button Caption="" ID="46">
-     <WindowState Visible="True" X="406" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294934272</BackgroundColor>
-     </Appearance>
-     <Function ID="97"/>
+    <Button Caption="Even/Odd Azul" ID="198">
+     <WindowState Visible="True" X="210" Y="72" Width="96" Height="40"/>
+     <Function ID="139"/>
      <Action>Toggle</Action>
-     <Key>9</Key>
     </Button>
-    <Button Caption="" ID="47">
-     <WindowState Visible="True" X="456" Y="26" Width="44" Height="44"/>
-     <Appearance>
-      <BackgroundColor>4294901860</BackgroundColor>
-     </Appearance>
-     <Function ID="98"/>
+    <Button Caption="Even/Odd Ambar" ID="199">
+     <WindowState Visible="True" X="312" Y="72" Width="96" Height="40"/>
+     <Function ID="140"/>
      <Action>Toggle</Action>
-     <Key>0</Key>
+    </Button>
+    <Button Caption="Even/Odd Magenta" ID="200">
+     <WindowState Visible="True" X="414" Y="72" Width="96" Height="40"/>
+     <Function ID="141"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Blanco" ID="201">
+     <WindowState Visible="True" X="516" Y="72" Width="96" Height="40"/>
+     <Function ID="142"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Rojo" ID="202">
+     <WindowState Visible="True" X="6" Y="118" Width="96" Height="40"/>
+     <Function ID="143"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Verde" ID="203">
+     <WindowState Visible="True" X="108" Y="118" Width="96" Height="40"/>
+     <Function ID="144"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Azul" ID="204">
+     <WindowState Visible="True" X="210" Y="118" Width="96" Height="40"/>
+     <Function ID="145"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Ambar" ID="205">
+     <WindowState Visible="True" X="312" Y="118" Width="96" Height="40"/>
+     <Function ID="146"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Magenta" ID="206">
+     <WindowState Visible="True" X="414" Y="118" Width="96" Height="40"/>
+     <Function ID="147"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Blanco" ID="207">
+     <WindowState Visible="True" X="516" Y="118" Width="96" Height="40"/>
+     <Function ID="148"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Rojo" ID="208">
+     <WindowState Visible="True" X="6" Y="164" Width="96" Height="40"/>
+     <Function ID="149"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Verde" ID="209">
+     <WindowState Visible="True" X="108" Y="164" Width="96" Height="40"/>
+     <Function ID="150"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Azul" ID="210">
+     <WindowState Visible="True" X="210" Y="164" Width="96" Height="40"/>
+     <Function ID="151"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Ambar" ID="211">
+     <WindowState Visible="True" X="312" Y="164" Width="96" Height="40"/>
+     <Function ID="152"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Magenta" ID="212">
+     <WindowState Visible="True" X="414" Y="164" Width="96" Height="40"/>
+     <Function ID="153"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Blanco" ID="213">
+     <WindowState Visible="True" X="516" Y="164" Width="96" Height="40"/>
+     <Function ID="154"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Rojo" ID="214">
+     <WindowState Visible="True" X="6" Y="210" Width="96" Height="40"/>
+     <Function ID="155"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Verde" ID="215">
+     <WindowState Visible="True" X="108" Y="210" Width="96" Height="40"/>
+     <Function ID="156"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Azul" ID="216">
+     <WindowState Visible="True" X="210" Y="210" Width="96" Height="40"/>
+     <Function ID="157"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Ambar" ID="217">
+     <WindowState Visible="True" X="312" Y="210" Width="96" Height="40"/>
+     <Function ID="158"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Magenta" ID="218">
+     <WindowState Visible="True" X="414" Y="210" Width="96" Height="40"/>
+     <Function ID="159"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Blanco" ID="219">
+     <WindowState Visible="True" X="516" Y="210" Width="96" Height="40"/>
+     <Function ID="160"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Rojo" ID="220" Page="1">
+     <WindowState Visible="False" X="6" Y="26" Width="96" Height="40"/>
+     <Function ID="162"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Verde" ID="221" Page="1">
+     <WindowState Visible="False" X="108" Y="26" Width="96" Height="40"/>
+     <Function ID="163"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Azul" ID="222" Page="1">
+     <WindowState Visible="False" X="210" Y="26" Width="96" Height="40"/>
+     <Function ID="164"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Ambar" ID="223" Page="1">
+     <WindowState Visible="False" X="312" Y="26" Width="96" Height="40"/>
+     <Function ID="165"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Magenta" ID="224" Page="1">
+     <WindowState Visible="False" X="414" Y="26" Width="96" Height="40"/>
+     <Function ID="166"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Blanco" ID="225" Page="1">
+     <WindowState Visible="False" X="516" Y="26" Width="96" Height="40"/>
+     <Function ID="167"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Rojo" ID="226" Page="1">
+     <WindowState Visible="False" X="6" Y="72" Width="96" Height="40"/>
+     <Function ID="168"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Verde" ID="227" Page="1">
+     <WindowState Visible="False" X="108" Y="72" Width="96" Height="40"/>
+     <Function ID="169"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Azul" ID="228" Page="1">
+     <WindowState Visible="False" X="210" Y="72" Width="96" Height="40"/>
+     <Function ID="170"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Ambar" ID="229" Page="1">
+     <WindowState Visible="False" X="312" Y="72" Width="96" Height="40"/>
+     <Function ID="171"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Magenta" ID="230" Page="1">
+     <WindowState Visible="False" X="414" Y="72" Width="96" Height="40"/>
+     <Function ID="172"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Blanco" ID="231" Page="1">
+     <WindowState Visible="False" X="516" Y="72" Width="96" Height="40"/>
+     <Function ID="173"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Rojo" ID="232" Page="1">
+     <WindowState Visible="False" X="6" Y="118" Width="96" Height="40"/>
+     <Function ID="174"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Verde" ID="233" Page="1">
+     <WindowState Visible="False" X="108" Y="118" Width="96" Height="40"/>
+     <Function ID="175"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Azul" ID="234" Page="1">
+     <WindowState Visible="False" X="210" Y="118" Width="96" Height="40"/>
+     <Function ID="176"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Ambar" ID="235" Page="1">
+     <WindowState Visible="False" X="312" Y="118" Width="96" Height="40"/>
+     <Function ID="177"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Magenta" ID="236" Page="1">
+     <WindowState Visible="False" X="414" Y="118" Width="96" Height="40"/>
+     <Function ID="178"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Blanco" ID="237" Page="1">
+     <WindowState Visible="False" X="516" Y="118" Width="96" Height="40"/>
+     <Function ID="179"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Rojo" ID="238" Page="1">
+     <WindowState Visible="False" X="6" Y="164" Width="96" Height="40"/>
+     <Function ID="180"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Verde" ID="239" Page="1">
+     <WindowState Visible="False" X="108" Y="164" Width="96" Height="40"/>
+     <Function ID="181"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Azul" ID="240" Page="1">
+     <WindowState Visible="False" X="210" Y="164" Width="96" Height="40"/>
+     <Function ID="182"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Ambar" ID="241" Page="1">
+     <WindowState Visible="False" X="312" Y="164" Width="96" Height="40"/>
+     <Function ID="183"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Magenta" ID="242" Page="1">
+     <WindowState Visible="False" X="414" Y="164" Width="96" Height="40"/>
+     <Function ID="184"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Blanco" ID="243" Page="1">
+     <WindowState Visible="False" X="516" Y="164" Width="96" Height="40"/>
+     <Function ID="185"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Rojo" ID="244" Page="1">
+     <WindowState Visible="False" X="6" Y="210" Width="96" Height="40"/>
+     <Function ID="186"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Verde" ID="245" Page="1">
+     <WindowState Visible="False" X="108" Y="210" Width="96" Height="40"/>
+     <Function ID="187"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Azul" ID="246" Page="1">
+     <WindowState Visible="False" X="210" Y="210" Width="96" Height="40"/>
+     <Function ID="188"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Ambar" ID="247" Page="1">
+     <WindowState Visible="False" X="312" Y="210" Width="96" Height="40"/>
+     <Function ID="189"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Magenta" ID="248" Page="1">
+     <WindowState Visible="False" X="414" Y="210" Width="96" Height="40"/>
+     <Function ID="190"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Blanco" ID="249" Page="1">
+     <WindowState Visible="False" X="516" Y="210" Width="96" Height="40"/>
+     <Function ID="191"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Rojo" ID="250" Page="2">
+     <WindowState Visible="False" X="6" Y="26" Width="96" Height="40"/>
+     <Function ID="193"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Verde" ID="251" Page="2">
+     <WindowState Visible="False" X="108" Y="26" Width="96" Height="40"/>
+     <Function ID="194"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Azul" ID="252" Page="2">
+     <WindowState Visible="False" X="210" Y="26" Width="96" Height="40"/>
+     <Function ID="195"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Ambar" ID="253" Page="2">
+     <WindowState Visible="False" X="312" Y="26" Width="96" Height="40"/>
+     <Function ID="196"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Magenta" ID="254" Page="2">
+     <WindowState Visible="False" X="414" Y="26" Width="96" Height="40"/>
+     <Function ID="197"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Fill Blanco" ID="255" Page="2">
+     <WindowState Visible="False" X="516" Y="26" Width="96" Height="40"/>
+     <Function ID="198"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Rojo" ID="256" Page="2">
+     <WindowState Visible="False" X="6" Y="72" Width="96" Height="40"/>
+     <Function ID="199"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Verde" ID="257" Page="2">
+     <WindowState Visible="False" X="108" Y="72" Width="96" Height="40"/>
+     <Function ID="200"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Azul" ID="258" Page="2">
+     <WindowState Visible="False" X="210" Y="72" Width="96" Height="40"/>
+     <Function ID="201"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Ambar" ID="259" Page="2">
+     <WindowState Visible="False" X="312" Y="72" Width="96" Height="40"/>
+     <Function ID="202"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Magenta" ID="260" Page="2">
+     <WindowState Visible="False" X="414" Y="72" Width="96" Height="40"/>
+     <Function ID="203"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Even/Odd Blanco" ID="261" Page="2">
+     <WindowState Visible="False" X="516" Y="72" Width="96" Height="40"/>
+     <Function ID="204"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Rojo" ID="262" Page="2">
+     <WindowState Visible="False" X="6" Y="118" Width="96" Height="40"/>
+     <Function ID="205"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Verde" ID="263" Page="2">
+     <WindowState Visible="False" X="108" Y="118" Width="96" Height="40"/>
+     <Function ID="206"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Azul" ID="264" Page="2">
+     <WindowState Visible="False" X="210" Y="118" Width="96" Height="40"/>
+     <Function ID="207"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Ambar" ID="265" Page="2">
+     <WindowState Visible="False" X="312" Y="118" Width="96" Height="40"/>
+     <Function ID="208"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Magenta" ID="266" Page="2">
+     <WindowState Visible="False" X="414" Y="118" Width="96" Height="40"/>
+     <Function ID="209"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Strobe Blanco" ID="267" Page="2">
+     <WindowState Visible="False" X="516" Y="118" Width="96" Height="40"/>
+     <Function ID="210"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Rojo" ID="268" Page="2">
+     <WindowState Visible="False" X="6" Y="164" Width="96" Height="40"/>
+     <Function ID="211"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Verde" ID="269" Page="2">
+     <WindowState Visible="False" X="108" Y="164" Width="96" Height="40"/>
+     <Function ID="212"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Azul" ID="270" Page="2">
+     <WindowState Visible="False" X="210" Y="164" Width="96" Height="40"/>
+     <Function ID="213"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Ambar" ID="271" Page="2">
+     <WindowState Visible="False" X="312" Y="164" Width="96" Height="40"/>
+     <Function ID="214"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Magenta" ID="272" Page="2">
+     <WindowState Visible="False" X="414" Y="164" Width="96" Height="40"/>
+     <Function ID="215"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Waves Blanco" ID="273" Page="2">
+     <WindowState Visible="False" X="516" Y="164" Width="96" Height="40"/>
+     <Function ID="216"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Rojo" ID="274" Page="2">
+     <WindowState Visible="False" X="6" Y="210" Width="96" Height="40"/>
+     <Function ID="217"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Verde" ID="275" Page="2">
+     <WindowState Visible="False" X="108" Y="210" Width="96" Height="40"/>
+     <Function ID="218"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Azul" ID="276" Page="2">
+     <WindowState Visible="False" X="210" Y="210" Width="96" Height="40"/>
+     <Function ID="219"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Ambar" ID="277" Page="2">
+     <WindowState Visible="False" X="312" Y="210" Width="96" Height="40"/>
+     <Function ID="220"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Magenta" ID="278" Page="2">
+     <WindowState Visible="False" X="414" Y="210" Width="96" Height="40"/>
+     <Function ID="221"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Solid Blanco" ID="279" Page="2">
+     <WindowState Visible="False" X="516" Y="210" Width="96" Height="40"/>
+     <Function ID="222"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Prisma" ID="186">
+    <WindowState Visible="True" X="540" Y="398" Width="628" Height="80"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <ExcludeMonitored>True</ExcludeMonitored>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="None" ID="187">
+     <WindowState Visible="True" X="6" Y="26" Width="120" Height="44"/>
+     <Function ID="271"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Insert Prism" ID="188">
+     <WindowState Visible="True" X="132" Y="26" Width="120" Height="44"/>
+     <Function ID="272"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Color Beam" ID="168">
+    <WindowState Visible="True" X="540" Y="246" Width="628" Height="146"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <ExcludeMonitored>True</ExcludeMonitored>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="White" ID="169">
+     <WindowState Visible="True" X="6" Y="26" Width="52" Height="52"/>
+     <Function ID="253"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Red" ID="170">
+     <WindowState Visible="True" X="64" Y="26" Width="52" Height="52"/>
+     <Function ID="254"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Orange" ID="171">
+     <WindowState Visible="True" X="122" Y="26" Width="52" Height="52"/>
+     <Function ID="255"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Yellow" ID="172">
+     <WindowState Visible="True" X="180" Y="26" Width="52" Height="52"/>
+     <Function ID="256"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Green" ID="173">
+     <WindowState Visible="True" X="238" Y="26" Width="52" Height="52"/>
+     <Function ID="257"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Blue" ID="174">
+     <WindowState Visible="True" X="296" Y="26" Width="52" Height="52"/>
+     <Function ID="258"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Pink" ID="175">
+     <WindowState Visible="True" X="354" Y="26" Width="52" Height="52"/>
+     <Function ID="259"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Ice" ID="176">
+     <WindowState Visible="True" X="412" Y="26" Width="52" Height="52"/>
+     <Function ID="260"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Pink" ID="177">
+     <WindowState Visible="True" X="470" Y="26" Width="52" Height="52"/>
+     <Function ID="261"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light White" ID="178">
+     <WindowState Visible="True" X="528" Y="26" Width="52" Height="52"/>
+     <Function ID="262"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Blue" ID="179">
+     <WindowState Visible="True" X="6" Y="84" Width="52" Height="52"/>
+     <Function ID="263"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Calid White" ID="180">
+     <WindowState Visible="True" X="64" Y="84" Width="52" Height="52"/>
+     <Function ID="264"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="UV" ID="181">
+     <WindowState Visible="True" X="122" Y="84" Width="52" Height="52"/>
+     <Function ID="265"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Grey" ID="182">
+     <WindowState Visible="True" X="180" Y="84" Width="52" Height="52"/>
+     <Function ID="266"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Yellow" ID="183">
+     <WindowState Visible="True" X="238" Y="84" Width="52" Height="52"/>
+     <Function ID="267"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Rainbow effect fast to slow" ID="184">
+     <WindowState Visible="True" X="296" Y="84" Width="52" Height="52"/>
+     <Function ID="268"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Rainbow effect reverse slow to fast" ID="185">
+     <WindowState Visible="True" X="354" Y="84" Width="52" Height="52"/>
+     <Function ID="269"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Gobos" ID="147">
+    <WindowState Visible="True" X="540" Y="94" Width="628" Height="146"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <ExcludeMonitored>True</ExcludeMonitored>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="White Light" ID="148">
+     <WindowState Visible="True" X="6" Y="26" Width="52" Height="52"/>
+     <Function ID="232"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 1" ID="149">
+     <WindowState Visible="True" X="64" Y="26" Width="52" Height="52"/>
+     <Function ID="233"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 2" ID="150">
+     <WindowState Visible="True" X="122" Y="26" Width="52" Height="52"/>
+     <Function ID="234"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 3" ID="151">
+     <WindowState Visible="True" X="180" Y="26" Width="52" Height="52"/>
+     <Function ID="235"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 4" ID="152">
+     <WindowState Visible="True" X="238" Y="26" Width="52" Height="52"/>
+     <Function ID="236"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 5" ID="153">
+     <WindowState Visible="True" X="296" Y="26" Width="52" Height="52"/>
+     <Function ID="237"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 6" ID="154">
+     <WindowState Visible="True" X="354" Y="26" Width="52" Height="52"/>
+     <Function ID="238"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 7" ID="155">
+     <WindowState Visible="True" X="412" Y="26" Width="52" Height="52"/>
+     <Function ID="239"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 8" ID="156">
+     <WindowState Visible="True" X="470" Y="26" Width="52" Height="52"/>
+     <Function ID="240"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 9" ID="157">
+     <WindowState Visible="True" X="528" Y="26" Width="52" Height="52"/>
+     <Function ID="241"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 10" ID="158">
+     <WindowState Visible="True" X="6" Y="84" Width="52" Height="52"/>
+     <Function ID="242"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 11" ID="159">
+     <WindowState Visible="True" X="64" Y="84" Width="52" Height="52"/>
+     <Function ID="243"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 12" ID="160">
+     <WindowState Visible="True" X="122" Y="84" Width="52" Height="52"/>
+     <Function ID="244"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 13" ID="161">
+     <WindowState Visible="True" X="180" Y="84" Width="52" Height="52"/>
+     <Function ID="245"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 14" ID="162">
+     <WindowState Visible="True" X="238" Y="84" Width="52" Height="52"/>
+     <Function ID="246"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 15" ID="163">
+     <WindowState Visible="True" X="296" Y="84" Width="52" Height="52"/>
+     <Function ID="247"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 16" ID="164">
+     <WindowState Visible="True" X="354" Y="84" Width="52" Height="52"/>
+     <Function ID="248"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Gobo 17" ID="165">
+     <WindowState Visible="True" X="412" Y="84" Width="52" Height="52"/>
+     <Function ID="249"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Rainbow effect fast to slow" ID="166">
+     <WindowState Visible="True" X="470" Y="84" Width="52" Height="52"/>
+     <Function ID="250"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Rainbow effect reverse slow to fast" ID="167">
+     <WindowState Visible="True" X="528" Y="84" Width="52" Height="52"/>
+     <Function ID="251"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Movimiento" ID="139">
+    <WindowState Visible="True" X="540" Y="8" Width="628" Height="80"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <ExcludeMonitored>True</ExcludeMonitored>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Circulo" ID="140">
+     <WindowState Visible="True" X="6" Y="26" Width="82" Height="44"/>
+     <Function ID="224"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Ocho" ID="141">
+     <WindowState Visible="True" X="94" Y="26" Width="82" Height="44"/>
+     <Function ID="225"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Linea" ID="142">
+     <WindowState Visible="True" X="182" Y="26" Width="82" Height="44"/>
+     <Function ID="226"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Diamante" ID="143">
+     <WindowState Visible="True" X="270" Y="26" Width="82" Height="44"/>
+     <Function ID="227"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Cuadrado" ID="144">
+     <WindowState Visible="True" X="358" Y="26" Width="82" Height="44"/>
+     <Function ID="228"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Hoja" ID="145">
+     <WindowState Visible="True" X="446" Y="26" Width="82" Height="44"/>
+     <Function ID="229"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Lissajous" ID="146">
+     <WindowState Visible="True" X="534" Y="26" Width="82" Height="44"/>
+     <Function ID="230"/>
+     <Action>Toggle</Action>
     </Button>
    </SoloFrame>
    <SoloFrame Caption="Mezclas" ID="48">
@@ -5347,787 +5861,301 @@
      <Action>Toggle</Action>
     </Button>
    </SoloFrame>
-   <SoloFrame Caption="Movimiento" ID="139">
-    <WindowState Visible="True" X="540" Y="8" Width="628" Height="80"/>
+   <SoloFrame Caption="Colores PAR" ID="37">
+    <WindowState Visible="True" X="8" Y="536" Width="524" Height="122"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <ExcludeMonitored>True</ExcludeMonitored>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Circulo" ID="140">
-     <WindowState Visible="True" X="6" Y="26" Width="82" Height="44"/>
-     <Function ID="224"/>
+    <Button Caption="" ID="38">
+     <WindowState Visible="True" X="6" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294901760</BackgroundColor>
+     </Appearance>
+     <Function ID="89"/>
      <Action>Toggle</Action>
+     <Key>1</Key>
     </Button>
-    <Button Caption="Ocho" ID="141">
-     <WindowState Visible="True" X="94" Y="26" Width="82" Height="44"/>
-     <Function ID="225"/>
+    <Button Caption="" ID="39">
+     <WindowState Visible="True" X="56" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278255360</BackgroundColor>
+     </Appearance>
+     <Function ID="90"/>
      <Action>Toggle</Action>
+     <Key>2</Key>
     </Button>
-    <Button Caption="Linea" ID="142">
-     <WindowState Visible="True" X="182" Y="26" Width="82" Height="44"/>
-     <Function ID="226"/>
+    <Button Caption="" ID="40">
+     <WindowState Visible="True" X="106" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278190335</BackgroundColor>
+     </Appearance>
+     <Function ID="91"/>
      <Action>Toggle</Action>
+     <Key>3</Key>
     </Button>
-    <Button Caption="Diamante" ID="143">
-     <WindowState Visible="True" X="270" Y="26" Width="82" Height="44"/>
-     <Function ID="227"/>
+    <Button Caption="" ID="41">
+     <WindowState Visible="True" X="156" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4288676095</BackgroundColor>
+     </Appearance>
+     <Function ID="92"/>
      <Action>Toggle</Action>
+     <Key>4</Key>
     </Button>
-    <Button Caption="Cuadrado" ID="144">
-     <WindowState Visible="True" X="358" Y="26" Width="82" Height="44"/>
-     <Function ID="228"/>
+    <Button Caption="" ID="42">
+     <WindowState Visible="True" X="206" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294967040</BackgroundColor>
+     </Appearance>
+     <Function ID="93"/>
      <Action>Toggle</Action>
+     <Key>5</Key>
     </Button>
-    <Button Caption="Hoja" ID="145">
-     <WindowState Visible="True" X="446" Y="26" Width="82" Height="44"/>
-     <Function ID="229"/>
+    <Button Caption="" ID="43">
+     <WindowState Visible="True" X="256" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278255615</BackgroundColor>
+     </Appearance>
+     <Function ID="94"/>
      <Action>Toggle</Action>
+     <Key>6</Key>
     </Button>
-    <Button Caption="Lissajous" ID="146">
-     <WindowState Visible="True" X="534" Y="26" Width="82" Height="44"/>
-     <Function ID="230"/>
+    <Button Caption="" ID="44">
+     <WindowState Visible="True" X="306" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294902015</BackgroundColor>
+     </Appearance>
+     <Function ID="95"/>
      <Action>Toggle</Action>
+     <Key>7</Key>
+    </Button>
+    <Button Caption="" ID="45">
+     <WindowState Visible="True" X="356" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294967295</BackgroundColor>
+     </Appearance>
+     <Function ID="96"/>
+     <Action>Toggle</Action>
+     <Key>8</Key>
+    </Button>
+    <Button Caption="" ID="46">
+     <WindowState Visible="True" X="406" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294934272</BackgroundColor>
+     </Appearance>
+     <Function ID="97"/>
+     <Action>Toggle</Action>
+     <Key>9</Key>
+    </Button>
+    <Button Caption="" ID="47">
+     <WindowState Visible="True" X="456" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294901860</BackgroundColor>
+     </Appearance>
+     <Function ID="98"/>
+     <Action>Toggle</Action>
+     <Key>0</Key>
     </Button>
    </SoloFrame>
-   <SoloFrame Caption="Gobos" ID="147">
-    <WindowState Visible="True" X="540" Y="94" Width="628" Height="146"/>
+   <SoloFrame Caption="Colores Cabezas" ID="26">
+    <WindowState Visible="True" X="8" Y="408" Width="524" Height="122"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <ExcludeMonitored>True</ExcludeMonitored>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="White Light" ID="148">
-     <WindowState Visible="True" X="6" Y="26" Width="52" Height="52"/>
-     <Function ID="232"/>
+    <Button Caption="" ID="27">
+     <WindowState Visible="True" X="6" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294901760</BackgroundColor>
+     </Appearance>
+     <Function ID="47"/>
      <Action>Toggle</Action>
+     <Key>1</Key>
     </Button>
-    <Button Caption="Gobo 1" ID="149">
-     <WindowState Visible="True" X="64" Y="26" Width="52" Height="52"/>
-     <Function ID="233"/>
+    <Button Caption="" ID="28">
+     <WindowState Visible="True" X="56" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278255360</BackgroundColor>
+     </Appearance>
+     <Function ID="48"/>
      <Action>Toggle</Action>
+     <Key>2</Key>
     </Button>
-    <Button Caption="Gobo 2" ID="150">
-     <WindowState Visible="True" X="122" Y="26" Width="52" Height="52"/>
-     <Function ID="234"/>
+    <Button Caption="" ID="29">
+     <WindowState Visible="True" X="106" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278190335</BackgroundColor>
+     </Appearance>
+     <Function ID="49"/>
      <Action>Toggle</Action>
+     <Key>3</Key>
     </Button>
-    <Button Caption="Gobo 3" ID="151">
-     <WindowState Visible="True" X="180" Y="26" Width="52" Height="52"/>
-     <Function ID="235"/>
+    <Button Caption="" ID="30">
+     <WindowState Visible="True" X="156" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4288676095</BackgroundColor>
+     </Appearance>
+     <Function ID="50"/>
      <Action>Toggle</Action>
+     <Key>4</Key>
     </Button>
-    <Button Caption="Gobo 4" ID="152">
-     <WindowState Visible="True" X="238" Y="26" Width="52" Height="52"/>
-     <Function ID="236"/>
+    <Button Caption="" ID="31">
+     <WindowState Visible="True" X="206" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294967040</BackgroundColor>
+     </Appearance>
+     <Function ID="51"/>
      <Action>Toggle</Action>
+     <Key>5</Key>
     </Button>
-    <Button Caption="Gobo 5" ID="153">
-     <WindowState Visible="True" X="296" Y="26" Width="52" Height="52"/>
-     <Function ID="237"/>
+    <Button Caption="" ID="32">
+     <WindowState Visible="True" X="256" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278255615</BackgroundColor>
+     </Appearance>
+     <Function ID="52"/>
      <Action>Toggle</Action>
+     <Key>6</Key>
     </Button>
-    <Button Caption="Gobo 6" ID="154">
-     <WindowState Visible="True" X="354" Y="26" Width="52" Height="52"/>
-     <Function ID="238"/>
+    <Button Caption="" ID="33">
+     <WindowState Visible="True" X="306" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294902015</BackgroundColor>
+     </Appearance>
+     <Function ID="53"/>
      <Action>Toggle</Action>
+     <Key>7</Key>
     </Button>
-    <Button Caption="Gobo 7" ID="155">
-     <WindowState Visible="True" X="412" Y="26" Width="52" Height="52"/>
-     <Function ID="239"/>
+    <Button Caption="" ID="34">
+     <WindowState Visible="True" X="356" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294967295</BackgroundColor>
+     </Appearance>
+     <Function ID="54"/>
      <Action>Toggle</Action>
+     <Key>8</Key>
     </Button>
-    <Button Caption="Gobo 8" ID="156">
-     <WindowState Visible="True" X="470" Y="26" Width="52" Height="52"/>
-     <Function ID="240"/>
+    <Button Caption="" ID="35">
+     <WindowState Visible="True" X="406" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294934272</BackgroundColor>
+     </Appearance>
+     <Function ID="55"/>
      <Action>Toggle</Action>
+     <Key>9</Key>
     </Button>
-    <Button Caption="Gobo 9" ID="157">
-     <WindowState Visible="True" X="528" Y="26" Width="52" Height="52"/>
-     <Function ID="241"/>
+    <Button Caption="" ID="36">
+     <WindowState Visible="True" X="456" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294901860</BackgroundColor>
+     </Appearance>
+     <Function ID="56"/>
      <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 10" ID="158">
-     <WindowState Visible="True" X="6" Y="84" Width="52" Height="52"/>
-     <Function ID="242"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 11" ID="159">
-     <WindowState Visible="True" X="64" Y="84" Width="52" Height="52"/>
-     <Function ID="243"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 12" ID="160">
-     <WindowState Visible="True" X="122" Y="84" Width="52" Height="52"/>
-     <Function ID="244"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 13" ID="161">
-     <WindowState Visible="True" X="180" Y="84" Width="52" Height="52"/>
-     <Function ID="245"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 14" ID="162">
-     <WindowState Visible="True" X="238" Y="84" Width="52" Height="52"/>
-     <Function ID="246"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 15" ID="163">
-     <WindowState Visible="True" X="296" Y="84" Width="52" Height="52"/>
-     <Function ID="247"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 16" ID="164">
-     <WindowState Visible="True" X="354" Y="84" Width="52" Height="52"/>
-     <Function ID="248"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Gobo 17" ID="165">
-     <WindowState Visible="True" X="412" Y="84" Width="52" Height="52"/>
-     <Function ID="249"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Rainbow effect fast to slow" ID="166">
-     <WindowState Visible="True" X="470" Y="84" Width="52" Height="52"/>
-     <Function ID="250"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Rainbow effect reverse slow to fast" ID="167">
-     <WindowState Visible="True" X="528" Y="84" Width="52" Height="52"/>
-     <Function ID="251"/>
-     <Action>Toggle</Action>
+     <Key>0</Key>
     </Button>
    </SoloFrame>
-   <SoloFrame Caption="Color Beam" ID="168">
-    <WindowState Visible="True" X="540" Y="246" Width="628" Height="146"/>
+   <SoloFrame Caption="Colores BarrasLed" ID="15">
+    <WindowState Visible="True" X="8" Y="280" Width="524" Height="122"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <ExcludeMonitored>True</ExcludeMonitored>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="White" ID="169">
-     <WindowState Visible="True" X="6" Y="26" Width="52" Height="52"/>
-     <Function ID="253"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Red" ID="170">
-     <WindowState Visible="True" X="64" Y="26" Width="52" Height="52"/>
-     <Function ID="254"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Orange" ID="171">
-     <WindowState Visible="True" X="122" Y="26" Width="52" Height="52"/>
-     <Function ID="255"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Yellow" ID="172">
-     <WindowState Visible="True" X="180" Y="26" Width="52" Height="52"/>
-     <Function ID="256"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Green" ID="173">
-     <WindowState Visible="True" X="238" Y="26" Width="52" Height="52"/>
-     <Function ID="257"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Blue" ID="174">
-     <WindowState Visible="True" X="296" Y="26" Width="52" Height="52"/>
-     <Function ID="258"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Pink" ID="175">
-     <WindowState Visible="True" X="354" Y="26" Width="52" Height="52"/>
-     <Function ID="259"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Ice" ID="176">
-     <WindowState Visible="True" X="412" Y="26" Width="52" Height="52"/>
-     <Function ID="260"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Light Pink" ID="177">
-     <WindowState Visible="True" X="470" Y="26" Width="52" Height="52"/>
-     <Function ID="261"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Light White" ID="178">
-     <WindowState Visible="True" X="528" Y="26" Width="52" Height="52"/>
-     <Function ID="262"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Light Blue" ID="179">
-     <WindowState Visible="True" X="6" Y="84" Width="52" Height="52"/>
-     <Function ID="263"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Calid White" ID="180">
-     <WindowState Visible="True" X="64" Y="84" Width="52" Height="52"/>
-     <Function ID="264"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="UV" ID="181">
-     <WindowState Visible="True" X="122" Y="84" Width="52" Height="52"/>
-     <Function ID="265"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Grey" ID="182">
-     <WindowState Visible="True" X="180" Y="84" Width="52" Height="52"/>
-     <Function ID="266"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Light Yellow" ID="183">
-     <WindowState Visible="True" X="238" Y="84" Width="52" Height="52"/>
-     <Function ID="267"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Rainbow effect fast to slow" ID="184">
-     <WindowState Visible="True" X="296" Y="84" Width="52" Height="52"/>
-     <Function ID="268"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Rainbow effect reverse slow to fast" ID="185">
-     <WindowState Visible="True" X="354" Y="84" Width="52" Height="52"/>
-     <Function ID="269"/>
-     <Action>Toggle</Action>
-    </Button>
-   </SoloFrame>
-   <SoloFrame Caption="Prisma" ID="186">
-    <WindowState Visible="True" X="540" Y="398" Width="628" Height="80"/>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <ExcludeMonitored>True</ExcludeMonitored>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="None" ID="187">
-     <WindowState Visible="True" X="6" Y="26" Width="120" Height="44"/>
-     <Function ID="271"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Insert Prism" ID="188">
-     <WindowState Visible="True" X="132" Y="26" Width="120" Height="44"/>
-     <Function ID="272"/>
-     <Action>Toggle</Action>
-    </Button>
-   </SoloFrame>
-   <SoloFrame Caption="Matrices" ID="189">
-    <WindowState Visible="True" X="540" Y="484" Width="628" Height="260"/>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <ExcludeMonitored>True</ExcludeMonitored>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Multipage PagesNum="3" CurrentPage="0" PagesLoop="True"/>
-    <Shortcut Page="0" Name="Página 1"/>
-    <Shortcut Page="1" Name="Página 2"/>
-    <Shortcut Page="2" Name="Página 3"/>
-    <Button Caption="Fill Rojo" ID="190">
-     <WindowState Visible="True" X="6" Y="26" Width="96" Height="40"/>
-     <Function ID="131"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Verde" ID="191">
-     <WindowState Visible="True" X="108" Y="26" Width="96" Height="40"/>
-     <Function ID="132"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Azul" ID="192">
-     <WindowState Visible="True" X="210" Y="26" Width="96" Height="40"/>
-     <Function ID="133"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Ambar" ID="193">
-     <WindowState Visible="True" X="312" Y="26" Width="96" Height="40"/>
-     <Function ID="134"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Magenta" ID="194">
-     <WindowState Visible="True" X="414" Y="26" Width="96" Height="40"/>
-     <Function ID="135"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Blanco" ID="195">
-     <WindowState Visible="True" X="516" Y="26" Width="96" Height="40"/>
-     <Function ID="136"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Rojo" ID="196">
-     <WindowState Visible="True" X="6" Y="72" Width="96" Height="40"/>
-     <Function ID="137"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Verde" ID="197">
-     <WindowState Visible="True" X="108" Y="72" Width="96" Height="40"/>
-     <Function ID="138"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Azul" ID="198">
-     <WindowState Visible="True" X="210" Y="72" Width="96" Height="40"/>
-     <Function ID="139"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Ambar" ID="199">
-     <WindowState Visible="True" X="312" Y="72" Width="96" Height="40"/>
-     <Function ID="140"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Magenta" ID="200">
-     <WindowState Visible="True" X="414" Y="72" Width="96" Height="40"/>
-     <Function ID="141"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Blanco" ID="201">
-     <WindowState Visible="True" X="516" Y="72" Width="96" Height="40"/>
-     <Function ID="142"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Rojo" ID="202">
-     <WindowState Visible="True" X="6" Y="118" Width="96" Height="40"/>
-     <Function ID="143"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Verde" ID="203">
-     <WindowState Visible="True" X="108" Y="118" Width="96" Height="40"/>
-     <Function ID="144"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Azul" ID="204">
-     <WindowState Visible="True" X="210" Y="118" Width="96" Height="40"/>
-     <Function ID="145"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Ambar" ID="205">
-     <WindowState Visible="True" X="312" Y="118" Width="96" Height="40"/>
-     <Function ID="146"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Magenta" ID="206">
-     <WindowState Visible="True" X="414" Y="118" Width="96" Height="40"/>
-     <Function ID="147"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Blanco" ID="207">
-     <WindowState Visible="True" X="516" Y="118" Width="96" Height="40"/>
-     <Function ID="148"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Rojo" ID="208">
-     <WindowState Visible="True" X="6" Y="164" Width="96" Height="40"/>
-     <Function ID="149"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Verde" ID="209">
-     <WindowState Visible="True" X="108" Y="164" Width="96" Height="40"/>
-     <Function ID="150"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Azul" ID="210">
-     <WindowState Visible="True" X="210" Y="164" Width="96" Height="40"/>
-     <Function ID="151"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Ambar" ID="211">
-     <WindowState Visible="True" X="312" Y="164" Width="96" Height="40"/>
-     <Function ID="152"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Magenta" ID="212">
-     <WindowState Visible="True" X="414" Y="164" Width="96" Height="40"/>
-     <Function ID="153"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Blanco" ID="213">
-     <WindowState Visible="True" X="516" Y="164" Width="96" Height="40"/>
-     <Function ID="154"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Rojo" ID="214">
-     <WindowState Visible="True" X="6" Y="210" Width="96" Height="40"/>
-     <Function ID="155"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Verde" ID="215">
-     <WindowState Visible="True" X="108" Y="210" Width="96" Height="40"/>
-     <Function ID="156"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Azul" ID="216">
-     <WindowState Visible="True" X="210" Y="210" Width="96" Height="40"/>
-     <Function ID="157"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Ambar" ID="217">
-     <WindowState Visible="True" X="312" Y="210" Width="96" Height="40"/>
-     <Function ID="158"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Magenta" ID="218">
-     <WindowState Visible="True" X="414" Y="210" Width="96" Height="40"/>
-     <Function ID="159"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Blanco" ID="219">
-     <WindowState Visible="True" X="516" Y="210" Width="96" Height="40"/>
-     <Function ID="160"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Rojo" ID="220" Page="1">
-     <WindowState Visible="False" X="6" Y="26" Width="96" Height="40"/>
-     <Function ID="162"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Verde" ID="221" Page="1">
-     <WindowState Visible="False" X="108" Y="26" Width="96" Height="40"/>
-     <Function ID="163"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Azul" ID="222" Page="1">
-     <WindowState Visible="False" X="210" Y="26" Width="96" Height="40"/>
-     <Function ID="164"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Ambar" ID="223" Page="1">
-     <WindowState Visible="False" X="312" Y="26" Width="96" Height="40"/>
-     <Function ID="165"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Magenta" ID="224" Page="1">
-     <WindowState Visible="False" X="414" Y="26" Width="96" Height="40"/>
-     <Function ID="166"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Blanco" ID="225" Page="1">
-     <WindowState Visible="False" X="516" Y="26" Width="96" Height="40"/>
-     <Function ID="167"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Rojo" ID="226" Page="1">
-     <WindowState Visible="False" X="6" Y="72" Width="96" Height="40"/>
-     <Function ID="168"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Verde" ID="227" Page="1">
-     <WindowState Visible="False" X="108" Y="72" Width="96" Height="40"/>
-     <Function ID="169"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Azul" ID="228" Page="1">
-     <WindowState Visible="False" X="210" Y="72" Width="96" Height="40"/>
-     <Function ID="170"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Ambar" ID="229" Page="1">
-     <WindowState Visible="False" X="312" Y="72" Width="96" Height="40"/>
-     <Function ID="171"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Magenta" ID="230" Page="1">
-     <WindowState Visible="False" X="414" Y="72" Width="96" Height="40"/>
-     <Function ID="172"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Blanco" ID="231" Page="1">
-     <WindowState Visible="False" X="516" Y="72" Width="96" Height="40"/>
-     <Function ID="173"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Rojo" ID="232" Page="1">
-     <WindowState Visible="False" X="6" Y="118" Width="96" Height="40"/>
-     <Function ID="174"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Verde" ID="233" Page="1">
-     <WindowState Visible="False" X="108" Y="118" Width="96" Height="40"/>
-     <Function ID="175"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Azul" ID="234" Page="1">
-     <WindowState Visible="False" X="210" Y="118" Width="96" Height="40"/>
-     <Function ID="176"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Ambar" ID="235" Page="1">
-     <WindowState Visible="False" X="312" Y="118" Width="96" Height="40"/>
-     <Function ID="177"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Magenta" ID="236" Page="1">
-     <WindowState Visible="False" X="414" Y="118" Width="96" Height="40"/>
-     <Function ID="178"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Blanco" ID="237" Page="1">
-     <WindowState Visible="False" X="516" Y="118" Width="96" Height="40"/>
-     <Function ID="179"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Rojo" ID="238" Page="1">
-     <WindowState Visible="False" X="6" Y="164" Width="96" Height="40"/>
-     <Function ID="180"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Verde" ID="239" Page="1">
-     <WindowState Visible="False" X="108" Y="164" Width="96" Height="40"/>
-     <Function ID="181"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Azul" ID="240" Page="1">
-     <WindowState Visible="False" X="210" Y="164" Width="96" Height="40"/>
-     <Function ID="182"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Ambar" ID="241" Page="1">
-     <WindowState Visible="False" X="312" Y="164" Width="96" Height="40"/>
-     <Function ID="183"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Magenta" ID="242" Page="1">
-     <WindowState Visible="False" X="414" Y="164" Width="96" Height="40"/>
-     <Function ID="184"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Blanco" ID="243" Page="1">
-     <WindowState Visible="False" X="516" Y="164" Width="96" Height="40"/>
-     <Function ID="185"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Rojo" ID="244" Page="1">
-     <WindowState Visible="False" X="6" Y="210" Width="96" Height="40"/>
-     <Function ID="186"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Verde" ID="245" Page="1">
-     <WindowState Visible="False" X="108" Y="210" Width="96" Height="40"/>
-     <Function ID="187"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Azul" ID="246" Page="1">
-     <WindowState Visible="False" X="210" Y="210" Width="96" Height="40"/>
-     <Function ID="188"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Ambar" ID="247" Page="1">
-     <WindowState Visible="False" X="312" Y="210" Width="96" Height="40"/>
-     <Function ID="189"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Magenta" ID="248" Page="1">
-     <WindowState Visible="False" X="414" Y="210" Width="96" Height="40"/>
-     <Function ID="190"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Blanco" ID="249" Page="1">
-     <WindowState Visible="False" X="516" Y="210" Width="96" Height="40"/>
-     <Function ID="191"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Rojo" ID="250" Page="2">
-     <WindowState Visible="False" X="6" Y="26" Width="96" Height="40"/>
-     <Function ID="193"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Verde" ID="251" Page="2">
-     <WindowState Visible="False" X="108" Y="26" Width="96" Height="40"/>
-     <Function ID="194"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Azul" ID="252" Page="2">
-     <WindowState Visible="False" X="210" Y="26" Width="96" Height="40"/>
-     <Function ID="195"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Ambar" ID="253" Page="2">
-     <WindowState Visible="False" X="312" Y="26" Width="96" Height="40"/>
-     <Function ID="196"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Magenta" ID="254" Page="2">
-     <WindowState Visible="False" X="414" Y="26" Width="96" Height="40"/>
-     <Function ID="197"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Fill Blanco" ID="255" Page="2">
-     <WindowState Visible="False" X="516" Y="26" Width="96" Height="40"/>
-     <Function ID="198"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Rojo" ID="256" Page="2">
-     <WindowState Visible="False" X="6" Y="72" Width="96" Height="40"/>
-     <Function ID="199"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Verde" ID="257" Page="2">
-     <WindowState Visible="False" X="108" Y="72" Width="96" Height="40"/>
-     <Function ID="200"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Azul" ID="258" Page="2">
-     <WindowState Visible="False" X="210" Y="72" Width="96" Height="40"/>
-     <Function ID="201"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Ambar" ID="259" Page="2">
-     <WindowState Visible="False" X="312" Y="72" Width="96" Height="40"/>
-     <Function ID="202"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Magenta" ID="260" Page="2">
-     <WindowState Visible="False" X="414" Y="72" Width="96" Height="40"/>
-     <Function ID="203"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Even/Odd Blanco" ID="261" Page="2">
-     <WindowState Visible="False" X="516" Y="72" Width="96" Height="40"/>
-     <Function ID="204"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Rojo" ID="262" Page="2">
-     <WindowState Visible="False" X="6" Y="118" Width="96" Height="40"/>
-     <Function ID="205"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Verde" ID="263" Page="2">
-     <WindowState Visible="False" X="108" Y="118" Width="96" Height="40"/>
-     <Function ID="206"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Azul" ID="264" Page="2">
-     <WindowState Visible="False" X="210" Y="118" Width="96" Height="40"/>
-     <Function ID="207"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Ambar" ID="265" Page="2">
-     <WindowState Visible="False" X="312" Y="118" Width="96" Height="40"/>
-     <Function ID="208"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Magenta" ID="266" Page="2">
-     <WindowState Visible="False" X="414" Y="118" Width="96" Height="40"/>
-     <Function ID="209"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Strobe Blanco" ID="267" Page="2">
-     <WindowState Visible="False" X="516" Y="118" Width="96" Height="40"/>
-     <Function ID="210"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Rojo" ID="268" Page="2">
-     <WindowState Visible="False" X="6" Y="164" Width="96" Height="40"/>
-     <Function ID="211"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Verde" ID="269" Page="2">
-     <WindowState Visible="False" X="108" Y="164" Width="96" Height="40"/>
-     <Function ID="212"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Azul" ID="270" Page="2">
-     <WindowState Visible="False" X="210" Y="164" Width="96" Height="40"/>
-     <Function ID="213"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Ambar" ID="271" Page="2">
-     <WindowState Visible="False" X="312" Y="164" Width="96" Height="40"/>
-     <Function ID="214"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Magenta" ID="272" Page="2">
-     <WindowState Visible="False" X="414" Y="164" Width="96" Height="40"/>
-     <Function ID="215"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Waves Blanco" ID="273" Page="2">
-     <WindowState Visible="False" X="516" Y="164" Width="96" Height="40"/>
-     <Function ID="216"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Rojo" ID="274" Page="2">
-     <WindowState Visible="False" X="6" Y="210" Width="96" Height="40"/>
-     <Function ID="217"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Verde" ID="275" Page="2">
-     <WindowState Visible="False" X="108" Y="210" Width="96" Height="40"/>
-     <Function ID="218"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Azul" ID="276" Page="2">
-     <WindowState Visible="False" X="210" Y="210" Width="96" Height="40"/>
-     <Function ID="219"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Ambar" ID="277" Page="2">
-     <WindowState Visible="False" X="312" Y="210" Width="96" Height="40"/>
-     <Function ID="220"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Magenta" ID="278" Page="2">
-     <WindowState Visible="False" X="414" Y="210" Width="96" Height="40"/>
-     <Function ID="221"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Solid Blanco" ID="279" Page="2">
-     <WindowState Visible="False" X="516" Y="210" Width="96" Height="40"/>
-     <Function ID="222"/>
-     <Action>Toggle</Action>
-    </Button>
-   </SoloFrame>
-   <SoloFrame Caption="Dimmers" ID="294">
-    <WindowState Visible="True" X="1176" Y="428" Width="256" Height="74"/>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <ExcludeMonitored>True</ExcludeMonitored>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="Dimmer Chase" ID="295">
-     <WindowState Visible="True" X="6" Y="26" Width="118" Height="44"/>
-     <Function ID="277"/>
-     <Action>Toggle</Action>
-     <Key>V</Key>
-    </Button>
-    <Button Caption="Dimmer PingPong" ID="296">
-     <WindowState Visible="True" X="130" Y="26" Width="118" Height="44"/>
-     <Function ID="280"/>
-     <Action>Toggle</Action>
-     <Key>Z</Key>
-    </Button>
-   </SoloFrame>
-   <SoloFrame Caption="Strobos" ID="297">
-    <WindowState Visible="True" X="1176" Y="508" Width="256" Height="124"/>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <ExcludeMonitored>True</ExcludeMonitored>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="ON" ID="298">
-     <WindowState Visible="True" X="6" Y="26" Width="118" Height="44"/>
-     <Function ID="281"/>
-     <Action>Toggle</Action>
-     <Key>S</Key>
-    </Button>
-    <Button Caption="OFF" ID="299">
-     <WindowState Visible="True" X="130" Y="26" Width="118" Height="44"/>
-     <Function ID="282"/>
-     <Action>Toggle</Action>
-     <Key>D</Key>
-    </Button>
-    <Button Caption="Rapido" ID="300">
-     <WindowState Visible="True" X="6" Y="76" Width="118" Height="44"/>
-     <Function ID="283"/>
-     <Action>Toggle</Action>
-     <Key>F</Key>
-    </Button>
-    <Button Caption="Medio" ID="301">
-     <WindowState Visible="True" X="130" Y="76" Width="118" Height="44"/>
-     <Function ID="284"/>
-     <Action>Toggle</Action>
-     <Key>T</Key>
+    <Button Caption="" ID="21">
+     <WindowState Visible="True" X="256" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278255615</BackgroundColor>
+     </Appearance>
+     <Function ID="10"/>
+     <Action>Toggle</Action>
+     <Key>6</Key>
+    </Button>
+    <Button Caption="" ID="20">
+     <WindowState Visible="True" X="206" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294967040</BackgroundColor>
+     </Appearance>
+     <Function ID="9"/>
+     <Action>Toggle</Action>
+     <Key>5</Key>
+    </Button>
+    <Button Caption="" ID="19">
+     <WindowState Visible="True" X="156" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4288676095</BackgroundColor>
+     </Appearance>
+     <Function ID="8"/>
+     <Action>Toggle</Action>
+     <Key>4</Key>
+    </Button>
+    <Button Caption="" ID="22">
+     <WindowState Visible="True" X="306" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294902015</BackgroundColor>
+     </Appearance>
+     <Function ID="11"/>
+     <Action>Toggle</Action>
+     <Key>7</Key>
+    </Button>
+    <Button Caption="" ID="25">
+     <WindowState Visible="True" X="456" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294901860</BackgroundColor>
+     </Appearance>
+     <Function ID="14"/>
+     <Action>Toggle</Action>
+     <Key>0</Key>
+    </Button>
+    <Button Caption="" ID="23">
+     <WindowState Visible="True" X="356" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294967295</BackgroundColor>
+     </Appearance>
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Key>8</Key>
+    </Button>
+    <Button Caption="" ID="24">
+     <WindowState Visible="True" X="406" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294934272</BackgroundColor>
+     </Appearance>
+     <Function ID="13"/>
+     <Action>Toggle</Action>
+     <Key>9</Key>
+    </Button>
+    <Button Caption="" ID="18">
+     <WindowState Visible="True" X="106" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278190335</BackgroundColor>
+     </Appearance>
+     <Function ID="7"/>
+     <Action>Toggle</Action>
+     <Key>3</Key>
+    </Button>
+    <Button Caption="" ID="16">
+     <WindowState Visible="True" X="6" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4294901760</BackgroundColor>
+     </Appearance>
+     <Function ID="5"/>
+     <Action>Toggle</Action>
+     <Key>1</Key>
+    </Button>
+    <Button Caption="" ID="17">
+     <WindowState Visible="True" X="56" Y="26" Width="44" Height="44"/>
+     <Appearance>
+      <BackgroundColor>4278255360</BackgroundColor>
+     </Appearance>
+     <Function ID="6"/>
+     <Action>Toggle</Action>
+     <Key>2</Key>
     </Button>
    </SoloFrame>
    <XYPad Caption="Cabezas" ID="291" InvertedAppearance="0">
@@ -6209,12 +6237,6 @@
      <Action>Toggle</Action>
      <Key>E</Key>
     </Button>
-    <Button Caption="Todo Negro" ID="6">
-     <WindowState Visible="True" X="134" Y="76" Width="122" Height="44"/>
-     <Function ID="2"/>
-     <Action>Toggle</Action>
-     <Key>º</Key>
-    </Button>
     <Button Caption="Luces ON" ID="4">
      <WindowState Visible="True" X="390" Y="26" Width="122" Height="44"/>
      <Function ID="0"/>
@@ -6226,6 +6248,12 @@
      <Function ID="1"/>
      <Action>Toggle</Action>
      <Key>B</Key>
+    </Button>
+    <Button Caption="Todo Negro" ID="6">
+     <WindowState Visible="True" X="134" Y="76" Width="122" Height="44"/>
+     <Function ID="2"/>
+     <Action>Toggle</Action>
+     <Key>º</Key>
     </Button>
    </Frame>
    <Frame Caption="Efectos" ID="7">
@@ -6331,34 +6359,6 @@
      <Action>Toggle</Action>
     </Button>
    </Frame>
-   <SpeedDial Caption="Vel. Colores" ID="292">
-    <WindowState Visible="True" X="1176" Y="270" Width="124" Height="150"/>
-    <Visibility>644</Visibility>
-    <Time>1900</Time>
-    <AbsoluteValue Minimum="0" Maximum="7600"/>
-    <Function FadeIn="0" FadeOut="0" Duration="6">45</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">46</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">87</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">88</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">129</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">130</Function>
-   </SpeedDial>
-   <SpeedDial Caption="Vel. Movimiento" ID="293">
-    <WindowState Visible="True" X="1308" Y="270" Width="124" Height="150"/>
-    <Visibility>644</Visibility>
-    <Time>10000</Time>
-    <AbsoluteValue Minimum="0" Maximum="40000"/>
-    <Function FadeIn="0" FadeOut="0" Duration="6">231</Function>
-   </SpeedDial>
-   <Matrix Caption="Matriz" ID="302">
-    <WindowState Visible="True" X="1176" Y="638" Width="256" Height="146"/>
-    <Function ID="131" InstantApply="true"/>
-   </Matrix>
-   <AudioTriggers BarsNumber="5" Caption="Audio" ID="303">
-    <WindowState Visible="True" X="1176" Y="790" Width="256" Height="100"/>
-    <Bar Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="0" WidgetID="5"/>
-    <Bar Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="3" WidgetID="300"/>
-   </AudioTriggers>
   </Frame>
  </VirtualConsole>
 </Workspace>

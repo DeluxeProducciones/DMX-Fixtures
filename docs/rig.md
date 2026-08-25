@@ -58,7 +58,7 @@ the LED bar dead centre aim *out at the audience*.
 
 | Where | What |
 | --- | --- |
-| Either side of the DJ deck | the other two BEAM 230W, one on a flightcase each, **aimed up** |
+| Either side of the DJ deck | the other two BEAM 230W, one on a flightcase each, **aimed up and out over the room** |
 | Over the DJ booth | the second Stairville LED Bar 240/8 |
 | One side, upstage | the smoke machine |
 
@@ -83,14 +83,20 @@ is `(0, -cos, -sin)`:
 | --- | --- |
 | `0` | straight down - how a light hangs, and where every QLC+ mesh starts |
 | `180` | straight up - a fixture standing on the floor |
+| `-135` | up at 45 degrees and out over the audience |
 | **negative** | leans out over the audience |
 | **positive** | leans back over the stage |
 
 So the six truss PARs sit at `-35`, tilted out to colour the room rather than
 pointing flat at it; the four pixel panels and both LED bars at `-90`, facing
-the audience square on; and the two downstage grids at `+35`, leaning back at
-the DJ. Without any of it they all fire at the ceiling, and with the sign the
-wrong way round they fire at the back wall.
+the audience square on; the two downstage grids at `+35`, leaning back at the
+DJ; and the two beams on the flightcases at `-135`, which throws them up and
+over the crowd rather than straight at the ceiling. Without any of it they all
+fire upwards, and with the sign the wrong way round they fire at the back wall.
+
+The DJ stands **behind** the deck - smaller z than it, since the audience is the
+high z - so "the front of the table" is the audience side, and that is the way
+his two beams cross.
 
 ### The wash heads barely move, and it is not the show
 

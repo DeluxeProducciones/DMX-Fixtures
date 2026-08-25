@@ -392,8 +392,8 @@
       <FxItem ID="19" XPos="7800" YPos="0" ZPos="300" Hidden="True"/>
       <FxItem ID="20" XPos="1916" YPos="4000" ZPos="1500"/>
       <FxItem ID="21" XPos="9694" YPos="4000" ZPos="1500"/>
-      <FxItem ID="22" XPos="4405" YPos="600" ZPos="4665" XRot="180"/>
-      <FxItem ID="23" XPos="7205" YPos="600" ZPos="4665" XRot="180"/>
+      <FxItem ID="22" XPos="4405" YPos="600" ZPos="4335" XRot="-135"/>
+      <FxItem ID="23" XPos="7205" YPos="600" ZPos="4335" XRot="-135"/>
       <FxItem ID="24" XPos="2808" YPos="3000" ZPos="6800" XRot="-90"/>
       <FxItem ID="25" XPos="4342" YPos="3000" ZPos="6800" XRot="-90"/>
       <FxItem ID="26" XPos="9000" YPos="0" ZPos="300" Hidden="True"/>
