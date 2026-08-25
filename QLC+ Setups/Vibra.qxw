@@ -346,11 +346,35 @@
       <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
       <ChannelStyle>1</ChannelStyle>
       <ValueStyle>1</ValueStyle>
-      <Grid Width="5" Height="3" Depth="5" Units="0"/>
-      <FxItem ID="20" XPos="0" YPos="0"/>
-      <FxItem ID="21" XPos="2854.37" YPos="1009.71"/>
-      <FxItem ID="22" XPos="2038.83" YPos="1242.72"/>
-      <FxItem ID="23" XPos="570.175" YPos="1526.32"/>
+      <Grid Width="12" Height="6" Depth="8" Units="0" POV="2"/>
+      <StageItem>0</StageItem>
+      <FxItem ID="0" XPos="1200" YPos="3480" ZPos="1600"/>
+      <FxItem ID="1" XPos="2571" YPos="3480" ZPos="1600"/>
+      <FxItem ID="2" XPos="1200" YPos="120" ZPos="7040"/>
+      <FxItem ID="3" XPos="10800" YPos="120" ZPos="7040"/>
+      <FxItem ID="4" XPos="1200" YPos="360" ZPos="800"/>
+      <FxItem ID="5" XPos="2160" YPos="360" ZPos="800"/>
+      <FxItem ID="6" XPos="3120" YPos="360" ZPos="800"/>
+      <FxItem ID="7" XPos="4080" YPos="360" ZPos="800"/>
+      <FxItem ID="8" XPos="5040" YPos="360" ZPos="800"/>
+      <FxItem ID="9" XPos="6000" YPos="360" ZPos="800"/>
+      <FxItem ID="10" XPos="6960" YPos="360" ZPos="800"/>
+      <FxItem ID="11" XPos="7920" YPos="360" ZPos="800"/>
+      <FxItem ID="12" XPos="8880" YPos="360" ZPos="800"/>
+      <FxItem ID="13" XPos="3943" YPos="3480" ZPos="1600"/>
+      <FxItem ID="14" XPos="5314" YPos="3480" ZPos="1600"/>
+      <FxItem ID="15" XPos="6686" YPos="3480" ZPos="1600"/>
+      <FxItem ID="16" XPos="8057" YPos="3480" ZPos="1600"/>
+      <FxItem ID="17" XPos="1200" YPos="0" ZPos="7600"/>
+      <FxItem ID="18" XPos="9429" YPos="3480" ZPos="1600"/>
+      <FxItem ID="19" XPos="10800" YPos="3480" ZPos="1600"/>
+      <FxItem ID="20" XPos="1200" YPos="4800" ZPos="6560"/>
+      <FxItem ID="21" XPos="4400" YPos="4800" ZPos="6560"/>
+      <FxItem ID="22" XPos="7600" YPos="4800" ZPos="6560"/>
+      <FxItem ID="23" XPos="10800" YPos="4800" ZPos="6560"/>
+      <FxItem ID="24" XPos="9840" YPos="360" ZPos="800"/>
+      <FxItem ID="25" XPos="10800" YPos="360" ZPos="800"/>
+      <FxItem ID="26" XPos="10800" YPos="0" ZPos="7600"/>
     </Monitor>
     <Function ID="0" Type="Scene" Name="Luces ON" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3593,122 +3617,122 @@
     </Function>
     <Function ID="253" Type="Scene" Name="Color Beam - White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,4,8,4</FixtureVal>
-      <FixtureVal ID="21">6,255,7,4,8,4</FixtureVal>
-      <FixtureVal ID="22">6,255,7,4,8,4</FixtureVal>
-      <FixtureVal ID="23">6,255,7,4,8,4</FixtureVal>
+      <FixtureVal ID="20">6,255,7,4</FixtureVal>
+      <FixtureVal ID="21">6,255,7,4</FixtureVal>
+      <FixtureVal ID="22">6,255,7,4</FixtureVal>
+      <FixtureVal ID="23">6,255,7,4</FixtureVal>
     </Function>
     <Function ID="254" Type="Scene" Name="Color Beam - Red" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,12,8,12</FixtureVal>
-      <FixtureVal ID="21">6,255,7,12,8,12</FixtureVal>
-      <FixtureVal ID="22">6,255,7,12,8,12</FixtureVal>
-      <FixtureVal ID="23">6,255,7,12,8,12</FixtureVal>
+      <FixtureVal ID="20">6,255,7,12</FixtureVal>
+      <FixtureVal ID="21">6,255,7,12</FixtureVal>
+      <FixtureVal ID="22">6,255,7,12</FixtureVal>
+      <FixtureVal ID="23">6,255,7,12</FixtureVal>
     </Function>
     <Function ID="255" Type="Scene" Name="Color Beam - Orange" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,19,8,19</FixtureVal>
-      <FixtureVal ID="21">6,255,7,19,8,19</FixtureVal>
-      <FixtureVal ID="22">6,255,7,19,8,19</FixtureVal>
-      <FixtureVal ID="23">6,255,7,19,8,19</FixtureVal>
+      <FixtureVal ID="20">6,255,7,19</FixtureVal>
+      <FixtureVal ID="21">6,255,7,19</FixtureVal>
+      <FixtureVal ID="22">6,255,7,19</FixtureVal>
+      <FixtureVal ID="23">6,255,7,19</FixtureVal>
     </Function>
     <Function ID="256" Type="Scene" Name="Color Beam - Yellow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,27,8,27</FixtureVal>
-      <FixtureVal ID="21">6,255,7,27,8,27</FixtureVal>
-      <FixtureVal ID="22">6,255,7,27,8,27</FixtureVal>
-      <FixtureVal ID="23">6,255,7,27,8,27</FixtureVal>
+      <FixtureVal ID="20">6,255,7,27</FixtureVal>
+      <FixtureVal ID="21">6,255,7,27</FixtureVal>
+      <FixtureVal ID="22">6,255,7,27</FixtureVal>
+      <FixtureVal ID="23">6,255,7,27</FixtureVal>
     </Function>
     <Function ID="257" Type="Scene" Name="Color Beam - Green" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,35,8,35</FixtureVal>
-      <FixtureVal ID="21">6,255,7,35,8,35</FixtureVal>
-      <FixtureVal ID="22">6,255,7,35,8,35</FixtureVal>
-      <FixtureVal ID="23">6,255,7,35,8,35</FixtureVal>
+      <FixtureVal ID="20">6,255,7,35</FixtureVal>
+      <FixtureVal ID="21">6,255,7,35</FixtureVal>
+      <FixtureVal ID="22">6,255,7,35</FixtureVal>
+      <FixtureVal ID="23">6,255,7,35</FixtureVal>
     </Function>
     <Function ID="258" Type="Scene" Name="Color Beam - Blue" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,43,8,43</FixtureVal>
-      <FixtureVal ID="21">6,255,7,43,8,43</FixtureVal>
-      <FixtureVal ID="22">6,255,7,43,8,43</FixtureVal>
-      <FixtureVal ID="23">6,255,7,43,8,43</FixtureVal>
+      <FixtureVal ID="20">6,255,7,43</FixtureVal>
+      <FixtureVal ID="21">6,255,7,43</FixtureVal>
+      <FixtureVal ID="22">6,255,7,43</FixtureVal>
+      <FixtureVal ID="23">6,255,7,43</FixtureVal>
     </Function>
     <Function ID="259" Type="Scene" Name="Color Beam - Pink" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,51,8,51</FixtureVal>
-      <FixtureVal ID="21">6,255,7,51,8,51</FixtureVal>
-      <FixtureVal ID="22">6,255,7,51,8,51</FixtureVal>
-      <FixtureVal ID="23">6,255,7,51,8,51</FixtureVal>
+      <FixtureVal ID="20">6,255,7,51</FixtureVal>
+      <FixtureVal ID="21">6,255,7,51</FixtureVal>
+      <FixtureVal ID="22">6,255,7,51</FixtureVal>
+      <FixtureVal ID="23">6,255,7,51</FixtureVal>
     </Function>
     <Function ID="260" Type="Scene" Name="Color Beam - Ice" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,59,8,59</FixtureVal>
-      <FixtureVal ID="21">6,255,7,59,8,59</FixtureVal>
-      <FixtureVal ID="22">6,255,7,59,8,59</FixtureVal>
-      <FixtureVal ID="23">6,255,7,59,8,59</FixtureVal>
+      <FixtureVal ID="20">6,255,7,59</FixtureVal>
+      <FixtureVal ID="21">6,255,7,59</FixtureVal>
+      <FixtureVal ID="22">6,255,7,59</FixtureVal>
+      <FixtureVal ID="23">6,255,7,59</FixtureVal>
     </Function>
     <Function ID="261" Type="Scene" Name="Color Beam - Light Pink" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,67,8,67</FixtureVal>
-      <FixtureVal ID="21">6,255,7,67,8,67</FixtureVal>
-      <FixtureVal ID="22">6,255,7,67,8,67</FixtureVal>
-      <FixtureVal ID="23">6,255,7,67,8,67</FixtureVal>
+      <FixtureVal ID="20">6,255,7,67</FixtureVal>
+      <FixtureVal ID="21">6,255,7,67</FixtureVal>
+      <FixtureVal ID="22">6,255,7,67</FixtureVal>
+      <FixtureVal ID="23">6,255,7,67</FixtureVal>
     </Function>
     <Function ID="262" Type="Scene" Name="Color Beam - Light White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,75,8,75</FixtureVal>
-      <FixtureVal ID="21">6,255,7,75,8,75</FixtureVal>
-      <FixtureVal ID="22">6,255,7,75,8,75</FixtureVal>
-      <FixtureVal ID="23">6,255,7,75,8,75</FixtureVal>
+      <FixtureVal ID="20">6,255,7,75</FixtureVal>
+      <FixtureVal ID="21">6,255,7,75</FixtureVal>
+      <FixtureVal ID="22">6,255,7,75</FixtureVal>
+      <FixtureVal ID="23">6,255,7,75</FixtureVal>
     </Function>
     <Function ID="263" Type="Scene" Name="Color Beam - Light Blue" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,83,8,83</FixtureVal>
-      <FixtureVal ID="21">6,255,7,83,8,83</FixtureVal>
-      <FixtureVal ID="22">6,255,7,83,8,83</FixtureVal>
-      <FixtureVal ID="23">6,255,7,83,8,83</FixtureVal>
+      <FixtureVal ID="20">6,255,7,83</FixtureVal>
+      <FixtureVal ID="21">6,255,7,83</FixtureVal>
+      <FixtureVal ID="22">6,255,7,83</FixtureVal>
+      <FixtureVal ID="23">6,255,7,83</FixtureVal>
     </Function>
     <Function ID="264" Type="Scene" Name="Color Beam - Calid White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,91,8,91</FixtureVal>
-      <FixtureVal ID="21">6,255,7,91,8,91</FixtureVal>
-      <FixtureVal ID="22">6,255,7,91,8,91</FixtureVal>
-      <FixtureVal ID="23">6,255,7,91,8,91</FixtureVal>
+      <FixtureVal ID="20">6,255,7,91</FixtureVal>
+      <FixtureVal ID="21">6,255,7,91</FixtureVal>
+      <FixtureVal ID="22">6,255,7,91</FixtureVal>
+      <FixtureVal ID="23">6,255,7,91</FixtureVal>
     </Function>
     <Function ID="265" Type="Scene" Name="Color Beam - UV" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,99,8,99</FixtureVal>
-      <FixtureVal ID="21">6,255,7,99,8,99</FixtureVal>
-      <FixtureVal ID="22">6,255,7,99,8,99</FixtureVal>
-      <FixtureVal ID="23">6,255,7,99,8,99</FixtureVal>
+      <FixtureVal ID="20">6,255,7,99</FixtureVal>
+      <FixtureVal ID="21">6,255,7,99</FixtureVal>
+      <FixtureVal ID="22">6,255,7,99</FixtureVal>
+      <FixtureVal ID="23">6,255,7,99</FixtureVal>
     </Function>
     <Function ID="266" Type="Scene" Name="Color Beam - Grey" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,107,8,107</FixtureVal>
-      <FixtureVal ID="21">6,255,7,107,8,107</FixtureVal>
-      <FixtureVal ID="22">6,255,7,107,8,107</FixtureVal>
-      <FixtureVal ID="23">6,255,7,107,8,107</FixtureVal>
+      <FixtureVal ID="20">6,255,7,107</FixtureVal>
+      <FixtureVal ID="21">6,255,7,107</FixtureVal>
+      <FixtureVal ID="22">6,255,7,107</FixtureVal>
+      <FixtureVal ID="23">6,255,7,107</FixtureVal>
     </Function>
     <Function ID="267" Type="Scene" Name="Color Beam - Light Yellow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,119,8,119</FixtureVal>
-      <FixtureVal ID="21">6,255,7,119,8,119</FixtureVal>
-      <FixtureVal ID="22">6,255,7,119,8,119</FixtureVal>
-      <FixtureVal ID="23">6,255,7,119,8,119</FixtureVal>
+      <FixtureVal ID="20">6,255,7,119</FixtureVal>
+      <FixtureVal ID="21">6,255,7,119</FixtureVal>
+      <FixtureVal ID="22">6,255,7,119</FixtureVal>
+      <FixtureVal ID="23">6,255,7,119</FixtureVal>
     </Function>
     <Function ID="268" Type="Scene" Name="Color Beam - Rainbow effect fast to slow" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,159,8,159</FixtureVal>
-      <FixtureVal ID="21">6,255,7,159,8,159</FixtureVal>
-      <FixtureVal ID="22">6,255,7,159,8,159</FixtureVal>
-      <FixtureVal ID="23">6,255,7,159,8,159</FixtureVal>
+      <FixtureVal ID="20">6,255,7,159</FixtureVal>
+      <FixtureVal ID="21">6,255,7,159</FixtureVal>
+      <FixtureVal ID="22">6,255,7,159</FixtureVal>
+      <FixtureVal ID="23">6,255,7,159</FixtureVal>
     </Function>
     <Function ID="269" Type="Scene" Name="Color Beam - Rainbow effect reverse slow to fast" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">6,255,7,223,8,223</FixtureVal>
-      <FixtureVal ID="21">6,255,7,223,8,223</FixtureVal>
-      <FixtureVal ID="22">6,255,7,223,8,223</FixtureVal>
-      <FixtureVal ID="23">6,255,7,223,8,223</FixtureVal>
+      <FixtureVal ID="20">6,255,7,223</FixtureVal>
+      <FixtureVal ID="21">6,255,7,223</FixtureVal>
+      <FixtureVal ID="22">6,255,7,223</FixtureVal>
+      <FixtureVal ID="23">6,255,7,223</FixtureVal>
     </Function>
     <Function ID="270" Type="Chaser" Name="Color Beam Animacion" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
