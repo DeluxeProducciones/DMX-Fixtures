@@ -58,9 +58,23 @@ the LED bar dead centre aim *out at the audience*.
 
 | Where | What |
 | --- | --- |
-| Either side of the DJ table | the other two BEAM 230W, on the floor **aimed up** (`x_rot: 180`) |
+| Either side of the DJ deck | the other two BEAM 230W, one on a flightcase each, **aimed up** |
 | Over the DJ booth | the second Stairville LED Bar 240/8 |
 | One side, upstage | the smoke machine |
+
+The DJ deck is the usual 1 x 2 m stage top on legs, with a flightcase either
+side of it. Deck, legs, cases and a blocky stand-in for the DJ are `props` in
+the plot: QLC+ `MeshItem` entries built from its own bundled primitives
+(`generic/cube.obj`, `cylinder.obj`, `sphere.obj`). They are scenery, not
+fixtures, and exist so the preview looks like the room.
+
+**Which way things point.** `x_rot` is degrees about the horizontal axis, and 0
+is straight down, because that is how a light hangs and how every QLC+ mesh
+starts. 180 aims a fixture standing on the floor at the ceiling; **90 turns one
+out towards the audience** - which is also the rotation QLC+ applies by itself
+when a pixel bar is dropped into the 2D front view. The six truss PARs, the four
+pixel panels and both LED bars carry 90; without it the panels and the bars fire
+straight up.
 
 **Twenty-one fixtures rigged out of twenty-nine patched.** The other eight come
 from bigger setups and are not built: the third and fourth CromoWash100, both
@@ -80,6 +94,47 @@ metres are there so the preview reads correctly and can be dragged. Each x is
 its slot centre minus half the fixture's own width, because QLC+ stores the near
 corner - that is what makes a row read as evenly spaced rather than evenly
 left-aligned.
+
+### The wash heads barely move, and it is not the show
+
+The CromoWash100 receive the movement EFX like everything else - they are in it,
+and the EFX geometry matches the hand-built one node for node. What arrives is
+the problem. With AUTO running, the DMX view reads:
+
+| | ch1 Pan | ch2 Pan fine | ch3 Tilt | ch4 Tilt fine |
+| --- | --- | --- | --- | --- |
+| CromoWash100 #1 | **0** | 0 -> 31 | **0** | 57 -> 21 |
+| BEAM 230W 7R #1 | 92 -> 127 | - | 227 -> 28 | - |
+
+The wash's *coarse* channels never leave zero and only the fine ones move, so
+the head travels one 256th of its range: invisible. The beams are fine.
+
+The difference is the channel order. `QLCFixtureMode::cacheHeads` pairs a fine
+channel with the coarse one **only when it directly follows it in the same
+group**. The CromoWash is `Pan, Pan fine, Tilt, Tilt fine`, so both pairs are
+mapped and the EFX writes a 16-bit value through
+`EFXFixture::setPointPanTilt`'s secondary path - which on QLC+ 5.2.2 lands the
+low byte and leaves the high byte at zero. The BEAM is `Pan, Tilt, Pan fine,
+Tilt fine`: nothing is adjacent to its own coarse channel, no pair is mapped,
+and QLC+ writes plain 8-bit that works.
+
+So this is the QLC+ engine, not the definition and not the generated show, and
+**the real fixtures get the same DMX** - they will barely move on the rig too.
+Two ways out, both the owner's call:
+
+- patch the CromoWash100 in its **`Basic` 9-channel mode**, which has `Pan, Tilt`
+  and no fine channels at all, and set the fixtures to that mode in their menu;
+- or try a QLC+ newer than 5.2.2 - the current source carries a reworked
+  `GenericFader::updateChannel` with exactly this secondary-channel handling in
+  it.
+
+### Smoke does not show in the 3D view
+
+There is nothing to fix. QLC+ 5 draws no plume: `smokeAmount` is a single
+scene-wide haze density that the spotlight scattering shader multiplies by, and
+it is what makes the beams visible at all. It sits at 0.8 and there is a slider
+for it under the 3D view's settings button. The smoke machine's own mesh is
+drawn where the plot puts it; it just does not emit.
 
 ### Two pixel panels were missing from the patch
 
