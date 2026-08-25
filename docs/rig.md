@@ -215,6 +215,26 @@ neighbours' 47. See [Fixture groups](#fixture-groups).
 original stays as the reference the builders are tested against, but it is two
 fixtures behind the rig now, so `newshow` runs from `Vibra.qxw` itself.
 
+### A four-head bar is one light in the 3D view
+
+The CLB2.4 is a T-bar with **four PAR heads on adjustable brackets**, and its
+14-channel mode drives each one's RGB separately. The 3D view cannot show that:
+`MainView3D::createFixtureItems` builds **one item per fixture** (only a
+`Dimmer` pack is split, one item per channel), and a meshed fixture's item
+ignores the head index outright - `Fixture3DItem.qml`'s `setHeadIntensity` and
+`setHeadRGBColor` assign to a single `dimmerValue`/`lightColor`, so the four
+heads collapse into one light showing whichever head was written last. The
+`linked fixture` feature duplicates a whole fixture, colour and all, so it does
+not help either.
+
+Only the fixture types QLC+ draws itself - `LED Bar (Pixels)`, `LED Bar (Beams)`,
+`Strobe` - render per head, which is why the pixel panels light cell by cell.
+
+So a four-head bar can only be emulated by **patching each head as its own
+fixture**: four 3-channel RGB fixtures on the head triples, plus something to
+hold the bar's master dimmer at full. That is a patch decision, not a plot one -
+it does not change a cable, only how QLC+ sees the same 14 channels.
+
 ### They looked like PAR cans in 3D
 
 The pixel panels were `<Type>Color Changer</Type>`, and the 3D view picks the
@@ -254,9 +274,10 @@ generator drives them - a burst, then a long wait, on a loop.
 
 ## Fixture definitions
 
-Seven custom `.qxf` in `QLC+ Fixtures/`, plus the QLC+ system library. QLC+ 5
+Eight custom `.qxf` in `QLC+ Fixtures/`, plus the QLC+ system library. QLC+ 5
 ships `Pro-Lights-CromoWash100.qxf` itself, which is why that one fixture
-resolves even when the custom definitions are not installed.
+resolves even when the custom definitions are not installed. The CLB2.4 is
+QLC+'s own definition, vendored here with one correction - see below.
 
 ### Verification status
 
@@ -266,9 +287,25 @@ resolves even when the custom definitions are not installed.
 | Audibax IOWA70 | Verified against the repo manual; orphan, not patched |
 | Chauvet MiN Wash | **Verified online** (2026-08-24): the manufacturer manual's 13-channel mode matches channels 1-10 - Pan, Pan fine, Tilt, Tilt fine, Vector speed, Dimmer/Strobe, R, G, B, Color Macros - which is everything the toolkit drives. The manual edition found calls 11-13 "Reserved" where the definition says "Vector Speed (Color)" and "Movement Macros"; unused either way. **Its `5 Channel` mode is wrong** - it lists no Tilt - but the patch does not use it |
 | HYULIGHTS WX-60WPS | Definition declares 10 channels, the used mode exposes 8, matching the patch. Not otherwise verified |
+| Stairville CLB2.4 | **Fully verified** against `Manual/Stairville-CLB2.4-Compact-LED-PAR-System-manual-es.pdf` on 2026-08-25. All six modes match the manual channel for channel (7.5-7.10), including the 14-channel one the patch uses - `Dimmer, R/G/B x PAR 1..4, Strobe` - and the four heads it declares. Every range of the auto-show and fixed-colour channels matches (14 programs then Sound; 15 colours ending in Amber), and the physical block matches the technical data (1007x305x63 mm, 5,6 kg, 50 W, 1364 lux, 3-pin). **One thing was wrong: the lens** - see [The CLB2.4's beam angle was missing](#the-clb24s-beam-angle-was-missing) |
 | Generic BEAM 230W 7R | **Verified on the hardware by the owner**, who states he tested the channel order when he wrote the definition (2026-08-25). The hand-built show corroborates the two channels that matter most: `Luz ON Cabezas` sends 255 to channel 6 and 255 to channel 7, `Luz OFF Cabezas` sends 0 to both - so channel 6 is the shutter, shut at 0, and channel 7 is the dimmer. No manual matches it (one found for a Rambo 230 puts Color on ch1 and Pan on ch10), so the hardware is the only reference there will be. Physical side: see [Where the beams came from](#where-the-beams-came-from) |
 | Vortex PC-64 LED S | No manual found anywhere. 5ch RGB + dimmer + strobe is the usual LED PAR layout, order unconfirmed |
 | LED Beam Mini | Declares 16ch with channels 9-16 "No function". Generic unit, nothing online. The wasted eight channels suggest a mode where they do something |
+
+### The CLB2.4's beam angle was missing
+
+QLC+'s own definition carries `<Lens Name="Other" DegreesMin="0" DegreesMax="0"/>`
+and the manual gives the beam angle as **30 degrees** (8, Datos tecnicos). Zero
+is not "unknown" to the 3D view: `MainView3D` reads
+`focusMin = phy.lensDegreesMin() ? phy.lensDegreesMin() : 10` and
+`focusMax = ... : 30`, so a fixture with no lens data is drawn as if it had a
+10-30 degree zoom. The bar came out with a narrow, zoomable-looking cone instead
+of the fixed 30 it really has.
+
+Fixed by vendoring the definition into `QLC+ Fixtures/` with
+`DegreesMin="30" DegreesMax="30"` and nothing else changed - the user fixture
+folder takes precedence over the bundled library, so installing it is the same
+step as for the other seven. Worth sending upstream.
 
 ### Where the beams came from
 
