@@ -35,6 +35,27 @@ follows from that.
 - `Rueda Colores` and `Rueda Mezcla` collections over the per-group wheels, and
   `AUTO` over everything
 
+## The console
+
+Built to a fixed **1440x900** - the show laptop's screen - so nothing scrolls
+and nothing is off the edge. Three columns:
+
+| Where | What |
+| --- | --- |
+| Left | `Show` (AUTO, the two wheels, Luces ON, Blanco, Negro), `Efectos` (movement, gobos, beam colour, prism, humo, the two flashes), a colour bank per fixture group on keys 1-0, and the two-colour mixes in a 3-page frame |
+| Middle | movement shapes, the beams' 20 gobos and 17 colour-wheel positions, prism, the 90 matrix effects in a 3-page frame, and the per-group colour wheels and matrix cycles |
+| Right | an XY pad over the twelve moving heads, speed dials for the colour wheels and the movement, the dimmer looks, the strobes, one live matrix control, and the audio triggers |
+
+Two rules shape it:
+
+- **A function and the functions it starts never share a solo frame.** A solo
+  frame stops every other widget's function as soon as one starts, and a Toggle
+  button reports its function starting however it was started - so AUTO in the
+  same solo frame as `Rueda Colores` dies the instant it starts it. Masters and
+  chasers live in plain frames; only leaf looks are grouped solo.
+- **What does not fit goes on a page, not below the fold.** The mixes and the
+  matrices are multipage frames with the page arrows in their header.
+
 ## Keyboard
 
 Taken from the hand-built console, so muscle memory carries over:
@@ -47,13 +68,49 @@ Taken from the hand-built console, so muscle memory carries over:
 | `G` / `C` / `P` | Gobos / colores de beam / prisma |
 | `J` | Humo Auto |
 | `X` | Luces ON |
+| `V` / `Z` | Dimmer Chase / Dimmer PingPong |
+| `S` / `D` | Strobo ON / OFF (shutter) |
+| `F` / `T` | Strobo Rapido / Medio (flash) |
 | `B` / `º` | Todo Blanco / Todo Negro |
 | `Space` | Flash 100% (Flash, not Toggle) |
 | `-` | Flash 50% (Flash) |
 
-The hand-built console also had per-colour keys 1-0 on each bank, speed dials on
-`M`, an XY pad for the heads, dimmer chases on V/B/C/Z and strobe effects. Those
-are **not generated yet**.
+Keys 1-0 are on every colour bank, as in the hand-built console: every widget
+sees every key press, so `1` lights red on the heads, the bars and the PARs at
+once.
+
+The hand-built console has the dimmer chases on V/B/C/Z; `B` and `C` are
+already Todo Blanco and Color Beam here, so they moved rather than clash. Every
+button's key is unique, checked by a test, because every widget sees every key
+press - two buttons on one letter would fire both.
+
+## Intensity and strobes
+
+Colour is not the only thing that moves. Two dimmer looks - a chase (an EFX in
+Dimmer mode, the fixtures spread around the path so the peak runs along the rig)
+and an odd/even ping-pong - and four strobes.
+
+The strobes come in two kinds because the rig does. A fixture with a shutter
+strobes itself, and `Strobo ON` / `Strobo OFF` drive it - but **only where the
+fixture definition labels a strobe range**. Guessing on an unlabelled shutter
+channel is how a head goes dark mid-set: a MiN Wash puts "Closed" at 1-7. The
+LED bars and PARs have no shutter, so `Strobo Rapido` and `Strobo Medio` do it
+the way the hand-built show does - a chaser flipping the whole rig between
+`Flash 100%` and `Todo Negro`, at 50 ms and 250 ms.
+
+None of these is in `AUTO`. They are for somebody standing at the laptop: a
+strobe running unattended all night is not a decision to make by default.
+
+## Audio triggers
+
+Five spectrum bands, two of them bound: the bass presses `Todo Blanco` and the
+upper mids press `Strobo Rapido`. Both targets are Toggle buttons on purpose - a
+band calls `pressFunction` on the way up and again on the way down, so a Flash
+button would latch on and never release.
+
+It is inert until somebody enables it, and it needs an audio input picked in
+QLC+'s Configuration first. The thresholds and the pairing are a decision to
+make at the venue with the real music playing.
 
 ## Starting it without anyone there
 
