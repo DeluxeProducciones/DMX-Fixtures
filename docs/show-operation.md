@@ -36,6 +36,12 @@ console" below.
   the Cabezas group, so "the heads are red" has to reach them too; a bank that
   colours the fixtures with red channels and skips the four with a colour wheel
   leaves them on last night's magenta.
+- **A group is a picture, not a container.** An RGBMatrix paints one grid
+  across every head of a group, so two kinds of light in one group are two
+  halves of one picture - and the half that occupies fewer columns is dark
+  whenever the sweep is elsewhere. The two LED bars, the four wall panels, the
+  moving heads and the PARs each have their own group and their own grid, sized
+  exactly to what is in it.
 - **An effect gets time to finish.** An RGBMatrix walks a fixed number of
   frames that depends on the script and on the grid - a Fill over the eight-wide
   bars is eight of them, a Waves is twelve - so the cycle holds each one for a
