@@ -23,6 +23,20 @@ console" below.
   inside an energy level: a level that owns the bars' colour hands it back on
   every step, and two levels running at once put two colour sources on one
   fixture. Which is exactly what the old console let somebody press.
+- **A fixture with no RGB has to be written to on purpose.** The four BEAM
+  230W 7R carry their colour on a wheel, so every generator built on
+  `color_scene_values` skipped them: it looks for a red channel and moves on.
+  `Blanco Total` and the two flashes left them black - not dimmed, never
+  written to - until they were given the wheel position nearest the colour plus
+  their dimmer *and their shutter*, which is what `wheel_color_values` does.
+- **A matrix writes RGB and nothing else.** The HYULIGHTS panels keep a master
+  dimmer on their first channel and a shutter on their fifth, and no matrix
+  touches either. The rig-wide wheel used to open them by accident, on every
+  step; taking those fixtures off the wheel took that away too and left them
+  coloured and dark, lit only under a flat scene like `Flash 100%`. `Pixeles
+  ON` holds their intensity open and carries no colour at all, and it travels
+  everywhere the pixel cycle travels - into `AUTO` and into every moment that
+  runs one.
 - **The night goes somewhere.** Every professional room is built as a handful of
   looks per energy level, and moves between them; strobes, fast movement, prism
   and big chases are held back for the peak, because a rig that spends
@@ -79,7 +93,9 @@ console" below.
 
 `qlctool newshow` builds all of it on the existing patch. Structure:
 
-- Base looks: `Blanco Total`, `Todo Negro`, `Flash 100%`, `Flash 50%`. One
+- Base looks: `Blanco Total`, `Todo Negro`, `Flash 100%`, `Flash 50%`, and
+  `Pixeles ON` - the intensity of the pixel groups, whose colour is their
+  matrix's. One
   white, not three: `Luces ON`, `Todo Blanco` and `Flash 100%` were all full
   white on the same fixtures, which is why nobody could say what the difference
   was - there was none. What is left is a latched work light (`Blanco Total`)
