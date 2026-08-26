@@ -309,9 +309,10 @@ really has.
 
 | ID | Name | Grid | Fixtures |
 | --- | --- | --- | --- |
-| 0 | BarrasLed | 8x3 | 2, 3, 24, 25, 27, 28 |
-| 1 | Cabezas | 8x1 | 0, 1, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23 |
-| 2 | PAR | 3x3 | 6-12 |
+| 0 | BarrasLed | 8x2 | 2, 3 |
+| 1 | Cabezas | 12x1 | 0, 1, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23 |
+| 2 | PAR | 15x1 (7x1 on the pre-split patch) | 6-12, 29-36 |
+| 3 | PixelesLed | 4x1 | 24, 25, 27, 28 |
 
 Groups are what an RGBMatrix paints onto, and what the colour banks are built
 per - so a fixture in no group gets neither, and a fixture in *two* gets two of
@@ -321,6 +322,23 @@ each. That second half is not obvious and cost a night: see the beams below.
 cells a group *declares*, not the heads it holds, so row 2 - the four beams and
 the pixel panels - was unreachable by every matrix in the show. The grid is now
 8x3 and the panels are reachable.
+
+**The four wall panels left the group on 2026-08-26 as well**, into a
+`PixelesLed` group of their own, and the owner is the one who saw it: "los 4
+pixel led no tienen que ir con las 2 barras led, son luces diferentes". A group
+is not a container, it is a *picture*: an RGBMatrix paints one grid across
+every head in it, so four single-cell panels sharing the bars' 8x3 grid were
+four cells of the bars' picture, sitting in columns 4-7 of the bottom row and
+therefore dark through the first half of every horizontal sweep. Now they have
+a 4x1 grid, their own colour bank and their own matrices.
+
+**Every grid is now exactly the size of its group.** A cell with no head is a
+frame of every sweep where part of the group is dark for nothing; a head
+outside the grid is a fixture no effect can reach. Both were present at once -
+`BarrasLed` had four empty cells and `Cabezas` declared 8x1 over twelve heads,
+four of them unreachable. `qlctool patch --group-reshape` re-lays a group's
+heads in reading order into a grid that fits, and `qlctool check`'s `rejilla`
+rule refuses to let it happen again.
 
 **The four beams left the group on 2026-08-26**, and `qlctool check` is why.
 Being in a group is not only being in its grid: colour banks are generated per
