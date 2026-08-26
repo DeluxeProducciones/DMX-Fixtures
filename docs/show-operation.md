@@ -23,12 +23,19 @@ console" below.
   inside an energy level: a level that owns the bars' colour hands it back on
   every step, and two levels running at once put two colour sources on one
   fixture. Which is exactly what the old console let somebody press.
+- **Nothing here is trusted to stay true by itself.** Every rule in this
+  section is a rule `qlctool check` enforces over every button on the console -
+  see [checks.md](checks.md). The show ran on luck until it had one.
 - **A fixture with no RGB has to be written to on purpose.** The four BEAM
   230W 7R carry their colour on a wheel, so every generator built on
   `color_scene_values` skipped them: it looks for a red channel and moves on.
   `Blanco Total` and the two flashes left them black - not dimmed, never
   written to - until they were given the wheel position nearest the colour plus
   their dimmer *and their shutter*, which is what `wheel_color_values` does.
+- **A colour bank colours its whole group, wheels included.** The beams sit in
+  the Cabezas group, so "the heads are red" has to reach them too; a bank that
+  colours the fixtures with red channels and skips the four with a colour wheel
+  leaves them on last night's magenta.
 - **A matrix writes RGB and nothing else.** The HYULIGHTS panels keep a master
   dimmer on their first channel and a shutter on their fifth, and no matrix
   touches either. The rig-wide wheel used to open them by accident, on every
