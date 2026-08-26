@@ -36,6 +36,17 @@ console" below.
   the Cabezas group, so "the heads are red" has to reach them too; a bank that
   colours the fixtures with red channels and skips the four with a colour wheel
   leaves them on last night's magenta.
+- **An effect gets time to finish.** An RGBMatrix walks a fixed number of
+  frames that depends on the script and on the grid - a Fill over the eight-wide
+  bars is eight of them, a Waves is twelve - so the cycle holds each one for a
+  full pass at its own speed rather than for a flat two seconds. Cutting a Fill
+  in half is what made the bars light halfway, jump colour, and light halfway
+  again all night.
+- **The unattended cycle carries no strobe.** The `Strobe` matrices are still
+  generated and still on the console; they are simply not among the steps of
+  `Ciclo Matrices`. A strobe is a button somebody holds - the same rule the
+  shutter strobes already followed - and six of them rotating through a cycle
+  is what the room read as "the pixels are off half the time".
 - **A matrix writes RGB and nothing else.** The HYULIGHTS panels keep a master
   dimmer on their first channel and a shutter on their fifth, and no matrix
   touches either. The rig-wide wheel used to open them by accident, on every
