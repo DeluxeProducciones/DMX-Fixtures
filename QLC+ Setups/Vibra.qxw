@@ -12356,7 +12356,7 @@
             <Resource>Waves</Resource>
           </Control>
         </Matrix>
-        <Label Caption="Esta página es el almacén: los 90 pares de colores y las 90 matrices" ID="417" Page="2">
+        <Label Caption="Esta página es el almacén: las mezclas de dos colores, las matrices y" ID="417" Page="2">
           <WindowState Visible="True" X="8" Y="310" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -12366,7 +12366,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="que el show usa por dentro. Están aquí para mirarlos y para construir" ID="418" Page="2">
+        <Label Caption="los 42 efectos propios de los paneles. Están aquí para mirarlos y para" ID="418" Page="2">
           <WindowState Visible="True" X="8" Y="336" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -12376,7 +12376,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="AUTO con ellos, no para pulsarlos con la sala llena." ID="419" Page="2">
+        <Label Caption="construir AUTO con ellos, no para pulsarlos con la sala llena." ID="419" Page="2">
           <WindowState Visible="True" X="8" Y="362" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -12396,7 +12396,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Las flechas de la cabecera de cada marco cambian de grupo: barras," ID="421" Page="2">
+        <Label Caption="Las flechas de la cabecera de cada marco cambian de grupo: cada grupo" ID="421" Page="2">
           <WindowState Visible="True" X="8" Y="414" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -12406,7 +12406,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="cabezas y PAR tienen cada uno sus 30 mezclas y sus 30 matrices." ID="422" Page="2">
+        <Label Caption="de luces tiene sus propias mezclas y sus propias matrices." ID="422" Page="2">
           <WindowState Visible="True" X="8" Y="440" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -12426,7 +12426,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Las ruedas por grupo pintan los mismos fixtures que la rueda general." ID="424" Page="2">
+        <Label Caption="Los 42 efectos de los paneles no los ha visto nadie todavía: el aparato" ID="424" Page="2">
           <WindowState Visible="True" X="8" Y="492" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -12436,7 +12436,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Encender las dos a la vez suma los dos colores: sale blanco." ID="425" Page="2">
+        <Label Caption="solo los llama «Effect N». Pulsa, mira, y apunta cuáles valen la pena." ID="425" Page="2">
           <WindowState Visible="True" X="8" Y="518" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -12446,7 +12446,37 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <AudioTriggers BarsNumber="5" Caption="Audio (hay que elegir entrada en Configuración)" ID="426" Page="1">
+        <Label Caption="· · ·" ID="426" Page="2">
+          <WindowState Visible="True" X="8" Y="544" Width="524" Height="24"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
+          </Appearance>
+        </Label>
+        <Label Caption="Las ruedas por grupo pintan los mismos fixtures que la rueda general." ID="427" Page="2">
+          <WindowState Visible="True" X="8" Y="570" Width="524" Height="24"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
+          </Appearance>
+        </Label>
+        <Label Caption="Encender las dos a la vez suma los dos colores: sale blanco." ID="428" Page="2">
+          <WindowState Visible="True" X="8" Y="596" Width="524" Height="24"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
+          </Appearance>
+        </Label>
+        <AudioTriggers BarsNumber="5" Caption="Audio (hay que elegir entrada en Configuración)" ID="429" Page="1">
           <WindowState Visible="True" X="1176" Y="330" Width="256" Height="110"/>
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
