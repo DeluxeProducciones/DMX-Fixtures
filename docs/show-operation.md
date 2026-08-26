@@ -36,6 +36,11 @@ console" below.
   the Cabezas group, so "the heads are red" has to reach them too; a bank that
   colours the fixtures with red channels and skips the four with a colour wheel
   leaves them on last night's magenta.
+- **A fixture that animates itself is left to.** The four panels carry 42
+  built-in effects behind a mode channel; under `AUTO` and the lively moments
+  they run `Ciclo Paneles` rather than taking the rig's colour, because in that
+  mode they ignore red, green and blue anyway. Every colour look drives the mode
+  channel back to off, so anything that means to colour them can.
 - **A group is a picture, not a container.** An RGBMatrix paints one grid
   across every head of a group, so two kinds of light in one group are two
   halves of one picture - and the half that occupies fewer columns is dark

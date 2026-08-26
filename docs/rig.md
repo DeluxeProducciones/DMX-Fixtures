@@ -323,6 +323,24 @@ cells a group *declares*, not the heads it holds, so row 2 - the four beams and
 the pixel panels - was unreachable by every matrix in the show. The grid is now
 8x3 and the panels are reachable.
 
+**The panels animate themselves, and the show ignored it until 2026-08-26.**
+Their eight-channel mode carries three channels nothing was driving: a *mode*
+channel (0 "No function", 1-85 Mixer Color, 86-171 **Auto Mode**, 172-255 Sound
+Mode), a channel choosing one of **42 built-in effects**, and a speed. Left at
+zero, as an untouched channel is, the fixture is four RGB cells - which is all
+this rig ever asked of it. `Ciclo Paneles` now walks the 42 under `AUTO` and in
+the lively moments, and all 42 are on the console because nobody has watched
+them: the definition names them "Effect 1" to "Effect 42" and there is no
+manual for them in `Manual/`.
+
+Two consequences, both traps. In Auto Mode the fixture **ignores red, green and
+blue**, so the panels came off the rig-wide colour wheel and their matrices are
+no longer generated - a four-cell chase over a fixture with 42 animations of
+its own was never worth having. And the mode channel is **sticky**: every scene
+that states a colour now drives it back to "No function", the same way it drives
+the shutter open, or the panel keeps running last night's effect through a
+speech. `qlctool check`'s `programa interno` rule is what keeps that true.
+
 **The four wall panels left the group on 2026-08-26 as well**, into a
 `PixelesLed` group of their own, and the owner is the one who saw it: "los 4
 pixel led no tienen que ir con las 2 barras led, son luces diferentes". A group
