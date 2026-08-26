@@ -39,6 +39,12 @@ Regenerating a show means regenerating all three (`Vibra.qxw`,
 `Vibra-beats.qxw`, `Vibra-split.qxw`) and validating each with `--validate`,
 which loads it in headless QLC+.
 
+## The backlog
+
+`TODO.md` in this repo, not `~/p/TODO.md` — it moved here on 2026-08-26. Read
+it at the start and end of related work; closed items go to `~/p/TODO_LOG.md`
+with the date and the evidence, then out of the backlog.
+
 ## What lives where
 
 - `QLC+ Setups/` - the workspaces. `Vibra-split.qxw` carries the current patch.
@@ -46,6 +52,8 @@ which loads it in headless QLC+.
 - `docs/` - the public findings: the file format, the rig, how the show is
   operated, the checks, the toolkit.
 - `tools/qlctool/` - the generator. One exported unit per file.
+- `TODO.md` - what is still open, and what is blocked on somebody watching the
+  rig.
 
 The private context - the show machine, its access, and the decisions behind
 the work - is in `~/p/brain/projects/vibra-dmx.md`.
