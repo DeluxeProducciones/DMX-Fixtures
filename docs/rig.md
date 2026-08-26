@@ -309,18 +309,27 @@ really has.
 
 | ID | Name | Grid | Fixtures |
 | --- | --- | --- | --- |
-| 0 | BarrasLed | 8x3 | 2, 3, 20, 21, 22, 23, 24, 25, 27, 28 |
+| 0 | BarrasLed | 8x3 | 2, 3, 24, 25, 27, 28 |
 | 1 | Cabezas | 8x1 | 0, 1, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23 |
 | 2 | PAR | 3x3 | 6-12 |
 
 Groups are what an RGBMatrix paints onto, and what the colour banks are built
-per - so a fixture in no group gets neither.
+per - so a fixture in no group gets neither, and a fixture in *two* gets two of
+each. That second half is not obvious and cost a night: see the beams below.
 
 **`BarrasLed` declared 8x2 over three rows of heads.** An RGBMatrix paints the
 cells a group *declares*, not the heads it holds, so row 2 - the four beams and
 the pixel panels - was unreachable by every matrix in the show. The grid is now
-8x3 and row 2 holds the four beams and the four pixel panels. The beams have no
-RGB and stay dark in a matrix either way; the panels no longer do.
+8x3 and the panels are reachable.
+
+**The four beams left the group on 2026-08-26**, and `qlctool check` is why.
+Being in a group is not only being in its grid: colour banks are generated per
+group too, so the beams were in the bars' colour bank *and* the heads', and
+`Rueda Mezcla` - a Collection over the three groups' mix wheels - started two
+of them writing the beams' colour wheel at once. A matrix does nothing on a
+fixture with no RGB, so the grid loses nothing. Their four cells in row 2 stay
+empty rather than being closed up: a matrix paints the grid the group declares,
+and shuffling the survivors would move every remaining head in every pattern.
 
 ## Smoke machines
 
