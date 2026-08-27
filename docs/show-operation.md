@@ -314,6 +314,30 @@ make at the venue with the real music playing.
 QLC+ can do the last step itself: set a **startup function** (the green flag in
 the Function Manager) to `AUTO`, and turn on **Project autostart** under
 Configuration → System. Then powering the laptop on brings the show up with no
-clicks. Command line does the same for a kiosk setup: `-o <file> -p` opens the
-workspace and goes straight to operate mode, `-k` shows only the Virtual
-Console.
+clicks. Command line does the kiosk half of that job too:
+`qlcplus -k -f -o "QLC+ Setups/Vibra-split.qxw"` opens straight to the Virtual
+Console (`-k`), fullscreen (`-f`), with the workspace loaded (`-o`) - no
+clicks needed at the laptop. There is no `-p` to add to that on this build:
+it was a v4-only operate flag, absent from the installed 5.2.2's option list
+(confirmed against the real binary, see
+[qlc5-verification.md](qlc5-verification.md)), and `-k` alone is what gets to
+the console.
+
+**Kiosk mode has no on-screen exit.** `App::createKioskCloseButton()` is an
+empty stub in this build, so nothing on the screen closes the window; `Cmd+Q`
+still does.
+
+## The console on a phone
+
+`-w` turns on QLC+'s own web server, on port 9999 unless `--wp <port>`
+overrides it - `-w`/`--wp` confirmed on the installed 5.2.2, the default port
+number read from the same engine source that grounds the rest of this repo's
+QLC+5 claims (`webaccessbase.cpp`, `DEFAULT_PORT_NUMBER`). Add it to the
+launch line: `qlcplus -k -f -w -o "QLC+ Setups/Vibra-split.qxw"`. Then, phone
+and Mac on the same network, `http://<mac-ip>:9999` in a browser gets a touch
+copy of the Virtual Console - useful for confirming a look while standing at
+the rig instead of at the laptop, which is what most of the "confirm on site"
+items in `TODO.md` are waiting on. The web build declares Button, Frame and
+SpeedDial support (also Slider, XYPad, CueList, Clock, AudioTriggers), so page
+1's frames and buttons and page 2's two speed dials all come through - the
+phone shows what the laptop shows, not a cut-down page.
