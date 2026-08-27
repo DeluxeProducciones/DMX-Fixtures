@@ -227,7 +227,9 @@ solo frame, because a fixed aim and a drawn figure are exclusive - the beams'
 gobos and colour-wheel positions, a pad over the twelve heads big enough to
 aim with, the two speed dials, the dimmer looks, the fixture strobes, the
 `Master General` slider (the workspace's own GrandMaster, scaling every output
-under whatever is already running), and the audio triggers.
+under whatever is already running), and the audio triggers. The prism frame
+carries the hand-built console's per-beam picks beside all-on and all-off:
+`1`-`4`, `1 y 3`, `2 y 4`, the beams numbered by DMX address.
 
 The beams' wheels are here rather than in the library because picking a gobo is
 a live decision: somebody does it while the show runs.
@@ -235,8 +237,11 @@ a live decision: somebody does it while the show runs.
 ### Page 3 - Librería
 
 The material the show is built from, not buttons for a set: the two-colour
-mixes, the matrix effects, the per-group wheels and matrix cycles, the panels'
-forty-two built-in effects, and beside those a `Vel. Paneles` fader - a Level
+mixes, the matrix effects, the per-group wheels and matrix cycles, the
+`MultiColor BEAM` looks (the beams' continuous half-colour channel - two
+colours in one beam - per beam and per mirrored pair, the old console's
+"Multi Color"), the panels' forty-two built-in effects, and beside those a
+`Vel. Paneles` fader - a Level
 slider over the four panels' speed channel, the hand-built console's "Strobo
 LED Effect Speed". At zero the cycle's own value (200) rules, because Level
 mixes HTP; pushed up it paces the running effect live. The two
