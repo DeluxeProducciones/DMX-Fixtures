@@ -203,7 +203,7 @@ only one built with big buttons and sentences on them.
 | --- | --- |
 | `LA SALA ESTÁ ASÍ` (solo) | `AUTO` at a quarter of the screen, the four moments, `BLANCO TOTAL` (work light) and `TODO NEGRO`. Exactly one runs at a time |
 | `GOLPES` (plain) | `FLASH`, `FLASH SUAVE`, `HUMO YA`, `STROBO`, `STROBO SUAVE`, `COLOR BEAM`. These add to whatever state is running |
-| `SI ALGO VA MAL` | `PARAR TODO` - a `StopAll` button with a 1 s fade, driving no function of its own |
+| `SI ALGO VA MAL` | `PARAR TODO` - a `StopAll` button with a 1 s fade, driving no function of its own. `APAGON` - a `Blackout` action, and it latches: the first press forces every output to zero regardless of what is running underneath; the second press lifts it and gives that back. AUTO does nothing while the room is blacked out - it has to be pressed after the second `APAGON`, not instead of it |
 
 Every button on this page carries its own key in its caption (`AUTO — el show
 se lleva solo · Q`), and five lines of plain Spanish under the frames say what
@@ -222,7 +222,9 @@ For somebody who does know the rig: the layers, on top of whatever page 1 is
 running. The colour bank per fixture group on keys 1-0 (now with the colour
 named on the button), the wheels, the movement shapes, the beams' gobos and
 colour-wheel positions, a pad over the twelve heads big enough to aim with, the
-two speed dials, the dimmer looks, the fixture strobes, and the audio triggers.
+two speed dials, the dimmer looks, the fixture strobes, the `Master General`
+slider (the workspace's own GrandMaster, scaling every output under whatever
+is already running), and the audio triggers.
 
 The beams' wheels are here rather than in the library because picking a gobo is
 a live decision: somebody does it while the show runs.
@@ -298,16 +300,22 @@ strobe running unattended all night is not a decision to make by default.
 
 ## Audio triggers
 
-Five spectrum bands, one of them bound: the upper mids press `Strobo Rapido`.
-Its target is a Toggle button on purpose - a band calls `pressFunction` on the
-way up and again on the way down, so a Flash button would latch on and never
-release - and it is a Toggle button **in a plain frame**, which the bass band's
-old target was not: `Todo Blanco` now lives in the room-state solo frame, so
-binding a bass line to it would have had the music killing `AUTO` on every kick.
+Five spectrum bands, one of them bound: the bass presses `Flash 100%`, one of
+the GOLPES hits. A Flash button is the right target for a bar, not the wrong
+one - a bar calls `pressFunction` on the way up and `releaseFunction` on the
+way down, exactly how a Flash button expects to be worked, so it lets go on
+its own the moment the level drops rather than latching on for the rest of
+the night. `Flash 100%` also lives in a plain frame, outside any solo frame:
+the bass line's old target, `Blanco Total`, sits in the room-state solo frame,
+so binding it there would have had the music killing `AUTO` on every kick with
+nothing to bring it back.
 
-It is inert until somebody enables it, and it needs an audio input picked in
-QLC+'s Configuration first. The thresholds and the pairing are a decision to
-make at the venue with the real music playing.
+The other four bands ship deliberately unbound - not a setting left for
+somebody at the venue, an empty pairing the generator ships on purpose, so no
+strobe or chase can be triggered by the room's own music with nobody
+deciding when. Binding one is a decision to make at the venue with the real
+music playing: the threshold and the target both need tuning by ear, and it
+needs an audio input picked in QLC+'s Configuration first.
 
 ## Starting it without anyone there
 
