@@ -10962,7 +10962,7 @@
             </Appearance>
           </Label>
           <Button Caption="Fill Rojo" ID="275" Icon="">
-            <WindowState Visible="True" X="6" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -10976,7 +10976,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Verde" ID="276" Icon="">
-            <WindowState Visible="True" X="108" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -10990,7 +10990,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Azul" ID="277" Icon="">
-            <WindowState Visible="True" X="210" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11004,7 +11004,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Ambar" ID="278" Icon="">
-            <WindowState Visible="True" X="312" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11018,7 +11018,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Magenta" ID="279" Icon="">
-            <WindowState Visible="True" X="414" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11032,7 +11032,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Blanco" ID="280" Icon="">
-            <WindowState Visible="True" X="516" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11046,7 +11046,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Rojo" ID="281" Icon="">
-            <WindowState Visible="True" X="6" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11060,7 +11060,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Verde" ID="282" Icon="">
-            <WindowState Visible="True" X="108" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11074,7 +11074,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Azul" ID="283" Icon="">
-            <WindowState Visible="True" X="210" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11088,7 +11088,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Ambar" ID="284" Icon="">
-            <WindowState Visible="True" X="312" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11102,7 +11102,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Magenta" ID="285" Icon="">
-            <WindowState Visible="True" X="414" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11116,7 +11116,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Blanco" ID="286" Icon="">
-            <WindowState Visible="True" X="516" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11130,7 +11130,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Rojo" ID="287" Icon="">
-            <WindowState Visible="True" X="6" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11144,7 +11144,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Verde" ID="288" Icon="">
-            <WindowState Visible="True" X="108" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11158,7 +11158,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Azul" ID="289" Icon="">
-            <WindowState Visible="True" X="210" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11172,7 +11172,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Ambar" ID="290" Icon="">
-            <WindowState Visible="True" X="312" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11186,7 +11186,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Magenta" ID="291" Icon="">
-            <WindowState Visible="True" X="414" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11200,7 +11200,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Blanco" ID="292" Icon="">
-            <WindowState Visible="True" X="516" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11214,7 +11214,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Rojo" ID="293" Icon="">
-            <WindowState Visible="True" X="6" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11228,7 +11228,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Verde" ID="294" Icon="">
-            <WindowState Visible="True" X="108" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11242,7 +11242,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Azul" ID="295" Icon="">
-            <WindowState Visible="True" X="210" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11256,7 +11256,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Ambar" ID="296" Icon="">
-            <WindowState Visible="True" X="312" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11270,7 +11270,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Magenta" ID="297" Icon="">
-            <WindowState Visible="True" X="414" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11284,7 +11284,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Blanco" ID="298" Icon="">
-            <WindowState Visible="True" X="516" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11298,7 +11298,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Rojo" ID="299" Icon="">
-            <WindowState Visible="True" X="6" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11312,7 +11312,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Verde" ID="300" Icon="">
-            <WindowState Visible="True" X="108" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11326,7 +11326,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Azul" ID="301" Icon="">
-            <WindowState Visible="True" X="210" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11340,7 +11340,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Ambar" ID="302" Icon="">
-            <WindowState Visible="True" X="312" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11354,7 +11354,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Magenta" ID="303" Icon="">
-            <WindowState Visible="True" X="414" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11368,7 +11368,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Blanco" ID="304" Icon="">
-            <WindowState Visible="True" X="516" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11382,7 +11382,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Sine Wave Rojo/Azul" ID="305" Icon="">
-            <WindowState Visible="True" X="6" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11396,7 +11396,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Lines Verde" ID="306" Icon="">
-            <WindowState Visible="True" X="108" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11410,7 +11410,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Marquee Amarillo/Azul" ID="307" Icon="">
-            <WindowState Visible="True" X="210" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11424,7 +11424,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Plasma Blanco" ID="308" Icon="">
-            <WindowState Visible="True" X="312" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11448,7 +11448,7 @@
             </Appearance>
           </Label>
           <Button Caption="Fill Rojo" ID="310" Icon="" Page="1">
-            <WindowState Visible="True" X="6" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11462,7 +11462,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Verde" ID="311" Icon="" Page="1">
-            <WindowState Visible="True" X="108" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11476,7 +11476,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Azul" ID="312" Icon="" Page="1">
-            <WindowState Visible="True" X="210" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11490,7 +11490,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Ambar" ID="313" Icon="" Page="1">
-            <WindowState Visible="True" X="312" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11504,7 +11504,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Magenta" ID="314" Icon="" Page="1">
-            <WindowState Visible="True" X="414" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11518,7 +11518,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Blanco" ID="315" Icon="" Page="1">
-            <WindowState Visible="True" X="516" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11532,7 +11532,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Rojo" ID="316" Icon="" Page="1">
-            <WindowState Visible="True" X="6" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11546,7 +11546,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Verde" ID="317" Icon="" Page="1">
-            <WindowState Visible="True" X="108" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11560,7 +11560,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Azul" ID="318" Icon="" Page="1">
-            <WindowState Visible="True" X="210" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11574,7 +11574,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Ambar" ID="319" Icon="" Page="1">
-            <WindowState Visible="True" X="312" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11588,7 +11588,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Magenta" ID="320" Icon="" Page="1">
-            <WindowState Visible="True" X="414" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11602,7 +11602,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Blanco" ID="321" Icon="" Page="1">
-            <WindowState Visible="True" X="516" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11616,7 +11616,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Rojo" ID="322" Icon="" Page="1">
-            <WindowState Visible="True" X="6" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11630,7 +11630,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Verde" ID="323" Icon="" Page="1">
-            <WindowState Visible="True" X="108" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11644,7 +11644,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Azul" ID="324" Icon="" Page="1">
-            <WindowState Visible="True" X="210" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11658,7 +11658,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Ambar" ID="325" Icon="" Page="1">
-            <WindowState Visible="True" X="312" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11672,7 +11672,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Magenta" ID="326" Icon="" Page="1">
-            <WindowState Visible="True" X="414" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11686,7 +11686,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Blanco" ID="327" Icon="" Page="1">
-            <WindowState Visible="True" X="516" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11700,7 +11700,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Rojo" ID="328" Icon="" Page="1">
-            <WindowState Visible="True" X="6" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11714,7 +11714,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Verde" ID="329" Icon="" Page="1">
-            <WindowState Visible="True" X="108" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11728,7 +11728,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Azul" ID="330" Icon="" Page="1">
-            <WindowState Visible="True" X="210" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11742,7 +11742,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Ambar" ID="331" Icon="" Page="1">
-            <WindowState Visible="True" X="312" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11756,7 +11756,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Magenta" ID="332" Icon="" Page="1">
-            <WindowState Visible="True" X="414" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11770,7 +11770,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Blanco" ID="333" Icon="" Page="1">
-            <WindowState Visible="True" X="516" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11784,7 +11784,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Rojo" ID="334" Icon="" Page="1">
-            <WindowState Visible="True" X="6" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11798,7 +11798,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Verde" ID="335" Icon="" Page="1">
-            <WindowState Visible="True" X="108" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11812,7 +11812,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Azul" ID="336" Icon="" Page="1">
-            <WindowState Visible="True" X="210" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11826,7 +11826,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Ambar" ID="337" Icon="" Page="1">
-            <WindowState Visible="True" X="312" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11840,7 +11840,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Magenta" ID="338" Icon="" Page="1">
-            <WindowState Visible="True" X="414" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11854,7 +11854,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Blanco" ID="339" Icon="" Page="1">
-            <WindowState Visible="True" X="516" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11868,7 +11868,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="One By One Cyan" ID="340" Icon="" Page="1">
-            <WindowState Visible="True" X="6" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11882,7 +11882,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Unfill Naranja" ID="341" Icon="" Page="1">
-            <WindowState Visible="True" X="108" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11896,7 +11896,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Noise Rosa" ID="342" Icon="" Page="1">
-            <WindowState Visible="True" X="210" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11920,7 +11920,7 @@
             </Appearance>
           </Label>
           <Button Caption="Fill Rojo" ID="344" Icon="" Page="2">
-            <WindowState Visible="True" X="6" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11934,7 +11934,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Verde" ID="345" Icon="" Page="2">
-            <WindowState Visible="True" X="108" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11948,7 +11948,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Azul" ID="346" Icon="" Page="2">
-            <WindowState Visible="True" X="210" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11962,7 +11962,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Ambar" ID="347" Icon="" Page="2">
-            <WindowState Visible="True" X="312" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11976,7 +11976,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Magenta" ID="348" Icon="" Page="2">
-            <WindowState Visible="True" X="414" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -11990,7 +11990,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Fill Blanco" ID="349" Icon="" Page="2">
-            <WindowState Visible="True" X="516" Y="50" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12004,7 +12004,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Rojo" ID="350" Icon="" Page="2">
-            <WindowState Visible="True" X="6" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12018,7 +12018,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Verde" ID="351" Icon="" Page="2">
-            <WindowState Visible="True" X="108" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12032,7 +12032,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Azul" ID="352" Icon="" Page="2">
-            <WindowState Visible="True" X="210" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12046,7 +12046,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Ambar" ID="353" Icon="" Page="2">
-            <WindowState Visible="True" X="312" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12060,7 +12060,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Magenta" ID="354" Icon="" Page="2">
-            <WindowState Visible="True" X="414" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12074,7 +12074,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Even/Odd Blanco" ID="355" Icon="" Page="2">
-            <WindowState Visible="True" X="516" Y="96" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12088,7 +12088,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Rojo" ID="356" Icon="" Page="2">
-            <WindowState Visible="True" X="6" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12102,7 +12102,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Verde" ID="357" Icon="" Page="2">
-            <WindowState Visible="True" X="108" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12116,7 +12116,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Azul" ID="358" Icon="" Page="2">
-            <WindowState Visible="True" X="210" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12130,7 +12130,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Ambar" ID="359" Icon="" Page="2">
-            <WindowState Visible="True" X="312" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12144,7 +12144,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Magenta" ID="360" Icon="" Page="2">
-            <WindowState Visible="True" X="414" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12158,7 +12158,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Strobe Blanco" ID="361" Icon="" Page="2">
-            <WindowState Visible="True" X="516" Y="142" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12172,7 +12172,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Rojo" ID="362" Icon="" Page="2">
-            <WindowState Visible="True" X="6" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12186,7 +12186,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Verde" ID="363" Icon="" Page="2">
-            <WindowState Visible="True" X="108" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12200,7 +12200,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Azul" ID="364" Icon="" Page="2">
-            <WindowState Visible="True" X="210" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12214,7 +12214,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Ambar" ID="365" Icon="" Page="2">
-            <WindowState Visible="True" X="312" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12228,7 +12228,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Magenta" ID="366" Icon="" Page="2">
-            <WindowState Visible="True" X="414" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12242,7 +12242,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Waves Blanco" ID="367" Icon="" Page="2">
-            <WindowState Visible="True" X="516" Y="188" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12256,7 +12256,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Rojo" ID="368" Icon="" Page="2">
-            <WindowState Visible="True" X="6" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12270,7 +12270,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Verde" ID="369" Icon="" Page="2">
-            <WindowState Visible="True" X="108" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12284,7 +12284,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Azul" ID="370" Icon="" Page="2">
-            <WindowState Visible="True" X="210" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="446" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12298,7 +12298,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Ambar" ID="371" Icon="" Page="2">
-            <WindowState Visible="True" X="312" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="534" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12312,7 +12312,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Magenta" ID="372" Icon="" Page="2">
-            <WindowState Visible="True" X="414" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="6" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12326,7 +12326,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Solid Blanco" ID="373" Icon="" Page="2">
-            <WindowState Visible="True" X="516" Y="234" Width="96" Height="40"/>
+            <WindowState Visible="True" X="94" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12340,7 +12340,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Circular Rojo" ID="374" Icon="" Page="2">
-            <WindowState Visible="True" X="6" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="182" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12354,7 +12354,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="3D Starfield Blanco" ID="375" Icon="" Page="2">
-            <WindowState Visible="True" X="108" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="270" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
@@ -12368,7 +12368,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
           <Button Caption="Gradient Ambar" ID="376" Icon="" Page="2">
-            <WindowState Visible="True" X="210" Y="280" Width="96" Height="40"/>
+            <WindowState Visible="True" X="358" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
               <ForegroundColor>Default</ForegroundColor>
