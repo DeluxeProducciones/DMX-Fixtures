@@ -220,19 +220,26 @@ that button started it or when the function is the workspace's startup function
 
 For somebody who does know the rig: the layers, on top of whatever page 1 is
 running. The colour bank per fixture group on keys 1-0 (now with the colour
-named on the button), the wheels, the movement shapes, the beams' gobos and
-colour-wheel positions, a pad over the twelve heads big enough to aim with, the
-two speed dials, the dimmer looks, the fixture strobes, the `Master General`
-slider (the workspace's own GrandMaster, scaling every output under whatever
-is already running), and the audio triggers.
+named on the button), the wheels, the movement shapes - with `Escenario` (the
+heads aimed at the stage, pan/tilt carried verbatim from the hand-built show's
+own scene, colour left to the running state) and `Centro` (parked) in the same
+solo frame, because a fixed aim and a drawn figure are exclusive - the beams'
+gobos and colour-wheel positions, a pad over the twelve heads big enough to
+aim with, the two speed dials, the dimmer looks, the fixture strobes, the
+`Master General` slider (the workspace's own GrandMaster, scaling every output
+under whatever is already running), and the audio triggers.
 
 The beams' wheels are here rather than in the library because picking a gobo is
 a live decision: somebody does it while the show runs.
 
 ### Page 3 - Librería
 
-The material the show is built from, not buttons for a set: 90 two-colour
-mixes, 100 matrix effects, and the per-group wheels and matrix cycles. The two
+The material the show is built from, not buttons for a set: the two-colour
+mixes, the matrix effects, the per-group wheels and matrix cycles, the panels'
+forty-two built-in effects, and beside those a `Vel. Paneles` fader - a Level
+slider over the four panels' speed channel, the hand-built console's "Strobo
+LED Effect Speed". At zero the cycle's own value (200) rules, because Level
+mixes HTP; pushed up it paces the running effect live. The two
 multipage frames inside carry a label per page naming the group, because three
 pages of identically captioned buttons is not a page count, it is a guess - and
 the page carries a paragraph saying what it is for, because 180 buttons
@@ -272,7 +279,8 @@ only keys that cannot collide with a colour bank on 1-0.
 | `A` | Movimientos Cabezas | page 2 |
 | `G` / `P` | Gobos / prisma | page 2 |
 | `J` | Humo Auto | page 2 |
-| `V` / `Z` | Dimmer Chase / Dimmer PingPong | page 2 |
+| `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 2 |
+| `Z` / `M` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
 | `S` / `D` | Strobo ON / OFF (shutter) | page 2 |
 | `PgDn` / `PgUp` | next / previous page | anywhere |
 
@@ -284,9 +292,13 @@ unique, checked by a test.
 
 ## Intensity and strobes
 
-Colour is not the only thing that moves. Two dimmer looks - a chase (an EFX in
-Dimmer mode, the fixtures spread around the path so the peak runs along the rig)
-and an odd/even ping-pong - and four strobes.
+Colour is not the only thing that moves. Four dimmer looks - the running chase
+in both directions (an EFX in Dimmer mode, the fixtures spread around the path
+so the peak runs along the rig; `Dimmer Chase 2` reverses every fixture, the
+hand-built console's key B), an odd/even ping-pong, and `Dimmer Secuencia`
+(key M): the old console's rotation of the three, twenty seconds of steady
+full light between ten-second programmes, restored verbatim from
+DeluxeEventos2's chaser - and four strobes.
 
 The strobes come in two kinds because the rig does. A fixture with a shutter
 strobes itself, and `Strobo ON` / `Strobo OFF` drive it. A labelled strobe
