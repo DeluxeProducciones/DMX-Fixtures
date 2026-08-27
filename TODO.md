@@ -34,6 +34,14 @@ workspaces.
   `M` (rotación de barridos), `Escenario`/`Centro` en el marco de figuras,
   los subsets de prisma `1/2/3/4/1y3/2y4`, los `MultiColor BEAM` de la
   página 3, y el fader `Vel. Paneles`.
+- [ ] **Recrear el look del humo vertical (2026-08-27).** El `HUMO AUTO`
+  viejo (tecla J) no estaba roto: sus pasos eran `Strobo LED - Effect 1/3`
+  (paneles ch6=130, ch7=2 y ch7=14) — la luz que ponían "para poner todo
+  blanco cuando soltamos el humo vertical" (dueño). Con las fotos de los 42
+  efectos se identifica cuáles son esos dos y se monta un botón
+  `Humo Vertical` (paneles a ese efecto blanco + lo que decida el dueño:
+  ¿blanco en el resto del rig?). Decidir también si va en página 1 como
+  golpe o en página 2.
 - [!] **Mirar los 42 efectos internos de los paneles y decir cuales valen.**
   Los WX-60WPS llevan 42 animaciones propias (canal 6 = modo, canal 7 = efecto,
   canal 8 = velocidad) que el show no tocaba: el canal 6 estaba en 0 = "No
