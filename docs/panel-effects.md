@@ -7,10 +7,12 @@ frames, in chronological order. This file is the catalogue those frames give
 us; it is the input for pruning `Ciclo Paneles` down to the effects worth
 cycling all night.
 
-**Status: frame-to-effect-number mapping pending owner confirmation.** 18
-frames arrived for 42 effects, so either several effects share a video or only
-part of the list is covered; a single still also cannot show motion, so each
-description below is one instant of an animation.
+**Mapping (owner, 2026-08-28):** Effects 1-3 are described by text - they are
+full-panel colour cycles, which a still cannot show - and the 18 video frames
+that follow are the next effects in chronological order, so **frame k is
+Effect k+3**: the frames cover Effects 4 through 21. Effects 22-42 have no
+footage yet. A single still is one instant of an animation, so every
+description below is the pattern, not the motion.
 
 ## Named by the owner
 
@@ -27,32 +29,35 @@ ranges. Per this catalogue those are *multicolour* cycles, not white, so the
 file carries. Decision needed (see TODO): build `Humo Vertical` on guaranteed
 white (the manual-mode white scene) rather than copying the old values blind.
 
-## Frames, in the order received (chronological by capture date)
+## Effects 4-21, one video frame each (chronological)
 
-| # | What the still shows |
+| Effect | What the still shows |
 | --- | --- |
-| 1 | Green base, white 2x3 pixel blocks at top and bottom corners (block chase over green) |
-| 2 | Split panel: top red with white blocks stepping down, bottom green with white blocks |
-| 3 | Blue top / green bottom, white block pairs across the top rows |
-| 4 | Multicolour regions (red, blue, green) with white block groups - block chase over colour zones |
-| 5 | Red/cyan/blue plaid mosaic with white clusters |
-| 6 | Full red with a single white 4x6 block in the centre |
-| 7 | Full blue, white block clusters along the top rows |
-| 8 | Full blue, white block pairs on a descending diagonal |
-| 9 | Full green with a single white 4x6 block in the centre |
-| 10 | Full red, many white block clusters scattered |
-| 11 | Full red, left half swept white (vertical wipe) |
-| 12 | Concentric rings: green frame, red ring, blue/cyan, white centre |
-| 13 | Full green, all pixels lit |
-| 14 | Smooth gradient blue -> green -> yellow (rainbow wash) |
-| 15 | Thirds: white-over-green top, white/yellow columns bottom-left, red bottom-right |
-| 16 | Top half white over green, bottom half red (two-band split with white) |
-| 17 | Concentric: blue frame, green, red ring, cyan/white centre |
-| 18 | Green/red mosaic with white and warm-white clusters |
+| 4 | Green base, white 2x3 pixel blocks at top and bottom corners (block chase over green) |
+| 5 | Split panel: top red with white blocks stepping down, bottom green with white blocks |
+| 6 | Blue top / green bottom, white block pairs across the top rows |
+| 7 | Multicolour regions (red, blue, green) with white block groups - block chase over colour zones |
+| 8 | Red/cyan/blue plaid mosaic with white clusters |
+| 9 | Full red with a single white 4x6 block in the centre |
+| 10 | Full blue, white block clusters along the top rows |
+| 11 | Full blue, white block pairs on a descending diagonal |
+| 12 | Full green with a single white 4x6 block in the centre |
+| 13 | Full red, many white block clusters scattered |
+| 14 | Full red, left half swept white (vertical wipe) |
+| 15 | Concentric rings: green frame, red ring, blue/cyan, white centre |
+| 16 | Full green, all pixels lit |
+| 17 | Smooth gradient blue -> green -> yellow (rainbow wash) |
+| 18 | Thirds: white-over-green top, white/yellow columns bottom-left, red bottom-right |
+| 19 | Top half white over green, bottom half red (two-band split with white) |
+| 20 | Concentric: blue frame, green, red ring, cyan/white centre |
+| 21 | Green/red mosaic with white and warm-white clusters |
+
+With this mapping the old vertical-smoke pair reads: Effect 1 (Rueda Multi
+Color Jump) and Effect 3 (fade through black) - full-panel colour cycles,
+still not white. Effect 14 is the closest thing to a white sweep seen so far.
 
 ## Pending from the owner
 
-1. Which effect number each frame belongs to (or which numbers the 18 frames
-   cover, if several frames share one video).
+1. Footage or a look at Effects 22-42 (not covered yet).
 2. The keep-list: which effect numbers stay in `Ciclo Paneles`.
 3. Whether `Humo Vertical` uses one of these or plain manual-mode white.
