@@ -45,6 +45,16 @@ which loads it in headless QLC+.
 it at the start and end of related work; closed items go to `~/p/TODO_LOG.md`
 with the date and the evidence, then out of the backlog.
 
+## QLC+'s own source is at `~/p/qlcplus`
+
+A clone of upstream QLC+ (`master`, the QLC+ 5 line the show runs). When a
+question is about what QLC+ actually does - which XML tags an engine loads,
+how a chaser times its steps, what the 3D view can and cannot render, what an
+RGBMatrix blend mode really is - **read that clone**, not the web and not
+`strings` over the installed binary. `engine/src/` is the engine,
+`qmlui/` is the QLC+ 5 UI and 3D preview, `resources/rgbscripts/` the matrix
+algorithms.
+
 ## What lives where
 
 - `QLC+ Setups/` - the workspaces. `Vibra-split.qxw` carries the current patch.

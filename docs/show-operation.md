@@ -70,11 +70,15 @@ console" below.
   looks per energy level, and moves between them; strobes, fast movement, prism
   and big chases are held back for the peak, because a rig that spends
   everything in the first minute has nowhere to grow. `Ciclo Energia` steps
-  `Nivel Ambiente` (4 min) -> `Nivel Fiesta` (8) -> `Nivel Peak` (2) ->
-  `Nivel Fiesta` (8), a wave rather than a ramp. The colour bed, the pixels and
-  the haze stay **outside** the cycle, which is what keeps a level change from
-  blacking the room out. A level carries movement, gobos, prism and the dimmer
-  chase - never colour.
+  `Nivel Ambiente` (4 min) -> `Nivel Fiesta` (8) -> `Nivel Peak` (40 s) ->
+  `Nivel Fiesta` (8), a wave rather than a ramp - Peak is a burst, because two
+  continuous minutes of fast movement and prism stop reading as a peak at all.
+  The colour bed, the pixels and the haze stay **outside** the cycle, which is
+  what keeps a level change from blacking the room out. A level carries
+  movement, gobos, prism, the dimmer chase **and its own intensity base**
+  (`Intensidad Ambiente` low, `Intensidad Total` full; since 2026-08-27 the
+  colour scenes own no dimmers, so a level change really is a brightness
+  change) - never colour.
 - **A level is not a button.** `Nivel Ambiente`, `Nivel Fiesta` and `Nivel Peak`
   are what the cycle steps; they have no button at all. Pressing one by hand
   gave that level two owners and left the other one running underneath, which
@@ -86,10 +90,19 @@ console" below.
   room back when `AUTO` is pressed again. `Charla` is the one with nothing
   moving in it: warm white, heads parked, no wheel, no matrix - the state where
   change is the enemy.
-- **Ambiente is heads held still.** Stillness is a look, and a head nothing
-  drives sits wherever the last effect abandoned it - often pointing at the
-  ceiling - so the quiet level runs `Cabezas Centro` (mid pan, mid tilt) and the
-  open position of the gobo wheel. Movement is a level, not a background.
+- **Ambiente is alive, slowly.** The first cut parked every head at centre for
+  four minutes, and pressing AUTO looked dead - "el auto es eso, como el modo
+  auto de las cabezas en si" (owner, 2026-08-27). Now the washes breathe
+  through `Movimientos Suaves` (two wide shapes at 28 s a lap), the beams hold
+  the static `Beams Abanico` fan - a needle's rest is a look - the gobo wheel
+  is parked open, and the room sits on the low intensity base. Total stillness
+  belongs to `Charla`, on purpose.
+- **Movement is per optics family.** A wash's soft wide beam and a 7R needle
+  cannot share one geometry: `Movimientos Washes` runs bigger and slower than
+  `Movimientos Beams` (which carries the fan as a rest step), and the Peak
+  pair `Rapidos Washes` / `Rapidos Beams` doubles the pace, each at its own
+  size. `Movimientos Cabezas` and `Movimientos Rapidos` remain the one-press
+  names: Collections over the family chasers.
 - **Everything that cycles is `RunOrder="Random"`.** A fixed order reads as a
   loop within a couple of minutes when nobody is intervening.
 - **Smoke runs on its own timer** - a burst, then a long wait, forever - and is
@@ -134,11 +147,12 @@ console" below.
 - Per fixture group: a bank of solid colours, 30 two-colour mixes, a
   `Rueda Colores <group>` and a `Rueda Mezcla <group>`, both Random
 - Matrix effects per group (algorithm x colour) with a cycle chaser
-- Movement: one EFX per shape over the twelve moving heads, phases spread evenly
-  around the path, on a Random 10s chaser - plus the same shapes at twice the
-  speed (`Movimientos Rapidos`) for the peak, since the speed lives on the EFX
-  and not on the chaser that steps it
-- `Cabezas Centro`, and the three energy levels with `Ciclo Energia` over them
+- Movement per family: wash EFX and beam EFX per shape, phases spread evenly,
+  each family on its own Random chaser, plus the slow wash pair for Ambiente
+  and the fast pair for Peak - the speed lives on the EFX, not on the chaser
+  that steps it. `Beams Abanico` is the beams' static fan and rest step
+- `Cabezas Centro`, `Intensidad Ambiente` / `Intensidad Total`, and the three
+  energy levels with `Ciclo Energia` over them
 - `Luz Charla` and the four moments over the pieces above
 - The beams' gobo wheel (20 positions), colour wheel (17) and prism
 - `Humo Auto`
