@@ -31,17 +31,21 @@ workspaces.
   `flash sin estrobo` + `estrobo incompleto`, tests fechados, los tres
   workspaces regenerados y validados. Falta: pulsar Espacio, `-` y `.` con los
   aparatos delante y confirmar que estroban como el show viejo.
-- [ ] **Decidir qué se rescata del inventario del show viejo (2026-08-27).**
-  Auditoría completa de `DeluxeEventos2.qxw` contra el generado. Aún sin
-  equivalente: la escena `Escenario` (luz al escenario con pan/tilt fijos:
-  fx18-23 ch1/ch2 en ~156-176/189-204 — copiables tal cual, mismo rig);
-  `Cabezas Reposo` y `Movimientos Cabezas Lento`; `Dimmer Chase 2` y
-  `Dimmer Secuencia` (variantes extra de barrido); los subsets por aparato de
-  Prisma y MultiColor (1/2/3/4/1y3/2y4); y el control en vivo de velocidad de
-  los efectos de paneles (slider + secuencia Random 160-255 del show viejo).
-  Nota: el `HUMO AUTO` viejo (tecla J) estaba roto en el show original — su
-  chaser (ID 367) disparaba `Strobo LED - Effect 1/3` (efectos de paneles),
-  no humo; no hay nada que restaurar ahí.
+- [~] **Rescatar el inventario útil del show viejo (2026-08-27, en curso).**
+  Auditoría completa de `DeluxeEventos2.qxw` contra el generado; el dueño
+  confirmó que esas funciones se usaban. Hecho: `Escenario` (pan/tilt medidos
+  del show viejo, por dirección DMX, `generate/stage_aim.py`) + botón
+  `Centro` (la escena aparcada existente) en el marco de figuras; fader
+  `Vel. Paneles` (Level sobre el canal de velocidad, `vc/level_slider.py`).
+  En curso: `Dimmer Chase 2` (barrido inverso, tecla B) y `Dimmer Secuencia`
+  (rotación de barridos con respiro a Intensidad Total, tecla M). Pendiente:
+  subsets por BEAM de Prisma y MultiColor (ch14 Insert / ch9 half-colour a
+  255, combinaciones 1/2/3/4/1y3/2y4/todas del viejo). `Cabezas Reposo` y
+  `Cabezas Lento` NO se restauran: los cubren `Cabezas Centro` y
+  `Ola Suave` + dial de velocidad. Nota: el `HUMO AUTO` viejo (tecla J)
+  estaba roto en el show original — su chaser (ID 367) disparaba
+  `Strobo LED - Effect 1/3` (efectos de paneles), no humo; nada que
+  restaurar ahí.
 - [!] **Mirar los 42 efectos internos de los paneles y decir cuales valen.**
   Los WX-60WPS llevan 42 animaciones propias (canal 6 = modo, canal 7 = efecto,
   canal 8 = velocidad) que el show no tocaba: el canal 6 estaba en 0 = "No
