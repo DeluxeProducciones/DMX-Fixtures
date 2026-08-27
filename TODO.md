@@ -42,8 +42,9 @@ workspaces.
   animacion — ocupaban solo las columnas 4-7 de la fila de abajo. De paso, todas
   las rejillas ahora encajan exactamente: `BarrasLed` 8x2, `Cabezas` 12x1 (antes
   declaraba 8x1 sobre 12 heads, 4 inalcanzables), `PAR` 15x1. La consola pasa de
-  288 a 361 botones (un banco de color, 30 mezclas y 30 matrices mas para el
-  grupo nuevo). Verificar que el barrido cruza los 4 paneles y que la pagina 2
+  288 a 361 botones (un banco de color y 30 mezclas mas para el grupo nuevo;
+  matrices no — el generador excluye a proposito los grupos self-animating,
+  `canonical_show.py:197-217`, verificado 2026-08-27). Verificar que el barrido cruza los 4 paneles y que la pagina 2
   sigue cabiendo en la pantalla del portatil.
 - [ ] **Ver en el rig si las barras ya siguen el show (2026-08-26).** "Las
   barras led van con los colores a su bola, no siguen el show" (owner, con la
@@ -193,10 +194,11 @@ workspaces.
   `PAR` group is a 7x3 grid with the CLB2.4 heads bolted to the right of the
   PC-64 block instead of a clean 8x2 that reads like the rig. Either allow an
   explicit move or add a `--group-clear`.
-- [ ] Set the audio-trigger thresholds on site. Two of the five bands are bound
-  by default (bass presses `Todo Blanco`, upper mids press `Strobo Rapido`) but
-  the thresholds are QLC+'s defaults and the pairing is a guess until it is
-  heard over real music. QLC+ also needs an audio input picked under
+- [ ] Set the audio-trigger thresholds on site. **Stale as of 2026-08-27: no
+  band is bound any more** — the strobe binding went out in the strobe-safety
+  work and the shipped widget has zero `<SpectrumBar>` (see the audit item
+  below). Once a safe binding ships, the thresholds are QLC+'s defaults and
+  need tuning over real music. QLC+ also needs an audio input picked under
   Configuration before the widget does anything.
 - [ ] Confirm the strobe values on the fixtures whose shutter channel has **no
   labelled range** - the PC-64, the CLB2.4, the Mini Led Moving Head and the
@@ -210,3 +212,101 @@ workspaces.
 - [ ] Merge branch `qlctool` into `main` once the fresh show is accepted. It
   carries the whole toolkit plus three format variants of DeluxeEventos2 used as
   test material.
+
+## QLC+ feature audit (2026-08-27)
+
+Findings from a full scan of the QLC+ source clone (`~/p/qlcplus`, master =
+5.3.0-git of 2026-08-22 — **newer than the installed 5.2.2**, so every QLC+5
+feature below gets verified against the real binary before we build on it),
+the official docs (docs.qlcplus.org v5 + release notes), and the generated
+`Vibra-split.qxw`. The show uses 5 of 10 function types, 4 of 39 RGB scripts,
+0 sliders, 0 MIDI/OSC inputs. A Codex cross-check of these findings ran the
+same day; anything it refutes gets corrected here.
+
+### Possible defects found by the audit
+
+- [ ] **AudioTriggers widget ships inert — bind the safe band or drop the
+  widget.** All three workspaces have `BarsNumber="5"` with zero
+  `<SpectrumBar>` children. Codex traced it: deliberate config —
+  `generate/live_console.py:195-201` sets all five `AUDIO_BANDS` targets to
+  `None` (consistent with "strobe out of the audio triggers", 2026-08-27),
+  while the builder can emit bindings (`vc/audio_triggers.py:44-54`). As
+  shipped the widget is dead UI. Decide: bind the bass band to `Todo Blanco`
+  (a Scene, flash-safe, no strobe) and keep the rest empty, or remove the
+  widget. Then a check rule: an AudioTriggers widget with zero bound bars
+  does nothing — dated test.
+- [x] ~~`PixelesLed` (group 3) missing matrices~~ — **not a bug**: the
+  generator deliberately skips matrix RGB for self-animating groups
+  (`generate/canonical_show.py:197-217`, `_all_self_animating()` at 598-604);
+  the panels run their 42 internal effects instead, and a matrix's RGB would
+  be ignored in Auto mode anyway (see the internal-program rule). The stale
+  "30 matrices más" claim in the 2026-08-26 item above is corrected there.
+- [ ] **The operator cannot reach the GrandMaster**: the workspace declares
+  `<GrandMaster ChannelMode="Intensity" ValueMode="Reduce">` but no VC widget
+  controls it (QLC+5 exposes it as a Slider in GrandMaster mode). Add one to
+  the console, page 1 or a fixed strip.
+- [ ] **No Blackout button**: "SI ALGO VA MAL" has StopAll only. StopAll stops
+  functions; Blackout forces every output to zero — different panic. The
+  `Blackout` button action exists unused in `vc/button.py:23`. Add the button.
+
+### Unused QLC+ capability worth adopting (priority order)
+
+- [ ] **RGB script repertoire: 4 of 39 used.** Only Fill, Even/Odd, Waves,
+  Strobe ship; `resources/rgbscripts/` also has plasma, fireworks, balls,
+  circular (radar/spiral, 8 modes), lines (13 types), sinewave, marquee, noise,
+  starfield, gradient, fillunfill, onebyone… And all 101 matrices carry zero
+  `<Property>` parameters (even Strobe's `frequency`) plus legacy `<MonoColor>`
+  only — no multi-colour, though `functions/rgbmatrix.py` already supports
+  properties and indexed colors. Curate per grid shape (BarrasLed 8x2, Cabezas
+  12x1, PAR 15x1), set parameters deliberately, use 2+ colours where it reads.
+  Previewable in the 3D view — no site visit needed to shortlist.
+- [ ] **EFX variety is untouched**: 23 EFX all with Rotation=0, identical axes
+  (freq 2/3, phase 90/0) and PropagationMode=Parallel. Serial/Asymmetric gives
+  cascade waves down the 12-head row for free (delay =
+  loopDuration/(n+1)*serial, `efxfixture.cpp`); Rotation orients figures per
+  pair. Vary deliberately, keep the mirrored house-right logic.
+- [ ] **Zero sliders on the console.** Three concrete uses: (a) Submaster
+  slider scaling Peak's frame — the clean fix for `Dimmer Chase` being HTP-
+  shadowed by `Intensidad Total` (see the deferred highlight item above);
+  (b) Adjust-mode sliders driving live function attributes — EFX Width/Height/
+  Rotation and RGBMatrix Color 1-5 / Pattern / script properties are all
+  registered live attributes (`rgbmatrix.cpp` registerScriptPropertyAttributes);
+  (c) the GrandMaster slider above.
+- [ ] **MIDI controller for the operator.** 0 `<Input>` bindings; only 64 of
+  374 buttons have a key. QLC+5 has input autodetect, profiles with LED
+  feedback (APC colour tables in the MIDI docs), soft-takeover. An APC mini or
+  similar = operating in the dark without hunting keyboard keys. Blocked on:
+  owner picks/buys a controller.
+- [ ] **Web interface for on-site sessions**: rewritten in 5.2 (`qlcplus -w`,
+  port 9999) — the console on a phone while walking the rig; fits every
+  "confirm on site" item above. Also `-k -f -o show.qxw` kiosk startup for the
+  show Mac. Caveats to verify on the installed 5.2.2 first: kiosk mode has no
+  on-screen exit (`App::createKioskCloseButton()` is an empty TODO in
+  `qmlui/app.cpp`), and `-p`/`-c` are only documented for v4.
+- [ ] **Beat-locked matrices**: RGBMatrix in Beats tempo defers a step change
+  when within 1/16 beat to stay locked (`rgbmatrix.cpp` beat resync), and 5.2
+  enabled audio BPM detection (BeatTracker, 50-240 BPM with confidence). Folds
+  into the existing `Vibra-beats.qxw` trial above: beats on musical layers
+  only, energy clock stays on time — `beat_tempo.py` already draws that line.
+- [ ] **Position palettes with fanning** (QLC+5): Linear/Sine/Square/Saw fan
+  over X/Y/Z — the calibrated way to build `Beams Abanico` instead of guessed
+  pan values. Gates: VC buttons cannot fire a palette (palette → Scene →
+  button), and while `Doc::loadXML` accepts `<Palette>` regardless of the
+  workspace's 4.13 format (doc.cpp:1270-1288, verified 2026-08-27 on
+  master), it still needs a load test on the installed 5.2.2 binary.
+- [ ] **XY Pad presets and floor control**: the pad ships bare; QLC+5 supports
+  Position/EFX/Scene/FixtureGroup presets and aiming at a 3D floor point
+  (`vcxypad.cpp`) — useful for the fan aiming and the crowd-sweep bounds in
+  the deferred highlight item.
+- [ ] **RGBMatrix ControlMode Dimmer/Shutter + BlendMode**: a matrix can paint
+  dimmers instead of RGB — any of the 39 scripts becomes an intensity chase
+  over the grid, an alternative to the shadowed `Dimmer Chase` EFX. BlendMode
+  Mask is already noted in the barras item above; Additive also exists.
+- [ ] **VC Clock in Schedule mode**: start AUTO at opening time, per weekday.
+  One widget, zero risk.
+
+Looked at and deliberately skipped: Show Manager timeline (show is
+DJ-reactive, not timecoded), Cue List + crossfader (theatrical), Audio/Video/
+Sequence functions (no use case), OS2L (only if the DJ runs Virtual DJ),
+Simple Desk (no cue stacks in v5; keypad covered by `qlctool probe`), channel
+modifiers, passthrough, extra universes.
