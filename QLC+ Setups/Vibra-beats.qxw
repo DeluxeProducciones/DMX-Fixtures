@@ -7102,7 +7102,7 @@
             <Key>Backspace</Key>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="APAGON" ID="19" Icon="">
+          <Button Caption="APAGON · Esc" ID="19" Icon="">
             <WindowState Visible="True" X="474" Y="30" Width="200" Height="78"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -7116,7 +7116,7 @@
             <Key>Escape</Key>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Label Caption="Para todas las funciones con un fundido de 1 segundo y deja la sala a oscuras. Después, pulsa AUTO para volver a empezar." ID="20">
+          <Label Caption="PARAR TODO para las funciones con un fundido de 1 segundo — pulsa AUTO para retomar. APAGON deja la sala a oscuras — vuelve a pulsar APAGON para devolverla, y luego AUTO." ID="20">
             <WindowState Visible="True" X="680" Y="30" Width="726" Height="78"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
