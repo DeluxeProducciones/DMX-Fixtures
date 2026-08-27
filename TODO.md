@@ -260,11 +260,6 @@ same day; anything it refutes gets corrected here.
   properties and indexed colors. Curate per grid shape (BarrasLed 8x2, Cabezas
   12x1, PAR 15x1), set parameters deliberately, use 2+ colours where it reads.
   Previewable in the 3D view — no site visit needed to shortlist.
-- [ ] **EFX variety is untouched**: 23 EFX all with Rotation=0, identical axes
-  (freq 2/3, phase 90/0) and PropagationMode=Parallel. Serial/Asymmetric gives
-  cascade waves down the 12-head row for free (delay =
-  loopDuration/(n+1)*serial, `efxfixture.cpp`); Rotation orients figures per
-  pair. Vary deliberately, keep the mirrored house-right logic.
 - [ ] **Zero sliders on the console.** Three concrete uses: (a) Submaster
   slider scaling Peak's frame — the clean fix for `Dimmer Chase` being HTP-
   shadowed by `Intensidad Total` (see the deferred highlight item above);
