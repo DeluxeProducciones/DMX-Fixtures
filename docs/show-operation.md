@@ -230,7 +230,7 @@ a live decision: somebody does it while the show runs.
 ### Page 3 - Librería
 
 The material the show is built from, not buttons for a set: 90 two-colour
-mixes, 90 matrix effects, and the per-group wheels and matrix cycles. The two
+mixes, 100 matrix effects, and the per-group wheels and matrix cycles. The two
 multipage frames inside carry a label per page naming the group, because three
 pages of identically captioned buttons is not a page count, it is a guess - and
 the page carries a paragraph saying what it is for, because 180 buttons
