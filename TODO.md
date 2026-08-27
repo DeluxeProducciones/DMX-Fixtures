@@ -180,7 +180,19 @@ workspaces.
   #2, beams 21 and 23) now run the EFX backwards so the pairs open and close
   together instead of the rig sweeping in parallel. If it reads wrong it is the
   plot's sides, not the effect: `house_right_fixture_ids` compares against the
-  middle of the stage grid.
+  middle of the stage grid. **Added 2026-08-27**: the two new Serial-figure
+  movements, `Ola Suave` and `Cascada Beams` (Task 6), are a deliberate
+  exception — Serial propagation gives mirrored pairs different
+  `serialNumber`s, so the pairs cascade rather than move in wall-clock
+  lockstep; judge on site whether the traveling wave reads well. Also eyeball
+  the `Cascada Beams` caption (13 characters on a 63px button) — unverifiable
+  from the XML alone.
+- [ ] **New generated content needs an eyeball pass (2026-08-27).** The 10
+  curated matrix scripts (Task 5/6) and the 4 new movement figures (`Beam
+  Diamante`, `Beam Hoja`, `Ola Suave`, `Cascada Beams`, Task 6) have never
+  been seen running — check them in the 3D preview and, when possible, on the
+  rig. In particular the plasma/noise script durations are chosen windows,
+  guessed rather than measured against real music.
 - [ ] Decide on `QLC+ Setups/Vibra-split.qxw` (2026-08-25): the same rig with
   each CLB2.4 patched four times, one fixture per PAR head, so all eight can be
   aimed and coloured separately in the 3D view - which QLC+ cannot do for the
@@ -193,12 +205,13 @@ workspaces.
   `PAR` group is a 7x3 grid with the CLB2.4 heads bolted to the right of the
   PC-64 block instead of a clean 8x2 that reads like the rig. Either allow an
   explicit move or add a `--group-clear`.
-- [ ] Set the audio-trigger thresholds on site. **Stale as of 2026-08-27: no
-  band is bound any more** — the strobe binding went out in the strobe-safety
-  work and the shipped widget has zero `<SpectrumBar>` (see the audit item
-  below). Once a safe binding ships, the thresholds are QLC+'s defaults and
-  need tuning over real music. QLC+ also needs an audio input picked under
-  Configuration before the widget does anything.
+- [ ] Set the audio-trigger thresholds on site. **Updated 2026-08-27**: the
+  bass band ("Graves") is now bound to `Flash 100%`, one of the GOLPES hits
+  (a Scene, Flash mode, Override, outside any solo frame) — not the
+  `Blanco Total` room-state scene, which shares AUTO's solo frame and would
+  have stopped AUTO with nothing to restart it. The bound band's threshold is
+  still QLC+'s default and needs tuning over real music; QLC+ also needs an
+  audio input picked under Configuration before the widget does anything.
 - [ ] Confirm the strobe values on the fixtures whose shutter channel has **no
   labelled range** - the PC-64, the CLB2.4, the Mini Led Moving Head and the
   WX-60WPS. `qlctool` deliberately leaves them out of `Strobo ON`, because a
@@ -231,41 +244,15 @@ same day; anything it refutes gets corrected here.
 
 ### Possible defects found by the audit
 
-- [ ] **AudioTriggers widget ships inert — bind the safe band or drop the
-  widget.** All three workspaces have `BarsNumber="5"` with zero
-  `<SpectrumBar>` children. Codex traced it: deliberate config —
-  `generate/live_console.py:195-201` sets all five `AUDIO_BANDS` targets to
-  `None` (consistent with "strobe out of the audio triggers", 2026-08-27),
-  while the builder can emit bindings (`vc/audio_triggers.py:44-54`). As
-  shipped the widget is dead UI. Decide: bind the bass band to `Todo Blanco`
-  (a Scene, flash-safe, no strobe) and keep the rest empty, or remove the
-  widget. Then a check rule: an AudioTriggers widget with zero bound bars
-  does nothing — dated test.
 - [x] ~~`PixelesLed` (group 3) missing matrices~~ — **not a bug**: the
   generator deliberately skips matrix RGB for self-animating groups
   (`generate/canonical_show.py:197-217`, `_all_self_animating()` at 598-604);
   the panels run their 42 internal effects instead, and a matrix's RGB would
   be ignored in Auto mode anyway (see the internal-program rule). The stale
   "30 matrices más" claim in the 2026-08-26 item above is corrected there.
-- [ ] **The operator cannot reach the GrandMaster**: the workspace declares
-  `<GrandMaster ChannelMode="Intensity" ValueMode="Reduce">` but no VC widget
-  controls it (QLC+5 exposes it as a Slider in GrandMaster mode). Add one to
-  the console, page 1 or a fixed strip.
-- [ ] **No Blackout button**: "SI ALGO VA MAL" has StopAll only. StopAll stops
-  functions; Blackout forces every output to zero — different panic. The
-  `Blackout` button action exists unused in `vc/button.py:23`. Add the button.
 
 ### Unused QLC+ capability worth adopting (priority order)
 
-- [ ] **RGB script repertoire: 4 of 39 used.** Only Fill, Even/Odd, Waves,
-  Strobe ship; `resources/rgbscripts/` also has plasma, fireworks, balls,
-  circular (radar/spiral, 8 modes), lines (13 types), sinewave, marquee, noise,
-  starfield, gradient, fillunfill, onebyone… And all 101 matrices carry zero
-  `<Property>` parameters (even Strobe's `frequency`) plus legacy `<MonoColor>`
-  only — no multi-colour, though `functions/rgbmatrix.py` already supports
-  properties and indexed colors. Curate per grid shape (BarrasLed 8x2, Cabezas
-  12x1, PAR 15x1), set parameters deliberately, use 2+ colours where it reads.
-  Previewable in the 3D view — no site visit needed to shortlist.
 - [ ] **Zero sliders on the console.** Three concrete uses: (a) Submaster
   slider scaling Peak's frame — `Dimmer Chase` being HTP-shadowed by
   `Intensidad Total` there is fixed a different way now (TODO_LOG.md,
@@ -273,19 +260,14 @@ same day; anything it refutes gets corrected here.
   live-adjust nicety, not a correctness fix; (b) Adjust-mode sliders driving
   live function attributes — EFX Width/Height/
   Rotation and RGBMatrix Color 1-5 / Pattern / script properties are all
-  registered live attributes (`rgbmatrix.cpp` registerScriptPropertyAttributes);
-  (c) the GrandMaster slider above.
+  registered live attributes (`rgbmatrix.cpp` registerScriptPropertyAttributes).
+  The GrandMaster slider (c) shipped separately — Task 3, TODO_LOG.md
+  2026-08-27.
 - [ ] **MIDI controller for the operator.** 0 `<Input>` bindings; only 64 of
   374 buttons have a key. QLC+5 has input autodetect, profiles with LED
   feedback (APC colour tables in the MIDI docs), soft-takeover. An APC mini or
   similar = operating in the dark without hunting keyboard keys. Blocked on:
   owner picks/buys a controller.
-- [ ] **Web interface for on-site sessions**: rewritten in 5.2 (`qlcplus -w`,
-  port 9999) — the console on a phone while walking the rig; fits every
-  "confirm on site" item above. Also `-k -f -o show.qxw` kiosk startup for the
-  show Mac. Caveats to verify on the installed 5.2.2 first: kiosk mode has no
-  on-screen exit (`App::createKioskCloseButton()` is an empty TODO in
-  `qmlui/app.cpp`), and `-p`/`-c` are only documented for v4.
 - [ ] **Beat-locked matrices**: RGBMatrix in Beats tempo defers a step change
   when within 1/16 beat to stay locked (`rgbmatrix.cpp` beat resync), and 5.2
   enabled audio BPM detection (BeatTracker, 50-240 BPM with confidence). Folds
@@ -293,10 +275,11 @@ same day; anything it refutes gets corrected here.
   only, energy clock stays on time — `beat_tempo.py` already draws that line.
 - [ ] **Position palettes with fanning** (QLC+5): Linear/Sine/Square/Saw fan
   over X/Y/Z — the calibrated way to build `Beams Abanico` instead of guessed
-  pan values. Gates: VC buttons cannot fire a palette (palette → Scene →
-  button), and while `Doc::loadXML` accepts `<Palette>` regardless of the
-  workspace's 4.13 format (doc.cpp:1270-1288, verified 2026-08-27 on
-  master), it still needs a load test on the installed 5.2.2 binary.
+  pan values. **Updated 2026-08-27**: Task 1 confirmed `<Palette>` load on the
+  installed 5.2.2 binary (not just master's `doc.cpp:1270-1288`) — that gate
+  is closed. Remaining gate: VC buttons cannot fire a palette directly
+  (palette → Scene → button still needed), and the fan itself needs
+  calibrated aiming on the rig.
 - [ ] **XY Pad presets and floor control**: the pad ships bare; QLC+5 supports
   Position/EFX/Scene/FixtureGroup presets and aiming at a 3D floor point
   (`vcxypad.cpp`) — useful for the fan aiming and the crowd-sweep bounds in
