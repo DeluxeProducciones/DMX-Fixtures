@@ -168,9 +168,8 @@ workspaces.
   guaranteed cleanup - engine/src/scriptv4.cpp), gobo/prisma flash accents
   (need `Prism Off`/`Gobo Open` neutral owners running in every state), and
   the two-timescale scheduler (macro minutes / micro 16-32 bars inside each
-  level). `Dimmer Chase` in Peak is still cosmetically shadowed by
-  `Intensidad Total` at 255 (EFX dips can't win HTP) - visible fix needs the
-  chase to own Peak's intensity alone.
+  level). `Dimmer Chase` owning Peak's intensity is done - see TODO_LOG.md,
+  2026-08-27.
 - [ ] Judge the energy levels against a real night. `Ciclo Energia` walks
   Ambiente 4 min -> Fiesta 8 -> Peak 2 -> Fiesta 8, with the colour bed and the
   haze running underneath so a level change never blacks the room out. The
@@ -261,9 +260,11 @@ same day; anything it refutes gets corrected here.
   12x1, PAR 15x1), set parameters deliberately, use 2+ colours where it reads.
   Previewable in the 3D view — no site visit needed to shortlist.
 - [ ] **Zero sliders on the console.** Three concrete uses: (a) Submaster
-  slider scaling Peak's frame — the clean fix for `Dimmer Chase` being HTP-
-  shadowed by `Intensidad Total` (see the deferred highlight item above);
-  (b) Adjust-mode sliders driving live function attributes — EFX Width/Height/
+  slider scaling Peak's frame — `Dimmer Chase` being HTP-shadowed by
+  `Intensidad Total` there is fixed a different way now (TODO_LOG.md,
+  2026-08-27: the chase owns Peak's dimmers outright), so this would be a
+  live-adjust nicety, not a correctness fix; (b) Adjust-mode sliders driving
+  live function attributes — EFX Width/Height/
   Rotation and RGBMatrix Color 1-5 / Pattern / script properties are all
   registered live attributes (`rgbmatrix.cpp` registerScriptPropertyAttributes);
   (c) the GrandMaster slider above.

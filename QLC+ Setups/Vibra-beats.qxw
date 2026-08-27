@@ -6717,43 +6717,48 @@
       <FixtureVal ID="22">5,248,6,255</FixtureVal>
       <FixtureVal ID="23">5,248,6,255</FixtureVal>
     </Function>
-    <Function ID="458" Type="Collection" Name="Nivel Ambiente" Path="Niveles">
+    <Function ID="458" Type="Scene" Name="Intensidad Peak" Path="Niveles">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="15">5,247</FixtureVal>
+      <FixtureVal ID="16">5,247</FixtureVal>
+    </Function>
+    <Function ID="459" Type="Collection" Name="Nivel Ambiente" Path="Niveles">
       <Step Number="0">359</Step>
       <Step Number="1">358</Step>
       <Step Number="2">371</Step>
       <Step Number="3">456</Step>
     </Function>
-    <Function ID="459" Type="Collection" Name="Nivel Fiesta" Path="Niveles">
+    <Function ID="460" Type="Collection" Name="Nivel Fiesta" Path="Niveles">
       <Step Number="0">339</Step>
       <Step Number="1">360</Step>
       <Step Number="2">391</Step>
       <Step Number="3">457</Step>
     </Function>
-    <Function ID="460" Type="Collection" Name="Nivel Peak" Path="Niveles">
+    <Function ID="461" Type="Collection" Name="Nivel Peak" Path="Niveles">
       <Step Number="0">353</Step>
       <Step Number="1">357</Step>
       <Step Number="2">391</Step>
       <Step Number="3">412</Step>
       <Step Number="4">416</Step>
-      <Step Number="5">457</Step>
+      <Step Number="5">458</Step>
     </Function>
-    <Function ID="461" Type="Chaser" Name="Ciclo Energia" Path="Niveles">
+    <Function ID="462" Type="Chaser" Name="Ciclo Energia" Path="Niveles">
       <Speed FadeIn="0" FadeOut="0" Duration="240000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
-      <Step Number="0" FadeIn="0" Hold="240000" FadeOut="0">458</Step>
-      <Step Number="1" FadeIn="0" Hold="480000" FadeOut="0">459</Step>
-      <Step Number="2" FadeIn="0" Hold="40000" FadeOut="0">460</Step>
-      <Step Number="3" FadeIn="0" Hold="480000" FadeOut="0">459</Step>
+      <Step Number="0" FadeIn="0" Hold="240000" FadeOut="0">459</Step>
+      <Step Number="1" FadeIn="0" Hold="480000" FadeOut="0">460</Step>
+      <Step Number="2" FadeIn="0" Hold="40000" FadeOut="0">461</Step>
+      <Step Number="3" FadeIn="0" Hold="480000" FadeOut="0">460</Step>
     </Function>
-    <Function ID="462" Type="Collection" Name="AUTO" Path="Show">
+    <Function ID="463" Type="Collection" Name="AUTO" Path="Show">
       <Step Number="0">454</Step>
       <Step Number="1">415</Step>
       <Step Number="2">214</Step>
-      <Step Number="3">461</Step>
+      <Step Number="3">462</Step>
     </Function>
-    <Function ID="463" Type="Scene" Name="Luz Charla" Path="Show">
+    <Function ID="464" Type="Scene" Name="Luz Charla" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,214,7,170,9,255,10,4</FixtureVal>
       <FixtureVal ID="1">5,255,6,214,7,170,9,255,10,4</FixtureVal>
@@ -6779,28 +6784,28 @@
       <FixtureVal ID="27">0,255,1,255,2,214,3,170,5,0</FixtureVal>
       <FixtureVal ID="28">0,255,1,255,2,214,3,170,5,0</FixtureVal>
     </Function>
-    <Function ID="464" Type="Collection" Name="Momento Charla" Path="Momentos">
+    <Function ID="465" Type="Collection" Name="Momento Charla" Path="Momentos">
       <Step Number="0">370</Step>
-      <Step Number="1">463</Step>
+      <Step Number="1">464</Step>
       <Step Number="2">371</Step>
       <Step Number="3">392</Step>
       <Step Number="4">457</Step>
     </Function>
-    <Function ID="465" Type="Collection" Name="Momento Tranquilo" Path="Momentos">
+    <Function ID="466" Type="Collection" Name="Momento Tranquilo" Path="Momentos">
       <Step Number="0">454</Step>
       <Step Number="1">214</Step>
       <Step Number="2">370</Step>
       <Step Number="3">371</Step>
       <Step Number="4">456</Step>
     </Function>
-    <Function ID="466" Type="Collection" Name="Momento Fiesta" Path="Momentos">
+    <Function ID="467" Type="Collection" Name="Momento Fiesta" Path="Momentos">
       <Step Number="0">454</Step>
       <Step Number="1">214</Step>
       <Step Number="2">368</Step>
       <Step Number="3">391</Step>
       <Step Number="4">457</Step>
     </Function>
-    <Function ID="467" Type="Collection" Name="Momento Locura" Path="Momentos">
+    <Function ID="468" Type="Collection" Name="Momento Locura" Path="Momentos">
       <Step Number="0">454</Step>
       <Step Number="1">214</Step>
       <Step Number="2">369</Step>
@@ -6878,7 +6883,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,28,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="462"/>
+            <Function ID="463"/>
             <Action>Toggle</Action>
             <Key>Q</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -6892,7 +6897,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="464"/>
+            <Function ID="465"/>
             <Action>Toggle</Action>
             <Key>F1</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -6906,7 +6911,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="465"/>
+            <Function ID="466"/>
             <Action>Toggle</Action>
             <Key>F2</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -6920,7 +6925,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="466"/>
+            <Function ID="467"/>
             <Action>Toggle</Action>
             <Key>F3</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -6934,7 +6939,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="467"/>
+            <Function ID="468"/>
             <Action>Toggle</Action>
             <Key>F4</Key>
             <Intensity Adjust="False">100</Intensity>
