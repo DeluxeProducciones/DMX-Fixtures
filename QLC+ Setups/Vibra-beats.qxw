@@ -12567,7 +12567,7 @@
             <BackgroundImage>None</BackgroundImage>
             <Font>Default</Font>
           </Appearance>
-          <SpectrumBar Name="Graves" Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="0" WidgetID="8"/>
+          <SpectrumBar Name="Graves" Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="0" WidgetID="11"/>
         </AudioTriggers>
       </Frame>
     </Frame>
