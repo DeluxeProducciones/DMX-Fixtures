@@ -202,7 +202,7 @@ only one built with big buttons and sentences on them.
 | Frame | What is in it |
 | --- | --- |
 | `LA SALA ESTÁ ASÍ` (solo) | `AUTO` at a quarter of the screen, the four moments, `BLANCO TOTAL` (work light) and `TODO NEGRO`. Exactly one runs at a time |
-| `GOLPES` (plain) | `FLASH`, `FLASH SUAVE`, `HUMO YA`, `STROBO`, `STROBO SUAVE`, `COLOR BEAM`. These add to whatever state is running |
+| `GOLPES` (plain) | `FLASH`, `FLASH LENTO`, `FLASH COLOR`, `HUMO YA`, `STROBO`, `STROBO SUAVE`, `COLOR BEAM`. These add to whatever state is running |
 | `SI ALGO VA MAL` | `PARAR TODO` - a `StopAll` button with a 1 s fade, driving no function of its own. `APAGON` - a `Blackout` action, and it latches: the first press forces every output to zero regardless of what is running underneath; the second press lifts it and gives that back. AUTO does nothing while the room is blacked out - it has to be pressed after the second `APAGON`, not instead of it |
 
 Every button on this page carries its own key in its caption (`AUTO — el show
@@ -261,8 +261,9 @@ only keys that cannot collide with a colour bank on 1-0.
 | `F4` | Momento Locura | page 1 |
 | `X` | Blanco Total | page 1 |
 | `º` | Todo Negro | page 1 |
-| `Space` | Flash 100% (Flash) | page 1 |
-| `-` | Flash 50% (Flash) | page 1 |
+| `Space` | Flash 100% (Flash - white, shutters strobing fast) | page 1 |
+| `-` | Flash 50% (Flash - same white, half the strobe speed) | page 1 |
+| `.` | Flash Color (Flash - strobe over the running colour) | page 1 |
 | `H` | Humo ON (Flash - the burst, held) | page 1 |
 | `F` / `T` | Strobo Rapido / Medio | page 1 |
 | `C` | Color Beam Animacion | page 1 |
@@ -288,27 +289,42 @@ Dimmer mode, the fixtures spread around the path so the peak runs along the rig)
 and an odd/even ping-pong - and four strobes.
 
 The strobes come in two kinds because the rig does. A fixture with a shutter
-strobes itself, and `Strobo ON` / `Strobo OFF` drive it - but **only where the
-fixture definition labels a strobe range**. Guessing on an unlabelled shutter
-channel is how a head goes dark mid-set: a MiN Wash puts "Closed" at 1-7. The
-LED bars and PARs have no shutter, so `Strobo Rapido` and `Strobo Medio` do it
-the way the hand-built show does - a chaser flipping the whole rig between
-`Flash 100%` and `Todo Negro`, at 50 ms and 250 ms.
+strobes itself, and `Strobo ON` / `Strobo OFF` drive it. A labelled strobe
+range is driven inside that range - guessing *within* a labelled channel is
+how a head goes dark mid-set: a MiN Wash puts "Closed" at 1-7. A channel with
+no labels at all whose whole job is the strobe - the Vortex PARs' and the
+panels' channel 5 - is driven as a bare speed, because the hand-built show ran
+exactly those channels at 250/255 for years and leaving them out is how
+`Strobo ON` shipped strobing half the rig (2026-08-27). The LED bars have no
+strobe channel of any kind, so `Strobo Rapido` and `Strobo Medio` do it the
+way the hand-built show does - a bounded chaser flipping the rig between
+white and `Todo Negro` at 125 ms and 250 ms a step.
+
+The three flashes are the third kind: **a held flash is the strobe** on this
+show. `Flash 100%` is full white with every shutter driven near the top of
+its range, `Flash 50%` the same white at half the strobe speed - that is what
+"50%" meant on the hand-built console - and `Flash Color` (`.`) raises every
+dimmer and strobes every shutter *without writing a colour*, so the rig
+strobes in whatever the running state has it wearing. The one flash that must
+never strobe is `Golpe Graves`, the plain white twin the audio triggers'
+bass bar presses: a strobe fired by whatever the PA does is a strobe nobody
+chose, and `estrobo en manos del audio` checks it stays that way.
 
 None of these is in `AUTO`. They are for somebody standing at the laptop: a
 strobe running unattended all night is not a decision to make by default.
 
 ## Audio triggers
 
-Five spectrum bands, one of them bound: the bass presses `Flash 100%`, one of
-the GOLPES hits. A Flash button is the right target for a bar, not the wrong
-one - a bar calls `pressFunction` on the way up and `releaseFunction` on the
-way down, exactly how a Flash button expects to be worked, so it lets go on
-its own the moment the level drops rather than latching on for the rest of
-the night. `Flash 100%` also lives in a plain frame, outside any solo frame:
-the bass line's old target, `Blanco Total`, sits in the room-state solo frame,
-so binding it there would have had the music killing `AUTO` on every kick with
-nothing to bring it back.
+Five spectrum bands, one of them bound: the bass presses `Golpe Graves`, the
+plain white flash on page 2 beside the triggers widget. A Flash button is the
+right target for a bar, not the wrong one - a bar calls `pressFunction` on
+the way up and `releaseFunction` on the way down, exactly how a Flash button
+expects to be worked, so it lets go on its own the moment the level drops
+rather than latching on for the rest of the night. It is its own scene rather
+than one of the GOLPES for two reasons that both bit already: `Blanco Total`
+sits in the room-state solo frame, so binding it there had the music killing
+`AUTO` on every kick, and `Flash 100%` now strobes - a strobe fired by
+whatever the PA does is a strobe nobody chose (`estrobo en manos del audio`).
 
 The other four bands ship deliberately unbound - not a setting left for
 somebody at the venue, an empty pairing the generator ships on purpose, so no

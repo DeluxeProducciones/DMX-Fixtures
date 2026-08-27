@@ -19,6 +19,29 @@ workspaces.
   "../../QLC+ Setups/Vibra-split.qxw"`. New rule when something misbehaves: find
   the cause, add a rule, add a dated regression test, run it over all three
   workspaces — written down in the repo's `CLAUDE.md`.
+- [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
+  FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
+  espacio". Era real: el show viejo estrobaba en `Flash 100%`/`Flash 50%`
+  (CromoWash 240, Vortex 250, paneles 255; el 50% era mitad de *velocidad*, no
+  de brillo) y el generado dejaba los shutters en "Open". Restaurado: los tres
+  flashes estroban (`Space`/`-`/`.` — el `.` es el `Flash Colores` viejo,
+  estrobo sobre el color que corra), `Strobo ON` cubre ya los canales sin
+  rangos (Vortex, paneles), y los graves del audio pasan a `Golpe Graves`, un
+  blanco SIN estrobo (regla nueva `estrobo en manos del audio`). Reglas
+  `flash sin estrobo` + `estrobo incompleto`, tests fechados, los tres
+  workspaces regenerados y validados. Falta: pulsar Espacio, `-` y `.` con los
+  aparatos delante y confirmar que estroban como el show viejo.
+- [ ] **Decidir qué se rescata del inventario del show viejo (2026-08-27).**
+  Auditoría completa de `DeluxeEventos2.qxw` contra el generado. Aún sin
+  equivalente: la escena `Escenario` (luz al escenario con pan/tilt fijos:
+  fx18-23 ch1/ch2 en ~156-176/189-204 — copiables tal cual, mismo rig);
+  `Cabezas Reposo` y `Movimientos Cabezas Lento`; `Dimmer Chase 2` y
+  `Dimmer Secuencia` (variantes extra de barrido); los subsets por aparato de
+  Prisma y MultiColor (1/2/3/4/1y3/2y4); y el control en vivo de velocidad de
+  los efectos de paneles (slider + secuencia Random 160-255 del show viejo).
+  Nota: el `HUMO AUTO` viejo (tecla J) estaba roto en el show original — su
+  chaser (ID 367) disparaba `Strobo LED - Effect 1/3` (efectos de paneles),
+  no humo; no hay nada que restaurar ahí.
 - [!] **Mirar los 42 efectos internos de los paneles y decir cuales valen.**
   Los WX-60WPS llevan 42 animaciones propias (canal 6 = modo, canal 7 = efecto,
   canal 8 = velocidad) que el show no tocaba: el canal 6 estaba en 0 = "No
@@ -32,10 +55,13 @@ workspaces.
   AUTO (owner, 2026-08-26) estando el fichero bien (ch1=255, ch6=128 Auto,
   ch7=efecto, ch8=128; verificado contra la definicion). Siguiente paso:
   pulsarlos uno a uno en sala, apuntar cuales valen, y dejar el ciclo solo con
-  esos. Tambien queda por ajustar la velocidad (ahora 128, mitad de escala,
-  elegido a ciegas) y decidir si interesan los otros dos modos que tiene el
-  cacharro: Mixer Color (12 efectos de color) y Sound Mode (2, reactivo al
-  sonido).
+  esos. La velocidad ya no es a ciegas: el show viejo SI usaba estos efectos
+  (escenas `Strobo LED - Effect 1..42`, chaser de 60 s, velocidades 160-255
+  via slider + secuencia Random) y el generador pone ahora 200, el centro de
+  ese rango (2026-08-27). El dueño esta fotografiando los 42 en casa
+  (2026-08-27) - con eso se cierra cuales valen. Queda decidir si interesan
+  los otros dos modos del cacharro: Mixer Color (12 efectos de color) y Sound
+  Mode (2, reactivo al sonido).
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media
