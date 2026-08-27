@@ -26,11 +26,16 @@ workspaces.
   escenas (`Paneles - Effect 1..42`), en la pagina 3 de la consola, y
   `Ciclo Paneles` los recorre en Random cada 12 s dentro de AUTO. **Nadie los ha
   visto**: la definicion solo los llama "Effect N" y no hay manual del aparato
-  en `Manual/`. Siguiente paso: pulsarlos uno a uno en sala, apuntar cuales
-  valen, y dejar el ciclo solo con esos. Tambien queda por ajustar la velocidad
-  (ahora 128, mitad de escala, elegido a ciegas) y decidir si interesan los
-  otros dos modos que tiene el cacharro: Mixer Color (12 efectos de color) y
-  Sound Mode (2, reactivo al sonido).
+  en `Manual/`. Y no se pueden ver en el simulador: el 3D de QLC+ pinta lo que
+  hay en los canales RGB, y en modo Auto el aparato genera el color por
+  hardware con el RGB a 0 - por eso los paneles salen apagados en la preview de
+  AUTO (owner, 2026-08-26) estando el fichero bien (ch1=255, ch6=128 Auto,
+  ch7=efecto, ch8=128; verificado contra la definicion). Siguiente paso:
+  pulsarlos uno a uno en sala, apuntar cuales valen, y dejar el ciclo solo con
+  esos. Tambien queda por ajustar la velocidad (ahora 128, mitad de escala,
+  elegido a ciegas) y decidir si interesan los otros dos modos que tiene el
+  cacharro: Mixer Color (12 efectos de color) y Sound Mode (2, reactivo al
+  sonido).
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media
@@ -40,14 +45,21 @@ workspaces.
   288 a 361 botones (un banco de color, 30 mezclas y 30 matrices mas para el
   grupo nuevo). Verificar que el barrido cruza los 4 paneles y que la pagina 2
   sigue cabiendo en la pantalla del portatil.
-- [ ] **Ver en el rig si el ciclo de pixeles ya respira (2026-08-26).** Dos
-  sintomas del owner sobre las barras y los paneles: animaciones que empiezan y
-  no terminan, y pixeles apagados la mitad del tiempo. Causa unica: el ciclo
-  sujetaba cada matriz 2000 ms cuando un Fill sobre 8 celdas necesita 3824 y un
-  Waves 5736 — cuatro frames de ocho. Mas los seis `Strobe` girando dentro del
-  ciclo. Ahora cada paso dura una pasada completa (Fill 3824, Waves 5736, resto
-  2000) y el estrobo sale del ciclo pero sigue en la consola. Confirmar en sala
-  que el barrido llega al final de la barra y que ya no parpadea solo.
+- [ ] **Ver en el rig si las barras ya siguen el show (2026-08-26).** "Las
+  barras led van con los colores a su bola, no siguen el show" (owner, con la
+  preview: barras en magenta, sala en cyan). Causa: dos relojes de color -
+  `Rueda Colores` rotando escenas sobre el rig y `Ciclo Matrices BarrasLed`
+  rotando su propia paleta sobre las barras - y QLC+ no puede esclavizar un
+  chaser a otro. Arreglo: cada paso de la rueda es ahora una Collection que
+  arranca la escena y una matriz de barras *del mismo color* (algoritmo
+  rotando Fill/Even-Odd/Waves/Solid, una pasada completa cabe en el paso); el
+  ciclo independiente sale de AUTO y de los momentos pero sigue en la consola.
+  Regla nueva `relojes de color` + test fechado. Confirmar en sala que barras y
+  sala cambian de color a la vez. Refinamiento posible: QLC+ 5 si persiste
+  `BlendMode="Mask"` como atributo de `<Function>` (function.cpp:918, mascara
+  multiplicativa en universe.cpp) - permitiria una sola matriz continua sobre
+  el color de la rueda, pero depende del orden de escritura del tick y el
+  checker HTP no lo modela; solo si algun dia hace falta animacion continua.
 - [ ] **Re-check the rig after the dark-fixture fixes (2026-08-26).** The
   owner found both on the real rig: `BLANCO TOTAL` left the four BEAM 230W 7R
   black (no RGB, so every colour generator skipped them) and the HYULIGHTS
@@ -121,6 +133,43 @@ workspaces.
   nothing advances - that is the whole risk of it, and the reason it is a
   separate file. What to watch: does the detected BPM track real music through
   the venue's PA, and does anything stall between tracks.
+- [~] **AUTO is the full mix from second one - heads always moving** (owner,
+  2026-08-27: "el auto es eso, como el modo auto de las cabezas en si").
+  **Implemented 2026-08-27** after a Codex review of the plan (read-only +
+  web) corrected four things before any code; all three workspaces
+  regenerated, validated in headless QLC+, `qlctool check` clean, 230 tests
+  green. What changed:
+  - Six checker rules with dated regression tests (`docs/checks.md`):
+    `estrobo demasiado rapido` (4 Hz cap; `Strobo Rapido` had shipped at
+    10 Hz), `estrobo enganchado` (looping strobe behind a button; hits are
+    SingleShot bursts now), `flash sin escena` (QLC+ only flashes Scenes),
+    `intensidad tapada` (HTP shadow - the bug that sank "Ambiente = dimmer
+    bajo" as first drawn), `acento sin dueño` (flashed LTP wheel no state
+    restores), `familias de movimiento mezcladas` (one EFX over wash and
+    beam optics).
+  - Colour and intensity are separate owners: the rig-wide wheel, contrasts
+    and wheel scenes state colour/position only; each level and moment
+    carries `Intensidad Ambiente` (110) or `Intensidad Total` beside it.
+  - Movement per family: washes get wide slow EFX (Ambiente breathes from
+    second one), beams get smaller shapes plus a static `Beams Abanico` fan
+    that doubles as their rest step in Fiesta; Peak cut from 2 min to 40 s.
+  - Strobe out of the audio triggers; Flash buttons carry Override priority.
+  **Still open on site**: do Ambiente's slow washes read as alive; fan
+  pan/tilt values (guessed: pan 82-172, tilt 105) need aiming; `Intensidad
+  Ambiente` 110 is a first guess; MiN Wash cannot dim (no dimmer channel -
+  RGB is its intensity, stays full in Ambiente).
+- [ ] **Highlight vocabulary, part 2 - deferred from 2026-08-27 on purpose.**
+  Each needs channel work that is unverifiable off-site or a Script: beam
+  chase one-head-at-a-time (needs shutter-close values; four fixtures still
+  have unlabelled shutter ranges, see the probe item), snap positions on beat
+  (closed-shutter travel steps), crowd sweep (calibrated tilt-down bounds),
+  blackout-then-burst pre-drop (QLC+ Script with `Engine.setBlackout` +
+  guaranteed cleanup - engine/src/scriptv4.cpp), gobo/prisma flash accents
+  (need `Prism Off`/`Gobo Open` neutral owners running in every state), and
+  the two-timescale scheduler (macro minutes / micro 16-32 bars inside each
+  level). `Dimmer Chase` in Peak is still cosmetically shadowed by
+  `Intensidad Total` at 255 (EFX dips can't win HTP) - visible fix needs the
+  chase to own Peak's intensity alone.
 - [ ] Judge the energy levels against a real night. `Ciclo Energia` walks
   Ambiente 4 min -> Fiesta 8 -> Peak 2 -> Fiesta 8, with the colour bed and the
   haze running underneath so a level change never blacks the room out. The
