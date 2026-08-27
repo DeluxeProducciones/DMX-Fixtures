@@ -211,6 +211,13 @@ workspaces.
 - [ ] Merge branch `qlctool` into `main` once the fresh show is accepted. It
   carries the whole toolkit plus three format variants of DeluxeEventos2 used as
   test material.
+- [ ] `tools/qlctool/README.md`'s `qlctool newshow "DeluxeEventos2.qxw" ...
+  --out "Vibra.qxw"` example is stale (2026-08-27): it fails with "the plot
+  places fixtures that are not patched: [27, 28]", since `Vibra.qxw`'s patch
+  is two fixtures ahead of `DeluxeEventos2.qxw` (see "The current patch is
+  `Vibra.qxw`, not `DeluxeEventos2.qxw`" in `docs/rig.md`). Regenerate
+  `Vibra.qxw` from itself instead (`newshow "Vibra.qxw" --plot ... --out
+  "Vibra.qxw"`); fix or remove the README example.
 
 ## QLC+ feature audit (2026-08-27)
 
