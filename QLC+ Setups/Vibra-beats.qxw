@@ -5971,25 +5971,123 @@
       <Step Number="0" FadeIn="0" Hold="32000" FadeOut="0">413</Step>
       <Step Number="1" FadeIn="0" Hold="32000" FadeOut="0">414</Step>
     </Function>
-    <Function ID="416" Type="Scene" Name="Humo ON" Path="Humo">
+    <Function ID="416" Type="Scene" Name="Prisma - 1" Path="Prismas">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">13,191</FixtureVal>
+      <FixtureVal ID="21">13,63</FixtureVal>
+      <FixtureVal ID="22">13,63</FixtureVal>
+      <FixtureVal ID="23">13,63</FixtureVal>
+    </Function>
+    <Function ID="417" Type="Scene" Name="Prisma - 2" Path="Prismas">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">13,63</FixtureVal>
+      <FixtureVal ID="21">13,191</FixtureVal>
+      <FixtureVal ID="22">13,63</FixtureVal>
+      <FixtureVal ID="23">13,63</FixtureVal>
+    </Function>
+    <Function ID="418" Type="Scene" Name="Prisma - 3" Path="Prismas">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">13,63</FixtureVal>
+      <FixtureVal ID="21">13,63</FixtureVal>
+      <FixtureVal ID="22">13,191</FixtureVal>
+      <FixtureVal ID="23">13,63</FixtureVal>
+    </Function>
+    <Function ID="419" Type="Scene" Name="Prisma - 4" Path="Prismas">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">13,63</FixtureVal>
+      <FixtureVal ID="21">13,63</FixtureVal>
+      <FixtureVal ID="22">13,63</FixtureVal>
+      <FixtureVal ID="23">13,191</FixtureVal>
+    </Function>
+    <Function ID="420" Type="Scene" Name="Prisma - 1 y 3" Path="Prismas">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">13,191</FixtureVal>
+      <FixtureVal ID="21">13,63</FixtureVal>
+      <FixtureVal ID="22">13,191</FixtureVal>
+      <FixtureVal ID="23">13,63</FixtureVal>
+    </Function>
+    <Function ID="421" Type="Scene" Name="Prisma - 2 y 4" Path="Prismas">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">13,63</FixtureVal>
+      <FixtureVal ID="21">13,191</FixtureVal>
+      <FixtureVal ID="22">13,63</FixtureVal>
+      <FixtureVal ID="23">13,191</FixtureVal>
+    </Function>
+    <Function ID="422" Type="Scene" Name="MultiColor - Todas" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,255</FixtureVal>
+      <FixtureVal ID="21">8,255</FixtureVal>
+      <FixtureVal ID="22">8,255</FixtureVal>
+      <FixtureVal ID="23">8,255</FixtureVal>
+    </Function>
+    <Function ID="423" Type="Scene" Name="MultiColor - Off" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,0</FixtureVal>
+      <FixtureVal ID="21">8,0</FixtureVal>
+      <FixtureVal ID="22">8,0</FixtureVal>
+      <FixtureVal ID="23">8,0</FixtureVal>
+    </Function>
+    <Function ID="424" Type="Scene" Name="MultiColor - 1" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,255</FixtureVal>
+      <FixtureVal ID="21">8,0</FixtureVal>
+      <FixtureVal ID="22">8,0</FixtureVal>
+      <FixtureVal ID="23">8,0</FixtureVal>
+    </Function>
+    <Function ID="425" Type="Scene" Name="MultiColor - 2" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,0</FixtureVal>
+      <FixtureVal ID="21">8,255</FixtureVal>
+      <FixtureVal ID="22">8,0</FixtureVal>
+      <FixtureVal ID="23">8,0</FixtureVal>
+    </Function>
+    <Function ID="426" Type="Scene" Name="MultiColor - 3" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,0</FixtureVal>
+      <FixtureVal ID="21">8,0</FixtureVal>
+      <FixtureVal ID="22">8,255</FixtureVal>
+      <FixtureVal ID="23">8,0</FixtureVal>
+    </Function>
+    <Function ID="427" Type="Scene" Name="MultiColor - 4" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,0</FixtureVal>
+      <FixtureVal ID="21">8,0</FixtureVal>
+      <FixtureVal ID="22">8,0</FixtureVal>
+      <FixtureVal ID="23">8,255</FixtureVal>
+    </Function>
+    <Function ID="428" Type="Scene" Name="MultiColor - 1 y 3" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,255</FixtureVal>
+      <FixtureVal ID="21">8,0</FixtureVal>
+      <FixtureVal ID="22">8,255</FixtureVal>
+      <FixtureVal ID="23">8,0</FixtureVal>
+    </Function>
+    <Function ID="429" Type="Scene" Name="MultiColor - 2 y 4" Path="MultiColor">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="20">8,0</FixtureVal>
+      <FixtureVal ID="21">8,255</FixtureVal>
+      <FixtureVal ID="22">8,0</FixtureVal>
+      <FixtureVal ID="23">8,255</FixtureVal>
+    </Function>
+    <Function ID="430" Type="Scene" Name="Humo ON" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="17">0,255</FixtureVal>
       <FixtureVal ID="26">0,255</FixtureVal>
     </Function>
-    <Function ID="417" Type="Scene" Name="Humo OFF" Path="Humo">
+    <Function ID="431" Type="Scene" Name="Humo OFF" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="26">0,0</FixtureVal>
     </Function>
-    <Function ID="418" Type="Chaser" Name="Humo Auto" Path="Humo">
+    <Function ID="432" Type="Chaser" Name="Humo Auto" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
-      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">416</Step>
-      <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0">417</Step>
+      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">430</Step>
+      <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0">431</Step>
     </Function>
-    <Function ID="419" Type="EFX" Name="Dimmer Chase" Path="Dimmers">
+    <Function ID="433" Type="EFX" Name="Dimmer Chase" Path="Dimmers">
       <Tempo>Beats</Tempo>
       <Fixture>
         <ID>0</ID>
@@ -6173,7 +6271,7 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="420" Type="EFX" Name="Dimmer Chase 2" Path="Dimmers">
+    <Function ID="434" Type="EFX" Name="Dimmer Chase 2" Path="Dimmers">
       <Fixture>
         <ID>0</ID>
         <Head>0</Head>
@@ -6356,7 +6454,7 @@
         <Phase>0</Phase>
       </Axis>
     </Function>
-    <Function ID="421" Type="Scene" Name="Dimmer Pares" Path="Dimmers">
+    <Function ID="435" Type="Scene" Name="Dimmer Pares" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">9,255,10,4</FixtureVal>
       <FixtureVal ID="1">9,0</FixtureVal>
@@ -6382,7 +6480,7 @@
       <FixtureVal ID="27">0,0</FixtureVal>
       <FixtureVal ID="28">0,255</FixtureVal>
     </Function>
-    <Function ID="422" Type="Scene" Name="Dimmer Impares" Path="Dimmers">
+    <Function ID="436" Type="Scene" Name="Dimmer Impares" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">9,0</FixtureVal>
       <FixtureVal ID="1">9,255,10,4</FixtureVal>
@@ -6408,16 +6506,16 @@
       <FixtureVal ID="27">0,255</FixtureVal>
       <FixtureVal ID="28">0,0</FixtureVal>
     </Function>
-    <Function ID="423" Type="Chaser" Name="Dimmer PingPong" Path="Dimmers">
+    <Function ID="437" Type="Chaser" Name="Dimmer PingPong" Path="Dimmers">
       <Tempo>Beats</Tempo>
       <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">421</Step>
-      <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">422</Step>
+      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">435</Step>
+      <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">436</Step>
     </Function>
-    <Function ID="424" Type="Scene" Name="Strobo ON" Path="Strobos">
+    <Function ID="438" Type="Scene" Name="Strobo ON" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">10,132</FixtureVal>
       <FixtureVal ID="1">10,132</FixtureVal>
@@ -6445,7 +6543,7 @@
       <FixtureVal ID="27">4,128</FixtureVal>
       <FixtureVal ID="28">4,128</FixtureVal>
     </Function>
-    <Function ID="425" Type="Scene" Name="Strobo OFF" Path="Strobos">
+    <Function ID="439" Type="Scene" Name="Strobo OFF" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">10,4</FixtureVal>
       <FixtureVal ID="1">10,4</FixtureVal>
@@ -6473,7 +6571,7 @@
       <FixtureVal ID="27">4,0</FixtureVal>
       <FixtureVal ID="28">4,0</FixtureVal>
     </Function>
-    <Function ID="426" Type="Chaser" Name="Strobo Rapido" Path="Strobos">
+    <Function ID="440" Type="Chaser" Name="Strobo Rapido" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="125"/>
       <Direction>Forward</Direction>
       <RunOrder>SingleShot</RunOrder>
@@ -6487,7 +6585,7 @@
       <Step Number="6" FadeIn="0" Hold="125" FadeOut="0">0</Step>
       <Step Number="7" FadeIn="0" Hold="125" FadeOut="0">1</Step>
     </Function>
-    <Function ID="427" Type="Chaser" Name="Strobo Medio" Path="Strobos">
+    <Function ID="441" Type="Chaser" Name="Strobo Medio" Path="Strobos">
       <Speed FadeIn="0" FadeOut="0" Duration="250"/>
       <Direction>Forward</Direction>
       <RunOrder>SingleShot</RunOrder>
@@ -6501,7 +6599,7 @@
       <Step Number="6" FadeIn="0" Hold="250" FadeOut="0">0</Step>
       <Step Number="7" FadeIn="0" Hold="250" FadeOut="0">1</Step>
     </Function>
-    <Function ID="428" Type="Scene" Name="Rig Rojo" Path="Colores Rig">
+    <Function ID="442" Type="Scene" Name="Rig Rojo" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,0,7,0</FixtureVal>
       <FixtureVal ID="1">5,255,6,0,7,0</FixtureVal>
@@ -6525,11 +6623,11 @@
       <FixtureVal ID="22">7,12</FixtureVal>
       <FixtureVal ID="23">7,12</FixtureVal>
     </Function>
-    <Function ID="429" Type="Collection" Name="Rig Rojo + Pixeles" Path="Colores Rig">
-      <Step Number="0">428</Step>
+    <Function ID="443" Type="Collection" Name="Rig Rojo + Pixeles" Path="Colores Rig">
+      <Step Number="0">442</Step>
       <Step Number="1">320</Step>
     </Function>
-    <Function ID="430" Type="Scene" Name="Rig Verde" Path="Colores Rig">
+    <Function ID="444" Type="Scene" Name="Rig Verde" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,0,6,255,7,0</FixtureVal>
       <FixtureVal ID="1">5,0,6,255,7,0</FixtureVal>
@@ -6553,11 +6651,11 @@
       <FixtureVal ID="22">7,35</FixtureVal>
       <FixtureVal ID="23">7,35</FixtureVal>
     </Function>
-    <Function ID="431" Type="Collection" Name="Rig Verde + Pixeles" Path="Colores Rig">
-      <Step Number="0">430</Step>
+    <Function ID="445" Type="Collection" Name="Rig Verde + Pixeles" Path="Colores Rig">
+      <Step Number="0">444</Step>
       <Step Number="1">321</Step>
     </Function>
-    <Function ID="432" Type="Scene" Name="Rig Azul" Path="Colores Rig">
+    <Function ID="446" Type="Scene" Name="Rig Azul" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,0,6,0,7,255</FixtureVal>
       <FixtureVal ID="1">5,0,6,0,7,255</FixtureVal>
@@ -6581,11 +6679,11 @@
       <FixtureVal ID="22">7,43</FixtureVal>
       <FixtureVal ID="23">7,43</FixtureVal>
     </Function>
-    <Function ID="433" Type="Collection" Name="Rig Azul + Pixeles" Path="Colores Rig">
-      <Step Number="0">432</Step>
+    <Function ID="447" Type="Collection" Name="Rig Azul + Pixeles" Path="Colores Rig">
+      <Step Number="0">446</Step>
       <Step Number="1">322</Step>
     </Function>
-    <Function ID="434" Type="Scene" Name="Rig UltraVioleta" Path="Colores Rig">
+    <Function ID="448" Type="Scene" Name="Rig UltraVioleta" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,160,6,0,7,255</FixtureVal>
       <FixtureVal ID="1">5,160,6,0,7,255</FixtureVal>
@@ -6609,11 +6707,11 @@
       <FixtureVal ID="22">7,99</FixtureVal>
       <FixtureVal ID="23">7,99</FixtureVal>
     </Function>
-    <Function ID="435" Type="Collection" Name="Rig UltraVioleta + Pixeles" Path="Colores Rig">
-      <Step Number="0">434</Step>
+    <Function ID="449" Type="Collection" Name="Rig UltraVioleta + Pixeles" Path="Colores Rig">
+      <Step Number="0">448</Step>
       <Step Number="1">323</Step>
     </Function>
-    <Function ID="436" Type="Scene" Name="Rig Amarillo" Path="Colores Rig">
+    <Function ID="450" Type="Scene" Name="Rig Amarillo" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,255,7,0</FixtureVal>
       <FixtureVal ID="1">5,255,6,255,7,0</FixtureVal>
@@ -6637,11 +6735,11 @@
       <FixtureVal ID="22">7,27</FixtureVal>
       <FixtureVal ID="23">7,27</FixtureVal>
     </Function>
-    <Function ID="437" Type="Collection" Name="Rig Amarillo + Pixeles" Path="Colores Rig">
-      <Step Number="0">436</Step>
+    <Function ID="451" Type="Collection" Name="Rig Amarillo + Pixeles" Path="Colores Rig">
+      <Step Number="0">450</Step>
       <Step Number="1">324</Step>
     </Function>
-    <Function ID="438" Type="Scene" Name="Rig Cyan" Path="Colores Rig">
+    <Function ID="452" Type="Scene" Name="Rig Cyan" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,0,6,255,7,255</FixtureVal>
       <FixtureVal ID="1">5,0,6,255,7,255</FixtureVal>
@@ -6665,11 +6763,11 @@
       <FixtureVal ID="22">7,59</FixtureVal>
       <FixtureVal ID="23">7,59</FixtureVal>
     </Function>
-    <Function ID="439" Type="Collection" Name="Rig Cyan + Pixeles" Path="Colores Rig">
-      <Step Number="0">438</Step>
+    <Function ID="453" Type="Collection" Name="Rig Cyan + Pixeles" Path="Colores Rig">
+      <Step Number="0">452</Step>
       <Step Number="1">325</Step>
     </Function>
-    <Function ID="440" Type="Scene" Name="Rig Magenta" Path="Colores Rig">
+    <Function ID="454" Type="Scene" Name="Rig Magenta" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,0,7,255</FixtureVal>
       <FixtureVal ID="1">5,255,6,0,7,255</FixtureVal>
@@ -6693,11 +6791,11 @@
       <FixtureVal ID="22">7,51</FixtureVal>
       <FixtureVal ID="23">7,51</FixtureVal>
     </Function>
-    <Function ID="441" Type="Collection" Name="Rig Magenta + Pixeles" Path="Colores Rig">
-      <Step Number="0">440</Step>
+    <Function ID="455" Type="Collection" Name="Rig Magenta + Pixeles" Path="Colores Rig">
+      <Step Number="0">454</Step>
       <Step Number="1">326</Step>
     </Function>
-    <Function ID="442" Type="Scene" Name="Rig Blanco" Path="Colores Rig">
+    <Function ID="456" Type="Scene" Name="Rig Blanco" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,255,7,255</FixtureVal>
       <FixtureVal ID="1">5,255,6,255,7,255</FixtureVal>
@@ -6721,11 +6819,11 @@
       <FixtureVal ID="22">7,4</FixtureVal>
       <FixtureVal ID="23">7,4</FixtureVal>
     </Function>
-    <Function ID="443" Type="Collection" Name="Rig Blanco + Pixeles" Path="Colores Rig">
-      <Step Number="0">442</Step>
+    <Function ID="457" Type="Collection" Name="Rig Blanco + Pixeles" Path="Colores Rig">
+      <Step Number="0">456</Step>
       <Step Number="1">327</Step>
     </Function>
-    <Function ID="444" Type="Scene" Name="Rig Naranja" Path="Colores Rig">
+    <Function ID="458" Type="Scene" Name="Rig Naranja" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,127,7,0</FixtureVal>
       <FixtureVal ID="1">5,255,6,127,7,0</FixtureVal>
@@ -6749,11 +6847,11 @@
       <FixtureVal ID="22">7,19</FixtureVal>
       <FixtureVal ID="23">7,19</FixtureVal>
     </Function>
-    <Function ID="445" Type="Collection" Name="Rig Naranja + Pixeles" Path="Colores Rig">
-      <Step Number="0">444</Step>
+    <Function ID="459" Type="Collection" Name="Rig Naranja + Pixeles" Path="Colores Rig">
+      <Step Number="0">458</Step>
       <Step Number="1">328</Step>
     </Function>
-    <Function ID="446" Type="Scene" Name="Rig Rosa" Path="Colores Rig">
+    <Function ID="460" Type="Scene" Name="Rig Rosa" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,0,7,100</FixtureVal>
       <FixtureVal ID="1">5,255,6,0,7,100</FixtureVal>
@@ -6777,11 +6875,11 @@
       <FixtureVal ID="22">7,51</FixtureVal>
       <FixtureVal ID="23">7,51</FixtureVal>
     </Function>
-    <Function ID="447" Type="Collection" Name="Rig Rosa + Pixeles" Path="Colores Rig">
-      <Step Number="0">446</Step>
+    <Function ID="461" Type="Collection" Name="Rig Rosa + Pixeles" Path="Colores Rig">
+      <Step Number="0">460</Step>
       <Step Number="1">329</Step>
     </Function>
-    <Function ID="448" Type="Scene" Name="Cabezas Rojo / Resto Azul" Path="Colores Rig">
+    <Function ID="462" Type="Scene" Name="Cabezas Rojo / Resto Azul" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,0,7,0</FixtureVal>
       <FixtureVal ID="1">5,255,6,0,7,0</FixtureVal>
@@ -6805,11 +6903,11 @@
       <FixtureVal ID="22">7,12</FixtureVal>
       <FixtureVal ID="23">7,12</FixtureVal>
     </Function>
-    <Function ID="449" Type="Collection" Name="Cabezas Rojo / Resto Azul + Pixeles" Path="Colores Rig">
-      <Step Number="0">448</Step>
+    <Function ID="463" Type="Collection" Name="Cabezas Rojo / Resto Azul + Pixeles" Path="Colores Rig">
+      <Step Number="0">462</Step>
       <Step Number="1">322</Step>
     </Function>
-    <Function ID="450" Type="Scene" Name="Cabezas Azul / Resto Ambar" Path="Colores Rig">
+    <Function ID="464" Type="Scene" Name="Cabezas Azul / Resto Ambar" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,0,6,0,7,255</FixtureVal>
       <FixtureVal ID="1">5,0,6,0,7,255</FixtureVal>
@@ -6833,11 +6931,11 @@
       <FixtureVal ID="22">7,43</FixtureVal>
       <FixtureVal ID="23">7,43</FixtureVal>
     </Function>
-    <Function ID="451" Type="Collection" Name="Cabezas Azul / Resto Ambar + Pixeles" Path="Colores Rig">
-      <Step Number="0">450</Step>
+    <Function ID="465" Type="Collection" Name="Cabezas Azul / Resto Ambar + Pixeles" Path="Colores Rig">
+      <Step Number="0">464</Step>
       <Step Number="1">330</Step>
     </Function>
-    <Function ID="452" Type="Scene" Name="Cabezas Magenta / Resto Cyan" Path="Colores Rig">
+    <Function ID="466" Type="Scene" Name="Cabezas Magenta / Resto Cyan" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,0,7,255</FixtureVal>
       <FixtureVal ID="1">5,255,6,0,7,255</FixtureVal>
@@ -6861,11 +6959,11 @@
       <FixtureVal ID="22">7,51</FixtureVal>
       <FixtureVal ID="23">7,51</FixtureVal>
     </Function>
-    <Function ID="453" Type="Collection" Name="Cabezas Magenta / Resto Cyan + Pixeles" Path="Colores Rig">
-      <Step Number="0">452</Step>
+    <Function ID="467" Type="Collection" Name="Cabezas Magenta / Resto Cyan + Pixeles" Path="Colores Rig">
+      <Step Number="0">466</Step>
       <Step Number="1">325</Step>
     </Function>
-    <Function ID="454" Type="Scene" Name="Cabezas Amarillo / Resto UltraVioleta" Path="Colores Rig">
+    <Function ID="468" Type="Scene" Name="Cabezas Amarillo / Resto UltraVioleta" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,255,7,0</FixtureVal>
       <FixtureVal ID="1">5,255,6,255,7,0</FixtureVal>
@@ -6889,11 +6987,11 @@
       <FixtureVal ID="22">7,27</FixtureVal>
       <FixtureVal ID="23">7,27</FixtureVal>
     </Function>
-    <Function ID="455" Type="Collection" Name="Cabezas Amarillo / Resto UltraVioleta + Pixeles" Path="Colores Rig">
-      <Step Number="0">454</Step>
+    <Function ID="469" Type="Collection" Name="Cabezas Amarillo / Resto UltraVioleta + Pixeles" Path="Colores Rig">
+      <Step Number="0">468</Step>
       <Step Number="1">323</Step>
     </Function>
-    <Function ID="456" Type="Scene" Name="Cabezas Blanco / Resto Rojo" Path="Colores Rig">
+    <Function ID="470" Type="Scene" Name="Cabezas Blanco / Resto Rojo" Path="Colores Rig">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,255,7,255</FixtureVal>
       <FixtureVal ID="1">5,255,6,255,7,255</FixtureVal>
@@ -6917,39 +7015,39 @@
       <FixtureVal ID="22">7,4</FixtureVal>
       <FixtureVal ID="23">7,4</FixtureVal>
     </Function>
-    <Function ID="457" Type="Collection" Name="Cabezas Blanco / Resto Rojo + Pixeles" Path="Colores Rig">
-      <Step Number="0">456</Step>
+    <Function ID="471" Type="Collection" Name="Cabezas Blanco / Resto Rojo + Pixeles" Path="Colores Rig">
+      <Step Number="0">470</Step>
       <Step Number="1">320</Step>
     </Function>
-    <Function ID="458" Type="Chaser" Name="Rueda Colores" Path="Colores Rig">
+    <Function ID="472" Type="Chaser" Name="Rueda Colores" Path="Colores Rig">
       <Tempo>Beats</Tempo>
       <Speed FadeIn="1000" FadeOut="1000" Duration="9000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="1000" Hold="8000" FadeOut="1000">429</Step>
-      <Step Number="1" FadeIn="1000" Hold="8000" FadeOut="1000">431</Step>
-      <Step Number="2" FadeIn="1000" Hold="8000" FadeOut="1000">433</Step>
-      <Step Number="3" FadeIn="1000" Hold="8000" FadeOut="1000">435</Step>
-      <Step Number="4" FadeIn="1000" Hold="8000" FadeOut="1000">437</Step>
-      <Step Number="5" FadeIn="1000" Hold="8000" FadeOut="1000">439</Step>
-      <Step Number="6" FadeIn="1000" Hold="8000" FadeOut="1000">441</Step>
-      <Step Number="7" FadeIn="1000" Hold="8000" FadeOut="1000">443</Step>
-      <Step Number="8" FadeIn="1000" Hold="8000" FadeOut="1000">445</Step>
-      <Step Number="9" FadeIn="1000" Hold="8000" FadeOut="1000">447</Step>
-      <Step Number="10" FadeIn="1000" Hold="8000" FadeOut="1000">449</Step>
-      <Step Number="11" FadeIn="1000" Hold="8000" FadeOut="1000">451</Step>
-      <Step Number="12" FadeIn="1000" Hold="8000" FadeOut="1000">453</Step>
-      <Step Number="13" FadeIn="1000" Hold="8000" FadeOut="1000">455</Step>
-      <Step Number="14" FadeIn="1000" Hold="8000" FadeOut="1000">457</Step>
+      <Step Number="0" FadeIn="1000" Hold="8000" FadeOut="1000">443</Step>
+      <Step Number="1" FadeIn="1000" Hold="8000" FadeOut="1000">445</Step>
+      <Step Number="2" FadeIn="1000" Hold="8000" FadeOut="1000">447</Step>
+      <Step Number="3" FadeIn="1000" Hold="8000" FadeOut="1000">449</Step>
+      <Step Number="4" FadeIn="1000" Hold="8000" FadeOut="1000">451</Step>
+      <Step Number="5" FadeIn="1000" Hold="8000" FadeOut="1000">453</Step>
+      <Step Number="6" FadeIn="1000" Hold="8000" FadeOut="1000">455</Step>
+      <Step Number="7" FadeIn="1000" Hold="8000" FadeOut="1000">457</Step>
+      <Step Number="8" FadeIn="1000" Hold="8000" FadeOut="1000">459</Step>
+      <Step Number="9" FadeIn="1000" Hold="8000" FadeOut="1000">461</Step>
+      <Step Number="10" FadeIn="1000" Hold="8000" FadeOut="1000">463</Step>
+      <Step Number="11" FadeIn="1000" Hold="8000" FadeOut="1000">465</Step>
+      <Step Number="12" FadeIn="1000" Hold="8000" FadeOut="1000">467</Step>
+      <Step Number="13" FadeIn="1000" Hold="8000" FadeOut="1000">469</Step>
+      <Step Number="14" FadeIn="1000" Hold="8000" FadeOut="1000">471</Step>
     </Function>
-    <Function ID="459" Type="Collection" Name="Rueda Mezcla" Path="Show">
+    <Function ID="473" Type="Collection" Name="Rueda Mezcla" Path="Show">
       <Step Number="0">47</Step>
       <Step Number="1">89</Step>
       <Step Number="2">131</Step>
       <Step Number="3">173</Step>
     </Function>
-    <Function ID="460" Type="Scene" Name="Intensidad Ambiente" Path="Niveles">
+    <Function ID="474" Type="Scene" Name="Intensidad Ambiente" Path="Niveles">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">9,110,10,4</FixtureVal>
       <FixtureVal ID="1">9,110,10,4</FixtureVal>
@@ -6973,7 +7071,7 @@
       <FixtureVal ID="22">5,248,6,110</FixtureVal>
       <FixtureVal ID="23">5,248,6,110</FixtureVal>
     </Function>
-    <Function ID="461" Type="Scene" Name="Intensidad Total" Path="Niveles">
+    <Function ID="475" Type="Scene" Name="Intensidad Total" Path="Niveles">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">9,255,10,4</FixtureVal>
       <FixtureVal ID="1">9,255,10,4</FixtureVal>
@@ -6997,60 +7095,60 @@
       <FixtureVal ID="22">5,248,6,255</FixtureVal>
       <FixtureVal ID="23">5,248,6,255</FixtureVal>
     </Function>
-    <Function ID="462" Type="Chaser" Name="Dimmer Secuencia" Path="Dimmers">
+    <Function ID="476" Type="Chaser" Name="Dimmer Secuencia" Path="Dimmers">
       <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
-      <Step Number="0" FadeIn="0" Hold="20000" FadeOut="0">461</Step>
-      <Step Number="1" FadeIn="0" Hold="10000" FadeOut="0">419</Step>
-      <Step Number="2" FadeIn="0" Hold="20000" FadeOut="0">461</Step>
-      <Step Number="3" FadeIn="0" Hold="10000" FadeOut="0">423</Step>
-      <Step Number="4" FadeIn="0" Hold="20000" FadeOut="0">461</Step>
-      <Step Number="5" FadeIn="0" Hold="10000" FadeOut="0">420</Step>
+      <Step Number="0" FadeIn="0" Hold="20000" FadeOut="0">475</Step>
+      <Step Number="1" FadeIn="0" Hold="10000" FadeOut="0">433</Step>
+      <Step Number="2" FadeIn="0" Hold="20000" FadeOut="0">475</Step>
+      <Step Number="3" FadeIn="0" Hold="10000" FadeOut="0">437</Step>
+      <Step Number="4" FadeIn="0" Hold="20000" FadeOut="0">475</Step>
+      <Step Number="5" FadeIn="0" Hold="10000" FadeOut="0">434</Step>
     </Function>
-    <Function ID="463" Type="Scene" Name="Intensidad Peak" Path="Niveles">
+    <Function ID="477" Type="Scene" Name="Intensidad Peak" Path="Niveles">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="15">5,247</FixtureVal>
       <FixtureVal ID="16">5,247</FixtureVal>
     </Function>
-    <Function ID="464" Type="Collection" Name="Nivel Ambiente" Path="Niveles">
+    <Function ID="478" Type="Collection" Name="Nivel Ambiente" Path="Niveles">
       <Step Number="0">361</Step>
       <Step Number="1">360</Step>
       <Step Number="2">374</Step>
-      <Step Number="3">460</Step>
+      <Step Number="3">474</Step>
     </Function>
-    <Function ID="465" Type="Collection" Name="Nivel Fiesta" Path="Niveles">
+    <Function ID="479" Type="Collection" Name="Nivel Fiesta" Path="Niveles">
       <Step Number="0">341</Step>
       <Step Number="1">362</Step>
       <Step Number="2">394</Step>
-      <Step Number="3">461</Step>
+      <Step Number="3">475</Step>
     </Function>
-    <Function ID="466" Type="Collection" Name="Nivel Peak" Path="Niveles">
+    <Function ID="480" Type="Collection" Name="Nivel Peak" Path="Niveles">
       <Step Number="0">355</Step>
       <Step Number="1">359</Step>
       <Step Number="2">394</Step>
       <Step Number="3">415</Step>
-      <Step Number="4">419</Step>
-      <Step Number="5">463</Step>
+      <Step Number="4">433</Step>
+      <Step Number="5">477</Step>
     </Function>
-    <Function ID="467" Type="Chaser" Name="Ciclo Energia" Path="Niveles">
+    <Function ID="481" Type="Chaser" Name="Ciclo Energia" Path="Niveles">
       <Speed FadeIn="0" FadeOut="0" Duration="240000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
-      <Step Number="0" FadeIn="0" Hold="240000" FadeOut="0">464</Step>
-      <Step Number="1" FadeIn="0" Hold="480000" FadeOut="0">465</Step>
-      <Step Number="2" FadeIn="0" Hold="40000" FadeOut="0">466</Step>
-      <Step Number="3" FadeIn="0" Hold="480000" FadeOut="0">465</Step>
+      <Step Number="0" FadeIn="0" Hold="240000" FadeOut="0">478</Step>
+      <Step Number="1" FadeIn="0" Hold="480000" FadeOut="0">479</Step>
+      <Step Number="2" FadeIn="0" Hold="40000" FadeOut="0">480</Step>
+      <Step Number="3" FadeIn="0" Hold="480000" FadeOut="0">479</Step>
     </Function>
-    <Function ID="468" Type="Collection" Name="AUTO" Path="Show">
-      <Step Number="0">458</Step>
-      <Step Number="1">418</Step>
+    <Function ID="482" Type="Collection" Name="AUTO" Path="Show">
+      <Step Number="0">472</Step>
+      <Step Number="1">432</Step>
       <Step Number="2">216</Step>
-      <Step Number="3">467</Step>
+      <Step Number="3">481</Step>
     </Function>
-    <Function ID="469" Type="Scene" Name="Luz Charla" Path="Show">
+    <Function ID="483" Type="Scene" Name="Luz Charla" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
       <FixtureVal ID="0">5,255,6,214,7,170,9,255,10,4</FixtureVal>
       <FixtureVal ID="1">5,255,6,214,7,170,9,255,10,4</FixtureVal>
@@ -7076,35 +7174,35 @@
       <FixtureVal ID="27">0,255,1,255,2,214,3,170,5,0</FixtureVal>
       <FixtureVal ID="28">0,255,1,255,2,214,3,170,5,0</FixtureVal>
     </Function>
-    <Function ID="470" Type="Collection" Name="Momento Charla" Path="Momentos">
+    <Function ID="484" Type="Collection" Name="Momento Charla" Path="Momentos">
       <Step Number="0">372</Step>
-      <Step Number="1">469</Step>
+      <Step Number="1">483</Step>
       <Step Number="2">374</Step>
       <Step Number="3">395</Step>
-      <Step Number="4">461</Step>
+      <Step Number="4">475</Step>
     </Function>
-    <Function ID="471" Type="Collection" Name="Momento Tranquilo" Path="Momentos">
-      <Step Number="0">458</Step>
+    <Function ID="485" Type="Collection" Name="Momento Tranquilo" Path="Momentos">
+      <Step Number="0">472</Step>
       <Step Number="1">216</Step>
       <Step Number="2">372</Step>
       <Step Number="3">374</Step>
-      <Step Number="4">460</Step>
+      <Step Number="4">474</Step>
     </Function>
-    <Function ID="472" Type="Collection" Name="Momento Fiesta" Path="Momentos">
-      <Step Number="0">458</Step>
+    <Function ID="486" Type="Collection" Name="Momento Fiesta" Path="Momentos">
+      <Step Number="0">472</Step>
       <Step Number="1">216</Step>
       <Step Number="2">370</Step>
       <Step Number="3">394</Step>
-      <Step Number="4">461</Step>
+      <Step Number="4">475</Step>
     </Function>
-    <Function ID="473" Type="Collection" Name="Momento Locura" Path="Momentos">
-      <Step Number="0">458</Step>
+    <Function ID="487" Type="Collection" Name="Momento Locura" Path="Momentos">
+      <Step Number="0">472</Step>
       <Step Number="1">216</Step>
       <Step Number="2">371</Step>
       <Step Number="3">394</Step>
       <Step Number="4">415</Step>
-      <Step Number="5">419</Step>
-      <Step Number="6">461</Step>
+      <Step Number="5">433</Step>
+      <Step Number="6">475</Step>
     </Function>
   </Engine>
   <VirtualConsole>
@@ -7175,7 +7273,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,28,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="468"/>
+            <Function ID="482"/>
             <Action>Toggle</Action>
             <Key>Q</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7189,7 +7287,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="470"/>
+            <Function ID="484"/>
             <Action>Toggle</Action>
             <Key>F1</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7203,7 +7301,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="471"/>
+            <Function ID="485"/>
             <Action>Toggle</Action>
             <Key>F2</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7217,7 +7315,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="472"/>
+            <Function ID="486"/>
             <Action>Toggle</Action>
             <Key>F3</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7231,7 +7329,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="473"/>
+            <Function ID="487"/>
             <Action>Toggle</Action>
             <Key>F4</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7331,7 +7429,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="416"/>
+            <Function ID="430"/>
             <Action Override="1">Flash</Action>
             <Key>H</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7345,7 +7443,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="426"/>
+            <Function ID="440"/>
             <Action>Toggle</Action>
             <Key>F</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7359,7 +7457,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
-            <Function ID="427"/>
+            <Function ID="441"/>
             <Action>Toggle</Action>
             <Key>T</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7517,7 +7615,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="458"/>
+            <Function ID="472"/>
             <Action>Toggle</Action>
             <Key>W</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7531,7 +7629,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="459"/>
+            <Function ID="473"/>
             <Action>Toggle</Action>
             <Key>E</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -7587,7 +7685,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="418"/>
+            <Function ID="432"/>
             <Action>Toggle</Action>
             <Key>J</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -8249,7 +8347,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="419"/>
+            <Function ID="433"/>
             <Action>Toggle</Action>
             <Key>V</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -8263,7 +8361,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="420"/>
+            <Function ID="434"/>
             <Action>Toggle</Action>
             <Key>B</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -8277,7 +8375,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="423"/>
+            <Function ID="437"/>
             <Action>Toggle</Action>
             <Key>Z</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -8291,7 +8389,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="462"/>
+            <Function ID="476"/>
             <Action>Toggle</Action>
             <Key>M</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -8305,7 +8403,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="424"/>
+            <Function ID="438"/>
             <Action>Toggle</Action>
             <Key>S</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -8319,7 +8417,7 @@
               <BackgroundImage>None</BackgroundImage>
               <Font>Default</Font>
             </Appearance>
-            <Function ID="425"/>
+            <Function ID="439"/>
             <Action>Toggle</Action>
             <Key>D</Key>
             <Intensity Adjust="False">100</Intensity>
@@ -9172,8 +9270,92 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
+          <Button Caption="1" ID="147" Icon="">
+            <WindowState Visible="True" X="108" Y="26" Width="47" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="416"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="2" ID="148" Icon="">
+            <WindowState Visible="True" X="159" Y="26" Width="47" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="417"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="3" ID="149" Icon="">
+            <WindowState Visible="True" X="210" Y="26" Width="47" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="418"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="4" ID="150" Icon="">
+            <WindowState Visible="True" X="261" Y="26" Width="47" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="419"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="1 y 3" ID="151" Icon="">
+            <WindowState Visible="True" X="312" Y="26" Width="47" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="420"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="2 y 4" ID="152" Icon="">
+            <WindowState Visible="True" X="363" Y="26" Width="47" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="421"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
         </SoloFrame>
-        <Label Caption="Apunta las 12 cabezas a mano — arrastra dentro del cuadro" ID="147" Page="1">
+        <Label Caption="Apunta las 12 cabezas a mano — arrastra dentro del cuadro" ID="153" Page="1">
           <WindowState Visible="True" X="540" Y="574" Width="628" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -9183,7 +9365,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <XYPad Caption="Cabezas" ID="148" InvertedAppearance="0" Page="1">
+        <XYPad Caption="Cabezas" ID="154" InvertedAppearance="0" Page="1">
           <WindowState Visible="True" X="540" Y="598" Width="628" Height="280"/>
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
@@ -9243,7 +9425,7 @@
           <Pan Position="127"/>
           <Tilt Position="127"/>
         </XYPad>
-        <SpeedDial Caption="Vel. Colores" ID="149" Page="1">
+        <SpeedDial Caption="Vel. Colores" ID="155" Page="1">
           <WindowState Visible="True" X="1176" Y="68" Width="124" Height="150"/>
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
@@ -9263,7 +9445,7 @@
           <Function FadeIn="0" FadeOut="0" Duration="6">131</Function>
           <Function FadeIn="0" FadeOut="0" Duration="6">173</Function>
         </SpeedDial>
-        <SpeedDial Caption="Vel. Movimiento" ID="150" Page="1">
+        <SpeedDial Caption="Vel. Movimiento" ID="156" Page="1">
           <WindowState Visible="True" X="1308" Y="68" Width="124" Height="150"/>
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
@@ -9277,7 +9459,7 @@
           <Function FadeIn="0" FadeOut="0" Duration="6">341</Function>
           <Function FadeIn="0" FadeOut="0" Duration="6">362</Function>
         </SpeedDial>
-        <Label Caption="Velocidad de las ruedas de color" ID="151" Page="1">
+        <Label Caption="Velocidad de las ruedas de color" ID="157" Page="1">
           <WindowState Visible="True" X="1176" Y="228" Width="256" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -9287,7 +9469,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="y del movimiento de las cabezas." ID="152" Page="1">
+        <Label Caption="y del movimiento de las cabezas." ID="158" Page="1">
           <WindowState Visible="True" X="1176" Y="250" Width="256" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -9297,7 +9479,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Solo se nota con la rueda o el" ID="153" Page="1">
+        <Label Caption="Solo se nota con la rueda o el" ID="159" Page="1">
           <WindowState Visible="True" X="1176" Y="272" Width="256" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -9307,7 +9489,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="movimiento encendidos." ID="154" Page="1">
+        <Label Caption="movimiento encendidos." ID="160" Page="1">
           <WindowState Visible="True" X="1176" Y="294" Width="256" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -9317,7 +9499,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="3 · LIBRERÍA — de aquí sale el show. No hace falta tocar nada de esto durante una fiesta." ID="155" Page="2">
+        <Label Caption="3 · LIBRERÍA — de aquí sale el show. No hace falta tocar nada de esto durante una fiesta." ID="161" Page="2">
           <WindowState Visible="True" X="8" Y="30" Width="1416" Height="30"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -9327,7 +9509,7 @@
             <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <SoloFrame Caption="Mezclas de dos colores" ID="156" Page="2">
+        <SoloFrame Caption="Mezclas de dos colores" ID="162" Page="2">
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -9346,7 +9528,7 @@
           <Disabled>False</Disabled>
           <Multipage PagesNum="4" CurrentPage="0"/>
           <PagesLoop>True</PagesLoop>
-          <Label Caption="Grupo: BarrasLed" ID="157">
+          <Label Caption="Grupo: BarrasLed" ID="163">
             <WindowState Visible="True" X="6" Y="26" Width="512" Height="20"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9356,7 +9538,7 @@
               <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
             </Appearance>
           </Label>
-          <Button Caption="Ro/Az" ID="158" Icon="">
+          <Button Caption="Ro/Az" ID="164" Icon="">
             <WindowState Visible="True" X="6" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9370,7 +9552,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ve" ID="159" Icon="">
+          <Button Caption="Ro/Ve" ID="165" Icon="">
             <WindowState Visible="True" X="57" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9384,7 +9566,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Am" ID="160" Icon="">
+          <Button Caption="Ro/Am" ID="166" Icon="">
             <WindowState Visible="True" X="108" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9398,7 +9580,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ma" ID="161" Icon="">
+          <Button Caption="Ro/Ma" ID="167" Icon="">
             <WindowState Visible="True" X="159" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9412,7 +9594,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Bl" ID="162" Icon="">
+          <Button Caption="Ro/Bl" ID="168" Icon="">
             <WindowState Visible="True" X="210" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9426,7 +9608,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ro" ID="163" Icon="">
+          <Button Caption="Az/Ro" ID="169" Icon="">
             <WindowState Visible="True" X="261" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9440,7 +9622,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ve" ID="164" Icon="">
+          <Button Caption="Az/Ve" ID="170" Icon="">
             <WindowState Visible="True" X="312" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9454,7 +9636,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Am" ID="165" Icon="">
+          <Button Caption="Az/Am" ID="171" Icon="">
             <WindowState Visible="True" X="363" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9468,7 +9650,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ma" ID="166" Icon="">
+          <Button Caption="Az/Ma" ID="172" Icon="">
             <WindowState Visible="True" X="414" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9482,7 +9664,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Bl" ID="167" Icon="">
+          <Button Caption="Az/Bl" ID="173" Icon="">
             <WindowState Visible="True" X="465" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9496,7 +9678,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ro" ID="168" Icon="">
+          <Button Caption="Ve/Ro" ID="174" Icon="">
             <WindowState Visible="True" X="6" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9510,7 +9692,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Az" ID="169" Icon="">
+          <Button Caption="Ve/Az" ID="175" Icon="">
             <WindowState Visible="True" X="57" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9524,7 +9706,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Am" ID="170" Icon="">
+          <Button Caption="Ve/Am" ID="176" Icon="">
             <WindowState Visible="True" X="108" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9538,7 +9720,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ma" ID="171" Icon="">
+          <Button Caption="Ve/Ma" ID="177" Icon="">
             <WindowState Visible="True" X="159" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9552,7 +9734,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Bl" ID="172" Icon="">
+          <Button Caption="Ve/Bl" ID="178" Icon="">
             <WindowState Visible="True" X="210" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9566,7 +9748,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ro" ID="173" Icon="">
+          <Button Caption="Am/Ro" ID="179" Icon="">
             <WindowState Visible="True" X="261" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9580,7 +9762,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Az" ID="174" Icon="">
+          <Button Caption="Am/Az" ID="180" Icon="">
             <WindowState Visible="True" X="312" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9594,7 +9776,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ve" ID="175" Icon="">
+          <Button Caption="Am/Ve" ID="181" Icon="">
             <WindowState Visible="True" X="363" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9608,7 +9790,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ma" ID="176" Icon="">
+          <Button Caption="Am/Ma" ID="182" Icon="">
             <WindowState Visible="True" X="414" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9622,7 +9804,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Bl" ID="177" Icon="">
+          <Button Caption="Am/Bl" ID="183" Icon="">
             <WindowState Visible="True" X="465" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9636,7 +9818,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ro" ID="178" Icon="">
+          <Button Caption="Ma/Ro" ID="184" Icon="">
             <WindowState Visible="True" X="6" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9650,7 +9832,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Az" ID="179" Icon="">
+          <Button Caption="Ma/Az" ID="185" Icon="">
             <WindowState Visible="True" X="57" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9664,7 +9846,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ve" ID="180" Icon="">
+          <Button Caption="Ma/Ve" ID="186" Icon="">
             <WindowState Visible="True" X="108" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9678,7 +9860,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Am" ID="181" Icon="">
+          <Button Caption="Ma/Am" ID="187" Icon="">
             <WindowState Visible="True" X="159" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9692,7 +9874,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Bl" ID="182" Icon="">
+          <Button Caption="Ma/Bl" ID="188" Icon="">
             <WindowState Visible="True" X="210" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9706,7 +9888,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ro" ID="183" Icon="">
+          <Button Caption="Bl/Ro" ID="189" Icon="">
             <WindowState Visible="True" X="261" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9720,7 +9902,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Az" ID="184" Icon="">
+          <Button Caption="Bl/Az" ID="190" Icon="">
             <WindowState Visible="True" X="312" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9734,7 +9916,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ve" ID="185" Icon="">
+          <Button Caption="Bl/Ve" ID="191" Icon="">
             <WindowState Visible="True" X="363" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9748,7 +9930,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Am" ID="186" Icon="">
+          <Button Caption="Bl/Am" ID="192" Icon="">
             <WindowState Visible="True" X="414" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9762,7 +9944,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ma" ID="187" Icon="">
+          <Button Caption="Bl/Ma" ID="193" Icon="">
             <WindowState Visible="True" X="465" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9776,7 +9958,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Label Caption="Grupo: Cabezas" ID="188" Page="1">
+          <Label Caption="Grupo: Cabezas" ID="194" Page="1">
             <WindowState Visible="True" X="6" Y="26" Width="512" Height="20"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9786,7 +9968,7 @@
               <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
             </Appearance>
           </Label>
-          <Button Caption="Ro/Az" ID="189" Icon="" Page="1">
+          <Button Caption="Ro/Az" ID="195" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9800,7 +9982,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ve" ID="190" Icon="" Page="1">
+          <Button Caption="Ro/Ve" ID="196" Icon="" Page="1">
             <WindowState Visible="True" X="57" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9814,7 +9996,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Am" ID="191" Icon="" Page="1">
+          <Button Caption="Ro/Am" ID="197" Icon="" Page="1">
             <WindowState Visible="True" X="108" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9828,7 +10010,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ma" ID="192" Icon="" Page="1">
+          <Button Caption="Ro/Ma" ID="198" Icon="" Page="1">
             <WindowState Visible="True" X="159" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9842,7 +10024,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Bl" ID="193" Icon="" Page="1">
+          <Button Caption="Ro/Bl" ID="199" Icon="" Page="1">
             <WindowState Visible="True" X="210" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9856,7 +10038,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ro" ID="194" Icon="" Page="1">
+          <Button Caption="Az/Ro" ID="200" Icon="" Page="1">
             <WindowState Visible="True" X="261" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9870,7 +10052,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ve" ID="195" Icon="" Page="1">
+          <Button Caption="Az/Ve" ID="201" Icon="" Page="1">
             <WindowState Visible="True" X="312" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9884,7 +10066,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Am" ID="196" Icon="" Page="1">
+          <Button Caption="Az/Am" ID="202" Icon="" Page="1">
             <WindowState Visible="True" X="363" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9898,7 +10080,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ma" ID="197" Icon="" Page="1">
+          <Button Caption="Az/Ma" ID="203" Icon="" Page="1">
             <WindowState Visible="True" X="414" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9912,7 +10094,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Bl" ID="198" Icon="" Page="1">
+          <Button Caption="Az/Bl" ID="204" Icon="" Page="1">
             <WindowState Visible="True" X="465" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9926,7 +10108,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ro" ID="199" Icon="" Page="1">
+          <Button Caption="Ve/Ro" ID="205" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9940,7 +10122,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Az" ID="200" Icon="" Page="1">
+          <Button Caption="Ve/Az" ID="206" Icon="" Page="1">
             <WindowState Visible="True" X="57" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9954,7 +10136,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Am" ID="201" Icon="" Page="1">
+          <Button Caption="Ve/Am" ID="207" Icon="" Page="1">
             <WindowState Visible="True" X="108" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9968,7 +10150,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ma" ID="202" Icon="" Page="1">
+          <Button Caption="Ve/Ma" ID="208" Icon="" Page="1">
             <WindowState Visible="True" X="159" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9982,7 +10164,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Bl" ID="203" Icon="" Page="1">
+          <Button Caption="Ve/Bl" ID="209" Icon="" Page="1">
             <WindowState Visible="True" X="210" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -9996,7 +10178,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ro" ID="204" Icon="" Page="1">
+          <Button Caption="Am/Ro" ID="210" Icon="" Page="1">
             <WindowState Visible="True" X="261" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10010,7 +10192,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Az" ID="205" Icon="" Page="1">
+          <Button Caption="Am/Az" ID="211" Icon="" Page="1">
             <WindowState Visible="True" X="312" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10024,7 +10206,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ve" ID="206" Icon="" Page="1">
+          <Button Caption="Am/Ve" ID="212" Icon="" Page="1">
             <WindowState Visible="True" X="363" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10038,7 +10220,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ma" ID="207" Icon="" Page="1">
+          <Button Caption="Am/Ma" ID="213" Icon="" Page="1">
             <WindowState Visible="True" X="414" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10052,7 +10234,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Bl" ID="208" Icon="" Page="1">
+          <Button Caption="Am/Bl" ID="214" Icon="" Page="1">
             <WindowState Visible="True" X="465" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10066,7 +10248,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ro" ID="209" Icon="" Page="1">
+          <Button Caption="Ma/Ro" ID="215" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10080,7 +10262,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Az" ID="210" Icon="" Page="1">
+          <Button Caption="Ma/Az" ID="216" Icon="" Page="1">
             <WindowState Visible="True" X="57" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10094,7 +10276,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ve" ID="211" Icon="" Page="1">
+          <Button Caption="Ma/Ve" ID="217" Icon="" Page="1">
             <WindowState Visible="True" X="108" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10108,7 +10290,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Am" ID="212" Icon="" Page="1">
+          <Button Caption="Ma/Am" ID="218" Icon="" Page="1">
             <WindowState Visible="True" X="159" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10122,7 +10304,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Bl" ID="213" Icon="" Page="1">
+          <Button Caption="Ma/Bl" ID="219" Icon="" Page="1">
             <WindowState Visible="True" X="210" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10136,7 +10318,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ro" ID="214" Icon="" Page="1">
+          <Button Caption="Bl/Ro" ID="220" Icon="" Page="1">
             <WindowState Visible="True" X="261" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10150,7 +10332,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Az" ID="215" Icon="" Page="1">
+          <Button Caption="Bl/Az" ID="221" Icon="" Page="1">
             <WindowState Visible="True" X="312" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10164,7 +10346,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ve" ID="216" Icon="" Page="1">
+          <Button Caption="Bl/Ve" ID="222" Icon="" Page="1">
             <WindowState Visible="True" X="363" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10178,7 +10360,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Am" ID="217" Icon="" Page="1">
+          <Button Caption="Bl/Am" ID="223" Icon="" Page="1">
             <WindowState Visible="True" X="414" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10192,7 +10374,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ma" ID="218" Icon="" Page="1">
+          <Button Caption="Bl/Ma" ID="224" Icon="" Page="1">
             <WindowState Visible="True" X="465" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10206,7 +10388,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Label Caption="Grupo: PAR" ID="219" Page="2">
+          <Label Caption="Grupo: PAR" ID="225" Page="2">
             <WindowState Visible="True" X="6" Y="26" Width="512" Height="20"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10216,7 +10398,7 @@
               <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
             </Appearance>
           </Label>
-          <Button Caption="Ro/Az" ID="220" Icon="" Page="2">
+          <Button Caption="Ro/Az" ID="226" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10230,7 +10412,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ve" ID="221" Icon="" Page="2">
+          <Button Caption="Ro/Ve" ID="227" Icon="" Page="2">
             <WindowState Visible="True" X="57" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10244,7 +10426,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Am" ID="222" Icon="" Page="2">
+          <Button Caption="Ro/Am" ID="228" Icon="" Page="2">
             <WindowState Visible="True" X="108" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10258,7 +10440,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ma" ID="223" Icon="" Page="2">
+          <Button Caption="Ro/Ma" ID="229" Icon="" Page="2">
             <WindowState Visible="True" X="159" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10272,7 +10454,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Bl" ID="224" Icon="" Page="2">
+          <Button Caption="Ro/Bl" ID="230" Icon="" Page="2">
             <WindowState Visible="True" X="210" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10286,7 +10468,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ro" ID="225" Icon="" Page="2">
+          <Button Caption="Az/Ro" ID="231" Icon="" Page="2">
             <WindowState Visible="True" X="261" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10300,7 +10482,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ve" ID="226" Icon="" Page="2">
+          <Button Caption="Az/Ve" ID="232" Icon="" Page="2">
             <WindowState Visible="True" X="312" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10314,7 +10496,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Am" ID="227" Icon="" Page="2">
+          <Button Caption="Az/Am" ID="233" Icon="" Page="2">
             <WindowState Visible="True" X="363" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10328,7 +10510,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ma" ID="228" Icon="" Page="2">
+          <Button Caption="Az/Ma" ID="234" Icon="" Page="2">
             <WindowState Visible="True" X="414" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10342,7 +10524,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Bl" ID="229" Icon="" Page="2">
+          <Button Caption="Az/Bl" ID="235" Icon="" Page="2">
             <WindowState Visible="True" X="465" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10356,7 +10538,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ro" ID="230" Icon="" Page="2">
+          <Button Caption="Ve/Ro" ID="236" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10370,7 +10552,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Az" ID="231" Icon="" Page="2">
+          <Button Caption="Ve/Az" ID="237" Icon="" Page="2">
             <WindowState Visible="True" X="57" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10384,7 +10566,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Am" ID="232" Icon="" Page="2">
+          <Button Caption="Ve/Am" ID="238" Icon="" Page="2">
             <WindowState Visible="True" X="108" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10398,7 +10580,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ma" ID="233" Icon="" Page="2">
+          <Button Caption="Ve/Ma" ID="239" Icon="" Page="2">
             <WindowState Visible="True" X="159" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10412,7 +10594,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Bl" ID="234" Icon="" Page="2">
+          <Button Caption="Ve/Bl" ID="240" Icon="" Page="2">
             <WindowState Visible="True" X="210" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10426,7 +10608,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ro" ID="235" Icon="" Page="2">
+          <Button Caption="Am/Ro" ID="241" Icon="" Page="2">
             <WindowState Visible="True" X="261" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10440,7 +10622,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Az" ID="236" Icon="" Page="2">
+          <Button Caption="Am/Az" ID="242" Icon="" Page="2">
             <WindowState Visible="True" X="312" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10454,7 +10636,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ve" ID="237" Icon="" Page="2">
+          <Button Caption="Am/Ve" ID="243" Icon="" Page="2">
             <WindowState Visible="True" X="363" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10468,7 +10650,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ma" ID="238" Icon="" Page="2">
+          <Button Caption="Am/Ma" ID="244" Icon="" Page="2">
             <WindowState Visible="True" X="414" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10482,7 +10664,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Bl" ID="239" Icon="" Page="2">
+          <Button Caption="Am/Bl" ID="245" Icon="" Page="2">
             <WindowState Visible="True" X="465" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10496,7 +10678,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ro" ID="240" Icon="" Page="2">
+          <Button Caption="Ma/Ro" ID="246" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10510,7 +10692,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Az" ID="241" Icon="" Page="2">
+          <Button Caption="Ma/Az" ID="247" Icon="" Page="2">
             <WindowState Visible="True" X="57" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10524,7 +10706,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ve" ID="242" Icon="" Page="2">
+          <Button Caption="Ma/Ve" ID="248" Icon="" Page="2">
             <WindowState Visible="True" X="108" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10538,7 +10720,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Am" ID="243" Icon="" Page="2">
+          <Button Caption="Ma/Am" ID="249" Icon="" Page="2">
             <WindowState Visible="True" X="159" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10552,7 +10734,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Bl" ID="244" Icon="" Page="2">
+          <Button Caption="Ma/Bl" ID="250" Icon="" Page="2">
             <WindowState Visible="True" X="210" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10566,7 +10748,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ro" ID="245" Icon="" Page="2">
+          <Button Caption="Bl/Ro" ID="251" Icon="" Page="2">
             <WindowState Visible="True" X="261" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10580,7 +10762,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Az" ID="246" Icon="" Page="2">
+          <Button Caption="Bl/Az" ID="252" Icon="" Page="2">
             <WindowState Visible="True" X="312" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10594,7 +10776,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ve" ID="247" Icon="" Page="2">
+          <Button Caption="Bl/Ve" ID="253" Icon="" Page="2">
             <WindowState Visible="True" X="363" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10608,7 +10790,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Am" ID="248" Icon="" Page="2">
+          <Button Caption="Bl/Am" ID="254" Icon="" Page="2">
             <WindowState Visible="True" X="414" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10622,7 +10804,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ma" ID="249" Icon="" Page="2">
+          <Button Caption="Bl/Ma" ID="255" Icon="" Page="2">
             <WindowState Visible="True" X="465" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10636,7 +10818,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Label Caption="Grupo: PixelesLed" ID="250" Page="3">
+          <Label Caption="Grupo: PixelesLed" ID="256" Page="3">
             <WindowState Visible="True" X="6" Y="26" Width="512" Height="20"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10646,7 +10828,7 @@
               <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
             </Appearance>
           </Label>
-          <Button Caption="Ro/Az" ID="251" Icon="" Page="3">
+          <Button Caption="Ro/Az" ID="257" Icon="" Page="3">
             <WindowState Visible="True" X="6" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10660,7 +10842,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ve" ID="252" Icon="" Page="3">
+          <Button Caption="Ro/Ve" ID="258" Icon="" Page="3">
             <WindowState Visible="True" X="57" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10674,7 +10856,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Am" ID="253" Icon="" Page="3">
+          <Button Caption="Ro/Am" ID="259" Icon="" Page="3">
             <WindowState Visible="True" X="108" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10688,7 +10870,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Ma" ID="254" Icon="" Page="3">
+          <Button Caption="Ro/Ma" ID="260" Icon="" Page="3">
             <WindowState Visible="True" X="159" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10702,7 +10884,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ro/Bl" ID="255" Icon="" Page="3">
+          <Button Caption="Ro/Bl" ID="261" Icon="" Page="3">
             <WindowState Visible="True" X="210" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10716,7 +10898,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ro" ID="256" Icon="" Page="3">
+          <Button Caption="Az/Ro" ID="262" Icon="" Page="3">
             <WindowState Visible="True" X="261" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10730,7 +10912,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ve" ID="257" Icon="" Page="3">
+          <Button Caption="Az/Ve" ID="263" Icon="" Page="3">
             <WindowState Visible="True" X="312" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10744,7 +10926,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Am" ID="258" Icon="" Page="3">
+          <Button Caption="Az/Am" ID="264" Icon="" Page="3">
             <WindowState Visible="True" X="363" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10758,7 +10940,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Ma" ID="259" Icon="" Page="3">
+          <Button Caption="Az/Ma" ID="265" Icon="" Page="3">
             <WindowState Visible="True" X="414" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10772,7 +10954,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Az/Bl" ID="260" Icon="" Page="3">
+          <Button Caption="Az/Bl" ID="266" Icon="" Page="3">
             <WindowState Visible="True" X="465" Y="50" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10786,7 +10968,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ro" ID="261" Icon="" Page="3">
+          <Button Caption="Ve/Ro" ID="267" Icon="" Page="3">
             <WindowState Visible="True" X="6" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10800,7 +10982,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Az" ID="262" Icon="" Page="3">
+          <Button Caption="Ve/Az" ID="268" Icon="" Page="3">
             <WindowState Visible="True" X="57" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10814,7 +10996,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Am" ID="263" Icon="" Page="3">
+          <Button Caption="Ve/Am" ID="269" Icon="" Page="3">
             <WindowState Visible="True" X="108" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10828,7 +11010,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Ma" ID="264" Icon="" Page="3">
+          <Button Caption="Ve/Ma" ID="270" Icon="" Page="3">
             <WindowState Visible="True" X="159" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10842,7 +11024,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ve/Bl" ID="265" Icon="" Page="3">
+          <Button Caption="Ve/Bl" ID="271" Icon="" Page="3">
             <WindowState Visible="True" X="210" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10856,7 +11038,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ro" ID="266" Icon="" Page="3">
+          <Button Caption="Am/Ro" ID="272" Icon="" Page="3">
             <WindowState Visible="True" X="261" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10870,7 +11052,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Az" ID="267" Icon="" Page="3">
+          <Button Caption="Am/Az" ID="273" Icon="" Page="3">
             <WindowState Visible="True" X="312" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10884,7 +11066,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ve" ID="268" Icon="" Page="3">
+          <Button Caption="Am/Ve" ID="274" Icon="" Page="3">
             <WindowState Visible="True" X="363" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10898,7 +11080,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Ma" ID="269" Icon="" Page="3">
+          <Button Caption="Am/Ma" ID="275" Icon="" Page="3">
             <WindowState Visible="True" X="414" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10912,7 +11094,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Am/Bl" ID="270" Icon="" Page="3">
+          <Button Caption="Am/Bl" ID="276" Icon="" Page="3">
             <WindowState Visible="True" X="465" Y="101" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10926,7 +11108,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ro" ID="271" Icon="" Page="3">
+          <Button Caption="Ma/Ro" ID="277" Icon="" Page="3">
             <WindowState Visible="True" X="6" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10940,7 +11122,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Az" ID="272" Icon="" Page="3">
+          <Button Caption="Ma/Az" ID="278" Icon="" Page="3">
             <WindowState Visible="True" X="57" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10954,7 +11136,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Ve" ID="273" Icon="" Page="3">
+          <Button Caption="Ma/Ve" ID="279" Icon="" Page="3">
             <WindowState Visible="True" X="108" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10968,7 +11150,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Am" ID="274" Icon="" Page="3">
+          <Button Caption="Ma/Am" ID="280" Icon="" Page="3">
             <WindowState Visible="True" X="159" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10982,7 +11164,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Ma/Bl" ID="275" Icon="" Page="3">
+          <Button Caption="Ma/Bl" ID="281" Icon="" Page="3">
             <WindowState Visible="True" X="210" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -10996,7 +11178,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ro" ID="276" Icon="" Page="3">
+          <Button Caption="Bl/Ro" ID="282" Icon="" Page="3">
             <WindowState Visible="True" X="261" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11010,7 +11192,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Az" ID="277" Icon="" Page="3">
+          <Button Caption="Bl/Az" ID="283" Icon="" Page="3">
             <WindowState Visible="True" X="312" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11024,7 +11206,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ve" ID="278" Icon="" Page="3">
+          <Button Caption="Bl/Ve" ID="284" Icon="" Page="3">
             <WindowState Visible="True" X="363" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11038,7 +11220,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Am" ID="279" Icon="" Page="3">
+          <Button Caption="Bl/Am" ID="285" Icon="" Page="3">
             <WindowState Visible="True" X="414" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11052,7 +11234,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Bl/Ma" ID="280" Icon="" Page="3">
+          <Button Caption="Bl/Ma" ID="286" Icon="" Page="3">
             <WindowState Visible="True" X="465" Y="152" Width="48" Height="45"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11067,7 +11249,137 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
         </SoloFrame>
-        <SoloFrame Caption="Matrices — dibujos sobre las barras y los paneles" ID="281" Page="2">
+        <SoloFrame Caption="MultiColor BEAM — dos colores a la vez en el haz" ID="287" Page="2">
+          <Appearance>
+            <FrameStyle>Sunken</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
+          </Appearance>
+          <WindowState Visible="True" X="8" Y="306" Width="524" Height="92"/>
+          <AllowChildren>True</AllowChildren>
+          <AllowResize>True</AllowResize>
+          <ShowHeader>True</ShowHeader>
+          <ShowEnableButton>False</ShowEnableButton>
+          <Mixing>False</Mixing>
+          <ExcludeMonitored>True</ExcludeMonitored>
+          <Collapsed>False</Collapsed>
+          <Disabled>False</Disabled>
+          <Button Caption="Todas" ID="288" Icon="">
+            <WindowState Visible="True" X="6" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="422"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="Off" ID="289" Icon="">
+            <WindowState Visible="True" X="70" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="423"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="1" ID="290" Icon="">
+            <WindowState Visible="True" X="134" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="424"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="2" ID="291" Icon="">
+            <WindowState Visible="True" X="198" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="425"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="3" ID="292" Icon="">
+            <WindowState Visible="True" X="262" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="426"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="4" ID="293" Icon="">
+            <WindowState Visible="True" X="326" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="427"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="1 y 3" ID="294" Icon="">
+            <WindowState Visible="True" X="390" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="428"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="2 y 4" ID="295" Icon="">
+            <WindowState Visible="True" X="454" Y="26" Width="60" Height="46"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,8,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="429"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+        </SoloFrame>
+        <SoloFrame Caption="Matrices — dibujos sobre las barras y los paneles" ID="296" Page="2">
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -11086,7 +11398,7 @@
           <Disabled>False</Disabled>
           <Multipage PagesNum="3" CurrentPage="0"/>
           <PagesLoop>True</PagesLoop>
-          <Label Caption="Grupo: BarrasLed" ID="282">
+          <Label Caption="Grupo: BarrasLed" ID="297">
             <WindowState Visible="True" X="6" Y="26" Width="400" Height="20"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11096,7 +11408,7 @@
               <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
             </Appearance>
           </Label>
-          <Button Caption="Fill Rojo" ID="283" Icon="">
+          <Button Caption="Fill Rojo" ID="298" Icon="">
             <WindowState Visible="True" X="6" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11110,7 +11422,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Verde" ID="284" Icon="">
+          <Button Caption="Fill Verde" ID="299" Icon="">
             <WindowState Visible="True" X="94" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11124,7 +11436,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Azul" ID="285" Icon="">
+          <Button Caption="Fill Azul" ID="300" Icon="">
             <WindowState Visible="True" X="182" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11138,7 +11450,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Ambar" ID="286" Icon="">
+          <Button Caption="Fill Ambar" ID="301" Icon="">
             <WindowState Visible="True" X="270" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11152,7 +11464,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Magenta" ID="287" Icon="">
+          <Button Caption="Fill Magenta" ID="302" Icon="">
             <WindowState Visible="True" X="358" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11166,7 +11478,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Blanco" ID="288" Icon="">
+          <Button Caption="Fill Blanco" ID="303" Icon="">
             <WindowState Visible="True" X="446" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11180,7 +11492,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Rojo" ID="289" Icon="">
+          <Button Caption="Even/Odd Rojo" ID="304" Icon="">
             <WindowState Visible="True" X="534" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11194,7 +11506,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Verde" ID="290" Icon="">
+          <Button Caption="Even/Odd Verde" ID="305" Icon="">
             <WindowState Visible="True" X="6" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11208,7 +11520,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Azul" ID="291" Icon="">
+          <Button Caption="Even/Odd Azul" ID="306" Icon="">
             <WindowState Visible="True" X="94" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11222,7 +11534,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Ambar" ID="292" Icon="">
+          <Button Caption="Even/Odd Ambar" ID="307" Icon="">
             <WindowState Visible="True" X="182" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11236,7 +11548,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Magenta" ID="293" Icon="">
+          <Button Caption="Even/Odd Magenta" ID="308" Icon="">
             <WindowState Visible="True" X="270" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11250,7 +11562,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Blanco" ID="294" Icon="">
+          <Button Caption="Even/Odd Blanco" ID="309" Icon="">
             <WindowState Visible="True" X="358" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11264,7 +11576,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Rojo" ID="295" Icon="">
+          <Button Caption="Strobe Rojo" ID="310" Icon="">
             <WindowState Visible="True" X="446" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11278,7 +11590,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Verde" ID="296" Icon="">
+          <Button Caption="Strobe Verde" ID="311" Icon="">
             <WindowState Visible="True" X="534" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11292,7 +11604,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Azul" ID="297" Icon="">
+          <Button Caption="Strobe Azul" ID="312" Icon="">
             <WindowState Visible="True" X="6" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11306,7 +11618,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Ambar" ID="298" Icon="">
+          <Button Caption="Strobe Ambar" ID="313" Icon="">
             <WindowState Visible="True" X="94" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11320,7 +11632,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Magenta" ID="299" Icon="">
+          <Button Caption="Strobe Magenta" ID="314" Icon="">
             <WindowState Visible="True" X="182" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11334,7 +11646,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Blanco" ID="300" Icon="">
+          <Button Caption="Strobe Blanco" ID="315" Icon="">
             <WindowState Visible="True" X="270" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11348,7 +11660,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Rojo" ID="301" Icon="">
+          <Button Caption="Waves Rojo" ID="316" Icon="">
             <WindowState Visible="True" X="358" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11362,7 +11674,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Verde" ID="302" Icon="">
+          <Button Caption="Waves Verde" ID="317" Icon="">
             <WindowState Visible="True" X="446" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11376,7 +11688,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Azul" ID="303" Icon="">
+          <Button Caption="Waves Azul" ID="318" Icon="">
             <WindowState Visible="True" X="534" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11390,7 +11702,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Ambar" ID="304" Icon="">
+          <Button Caption="Waves Ambar" ID="319" Icon="">
             <WindowState Visible="True" X="6" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11404,7 +11716,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Magenta" ID="305" Icon="">
+          <Button Caption="Waves Magenta" ID="320" Icon="">
             <WindowState Visible="True" X="94" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11418,7 +11730,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Blanco" ID="306" Icon="">
+          <Button Caption="Waves Blanco" ID="321" Icon="">
             <WindowState Visible="True" X="182" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11432,7 +11744,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Rojo" ID="307" Icon="">
+          <Button Caption="Solid Rojo" ID="322" Icon="">
             <WindowState Visible="True" X="270" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11446,7 +11758,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Verde" ID="308" Icon="">
+          <Button Caption="Solid Verde" ID="323" Icon="">
             <WindowState Visible="True" X="358" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11460,7 +11772,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Azul" ID="309" Icon="">
+          <Button Caption="Solid Azul" ID="324" Icon="">
             <WindowState Visible="True" X="446" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11474,7 +11786,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Ambar" ID="310" Icon="">
+          <Button Caption="Solid Ambar" ID="325" Icon="">
             <WindowState Visible="True" X="534" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11488,7 +11800,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Magenta" ID="311" Icon="">
+          <Button Caption="Solid Magenta" ID="326" Icon="">
             <WindowState Visible="True" X="6" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11502,7 +11814,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Blanco" ID="312" Icon="">
+          <Button Caption="Solid Blanco" ID="327" Icon="">
             <WindowState Visible="True" X="94" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11516,7 +11828,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Sine Wave Rojo/Azul" ID="313" Icon="">
+          <Button Caption="Sine Wave Rojo/Azul" ID="328" Icon="">
             <WindowState Visible="True" X="182" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11530,7 +11842,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Lines Verde" ID="314" Icon="">
+          <Button Caption="Lines Verde" ID="329" Icon="">
             <WindowState Visible="True" X="270" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11544,7 +11856,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Marquee Amarillo/Azul" ID="315" Icon="">
+          <Button Caption="Marquee Amarillo/Azul" ID="330" Icon="">
             <WindowState Visible="True" X="358" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11558,7 +11870,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Plasma Blanco" ID="316" Icon="">
+          <Button Caption="Plasma Blanco" ID="331" Icon="">
             <WindowState Visible="True" X="446" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11572,7 +11884,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Label Caption="Grupo: Cabezas" ID="317" Page="1">
+          <Label Caption="Grupo: Cabezas" ID="332" Page="1">
             <WindowState Visible="True" X="6" Y="26" Width="400" Height="20"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11582,7 +11894,7 @@
               <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
             </Appearance>
           </Label>
-          <Button Caption="Fill Rojo" ID="318" Icon="" Page="1">
+          <Button Caption="Fill Rojo" ID="333" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11596,7 +11908,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Verde" ID="319" Icon="" Page="1">
+          <Button Caption="Fill Verde" ID="334" Icon="" Page="1">
             <WindowState Visible="True" X="94" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11610,7 +11922,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Azul" ID="320" Icon="" Page="1">
+          <Button Caption="Fill Azul" ID="335" Icon="" Page="1">
             <WindowState Visible="True" X="182" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11624,7 +11936,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Ambar" ID="321" Icon="" Page="1">
+          <Button Caption="Fill Ambar" ID="336" Icon="" Page="1">
             <WindowState Visible="True" X="270" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11638,7 +11950,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Magenta" ID="322" Icon="" Page="1">
+          <Button Caption="Fill Magenta" ID="337" Icon="" Page="1">
             <WindowState Visible="True" X="358" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11652,7 +11964,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Blanco" ID="323" Icon="" Page="1">
+          <Button Caption="Fill Blanco" ID="338" Icon="" Page="1">
             <WindowState Visible="True" X="446" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11666,7 +11978,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Rojo" ID="324" Icon="" Page="1">
+          <Button Caption="Even/Odd Rojo" ID="339" Icon="" Page="1">
             <WindowState Visible="True" X="534" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11680,7 +11992,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Verde" ID="325" Icon="" Page="1">
+          <Button Caption="Even/Odd Verde" ID="340" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11694,7 +12006,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Azul" ID="326" Icon="" Page="1">
+          <Button Caption="Even/Odd Azul" ID="341" Icon="" Page="1">
             <WindowState Visible="True" X="94" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11708,7 +12020,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Ambar" ID="327" Icon="" Page="1">
+          <Button Caption="Even/Odd Ambar" ID="342" Icon="" Page="1">
             <WindowState Visible="True" X="182" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11722,7 +12034,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Magenta" ID="328" Icon="" Page="1">
+          <Button Caption="Even/Odd Magenta" ID="343" Icon="" Page="1">
             <WindowState Visible="True" X="270" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11736,7 +12048,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Blanco" ID="329" Icon="" Page="1">
+          <Button Caption="Even/Odd Blanco" ID="344" Icon="" Page="1">
             <WindowState Visible="True" X="358" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11750,7 +12062,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Rojo" ID="330" Icon="" Page="1">
+          <Button Caption="Strobe Rojo" ID="345" Icon="" Page="1">
             <WindowState Visible="True" X="446" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11764,7 +12076,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Verde" ID="331" Icon="" Page="1">
+          <Button Caption="Strobe Verde" ID="346" Icon="" Page="1">
             <WindowState Visible="True" X="534" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11778,7 +12090,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Azul" ID="332" Icon="" Page="1">
+          <Button Caption="Strobe Azul" ID="347" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11792,7 +12104,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Ambar" ID="333" Icon="" Page="1">
+          <Button Caption="Strobe Ambar" ID="348" Icon="" Page="1">
             <WindowState Visible="True" X="94" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11806,7 +12118,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Magenta" ID="334" Icon="" Page="1">
+          <Button Caption="Strobe Magenta" ID="349" Icon="" Page="1">
             <WindowState Visible="True" X="182" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11820,7 +12132,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Blanco" ID="335" Icon="" Page="1">
+          <Button Caption="Strobe Blanco" ID="350" Icon="" Page="1">
             <WindowState Visible="True" X="270" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11834,7 +12146,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Rojo" ID="336" Icon="" Page="1">
+          <Button Caption="Waves Rojo" ID="351" Icon="" Page="1">
             <WindowState Visible="True" X="358" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11848,7 +12160,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Verde" ID="337" Icon="" Page="1">
+          <Button Caption="Waves Verde" ID="352" Icon="" Page="1">
             <WindowState Visible="True" X="446" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11862,7 +12174,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Azul" ID="338" Icon="" Page="1">
+          <Button Caption="Waves Azul" ID="353" Icon="" Page="1">
             <WindowState Visible="True" X="534" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11876,7 +12188,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Ambar" ID="339" Icon="" Page="1">
+          <Button Caption="Waves Ambar" ID="354" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11890,7 +12202,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Magenta" ID="340" Icon="" Page="1">
+          <Button Caption="Waves Magenta" ID="355" Icon="" Page="1">
             <WindowState Visible="True" X="94" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11904,7 +12216,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Blanco" ID="341" Icon="" Page="1">
+          <Button Caption="Waves Blanco" ID="356" Icon="" Page="1">
             <WindowState Visible="True" X="182" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11918,7 +12230,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Rojo" ID="342" Icon="" Page="1">
+          <Button Caption="Solid Rojo" ID="357" Icon="" Page="1">
             <WindowState Visible="True" X="270" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11932,7 +12244,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Verde" ID="343" Icon="" Page="1">
+          <Button Caption="Solid Verde" ID="358" Icon="" Page="1">
             <WindowState Visible="True" X="358" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11946,7 +12258,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Azul" ID="344" Icon="" Page="1">
+          <Button Caption="Solid Azul" ID="359" Icon="" Page="1">
             <WindowState Visible="True" X="446" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11960,7 +12272,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Ambar" ID="345" Icon="" Page="1">
+          <Button Caption="Solid Ambar" ID="360" Icon="" Page="1">
             <WindowState Visible="True" X="534" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11974,7 +12286,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Magenta" ID="346" Icon="" Page="1">
+          <Button Caption="Solid Magenta" ID="361" Icon="" Page="1">
             <WindowState Visible="True" X="6" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -11988,7 +12300,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Blanco" ID="347" Icon="" Page="1">
+          <Button Caption="Solid Blanco" ID="362" Icon="" Page="1">
             <WindowState Visible="True" X="94" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12002,7 +12314,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="One By One Cyan" ID="348" Icon="" Page="1">
+          <Button Caption="One By One Cyan" ID="363" Icon="" Page="1">
             <WindowState Visible="True" X="182" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12016,7 +12328,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Unfill Naranja" ID="349" Icon="" Page="1">
+          <Button Caption="Fill Unfill Naranja" ID="364" Icon="" Page="1">
             <WindowState Visible="True" X="270" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12030,7 +12342,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Noise Rosa" ID="350" Icon="" Page="1">
+          <Button Caption="Noise Rosa" ID="365" Icon="" Page="1">
             <WindowState Visible="True" X="358" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12044,7 +12356,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Label Caption="Grupo: PAR" ID="351" Page="2">
+          <Label Caption="Grupo: PAR" ID="366" Page="2">
             <WindowState Visible="True" X="6" Y="26" Width="400" Height="20"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12054,7 +12366,7 @@
               <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
             </Appearance>
           </Label>
-          <Button Caption="Fill Rojo" ID="352" Icon="" Page="2">
+          <Button Caption="Fill Rojo" ID="367" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12068,7 +12380,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Verde" ID="353" Icon="" Page="2">
+          <Button Caption="Fill Verde" ID="368" Icon="" Page="2">
             <WindowState Visible="True" X="94" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12082,7 +12394,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Azul" ID="354" Icon="" Page="2">
+          <Button Caption="Fill Azul" ID="369" Icon="" Page="2">
             <WindowState Visible="True" X="182" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12096,7 +12408,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Ambar" ID="355" Icon="" Page="2">
+          <Button Caption="Fill Ambar" ID="370" Icon="" Page="2">
             <WindowState Visible="True" X="270" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12110,7 +12422,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Magenta" ID="356" Icon="" Page="2">
+          <Button Caption="Fill Magenta" ID="371" Icon="" Page="2">
             <WindowState Visible="True" X="358" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12124,7 +12436,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Fill Blanco" ID="357" Icon="" Page="2">
+          <Button Caption="Fill Blanco" ID="372" Icon="" Page="2">
             <WindowState Visible="True" X="446" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12138,7 +12450,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Rojo" ID="358" Icon="" Page="2">
+          <Button Caption="Even/Odd Rojo" ID="373" Icon="" Page="2">
             <WindowState Visible="True" X="534" Y="50" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12152,7 +12464,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Verde" ID="359" Icon="" Page="2">
+          <Button Caption="Even/Odd Verde" ID="374" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12166,7 +12478,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Azul" ID="360" Icon="" Page="2">
+          <Button Caption="Even/Odd Azul" ID="375" Icon="" Page="2">
             <WindowState Visible="True" X="94" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12180,7 +12492,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Ambar" ID="361" Icon="" Page="2">
+          <Button Caption="Even/Odd Ambar" ID="376" Icon="" Page="2">
             <WindowState Visible="True" X="182" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12194,7 +12506,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Magenta" ID="362" Icon="" Page="2">
+          <Button Caption="Even/Odd Magenta" ID="377" Icon="" Page="2">
             <WindowState Visible="True" X="270" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12208,7 +12520,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Even/Odd Blanco" ID="363" Icon="" Page="2">
+          <Button Caption="Even/Odd Blanco" ID="378" Icon="" Page="2">
             <WindowState Visible="True" X="358" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12222,7 +12534,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Rojo" ID="364" Icon="" Page="2">
+          <Button Caption="Strobe Rojo" ID="379" Icon="" Page="2">
             <WindowState Visible="True" X="446" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12236,7 +12548,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Verde" ID="365" Icon="" Page="2">
+          <Button Caption="Strobe Verde" ID="380" Icon="" Page="2">
             <WindowState Visible="True" X="534" Y="96" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12250,7 +12562,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Azul" ID="366" Icon="" Page="2">
+          <Button Caption="Strobe Azul" ID="381" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12264,7 +12576,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Ambar" ID="367" Icon="" Page="2">
+          <Button Caption="Strobe Ambar" ID="382" Icon="" Page="2">
             <WindowState Visible="True" X="94" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12278,7 +12590,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Magenta" ID="368" Icon="" Page="2">
+          <Button Caption="Strobe Magenta" ID="383" Icon="" Page="2">
             <WindowState Visible="True" X="182" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12292,7 +12604,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Strobe Blanco" ID="369" Icon="" Page="2">
+          <Button Caption="Strobe Blanco" ID="384" Icon="" Page="2">
             <WindowState Visible="True" X="270" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12306,7 +12618,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Rojo" ID="370" Icon="" Page="2">
+          <Button Caption="Waves Rojo" ID="385" Icon="" Page="2">
             <WindowState Visible="True" X="358" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12320,7 +12632,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Verde" ID="371" Icon="" Page="2">
+          <Button Caption="Waves Verde" ID="386" Icon="" Page="2">
             <WindowState Visible="True" X="446" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12334,7 +12646,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Azul" ID="372" Icon="" Page="2">
+          <Button Caption="Waves Azul" ID="387" Icon="" Page="2">
             <WindowState Visible="True" X="534" Y="142" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12348,7 +12660,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Ambar" ID="373" Icon="" Page="2">
+          <Button Caption="Waves Ambar" ID="388" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12362,7 +12674,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Magenta" ID="374" Icon="" Page="2">
+          <Button Caption="Waves Magenta" ID="389" Icon="" Page="2">
             <WindowState Visible="True" X="94" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12376,7 +12688,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Waves Blanco" ID="375" Icon="" Page="2">
+          <Button Caption="Waves Blanco" ID="390" Icon="" Page="2">
             <WindowState Visible="True" X="182" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12390,7 +12702,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Rojo" ID="376" Icon="" Page="2">
+          <Button Caption="Solid Rojo" ID="391" Icon="" Page="2">
             <WindowState Visible="True" X="270" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12404,7 +12716,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Verde" ID="377" Icon="" Page="2">
+          <Button Caption="Solid Verde" ID="392" Icon="" Page="2">
             <WindowState Visible="True" X="358" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12418,7 +12730,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Azul" ID="378" Icon="" Page="2">
+          <Button Caption="Solid Azul" ID="393" Icon="" Page="2">
             <WindowState Visible="True" X="446" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12432,7 +12744,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Ambar" ID="379" Icon="" Page="2">
+          <Button Caption="Solid Ambar" ID="394" Icon="" Page="2">
             <WindowState Visible="True" X="534" Y="188" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12446,7 +12758,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Magenta" ID="380" Icon="" Page="2">
+          <Button Caption="Solid Magenta" ID="395" Icon="" Page="2">
             <WindowState Visible="True" X="6" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12460,7 +12772,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Solid Blanco" ID="381" Icon="" Page="2">
+          <Button Caption="Solid Blanco" ID="396" Icon="" Page="2">
             <WindowState Visible="True" X="94" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12474,7 +12786,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Circular Rojo" ID="382" Icon="" Page="2">
+          <Button Caption="Circular Rojo" ID="397" Icon="" Page="2">
             <WindowState Visible="True" X="182" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12488,7 +12800,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="3D Starfield Blanco" ID="383" Icon="" Page="2">
+          <Button Caption="3D Starfield Blanco" ID="398" Icon="" Page="2">
             <WindowState Visible="True" X="270" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12502,7 +12814,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Gradient Ambar" ID="384" Icon="" Page="2">
+          <Button Caption="Gradient Ambar" ID="399" Icon="" Page="2">
             <WindowState Visible="True" X="358" Y="234" Width="82" Height="40"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12517,7 +12829,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
         </SoloFrame>
-        <Frame Caption="Ruedas y ciclos por grupo — no usar a la vez que la rueda general: se suman los colores" ID="385" Page="2">
+        <Frame Caption="Ruedas y ciclos por grupo — no usar a la vez que la rueda general: se suman los colores" ID="400" Page="2">
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -12532,7 +12844,7 @@
           <ShowEnableButton>False</ShowEnableButton>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
-          <Button Caption="Colores BarrasLed" ID="386" Icon="">
+          <Button Caption="Colores BarrasLed" ID="401" Icon="">
             <WindowState Visible="True" X="6" Y="26" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12546,7 +12858,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Colores Cabezas" ID="387" Icon="">
+          <Button Caption="Colores Cabezas" ID="402" Icon="">
             <WindowState Visible="True" X="128" Y="26" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12560,7 +12872,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Colores PAR" ID="388" Icon="">
+          <Button Caption="Colores PAR" ID="403" Icon="">
             <WindowState Visible="True" X="250" Y="26" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12574,7 +12886,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Colores PixelesLed" ID="389" Icon="">
+          <Button Caption="Colores PixelesLed" ID="404" Icon="">
             <WindowState Visible="True" X="372" Y="26" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12588,7 +12900,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Mezcla BarrasLed" ID="390" Icon="">
+          <Button Caption="Mezcla BarrasLed" ID="405" Icon="">
             <WindowState Visible="True" X="494" Y="26" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12602,7 +12914,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Mezcla Cabezas" ID="391" Icon="">
+          <Button Caption="Mezcla Cabezas" ID="406" Icon="">
             <WindowState Visible="True" X="6" Y="76" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12616,7 +12928,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Mezcla PAR" ID="392" Icon="">
+          <Button Caption="Mezcla PAR" ID="407" Icon="">
             <WindowState Visible="True" X="128" Y="76" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12630,7 +12942,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Mezcla PixelesLed" ID="393" Icon="">
+          <Button Caption="Mezcla PixelesLed" ID="408" Icon="">
             <WindowState Visible="True" X="250" Y="76" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12644,7 +12956,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Matrices BarrasLed" ID="394" Icon="">
+          <Button Caption="Matrices BarrasLed" ID="409" Icon="">
             <WindowState Visible="True" X="372" Y="76" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12658,7 +12970,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Matrices Cabezas" ID="395" Icon="">
+          <Button Caption="Matrices Cabezas" ID="410" Icon="">
             <WindowState Visible="True" X="494" Y="76" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12672,7 +12984,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Matrices PAR" ID="396" Icon="">
+          <Button Caption="Matrices PAR" ID="411" Icon="">
             <WindowState Visible="True" X="6" Y="126" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12686,7 +12998,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Paneles" ID="397" Icon="">
+          <Button Caption="Paneles" ID="412" Icon="">
             <WindowState Visible="True" X="128" Y="126" Width="116" Height="44"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12701,7 +13013,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
         </Frame>
-        <SoloFrame Caption="Paneles — sus 42 efectos propios, sin ver todavía" ID="398" Page="2">
+        <SoloFrame Caption="Paneles — sus 42 efectos propios, sin ver todavía" ID="413" Page="2">
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -12718,7 +13030,7 @@
           <ExcludeMonitored>True</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
-          <Button Caption="Effect 1" ID="399" Icon="">
+          <Button Caption="Effect 1" ID="414" Icon="">
             <WindowState Visible="True" X="6" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12732,7 +13044,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 2" ID="400" Icon="">
+          <Button Caption="Effect 2" ID="415" Icon="">
             <WindowState Visible="True" X="57" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12746,7 +13058,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 3" ID="401" Icon="">
+          <Button Caption="Effect 3" ID="416" Icon="">
             <WindowState Visible="True" X="108" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12760,7 +13072,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 4" ID="402" Icon="">
+          <Button Caption="Effect 4" ID="417" Icon="">
             <WindowState Visible="True" X="159" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12774,7 +13086,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 5" ID="403" Icon="">
+          <Button Caption="Effect 5" ID="418" Icon="">
             <WindowState Visible="True" X="210" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12788,7 +13100,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 6" ID="404" Icon="">
+          <Button Caption="Effect 6" ID="419" Icon="">
             <WindowState Visible="True" X="261" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12802,7 +13114,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 7" ID="405" Icon="">
+          <Button Caption="Effect 7" ID="420" Icon="">
             <WindowState Visible="True" X="312" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12816,7 +13128,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 8" ID="406" Icon="">
+          <Button Caption="Effect 8" ID="421" Icon="">
             <WindowState Visible="True" X="363" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12830,7 +13142,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 9" ID="407" Icon="">
+          <Button Caption="Effect 9" ID="422" Icon="">
             <WindowState Visible="True" X="414" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12844,7 +13156,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 10" ID="408" Icon="">
+          <Button Caption="Effect 10" ID="423" Icon="">
             <WindowState Visible="True" X="465" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12858,7 +13170,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 11" ID="409" Icon="">
+          <Button Caption="Effect 11" ID="424" Icon="">
             <WindowState Visible="True" X="516" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12872,7 +13184,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 12" ID="410" Icon="">
+          <Button Caption="Effect 12" ID="425" Icon="">
             <WindowState Visible="True" X="567" Y="26" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12886,7 +13198,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 13" ID="411" Icon="">
+          <Button Caption="Effect 13" ID="426" Icon="">
             <WindowState Visible="True" X="6" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12900,7 +13212,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 14" ID="412" Icon="">
+          <Button Caption="Effect 14" ID="427" Icon="">
             <WindowState Visible="True" X="57" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12914,7 +13226,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 15" ID="413" Icon="">
+          <Button Caption="Effect 15" ID="428" Icon="">
             <WindowState Visible="True" X="108" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12928,7 +13240,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 16" ID="414" Icon="">
+          <Button Caption="Effect 16" ID="429" Icon="">
             <WindowState Visible="True" X="159" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12942,7 +13254,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 17" ID="415" Icon="">
+          <Button Caption="Effect 17" ID="430" Icon="">
             <WindowState Visible="True" X="210" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12956,7 +13268,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 18" ID="416" Icon="">
+          <Button Caption="Effect 18" ID="431" Icon="">
             <WindowState Visible="True" X="261" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12970,7 +13282,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 19" ID="417" Icon="">
+          <Button Caption="Effect 19" ID="432" Icon="">
             <WindowState Visible="True" X="312" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12984,7 +13296,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 20" ID="418" Icon="">
+          <Button Caption="Effect 20" ID="433" Icon="">
             <WindowState Visible="True" X="363" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -12998,7 +13310,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 21" ID="419" Icon="">
+          <Button Caption="Effect 21" ID="434" Icon="">
             <WindowState Visible="True" X="414" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13012,7 +13324,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 22" ID="420" Icon="">
+          <Button Caption="Effect 22" ID="435" Icon="">
             <WindowState Visible="True" X="465" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13026,7 +13338,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 23" ID="421" Icon="">
+          <Button Caption="Effect 23" ID="436" Icon="">
             <WindowState Visible="True" X="516" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13040,7 +13352,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 24" ID="422" Icon="">
+          <Button Caption="Effect 24" ID="437" Icon="">
             <WindowState Visible="True" X="567" Y="78" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13054,7 +13366,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 25" ID="423" Icon="">
+          <Button Caption="Effect 25" ID="438" Icon="">
             <WindowState Visible="True" X="6" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13068,7 +13380,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 26" ID="424" Icon="">
+          <Button Caption="Effect 26" ID="439" Icon="">
             <WindowState Visible="True" X="57" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13082,7 +13394,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 27" ID="425" Icon="">
+          <Button Caption="Effect 27" ID="440" Icon="">
             <WindowState Visible="True" X="108" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13096,7 +13408,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 28" ID="426" Icon="">
+          <Button Caption="Effect 28" ID="441" Icon="">
             <WindowState Visible="True" X="159" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13110,7 +13422,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 29" ID="427" Icon="">
+          <Button Caption="Effect 29" ID="442" Icon="">
             <WindowState Visible="True" X="210" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13124,7 +13436,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 30" ID="428" Icon="">
+          <Button Caption="Effect 30" ID="443" Icon="">
             <WindowState Visible="True" X="261" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13138,7 +13450,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 31" ID="429" Icon="">
+          <Button Caption="Effect 31" ID="444" Icon="">
             <WindowState Visible="True" X="312" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13152,7 +13464,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 32" ID="430" Icon="">
+          <Button Caption="Effect 32" ID="445" Icon="">
             <WindowState Visible="True" X="363" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13166,7 +13478,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 33" ID="431" Icon="">
+          <Button Caption="Effect 33" ID="446" Icon="">
             <WindowState Visible="True" X="414" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13180,7 +13492,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 34" ID="432" Icon="">
+          <Button Caption="Effect 34" ID="447" Icon="">
             <WindowState Visible="True" X="465" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13194,7 +13506,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 35" ID="433" Icon="">
+          <Button Caption="Effect 35" ID="448" Icon="">
             <WindowState Visible="True" X="516" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13208,7 +13520,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 36" ID="434" Icon="">
+          <Button Caption="Effect 36" ID="449" Icon="">
             <WindowState Visible="True" X="567" Y="130" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13222,7 +13534,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 37" ID="435" Icon="">
+          <Button Caption="Effect 37" ID="450" Icon="">
             <WindowState Visible="True" X="6" Y="182" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13236,7 +13548,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 38" ID="436" Icon="">
+          <Button Caption="Effect 38" ID="451" Icon="">
             <WindowState Visible="True" X="57" Y="182" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13250,7 +13562,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 39" ID="437" Icon="">
+          <Button Caption="Effect 39" ID="452" Icon="">
             <WindowState Visible="True" X="108" Y="182" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13264,7 +13576,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 40" ID="438" Icon="">
+          <Button Caption="Effect 40" ID="453" Icon="">
             <WindowState Visible="True" X="159" Y="182" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13278,7 +13590,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 41" ID="439" Icon="">
+          <Button Caption="Effect 41" ID="454" Icon="">
             <WindowState Visible="True" X="210" Y="182" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13292,7 +13604,7 @@
             <Key/>
             <Intensity Adjust="False">100</Intensity>
           </Button>
-          <Button Caption="Effect 42" ID="440" Icon="">
+          <Button Caption="Effect 42" ID="455" Icon="">
             <WindowState Visible="True" X="261" Y="182" Width="47" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
@@ -13307,7 +13619,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
         </SoloFrame>
-        <Slider Caption="Vel. Paneles" ID="441" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true" Page="2">
+        <Slider Caption="Vel. Paneles" ID="456" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true" Page="2">
           <WindowState Visible="True" X="1176" Y="580" Width="90" Height="244"/>
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
@@ -13327,7 +13639,7 @@
             <Function>4294967295</Function>
           </Playback>
         </Slider>
-        <Label Caption="Velocidad de los efectos de los paneles. A cero, manda la del ciclo (200)." ID="442" Page="2">
+        <Label Caption="Velocidad de los efectos de los paneles. A cero, manda la del ciclo (200)." ID="457" Page="2">
           <WindowState Visible="True" X="1272" Y="580" Width="160" Height="120"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -13337,7 +13649,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Matrix Caption="Matriz en vivo" ID="443" Page="2">
+        <Matrix Caption="Matriz en vivo" ID="458" Page="2">
           <WindowState Visible="True" X="1176" Y="68" Width="256" Height="200"/>
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
@@ -13364,8 +13676,8 @@
             <Resource>Waves</Resource>
           </Control>
         </Matrix>
-        <Label Caption="Esta página es el almacén: las mezclas de dos colores, las matrices y" ID="444" Page="2">
-          <WindowState Visible="True" X="8" Y="310" Width="524" Height="24"/>
+        <Label Caption="Esta página es el almacén: las mezclas de dos colores, las matrices y" ID="459" Page="2">
+          <WindowState Visible="True" X="8" Y="410" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13374,8 +13686,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="los 42 efectos propios de los paneles. Están aquí para mirarlos y para" ID="445" Page="2">
-          <WindowState Visible="True" X="8" Y="336" Width="524" Height="24"/>
+        <Label Caption="los 42 efectos propios de los paneles. Están aquí para mirarlos y para" ID="460" Page="2">
+          <WindowState Visible="True" X="8" Y="436" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13384,8 +13696,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="construir AUTO con ellos, no para pulsarlos con la sala llena." ID="446" Page="2">
-          <WindowState Visible="True" X="8" Y="362" Width="524" Height="24"/>
+        <Label Caption="construir AUTO con ellos, no para pulsarlos con la sala llena." ID="461" Page="2">
+          <WindowState Visible="True" X="8" Y="462" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13394,8 +13706,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="· · ·" ID="447" Page="2">
-          <WindowState Visible="True" X="8" Y="388" Width="524" Height="24"/>
+        <Label Caption="· · ·" ID="462" Page="2">
+          <WindowState Visible="True" X="8" Y="488" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13404,8 +13716,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Las flechas de la cabecera de cada marco cambian de grupo: cada grupo" ID="448" Page="2">
-          <WindowState Visible="True" X="8" Y="414" Width="524" Height="24"/>
+        <Label Caption="Las flechas de la cabecera de cada marco cambian de grupo: cada grupo" ID="463" Page="2">
+          <WindowState Visible="True" X="8" Y="514" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13414,8 +13726,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="de luces tiene sus propias mezclas y sus propias matrices." ID="449" Page="2">
-          <WindowState Visible="True" X="8" Y="440" Width="524" Height="24"/>
+        <Label Caption="de luces tiene sus propias mezclas y sus propias matrices." ID="464" Page="2">
+          <WindowState Visible="True" X="8" Y="540" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13424,8 +13736,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="· · ·" ID="450" Page="2">
-          <WindowState Visible="True" X="8" Y="466" Width="524" Height="24"/>
+        <Label Caption="· · ·" ID="465" Page="2">
+          <WindowState Visible="True" X="8" Y="566" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13434,8 +13746,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Los 42 efectos de los paneles no los ha visto nadie todavía: el aparato" ID="451" Page="2">
-          <WindowState Visible="True" X="8" Y="492" Width="524" Height="24"/>
+        <Label Caption="Los 42 efectos de los paneles no los ha visto nadie todavía: el aparato" ID="466" Page="2">
+          <WindowState Visible="True" X="8" Y="592" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13444,8 +13756,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="solo los llama «Effect N». Pulsa, mira, y apunta cuáles valen la pena." ID="452" Page="2">
-          <WindowState Visible="True" X="8" Y="518" Width="524" Height="24"/>
+        <Label Caption="solo los llama «Effect N». Pulsa, mira, y apunta cuáles valen la pena." ID="467" Page="2">
+          <WindowState Visible="True" X="8" Y="618" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13454,8 +13766,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="· · ·" ID="453" Page="2">
-          <WindowState Visible="True" X="8" Y="544" Width="524" Height="24"/>
+        <Label Caption="· · ·" ID="468" Page="2">
+          <WindowState Visible="True" X="8" Y="644" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13464,8 +13776,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Las ruedas por grupo pintan los mismos fixtures que la rueda general." ID="454" Page="2">
-          <WindowState Visible="True" X="8" Y="570" Width="524" Height="24"/>
+        <Label Caption="Las ruedas por grupo pintan los mismos fixtures que la rueda general." ID="469" Page="2">
+          <WindowState Visible="True" X="8" Y="670" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13474,8 +13786,8 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="Encender las dos a la vez suma los dos colores: sale blanco." ID="455" Page="2">
-          <WindowState Visible="True" X="8" Y="596" Width="524" Height="24"/>
+        <Label Caption="Encender las dos a la vez suma los dos colores: sale blanco." ID="470" Page="2">
+          <WindowState Visible="True" X="8" Y="696" Width="524" Height="24"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
             <ForegroundColor>Default</ForegroundColor>
@@ -13484,7 +13796,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <AudioTriggers BarsNumber="5" Caption="Audio (hay que elegir entrada en Configuración)" ID="456" Page="1">
+        <AudioTriggers BarsNumber="5" Caption="Audio (hay que elegir entrada en Configuración)" ID="471" Page="1">
           <WindowState Visible="True" X="1176" Y="330" Width="256" Height="110"/>
           <Appearance>
             <FrameStyle>Sunken</FrameStyle>
