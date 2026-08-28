@@ -42,6 +42,17 @@ workspaces.
   `Simultaneo` (7 wash + 3 beam) y crossfade 5 s en los chasers de
   movimiento. En sala: pacing del prisma, holds de los arcoiris, y que el
   banco de 12 botones se lea bien en 13".
+- [ ] **Montaje 2026-08-29: las 4 máquinas de humo vertical LED.** Patcheadas
+  como `Generic / LED Spray Fog` (7ch) en **317, 324, 331 y 338**; el placeholder
+  `Generic Smoke` 2ch de 299 fuera. En sala: (1) poner `A001` = 317/324/331/338
+  en el menú de cada máquina, (2) copiar `QLC+ Fixtures/Generic-LED-Spray-Fog.qxf`
+  a `~/Library/Application Support/QLC+/Fixtures/` del Mac del show — sin eso
+  QLC+ no conoce la definición, (3) probar `HUMO VERT · U` (columna blanca +
+  humo, held) y que los LED sigan la rueda de colores como PARs de suelo,
+  (4) confirmar que strobe (CH6) y ciclo de color (CH7) a 0 son "apagado" en la
+  máquina real — el manual no lo jura, (5) posiciones del plot (fila frontal
+  z=6400, provisional) contra dónde se monten de verdad. La AF-150 queda como
+  humo de ambiente en `Humo Auto`/`HUMO YA · H`, separada.
 - [ ] **Probar con el rig el contenido nuevo del 2026-08-28.** Cinco piezas,
   todas con valores DMX de primera pasada que se afinan mirando la sala:
   `Ola Vertical` (onda de tilt, Line a Width 0 + Serial), `Barrido Unison`

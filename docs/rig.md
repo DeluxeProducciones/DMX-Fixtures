@@ -19,7 +19,7 @@ A naive scan reporting "369 fixtures" is wrong: 342 of those are fixture-ID
 | 4 | Generic BEAM 230W 7R | 16 channel | 16 | yes |
 | 2 | HYULIGHTS WX-60WPS-48PARTITION | A MODE 8CH | 8 | no |
 | 1 | Stairville AF-150 (fog) | Generic Smoke / Amount | 1 | - |
-| 1 | Generic Smoke | Normal | 2 | - |
+| 4 | Generic LED Spray Fog (humo vertical) | 7 Channel | 7 | - |
 
 **Twelve fixtures move**, not six: the CromoWash100 and the MiN Wash are moving
 washes. Selecting movers by capability (a fixture with both pan and tilt)
@@ -214,6 +214,31 @@ neighbours' 47. See [Fixture groups](#fixture-groups).
 **The current patch is `Vibra.qxw`, not `DeluxeEventos2.qxw`.** The hand-built
 original stays as the reference the builders are tested against, but it is two
 fixtures behind the rig now, so `newshow` runs from `Vibra.qxw` itself.
+
+### The four vertical fog machines replaced the spare (2026-08-29)
+
+The 2-channel "Generic Smoke" parked at 299 was a placeholder; the real
+machines are four unbranded vertical LED fog machines ("tipo CO2"), 7 fixed
+DMX channels each: fog, LED master dimmer, R, G, B, LED strobe, LED colour
+cycle. The scanned leaflet and its clean twin (the Audibax Geyser 2000 RGB
+manual, same OEM map) are in `Manual/`. They are patched at **317, 324, 331
+and 338** - the placeholder's 2-channel footprint at 299 would have put the
+real machine's RGB under the WX panel at 301, driving the fog machine's LED
+with panel data.
+
+Two facts shape everything generated for them:
+
+- **DMX priority.** With a controller plugged in, the machine's own timer,
+  remote and colour program are dead. Nothing lights the column unless the
+  show writes dimmer + colour; `qlctool check`'s `humo-luz` rule fails any
+  show where the pump fires and no function does.
+- **The pump is a role of its own.** The fog channel is typed with the smoke
+  role (never as a dimmer), which is what lets the LED half live as an
+  ordinary RGB fixture - on the colour wheel, in the blackout, under the
+  energy levels, a floor PAR - while only the smoke scenes can reach the
+  pump. `Humo Auto` stays with the fog-only AF-150; the verticals fire from
+  the held `Humo Vertical YA` button (key U), white while the column is up,
+  back to the room's colour on release.
 
 ### A four-head bar is one light in the 3D view
 
