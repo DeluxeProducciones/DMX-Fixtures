@@ -33,15 +33,8 @@ workspaces.
   Espacio, `-` y `.` (estroban como el show viejo), `B` (barrido inverso),
   `M` (rotación de barridos), `Escenario`/`Centro` en el marco de figuras,
   los subsets de prisma `1/2/3/4/1y3/2y4`, los `MultiColor BEAM` de la
-  página 3, y el fader `Vel. Paneles`.
-- [ ] **Recrear el look del humo vertical (2026-08-27).** El `HUMO AUTO`
-  viejo (tecla J) no estaba roto: sus pasos eran `Strobo LED - Effect 1/3`
-  (paneles ch6=130, ch7=2 y ch7=14) — la luz que ponían "para poner todo
-  blanco cuando soltamos el humo vertical" (dueño). Con las fotos de los 42
-  efectos se identifica cuáles son esos dos y se monta un botón
-  `Humo Vertical` (paneles a ese efecto blanco + lo que decida el dueño:
-  ¿blanco en el resto del rig?). Decidir también si va en página 1 como
-  golpe o en página 2.
+  página 3, el fader `Vel. Paneles`, y `HUMO VERTICAL · N` (página 2,
+  paneles a los ciclos del humo vertical, calcado del show viejo).
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media
