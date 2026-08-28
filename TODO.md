@@ -64,6 +64,15 @@ workspaces.
      monten de verdad; ajustar el JSON y regenerar si interesa el 3D.
   6. Si la bomba no dispara con `U`: comprobar `O` (protección sin líquido) en
      el menú y que el tanque cebó el tubo.
+  7. **La máquina de ambiente puede ser la Mark MF 1500 DMX MKII** en vez de
+     la AF-150 (owner, 2026-08-29; manual en
+     `Manual/MF_1500_DMX_MKII_v1_2.pdf`). Mismo footprint DMX — 1 canal, solo
+     humo — así que el patch (`Generic Smoke / Amount` en la **186**) vale para
+     cualquiera de las dos sin regenerar. Solo cambia la dirección física:
+     la Mark va por dip-switches, dip 10 SIEMPRE ON y los dips 1-9 codifican
+     `dirección - 1` en binario (dip 1 = 1 ... dip 9 = 256). Para la 186:
+     **ON = 1, 4, 5, 6, 8 y 10; OFF = 2, 3, 7, 9** (185 = 1+8+16+32+128).
+     Contrastar con los diagramas de la página 4 del manual al ponerlos.
 - [ ] **Apple git sigue sin CommandLineTools en el Mac del show** (2026-08-29):
   `/usr/bin/git` muere con `xcrun: error: invalid active developer path`. NO
   bloquea nada — el git de Homebrew funciona (`export
