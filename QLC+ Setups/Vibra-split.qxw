@@ -10250,10 +10250,11 @@
     <Function ID="558" Type="Collection" Name="Momento Tranquilo" Path="Momentos">
       <Step Number="0">541</Step>
       <Step Number="1">218</Step>
-      <Step Number="2">412</Step>
-      <Step Number="3">417</Step>
-      <Step Number="4">456</Step>
-      <Step Number="5">545</Step>
+      <Step Number="2">398</Step>
+      <Step Number="3">396</Step>
+      <Step Number="4">417</Step>
+      <Step Number="5">456</Step>
+      <Step Number="6">545</Step>
     </Function>
     <Function ID="559" Type="Collection" Name="Momento Fiesta" Path="Momentos">
       <Step Number="0">541</Step>
@@ -10301,6 +10302,8 @@
           <Key>PgUp</Key>
         </Previous>
         <PagesLoop>True</PagesLoop>
+        <Input ID="0" Universe="0" Channel="26"/>
+        <Input ID="1" Universe="0" Channel="25"/>
         <Label Caption="1 · SHOW — pulsa AUTO y ya está. PgDn para el resto." ID="2">
           <WindowState Visible="True" X="8" Y="30" Width="1416" Height="30"/>
           <Appearance>
@@ -10598,6 +10601,7 @@
             <Action FadeOut="1000">StopAll</Action>
             <Key>Backspace</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="28"/>
           </Button>
           <Button Caption="APAGON · Esc" ID="22" Icon="">
             <WindowState Visible="True" X="474" Y="30" Width="200" Height="78"/>
@@ -10612,6 +10616,7 @@
             <Action>Blackout</Action>
             <Key>Escape</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="29"/>
           </Button>
           <Label Caption="PARAR TODO para las funciones con un fundido de 1 segundo — pulsa AUTO para retomar. APAGON deja la sala a oscuras — vuelve a pulsar APAGON para devolverla, y luego AUTO." ID="23">
             <WindowState Visible="True" X="680" Y="30" Width="726" Height="78"/>

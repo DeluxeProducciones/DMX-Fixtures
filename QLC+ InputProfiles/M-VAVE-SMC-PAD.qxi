@@ -182,23 +182,23 @@
   <Type>Knob</Type>
  </Channel>
  <Channel Number="25">
-  <Name>Button A</Name>
+  <Name>&lt; (pagina anterior)</Name>
   <Type>Button</Type>
  </Channel>
  <Channel Number="26">
-  <Name>Button B</Name>
+  <Name>&gt; (pagina siguiente)</Name>
   <Type>Button</Type>
  </Channel>
  <Channel Number="27">
-  <Name>Button C</Name>
+  <Name>Play</Name>
   <Type>Button</Type>
  </Channel>
  <Channel Number="28">
-  <Name>Button D</Name>
+  <Name>Pausa</Name>
   <Type>Button</Type>
  </Channel>
  <Channel Number="29">
-  <Name>Button E</Name>
+  <Name>Rec</Name>
   <Type>Button</Type>
  </Channel>
  <Channel Number="37376">
