@@ -65,8 +65,15 @@ exactly one, **Effect 40**. `Ciclo Paneles` now cycles 41 of the 42
 (`EXCLUDED_FROM_CYCLE` in `generate/builtin_effects.py`); Effect 40's scene
 stays on the library page for whoever wants to see a counter once.
 
+## Humo Vertical (decided 2026-08-28: "como el antiguo")
+
+`Humo Vertical` (key `N`, page 2) is the hand-built chaser verbatim: the
+panels hold Effect 1 for a minute, then Effect 3 for ten, looping - the
+multicolour cycles the show really ran while the vertical smoke fired, not
+the white the memory suggested. `generate/vertical_smoke_light.py`, dated
+test alongside.
+
 ## Still pending from the owner
 
-1. Footage of Effects 22-42, when convenient - the catalogue above stops at 21.
-2. Whether `Humo Vertical` uses Effects 1/3 (the old values, multicolour) or
-   plain manual-mode white.
+1. Footage of Effects 22-42, when convenient - the catalogue above stops
+   at 21.
