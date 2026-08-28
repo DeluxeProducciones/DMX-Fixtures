@@ -9796,6 +9796,7 @@
             <Action>Toggle</Action>
             <Key>Q</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37004"/>
           </Button>
           <Button Caption="CHARLA — alguien habla · F1" ID="4" Icon="">
             <WindowState Visible="True" X="704" Y="26" Width="352" Height="92"/>
@@ -9810,6 +9811,7 @@
             <Action>Toggle</Action>
             <Key>F1</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37010"/>
           </Button>
           <Button Caption="TRANQUILO — bajón · F2" ID="5" Icon="">
             <WindowState Visible="True" X="1062" Y="26" Width="352" Height="92"/>
@@ -9824,6 +9826,7 @@
             <Action>Toggle</Action>
             <Key>F2</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37007"/>
           </Button>
           <Button Caption="FIESTA — marcha normal · F3" ID="6" Icon="">
             <WindowState Visible="True" X="704" Y="124" Width="352" Height="92"/>
@@ -9838,6 +9841,7 @@
             <Action>Toggle</Action>
             <Key>F3</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37005"/>
           </Button>
           <Button Caption="LOCURA — todo a la vez · F4" ID="7" Icon="">
             <WindowState Visible="True" X="1062" Y="124" Width="352" Height="92"/>
@@ -9852,6 +9856,7 @@
             <Action>Toggle</Action>
             <Key>F4</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37006"/>
           </Button>
           <Button Caption="BLANCO TOTAL — luz de trabajo · X" ID="8" Icon="">
             <WindowState Visible="True" X="8" Y="222" Width="690" Height="92"/>
@@ -9866,6 +9871,7 @@
             <Action>Toggle</Action>
             <Key>X</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37008"/>
           </Button>
           <Button Caption="TODO NEGRO — apaga las luces · º" ID="9" Icon="">
             <WindowState Visible="True" X="704" Y="222" Width="710" Height="92"/>
@@ -9880,6 +9886,7 @@
             <Action>Toggle</Action>
             <Key>º</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37009"/>
           </Button>
         </SoloFrame>
         <Frame Caption="GOLPES — se suman a lo que ya está sonando" ID="10">
@@ -9910,6 +9917,7 @@
             <Action Override="1">Flash</Action>
             <Key>Space</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="36996"/>
           </Button>
           <Button Caption="FLASH LENTO · -" ID="12" Icon="">
             <WindowState Visible="True" X="183" Y="30" Width="169" Height="118"/>
@@ -9924,6 +9932,7 @@
             <Action Override="1">Flash</Action>
             <Key>-</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="36997"/>
           </Button>
           <Button Caption="FLASH COLOR · ." ID="13" Icon="">
             <WindowState Visible="True" X="358" Y="30" Width="169" Height="118"/>
@@ -9938,6 +9947,7 @@
             <Action Override="1">Flash</Action>
             <Key>.</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="36998"/>
           </Button>
           <Button Caption="HUMO YA · H" ID="14" Icon="">
             <WindowState Visible="True" X="533" Y="30" Width="169" Height="118"/>
@@ -9952,6 +9962,7 @@
             <Action Override="1">Flash</Action>
             <Key>H</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37001"/>
           </Button>
           <Button Caption="HUMO VERT · U" ID="15" Icon="">
             <WindowState Visible="True" X="708" Y="30" Width="169" Height="118"/>
@@ -9966,6 +9977,7 @@
             <Action Override="1">Flash</Action>
             <Key>U</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37000"/>
           </Button>
           <Button Caption="STROBO · F" ID="16" Icon="">
             <WindowState Visible="True" X="883" Y="30" Width="169" Height="118"/>
@@ -9980,6 +9992,7 @@
             <Action>Toggle</Action>
             <Key>F</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37002"/>
           </Button>
           <Button Caption="STROBO SUAVE · T" ID="17" Icon="">
             <WindowState Visible="True" X="1058" Y="30" Width="169" Height="118"/>
@@ -9994,6 +10007,7 @@
             <Action>Toggle</Action>
             <Key>T</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37003"/>
           </Button>
           <Button Caption="COLOR BEAM · C" ID="18" Icon="">
             <WindowState Visible="True" X="1233" Y="30" Width="169" Height="118"/>
@@ -10008,6 +10022,7 @@
             <Action>Toggle</Action>
             <Key>C</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="36999"/>
           </Button>
         </Frame>
         <Frame Caption="SI ALGO VA MAL" ID="19">
@@ -10152,6 +10167,7 @@
             <Action>Toggle</Action>
             <Key>W</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37044"/>
           </Button>
           <Button Caption="Rueda de mezclas · E" ID="31" Icon="">
             <WindowState Visible="True" X="135" Y="26" Width="124" Height="46"/>
@@ -10166,6 +10182,7 @@
             <Action>Toggle</Action>
             <Key>E</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37045"/>
           </Button>
           <Button Caption="Mover cabezas · A" ID="32" Icon="">
             <WindowState Visible="True" X="264" Y="26" Width="124" Height="46"/>
@@ -10180,6 +10197,7 @@
             <Action>Toggle</Action>
             <Key>A</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37046"/>
           </Button>
           <Button Caption="Gobos girando · G" ID="33" Icon="">
             <WindowState Visible="True" X="393" Y="26" Width="124" Height="46"/>
@@ -10194,6 +10212,7 @@
             <Action>Toggle</Action>
             <Key>G</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37047"/>
           </Button>
           <Button Caption="Prisma · P" ID="34" Icon="">
             <WindowState Visible="True" X="6" Y="78" Width="124" Height="46"/>
@@ -10208,6 +10227,7 @@
             <Action>Toggle</Action>
             <Key>P</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37048"/>
           </Button>
           <Button Caption="Humo automático · J" ID="35" Icon="">
             <WindowState Visible="True" X="135" Y="78" Width="124" Height="46"/>
@@ -10222,6 +10242,7 @@
             <Action>Toggle</Action>
             <Key>J</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37049"/>
           </Button>
           <Button Caption="Arcoiris junto · '" ID="36" Icon="">
             <WindowState Visible="True" X="264" Y="78" Width="124" Height="46"/>
@@ -10236,6 +10257,7 @@
             <Action>Toggle</Action>
             <Key>'</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37050"/>
           </Button>
           <Button Caption="Arcoiris fases · ¡" ID="37" Icon="">
             <WindowState Visible="True" X="393" Y="78" Width="124" Height="46"/>
@@ -10250,6 +10272,7 @@
             <Action>Toggle</Action>
             <Key>¡</Key>
             <Intensity Adjust="False">100</Intensity>
+            <Input ID="0" Universe="0" Channel="37051"/>
           </Button>
         </Frame>
         <SoloFrame Caption="Colores BarrasLed — teclas 1-0" ID="38" Page="1">
@@ -11121,6 +11144,7 @@
           </Appearance>
           <SliderMode ValueDisplayStyle="Exact">GrandMaster</SliderMode>
           <Level LowLimit="0" HighLimit="255" Value="255"/>
+          <Input ID="0" Universe="0" Channel="30"/>
         </Slider>
         <Label Caption="MASTER GENERAL — corta la" ID="99" Page="1">
           <WindowState Visible="True" X="1176" Y="596" Width="256" Height="20"/>
@@ -12169,6 +12193,7 @@
           <Function FadeIn="0" FadeOut="0" Duration="6">89</Function>
           <Function FadeIn="0" FadeOut="0" Duration="6">131</Function>
           <Function FadeIn="0" FadeOut="0" Duration="6">173</Function>
+          <Input ID="0" Universe="0" Channel="31"/>
         </SpeedDial>
         <SpeedDial Caption="Vel. Movimiento" ID="171" Page="1">
           <WindowState Visible="True" X="1308" Y="68" Width="124" Height="150"/>
@@ -12183,6 +12208,7 @@
           <Time>10000</Time>
           <Function FadeIn="0" FadeOut="0" Duration="6">399</Function>
           <Function FadeIn="0" FadeOut="0" Duration="6">400</Function>
+          <Input ID="0" Universe="0" Channel="32"/>
         </SpeedDial>
         <Label Caption="Velocidad de las ruedas de color" ID="172" Page="1">
           <WindowState Visible="True" X="1176" Y="228" Width="256" Height="20"/>
