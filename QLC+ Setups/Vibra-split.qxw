@@ -3043,9 +3043,8 @@
       <Step Number="36" FadeIn="0" Hold="12000" FadeOut="0">210</Step>
       <Step Number="37" FadeIn="0" Hold="12000" FadeOut="0">211</Step>
       <Step Number="38" FadeIn="0" Hold="12000" FadeOut="0">212</Step>
-      <Step Number="39" FadeIn="0" Hold="12000" FadeOut="0">213</Step>
-      <Step Number="40" FadeIn="0" Hold="12000" FadeOut="0">214</Step>
-      <Step Number="41" FadeIn="0" Hold="12000" FadeOut="0">215</Step>
+      <Step Number="39" FadeIn="0" Hold="12000" FadeOut="0">214</Step>
+      <Step Number="40" FadeIn="0" Hold="12000" FadeOut="0">215</Step>
     </Function>
     <Function ID="217" Type="RGBMatrix" Name="BarrasLed - Fill Rojo" Path="Matrices BarrasLed">
       <Speed FadeIn="0" FadeOut="0" Duration="478"/>
