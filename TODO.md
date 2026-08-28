@@ -44,33 +44,32 @@ workspaces.
   banco de 12 botones se lea bien en 13".
 - [ ] **Montaje 2026-08-29: las 4 máquinas de humo vertical LED.** Patcheadas
   como `Generic / LED Spray Fog` (7ch) en **317, 324, 331 y 338**; el placeholder
-  `Generic Smoke` 2ch de 299 fuera. Ya copiado al Mac del show por SSH
-  (2026-08-29): los tres `.qxw` regenerados, los dos plots, y todos los `.qxf`
-  instalados en `~/Library/Application Support/QLC+/Fixtures/` y en
-  `QLC+ 5/Fixtures/`. En sala, en orden:
-  1. **Reiniciar QLC+ en el Mac del show** — estaba abierto (pid 22419) durante
-     la copia y las definiciones se cargan al arrancar; sin reinicio no conoce
-     `LED Spray Fog`. Reabrir `Vibra-split.qxw` y comprobar que las 4 máquinas
-     salen en el patch sin "No fixture definition".
-  2. Menú de cada máquina: `A001` = 317 / 324 / 331 / 338 (una cada una, el
+  `Generic Smoke` 2ch de 299 fuera. El Mac del show quedó preparado por SSH
+  (2026-08-29): repo sincronizado a `e8595eb` con el git de brew, todos los
+  `.qxf` instalados en `~/Library/Application Support/QLC+/Fixtures/` y en
+  `QLC+ 5/Fixtures/`, QLC+ reiniciado, `Vibra-split.qxw` cargado allí con
+  **cero errores** en el log de arranque (definición nueva reconocida), y
+  dejado abierto listo para mañana. Queda solo lo físico, en orden:
+  1. Menú de cada máquina: `A001` = 317 / 324 / 331 / 338 (una cada una, el
      orden físico da igual mientras se apunte cuál es cuál).
-  3. `HUMO VERT · U` mantenido: columna blanca + humo en las 4; al soltar, sus
+  2. `HUMO VERT · U` mantenido: columna blanca + humo en las 4; al soltar, sus
      LED vuelven al color de la sala (rueda). `HUMO YA · H` solo debe mover la
      AF-150 (ambiente).
-  4. Con `AUTO` en marcha: las 4 deben ir del color de la sala como PARs de
+  3. Con `AUTO` en marcha: las 4 deben ir del color de la sala como PARs de
      suelo, apagarse con `Todo Negro`, y subir/bajar con los niveles.
-  5. Confirmar en la máquina real que CH6 (strobe) y CH7 (ciclo color) a 0 son
+  4. Confirmar en la máquina real que CH6 (strobe) y CH7 (ciclo color) a 0 son
      "apagado" — el manual no lo jura; si 0 arranca el ciclo, corregir el
      `.qxf` y regenerar.
-  6. Posiciones del plot (fila frontal z=6400, provisional) contra dónde se
+  5. Posiciones del plot (fila frontal z=6400, provisional) contra dónde se
      monten de verdad; ajustar el JSON y regenerar si interesa el 3D.
-  7. Si la bomba no dispara con `U`: comprobar `O` (protección sin líquido) en
+  6. Si la bomba no dispara con `U`: comprobar `O` (protección sin líquido) en
      el menú y que el tanque cebó el tubo.
-- [ ] **El Mac del show tiene git roto** (2026-08-29): `xcrun: error: invalid
-  active developer path... missing xcrun` — CommandLineTools desaparecidos
-  (probable actualización de macOS). `git pull` imposible en
-  `~oficina/DMX-Fixtures`; la copia de hoy fue por `scp`. Arreglo:
-  `xcode-select --install` en ese Mac con red y sesión gráfica.
+- [ ] **Apple git sigue sin CommandLineTools en el Mac del show** (2026-08-29):
+  `/usr/bin/git` muere con `xcrun: error: invalid active developer path`. NO
+  bloquea nada — el git de Homebrew funciona (`export
+  PATH=/usr/local/bin:$PATH` en sesiones no interactivas, trampa ya documentada
+  en brain/access-map), y así se sincronizó hoy. Arreglo de fondo opcional:
+  `xcode-select --install` con sesión gráfica delante.
 - [ ] **Probar con el rig el contenido nuevo del 2026-08-28.** Cinco piezas,
   todas con valores DMX de primera pasada que se afinan mirando la sala:
   `Ola Vertical` (onda de tilt, Line a Width 0 + Serial), `Barrido Unison`
