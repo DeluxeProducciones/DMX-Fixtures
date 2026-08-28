@@ -17,134 +17,136 @@
      pads    ch10 (0-based 9)  -> 36864 + 128 + note   (notes 4-19, shift 52-67)
      knobs   ch1  (0-based 0)  ->     0 +   0 + cc     (CC 30-37, absolute 0-127)
      buttons ch1  (0-based 0)  ->     0 +   0 + cc     (CC 25-29, 127 press / 0 release)
-   Pads are numbered 1-16 reading order, top-left to bottom-right.
+   Pads are numbered the way the device numbers them - pad 1 bottom-left,
+   pad 13 top-left (Launchpad convention). The TOP-left pad sends the LOWEST
+   note: top row notes 4-7, bottom row 16-19; shift adds 48.
  -->
  <Channel Number="36996">
-  <Name>Pad 1</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="36997">
-  <Name>Pad 2</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="36998">
-  <Name>Pad 3</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="36999">
-  <Name>Pad 4</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37000">
-  <Name>Pad 5</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37001">
-  <Name>Pad 6</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37002">
-  <Name>Pad 7</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37003">
-  <Name>Pad 8</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37004">
-  <Name>Pad 9</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37005">
-  <Name>Pad 10</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37006">
-  <Name>Pad 11</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37007">
-  <Name>Pad 12</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37008">
   <Name>Pad 13</Name>
   <Type>Button</Type>
  </Channel>
- <Channel Number="37009">
+ <Channel Number="36997">
   <Name>Pad 14</Name>
   <Type>Button</Type>
  </Channel>
- <Channel Number="37010">
+ <Channel Number="36998">
   <Name>Pad 15</Name>
   <Type>Button</Type>
  </Channel>
- <Channel Number="37011">
+ <Channel Number="36999">
   <Name>Pad 16</Name>
   <Type>Button</Type>
  </Channel>
+ <Channel Number="37000">
+  <Name>Pad 9</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37001">
+  <Name>Pad 10</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37002">
+  <Name>Pad 11</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37003">
+  <Name>Pad 12</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37004">
+  <Name>Pad 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37005">
+  <Name>Pad 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37006">
+  <Name>Pad 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37007">
+  <Name>Pad 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37008">
+  <Name>Pad 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37009">
+  <Name>Pad 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37010">
+  <Name>Pad 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37011">
+  <Name>Pad 4</Name>
+  <Type>Button</Type>
+ </Channel>
  <Channel Number="37044">
-  <Name>Shift + Pad 1</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37045">
-  <Name>Shift + Pad 2</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37046">
-  <Name>Shift + Pad 3</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37047">
-  <Name>Shift + Pad 4</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37048">
-  <Name>Shift + Pad 5</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37049">
-  <Name>Shift + Pad 6</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37050">
-  <Name>Shift + Pad 7</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37051">
-  <Name>Shift + Pad 8</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37052">
-  <Name>Shift + Pad 9</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37053">
-  <Name>Shift + Pad 10</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37054">
-  <Name>Shift + Pad 11</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37055">
-  <Name>Shift + Pad 12</Name>
-  <Type>Button</Type>
- </Channel>
- <Channel Number="37056">
   <Name>Shift + Pad 13</Name>
   <Type>Button</Type>
  </Channel>
- <Channel Number="37057">
+ <Channel Number="37045">
   <Name>Shift + Pad 14</Name>
   <Type>Button</Type>
  </Channel>
- <Channel Number="37058">
+ <Channel Number="37046">
   <Name>Shift + Pad 15</Name>
   <Type>Button</Type>
  </Channel>
- <Channel Number="37059">
+ <Channel Number="37047">
   <Name>Shift + Pad 16</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37048">
+  <Name>Shift + Pad 9</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37049">
+  <Name>Shift + Pad 10</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37050">
+  <Name>Shift + Pad 11</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37051">
+  <Name>Shift + Pad 12</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37052">
+  <Name>Shift + Pad 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37053">
+  <Name>Shift + Pad 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37054">
+  <Name>Shift + Pad 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37055">
+  <Name>Shift + Pad 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37056">
+  <Name>Shift + Pad 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37057">
+  <Name>Shift + Pad 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37058">
+  <Name>Shift + Pad 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37059">
+  <Name>Shift + Pad 4</Name>
   <Type>Button</Type>
  </Channel>
  <Channel Number="30">
