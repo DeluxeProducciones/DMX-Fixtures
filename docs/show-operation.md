@@ -142,19 +142,38 @@ console" below.
   white on the same fixtures, which is why nobody could say what the difference
   was - there was none. What is left is a latched work light (`Blanco Total`)
   and a held hit (`Flash 100%`)
-- Rig-wide colour: a scene per colour over the whole patch and five
-  movers-against-the-rest contrasts, on the Random `Rueda Colores`
+- Rig-wide colour: a scene per colour over the whole patch, five
+  movers-against-the-rest contrasts, and two `Rig Multicolor` wild steps -
+  every fixture its own palette colour, the beams on their colour wheel's
+  rainbow scroll, the bars under a rainbow plasma - all on the Random
+  `Rueda Colores`, so the crazy look appears now and then on the one clock
+- The panels' phase cycle, `Ciclo Paneles Mixto`: their own 41 programmes for
+  eight minutes, then four in manual listening to the wheel's RGB - the wheel
+  writes their colour on every step all night, the cycle only decides whether
+  they are hearing it (one colour clock, one mode owner)
 - Per fixture group: a bank of solid colours, 30 two-colour mixes, a
   `Rueda Colores <group>` and a `Rueda Mezcla <group>`, both Random
 - Matrix effects per group (algorithm x colour) with a cycle chaser
 - Movement per family: wash EFX and beam EFX per shape, phases spread evenly,
   each family on its own Random chaser, plus the slow wash pair for Ambiente
   and the fast pair for Peak - the speed lives on the EFX, not on the chaser
-  that steps it. `Beams Abanico` is the beams' static fan and rest step
-- `Cabezas Centro`, `Intensidad Ambiente` / `Intensidad Total`, and the three
-  energy levels with `Ciclo Energia` over them
+  that steps it. The pro figures rotate among the shapes: `Ola Vertical`
+  (the tilt wave - Line at width 0, Serial cascade), `Barrido Unison` (the
+  synced push - every head in phase, the mirror making the sides meet), and
+  the two beam rests, `Beams Abanico` (the fan) and `Beams Cruce` (the X)
+- `Cabezas Centro`, `Intensidad Ambiente` / `Intensidad Total`, and the four
+  energy levels with `Ciclo Energia` over them - the way down from the peak
+  is `Nivel Fiesta Dinamico`, party movement with the dimmers taking turns
+  between the running chase and the odd/even ping-pong (`Dimmer Programas`)
 - `Luz Charla` and the four moments over the pieces above
-- The beams' gobo wheel (20 positions), colour wheel (17) and prism
+- The beams' gobo wheel (20 positions), colour wheel (17) and prism, used the
+  way a lit room uses them: gobos are texture in the haze from `Nivel Fiesta`
+  up (parked open in the quiet levels), the shake bursts (`Gobo Shake`, the
+  Pattern Jitter channel) are steps of the gobo wheel's own rotation, and the
+  prism is a peak-only multiplier - inserted spinning (every prism scene
+  drives the rotation channel too) and parked out by `Prisma - None` in every
+  level and moment that does not run its animation, so a peak's prism never
+  outlives the peak
 - `Humo Auto`
 - `Rueda Mezcla`, a collection over the per-group mix wheels, and `AUTO` over
   the colour wheel, the pixel cycle, the haze and the energy cycle

@@ -19,6 +19,25 @@ workspaces.
   "../../QLC+ Setups/Vibra-split.qxw"`. New rule when something misbehaves: find
   the cause, add a rule, add a dated regression test, run it over all three
   workspaces — written down in the repo's `CLAUDE.md`.
+- [ ] **Probar con el rig el contenido nuevo del 2026-08-28.** Cinco piezas,
+  todas con valores DMX de primera pasada que se afinan mirando la sala:
+  `Ola Vertical` (onda de tilt, Line a Width 0 + Serial), `Barrido Unison`
+  (empuje en fase, el espejo hace que los lados se encuentren), `Beams Cruce`
+  (la X estática, espejo del abanico — mismo TILT, ajustar en sala),
+  `Rig Multicolor 1/2` en la rueda (beams en rainbow scroll ~186, plasma en
+  las barras), `Ciclo Paneles Mixto` (8 min efectos / 4 min manual siguiendo
+  la rueda), `Nivel Fiesta Dinamico` (chase 30 s / ping-pong 8 s),
+  `Gobo Shake` (jitter a 64) y el prisma girando a 25. Los holds y
+  velocidades son opiniones hasta que alguien los vea.
+- [ ] **Extender `estrobo pegado` a sub-estados por nivel (2026-08-28, Codex
+  B4).** La regla une el reach de todo lo que cuelga del estado, así que el
+  `strobe-off` de `Intensidad Total` enmascara a un nivel de chase que no lo
+  escribe. El generador ya lo cubre (`Intensidad Peak` escribe strobe-off
+  para todo desde hoy), pero la regla no lo vería si se pierde: hace falta
+  computar el reach por alternativa de chaser (cada nivel como sub-estado).
+  Mismo hueco, en general, para canales LTP de efecto (prisma, rotación,
+  jitter): una regla "efecto sin dueño" que exija dueño en reposo por estado,
+  como ya hacen `acento sin dueño` y `estrobo pegado`.
 - [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
   FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
   espacio". Era real: el show viejo estrobaba en `Flash 100%`/`Flash 50%`
