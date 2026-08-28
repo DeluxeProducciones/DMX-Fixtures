@@ -19,6 +19,29 @@ workspaces.
   "../../QLC+ Setups/Vibra-split.qxw"`. New rule when something misbehaves: find
   the cause, add a rule, add a dated regression test, run it over all three
   workspaces — written down in the repo's `CLAUDE.md`.
+- [~] **Recuperado lo que el show viejo hacía y el generado perdió (auditoría
+  2026-08-28, implementado 2026-08-29 — pendiente solo de verlo en el rig).**
+  Informe completo en `docs/old-vs-new-audit-2026-08-28.md`; regresiones en
+  `tools/qlctool/tests/test_old_show_recovery.py` (10 tests fechados). Todo
+  el generador, regenerados los tres workspaces, `--validate` y `qlctool
+  check` limpios, suite 288 pass. Lo recuperado:
+  los 7 colores de paleta que nada emitía (van en matrices curadas nuevas:
+  Rojo Fuego, Verde Menta, Celeste, Azul Cielo, Azul Profundo, Morado,
+  Fucsia); teclas `9`/`0` de cada banco vuelven a ser `Azul / Rojo` y
+  `Rojo / Azul` (Naranja/Rosa quedan sin tecla); `Arcoiris Simultaneo` y
+  `Arcoiris Pasos` (EFX relativos RGB, teclas `'` y `¡`); `Vel. Paneles
+  Auto` (160-232-200-255, fade 45 s, botón en página 3); salida DMX USB
+  `UID="None"` en los tres ficheros (y `UniverseChannels` 316 real);
+  `Cabezas Centro` aparca los beams en pan 0 / tilt 130; `Prisma Animacion`
+  vuelve a la coreografía de 8 pasos (4; 2y4; 1; 2; todos; 3; 1y3; fuera —
+  hold 8 s, el viejo iba a 63 s/paso: afinar en sala); ciclos de matrices en
+  Random con los algoritmos viejos (Alternate con duales, Opposite, Fill
+  From Center, Fill Unfill, One By One, Random Column, Stripes From Center);
+  `Rig 4 Colores 1-4` como pasos de la rueda; Dimmer Chase por familia de
+  fixture (Line Serial W0 H127 en Collection, ambos sentidos); variantes
+  `Simultaneo` (7 wash + 3 beam) y crossfade 5 s en los chasers de
+  movimiento. En sala: pacing del prisma, holds de los arcoiris, y que el
+  banco de 12 botones se lea bien en 13".
 - [ ] **Probar con el rig el contenido nuevo del 2026-08-28.** Cinco piezas,
   todas con valores DMX de primera pasada que se afinan mirando la sala:
   `Ola Vertical` (onda de tilt, Line a Width 0 + Serial), `Barrido Unison`

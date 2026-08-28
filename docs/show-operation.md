@@ -303,13 +303,17 @@ only keys that cannot collide with a colour bank on 1-0.
 | `A` | Movimientos Cabezas | page 2 |
 | `G` / `P` | Gobos / prisma | page 2 |
 | `J` | Humo Auto | page 2 |
+| `'` / `¡` | Arcoiris Simultaneo / Arcoiris Pasos (relative RGB rainbows) | page 2 |
 | `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 2 |
 | `Z` / `M` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
 | `S` / `D` | Strobo ON / OFF (shutter) | page 2 |
 | `PgDn` / `PgUp` | next / previous page | anywhere |
 
 Keys 1-0 are on every colour bank: every widget sees every key press, so `1`
-lights red on the heads, the bars and the PARs at once. **Every widget sees
+lights red on the heads, the bars and the PARs at once. As on the hand-built
+console, `9` and `0` are not solids: they are the alternating `Azul / Rojo`
+and `Rojo / Azul` looks (restored 2026-08-28; Naranja and Rosa stay in the
+bank as keyless buttons). **Every widget sees
 every key press on every page too**, visible or not - which is why the page-1
 keys keep working while page 3 is on screen, and why every button's key is
 unique, checked by a test.
