@@ -3,6 +3,10 @@
 The Vibra lighting show: the fixture definitions, the QLC+ workspaces, and
 `tools/qlctool`, which generates the whole show and the console it is run from.
 
+The onboarding map - environment, the verified regeneration recipe, the traps
+and the blast radius - is [AGENTS.md](AGENTS.md); the human overview is
+[README.md](README.md). This file carries the engineering rules.
+
 ## A malfunction is not fixed until a check can see it
 
 This show ran on luck for months. A colour was wrong, somebody nudged it, and

@@ -10,6 +10,10 @@ building `tools/qlctool`. Written down so none of it has to be re-derived.
 | [show-operation.md](show-operation.md) | How these shows are actually run - unattended - and the console and keyboard that follows from that |
 | [qlcplus-environment.md](qlcplus-environment.md) | Where QLC+ keeps fixture definitions, how to validate a workspace headless, and which QLC+ versions are in play |
 | [toolkit.md](toolkit.md) | What `qlctool` does, command by command, and the two safety nets it rests on |
+| [checks.md](checks.md) | The `qlctool check` rules: what each one catches and the night it came from |
+| [panel-effects.md](panel-effects.md) | The WX panels' 42 built-in programmes, catalogued from the owner's videos of each one |
+| [qlc5-verification.md](qlc5-verification.md) | Which QLC+ 5 features the installed binary really supports, verified against the source clone |
+| [old-vs-new-audit-2026-08-28.md](old-vs-new-audit-2026-08-28.md) | The hand-built show audited against the generated one: what the old one still did better |
 
 This repository is **public**. Machine access - addresses, accounts,
 credentials, SSH - is deliberately not written here; it lives in the owner's
