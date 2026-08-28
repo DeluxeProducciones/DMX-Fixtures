@@ -42,26 +42,6 @@ workspaces.
   `Humo Vertical` (paneles a ese efecto blanco + lo que decida el dueño:
   ¿blanco en el resto del rig?). Decidir también si va en página 1 como
   golpe o en página 2.
-- [!] **Mirar los 42 efectos internos de los paneles y decir cuales valen.**
-  Los WX-60WPS llevan 42 animaciones propias (canal 6 = modo, canal 7 = efecto,
-  canal 8 = velocidad) que el show no tocaba: el canal 6 estaba en 0 = "No
-  function", asi que solo se usaba el RGB. Ya estan los 42 generados como
-  escenas (`Paneles - Effect 1..42`), en la pagina 3 de la consola, y
-  `Ciclo Paneles` los recorre en Random cada 12 s dentro de AUTO. **Nadie los ha
-  visto**: la definicion solo los llama "Effect N" y no hay manual del aparato
-  en `Manual/`. Y no se pueden ver en el simulador: el 3D de QLC+ pinta lo que
-  hay en los canales RGB, y en modo Auto el aparato genera el color por
-  hardware con el RGB a 0 - por eso los paneles salen apagados en la preview de
-  AUTO (owner, 2026-08-26) estando el fichero bien (ch1=255, ch6=128 Auto,
-  ch7=efecto, ch8=128; verificado contra la definicion). Siguiente paso:
-  pulsarlos uno a uno en sala, apuntar cuales valen, y dejar el ciclo solo con
-  esos. La velocidad ya no es a ciegas: el show viejo SI usaba estos efectos
-  (escenas `Strobo LED - Effect 1..42`, chaser de 60 s, velocidades 160-255
-  via slider + secuencia Random) y el generador pone ahora 200, el centro de
-  ese rango (2026-08-27). El dueño esta fotografiando los 42 en casa
-  (2026-08-27) - con eso se cierra cuales valen. Queda decidir si interesan
-  los otros dos modos del cacharro: Mixer Color (12 efectos de color) y Sound
-  Mode (2, reactivo al sonido).
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media

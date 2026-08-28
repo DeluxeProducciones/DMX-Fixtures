@@ -56,8 +56,17 @@ With this mapping the old vertical-smoke pair reads: Effect 1 (Rueda Multi
 Color Jump) and Effect 3 (fade through black) - full-panel colour cycles,
 still not white. Effect 14 is the closest thing to a white sweep seen so far.
 
-## Pending from the owner
+## The keep-list (owner, 2026-08-28)
 
-1. Footage or a look at Effects 22-42 (not covered yet).
-2. The keep-list: which effect numbers stay in `Ciclo Paneles`.
-3. Whether `Humo Vertical` uses one of these or plain manual-mode white.
+"Estaban todos menos uno que va como con un contador de números" - the
+hand-built programming cycled every effect except the number counter. The
+old chaser confirms it structurally: its 41 steps cover Effects 1-42 minus
+exactly one, **Effect 40**. `Ciclo Paneles` now cycles 41 of the 42
+(`EXCLUDED_FROM_CYCLE` in `generate/builtin_effects.py`); Effect 40's scene
+stays on the library page for whoever wants to see a counter once.
+
+## Still pending from the owner
+
+1. Footage of Effects 22-42, when convenient - the catalogue above stops at 21.
+2. Whether `Humo Vertical` uses Effects 1/3 (the old values, multicolour) or
+   plain manual-mode white.
