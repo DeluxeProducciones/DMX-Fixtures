@@ -305,8 +305,9 @@ only keys that cannot collide with a colour bank on 1-0.
 | `J` | Humo Auto | page 2 |
 | `'` / `¡` | Arcoiris Simultaneo / Arcoiris Pasos (relative RGB rainbows) | page 2 |
 | `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 2 |
-| `Z` / `M` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
+| `Z` / `K` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
 | `S` / `D` | Strobo ON / OFF (shutter) | page 2 |
+| `M` | tap tempo on `Vel. Colores` (tap the beat, the wheel follows) | page 1 |
 | `PgDn` / `PgUp` | next / previous page | anywhere |
 
 Keys 1-0 are on every colour bank: every widget sees every key press, so `1`
@@ -324,7 +325,8 @@ Colour is not the only thing that moves. Four dimmer looks - the running chase
 in both directions (an EFX in Dimmer mode, the fixtures spread around the path
 so the peak runs along the rig; `Dimmer Chase 2` reverses every fixture, the
 hand-built console's key B), an odd/even ping-pong, and `Dimmer Secuencia`
-(key M): the old console's rotation of the three, twenty seconds of steady
+(key K - M went back to being the tap key, as on the hand-built console):
+the old console's rotation of the three, twenty seconds of steady
 full light between ten-second programmes, restored verbatim from
 DeluxeEventos2's chaser - and four strobes.
 
