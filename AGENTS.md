@@ -80,7 +80,7 @@ Smoke test, same date and machine:
 
 ```bash
 .venv/bin/python -m pytest tests/ -q
-# -> 320 passed in 327.68s (0:05:27)
+# -> 318 passed in 325.74s (0:05:25)
 .venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
 # -> 427 botones revisados, ningun problema
 ```
