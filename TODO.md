@@ -13,16 +13,31 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
-- [!] **SMC-PAD LED feedback: plain MIDI does nothing (2026-08-29).** NoteOn
-  at several velocities and on both channels (1 and 10) was sent to all three
-  CoreMIDI destinations (`SMC-PAD-Master`, `SMC-PAD-Private`, `Puerto 3`) with
-  the owner watching: no pad lit. Matches the QLC+ forum's verdict on the
-  sibling SMC-Mixer ("this device doesn't support feedback"). The RGB colours
-  are set by M-VAVE's own apps over an unpublished protocol (SysEx on the
-  Private port, presumably). Unblock path: sniff what MIDI/CubeSuite sends
-  while changing a pad colour, then a tiny bridge daemon translating QLC+'s
-  note/CC feedback into that SysEx - QLC+ itself cannot emit per-widget SysEx.
-  Until then the console's state lives on the screen, not on the pads.
+- [!] **SMC-PAD pad RGB: proprietary SysEx, not MIDI notes (2026-08-29).**
+  Established by test, not guess:
+  1. A full NoteOn sweep (all 128 notes x 16 channels) plus CC, to all three
+     CoreMIDI ports, owner watching: **no pad ever lit**. Plain MIDI feedback
+     is out - same as the QLC+ forum found for the sibling SMC-Mixer.
+  2. The device **does** speak the M-VAVE SysEx family: the Chocolate pedal's
+     discovery message `F0 00 32 45 00 00 00 40 7F F7`, sent to the
+     `SMC-PAD-Private` port, drew a real 41-byte reply
+     (`F0 00 32 45 58 01 00 40 29 4D 06 35 ...`). Manufacturer id `00 32`.
+  3. The official app is `MidiSuite.apk` (Flutter). Its `libapp.so` exports
+     `sendColorData`, `_bytesToSysEx`, a ColorPicker, `manufacturer_data` -
+     so per-pad colour is set by a proprietary SysEx the app builds, over the
+     Private port. Not published anywhere; kartun83/M-Vave has "SMC-Pad:
+     nothing for now".
+  Unblock path, in order: (a) capture the exact colour SysEx by running
+  MidiSuite against the pad with `midicap.swift` listening on the Private
+  port (needs the app on a phone/tablet and a way to see its MIDI - the
+  Private port is the target); OR (b) reverse `sendColorData` out of the Dart
+  AOT snapshot with Blutter/reFlutter. Then a small bridge daemon subscribes
+  to QLC+'s note/CC feedback and re-emits the colour SysEx - QLC+ cannot send
+  per-widget SysEx itself. Real project, not a config tweak. Until then the
+  console's state lives on the screen; the pad is a blind trigger surface,
+  which is fine for fixed-position hits and states.
+  Refs: github.com/cbix/mvave-chocolate-sysex,
+  github.com/aroum/fm1-custom-fw, github.com/kartun83/M-Vave.
 - [ ] **Run `qlctool check` before every show file leaves this repo.** It reads
   what the room will do rather than whether QLC+ can load the file, and it found
   four bugs on its first run. `cd tools/qlctool && .venv/bin/qlctool check
