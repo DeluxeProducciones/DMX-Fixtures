@@ -53,7 +53,16 @@ workspaces.
      `midicap.swift` que PAD1 vuelve a dar ch10 nota 36.
   2. Anotar en `docs/show-operation.md` qué preset es el del show, para que se
      pueda recuperar sin adivinar.
-  3. El manual está ahora en `docs/` — no volver a pulsar SHIFT a ciegas.
+  3. El manual está transcrito en
+     `Manual/M-VAVE SMC-PAD - manual (transcripcion).md` — no volver a pulsar
+     SHIFT a ciegas.
+- [ ] **Conseguir el PDF real del manual del SMC-PAD.** Lo que hay en `Manual/`
+  es una transcripción hecha desde
+  <https://manuals.plus/sinco/smc-pad-midi-controller-manual>; ese sitio
+  responde 403 a una descarga directa (`curl`), así que el PDF hay que sacarlo
+  a mano desde el navegador, o de m-vave.com, o del QR de la parte de atrás del
+  aparato. El resto de `Manual/` son PDF del fabricante y este debería serlo
+  también: una transcripción se puede haber comido una tabla o un diagrama.
 - [x] **El mapa del pad estaba escrito tres veces y las tres discrepaban
   (2026-08-29).** El perfil `QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` declaraba
   las notas de fábrica 4-19 mientras el workspace estaba atado a 36-51, ocho
