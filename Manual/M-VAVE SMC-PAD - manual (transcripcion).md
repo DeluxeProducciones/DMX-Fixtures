@@ -98,6 +98,14 @@ the input/output option within the corresponding DAW's control surface."
 **`SHIFT` no manda ningún mensaje MIDI.** Cada combinación cambia un ajuste
 guardado en el pad, y el cambio sobrevive al apagado.
 
+Y no hace falta el manual para saberlo: **está serigrafiado encima de cada
+pad**. La foto del panel real está en
+[`../docs/smc-pad-panel.jpg`](../docs/smc-pad-panel.jpg) y se lee
+`PAD13 TRANSPOSE −`, `PAD14 TRANSPOSE +`, `PAD15 OCTAVE −`,
+`PAD16 OCTAVE +`, `PAD9-12 VELOCITY 1-4`, `PAD1-8 PRESETS 1-8`. El día que se
+descolocó el pad, la explicación estaba impresa en el aparato que teníamos
+delante.
+
 | Combinación | Manual |
 | --- | --- |
 | `SHIFT` + Note Repeat | "Transforms the 16 pads to modify note repeat settings." |
