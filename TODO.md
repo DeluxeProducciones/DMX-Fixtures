@@ -128,7 +128,10 @@ workspaces.
   tenemos ahora es muy lento" — el 0.85 daba 217 en las CLB2.4. Subido a 0.97
   (CLB 247, CromoWash 248), regla nueva `flash lento` (el flash mas rapido de
   la consola tiene que vivir arriba de la carrera slow-to-fast), test fechado,
-  los tres workspaces regenerados y validados. Queda verificar en sala.
+  los tres workspaces regenerados y validados. Misma noche, el lento: "el
+  flash slow para los par es unos 200" — 0.45 daba 115; subido a 0.785 (CLB
+  200, CromoWash 202) y la regla gana suelo: ningun flash pulsado a mano
+  escribe estrobo por debajo del 70% de la carrera. Queda verificar en sala.
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media
