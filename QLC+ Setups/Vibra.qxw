@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FIXANDFUNC">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VC">
   <Creator>
     <Name>Q Light Controller Plus</Name>
     <Version>5.2.2</Version>
@@ -11,9 +11,18 @@
       <BeatGenerator BeatType="Internal" BPM="120"/>
       <NetworkServer Type="Native" AutoStart="False" Name="QLC+_C0A80142" Password=""/>
       <Universe Name="Universe 1" ID="0">
+        <Input Plugin="MIDI" Name="ble device" UID="-538641617" Line="0">
+          <PluginParameters midichannel="16"/>
+        </Input>
         <Output Plugin="DMX USB" UID="None" Line="0">
           <PluginParameters UniverseChannels="344"/>
         </Output>
+        <Output Plugin="MIDI" Name="SMC-PAD LED Bridge" UID="-668169912" Line="1">
+          <PluginParameters initmessage="None" midichannel="16"/>
+        </Output>
+        <Feedback Plugin="MIDI" Name="SMC-PAD LED Bridge" UID="-668169912" Line="1">
+          <PluginParameters initmessage="None" midichannel="16"/>
+        </Feedback>
       </Universe>
     </InputOutputMap>
     <Fixture>
@@ -9739,8 +9748,8 @@
             <WindowState Visible="True" X="8" Y="26" Width="690" Height="190"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4280876860</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,28,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9748,14 +9757,14 @@
             <Action>Toggle</Action>
             <Key>Q</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37004"/>
+            <Input ID="0" Universe="0" Channel="37032"/>
           </Button>
           <Button Caption="CHARLA — alguien habla · F1" ID="5" Icon="">
             <WindowState Visible="True" X="704" Y="26" Width="352" Height="92"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294945340</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9763,14 +9772,14 @@
             <Action>Toggle</Action>
             <Key>F1</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37010"/>
+            <Input ID="0" Universe="0" Channel="37030"/>
           </Button>
           <Button Caption="TRANQUILO — bajón · F2" ID="6" Icon="">
             <WindowState Visible="True" X="1062" Y="26" Width="352" Height="92"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4280842495</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9778,14 +9787,14 @@
             <Action>Toggle</Action>
             <Key>F2</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37007"/>
+            <Input ID="0" Universe="0" Channel="37035"/>
           </Button>
           <Button Caption="FIESTA — marcha normal · F3" ID="7" Icon="">
             <WindowState Visible="True" X="704" Y="124" Width="352" Height="92"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4294912180</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9793,14 +9802,14 @@
             <Action>Toggle</Action>
             <Key>F3</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37005"/>
+            <Input ID="0" Universe="0" Channel="37033"/>
           </Button>
           <Button Caption="LOCURA — todo a la vez · F4" ID="8" Icon="">
             <WindowState Visible="True" X="1062" Y="124" Width="352" Height="92"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4294924800</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9808,14 +9817,14 @@
             <Action>Toggle</Action>
             <Key>F4</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37006"/>
+            <Input ID="0" Universe="0" Channel="37034"/>
           </Button>
           <Button Caption="BLANCO TOTAL — luz de trabajo · X" ID="9" Icon="">
             <WindowState Visible="True" X="8" Y="222" Width="690" Height="92"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294967295</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9823,14 +9832,14 @@
             <Action>Toggle</Action>
             <Key>X</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37008"/>
+            <Input ID="0" Universe="0" Channel="37028"/>
           </Button>
           <Button Caption="TODO NEGRO — apaga las luces · º" ID="10" Icon="">
             <WindowState Visible="True" X="704" Y="222" Width="710" Height="92"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4294912040</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9838,7 +9847,7 @@
             <Action>Toggle</Action>
             <Key>º</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37009"/>
+            <Input ID="0" Universe="0" Channel="37029"/>
           </Button>
         </SoloFrame>
         <Frame Caption="GOLPES — se suman a lo que ya está sonando" ID="11">
@@ -9860,8 +9869,8 @@
             <WindowState Visible="True" X="8" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294967295</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9869,14 +9878,14 @@
             <Action Override="1">Flash</Action>
             <Key>Space</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="36996"/>
+            <Input ID="0" Universe="0" Channel="37040"/>
           </Button>
           <Button Caption="FLASH LENTO · -" ID="13" Icon="">
             <WindowState Visible="True" X="183" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294959540</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9884,14 +9893,14 @@
             <Action Override="1">Flash</Action>
             <Key>-</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="36997"/>
+            <Input ID="0" Universe="0" Channel="37041"/>
           </Button>
           <Button Caption="FLASH COLOR · ." ID="14" Icon="">
             <WindowState Visible="True" X="358" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4294902015</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9899,14 +9908,14 @@
             <Action Override="1">Flash</Action>
             <Key>.</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="36998"/>
+            <Input ID="0" Universe="0" Channel="37042"/>
           </Button>
           <Button Caption="HUMO YA · H" ID="15" Icon="">
             <WindowState Visible="True" X="533" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4288077055</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9914,14 +9923,14 @@
             <Action Override="1">Flash</Action>
             <Key>H</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37001"/>
+            <Input ID="0" Universe="0" Channel="37037"/>
           </Button>
           <Button Caption="HUMO VERT · U" ID="16" Icon="">
             <WindowState Visible="True" X="708" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4278246655</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9929,14 +9938,14 @@
             <Action Override="1">Flash</Action>
             <Key>U</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37000"/>
+            <Input ID="0" Universe="0" Channel="37036"/>
           </Button>
           <Button Caption="STROBO · F" ID="17" Icon="">
             <WindowState Visible="True" X="883" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294967040</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9944,14 +9953,14 @@
             <Action>Toggle</Action>
             <Key>F</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37002"/>
+            <Input ID="0" Universe="0" Channel="37038"/>
           </Button>
           <Button Caption="STROBO SUAVE · T" ID="18" Icon="">
             <WindowState Visible="True" X="1058" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294952960</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9959,14 +9968,14 @@
             <Action>Toggle</Action>
             <Key>T</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37003"/>
+            <Input ID="0" Universe="0" Channel="37039"/>
           </Button>
           <Button Caption="COLOR BEAM · C" ID="19" Icon="">
             <WindowState Visible="True" X="1233" Y="30" Width="169" Height="118"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4278255615</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,15,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -9974,7 +9983,7 @@
             <Action>Toggle</Action>
             <Key>C</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="36999"/>
+            <Input ID="0" Universe="0" Channel="37043"/>
           </Button>
         </Frame>
         <Frame Caption="SI ALGO VA MAL" ID="20">
