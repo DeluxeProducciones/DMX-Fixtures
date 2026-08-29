@@ -66,10 +66,11 @@
   {
    "id": 0,
    "model": "CromoWash100",
-   "place": "Back truss 4 of 10",
-   "x": 4185,
-   "y": 4000,
-   "z": 1558
+   "place": "Spare, not rigged",
+   "x": 9000,
+   "y": 0,
+   "z": 408,
+   "hidden": true
   },
   {
    "id": 8,
@@ -92,10 +93,11 @@
   {
    "id": 1,
    "model": "CromoWash100",
-   "place": "Back truss 7 of 10",
-   "x": 7519,
-   "y": 4000,
-   "z": 1558
+   "place": "Spare, not rigged",
+   "x": 10200,
+   "y": 0,
+   "z": 408,
+   "hidden": true
   },
   {
    "id": 10,
@@ -315,6 +317,22 @@
    "x": 9395,
    "y": 0,
    "z": 6400
+  },
+  {
+   "id": 33,
+   "model": "MAC WASH 1915Z",
+   "place": "Back truss 4 of 10",
+   "x": 4171,
+   "y": 4000,
+   "z": 1556
+  },
+  {
+   "id": 34,
+   "model": "MAC WASH 1915Z",
+   "place": "Back truss 7 of 10",
+   "x": 7505,
+   "y": 4000,
+   "z": 1556
   }
  ],
  "props": [
