@@ -13,6 +13,16 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
+- [!] **SMC-PAD LED feedback: plain MIDI does nothing (2026-08-29).** NoteOn
+  at several velocities and on both channels (1 and 10) was sent to all three
+  CoreMIDI destinations (`SMC-PAD-Master`, `SMC-PAD-Private`, `Puerto 3`) with
+  the owner watching: no pad lit. Matches the QLC+ forum's verdict on the
+  sibling SMC-Mixer ("this device doesn't support feedback"). The RGB colours
+  are set by M-VAVE's own apps over an unpublished protocol (SysEx on the
+  Private port, presumably). Unblock path: sniff what MIDI/CubeSuite sends
+  while changing a pad colour, then a tiny bridge daemon translating QLC+'s
+  note/CC feedback into that SysEx - QLC+ itself cannot emit per-widget SysEx.
+  Until then the console's state lives on the screen, not on the pads.
 - [ ] **Run `qlctool check` before every show file leaves this repo.** It reads
   what the room will do rather than whether QLC+ can load the file, and it found
   four bugs on its first run. `cd tools/qlctool && .venv/bin/qlctool check
