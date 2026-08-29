@@ -25,14 +25,29 @@ workspaces.
   Entradas/Salidas el universo 1 debe tener Input "ble device" (omni "1-16"),
   y el bridge como Output **y Feedback** (el `<Feedback>` es el truco: el ojo
   de QLC+ no lo crea solo; ya está en el .qxw). Pendiente:
-  1. **Notas del pad por BT vs USB.** El pad manda nota 35+N por Bluetooth
-     (pad 1=36) tras el reset de la app; los bindings y el puente ya están en
-     esas notas. Si se reconfigura el pad, recapturar.
-  2. **Capa manual (shift+pad, página 2) por BT:** las notas de shift no se
-     capturaron por Bluetooth, así que esos bindings siguen en las notas USB y
-     no disparan por BT. Capturar shift+pad y remapear si se quiere feedback en
-     la página 2. La página 1 (estados + golpes) va.
-  3. Afinar la paleta y el brillo de reposo (`DIM` en el puente) en sala.
+  1. Afinar la paleta y el brillo de reposo (`DIM` en el puente) en sala.
+  2. **Probar la capa manual (banco 2) con el pad delante.** El remapeo de
+     2026-08-29 la movió de SHIFT (que no manda MIDI) a `PAD BANK`, y el
+     puente ya pinta las notas 52-67; falta pulsar `PAD BANK` en sala y
+     confirmar que los ocho botones de la página 2 disparan y encienden.
+- [x] **El mapa del pad estaba escrito tres veces y las tres discrepaban
+  (2026-08-29).** El perfil `QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` declaraba
+  las notas de fábrica 4-19 mientras el workspace estaba atado a 36-51, ocho
+  bindings de la página 2 vivían en notas que ningún control manda (SHIFT es
+  interno del aparato: elige SWING/LATCH/SYNC y no sale al cable), y ningún
+  workspace declaraba `<Input>`, así que QLC+ abría el show sin nadie
+  escuchando. Causa: el mapa vivía a mano en tres sitios. Ahora sale de
+  `generate/smc_pad_device.py`; el perfil se genera (`qlctool input-profile`),
+  el workspace se parchea solo (`input_binding.py`), la capa manual está en el
+  banco 2 (`PAD BANK`, medido: PAD1 = nota 52) y la regla
+  `binding a un control que el pad no manda` lo ve. Medido con
+  `tools/smc-pad/midicap.swift`: PAD13 = 48, PAD1 = 36, PAD16 = 51; `<`/`>`
+  **no** cambian de banco.
+- [ ] **`docs/smc-pad-led.md` se quedó atrás (2026-08-29).** Su sección
+  "Status and the honest next step" dice que el encoding de color sigue sin
+  resolver, y el puente lleva funcionando desde esa misma noche
+  (`tools/smc-pad/README.md` tiene la versión buena). Reescribir el final del
+  documento para que cuente el estado real en vez del de media tarde.
 - [!] **SMC-PAD pad RGB: proprietary BLE GATT, mechanism reverse-engineered
   (2026-08-29).** Full writeup in `docs/smc-pad-led.md`. In short: plain MIDI
   (full note sweep + CC, all three ports, owner watching) lights nothing.

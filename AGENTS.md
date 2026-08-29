@@ -69,6 +69,13 @@ cd tools/qlctool
   --out "../../QLC+ Setups/Vibra-split.qxw" --validate
 ```
 
+If the SMC-PAD's map changed, regenerate its input profile in the same pass -
+the shows carry the profile's *name*, the profile carries the numbers:
+
+```bash
+.venv/bin/qlctool input-profile "../../QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi"
+```
+
 Smoke test, same date and machine:
 
 ```bash
@@ -92,10 +99,15 @@ Smoke test, same date and machine:
   installed, validation silently cannot run - do not claim it passed.
 - `*.autosave.qxw` files are QLC+'s transient editor state, gitignored;
   never read one as the show.
-- The MIDI input profile must also be copied to the OS-level QLC+ folder to
-  take effect locally (macOS:
+- **The MIDI input profile is generated, not written.** It comes from
+  `qlctool/generate/smc_pad_device.py` via
+  `qlctool input-profile "../../QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi"`, and
+  `tests/test_input_profile.py` fails if the shipped copy drifts. It must also
+  be copied to the OS-level QLC+ folder to take effect locally (macOS:
   `~/Library/Application Support/QLC+/InputProfiles/`); the repo copy is the
-  source of truth.
+  source of truth. Re-measuring the pad means editing `smc_pad_device.py` and
+  regenerating - never hand-editing the `.qxi`, which is how it came to declare
+  the pad's factory notes for a day while the show used different ones.
 - Widget captions and check output are **Spanish on purpose** (the operator
   reads them); code, comments, commits and docs are English.
 

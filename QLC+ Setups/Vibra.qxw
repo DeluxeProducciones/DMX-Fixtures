@@ -11,7 +11,7 @@
       <BeatGenerator BeatType="Internal" BPM="120"/>
       <NetworkServer Type="Native" AutoStart="False" Name="QLC+_C0A80142" Password=""/>
       <Universe Name="Universe 1" ID="0">
-        <Input Plugin="MIDI" Name="ble device" UID="-538641617" Line="0">
+        <Input Plugin="MIDI" Name="SINCO SMC-PAD-Master" UID="" Line="0" Profile="M-VAVE SMC-PAD">
           <PluginParameters midichannel="16"/>
         </Input>
         <Output Plugin="DMX USB" UID="None" Line="0">
@@ -10170,8 +10170,8 @@
             <WindowState Visible="True" X="6" Y="26" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4294901888</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10179,14 +10179,14 @@
             <Action>Toggle</Action>
             <Key>W</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37044"/>
+            <Input ID="0" Universe="0" Channel="37056"/>
           </Button>
           <Button Caption="Rueda de mezclas · E" ID="36" Icon="">
             <WindowState Visible="True" X="135" Y="26" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4286578943</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10194,14 +10194,14 @@
             <Action>Toggle</Action>
             <Key>E</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37045"/>
+            <Input ID="0" Universe="0" Channel="37057"/>
           </Button>
           <Button Caption="Mover cabezas · A" ID="37" Icon="">
             <WindowState Visible="True" X="264" Y="26" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <BackgroundColor>4278223103</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10209,14 +10209,14 @@
             <Action>Toggle</Action>
             <Key>A</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37046"/>
+            <Input ID="0" Universe="0" Channel="37058"/>
           </Button>
           <Button Caption="Gobos girando · G" ID="38" Icon="">
             <WindowState Visible="True" X="393" Y="26" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4278255488</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10224,14 +10224,14 @@
             <Action>Toggle</Action>
             <Key>G</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37047"/>
+            <Input ID="0" Universe="0" Channel="37059"/>
           </Button>
           <Button Caption="Prisma · P" ID="39" Icon="">
             <WindowState Visible="True" X="6" Y="78" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294967295</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10239,14 +10239,14 @@
             <Action>Toggle</Action>
             <Key>P</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37048"/>
+            <Input ID="0" Universe="0" Channel="37052"/>
           </Button>
           <Button Caption="Humo automático · J" ID="40" Icon="">
             <WindowState Visible="True" X="135" Y="78" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4288077055</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10254,14 +10254,14 @@
             <Action>Toggle</Action>
             <Key>J</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37049"/>
+            <Input ID="0" Universe="0" Channel="37053"/>
           </Button>
           <Button Caption="Arcoiris junto · '" ID="41" Icon="">
             <WindowState Visible="True" X="264" Y="78" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294937600</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10269,14 +10269,14 @@
             <Action>Toggle</Action>
             <Key>'</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37050"/>
+            <Input ID="0" Universe="0" Channel="37054"/>
           </Button>
           <Button Caption="Arcoiris fases · ¡" ID="42" Icon="">
             <WindowState Visible="True" X="393" Y="78" Width="124" Height="46"/>
             <Appearance>
               <FrameStyle>None</FrameStyle>
-              <ForegroundColor>Default</ForegroundColor>
-              <BackgroundColor>Default</BackgroundColor>
+              <ForegroundColor>4278190080</ForegroundColor>
+              <BackgroundColor>4294958080</BackgroundColor>
               <BackgroundImage>None</BackgroundImage>
               <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
             </Appearance>
@@ -10284,7 +10284,7 @@
             <Action>Toggle</Action>
             <Key>¡</Key>
             <Intensity Adjust="False">100</Intensity>
-            <Input ID="0" Universe="0" Channel="37051"/>
+            <Input ID="0" Universe="0" Channel="37055"/>
           </Button>
         </Frame>
         <SoloFrame Caption="Colores BarrasLed — teclas 1-0" ID="43" Page="1">
