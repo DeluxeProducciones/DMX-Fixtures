@@ -367,13 +367,19 @@ unique, checked by a test.
 
 ## The SMC-PAD
 
-The hardware surface. It is patched into the workspace itself, so the pads work
-the moment the file opens - `<Input Plugin="MIDI" Name="SINCO SMC-PAD-Master"
-Profile="M-VAVE SMC-PAD">` on universe 0, in omni ("1-16") mode. Before
-2026-08-29 no workspace declared that patch and every binding in the file was
-inert until somebody built it by hand in the Inputs/Outputs tab, in the dark, at
-a venue. Omni is not optional: on a fixed MIDI channel QLC+ stops folding the
-channel into the input number and every pad addresses the wrong control.
+The hardware surface. Universe 0 carries its MIDI input patch, on the
+`M-VAVE SMC-PAD` profile, in omni ("1-16") mode. Omni is not optional: on a
+fixed MIDI channel QLC+ stops folding the channel into the input number and
+every pad addresses the wrong control.
+
+**Which port** is the machine's business, not the show's, and regenerating
+leaves it alone. Over Bluetooth QLC+ calls the pad `ble device`; over USB it is
+one of three ports. QLC+ names a MIDI port by its CoreMIDI `Model` property,
+which is *not* the name macOS displays - so a port picked from a display name
+matches nothing, QLC+ falls through to the saved line number, and the whole
+surface goes dead. That happened on 2026-08-29, and it is why the generator now
+preserves whatever port the file already names. If the pads stop answering
+after a transport change, re-pick the input in the Inputs/Outputs tab.
 
 The pads are numbered as the panel prints them - PAD1 bottom-left, PAD13
 top-left - and the layout is the owner's: the hits on the top two rows, the
