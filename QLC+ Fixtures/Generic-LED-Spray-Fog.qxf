@@ -23,8 +23,19 @@
  <Manufacturer>Generic</Manufacturer>
  <Model>LED Spray Fog</Model>
  <Type>Smoke</Type>
+ <!-- Intensity, not Effect, and that is not cosmetic. QLC+ rebuilds its
+      universe from the running faders every cycle but only *resets* the
+      channels in the Intensity group first (`Universe::processFaders` ->
+      `zeroIntensityChannels`, engine/src/universe.cpp); every other group
+      keeps the last value written. With this channel in Effect, a held Flash
+      raised the pump and releasing it removed only the flash's own fader, so
+      the machine went on fogging with nothing writing it: "le doy y no para de
+      echar todo el rato" (owner, live, 2026-08-29). In Intensity the release
+      is instant and needs nobody's help, which is also what the pump is - an
+      output level from 0 to 100%, mixed HTP like any other. QLC+'s own generic
+      smoke definition types its pump the same way. -->
  <Channel Name="Fog">
-  <Group Byte="0">Effect</Group>
+  <Group Byte="0">Intensity</Group>
   <Capability Min="0" Max="0">No fog</Capability>
   <Capability Min="1" Max="255">Fog output, 0-100%</Capability>
  </Channel>
