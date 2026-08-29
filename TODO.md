@@ -13,6 +13,22 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
+- [ ] **Las dos MAC WASH 1915Z, tres cosas que hay que ver en sala
+  (2026-08-29).** Llegaron en lugar de las CromoWash, parcheadas en 23 CH en
+  DMX 345 y 368, en el sitio de las CromoWash del back truss (4 y 7); las
+  CromoWash siguen parcheadas y aparcadas como spares en el plano. El manual
+  oficial de Mac Mah está en `Manual/` y sólo da la tabla de canales: tres
+  cosas no las dice y están puestas por cómo funciona la plataforma:
+  1. **Qué extremo del zoom es abierto.** La definición declara `SmallToBig`,
+     así que el show manda 255 en todo look que las enciende
+     (`zoom_wide_pairs`). Si en sala salen cerradas, es cambiar el preset de
+     esa capacidad a `BigToSmall` en el `.qxf` y regenerar.
+  2. **El estrobo.** Declarado 0-10 sin estrobo, 11-255 de lento a rápido.
+  3. **El canal Function mode.** Declarado 0 = control DMX. Si en 0 la lyre
+     corre un programa propio, ignorará el RGB del show.
+  Y confirmar en el 3D que las dos caben donde estaban las CromoWash (son algo
+  más grandes: 325x188 mm contra 296x184).
+
 - [~] **SMC-PAD LED feedback en QLC+ — funcionando, con pulido pendiente
   (2026-08-29).** Todo el protocolo resuelto y documentado en
   `tools/smc-pad/` (README + decompile). El puente `qlc_led_bridge.swift`

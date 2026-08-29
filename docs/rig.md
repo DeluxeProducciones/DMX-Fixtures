@@ -1,6 +1,6 @@
 # The rig
 
-27 patched fixtures on **one universe**, DMX addresses 1-300 contiguous, zero
+29 patched fixtures on **one universe**, DMX addresses 1-390 contiguous, zero
 overlaps (verified by `qlctool patch`, which is a test). Output is the QLC+
 **DMX USB** plugin with `UID="None"`, so it binds to whatever USB-DMX interface
 is connected.
@@ -11,6 +11,7 @@ A naive scan reporting "369 fixtures" is wrong: 342 of those are fixture-ID
 | Qty | Fixture | Mode | ch | Moves |
 | --- | --- | --- | --- | --- |
 | 4 | Pro-Lights CromoWash100 | Advanced | 12 | yes |
+| 2 | Mac Mah MAC WASH 1915Z | 23 Channel | 23 | yes |
 | 2 | Stairville LED Bar 240/8 RGB | - | 24 | no |
 | 2 | Stairville CLB2.4 PAR | - | 14 | no |
 | 7 | Vortex PC-64 LED S | Default | 5 | no |
@@ -21,10 +22,23 @@ A naive scan reporting "369 fixtures" is wrong: 342 of those are fixture-ID
 | 1 | Stairville AF-150 (fog) | Generic Smoke / Amount | 1 | - |
 | 4 | Generic LED Spray Fog (humo vertical) | 7 Channel | 7 | - |
 
-**Twelve fixtures move**, not six: the CromoWash100 and the MiN Wash are moving
-washes. Selecting movers by capability (a fixture with both pan and tilt)
-returns exactly the twelve the hand-built "Movimiento Circulo" EFX drives, which
-is the check the toolkit uses instead of a hardcoded list.
+**Fourteen fixtures move**, not six: the CromoWash100, the MiN Wash and the MAC
+WASH 1915Z are moving washes. Selecting movers by capability (a fixture with
+both pan and tilt) returns exactly the twelve the hand-built "Movimiento
+Circulo" EFX drove plus the two new washes, which is the check the toolkit uses
+instead of a hardcoded list.
+
+**The two MAC WASH 1915Z came on 2026-08-29**, patched at DMX 345 and 368, in
+place of the two CromoWash100 that hang at back truss 4 and 7 and did not make
+it to that show. The CromoWash stay patched and park with the other spares in
+the plot. The MAC WASH is the first fixture in this rig whose **beam width is a
+DMX channel**: `zoom_wide_pairs` writes it wide in every look that lights it,
+`rule_zoom_narrow` fails any scene that forgets, and which end is wide comes
+from the definition's `SmallToBig` capability preset. Two things in its
+definition are read off the platform rather than out of the manual, which
+documents neither: the strobe's "0-10 no strobe / 11-255 slow to fast" split,
+and that 0 on the Function mode channel is DMX control. Both are one-line fixes
+in the `.qxf` if the room says otherwise.
 
 The rig has **not** been confirmed against the physical hardware. That check is
 an on-site job.
@@ -42,8 +56,9 @@ verbatim; `newshow --plot` builds the show on it.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PAR | **7R** | PAR | **wash** | PAR | PAR | **wash** | PAR | **7R** | PAR |
 
-PARs are Vortex PC-64, 7R are BEAM 230W, washes are CromoWash100. Symmetric:
-beams at 2 and 9, washes at 4 and 7.
+PARs are Vortex PC-64, 7R are BEAM 230W, washes are MAC WASH 1915Z since
+2026-08-29 (CromoWash100 before that). Symmetric: beams at 2 and 9, washes at 4
+and 7.
 
 **Front truss, seven positions, the same way round:**
 
