@@ -365,6 +365,54 @@ every key press on every page too**, visible or not - which is why the page-1
 keys keep working while page 3 is on screen, and why every button's key is
 unique, checked by a test.
 
+## The SMC-PAD
+
+The hardware surface. It is patched into the workspace itself, so the pads work
+the moment the file opens - `<Input Plugin="MIDI" Name="SINCO SMC-PAD-Master"
+Profile="M-VAVE SMC-PAD">` on universe 0, in omni ("1-16") mode. Before
+2026-08-29 no workspace declared that patch and every binding in the file was
+inert until somebody built it by hand in the Inputs/Outputs tab, in the dark, at
+a venue. Omni is not optional: on a fixed MIDI channel QLC+ stops folding the
+channel into the input number and every pad addresses the wrong control.
+
+The pads are numbered as the panel prints them - PAD1 bottom-left, PAD13
+top-left - and the layout is the owner's: the hits on the top two rows, the
+room's states on the bottom two.
+
+| | | | |
+| --- | --- | --- | --- |
+| **13** Flash | **14** Flash lento | **15** Flash color | **16** Color Beam |
+| **9** Humo ya | **10** Humo | **11** Strobo | **12** Strobo suave |
+| **5** AUTO | **6** Fiesta | **7** Locura | **8** Tranquilo |
+| **1** Blanco | **2** Negro | **3** Charla | **4** *(libre)* |
+
+The first column is the punch, the second the gentler version of the same
+thing. Pad 4 is free on purpose, and the panic pair is deliberately **off** the
+pads: `PARAR TODO` is the pause button and `APAGON` the record button, on the
+right edge, where a missed hit cannot reach them. They are control changes, so
+they answer on either bank. The arrows `<` and `>` page the console, and were
+measured not to move the pads' bank while doing it. Knob 1 is the grand master,
+knob 2 the tempo dial, knob 3 the movement dial.
+
+**Page 2 lives on the second bank.** Press `PAD BANK` and the same top two rows
+become the manual layer - Rueda Colores, Rueda Mezcla, Movimientos, Gobos on
+the top row; Prisma, Humo Auto and the two rainbows under them. It was written
+against `SHIFT` until a capture on 2026-08-29 proved SHIFT sends no MIDI at
+all: it selects the functions silkscreened on the pads themselves (SWING,
+LATCH, SYNC), which never leave the device, so those eight buttons had never
+once fired from the hardware.
+
+**The trap: the pad remembers its bank, the show does not.** A pad left on bank
+2 at the end of a night comes back on bank 2, and the top rows will fire the
+manual layer where the page expects the hits. If the pads do the wrong thing,
+press `PAD BANK`. `qlctool check` refuses a console bound to a control the pad
+cannot send, but nothing in the file can see which bank the hardware is on.
+
+The pad's LEDs are lit by `tools/smc-pad/qlc_led_bridge.swift`, over Bluetooth,
+in the same colours as the console buttons - dim while idle, full-bright while
+the function runs. It is a separate daemon because the LEDs are not MIDI at
+all; `docs/smc-pad-led.md` is the whole story.
+
 ## Intensity and strobes
 
 Colour is not the only thing that moves. Four dimmer looks - the running chase
