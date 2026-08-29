@@ -11,7 +11,7 @@
       <BeatGenerator BeatType="Internal" BPM="120"/>
       <NetworkServer Type="Native" AutoStart="False" Name="QLC+_C0A80142" Password=""/>
       <Universe Name="Universe 1" ID="0">
-        <Input Plugin="MIDI" Name="SINCO SMC-PAD-Master" UID="" Line="0" Profile="M-VAVE SMC-PAD">
+        <Input Plugin="MIDI" Name="ble device" UID="" Line="0" Profile="M-VAVE SMC-PAD">
           <PluginParameters midichannel="16"/>
         </Input>
         <Output Plugin="DMX USB" UID="None" Line="0">
