@@ -158,6 +158,22 @@ workspaces.
   multiplicadores (topan en 16 taps). `Dimmer Secuencia` pasa de `M` a `K`.
   Ojo: el `<Key>` suelto que escribia el builder no lo carga qmlui — el tap
   va como `<Input ID="1" Key="M"/>`.
+  El movimiento tiene ya su propio dial (`Vel. Movimiento`, pagina 2) con la
+  MISMA tecla `M` — una tecla llega a todos los widgets que la tengan
+  (VCPage::handleKeyEvent), como en la consola vieja. Re-tempa la rotacion, sus
+  EFX y el crossfade a la vez, porque QLC+ le resta el fundido del chaser a la
+  duracion del EFX. `Movimientos Suaves` queda fuera aposta (60 s por figura).
+- [ ] **Cuando salga la version nueva de QLC+, pasar el show a `--bpm-tap`.**
+  Ya esta implementado y probado (`qlctool newshow --bpm-tap`, test fechado):
+  todas las capas que siguen la musica en tempo **Beats** sobre generador
+  Internal, y el tap de la pagina 1 gobernando el **BPM global** (ControlBPM)
+  en vez de escribir duraciones — asi ninguna capa necesita multiplicador,
+  cada una dice sus beats y un solo reloj las mueve. No se usa todavia porque
+  el **5.2.2 del Mac del show no tiene ControlBPM** («Unknown speed dial tag»
+  en su propio log) y cargaria el fichero sin hacer nada. Al actualizar:
+  comprobar en el log que ya no sale ese aviso, regenerar los tres workspaces
+  con `--bpm-tap` y verificar en sala. El movimiento se queda en el reloj
+  incluso entonces: un chaser en Beats le corrompe el EFX en cualquier version.
   (2) **Strobo/Strobo Suave mataban el show**: sus chasers pisaban
   `Blanco Total`/`Todo Negro`, botones del solo frame de estados — un boton
   Toggle "oye" arrancar su funcion la arranque quien la arranque
