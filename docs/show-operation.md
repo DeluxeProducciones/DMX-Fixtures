@@ -433,10 +433,19 @@ manual layer where the page expects the hits. If the pads do the wrong thing,
 press `PAD BANK`. `qlctool check` refuses a console bound to a control the pad
 cannot send, but nothing in the file can see which bank the hardware is on.
 
-The pad's LEDs are lit by `tools/smc-pad/qlc_led_bridge.swift`, over Bluetooth,
-in the same colours as the console buttons - dim while idle, full-bright while
-the function runs. It is a separate daemon because the LEDs are not MIDI at
-all; `docs/smc-pad-led.md` is the whole story.
+The pad's LEDs are lit by a small daemon, over Bluetooth, in the same colours as
+the console buttons - dim while idle, full-bright while the function runs. It is
+separate from QLC+ because the LEDs are not MIDI at all; `docs/smc-pad-led.md`
+is the whole story. On a machine that runs the show it is installed once with
+`tools/smc-pad/install-bridge.sh` and starts at login, ahead of QLC+, which is
+the order it needs: the daemon publishes a MIDI port and QLC+ binds to it when
+the workspace loads.
+
+Two consequences worth knowing at a venue. If the daemon is restarted, the pads
+stop updating until the workspace is reloaded - the show itself is unaffected,
+because the pad's *input* is a different path. And if the pads sit at a flat
+colour instead of the show's palette, the daemon is not running: the LEDs are
+its doing entirely, and a factory-reset pad is uniformly magenta.
 
 ## Intensity and strobes
 

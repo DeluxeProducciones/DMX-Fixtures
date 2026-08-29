@@ -20,16 +20,21 @@ workspaces.
   "SMC-PAD LED Bridge" y pinta cada pad con su color de paleta
   (`generate/smc_pad_colors.py`): atenuado en reposo, full al activarse el
   botón en QLC+. Los botones de la consola llevan el mismo color. Verificado:
-  QLC+ feedback -> pad enciende. Para usar: arrancar el puente
-  (`cd tools/smc-pad && swift qlc_led_bridge.swift`), cargar `Vibra.qxw`, y en
-  Entradas/Salidas el universo 1 debe tener Input "ble device" (omni "1-16"),
-  y el bridge como Output **y Feedback** (el `<Feedback>` es el truco: el ojo
-  de QLC+ no lo crea solo; ya está en el .qxw). Pendiente:
+  QLC+ feedback -> pad enciende. **Se instala una vez con
+  `tools/smc-pad/install-bridge.sh`** y arranca solo en cada inicio de sesión
+  (agente de launchd, `.app` firmada, se resucita si se cae — verificado
+  2026-08-29 matándolo). Cargar `Vibra.qxw` después del puente, no antes. En
+  Entradas/Salidas el universo 1 debe tener Input "ble device" (omni "1-16") y
+  el bridge como Output **y Feedback** (el `<Feedback>` es el truco: el ojo de
+  QLC+ no lo crea solo; ya está en el .qxw). Pendiente:
   1. Afinar la paleta y el brillo de reposo (`DIM` en el puente) en sala.
   2. **Probar la capa manual (banco 2) con el pad delante.** El remapeo de
      2026-08-29 la movió de SHIFT (que no manda MIDI) a `PAD BANK`, y el
      puente ya pinta las notas 52-67; falta pulsar `PAD BANK` en sala y
      confirmar que los ocho botones de la página 2 disparan y encienden.
+  3. Si se reinicia el puente hay que recargar el workspace: el puerto MIDI
+     virtual se recrea con identidad nueva y QLC+ solo lo resuelve al cargar.
+     Molesto si pasa en mitad de una noche; no hay arreglo desde nuestro lado.
 - [~] **SHIFT reconfigura el pad, y lo descubrimos pulsándolo a ciegas
   (2026-08-29).** El pad dejó de disparar nada a media tarde: PAD1 pasó de
   ch10 nota 36 a ch10 nota 35, PAD13 de ch10 nota 48 a ch1 nota 47, knobs y
