@@ -46,16 +46,14 @@ workspaces.
   | SHIFT + PAD15 + PAD16 | reset de octava |
   | SHIFT + NOTE REPEAT | los 16 pads pasan a editar el note repeat |
 
-  O sea que las pruebas de SHIFT que pedí transportaron el teclado un semitono
-  (SHIFT+PAD13) y lo sacaron de su preset (SHIFT+PAD1). Nada de esto es daño:
-  se deshace desde el propio panel. Pendiente:
-  1. Devolverlo a su preset de usuario y a transpose 0, verificando con
-     `midicap.swift` que PAD1 vuelve a dar ch10 nota 36.
-  2. Anotar en `docs/show-operation.md` qué preset es el del show, para que se
-     pueda recuperar sin adivinar.
-  3. El manual está transcrito en
-     `Manual/M-VAVE SMC-PAD - manual (transcripcion).md` — no volver a pulsar
-     SHIFT a ciegas.
+  O sea que las pruebas de SHIFT que pedí transportaron el teclado y lo sacaron
+  de su preset. Nada de esto fue daño permanente. **Resuelto el 2026-08-29 con
+  un reset de fábrica desde MidiSuite**, y midiendo las cuatro esquinas justo
+  después: abajo-izq ch10 nota 36, abajo-der 39, arriba-izq 48, arriba-der 51,
+  knob 1 CC 30 y pause CC 28 en canal 1. Es exactamente el mapa que genera
+  `smc_pad_device.py`, así que **el mapa del show es el de fábrica y el pad no
+  necesita configurarse**. Queda escrito en `docs/show-operation.md`: si los
+  pads hacen lo que no toca, resetear el pad, no reconfigurarlo.
 - [ ] **Conseguir el PDF real del manual del SMC-PAD.** Lo que hay en `Manual/`
   es una transcripción hecha desde
   <https://manuals.plus/sinco/smc-pad-midi-controller-manual>; ese sitio

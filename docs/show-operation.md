@@ -373,13 +373,26 @@ fixed MIDI channel QLC+ stops folding the channel into the input number and
 every pad addresses the wrong control.
 
 **Which port** is the machine's business, not the show's, and regenerating
-leaves it alone. Over Bluetooth QLC+ calls the pad `ble device`; over USB it is
-one of three ports. QLC+ names a MIDI port by its CoreMIDI `Model` property,
-which is *not* the name macOS displays - so a port picked from a display name
-matches nothing, QLC+ falls through to the saved line number, and the whole
-surface goes dead. That happened on 2026-08-29, and it is why the generator now
-preserves whatever port the file already names. If the pads stop answering
-after a transport change, re-pick the input in the Inputs/Outputs tab.
+leaves it alone. QLC+ names a MIDI port by its CoreMIDI `Model` property, which
+is *not* the name macOS displays - so a port picked from a display name matches
+nothing, QLC+ falls through to the saved line number, and the whole surface
+goes dead. That happened on 2026-08-29, and it is why the generator now
+preserves whatever port the file already names. Over Bluetooth the pad is
+`ble device`, one port, unambiguous. Over USB it is three ports all named
+`SINCO`, which QLC+ cannot tell apart by name - so on USB the saved line number
+is doing the work and a re-pick in the Inputs/Outputs tab is the fix.
+
+**If the pads do the wrong thing, reset the pad.** The show is bound to the
+pad's *factory* map - MIDI channel 10, note 35 + pad number - so a factory reset
+from MidiSuite puts the surface back exactly where the show expects it, with
+nothing to configure afterwards. Verified 2026-08-29 by resetting and
+re-measuring all four corners. That matters because `SHIFT` on this device is
+not a modifier that sends MIDI: it edits settings that persist across a power
+cycle. `SHIFT` + pads 1-8 changes preset, 13-14 transposes, 15-16 shifts the
+octave - and a transposed or re-preset pad addresses controls the show has never
+heard of, which looks exactly like a dead surface. The manual's full table is in
+[`Manual/M-VAVE SMC-PAD - manual (transcripcion).md`](../Manual/M-VAVE%20SMC-PAD%20-%20manual%20(transcripcion).md).
+Never press `SHIFT` on this pad to see what happens.
 
 The pads are numbered as the panel prints them - PAD1 bottom-left, PAD13
 top-left - and the layout is the owner's: the hits on the top two rows, the
