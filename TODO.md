@@ -138,6 +138,19 @@ workspaces.
   flash slow para los par es unos 200" — 0.45 daba 115; subido a 0.785 (CLB
   200, CromoWash 202) y la regla gana suelo: ningun flash pulsado a mano
   escribe estrobo por debajo del 70% de la carrera. Queda verificar en sala.
+  Tambien del 2026-08-29: (1) **tap tempo recuperado** — `M` (la tecla del
+  show viejo) tapea `Vel. Colores`, que baja a la pagina 1 con su rotulo;
+  `Dimmer Secuencia` pasa de `M` a `K`. Ojo: el `<Key>` suelto que escribia
+  el builder no lo carga qmlui — el tap va como `<Input ID="1" Key="M"/>`.
+  (2) **Strobo/Strobo Suave mataban el show**: sus chasers pisaban
+  `Blanco Total`/`Todo Negro`, botones del solo frame de estados — un boton
+  Toggle "oye" arrancar su funcion la arranque quien la arranque
+  (VCButton::slotFunctionRunning) y el solo frame paraba AUTO. Ahora pisan
+  gemelas propias (`Strobo Blanco`/`Strobo Negro`); regla nueva `estado
+  pulsado por otra funcion` + test. (3) **COLOR BEAM (`C`) no esta roto**:
+  anima la rueda de color de los 4 BEAM 230W, no toca las PAR — probado en
+  casa solo con PARs delante era invisible por diseño. Verificar con los
+  beams montados.
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media
