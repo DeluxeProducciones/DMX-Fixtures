@@ -200,10 +200,19 @@ tap makes the wheel, the prism and the dimmer exactly as long as each other,
 which is what "se vuelven todos los programas locos" was (owner, 2026-08-29).
 `qlctool check` refuses a flattened dial (`tap que aplana los programas`).
 
-**The head movement is deliberately not on the dial.** A shape takes fifteen
-seconds and QLC+'s multipliers stop at sixteen taps, so movement cannot be
-said in taps at all - and each shape is an EFX with its own millisecond clock
-underneath, which a re-timed chaser fade corrupts (see below).
+The head movement has a **second dial**, `Vel. Movimiento` on page 2, bound to
+the same `M`: a key press reaches every widget bound to it
+(`VCPage::handleKeyEvent` walks all matches), which is how the hand-built
+console drove three dials from one key. It is separate because its numbers
+are - a shape is sixteen taps where a colour is eight - and because it has to
+re-time three things at once: the rotation, the EFX under it, **and the
+crossfade**. QLC+ subtracts a chaser's fade from its EFX's own duration to get
+the figure it draws (`EFX::loopDuration`), so a fade left at fixed
+milliseconds stops the figure being a proportion of its step. Both dials also
+sit on the SMC-PAD's encoders 2 and 3.
+
+`Movimientos Suaves` is off the dial on purpose: it holds one shape for a
+minute, which is not something anybody taps.
 
 Two traps found on the show Mac's own QLC+ 5.2.2 the same night, both now
 rules:
@@ -221,6 +230,18 @@ rules:
   therefore only for chasers whose steps are Scenes
   (`unidades de tempo cruzadas`), and a Collection may not carry a `<Tempo>`
   at all - it has none, and QLC+ says so (`tempo en una coleccion`).
+
+### When a newer QLC+ arrives
+
+`qlctool newshow --bpm-tap` builds the show the way it *should* be built once
+QLC+ supports `ControlBPM`: every music-following layer in **Beats** tempo
+over an Internal generator, and page 1's tap driving the global BPM instead of
+writing durations. Then no layer needs a multiplier at all - each states its
+own beat count and one clock moves them together. It is a separate build
+because 5.2.2 loads it and silently does nothing (the dial's tag is unknown to
+it, and a tap would re-time neither the BPM nor any function). Movement stays
+on the clock even there: a Beats chaser corrupts an EFX, whatever version is
+reading it.
 
 `qlctool newshow --beats` builds the audio-driven variant: the layers whose
 steps are Scenes, plus the matrix cycles, go on QLC+'s **Beats** tempo with
