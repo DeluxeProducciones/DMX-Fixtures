@@ -13,7 +13,14 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
-- [ ] **Afinar el tilt al que apuntan las lyres en sala (2026-08-29).** Todo
+- [ ] **Afinar el tilt al que apuntan las lyres en sala (2026-08-29).**
+  Segunda pasada: el primer intento mandó las 7R a tilt 88 y salieron a la
+  pared, o sea que en una 7R la sala está **por encima** de 127, no por debajo
+  (el show a mano ya lo decía: su `Escenario` las pone en 189-204). Ahora
+  `BEAM_TILT_AIM = 170` y el abanico va con ellas. Los washes corren al revés
+  en su propia escala: 128 es la pared, ~46 es la sala (el `Escenario` a mano
+  pone las CromoWash en 49 y 43), y `WASH_TILT_AIM = 88`. Falta confirmar los
+  dos en sala. Todo
   el movimiento generado iba centrado en tilt 127 - el centro del recorrido,
   que es lo que escribe QLC+ cuando nadie apunta - y en este rig eso es el
   suelo: "está todo el rato haciendo un circulo pequeño en el suelo". Ahora
