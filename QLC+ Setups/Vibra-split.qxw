@@ -576,12 +576,13 @@
       <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="36">0,255,1,255,2,255,3,0</FixtureVal>
-      <FixtureVal ID="37">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="38">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="39">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="40">1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,255,7,0,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
       <FixtureVal ID="42">5,255,6,255,7,0,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="20">5,255,6,255,7,4</FixtureVal>
       <FixtureVal ID="21">5,255,6,255,7,4</FixtureVal>
       <FixtureVal ID="22">5,255,6,255,7,4</FixtureVal>
@@ -604,6 +605,7 @@
       <FixtureVal ID="14">5,0,6,0,7,0,9,0</FixtureVal>
       <FixtureVal ID="15">6,0,7,0,8,0</FixtureVal>
       <FixtureVal ID="16">6,0,7,0,8,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="18">2,0,3,0,4,0,5,0,6,0</FixtureVal>
       <FixtureVal ID="19">2,0,3,0,4,0,5,0,6,0</FixtureVal>
       <FixtureVal ID="20">6,0</FixtureVal>
@@ -622,10 +624,10 @@
       <FixtureVal ID="34">0,0,1,0,2,0</FixtureVal>
       <FixtureVal ID="35">0,0,1,0,2,0</FixtureVal>
       <FixtureVal ID="36">0,0,1,0,2,0</FixtureVal>
-      <FixtureVal ID="37">1,0,2,0,3,0,4,0</FixtureVal>
-      <FixtureVal ID="38">1,0,2,0,3,0,4,0</FixtureVal>
-      <FixtureVal ID="39">1,0,2,0,3,0,4,0</FixtureVal>
-      <FixtureVal ID="40">1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,0,2,0,3,0,4,0</FixtureVal>
       <FixtureVal ID="41">6,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0</FixtureVal>
       <FixtureVal ID="42">6,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0</FixtureVal>
     </Function>
@@ -660,12 +662,13 @@
       <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="36">0,255,1,255,2,255,3,247</FixtureVal>
-      <FixtureVal ID="37">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="38">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="39">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="40">1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,255,7,248,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
       <FixtureVal ID="42">5,255,6,255,7,248,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="20">5,234,6,255,7,4</FixtureVal>
       <FixtureVal ID="21">5,234,6,255,7,4</FixtureVal>
       <FixtureVal ID="22">5,234,6,255,7,4</FixtureVal>
@@ -702,12 +705,13 @@
       <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="36">0,255,1,255,2,255,3,200</FixtureVal>
-      <FixtureVal ID="37">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="38">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="39">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="40">1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,255,7,203,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
       <FixtureVal ID="42">5,255,6,255,7,203,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="20">5,199,6,255,7,4</FixtureVal>
       <FixtureVal ID="21">5,199,6,255,7,4</FixtureVal>
       <FixtureVal ID="22">5,199,6,255,7,4</FixtureVal>
@@ -776,12 +780,13 @@
       <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="36">0,255,1,255,2,255,3,0</FixtureVal>
-      <FixtureVal ID="37">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="38">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="39">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="40">1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,255,7,0,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
       <FixtureVal ID="42">5,255,6,255,7,0,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="20">5,255,6,255,7,4</FixtureVal>
       <FixtureVal ID="21">5,255,6,255,7,4</FixtureVal>
       <FixtureVal ID="22">5,255,6,255,7,4</FixtureVal>
@@ -4694,18 +4699,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>45</Width>
-      <Height>30</Height>
+      <Width>13</Width>
+      <Height>8</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -4744,18 +4749,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>45</Width>
-      <Height>30</Height>
+      <Width>13</Width>
+      <Height>8</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5538,18 +5543,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5588,18 +5593,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Eight</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5638,18 +5643,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6332,18 +6337,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6382,18 +6387,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Eight</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6432,18 +6437,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6482,18 +6487,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Diamond</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>90</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6532,18 +6537,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Leaf</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>45</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6582,18 +6587,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>45</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6725,17 +6730,17 @@
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
       <Width>0</Width>
-      <Height>38</Height>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6866,18 +6871,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>55</Width>
-      <Height>38</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7573,18 +7578,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>70</Width>
-      <Height>40</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7623,18 +7628,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Eight</Algorithm>
-      <Width>70</Width>
-      <Height>40</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7673,18 +7678,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>70</Width>
-      <Height>40</Height>
+      <Width>20</Width>
+      <Height>13</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>82</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>170</Offset>
+        <Offset>220</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7700,17 +7705,17 @@
     </Function>
     <Function ID="399" Type="Scene" Name="Beams Abanico" Path="Movimiento">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">0,82,1,170,2,0,3,0</FixtureVal>
-      <FixtureVal ID="21">0,112,1,170,2,0,3,0</FixtureVal>
-      <FixtureVal ID="22">0,142,1,170,2,0,3,0</FixtureVal>
-      <FixtureVal ID="23">0,172,1,170,2,0,3,0</FixtureVal>
+      <FixtureVal ID="20">0,62,1,220,2,0,3,0</FixtureVal>
+      <FixtureVal ID="21">0,75,1,220,2,0,3,0</FixtureVal>
+      <FixtureVal ID="22">0,89,1,220,2,0,3,0</FixtureVal>
+      <FixtureVal ID="23">0,102,1,220,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="400" Type="Scene" Name="Beams Cruce" Path="Movimiento">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-      <FixtureVal ID="20">0,172,1,170,2,0,3,0</FixtureVal>
-      <FixtureVal ID="21">0,142,1,170,2,0,3,0</FixtureVal>
-      <FixtureVal ID="22">0,112,1,170,2,0,3,0</FixtureVal>
-      <FixtureVal ID="23">0,82,1,170,2,0,3,0</FixtureVal>
+      <FixtureVal ID="20">0,102,1,220,2,0,3,0</FixtureVal>
+      <FixtureVal ID="21">0,89,1,220,2,0,3,0</FixtureVal>
+      <FixtureVal ID="22">0,75,1,220,2,0,3,0</FixtureVal>
+      <FixtureVal ID="23">0,62,1,220,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="401" Type="Chaser" Name="Movimientos Suaves" Path="Movimiento Suave">
       <Speed FadeIn="5000" FadeOut="5000" Duration="61000"/>
@@ -8862,12 +8867,13 @@
       <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
       <FixtureVal ID="36">0,255,1,255,2,255,3,0</FixtureVal>
-      <FixtureVal ID="37">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="38">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="39">1,255,2,255,3,255,4,255,5,0</FixtureVal>
-      <FixtureVal ID="40">1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,255,7,0,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
       <FixtureVal ID="42">5,255,6,255,7,0,8,255,9,255,10,255,12,255,13,255,14,255,16,255,17,255,18,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="20">5,255,6,255,7,4</FixtureVal>
       <FixtureVal ID="21">5,255,6,255,7,4</FixtureVal>
       <FixtureVal ID="22">5,255,6,255,7,4</FixtureVal>
@@ -8890,6 +8896,7 @@
       <FixtureVal ID="14">5,0,6,0,7,0,9,0</FixtureVal>
       <FixtureVal ID="15">6,0,7,0,8,0</FixtureVal>
       <FixtureVal ID="16">6,0,7,0,8,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="18">2,0,3,0,4,0,5,0,6,0</FixtureVal>
       <FixtureVal ID="19">2,0,3,0,4,0,5,0,6,0</FixtureVal>
       <FixtureVal ID="20">6,0</FixtureVal>
@@ -8908,10 +8915,10 @@
       <FixtureVal ID="34">0,0,1,0,2,0</FixtureVal>
       <FixtureVal ID="35">0,0,1,0,2,0</FixtureVal>
       <FixtureVal ID="36">0,0,1,0,2,0</FixtureVal>
-      <FixtureVal ID="37">1,0,2,0,3,0,4,0</FixtureVal>
-      <FixtureVal ID="38">1,0,2,0,3,0,4,0</FixtureVal>
-      <FixtureVal ID="39">1,0,2,0,3,0,4,0</FixtureVal>
-      <FixtureVal ID="40">1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,0,2,0,3,0,4,0</FixtureVal>
       <FixtureVal ID="41">6,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0</FixtureVal>
       <FixtureVal ID="42">6,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0</FixtureVal>
     </Function>
@@ -10659,6 +10666,7 @@
       <FixtureVal ID="14">9,110,10,0</FixtureVal>
       <FixtureVal ID="15">5,255</FixtureVal>
       <FixtureVal ID="16">5,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="18">2,110,7,0</FixtureVal>
       <FixtureVal ID="19">2,110,7,0</FixtureVal>
       <FixtureVal ID="20">5,255,6,255</FixtureVal>
@@ -10669,10 +10677,10 @@
       <FixtureVal ID="32">3,0</FixtureVal>
       <FixtureVal ID="33">0,110</FixtureVal>
       <FixtureVal ID="36">3,0</FixtureVal>
-      <FixtureVal ID="37">1,110,5,0</FixtureVal>
-      <FixtureVal ID="38">1,110,5,0</FixtureVal>
-      <FixtureVal ID="39">1,110,5,0</FixtureVal>
-      <FixtureVal ID="40">1,110,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,110,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,110,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,110,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,110,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,110,7,0</FixtureVal>
       <FixtureVal ID="42">5,255,6,110,7,0</FixtureVal>
     </Function>
@@ -10691,6 +10699,7 @@
       <FixtureVal ID="14">9,255,10,0</FixtureVal>
       <FixtureVal ID="15">5,255</FixtureVal>
       <FixtureVal ID="16">5,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="18">2,255,7,0</FixtureVal>
       <FixtureVal ID="19">2,255,7,0</FixtureVal>
       <FixtureVal ID="20">5,255,6,255</FixtureVal>
@@ -10701,10 +10710,10 @@
       <FixtureVal ID="32">3,0</FixtureVal>
       <FixtureVal ID="33">0,255</FixtureVal>
       <FixtureVal ID="36">3,0</FixtureVal>
-      <FixtureVal ID="37">1,255,5,0</FixtureVal>
-      <FixtureVal ID="38">1,255,5,0</FixtureVal>
-      <FixtureVal ID="39">1,255,5,0</FixtureVal>
-      <FixtureVal ID="40">1,255,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,255,7,0</FixtureVal>
       <FixtureVal ID="42">5,255,6,255,7,0</FixtureVal>
     </Function>
@@ -10735,6 +10744,7 @@
       <FixtureVal ID="14">10,0</FixtureVal>
       <FixtureVal ID="15">5,255</FixtureVal>
       <FixtureVal ID="16">5,255</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
       <FixtureVal ID="18">7,0</FixtureVal>
       <FixtureVal ID="19">7,0</FixtureVal>
       <FixtureVal ID="20">5,255,6,255</FixtureVal>
@@ -10743,6 +10753,10 @@
       <FixtureVal ID="23">5,255,6,255</FixtureVal>
       <FixtureVal ID="32">3,0</FixtureVal>
       <FixtureVal ID="36">3,0</FixtureVal>
+      <FixtureVal ID="37">0,0</FixtureVal>
+      <FixtureVal ID="38">0,0</FixtureVal>
+      <FixtureVal ID="39">0,0</FixtureVal>
+      <FixtureVal ID="40">0,0</FixtureVal>
       <FixtureVal ID="41">5,255,7,0</FixtureVal>
       <FixtureVal ID="42">5,255,7,0</FixtureVal>
     </Function>
@@ -10831,12 +10845,13 @@
       <FixtureVal ID="34">0,255,1,214,2,170</FixtureVal>
       <FixtureVal ID="35">0,255,1,214,2,170</FixtureVal>
       <FixtureVal ID="36">0,255,1,214,2,170,3,0</FixtureVal>
-      <FixtureVal ID="37">1,255,2,255,3,214,4,170,5,0</FixtureVal>
-      <FixtureVal ID="38">1,255,2,255,3,214,4,170,5,0</FixtureVal>
-      <FixtureVal ID="39">1,255,2,255,3,214,4,170,5,0</FixtureVal>
-      <FixtureVal ID="40">1,255,2,255,3,214,4,170,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,214,4,170,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,214,4,170,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,214,4,170,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,214,4,170,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,255,7,0,8,255,9,214,10,170,12,255,13,214,14,170,16,255,17,214,18,170</FixtureVal>
       <FixtureVal ID="42">5,255,6,255,7,0,8,255,9,214,10,170,12,255,13,214,14,170,16,255,17,214,18,170</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
     </Function>
     <Function ID="560" Type="Collection" Name="Momento Charla" Path="Momentos">
       <Step Number="0">415</Step>
