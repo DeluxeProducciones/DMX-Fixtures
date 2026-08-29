@@ -124,6 +124,11 @@ workspaces.
   los subsets de prisma `1/2/3/4/1y3/2y4`, los `MultiColor BEAM` de la
   página 3, el fader `Vel. Paneles`, y `HUMO VERTICAL · N` (página 2,
   paneles a los ciclos del humo vertical, calcado del show viejo).
+  2026-08-29: el dueño, viendo las PAR: "el flash es entre 246-248, como lo
+  tenemos ahora es muy lento" — el 0.85 daba 217 en las CLB2.4. Subido a 0.97
+  (CLB 247, CromoWash 248), regla nueva `flash lento` (el flash mas rapido de
+  la consola tiene que vivir arriba de la carrera slow-to-fast), test fechado,
+  los tres workspaces regenerados y validados. Queda verificar en sala.
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media
