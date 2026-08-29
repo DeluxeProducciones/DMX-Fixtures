@@ -4557,18 +4557,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>45</Width>
-      <Height>24</Height>
+      <Width>10</Width>
+      <Height>6</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -4649,18 +4649,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>45</Width>
-      <Height>24</Height>
+      <Width>10</Width>
+      <Height>6</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -4849,18 +4849,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>45</Width>
-      <Height>24</Height>
+      <Width>10</Width>
+      <Height>6</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -4941,18 +4941,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5033,18 +5033,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Eight</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5125,18 +5125,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5217,18 +5217,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Diamond</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5309,18 +5309,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Square</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5401,18 +5401,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Leaf</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5493,18 +5493,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Lissajous</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5735,18 +5735,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5827,18 +5827,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Eight</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5919,18 +5919,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6011,18 +6011,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Diamond</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6103,18 +6103,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Square</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6195,18 +6195,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Leaf</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6287,18 +6287,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Lissajous</Algorithm>
-      <Width>70</Width>
-      <Height>30</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6680,17 +6680,17 @@
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
       <Width>0</Width>
-      <Height>30</Height>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6821,18 +6821,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>45</Width>
-      <Height>24</Height>
+      <Width>10</Width>
+      <Height>6</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6963,18 +6963,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>80</Width>
-      <Height>32</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7055,18 +7055,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Eight</Algorithm>
-      <Width>80</Width>
-      <Height>32</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7147,18 +7147,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>80</Width>
-      <Height>32</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7239,18 +7239,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Diamond</Algorithm>
-      <Width>80</Width>
-      <Height>32</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7331,18 +7331,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Square</Algorithm>
-      <Width>80</Width>
-      <Height>32</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7423,18 +7423,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Leaf</Algorithm>
-      <Width>80</Width>
-      <Height>32</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7515,18 +7515,18 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Lissajous</Algorithm>
-      <Width>80</Width>
-      <Height>32</Height>
+      <Width>16</Width>
+      <Height>9</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
       <Axis Name="X">
-        <Offset>127</Offset>
+        <Offset>92</Offset>
         <Frequency>2</Frequency>
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>88</Offset>
+        <Offset>221</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -10677,10 +10677,10 @@
       <FixtureVal ID="32">3,0</FixtureVal>
       <FixtureVal ID="33">0,110</FixtureVal>
       <FixtureVal ID="36">3,0</FixtureVal>
-      <FixtureVal ID="37">0,0,1,110,5,0</FixtureVal>
-      <FixtureVal ID="38">0,0,1,110,5,0</FixtureVal>
-      <FixtureVal ID="39">0,0,1,110,5,0</FixtureVal>
-      <FixtureVal ID="40">0,0,1,110,5,0</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,5,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,5,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,5,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,5,0</FixtureVal>
       <FixtureVal ID="41">5,255,6,110,7,0</FixtureVal>
       <FixtureVal ID="42">5,255,6,110,7,0</FixtureVal>
     </Function>
