@@ -29,6 +29,20 @@ workspaces.
   emits GATT colour writes; QLC+ cannot do GATT itself). Pad stays USB-MIDI in
   to QLC+ and BLE out from the daemon at once.
   Refs: github.com/worawit/blutter, github.com/cbix/mvave-chocolate-sysex.
+- [ ] **The USB-DMX dongle randomly flashes the rig (2026-08-29).** Owner: "de
+  vez en cuando pega un flash como si mandara 255 a todos los canales". Cause:
+  the FT232R clone has no frame buffer — a USB hiccup corrupts the DMX frame
+  on the wire and fixtures latch garbage as high values. Not fixable in any
+  workspace; full writeup and the researched replacement in
+  `docs/usb-dmx-interface.md`. For tonight's gig: dongle on a direct USB port
+  (no hub), nothing heavy beside QLC+, 120 Ω terminator on the last fixture
+  (still unconfirmed on this rig), real 110 Ω DMX cable on the long runs.
+  Next steps: (1) order a MAX485 module (~2 €) and mount the owner's spare
+  Raspberry Pi 3/4 as an OLA Art-Net node to prove the diagnosis; (2) build
+  the permanent replacement — Pico + MAX485 + our firmware emulating the
+  Enttec DMX USB Pro API (Pico-DMX + dmxusb, glue ~100 lines, QLC+ detects it
+  as a Pro); fallback firmware rp2040-dmxsun (Art-Net over USB, no code).
+  Shopping list and wiring table in the doc.
 - [ ] **Run `qlctool check` before every show file leaves this repo.** It reads
   what the room will do rather than whether QLC+ can load the file, and it found
   four bugs on its first run. `cd tools/qlctool && .venv/bin/qlctool check

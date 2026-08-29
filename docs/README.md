@@ -15,6 +15,7 @@ building `tools/qlctool`. Written down so none of it has to be re-derived.
 | [qlc5-verification.md](qlc5-verification.md) | Which QLC+ 5 features the installed binary really supports, verified against the source clone |
 | [old-vs-new-audit-2026-08-28.md](old-vs-new-audit-2026-08-28.md) | The hand-built show audited against the generated one: what the old one still did better |
 | [smc-pad-led.md](smc-pad-led.md) | Lighting the SMC-PAD's pads from the show: why MIDI cannot, the BLE GATT protocol the app uses, and what a bridge would do |
+| [usb-dmx-interface.md](usb-dmx-interface.md) | Why the FT232R dongle randomly flashes the rig, the gig-day mitigations, and the researched DIY replacement (Pico or Raspberry Pi) |
 
 This repository is **public**. Machine access - addresses, accounts,
 credentials, SSH - is deliberately not written here; it lives in the owner's
