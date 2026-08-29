@@ -13,6 +13,20 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
+- [ ] **Afinar el tilt al que apuntan las lyres en sala (2026-08-29).** Todo
+  el movimiento generado iba centrado en tilt 127 - el centro del recorrido,
+  que es lo que escribe QLC+ cuando nadie apunta - y en este rig eso es el
+  suelo: "está todo el rato haciendo un circulo pequeño en el suelo". Ahora
+  hay un solo número, `generate/movement_aim.py:BEAM_TILT_AIM = 88`, y todas
+  las figuras de beam se dibujan alrededor de él (recorrido 50..126 en
+  `Beam Circulo`). Los tres puntos conocidos del eje: **0 = techo**
+  (`docs/rig.md`, una CromoWash clavada en 0), **127 = suelo** (el dueño
+  mirando el ciclo), **~196 = escenario** (el `Escenario` del show a mano).
+  O sea que **subir es bajar el número**. Falta mirarlo en sala y decir si 88
+  cae donde se quiere: si sale demasiado alto subir el número, si sigue bajo
+  bajarlo, y regenerar. Los washes siguen en 127 a propósito - nadie se ha
+  quejado de ellos y un cono ancho aguanta el centro del recorrido.
+
 - [ ] **Las dos MAC WASH 1915Z, tres cosas que hay que ver en sala
   (2026-08-29).** Llegaron en lugar de las CromoWash, parcheadas en 23 CH en
   DMX 345 y 368, en el sitio de las CromoWash del back truss (4 y 7); las

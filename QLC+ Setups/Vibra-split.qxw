@@ -4694,8 +4694,8 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Circle</Algorithm>
-      <Width>26</Width>
-      <Height>18</Height>
+      <Width>45</Width>
+      <Height>30</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
@@ -4705,7 +4705,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -4744,8 +4744,8 @@
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <Algorithm>Line</Algorithm>
-      <Width>26</Width>
-      <Height>18</Height>
+      <Width>45</Width>
+      <Height>30</Height>
       <Rotation>0</Rotation>
       <StartOffset>0</StartOffset>
       <IsRelative>0</IsRelative>
@@ -4755,7 +4755,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5549,7 +5549,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5599,7 +5599,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -5649,7 +5649,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6343,7 +6343,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6393,7 +6393,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6443,7 +6443,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6493,7 +6493,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6543,7 +6543,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6593,7 +6593,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6735,7 +6735,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -6877,7 +6877,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7584,7 +7584,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7634,7 +7634,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
@@ -7684,7 +7684,7 @@
         <Phase>90</Phase>
       </Axis>
       <Axis Name="Y">
-        <Offset>127</Offset>
+        <Offset>88</Offset>
         <Frequency>3</Frequency>
         <Phase>0</Phase>
       </Axis>
