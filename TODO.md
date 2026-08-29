@@ -35,6 +35,18 @@ workspaces.
   "../../QLC+ Setups/Vibra-split.qxw"`. New rule when something misbehaves: find
   the cause, add a rule, add a dated regression test, run it over all three
   workspaces — written down in the repo's `CLAUDE.md`.
+- [~] **Momento Locura ya no abre como pared blanca plana (2026-08-29 —
+  pendiente solo de verlo en el rig).** "cuando ponemos el modo locura empieza
+  todo blanco y normal" (dueño). Causa: `Intensidad Total` (255 fijo) junto a
+  `Dimmer Chase` en la misma Collection — HTP, 255 gana siempre y el chase era
+  cosmético; la misma trampa que Nivel Peak ya evitaba con `Intensidad Peak`.
+  Fix en el generador: Locura lleva la base sin dimmers; `Intensidad Peak`
+  abre ahora el shutter de *todos* los fixtures (el shutter no es el dimmer,
+  no pisa al chase) y los paneles/grupos con dueño propio de intensidad salen
+  del chase. Regla nueva `efx de dimmer tapado` + test fechado
+  (`test_a_dimmer_effect_flattened_by_a_full_scene_beside_it`); destapó
+  también a los paneles WX clavados a 255 bajo AUTO. Tres workspaces
+  regenerados, `--validate` y check limpios, 298 pass.
 - [~] **Recuperado lo que el show viejo hacía y el generado perdió (auditoría
   2026-08-28, implementado 2026-08-29 — pendiente solo de verlo en el rig).**
   Informe completo en `docs/old-vs-new-audit-2026-08-28.md`; regresiones en
