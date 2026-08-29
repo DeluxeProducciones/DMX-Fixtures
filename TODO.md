@@ -13,31 +13,22 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
-- [!] **SMC-PAD pad RGB: proprietary SysEx, not MIDI notes (2026-08-29).**
-  Established by test, not guess:
-  1. A full NoteOn sweep (all 128 notes x 16 channels) plus CC, to all three
-     CoreMIDI ports, owner watching: **no pad ever lit**. Plain MIDI feedback
-     is out - same as the QLC+ forum found for the sibling SMC-Mixer.
-  2. The device **does** speak the M-VAVE SysEx family: the Chocolate pedal's
-     discovery message `F0 00 32 45 00 00 00 40 7F F7`, sent to the
-     `SMC-PAD-Private` port, drew a real 41-byte reply
-     (`F0 00 32 45 58 01 00 40 29 4D 06 35 ...`). Manufacturer id `00 32`.
-  3. The official app is `MidiSuite.apk` (Flutter). Its `libapp.so` exports
-     `sendColorData`, `_bytesToSysEx`, a ColorPicker, `manufacturer_data` -
-     so per-pad colour is set by a proprietary SysEx the app builds, over the
-     Private port. Not published anywhere; kartun83/M-Vave has "SMC-Pad:
-     nothing for now".
-  Unblock path, in order: (a) capture the exact colour SysEx by running
-  MidiSuite against the pad with `midicap.swift` listening on the Private
-  port (needs the app on a phone/tablet and a way to see its MIDI - the
-  Private port is the target); OR (b) reverse `sendColorData` out of the Dart
-  AOT snapshot with Blutter/reFlutter. Then a small bridge daemon subscribes
-  to QLC+'s note/CC feedback and re-emits the colour SysEx - QLC+ cannot send
-  per-widget SysEx itself. Real project, not a config tweak. Until then the
-  console's state lives on the screen; the pad is a blind trigger surface,
-  which is fine for fixed-position hits and states.
-  Refs: github.com/cbix/mvave-chocolate-sysex,
-  github.com/aroum/fm1-custom-fw, github.com/kartun83/M-Vave.
+- [!] **SMC-PAD pad RGB: proprietary BLE GATT, mechanism reverse-engineered
+  (2026-08-29).** Full writeup in `docs/smc-pad-led.md`. In short: plain MIDI
+  (full note sweep + CC, all three ports, owner watching) lights nothing.
+  Decompiling `MidiSuite.apk` with Blutter (Dart 3.9.2) shows colour is a
+  **Bluetooth LE GATT** write, not MIDI: `BleManager.sendColorData` ->
+  `writeData(list, cmd:5)` -> `makeWritePacket` frames `[0xB2, 0x44] + payload`
+  and writes it over `flutter_blue_plus`. GATT service `0xAE40`, characteristics
+  `0xAE41`/`0xAE42`. The Mac can be the BLE central directly (CoreBluetooth,
+  `blescan.swift` in scratch confirmed BLE works and is authorized) - no phone
+  or official app needed. Blocked on **one physical step**: put the pad in
+  Bluetooth mode (BT button) so it advertises; on USB alone it does not. Then:
+  connect, confirm the `B2 44 05 ...` colour packet byte-for-byte against the
+  lit pad, and write the bridge daemon (subscribes to QLC+ note/CC feedback ->
+  emits GATT colour writes; QLC+ cannot do GATT itself). Pad stays USB-MIDI in
+  to QLC+ and BLE out from the daemon at once.
+  Refs: github.com/worawit/blutter, github.com/cbix/mvave-chocolate-sysex.
 - [ ] **Run `qlctool check` before every show file leaves this repo.** It reads
   what the room will do rather than whether QLC+ can load the file, and it found
   four bugs on its first run. `cd tools/qlctool && .venv/bin/qlctool check
