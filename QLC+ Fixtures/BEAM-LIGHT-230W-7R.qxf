@@ -21,7 +21,19 @@
   <Capability Min="51" Max="240" Preset="StrobeFreqRange" Res1="1" Res2="13">Strobe slow to fast</Capability>
   <Capability Min="241" Max="255" Preset="ShutterOpen">Open</Capability>
  </Channel>
- <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <!-- Not a fader. The 230W 7R dims with a mechanical blade that crosses the
+      aperture from one side, so a value between the ends leaves part of the
+      lens covered and the beam comes out as a crescent: "las 7R no se abren
+      del todo, están como una media luna ... el canal 7 de cada 7R está a la
+      mitad en vez de abierto del todo" (owner, live, 2026-08-29, reading the
+      DMX). The ranges are what say so - a channel the definition describes in
+      steps is not one a generator may set to a fraction. -->
+ <Channel Name="Dimmer" Preset="IntensityDimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="0">Blade closed</Capability>
+  <Capability Min="1" Max="254">Blade partly across the lens - crescent beam</Capability>
+  <Capability Min="255" Max="255">Blade open</Capability>
+ </Channel>
  <Channel Name="Color Wheel">
   <Group Byte="0">Colour</Group>
   <Capability Min="0" Max="8" Preset="ColorMacro" Res1="#ffffff">White</Capability>
