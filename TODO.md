@@ -30,6 +30,35 @@ workspaces.
      2026-08-29 la movió de SHIFT (que no manda MIDI) a `PAD BANK`, y el
      puente ya pinta las notas 52-67; falta pulsar `PAD BANK` en sala y
      confirmar que los ocho botones de la página 2 disparan y encienden.
+- [!] **El puente de LEDs parece estar corrompiendo la configuración del pad
+  (2026-08-29). NO ARRANCARLO hasta entenderlo.** Síntoma: a media tarde el pad
+  dejó de disparar nada. Capturado con `midicap.swift`, sin que el dueño tocara
+  la app en todo el día:
+
+  | control | antes | después |
+  | --- | --- | --- |
+  | PAD1 (abajo-izq) | ch10 nota 36 | ch10 nota **35** |
+  | PAD13 (arriba-izq) | ch10 nota 48 | **ch1** nota **47** |
+  | knob RATE | ch1 CC 30 | igual |
+  | pause | ch1 CC 28 | igual |
+
+  Las notas de los pads han bajado 1 y al menos un pad ha cambiado de canal
+  MIDI; knobs y botones intactos. Como QLC+ en omni mete el canal en los bits
+  12+ del número, un pad en canal 1 deja de existir para todos los bindings del
+  show. Lo único que escribe en la flash del aparato es `qlc_led_bridge.swift`
+  (escribe color por dirección fija `0x418 + (nota-36)*26`, más el keep-alive de
+  la sesión). No está probado el mecanismo — la dirección de color no toca el
+  byte de nota en el volcado que tenemos (`reference/flash.bin`: record de 26
+  bytes `09 <nota> 00 7F R G B FF`, color en +4) — así que la sospecha es que
+  la dirección base deja de ser válida cuando el pad cambia de perfil o de
+  banco, y las escrituras caen sobre campos de configuración. Pasos:
+  1. Volcar la config actual del pad y diferenciarla contra
+     `reference/flash.bin` para ver qué bytes se han movido. Solo lectura.
+  2. Restaurar la config con MidiSuite (no está instalada en este Mac) o
+     escribiendo de vuelta el volcado bueno.
+  3. Antes de volver a arrancar el puente: verificar la dirección de color
+     contra el perfil/banco activos en vez de darla por fija, y no escribir
+     nada si no cuadra.
 - [x] **El mapa del pad estaba escrito tres veces y las tres discrepaban
   (2026-08-29).** El perfil `QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` declaraba
   las notas de fábrica 4-19 mientras el workspace estaba atado a 36-51, ocho
