@@ -7018,18 +7018,17 @@
       </Axis>
     </Function>
     <Function ID="391" Type="Chaser" Name="Rapidos Washes" Path="Movimiento Rapido">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="0" FadeOut="0" Duration="16000"/>
+      <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="16000" FadeOut="0">384</Step>
-      <Step Number="1" FadeIn="0" Hold="16000" FadeOut="0">385</Step>
-      <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0">386</Step>
-      <Step Number="3" FadeIn="0" Hold="16000" FadeOut="0">387</Step>
-      <Step Number="4" FadeIn="0" Hold="16000" FadeOut="0">388</Step>
-      <Step Number="5" FadeIn="0" Hold="16000" FadeOut="0">389</Step>
-      <Step Number="6" FadeIn="0" Hold="16000" FadeOut="0">390</Step>
+      <Step Number="0" FadeIn="0" Hold="6000" FadeOut="0">384</Step>
+      <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0">385</Step>
+      <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">386</Step>
+      <Step Number="3" FadeIn="0" Hold="6000" FadeOut="0">387</Step>
+      <Step Number="4" FadeIn="0" Hold="6000" FadeOut="0">388</Step>
+      <Step Number="5" FadeIn="0" Hold="6000" FadeOut="0">389</Step>
+      <Step Number="6" FadeIn="0" Hold="6000" FadeOut="0">390</Step>
     </Function>
     <Function ID="392" Type="EFX" Name="Beam Rapido Circulo" Path="Movimiento Rapido">
       <Fixture>
@@ -7182,14 +7181,13 @@
       </Axis>
     </Function>
     <Function ID="395" Type="Chaser" Name="Rapidos Beams" Path="Movimiento Rapido">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="0" FadeOut="0" Duration="16000"/>
+      <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="16000" FadeOut="0">392</Step>
-      <Step Number="1" FadeIn="0" Hold="16000" FadeOut="0">393</Step>
-      <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0">394</Step>
+      <Step Number="0" FadeIn="0" Hold="6000" FadeOut="0">392</Step>
+      <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0">393</Step>
+      <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">394</Step>
     </Function>
     <Function ID="396" Type="Scene" Name="Beams Abanico" Path="Movimiento">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -7206,57 +7204,54 @@
       <FixtureVal ID="23">0,82,1,105,2,0,3,0</FixtureVal>
     </Function>
     <Function ID="398" Type="Chaser" Name="Movimientos Suaves" Path="Movimiento Suave">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="10000" FadeOut="10000" Duration="74000"/>
+      <Speed FadeIn="5000" FadeOut="5000" Duration="61000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="10000" Hold="64000" FadeOut="10000">354</Step>
-      <Step Number="1" FadeIn="10000" Hold="64000" FadeOut="10000">355</Step>
-      <Step Number="2" FadeIn="10000" Hold="64000" FadeOut="10000">356</Step>
+      <Step Number="0" FadeIn="5000" Hold="56000" FadeOut="5000">354</Step>
+      <Step Number="1" FadeIn="5000" Hold="56000" FadeOut="5000">355</Step>
+      <Step Number="2" FadeIn="5000" Hold="56000" FadeOut="5000">356</Step>
     </Function>
     <Function ID="399" Type="Chaser" Name="Movimientos Washes" Path="Movimiento">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="10000" FadeOut="10000" Duration="42000"/>
+      <Speed FadeIn="5000" FadeOut="5000" Duration="15000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="10000" Hold="32000" FadeOut="10000">357</Step>
-      <Step Number="1" FadeIn="10000" Hold="32000" FadeOut="10000">358</Step>
-      <Step Number="2" FadeIn="10000" Hold="32000" FadeOut="10000">359</Step>
-      <Step Number="3" FadeIn="10000" Hold="32000" FadeOut="10000">360</Step>
-      <Step Number="4" FadeIn="10000" Hold="32000" FadeOut="10000">361</Step>
-      <Step Number="5" FadeIn="10000" Hold="32000" FadeOut="10000">362</Step>
-      <Step Number="6" FadeIn="10000" Hold="32000" FadeOut="10000">363</Step>
-      <Step Number="7" FadeIn="10000" Hold="32000" FadeOut="10000">367</Step>
-      <Step Number="8" FadeIn="10000" Hold="32000" FadeOut="10000">368</Step>
-      <Step Number="9" FadeIn="10000" Hold="32000" FadeOut="10000">369</Step>
-      <Step Number="10" FadeIn="10000" Hold="32000" FadeOut="10000">370</Step>
-      <Step Number="11" FadeIn="10000" Hold="32000" FadeOut="10000">371</Step>
-      <Step Number="12" FadeIn="10000" Hold="32000" FadeOut="10000">372</Step>
-      <Step Number="13" FadeIn="10000" Hold="32000" FadeOut="10000">373</Step>
-      <Step Number="14" FadeIn="10000" Hold="32000" FadeOut="10000">380</Step>
-      <Step Number="15" FadeIn="10000" Hold="32000" FadeOut="10000">382</Step>
+      <Step Number="0" FadeIn="5000" Hold="10000" FadeOut="5000">357</Step>
+      <Step Number="1" FadeIn="5000" Hold="10000" FadeOut="5000">358</Step>
+      <Step Number="2" FadeIn="5000" Hold="10000" FadeOut="5000">359</Step>
+      <Step Number="3" FadeIn="5000" Hold="10000" FadeOut="5000">360</Step>
+      <Step Number="4" FadeIn="5000" Hold="10000" FadeOut="5000">361</Step>
+      <Step Number="5" FadeIn="5000" Hold="10000" FadeOut="5000">362</Step>
+      <Step Number="6" FadeIn="5000" Hold="10000" FadeOut="5000">363</Step>
+      <Step Number="7" FadeIn="5000" Hold="10000" FadeOut="5000">367</Step>
+      <Step Number="8" FadeIn="5000" Hold="10000" FadeOut="5000">368</Step>
+      <Step Number="9" FadeIn="5000" Hold="10000" FadeOut="5000">369</Step>
+      <Step Number="10" FadeIn="5000" Hold="10000" FadeOut="5000">370</Step>
+      <Step Number="11" FadeIn="5000" Hold="10000" FadeOut="5000">371</Step>
+      <Step Number="12" FadeIn="5000" Hold="10000" FadeOut="5000">372</Step>
+      <Step Number="13" FadeIn="5000" Hold="10000" FadeOut="5000">373</Step>
+      <Step Number="14" FadeIn="5000" Hold="10000" FadeOut="5000">380</Step>
+      <Step Number="15" FadeIn="5000" Hold="10000" FadeOut="5000">382</Step>
     </Function>
     <Function ID="400" Type="Chaser" Name="Movimientos Beams" Path="Movimiento">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="10000" FadeOut="10000" Duration="42000"/>
+      <Speed FadeIn="5000" FadeOut="5000" Duration="15000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="10000" Hold="32000" FadeOut="10000">364</Step>
-      <Step Number="1" FadeIn="10000" Hold="32000" FadeOut="10000">365</Step>
-      <Step Number="2" FadeIn="10000" Hold="32000" FadeOut="10000">366</Step>
-      <Step Number="3" FadeIn="10000" Hold="32000" FadeOut="10000">374</Step>
-      <Step Number="4" FadeIn="10000" Hold="32000" FadeOut="10000">375</Step>
-      <Step Number="5" FadeIn="10000" Hold="32000" FadeOut="10000">376</Step>
-      <Step Number="6" FadeIn="10000" Hold="32000" FadeOut="10000">377</Step>
-      <Step Number="7" FadeIn="10000" Hold="32000" FadeOut="10000">378</Step>
-      <Step Number="8" FadeIn="10000" Hold="32000" FadeOut="10000">379</Step>
-      <Step Number="9" FadeIn="10000" Hold="32000" FadeOut="10000">381</Step>
-      <Step Number="10" FadeIn="10000" Hold="32000" FadeOut="10000">383</Step>
-      <Step Number="11" FadeIn="10000" Hold="32000" FadeOut="10000">396</Step>
-      <Step Number="12" FadeIn="10000" Hold="32000" FadeOut="10000">397</Step>
+      <Step Number="0" FadeIn="5000" Hold="10000" FadeOut="5000">364</Step>
+      <Step Number="1" FadeIn="5000" Hold="10000" FadeOut="5000">365</Step>
+      <Step Number="2" FadeIn="5000" Hold="10000" FadeOut="5000">366</Step>
+      <Step Number="3" FadeIn="5000" Hold="10000" FadeOut="5000">374</Step>
+      <Step Number="4" FadeIn="5000" Hold="10000" FadeOut="5000">375</Step>
+      <Step Number="5" FadeIn="5000" Hold="10000" FadeOut="5000">376</Step>
+      <Step Number="6" FadeIn="5000" Hold="10000" FadeOut="5000">377</Step>
+      <Step Number="7" FadeIn="5000" Hold="10000" FadeOut="5000">378</Step>
+      <Step Number="8" FadeIn="5000" Hold="10000" FadeOut="5000">379</Step>
+      <Step Number="9" FadeIn="5000" Hold="10000" FadeOut="5000">381</Step>
+      <Step Number="10" FadeIn="5000" Hold="10000" FadeOut="5000">383</Step>
+      <Step Number="11" FadeIn="5000" Hold="10000" FadeOut="5000">396</Step>
+      <Step Number="12" FadeIn="5000" Hold="10000" FadeOut="5000">397</Step>
     </Function>
     <Function ID="401" Type="Collection" Name="Movimiento Circulo" Path="Movimiento">
       <Step Number="0">357</Step>
@@ -7486,34 +7481,33 @@
       <FixtureVal ID="23">9,223,10,0</FixtureVal>
     </Function>
     <Function ID="437" Type="Chaser" Name="Gobo Animacion" Path="Gobos">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="0" FadeOut="0" Duration="16000"/>
+      <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="16000" FadeOut="0">417</Step>
-      <Step Number="1" FadeIn="0" Hold="16000" FadeOut="0">418</Step>
-      <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0">419</Step>
-      <Step Number="3" FadeIn="0" Hold="16000" FadeOut="0">420</Step>
-      <Step Number="4" FadeIn="0" Hold="16000" FadeOut="0">421</Step>
-      <Step Number="5" FadeIn="0" Hold="16000" FadeOut="0">422</Step>
-      <Step Number="6" FadeIn="0" Hold="16000" FadeOut="0">423</Step>
-      <Step Number="7" FadeIn="0" Hold="16000" FadeOut="0">424</Step>
-      <Step Number="8" FadeIn="0" Hold="16000" FadeOut="0">425</Step>
-      <Step Number="9" FadeIn="0" Hold="16000" FadeOut="0">426</Step>
-      <Step Number="10" FadeIn="0" Hold="16000" FadeOut="0">427</Step>
-      <Step Number="11" FadeIn="0" Hold="16000" FadeOut="0">428</Step>
-      <Step Number="12" FadeIn="0" Hold="16000" FadeOut="0">429</Step>
-      <Step Number="13" FadeIn="0" Hold="16000" FadeOut="0">430</Step>
-      <Step Number="14" FadeIn="0" Hold="16000" FadeOut="0">431</Step>
-      <Step Number="15" FadeIn="0" Hold="16000" FadeOut="0">432</Step>
-      <Step Number="16" FadeIn="0" Hold="16000" FadeOut="0">433</Step>
-      <Step Number="17" FadeIn="0" Hold="16000" FadeOut="0">434</Step>
-      <Step Number="18" FadeIn="0" Hold="16000" FadeOut="0">435</Step>
-      <Step Number="19" FadeIn="0" Hold="16000" FadeOut="0">436</Step>
-      <Step Number="20" FadeIn="0" Hold="16000" FadeOut="0">414</Step>
-      <Step Number="21" FadeIn="0" Hold="16000" FadeOut="0">415</Step>
-      <Step Number="22" FadeIn="0" Hold="16000" FadeOut="0">416</Step>
+      <Step Number="0" FadeIn="0" Hold="4000" FadeOut="0">417</Step>
+      <Step Number="1" FadeIn="0" Hold="4000" FadeOut="0">418</Step>
+      <Step Number="2" FadeIn="0" Hold="4000" FadeOut="0">419</Step>
+      <Step Number="3" FadeIn="0" Hold="4000" FadeOut="0">420</Step>
+      <Step Number="4" FadeIn="0" Hold="4000" FadeOut="0">421</Step>
+      <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0">422</Step>
+      <Step Number="6" FadeIn="0" Hold="4000" FadeOut="0">423</Step>
+      <Step Number="7" FadeIn="0" Hold="4000" FadeOut="0">424</Step>
+      <Step Number="8" FadeIn="0" Hold="4000" FadeOut="0">425</Step>
+      <Step Number="9" FadeIn="0" Hold="4000" FadeOut="0">426</Step>
+      <Step Number="10" FadeIn="0" Hold="4000" FadeOut="0">427</Step>
+      <Step Number="11" FadeIn="0" Hold="4000" FadeOut="0">428</Step>
+      <Step Number="12" FadeIn="0" Hold="4000" FadeOut="0">429</Step>
+      <Step Number="13" FadeIn="0" Hold="4000" FadeOut="0">430</Step>
+      <Step Number="14" FadeIn="0" Hold="4000" FadeOut="0">431</Step>
+      <Step Number="15" FadeIn="0" Hold="4000" FadeOut="0">432</Step>
+      <Step Number="16" FadeIn="0" Hold="4000" FadeOut="0">433</Step>
+      <Step Number="17" FadeIn="0" Hold="4000" FadeOut="0">434</Step>
+      <Step Number="18" FadeIn="0" Hold="4000" FadeOut="0">435</Step>
+      <Step Number="19" FadeIn="0" Hold="4000" FadeOut="0">436</Step>
+      <Step Number="20" FadeIn="0" Hold="4000" FadeOut="0">414</Step>
+      <Step Number="21" FadeIn="0" Hold="4000" FadeOut="0">415</Step>
+      <Step Number="22" FadeIn="0" Hold="4000" FadeOut="0">416</Step>
     </Function>
     <Function ID="438" Type="Scene" Name="Color Beam - White" Path="Color Beam">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -7635,28 +7629,27 @@
       <FixtureVal ID="23">7,223</FixtureVal>
     </Function>
     <Function ID="455" Type="Chaser" Name="Color Beam Animacion" Path="Color Beam">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="0" FadeOut="0" Duration="16000"/>
+      <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="16000" FadeOut="0">438</Step>
-      <Step Number="1" FadeIn="0" Hold="16000" FadeOut="0">439</Step>
-      <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0">440</Step>
-      <Step Number="3" FadeIn="0" Hold="16000" FadeOut="0">441</Step>
-      <Step Number="4" FadeIn="0" Hold="16000" FadeOut="0">442</Step>
-      <Step Number="5" FadeIn="0" Hold="16000" FadeOut="0">443</Step>
-      <Step Number="6" FadeIn="0" Hold="16000" FadeOut="0">444</Step>
-      <Step Number="7" FadeIn="0" Hold="16000" FadeOut="0">445</Step>
-      <Step Number="8" FadeIn="0" Hold="16000" FadeOut="0">446</Step>
-      <Step Number="9" FadeIn="0" Hold="16000" FadeOut="0">447</Step>
-      <Step Number="10" FadeIn="0" Hold="16000" FadeOut="0">448</Step>
-      <Step Number="11" FadeIn="0" Hold="16000" FadeOut="0">449</Step>
-      <Step Number="12" FadeIn="0" Hold="16000" FadeOut="0">450</Step>
-      <Step Number="13" FadeIn="0" Hold="16000" FadeOut="0">451</Step>
-      <Step Number="14" FadeIn="0" Hold="16000" FadeOut="0">452</Step>
-      <Step Number="15" FadeIn="0" Hold="16000" FadeOut="0">453</Step>
-      <Step Number="16" FadeIn="0" Hold="16000" FadeOut="0">454</Step>
+      <Step Number="0" FadeIn="0" Hold="6000" FadeOut="0">438</Step>
+      <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0">439</Step>
+      <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">440</Step>
+      <Step Number="3" FadeIn="0" Hold="6000" FadeOut="0">441</Step>
+      <Step Number="4" FadeIn="0" Hold="6000" FadeOut="0">442</Step>
+      <Step Number="5" FadeIn="0" Hold="6000" FadeOut="0">443</Step>
+      <Step Number="6" FadeIn="0" Hold="6000" FadeOut="0">444</Step>
+      <Step Number="7" FadeIn="0" Hold="6000" FadeOut="0">445</Step>
+      <Step Number="8" FadeIn="0" Hold="6000" FadeOut="0">446</Step>
+      <Step Number="9" FadeIn="0" Hold="6000" FadeOut="0">447</Step>
+      <Step Number="10" FadeIn="0" Hold="6000" FadeOut="0">448</Step>
+      <Step Number="11" FadeIn="0" Hold="6000" FadeOut="0">449</Step>
+      <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0">450</Step>
+      <Step Number="13" FadeIn="0" Hold="6000" FadeOut="0">451</Step>
+      <Step Number="14" FadeIn="0" Hold="6000" FadeOut="0">452</Step>
+      <Step Number="15" FadeIn="0" Hold="6000" FadeOut="0">453</Step>
+      <Step Number="16" FadeIn="0" Hold="6000" FadeOut="0">454</Step>
     </Function>
     <Function ID="456" Type="Scene" Name="Prisma - None" Path="Prisma">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -7771,19 +7764,18 @@
       <FixtureVal ID="23">8,255</FixtureVal>
     </Function>
     <Function ID="472" Type="Chaser" Name="Prisma Animacion" Path="Prisma">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="0" FadeOut="0" Duration="32000"/>
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="32000" FadeOut="0">461</Step>
-      <Step Number="1" FadeIn="0" Hold="32000" FadeOut="0">463</Step>
-      <Step Number="2" FadeIn="0" Hold="32000" FadeOut="0">458</Step>
-      <Step Number="3" FadeIn="0" Hold="32000" FadeOut="0">459</Step>
-      <Step Number="4" FadeIn="0" Hold="32000" FadeOut="0">457</Step>
-      <Step Number="5" FadeIn="0" Hold="32000" FadeOut="0">460</Step>
-      <Step Number="6" FadeIn="0" Hold="32000" FadeOut="0">462</Step>
-      <Step Number="7" FadeIn="0" Hold="32000" FadeOut="0">456</Step>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">461</Step>
+      <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0">463</Step>
+      <Step Number="2" FadeIn="0" Hold="8000" FadeOut="0">458</Step>
+      <Step Number="3" FadeIn="0" Hold="8000" FadeOut="0">459</Step>
+      <Step Number="4" FadeIn="0" Hold="8000" FadeOut="0">457</Step>
+      <Step Number="5" FadeIn="0" Hold="8000" FadeOut="0">460</Step>
+      <Step Number="6" FadeIn="0" Hold="8000" FadeOut="0">462</Step>
+      <Step Number="7" FadeIn="0" Hold="8000" FadeOut="0">456</Step>
     </Function>
     <Function ID="473" Type="Scene" Name="Humo ON" Path="Humo">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -8102,13 +8094,12 @@
       </Axis>
     </Function>
     <Function ID="483" Type="Collection" Name="Dimmer Chase" Path="Dimmers">
-      <Tempo>Beats</Tempo>
-      <Step Number="0" FadeIn="0" Hold="4000" FadeOut="0">477</Step>
-      <Step Number="1" FadeIn="0" Hold="4000" FadeOut="0">478</Step>
-      <Step Number="2" FadeIn="0" Hold="4000" FadeOut="0">479</Step>
-      <Step Number="3" FadeIn="0" Hold="4000" FadeOut="0">480</Step>
-      <Step Number="4" FadeIn="0" Hold="4000" FadeOut="0">481</Step>
-      <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0">482</Step>
+      <Step Number="0">477</Step>
+      <Step Number="1">478</Step>
+      <Step Number="2">479</Step>
+      <Step Number="3">480</Step>
+      <Step Number="4">481</Step>
+      <Step Number="5">482</Step>
     </Function>
     <Function ID="484" Type="EFX" Name="Dimmer Chase 2 CromoWash100" Path="Dimmers/Partes">
       <Fixture>
@@ -8464,13 +8455,12 @@
       <FixtureVal ID="33">0,0</FixtureVal>
     </Function>
     <Function ID="493" Type="Chaser" Name="Dimmer PingPong" Path="Dimmers">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+      <Speed FadeIn="0" FadeOut="0" Duration="400"/>
       <Direction>Forward</Direction>
       <RunOrder>Loop</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">491</Step>
-      <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">492</Step>
+      <Step Number="0" FadeIn="0" Hold="400" FadeOut="0">491</Step>
+      <Step Number="1" FadeIn="0" Hold="400" FadeOut="0">492</Step>
     </Function>
     <Function ID="494" Type="Scene" Name="Strobo Blanco" Path="Show">
       <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -9529,32 +9519,31 @@
       <Step Number="1">343</Step>
     </Function>
     <Function ID="543" Type="Chaser" Name="Rueda Colores" Path="Colores Rig">
-      <Tempo>Beats</Tempo>
-      <Speed FadeIn="1000" FadeOut="1000" Duration="9000"/>
+      <Speed FadeIn="800" FadeOut="800" Duration="3300"/>
       <Direction>Forward</Direction>
       <RunOrder>Random</RunOrder>
       <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-      <Step Number="0" FadeIn="1000" Hold="8000" FadeOut="1000">514</Step>
-      <Step Number="1" FadeIn="1000" Hold="8000" FadeOut="1000">516</Step>
-      <Step Number="2" FadeIn="1000" Hold="8000" FadeOut="1000">518</Step>
-      <Step Number="3" FadeIn="1000" Hold="8000" FadeOut="1000">520</Step>
-      <Step Number="4" FadeIn="1000" Hold="8000" FadeOut="1000">522</Step>
-      <Step Number="5" FadeIn="1000" Hold="8000" FadeOut="1000">524</Step>
-      <Step Number="6" FadeIn="1000" Hold="8000" FadeOut="1000">526</Step>
-      <Step Number="7" FadeIn="1000" Hold="8000" FadeOut="1000">528</Step>
-      <Step Number="8" FadeIn="1000" Hold="8000" FadeOut="1000">530</Step>
-      <Step Number="9" FadeIn="1000" Hold="8000" FadeOut="1000">532</Step>
-      <Step Number="10" FadeIn="1000" Hold="8000" FadeOut="1000">534</Step>
-      <Step Number="11" FadeIn="1000" Hold="8000" FadeOut="1000">536</Step>
-      <Step Number="12" FadeIn="1000" Hold="8000" FadeOut="1000">538</Step>
-      <Step Number="13" FadeIn="1000" Hold="8000" FadeOut="1000">540</Step>
-      <Step Number="14" FadeIn="1000" Hold="8000" FadeOut="1000">542</Step>
-      <Step Number="15" FadeIn="1000" Hold="8000" FadeOut="1000">507</Step>
-      <Step Number="16" FadeIn="1000" Hold="8000" FadeOut="1000">508</Step>
-      <Step Number="17" FadeIn="1000" Hold="8000" FadeOut="1000">509</Step>
-      <Step Number="18" FadeIn="1000" Hold="8000" FadeOut="1000">510</Step>
-      <Step Number="19" FadeIn="1000" Hold="8000" FadeOut="1000">511</Step>
-      <Step Number="20" FadeIn="1000" Hold="8000" FadeOut="1000">512</Step>
+      <Step Number="0" FadeIn="800" Hold="2500" FadeOut="800">514</Step>
+      <Step Number="1" FadeIn="800" Hold="2500" FadeOut="800">516</Step>
+      <Step Number="2" FadeIn="800" Hold="2500" FadeOut="800">518</Step>
+      <Step Number="3" FadeIn="800" Hold="2500" FadeOut="800">520</Step>
+      <Step Number="4" FadeIn="800" Hold="2500" FadeOut="800">522</Step>
+      <Step Number="5" FadeIn="800" Hold="2500" FadeOut="800">524</Step>
+      <Step Number="6" FadeIn="800" Hold="2500" FadeOut="800">526</Step>
+      <Step Number="7" FadeIn="800" Hold="2500" FadeOut="800">528</Step>
+      <Step Number="8" FadeIn="800" Hold="2500" FadeOut="800">530</Step>
+      <Step Number="9" FadeIn="800" Hold="2500" FadeOut="800">532</Step>
+      <Step Number="10" FadeIn="800" Hold="2500" FadeOut="800">534</Step>
+      <Step Number="11" FadeIn="800" Hold="2500" FadeOut="800">536</Step>
+      <Step Number="12" FadeIn="800" Hold="2500" FadeOut="800">538</Step>
+      <Step Number="13" FadeIn="800" Hold="2500" FadeOut="800">540</Step>
+      <Step Number="14" FadeIn="800" Hold="2500" FadeOut="800">542</Step>
+      <Step Number="15" FadeIn="800" Hold="2500" FadeOut="800">507</Step>
+      <Step Number="16" FadeIn="800" Hold="2500" FadeOut="800">508</Step>
+      <Step Number="17" FadeIn="800" Hold="2500" FadeOut="800">509</Step>
+      <Step Number="18" FadeIn="800" Hold="2500" FadeOut="800">510</Step>
+      <Step Number="19" FadeIn="800" Hold="2500" FadeOut="800">511</Step>
+      <Step Number="20" FadeIn="800" Hold="2500" FadeOut="800">512</Step>
     </Function>
     <Function ID="544" Type="Collection" Name="Rueda Mezcla" Path="Show">
       <Step Number="0">47</Step>
@@ -10781,8 +10770,12 @@
           </Appearance>
           <AbsoluteValue Minimum="0" Maximum="2000"/>
           <Time>500</Time>
-          <ControlBPM>True</ControlBPM>
           <Input ID="1" Key="M"/>
+          <Function FadeIn="0" FadeOut="0" Duration="9">543</Function>
+          <Function FadeIn="0" FadeOut="0" Duration="9">437</Function>
+          <Function FadeIn="0" FadeOut="0" Duration="10">455</Function>
+          <Function FadeIn="0" FadeOut="0" Duration="10">472</Function>
+          <Function FadeIn="0" FadeOut="0" Duration="6">493</Function>
           <Input ID="0" Universe="0" Channel="31"/>
         </SpeedDial>
         <Label Caption="TEMPO — pulsa M al ritmo de la" ID="30">
@@ -10795,7 +10788,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="música y todo el show (colores," ID="31">
+        <Label Caption="música: colores, gobos, prisma y" ID="31">
           <WindowState Visible="True" X="1176" Y="844" Width="256" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
@@ -10805,7 +10798,7 @@
             <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
           </Appearance>
         </Label>
-        <Label Caption="matrices, gobos) sigue el compás." ID="32">
+        <Label Caption="dimmer siguen tu compás." ID="32">
           <WindowState Visible="True" X="1176" Y="864" Width="256" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>

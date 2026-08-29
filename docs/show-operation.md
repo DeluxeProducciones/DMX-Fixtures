@@ -190,33 +190,46 @@ CromoWash #2 and beams 21 and 23.
 
 ## Running on the music's beat
 
-Every generated show puts the layers that should feel the music on QLC+'s
-**Beats** tempo - colour every 2 bars, a movement shape every 8 - with the
-beat generator set to **Internal** at 120 BPM, so the show advances out of
-the box and one clock times every layer (since 2026-08-29; the owner found
-the BPM setting and asked for it). The `Tempo Show` dial on page 1 controls
-that BPM: tap `M` to the music and colour, movement, gobos and prism follow
-together, each keeping its own beat count. The dial lists no functions on
-purpose - a tap dial with functions writes the raw tap interval into every
-one of their durations (`VCSpeedDial::tap -> applyFunctionsTime`), which is
-how the old speed dials drove "todos los programas locos". `qlctool check`
-refuses that shape (`tap que pisa duraciones`).
+The show runs on the clock, and one dial re-times it. `Tempo Show` sits on
+page 1: tap `M` to the music and the colour wheel, the gobo and colour-beam
+animations, the prism and the dimmer pulse all follow. The dial's time is one
+tap, and each layer carries its own **multiplier** - how many taps it is worth
+(`VCSpeedDial::applyFunctionsTime` computes `duration = time x multiplier`).
+That multiplier is the whole trick: give every layer the same one and a single
+tap makes the wheel, the prism and the dimmer exactly as long as each other,
+which is what "se vuelven todos los programas locos" was (owner, 2026-08-29).
+`qlctool check` refuses a flattened dial (`tap que aplana los programas`).
 
-`qlctool newshow --beats` builds the same show with the beat generator on
-**Audio** instead, deriving the beat from an audio input device: a laptop
-left alone in a venue runs its chases on the room's own music
-(`Vibra-beats.qxw`). An audio input has to be picked in QLC+'s
-Configuration - the device is an application setting, not part of the
-workspace, and with no input selected the beat never ticks.
+**The head movement is deliberately not on the dial.** A shape takes fifteen
+seconds and QLC+'s multipliers stop at sixteen taps, so movement cannot be
+said in taps at all - and each shape is an EFX with its own millisecond clock
+underneath, which a re-timed chaser fade corrupts (see below).
 
-Two things stay on the clock everywhere:
+Two traps found on the show Mac's own QLC+ 5.2.2 the same night, both now
+rules:
 
-- **The energy cycle.** It measures the night rather than the song, and a
-  beat that never arrives must not be able to freeze it.
-- **The matrix cycles (except under `--beats`).** An RGBMatrix animation's
-  frame clock is milliseconds, so a flat beat-held cycle cuts animations
-  short at fast tempos - the 2026-08-26 half-painted bars, wearing beats -
-  and the `efecto cortado` rule cannot see a beats hold.
+- **`ControlBPM` does not exist in 5.2.2.** A speed dial that drives the
+  global BPM instead of its functions is a QLC+ 5.3 feature; 5.2.2 says
+  "Unknown speed dial tag: ControlBPM" when it loads one and ignores it, so
+  the tap does nothing. A tap key needs functions under it
+  (`tap que no re-tempa nada`).
+- **A chaser in Beats hands its fade to its steps as a raw number.** An EFX
+  subtracts that from its own millisecond duration
+  (`EFX::loopDuration() = duration() - overrideFadeInSpeed()`), so a movement
+  chaser on Beats with a 10-beat crossfade turned a 16 s head sweep into a
+  6 s one: "las cabezas van super rapido y no completan los giros". Beats is
+  therefore only for chasers whose steps are Scenes
+  (`unidades de tempo cruzadas`), and a Collection may not carry a `<Tempo>`
+  at all - it has none, and QLC+ says so (`tempo en una coleccion`).
+
+`qlctool newshow --beats` builds the audio-driven variant: the layers whose
+steps are Scenes, plus the matrix cycles, go on QLC+'s **Beats** tempo with
+the beat generator set to **Audio**, so a laptop left alone in a venue runs
+its chases on the room's own music (`Vibra-beats.qxw`). An audio input has to
+be picked in QLC+'s Configuration - the device is an application setting, not
+part of the workspace, and with no input selected the beat never ticks. The
+energy cycle stays on the clock everywhere: it measures the night rather than
+the song, and a beat that never arrives must not be able to freeze it.
 
 ## The console
 
@@ -319,7 +332,7 @@ only keys that cannot collide with a colour bank on 1-0.
 | `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 2 |
 | `Z` / `K` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
 | `S` / `D` | Strobo ON / OFF (shutter) | page 2 |
-| `M` | tap tempo on `Tempo Show` (tap the beat, the show's BPM follows) | page 1 |
+| `M` | tap tempo on `Tempo Show` (tap the beat, every layer follows) | page 1 |
 | `PgDn` / `PgUp` | next / previous page | anywhere |
 
 Keys 1-0 are on every colour bank: every widget sees every key press, so `1`
