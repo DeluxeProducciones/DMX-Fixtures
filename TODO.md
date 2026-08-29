@@ -36,7 +36,12 @@ workspaces.
   workspace; full writeup and the researched replacement in
   `docs/usb-dmx-interface.md`. For tonight's gig: dongle on a direct USB port
   (no hub), nothing heavy beside QLC+, 120 Ω terminator on the last fixture
-  (still unconfirmed on this rig), real 110 Ω DMX cable on the long runs.
+  (still unconfirmed on this rig), real 110 Ω DMX cable on the long runs,
+  and a 30-second check in QLC+ (Input/Output → gear on the output plugin):
+  mode **Open TX**, output frequency **30** — the only valid mode for this
+  clone and the plugin's own default; doc explains why the others cannot
+  work. Not verifiable remotely today (show Mac unreachable from this
+  network).
   Next steps: (1) order a MAX485 module (~2 €) and mount the owner's spare
   Raspberry Pi 3/4 as an OLA Art-Net node to prove the diagnosis; (2) build
   the permanent replacement — Pico + MAX485 + our firmware emulating the

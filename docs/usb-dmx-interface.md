@@ -32,9 +32,36 @@ None of these eliminate the flashes; together they make them rare.
    120 Ω resistor across pins 2-3). Missing termination causes reflections
    with similar symptoms — still unconfirmed on this rig.
 4. Real DMX cable (110 Ω), not microphone XLR, at least for the long runs.
-5. If the plugin exposes it, drop the output frequency toward ~30 Hz
-   (QLC+ inputs/outputs, DMX USB plugin configuration): slacker frames,
-   smaller window for corruption.
+5. Check the plugin mode and frequency (30 seconds, see below): mode
+   **Open TX**, output frequency **30**.
+
+## The plugin mode: Open TX is the right one
+
+QLC+'s DMX USB plugin drives nine device modes (read from the plugin source,
+`plugins/dmxusb/src/`): Pro RX/TX, Open TX, Open RX, Pro Mk2, Ultra Pro,
+DMX4ALL, Vince TX, Eurolite, usbdmx.com legacy. Unless a mode was forced, it
+picks by the USB product name — "DMX USB PRO", "PRO MK2" and friends go to
+the Pro modes, and a generic FTDI with no recognised name falls through to
+`EnttecDMXUSBOpen` = **Open TX**. That is where this clone lands, and it is
+the only mode that can work: every other mode wraps the universe in a
+protocol that expects firmware on the other end, which this dongle does not
+have (Pro mode's `0x7E … 0xE7` frames would go out raw on the DMX line —
+constant garbage, not an occasional flash). "Works fine, flashes now and
+then" is precisely Open TX behaving as designed. A forced mode is stored per
+serial number in QSettings (`qlcftdi/typemap`), not in the workspace, so the
+`.qxw` files cannot carry or fix it.
+
+To verify on the show Mac: Input/Output panel → gear icon on the output
+plugin → a dialog with Name / Serial / Mode / Output frequency per widget.
+Expect mode Open TX and frequency 30 — the Open mode's default (the source
+comments it with a literal `// crap`); raising it widens the corruption
+window, so if someone turned it up for smoothness, turn it back down.
+
+One nuance: some cheap clones *do* carry a microcontroller and enumerate as
+"USB DMX512 Pro" — on those, the Eurolite mode is the fix for flashing. This
+one enumerates as a bare FT232R (that is why QLC+ treats it as Open), so the
+nuance does not apply; it is only worth remembering if a different dongle
+ever lands in the booth.
 
 ## The replacement: build one (researched 2026-08-29)
 
