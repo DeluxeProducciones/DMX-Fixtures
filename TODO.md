@@ -13,6 +13,26 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
+- [~] **SMC-PAD LED feedback en QLC+ — funcionando, con pulido pendiente
+  (2026-08-29).** Todo el protocolo resuelto y documentado en
+  `tools/smc-pad/` (README + decompile). El puente `qlc_led_bridge.swift`
+  mantiene la sesión GATT del pad, publica el puerto MIDI virtual
+  "SMC-PAD LED Bridge" y pinta cada pad con su color de paleta
+  (`generate/smc_pad_colors.py`): atenuado en reposo, full al activarse el
+  botón en QLC+. Los botones de la consola llevan el mismo color. Verificado:
+  QLC+ feedback -> pad enciende. Para usar: arrancar el puente
+  (`cd tools/smc-pad && swift qlc_led_bridge.swift`), cargar `Vibra.qxw`, y en
+  Entradas/Salidas el universo 1 debe tener Input "ble device" (omni "1-16"),
+  y el bridge como Output **y Feedback** (el `<Feedback>` es el truco: el ojo
+  de QLC+ no lo crea solo; ya está en el .qxw). Pendiente:
+  1. **Notas del pad por BT vs USB.** El pad manda nota 35+N por Bluetooth
+     (pad 1=36) tras el reset de la app; los bindings y el puente ya están en
+     esas notas. Si se reconfigura el pad, recapturar.
+  2. **Capa manual (shift+pad, página 2) por BT:** las notas de shift no se
+     capturaron por Bluetooth, así que esos bindings siguen en las notas USB y
+     no disparan por BT. Capturar shift+pad y remapear si se quiere feedback en
+     la página 2. La página 1 (estados + golpes) va.
+  3. Afinar la paleta y el brillo de reposo (`DIM` en el puente) en sala.
 - [!] **SMC-PAD pad RGB: proprietary BLE GATT, mechanism reverse-engineered
   (2026-08-29).** Full writeup in `docs/smc-pad-led.md`. In short: plain MIDI
   (full note sweep + CC, all three ports, owner watching) lights nothing.
