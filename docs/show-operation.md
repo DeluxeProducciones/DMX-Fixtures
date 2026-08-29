@@ -190,21 +190,33 @@ CromoWash #2 and beams 21 and 23.
 
 ## Running on the music's beat
 
-`qlctool newshow --beats` puts the layers that should feel the music on QLC+'s
-**Beats** tempo - colour every 2 bars, matrices every bar, a movement shape
-every 8 - and sets the workspace's beat generator to **Audio**, which derives
-the beat from an audio input device. A laptop left alone in a venue then runs
-its chases on the room's own music, with no operator and no MIDI cable.
+Every generated show puts the layers that should feel the music on QLC+'s
+**Beats** tempo - colour every 2 bars, a movement shape every 8 - with the
+beat generator set to **Internal** at 120 BPM, so the show advances out of
+the box and one clock times every layer (since 2026-08-29; the owner found
+the BPM setting and asked for it). The `Tempo Show` dial on page 1 controls
+that BPM: tap `M` to the music and colour, movement, gobos and prism follow
+together, each keeping its own beat count. The dial lists no functions on
+purpose - a tap dial with functions writes the raw tap interval into every
+one of their durations (`VCSpeedDial::tap -> applyFunctionsTime`), which is
+how the old speed dials drove "todos los programas locos". `qlctool check`
+refuses that shape (`tap que pisa duraciones`).
 
-Two things to know before using it:
+`qlctool newshow --beats` builds the same show with the beat generator on
+**Audio** instead, deriving the beat from an audio input device: a laptop
+left alone in a venue runs its chases on the room's own music
+(`Vibra-beats.qxw`). An audio input has to be picked in QLC+'s
+Configuration - the device is an application setting, not part of the
+workspace, and with no input selected the beat never ticks.
 
-- **An audio input has to be picked in QLC+'s Configuration.** The device is an
-  application setting, not part of the workspace. With no input selected the
-  beat never ticks and everything in Beats tempo waits forever, which is why the
-  default build stays on real time and the beat-locked one is a separate file
-  (`Vibra-beats.qxw`).
-- **The energy cycle stays on the clock.** It measures the night rather than the
-  song, and a beat that never arrives must not be able to freeze it.
+Two things stay on the clock everywhere:
+
+- **The energy cycle.** It measures the night rather than the song, and a
+  beat that never arrives must not be able to freeze it.
+- **The matrix cycles (except under `--beats`).** An RGBMatrix animation's
+  frame clock is milliseconds, so a flat beat-held cycle cuts animations
+  short at fast tempos - the 2026-08-26 half-painted bars, wearing beats -
+  and the `efecto cortado` rule cannot see a beats hold.
 
 ## The console
 
@@ -307,7 +319,7 @@ only keys that cannot collide with a colour bank on 1-0.
 | `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 2 |
 | `Z` / `K` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
 | `S` / `D` | Strobo ON / OFF (shutter) | page 2 |
-| `M` | tap tempo on `Vel. Colores` (tap the beat, the wheel follows) | page 1 |
+| `M` | tap tempo on `Tempo Show` (tap the beat, the show's BPM follows) | page 1 |
 | `PgDn` / `PgUp` | next / previous page | anywhere |
 
 Keys 1-0 are on every colour bank: every widget sees every key press, so `1`

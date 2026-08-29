@@ -138,10 +138,21 @@ workspaces.
   flash slow para los par es unos 200" — 0.45 daba 115; subido a 0.785 (CLB
   200, CromoWash 202) y la regla gana suelo: ningun flash pulsado a mano
   escribe estrobo por debajo del 70% de la carrera. Queda verificar en sala.
-  Tambien del 2026-08-29: (1) **tap tempo recuperado** — `M` (la tecla del
-  show viejo) tapea `Vel. Colores`, que baja a la pagina 1 con su rotulo;
-  `Dimmer Secuencia` pasa de `M` a `K`. Ojo: el `<Key>` suelto que escribia
-  el builder no lo carga qmlui — el tap va como `<Input ID="1" Key="M"/>`.
+  Tambien del 2026-08-29: (1) **tap tempo recuperado, y por BPM** — `M` (la
+  tecla del show viejo) tapea el dial `Tempo Show` de la pagina 1, que fija
+  el **BPM global** (ControlBPM, sin funciones ligadas): un dial con tap y
+  funciones escribe el intervalo crudo como duracion en todas ("se vuelven
+  todos los programas locos") — regla `tap que pisa duraciones`. Los shows
+  van ahora en tempo **Beats** con generador **Internal 120** (lo que el
+  dueño marco a mano); rueda 8 beats, movimiento 32/64 con crossfade de 10
+  beats, dimmer chase 4. Los ciclos de matrices se quedan en reloj (una
+  animacion RGBMatrix corre en ms y un hold en beats la cortaria — la noche
+  del "efecto cortado" disfrazada); `--beats` (variante Audio) los mantiene
+  a beats como estaba. `Vel. Movimiento` fuera (escribia ms sobre chasers en
+  beats); encoder 3 del SMC-PAD libre. `Dimmer Secuencia` pasa de `M` a `K`.
+  Ojo: el `<Key>` suelto que escribia el builder no lo carga qmlui — el tap
+  va como `<Input ID="1" Key="M"/>`. Regla `tap sin reloj que gobernar`
+  vigila que el BPM tenga generador y funciones Beats que lo escuchen.
   (2) **Strobo/Strobo Suave mataban el show**: sus chasers pisaban
   `Blanco Total`/`Todo Negro`, botones del solo frame de estados — un boton
   Toggle "oye" arrancar su funcion la arranque quien la arranque
