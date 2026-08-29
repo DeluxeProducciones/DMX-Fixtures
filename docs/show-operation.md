@@ -396,7 +396,13 @@ Never press `SHIFT` on this pad to see what happens.
 
 The pads are numbered as the panel prints them - PAD1 bottom-left, PAD13
 top-left - and the layout is the owner's: the hits on the top two rows, the
-room's states on the bottom two.
+room's states on the bottom two. The owner has also written it on the pads
+themselves in marker (`Blan`, `Negro`, `Char`, `A`, `Fiest`, `Loc`, `Tran`,
+`HV`, `H`, `ST`, `ST/SO`, `F`, `F/SO`, `F/C`, `C.B.A`), so the surface reads
+correctly even with the LEDs dark. A photo of the panel is at
+[`smc-pad-panel.jpg`](smc-pad-panel.jpg), and it is also where to check what
+`SHIFT` does, because the device prints that above every pad too. Changing this
+table means changing what is written on the hardware.
 
 | | | | |
 | --- | --- | --- | --- |
