@@ -13,6 +13,56 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
+- [ ] **Humo, las dos cosas nuevas, verlas en sala (2026-08-30).** (1) La
+  columna vertical ya no se pinta de blanco: `Humo Vertical YA` escribe solo la
+  bomba y el master del LED, y el color lo pone la sala — "salia humo bien pero
+  la luz solo salia la blanca, no hacia las transiciones de colores". Con AUTO
+  corriendo la columna deberia salir del color de la rueda; con `Todo Negro`
+  saldra a oscuras, que es lo correcto pero conviene verlo. (2) El humo de
+  ambiente tiene su ritmo en la pagina 1, abajo: `cada 1 / 2 / 4 / 8 min`, marco
+  solo (uno a la vez), y `J` sigue siendo el de 1 min que arranca AUTO. Elegir
+  el que pida la sala. La columna **nunca** se dispara sola y la regla
+  `columna automatica` lo impide.
+
+- [ ] **Las dos MAC WASH: mirar el menu RunMode en la lyre (2026-08-30).** La
+  noche del 29 "se quedaban mirando para abajo y hacian cosas raras como una
+  especie de cambios de colores muy rapidos", con el workspace ya recargado y
+  con la ventana medida (tilt 221) puesta. Ninguna funcion del show hace eso:
+  el color va en una rueda de ocho tiempos y el movimiento estaba apuntado, o
+  sea que la lyre no estaba obedeciendo DMX. El manual (`Manual/Mac Mah MAC
+  WASH 1915Z`, seccion V, MENU) da `RunMode: DMX / AUTO / SOUND` — en SOUND
+  cambia de color con la musica, que es exactamente lo que se vio. **En sala,
+  en el display de cada cabeza:** `RunMode = DMX`, `Channel = 23CH`,
+  `DMX Addr = 345` y `368`. Del lado del fichero ya esta hecho lo que se podia
+  hacer: cada look que da color escribe ahora el canal `Function Mode` a 0
+  (`mode_park.py`) y la regla `modo sin dueño` no deja que ningun fixture se
+  quede con ese canal sin escribir. Si con el menu en DMX sigue pasando, lo
+  siguiente es la cadena: las dos van al final del universo (345-390) detras de
+  las cuatro maquinas de humo, con el FT232R sin buffer y sin terminador.
+
+- [ ] **Medir el foco de los beam en sala (2026-08-30).** Nada escribia el
+  canal `Focus` de las 7R, o sea que los diecisiete gobos se han proyectado
+  siempre con el foco en un extremo de su recorrido — la mitad de por que "se
+  echaba en falta mas variedad". Ahora todas las escenas de gobo escriben
+  `BEAM_FOCUS = 127` (`generate/canonical_show.py`), que es el medio del
+  recorrido y una primera pasada, no una medida. En sala: poner un gobo,
+  subir/bajar ese canal a mano hasta que el dibujo este nitido a la distancia
+  real, y dejar ese numero en la constante. Mientras tanto tambien hay
+  `Gobo Repartido 1-8` (cada cabeza un gobo distinto) y el prisma girando en
+  tres velocidades: mirar si el reparto se lee bien o marea.
+
+- [ ] **El pad, la proxima vez: USB o Bluetooth, no los dos (2026-08-30).** La
+  noche del 29 "no pude usar el pad porque ni reseteandolo reconocia las
+  teclas", con el cable y el BT puestos a la vez. Causa, ya medida y escrita en
+  `tools/smc-pad/README.md`: **con USB conectado el pad manda su MIDI por USB y
+  el lado BLE se queda mudo**, y el workspace escucha el puerto `ble device`.
+  Resetear el pad no arregla eso. Comprobar en sala: quitar el USB (que es
+  ademas lo que quiere el puente de LEDs, que sostiene el BLE), o dejar el USB
+  y en Entradas/Salidas apuntar el universo 1 al puerto USB y **guardar el
+  fichero** — `newshow` respeta el puerto que el fichero ya trae.
+  `swift tools/smc-pad/midiports.swift` lista los puertos con el nombre que usa
+  QLC+ (propiedad `Model`), que es lo unico que permite saber cual es cual.
+
 - [ ] **Afinar el tilt al que apuntan las lyres en sala (2026-08-29).**
   Segunda pasada: el primer intento mandó las 7R a tilt 88 y salieron a la
   pared, o sea que en una 7R la sala está **por encima** de 127, no por debajo

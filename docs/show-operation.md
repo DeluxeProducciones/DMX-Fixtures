@@ -170,11 +170,18 @@ console" below.
   way a lit room uses them: gobos are texture in the haze from `Nivel Fiesta`
   up (parked open in the quiet levels), the shake bursts (`Gobo Shake`, the
   Pattern Jitter channel) are steps of the gobo wheel's own rotation, and the
-  prism is a peak-only multiplier - inserted spinning (every prism scene
+  prism runs from `Nivel Fiesta` up - inserted spinning (every prism scene
   drives the rotation channel too) and parked out by `Prisma - None` in every
-  level and moment that does not run its animation, so a peak's prism never
-  outlives the peak
-- `Humo Auto`
+  level and moment that does not run its animation, so a prism never outlives
+  the block that put it in. Since 2026-08-30 the wheel is used the way a
+  professional room uses it rather than the way a generator can: the four
+  heads are **dealt** different patterns (`Gobo Repartido 1-8`, one seat apart
+  each, riding inside the gobo wheel's own rotation), every gobo scene states
+  the **focus** channel that nothing had ever written - seventeen patterns
+  projected at one end of its travel is most of what "se echaba en falta más
+  variedad" was - and the prism dance ends on the other two things one
+  rotation channel can do, `Prisma Giro Rapido` and `Prisma Giro Inverso`
+- `Humo Auto`, and the three other rhythms beside it
 - `Rueda Mezcla`, a collection over the per-group mix wheels, and `AUTO` over
   the colour wheel, the pixel cycle, the haze and the energy cycle
 
@@ -348,7 +355,7 @@ only keys that cannot collide with a colour bank on 1-0.
 | `W` / `E` | Rueda Colores / Rueda Mezcla | page 2 |
 | `A` | Movimientos Cabezas | page 2 |
 | `G` / `P` | Gobos / prisma | page 2 |
-| `J` | Humo Auto | page 2 |
+| `J` | Humo Auto (the haze timer; the rhythm row is on page 1) | page 1 |
 | `'` / `¡` | Arcoiris Simultaneo / Arcoiris Pasos (relative RGB rainbows) | page 2 |
 | `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 2 |
 | `Z` / `K` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
@@ -371,6 +378,18 @@ The hardware surface. Universe 0 carries its MIDI input patch, on the
 `M-VAVE SMC-PAD` profile, in omni ("1-16") mode. Omni is not optional: on a
 fixed MIDI channel QLC+ stops folding the channel into the input number and
 every pad addresses the wrong control.
+
+**Plugged into USB, the pad stops speaking Bluetooth.** Measured here
+(`tools/smc-pad/README.md`): with the USB cable in, the pad routes its MIDI
+over USB and the BLE side goes silent - so a workspace bound to `ble device`
+hears nothing at all, and no amount of resetting the pad changes that. It cost
+a whole show on 2026-08-29: "no pude usar el pad porque ni reseteándolo
+reconocía las teclas", with the cable and Bluetooth both on. Either **unplug
+USB** (which is also what the LED bridge wants - it holds the pad over BLE), or
+point universe 1's input at the USB port in Inputs/Outputs and save the file.
+`swift tools/smc-pad/midiports.swift` prints every port under the name QLC+
+uses for it, next to the name macOS shows, which is the only way to tell which
+line is which.
 
 **Which port** is the machine's business, not the show's, and regenerating
 leaves it alone. QLC+ names a MIDI port by its CoreMIDI `Model` property, which
