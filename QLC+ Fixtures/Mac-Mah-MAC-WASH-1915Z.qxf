@@ -94,6 +94,24 @@
   <Channel Number="20">Function mode</Channel>
   <Channel Number="21">Function mode speed</Channel>
   <Channel Number="22">Reset</Channel>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+  <Head>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+  </Head>
+  <Head>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+  </Head>
  </Mode>
  <Physical>
   <Bulb Type="19 x 15W RGBW LED" Lumens="0" ColourTemperature="0"/>
