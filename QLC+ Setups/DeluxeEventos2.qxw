@@ -8176,22 +8176,6 @@
      <Value>462</Value>
     </Preset>
    </SpeedDial>
-   <Slider Caption="Velocidad Cabezas" ID="1" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
-    <WindowState Visible="True" X="960" Y="245" Width="50" Height="235"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="true">Level</SliderMode>
-    <Reset/>
-    <Level LowLimit="0" HighLimit="255" Value="0"/>
-    <Playback>
-     <Function>4294967295</Function>
-    </Playback>
-   </Slider>
    <SoloFrame Caption="" ID="6">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>

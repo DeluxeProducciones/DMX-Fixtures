@@ -325,6 +325,17 @@ The plot for it is `vibra-stage-plot-split.json`: each head sits at the centre
 of its quarter of the 1007 mm bar, aimed back at the DJ at `-35` like the bar
 was. Fan them apart there and each head goes its own way.
 
+That `PAR` group is a 7x3 grid with the CLB2.4 heads bolted to the right of the
+PC-64 block, rather than the 8x2 that reads like the rig, because at the time
+`--group-add` refused a head it had already placed and there was no way to say
+"the same head, somewhere else". There is now:
+`--group-move "GROUP=FIXTURE[:HEAD]@X,Y"` moves a placed head to a free cell (a
+swap is two moves with a free cell in between). Name the head for a bar or a
+panel, whose heads are all one fixture - `BarrasLed` is sixteen heads of two
+fixtures. Re-laying the group is a matrix change - every pattern paints the
+cells the group declares - so it wants an eye on the rig, and it is in `TODO.md`
+rather than done here.
+
 **It found a real bug in the strobe generator.** The new definition labels DMX 0
 `No strobe` and marks it `ShutterOpen`, with the strobe on 1-255. The generator
 picked its strobe range **by name**, matched "No strobe" first, and wrote
@@ -427,7 +438,7 @@ QLC+'s own definition, vendored here with one correction - see below.
 | --- | --- |
 | Pro-Lights CromoWash100 | **Fully verified** against `Manual/ProLights - CromoWash 100.pdf` on 2026-08-25: both modes channel for channel (3.12), every capability range of the colour macro, strobe and control channels, and the whole physical block (1.3). Three things were wrong and are fixed - see [What the manual corrected](#what-the-manual-corrected). The 12-channel Advanced order is `Pan, Pan fine, Tilt, Tilt fine, Pan/tilt speed, ...`, which is what used to stop it moving: see [Why the wash heads would not move](#why-the-wash-heads-would-not-move) |
 | Audibax IOWA70 | Verified against the repo manual; orphan, not patched |
-| Chauvet MiN Wash | **Verified online** (2026-08-24): the manufacturer manual's 13-channel mode matches channels 1-10 - Pan, Pan fine, Tilt, Tilt fine, Vector speed, Dimmer/Strobe, R, G, B, Color Macros - which is everything the toolkit drives. The manual edition found calls 11-13 "Reserved" where the definition says "Vector Speed (Color)" and "Movement Macros"; unused either way. **Its `5 Channel` mode is wrong** - it lists no Tilt - but the patch does not use it |
+| Chauvet MiN Wash | **Verified online** (2026-08-24): the manufacturer manual's 13-channel mode matches channels 1-10 - Pan, Pan fine, Tilt, Tilt fine, Vector speed, Dimmer/Strobe, R, G, B, Color Macros - which is everything the toolkit drives. The manual edition found calls 11-13 "Reserved" where the definition says "Vector Speed (Color)" and "Movement Macros"; unused either way. Its `5 Channel` mode was **deleted on 2026-08-31**: it listed no Tilt on a moving head and its `ActsOn` pointed at "Reserved", so it had been written by hand rather than read off a manual. No manual for this fixture is in `Manual/` and QLC+'s own library carries no MiN Wash, so there was nothing to correct it against - and a guessed channel order drives the wrong channels silently. The patch only ever used the 13-channel mode |
 | HYULIGHTS WX-60WPS | Definition declares 10 channels, the used mode exposes 8, matching the patch. Not otherwise verified |
 | Stairville CLB2.4 | **Fully verified** against `Manual/Stairville-CLB2.4-Compact-LED-PAR-System-manual-es.pdf` on 2026-08-25. All six modes match the manual channel for channel (7.5-7.10), including the 14-channel one the patch uses - `Dimmer, R/G/B x PAR 1..4, Strobe` - and the four heads it declares. Every range of the auto-show and fixed-colour channels matches (14 programs then Sound; 15 colours ending in Amber), and the physical block matches the technical data (1007x305x63 mm, 5,6 kg, 50 W, 1364 lux, 3-pin). **One thing was wrong: the lens** - see [The CLB2.4's beam angle was missing](#the-clb24s-beam-angle-was-missing) |
 | Generic BEAM 230W 7R | **Verified on the hardware by the owner**, who states he tested the channel order when he wrote the definition (2026-08-25). The hand-built show corroborates the two channels that matter most: `Luz ON Cabezas` sends 255 to channel 6 and 255 to channel 7, `Luz OFF Cabezas` sends 0 to both - so channel 6 is the shutter, shut at 0, and channel 7 is the dimmer. No manual matches it (one found for a Rambo 230 puts Color on ch1 and Pan on ch10), so the hardware is the only reference there will be. Physical side: see [Where the beams came from](#where-the-beams-came-from) |
