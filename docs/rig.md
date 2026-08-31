@@ -325,7 +325,7 @@ The plot for it is `vibra-stage-plot-split.json`: each head sits at the centre
 of its quarter of the 1007 mm bar, aimed back at the DJ at `-35` like the bar
 was. Fan them apart there and each head goes its own way.
 
-That `PAR` group is a 7x3 grid with the CLB2.4 heads bolted to the right of the
+That `PAR` group was a 7x3 grid with the CLB2.4 heads bolted to the right of the
 PC-64 block, rather than the 8x2 that reads like the rig, because at the time
 `--group-add` refused a head it had already placed and there was no way to say
 "the same head, somewhere else". There is now:
@@ -333,8 +333,8 @@ PC-64 block, rather than the 8x2 that reads like the rig, because at the time
 swap is two moves with a free cell in between). Name the head for a bar or a
 panel, whose heads are all one fixture - `BarrasLed` is sixteen heads of two
 fixtures. Re-laying the group is a matrix change - every pattern paints the
-cells the group declares - so it wants an eye on the rig, and it is in `TODO.md`
-rather than done here.
+cells the group declares. It is a flat 15x1 now, laid out in stage order by
+`--group-sort` (2026-08-31).
 
 **It found a real bug in the strobe generator.** The new definition labels DMX 0
 `No strobe` and marks it `ShutterOpen`, with the strobe on 1-255. The generator
@@ -364,10 +364,31 @@ really has.
 | 1 | Cabezas | 12x1 | 0, 1, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23 |
 | 2 | PAR | 15x1 (7x1 on the pre-split patch) | 6-12, 29-36 |
 | 3 | PixelesLed | 4x1 | 24, 25, 27, 28 |
+| 4 | Lyres | 3x2 | 41, 42 (33, 34 on the pre-split patch) - one cell per ring |
 
 Groups are what an RGBMatrix paints onto, and what the colour banks are built
 per - so a fixture in no group gets neither, and a fixture in *two* gets two of
 each. That second half is not obvious and cost a night: see the beams below.
+
+**The cells are in stage order, not patch order (2026-08-31).** A matrix paints
+the cells a group declares and half of QLC+'s scripts mean a direction, so cell
+0 has to be at one side of the room and the last cell at the other. Nobody had
+ever said so: a group is built in DMX address order, which is cabling order, and
+`Cabezas` walked its four rigged beams 1916, 9694, 4405, 7205 mm across the
+stage. Every sweep started house-right, jumped house-left, walked back and
+jumped again. `qlctool patch --group-sort GROUP` lays a group out by the
+`<Monitor>` positions the plot writes, and `qlctool check`'s
+`rejilla fuera de orden` says when one has drifted. Fixtures the plot marks as
+not rigged go last - eight of `Cabezas`' twelve members are spares in cases, and
+a spare cannot be anywhere in a sweep.
+
+**`Lyres` is one cell per ring (2026-08-31).** The MAC WASH 1915Z is three
+concentric RGBW rings on one DMX footprint, and its definition declared no
+`<Head>` at all. QLC+ does not read that as "no heads": it builds a single head
+holding every channel, keeping the *last* channel of each colour, so a matrix
+would have painted the outer ring and left the other two on whatever was written
+last. Three `<Head>` blocks in the definition fixed it, `cabezas sin declarar`
+is the rule that sees it, and the group is 3x2 - ring across, fixture down.
 
 **`BarrasLed` declared 8x2 over three rows of heads.** An RGBMatrix paints the
 cells a group *declares*, not the heads it holds, so row 2 - the four beams and

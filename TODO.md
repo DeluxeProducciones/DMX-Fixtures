@@ -14,12 +14,14 @@ to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
 **Disposicion, 2026-08-31.** Se cerro todo lo que se podia cerrar sin el rig
-(siete items, en `~/p/TODO_LOG.md`). De los 39 `[ ]` y 7 `[~]` que quedan,
-ninguno esta esperando a que alguien escriba codigo:
+(nueve items, en `~/p/TODO_LOG.md`), incluida la rejilla: los grupos van ya en
+orden de escenario y las dos MAC WASH tienen grupo propio. De lo que queda,
+ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
 
-- **La mayoria espera al rig o al dueño** - humo, MAC WASH, tilt de las lyres,
-  foco de los beams, flashes, niveles de energia, thresholds de audio, el probe
-  de los cuatro fixtures sin documentar, el pad en sala. Un valor DMX adivinado
+- **La mayoria espera al rig o al dueño** - humo, el RunMode de las lyres, la
+  rejilla nueva, el tilt de las cabezas, el foco de los beams, los flashes, los
+  niveles de energia, los thresholds de audio, el probe de los cuatro fixtures
+  sin documentar y el pad en sala. Un valor DMX adivinado
   desde aqui es exactamente el fallo que este repo persigue.
 - **Cuatro esperan a algo externo**: renombrar la org de GitHub, el PDF del
   SMC-PAD (el sitio da 403 a `curl`), `xcode-select` en el Mac del show (fuera
@@ -30,21 +32,20 @@ ninguno esta esperando a que alguien escriba codigo:
   ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
   y cada una cambia como se opera. Se deciden, no se implementan de oficio.
 
-- [ ] **Las dos MAC WASH no estan en ningun grupo de fixtures (2026-08-31).**
-  Comprobado sobre `Vibra.qxw` y `Vibra-split.qxw`: los IDs 41 y 42 (33 y 34 en
-  `Vibra.qxw`) quedan fuera de los cuatro grupos, o sea sin banco de color y sin
-  matriz — solo les llegan las escenas de rueda que van a todo el rig. Es el
-  mismo agujero que dejaba a oscuras a los paneles. No se toca a ciegas: meterlas
-  en `Cabezas` (12x1, lleno) obliga a redimensionar la rejilla, y eso mueve a
-  cada cabeza de sitio en **todas** las figuras de matriz. Decidir con el rig
-  delante, en la misma sesion que el RunMode de la lyre.
-
-- [ ] **Re-hacer el grupo `PAR` del split como 8x2 (2026-08-31).** Es 7x3 con
-  las cabezas de las CLB2.4 pegadas a la derecha del bloque de PC-64 porque
-  hasta hoy no habia forma de mover una cabeza ya colocada. Ya la hay:
-  `qlctool patch --group-move "GROUP=FIXTURE[:HEAD]@X,Y"`. Cambia como pinta
-  cada patron sobre la rejilla, asi que se mira en el 3D o en sala antes de
-  quedarselo.
+- [ ] **Ver en sala lo que cambio la rejilla (2026-08-31).** Tres cosas nuevas,
+  todas correctas sobre el papel y ninguna vista todavia:
+  1. **Las dos MAC WASH ya tienen grupo propio, `Lyres`, 3x2** — una celda por
+     anillo (son tres anillos RGBW concentricos). Traen banco de color propio y
+     matrices propias. Mirar que los anillos pinten los tres, no solo el de
+     fuera, y que el patron sobre 3x2 se lea como algo y no como parpadeo.
+  2. **Las celdas de todos los grupos van ahora en orden de escenario**, no de
+     patch. `Cabezas` iba 1916, 9694, 4405, 7205 mm: un barrido salia a la
+     derecha, saltaba a la izquierda y volvia. Ahora barre de verdad. Mirar un
+     Fill o un Stripes sobre `Cabezas` y sobre `PAR` y confirmar que cruza la
+     sala en una direccion.
+  3. **La consola crecio de 430 a 503 botones** con el banco nuevo, y la columna
+     de bancos de la pagina manual se encoge para que quepan. Los marcos pasan
+     de 122 px de alto a 102. Confirmar que se sigue leyendo a 13".
 
 - [ ] **Humo, las dos cosas nuevas, verlas en sala (2026-08-30).** (1) La
   columna vertical ya no se pinta de blanco: `Humo Vertical YA` escribe solo la
