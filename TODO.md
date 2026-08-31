@@ -13,6 +13,39 @@ work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
+**Disposicion, 2026-08-31.** Se cerro todo lo que se podia cerrar sin el rig
+(siete items, en `~/p/TODO_LOG.md`). De los 39 `[ ]` y 7 `[~]` que quedan,
+ninguno esta esperando a que alguien escriba codigo:
+
+- **La mayoria espera al rig o al dueño** - humo, MAC WASH, tilt de las lyres,
+  foco de los beams, flashes, niveles de energia, thresholds de audio, el probe
+  de los cuatro fixtures sin documentar, el pad en sala. Un valor DMX adivinado
+  desde aqui es exactamente el fallo que este repo persigue.
+- **Cuatro esperan a algo externo**: renombrar la org de GitHub, el PDF del
+  SMC-PAD (el sitio da 403 a `curl`), `xcode-select` en el Mac del show (fuera
+  de red), y comprar el reemplazo del dongle DMX.
+- **Dos esperan una decision del dueño**: quedarse con `Vibra-split.qxw`, y
+  mezclar la rama `qlctool` en `main`.
+- **La auditoria de capacidades de QLC+** (sliders, MIDI, paletas, XY pad,
+  ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
+  y cada una cambia como se opera. Se deciden, no se implementan de oficio.
+
+- [ ] **Las dos MAC WASH no estan en ningun grupo de fixtures (2026-08-31).**
+  Comprobado sobre `Vibra.qxw` y `Vibra-split.qxw`: los IDs 41 y 42 (33 y 34 en
+  `Vibra.qxw`) quedan fuera de los cuatro grupos, o sea sin banco de color y sin
+  matriz — solo les llegan las escenas de rueda que van a todo el rig. Es el
+  mismo agujero que dejaba a oscuras a los paneles. No se toca a ciegas: meterlas
+  en `Cabezas` (12x1, lleno) obliga a redimensionar la rejilla, y eso mueve a
+  cada cabeza de sitio en **todas** las figuras de matriz. Decidir con el rig
+  delante, en la misma sesion que el RunMode de la lyre.
+
+- [ ] **Re-hacer el grupo `PAR` del split como 8x2 (2026-08-31).** Es 7x3 con
+  las cabezas de las CLB2.4 pegadas a la derecha del bloque de PC-64 porque
+  hasta hoy no habia forma de mover una cabeza ya colocada. Ya la hay:
+  `qlctool patch --group-move "GROUP=FIXTURE[:HEAD]@X,Y"`. Cambia como pinta
+  cada patron sobre la rejilla, asi que se mira en el 3D o en sala antes de
+  quedarselo.
+
 - [ ] **Humo, las dos cosas nuevas, verlas en sala (2026-08-30).** (1) La
   columna vertical ya no se pinta de blanco: `Humo Vertical YA` escribe solo la
   bomba y el master del LED, y el color lo pone la sala — "salia humo bien pero
@@ -166,11 +199,6 @@ workspaces.
   `binding a un control que el pad no manda` lo ve. Medido con
   `tools/smc-pad/midicap.swift`: PAD13 = 48, PAD1 = 36, PAD16 = 51; `<`/`>`
   **no** cambian de banco.
-- [ ] **`docs/smc-pad-led.md` se quedó atrás (2026-08-29).** Su sección
-  "Status and the honest next step" dice que el encoding de color sigue sin
-  resolver, y el puente lleva funcionando desde esa misma noche
-  (`tools/smc-pad/README.md` tiene la versión buena). Reescribir el final del
-  documento para que cuente el estado real en vez del de media tarde.
 - [!] **SMC-PAD pad RGB: proprietary BLE GATT, mechanism reverse-engineered
   (2026-08-29).** Full writeup in `docs/smc-pad-led.md`. In short: plain MIDI
   (full note sweep + CC, all three ports, owner watching) lights nothing.
@@ -294,15 +322,6 @@ workspaces.
   la rueda), `Nivel Fiesta Dinamico` (chase 30 s / ping-pong 8 s),
   `Gobo Shake` (jitter a 64) y el prisma girando a 25. Los holds y
   velocidades son opiniones hasta que alguien los vea.
-- [ ] **Extender `estrobo pegado` a sub-estados por nivel (2026-08-28, Codex
-  B4).** La regla une el reach de todo lo que cuelga del estado, así que el
-  `strobe-off` de `Intensidad Total` enmascara a un nivel de chase que no lo
-  escribe. El generador ya lo cubre (`Intensidad Peak` escribe strobe-off
-  para todo desde hoy), pero la regla no lo vería si se pierde: hace falta
-  computar el reach por alternativa de chaser (cada nivel como sub-estado).
-  Mismo hueco, en general, para canales LTP de efecto (prisma, rotación,
-  jitter): una regla "efecto sin dueño" que exija dueño en reposo por estado,
-  como ya hacen `acento sin dueño` y `estrobo pegado`.
 - [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
   FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
   espacio". Era real: el show viejo estrobaba en `Flash 100%`/`Flash 50%`
@@ -414,12 +433,6 @@ workspaces.
   1440x900, and whether `PgDn`/`PgUp` change page in operate mode without
   stealing focus. Files: `QLC+ Setups/Vibra-split.qxw` (current patch),
   `Vibra.qxw`, `Vibra-beats.qxw`.
-- [ ] **`test_qlcplus_loads_the_show` is flaky under the full suite.** Failed
-  once with `fixture 13 overlapping with fixture ...` while passing in
-  isolation and on every re-run (2026-08-25); several tests launch the real
-  QLC+ binary and appear to contend over its config. Smallest next step: give
-  each `validate_workspace` call its own `QT_QPA_PLATFORM`/config dir, or
-  serialise them with a session-scoped lock. `tools/qlctool/qlctool/validate.py`.
 - [ ] **Rename the GitHub org `DeluxeProducciones` — the company is now "Vibra
   Eventos", not Deluxe Producciones** (owner, 2026-08-24). When renaming: the
   org and likely the `DMX-Fixtures` repo, then update every reference — brain
@@ -441,11 +454,6 @@ workspaces.
   --base "7=255" --buttons` builds one scene per channel plus a walk chaser -
   press play and write down what each channel does. Do it in the same session as
   the physical-rig confirmation.
-- [ ] Fix the `5 Channel` mode in `QLC+ Fixtures/Chauvet-MiN-Wash.qxf`: it lists
-  Pan, Pan fine, Dimmer/Strobe, Color Macro, Reserved - **no Tilt**, which
-  cannot be right for a moving head. Harmless today (the patch uses the
-  13-channel mode) but it will bite whoever switches modes. Either correct it
-  against the manual or delete the mode.
 - [~] **Review `QLC+ Setups/Vibra.qxw`** - the fresh canonical show built by the
   toolkit on branch `qlctool`. Rebuilt 2026-08-25 after the owner reported that
   pressing AUTO stopped the show and that the console was an unusable 2662px
@@ -457,8 +465,10 @@ workspaces.
 - [ ] Put the two CLB2.4 grids in a fixture group. They are in none, so they get
   no colour bank and no matrix - only the rig-wide `Rueda Colores` scenes reach
   them (which is why AUTO no longer leaves them dark, 2026-08-25). `qlctool
-  patch <file> --group` is the edit; the `PAR` group's 3x3 grid has two free
-  cells.
+  patch <file> --group-add` is the edit; the `PAR` group's grid needs a free
+  cell (`--group-size` first). **Only `Vibra.qxw` still has this** (checked
+  2026-08-31): the split patches each CLB2.4 four times, one fixture per head,
+  and all eight are in `PAR`. So it dies with `Vibra.qxw` if the split wins.
 - [ ] Check on site how the 50-degree truss PARs sit over the DJ. The measured
   angle lands them at z=6417 - 1,9 m past the deck - with the beam passing about
   35 cm over his head, against 2,8 m at the 60 degrees the plot carried before.
@@ -536,11 +546,6 @@ workspaces.
   Open it beside `Vibra.qxw` and say whether it replaces it. If it does, the
   plot to keep is `vibra-stage-plot-split.json` and the heads want fanning
   apart rather than all at `-35`.
-- [ ] `qlctool patch --group-add` cannot move a head that is already in a cell -
-  it refuses with "cell (x, y) already holds fixture n". That is why the split's
-  `PAR` group is a 7x3 grid with the CLB2.4 heads bolted to the right of the
-  PC-64 block instead of a clean 8x2 that reads like the rig. Either allow an
-  explicit move or add a `--group-clear`.
 - [ ] Set the audio-trigger thresholds on site. **Updated 2026-08-27**: the
   bass band ("Graves") is now bound to `Flash 100%`, one of the GOLPES hits
   (a Scene, Flash mode, Override, outside any solo frame) — not the
@@ -553,20 +558,9 @@ workspaces.
   WX-60WPS. `qlctool` deliberately leaves them out of `Strobo ON`, because a
   guessed value closes a shutter instead of flashing it. The channel probe
   settles it in the same on-site session as the rest of the rig.
-- [ ] `DeluxeEventos2.qxw`'s **"Velocidad Cabezas" slider does nothing** - it is
-  a Level slider with an empty `<Level>`, no `<Channel>` under it, and QLC+ has
-  no speed slider mode at all. The generated show uses a `<SpeedDial>` instead.
-  Either fix or delete the slider before the old workspace is archived.
 - [ ] Merge branch `qlctool` into `main` once the fresh show is accepted. It
   carries the whole toolkit plus three format variants of DeluxeEventos2 used as
   test material.
-- [ ] `tools/qlctool/README.md`'s `qlctool newshow "DeluxeEventos2.qxw" ...
-  --out "Vibra.qxw"` example is stale (2026-08-27): it fails with "the plot
-  places fixtures that are not patched: [27, 28]", since `Vibra.qxw`'s patch
-  is two fixtures ahead of `DeluxeEventos2.qxw` (see "The current patch is
-  `Vibra.qxw`, not `DeluxeEventos2.qxw`" in `docs/rig.md`). Regenerate
-  `Vibra.qxw` from itself instead (`newshow "Vibra.qxw" --plot ... --out
-  "Vibra.qxw"`); fix or remove the README example.
 
 ## QLC+ feature audit (2026-08-27)
 
