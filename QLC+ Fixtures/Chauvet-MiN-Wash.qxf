@@ -89,13 +89,6 @@
   <Channel Number="11">Movement Macros</Channel>
   <Channel Number="12">Reserved</Channel>
  </Mode>
- <Mode Name="5 Channel">
-  <Channel Number="0" ActsOn="4">Pan</Channel>
-  <Channel Number="1">Pan fine</Channel>
-  <Channel Number="2">Dimmer/Strobe</Channel>
-  <Channel Number="3">Color Macro</Channel>
-  <Channel Number="4">Reserved</Channel>
- </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="689" ColourTemperature="4500"/>
   <Dimensions Weight="3.8" Width="173" Height="173" Depth="249"/>
