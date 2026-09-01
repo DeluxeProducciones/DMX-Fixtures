@@ -76,6 +76,16 @@ the shows carry the profile's *name*, the profile carries the numbers:
 .venv/bin/qlctool input-profile "../../QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi"
 ```
 
+QLC+ runs on *copies* of the repo's definitions, profile and gobos, and a
+copy it was never handed is the silent failure here: the show loads, validates
+and runs on last week's channel map. Before validating, and on the show Mac
+after every pull:
+
+```bash
+.venv/bin/qlctool install --check   # exit 1 and a list when QLC+ is behind
+.venv/bin/qlctool install           # copy what it lacks; restart QLC+ after
+```
+
 Smoke test, same date and machine:
 
 ```bash
@@ -99,6 +109,11 @@ Smoke test, same date and machine:
   installed, validation silently cannot run - do not claim it passed.
 - `*.autosave.qxw` files are QLC+'s transient editor state, gitignored;
   never read one as the show.
+- **Installed copies drift.** On 2026-09-01 four of the eleven definitions
+  in `~/Library/Application Support/QLC+/Fixtures` were a week behind the
+  repo - among them the fog machine's pump group, which is what stops a
+  released Flash from fogging on. `qlctool install --check` is the question;
+  nothing else asks it, QLC+ least of all.
 - **The MIDI input profile is generated, not written.** It comes from
   `qlctool/generate/smc_pad_device.py` via
   `qlctool input-profile "../../QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi"`, and
