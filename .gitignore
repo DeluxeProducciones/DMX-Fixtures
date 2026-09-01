@@ -7,3 +7,4 @@ __pycache__/
 # QLC+ writes this every 30 seconds while a workspace is open and deletes it
 # on a clean exit. It is transient editor state, not the show.
 *.autosave.qxw
+.coverage
