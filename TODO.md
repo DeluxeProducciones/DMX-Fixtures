@@ -627,3 +627,30 @@ DJ-reactive, not timecoded), Cue List + crossfader (theatrical), Audio/Video/
 Sequence functions (no use case), OS2L (only if the DJ runs Virtual DJ),
 Simple Desk (no cue stacks in v5; keypad covered by `qlctool probe`), channel
 modifiers, passthrough, extra universes.
+
+## Calidad del codigo (baseline adoptado 2026-09-01)
+
+`tools/qlctool` corre el gate compartido (`uv run baseline-py gate`), hoy en
+verde. Lo que queda es deuda anotada con fecha, y cada lista solo puede
+encoger:
+
+- [ ] Reducir el ratchet de ruff en `tools/qlctool/ruff.toml`: 142 simbolos
+      publicos sin docstring, 104 generadores con mas parametros de la cuenta
+      y 26 valores magicos (numeros de canal DMX y constantes de QLC+).
+- [ ] Decidir uno por uno los 24 `zip()` sin `strict=` (B905). No es cosmetico
+      aqui: dos listas que dejan de cuadrar en silencio son exactamente el
+      fallo que las reglas de `qlctool check` existen para cazar, asi que cada
+      sitio necesita saber si un desajuste de longitud es un bug o un recorte
+      esperado.
+- [ ] Vaciar el ratchet de mypy en `tools/qlctool/mypy.ini`: 73 modulos con
+      `ignore_errors`, 266 errores casi todos por anotaciones que faltan.
+      `lxml-stubs` ya se instalo y quito 67 de golpe.
+- [ ] Bajar los 170 hallazgos estructurales de
+      `tools/qlctool/.baseline-py-baseline.json`: 100 modulos con mas de una
+      unidad, 62 nombres de fichero que no dicen lo que declaran y 8 ficheros
+      por encima del limite de lineas (`live_console.py` con 1160,
+      `canonical_show.py` con 813, `cli.py` con 695). Tras cada arreglo,
+      `uv run baseline-py baseline update` reescribe el registro.
+- [ ] `tools/smc-pad/reference` tiene tres scripts de Python fuera de todo
+      esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si
+      se integran en `qlctool` o se quedan como referencia suelta.
