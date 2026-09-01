@@ -23,14 +23,71 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
   niveles de energia, los thresholds de audio, el probe de los cuatro fixtures
   sin documentar y el pad en sala. Un valor DMX adivinado
   desde aqui es exactamente el fallo que este repo persigue.
-- **Cuatro esperan a algo externo**: renombrar la org de GitHub, el PDF del
-  SMC-PAD (el sitio da 403 a `curl`), `xcode-select` en el Mac del show (fuera
+- **Cuatro esperan a algo externo**: renombrar la org de GitHub, `xcode-select` en el Mac del show (fuera
   de red), y comprar el reemplazo del dongle DMX.
 - **Dos esperan una decision del dueño**: quedarse con `Vibra-split.qxw`, y
   mezclar la rama `qlctool` en `main`.
 - **La auditoria de capacidades de QLC+** (sliders, MIDI, paletas, XY pad,
   ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
   y cada una cambia como se opera. Se deciden, no se implementan de oficio.
+
+## Revision de manuales y aprovechamiento del rig (2026-09-01)
+
+Se buscó manual para todo lo parcheado y se midió, fixture por fixture, qué
+canales escribe el show y cuáles no toca nunca (script de cobertura sobre
+`checks/driven_channels.py`, los tres workspaces dan lo mismo). Lo cerrado está
+en `docs/rig.md` (tabla de verificación) y en `~/p/TODO_LOG.md`; esto es lo
+que queda.
+
+- [ ] **Los canales de blanco no se encienden nunca.** Las dos MAC WASH 1915Z
+  llevan un LED blanco por anillo (canales 12, 16 y 20) y la Mini Led Moving
+  Head otro (canal 7); el show los escribe solo a 0 (apagado y blackout).
+  `generate/color_scene.py` reparte únicamente R, G y B, así que "Blanco",
+  "Luz Charla" (255,214,170) y el pad de blanco total salen mezclando los tres
+  LEDs de color, con menos luz y peor blanco que el emisor blanco que tienen
+  dedicado. Cambio de generador: cuando el color pedido es blanco o un blanco
+  cálido, escribir el rol `white` (y bajar el RGB, o sumarlo, según se vea en
+  sala). Con regla en `qlctool check` ("fixture con canal blanco y look blanco
+  que no lo escribe") y test. Ver en sala qué blanco gusta más antes de fijar
+  la mezcla.
+- [ ] **El zoom de las MAC WASH solo se usa abierto.** Es el único fixture del
+  rig con el ancho del haz en un canal (6-50 grados) y el show manda 255 en
+  todos los looks (`zoom_wide_pairs`). Cerrado da un haz tipo beam que en humo
+  se ve; un pulso de zoom al ritmo es un efecto que no cuesta nada. Decisión
+  del dueño, y después generador + regla (la regla `zoom_narrow` hoy prohíbe
+  justamente lo contrario, habría que darle una excepción con dueño).
+- [ ] **El frost ("Atomization", canal 12) de las 7R no se usa nunca.** Siempre
+  a 0. Con frost el beam pasa a wash suave para el modo "tranquilo" o "charla".
+  Probar en sala qué hace el canal (la definición solo tiene un rango 0-255) y
+  decidir.
+- [ ] **Velocidad de pan/tilt (canal 5) sin escribir en las cuatro cabezas con
+  ese canal.** CromoWash, MAC WASH y 7R declaran `FastSlow` (0 = rápido) y la
+  MiN Wash, ya corregida contra su manual, también: a 0 siguen el EFX sin
+  retardo, que es lo que queremos. No hay nada que cambiar mientras nadie lo
+  escriba; si un día se quiere movimiento "suave" es este canal y no el tempo
+  del EFX.
+- [ ] **Mini Led Moving Head: probar los canales 9-16 con el mapa candidato.**
+  Dos tablas OEM que coinciden en los ocho primeros canales dan 9-16 como
+  `velocidad pan/tilt, macro de color, velocidad macro, programa, velocidad
+  programa, pan fine, tilt fine, reset (150-200)` — detalle en `docs/rig.md`.
+  Hoy el show no escribe ninguno y a 0 todos están en la banda inerte. En sala:
+  `qlctool probe` sobre 18 o 19, subir el canal 10 por encima de 10 (debería
+  pisar el color), el 16 a 150-200 (debería resetear), y ver si el 8 a 0 es
+  shutter abierto. Si cuadra, la definición gana pan/tilt fine (no adyacentes:
+  `efx_16bit` ya sabe qué hacer) y el reset pasa a Maintenance.
+- [ ] **Vortex PC-64: solo lo decide un banco de pruebas.** Búsqueda del
+  2026-09-01 sin resultado (la marca no existe en internet; es etiqueta del
+  dueño sobre un PAR genérico). Los PAR64 de 5 canales vienen en tres mapas
+  incompatibles y uno de ellos (Stairville, 290x260 mm, muy parecido a este de
+  292x266) no tiene ni dimmer ni strobe: canal 1 modo, 2-4 RGB, 5 velocidad.
+  Un PAR solo, `qlctool probe`, y mirar (a) si el canal 4 a 0 apaga con RGB
+  arriba, (b) si el 5 estroba y en qué valor para.
+- [ ] **En el Mac del show, después de cada `git pull`: `qlctool install
+  --check`.** En este Mac cuatro de las once definiciones instaladas llevaban
+  una semana de retraso (rangos del blade de las 7R, grupo Intensity de la
+  bomba de humo vertical, las tres cabezas de la MAC WASH). Casi seguro que el
+  Mac del show está igual o peor. El comando copia definiciones, perfil y gobos
+  y avisa del drift; reiniciar QLC+ después.
 
 - [ ] **Ver en sala lo que cambio la rejilla (2026-08-31).** Tres cosas nuevas,
   todas correctas sobre el papel y ninguna vista todavia:
@@ -180,13 +237,6 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
   `smc_pad_device.py`, así que **el mapa del show es el de fábrica y el pad no
   necesita configurarse**. Queda escrito en `docs/show-operation.md`: si los
   pads hacen lo que no toca, resetear el pad, no reconfigurarlo.
-- [ ] **Conseguir el PDF real del manual del SMC-PAD.** Lo que hay en `Manual/`
-  es una transcripción hecha desde
-  <https://manuals.plus/sinco/smc-pad-midi-controller-manual>; ese sitio
-  responde 403 a una descarga directa (`curl`), así que el PDF hay que sacarlo
-  a mano desde el navegador, o de m-vave.com, o del QR de la parte de atrás del
-  aparato. El resto de `Manual/` son PDF del fabricante y este debería serlo
-  también: una transcripción se puede haber comido una tabla o un diagrama.
 - [x] **El mapa del pad estaba escrito tres veces y las tres discrepaban
   (2026-08-29).** El perfil `QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` declaraba
   las notas de fábrica 4-19 mientras el workspace estaba atado a 36-51, ocho
@@ -443,18 +493,18 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
   but they silently spawn duplicate clones (same trap as the POIComb->POITools
   rename), so re-point remotes explicitly. The `.qxw` `Author` field ("Oficina")
   needs no change.
-- [~] **Verify the remaining four undocumented fixtures on site.** Online search
-  (2026-08-24) settled only the Chauvet MiN Wash: its 13-channel mode matches
-  the manufacturer manual on channels 1-10 (Pan, Pan fine, Tilt, Tilt fine,
-  Vector speed, Dimmer/Strobe, R, G, B, Color Macros), which is everything the
-  toolkit drives. Generic BEAM 230W 7R, Vortex PC-64 LED S, HYULIGHTS
-  WX-60WPS-48PARTITION and LED Beam Mini cannot be verified remotely - those
-  names are shared by fixtures with different channel layouts (one 7R manual
-  found puts Color on ch1 and Pan on ch10; our definition has Pan on ch1). The
-  check is now a five-minute job on site: `qlctool probe <show> <fixture-id>
-  --base "7=255" --buttons` builds one scene per channel plus a walk chaser -
-  press play and write down what each channel does. Do it in the same session as
-  the physical-rig confirmation.
+- [~] **Verify the remaining undocumented fixtures on site.** Online search
+  (2026-08-24) settled the Chauvet MiN Wash, and on 2026-09-01 its manual was
+  recovered into `Manual/` and the definition corrected against it; the same
+  pass verified the LED Bar 240/8 against its manual and filed the AF-150's.
+  What paper cannot settle: Generic BEAM 230W 7R (owner-verified on the
+  hardware, no manual matches), Vortex PC-64 LED S (no such brand online;
+  three incompatible OEM layouts), HYULIGHTS WX-60WPS-48PARTITION and the
+  LED Beam Mini (a strong OEM candidate for channels 9-16 - see the 2026-09-01
+  section above). The check is a five-minute job on site: `qlctool probe
+  <show> <fixture-id> --base "7=255" --buttons` builds one scene per channel
+  plus a walk chaser - press play and write down what each channel does. Do it
+  in the same session as the physical-rig confirmation.
 - [~] **Review `QLC+ Setups/Vibra.qxw`** - the fresh canonical show built by the
   toolkit on branch `qlctool`. Rebuilt 2026-08-25 after the owner reported that
   pressing AUTO stopped the show and that the console was an unusable 2662px
