@@ -291,17 +291,33 @@ that button started it or when the function is the workspace's startup function
 ### Page 2 - Manual
 
 For somebody who does know the rig: the layers, on top of whatever page 1 is
-running. The colour bank per fixture group on keys 1-0 (now with the colour
-named on the button), the wheels, the movement shapes - with `Escenario` (the
-heads aimed at the stage, pan/tilt carried verbatim from the hand-built show's
-own scene, colour left to the running state) and `Centro` (parked) in the same
-solo frame, because a fixed aim and a drawn figure are exclusive - the beams'
-gobos and colour-wheel positions, a pad over the twelve heads big enough to
-aim with, the two speed dials, the dimmer looks, the fixture strobes, the
-`Master General` slider (the workspace's own GrandMaster, scaling every output
-under whatever is already running), and the audio triggers. The prism frame
-carries the hand-built console's per-beam picks beside all-on and all-off:
-`1`-`4`, `1 y 3`, `2 y 4`, the beams numbered by DMX address.
+running. The colour bank per fixture group on keys 1-0 (with the colour named
+on the button), the wheels, the movement shapes - with `Escenario` (the heads
+aimed at the stage, pan/tilt carried verbatim from the hand-built show's own
+scene, colour left to the running state) in the same solo frame, because a
+fixed aim and a drawn figure are exclusive - the beams' gobos and colour-wheel
+positions, a pad over the twelve heads big enough to aim with, the two speed
+dials, the dimmer looks, the fixture strobes, the `Master General` slider (the
+workspace's own GrandMaster, scaling every output under whatever is already
+running), and the audio triggers. The prism frame carries the hand-built
+console's per-beam picks beside all-on and all-off: `1`-`4`, `1 y 3`,
+`2 y 4`, the beams numbered by DMX address.
+
+**The colour banks, the wheel picks and `Escenario` are held, not latched**
+(2026-09-02). Two facts of the engine decide it. Red, green and blue are
+Intensity channels and QLC+ mixes those HTP - the higher value wins per
+channel - so a latched bank on top of a running state never showed its
+colour: AUTO on cyan plus key `1` was *white* on twenty-seven fixtures. And a
+wheel or a position is LTP, last writer wins, where "last" means the fader
+started most recently: a latched gobo pick lasted exactly until `Gobo
+Animacion`'s next step, four seconds later. A Flash button with **Override**
+puts its fader after every fader the state starts, however late, and with
+**ForceLTP** writes even the RGB channels as LTP (`Scene::writeDMX`,
+`forceLTP=true` skips the compare). So hold `1` and the heads are red - not
+red plus cyan - and let go and the state's colour is back the same frame.
+The `Centro` button is gone for the same reason: a parked head under a moving
+state is a lie that lasts one step, and the state that parks them is
+`Momento Charla`.
 
 The beams' wheels are here rather than in the library because picking a gobo is
 a live decision: somebody does it while the show runs.
@@ -315,8 +331,12 @@ colours in one beam - per beam and per mirrored pair, the old console's
 "Multi Color"), the panels' forty-two built-in effects, and beside those a
 `Vel. Paneles` fader - a Level
 slider over the four panels' speed channel, the hand-built console's "Strobo
-LED Effect Speed". At zero the cycle's own value (200) rules, because Level
-mixes HTP; pushed up it paces the running effect live. The two
+LED Effect Speed". The channel is in the Speed group, so it is LTP, not HTP:
+the fader *monitors* the running value (the cycle's 200) until somebody moves
+it, and from then on its Override fader wins outright - at zero too, which is
+the slowest, not "the cycle's" - until the red reset X hands the channel back
+(`VCSlider::writeDMXLevel`, 2026-09-02). The two-colour mixes on this page
+are held with ForceLTP like the banks, for the reason given on page 2. The two
 multipage frames inside carry a label per page naming the group, because three
 pages of identically captioned buttons is not a page count, it is a guess - and
 the page carries a paragraph saying what it is for, because 180 buttons
@@ -349,7 +369,7 @@ only keys that cannot collide with a colour bank on 1-0.
 | `-` | Flash 50% (Flash - same white, half the strobe speed) | page 1 |
 | `.` | Flash Color (Flash - strobe over the running colour) | page 1 |
 | `H` | Humo ON (Flash - the burst, held) | page 1 |
-| `F` / `T` | Strobo Rapido / Medio | page 1 |
+| `F` / `T` | Strobo Rapido / Medio (Flash - every shutter strobing, fast / slow) | page 1 |
 | `C` | Color Beam Animacion | page 1 |
 | `Backspace` | PARAR TODO (StopAll) | page 1 |
 | `W` / `E` | Rueda Colores / Rueda Mezcla | page 2 |
@@ -364,7 +384,8 @@ only keys that cannot collide with a colour bank on 1-0.
 | `PgDn` / `PgUp` | next / previous page | anywhere |
 
 Keys 1-0 are on every colour bank: every widget sees every key press, so `1`
-lights red on the heads, the bars and the PARs at once. As on the hand-built
+lights red on the heads, the bars and the PARs at once - for as long as it is
+held (the banks are Flash buttons with ForceLTP, see page 2). As on the hand-built
 console, `9` and `0` are not solids: they are the alternating `Azul / Rojo`
 and `Rojo / Azul` looks (restored 2026-08-28; Naranja and Rosa stay in the
 bank as keyless buttons). **Every widget sees
@@ -484,10 +505,18 @@ how a head goes dark mid-set: a MiN Wash puts "Closed" at 1-7. A channel with
 no labels at all whose whole job is the strobe - the Vortex PARs' and the
 panels' channel 5 - is driven as a bare speed, because the hand-built show ran
 exactly those channels at 250/255 for years and leaving them out is how
-`Strobo ON` shipped strobing half the rig (2026-08-27). The LED bars have no
-strobe channel of any kind, so `Strobo Rapido` and `Strobo Medio` do it the
-way the hand-built show does - a bounded chaser flipping the rig between
-white and `Todo Negro` at 125 ms and 250 ms a step.
+`Strobo ON` shipped strobing half the rig (2026-08-27). `Strobo Rapido` (`F`)
+and `Strobo Medio` (`T`) are the held version of the same thing: a Flash scene
+driving every strobe-capable channel fast or at the slow flash's speed, colour
+and dimmers left to the state. They used to be chasers flipping the rig
+between a white scene and a black one, and that never worked on a lit room:
+the black step wrote zeros to dimmers and RGB, all Intensity channels, and
+Intensity is HTP - under any state holding the dimmers at 255 the zeros lost
+and the "strobe" was white over the room's colour with never a black between,
+while the beams' colour wheel was sent to white and back every 125 ms
+(cross-audit, 2026-09-02). The LED bars have no strobe channel of any kind,
+and nothing in QLC+ can blink them to black on top of a lit state, so they sit
+the strobes out.
 
 The three flashes are the third kind: **a held flash is the strobe** on this
 show. `Flash 100%` is full white with every shutter driven near the top of

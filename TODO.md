@@ -35,98 +35,37 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
 
 Dos simuladores independientes de la salida DMX (ninguno usa las reglas de
 `qlctool check`), cruzados en dos rondas hasta coincidir, sobre los tres
-workspaces. `qlctool check` dice `503 botones revisados, ningun problema` en
-los tres, y todo lo de abajo esta verificado contra el XML, las definiciones y
-el motor de QLC+ (`~/p/qlcplus`). Cada item lleva la regla que le falta al
-checker: es la forma de cerrarlo (`CLAUDE.md`). Los simuladores y el informe
-completo se guardaron en el scratchpad de la sesion, no en el repo.
+workspaces. `qlctool check` decia `503 botones revisados, ningun problema` en
+los tres. Encontraron diez cosas; nueve eran defectos y se cerraron el mismo
+dia con ocho reglas nuevas, ocho tests de regresion y el generador corregido
+(evidencia en `~/p/TODO_LOG.md`, 2026-09-02). Lo que queda de aquella lista:
 
-Fisica del motor en la que se apoya todo: los canales del grupo Intensity son
-HTP y se ponen a cero cada ciclo; el resto es LTP, el ultimo fader escrito gana
-y el valor se queda cuando nadie lo escribe (`universe.cpp` `processFaders`,
-`fadechannel.cpp:181-184`); un fader nuevo se inserta detras de los existentes
-de su prioridad (`universe.cpp:217-242`), asi que gana LTP la funcion que
-arranco mas tarde.
-
-- [ ] **Los bancos de color (teclas 1-0) y todas las capas de color se SUMAN
-  al estado, nunca lo sustituyen.** RGB es HTP: `AUTO` en `Rig Cyan`
-  (0,255,255) + tecla `1` (`Rojo` en los 5 grupos, 255,0,0) = blanco en 27
-  fixtures. Mismo fallo que "dos niveles = blanco" (2026-08-25), un piso mas
-  abajo. En los 7R el banco escribe la rueda (LTP) y gana... hasta el siguiente
-  paso de `Rueda Colores` (<= 3,3 s). 117 botones afectados; solo el marco
-  "Ruedas y ciclos por grupo" lo avisa. Salidas: (a) bancos como Flash con
-  `Override="1"` y `ForceLTP="1"` (existe en el binario 5.2.2:
-  `flashForceLTP`; `scene.cpp:704` escribe saltandose el HTP) - "los cabezas en
-  rojo" de verdad mientras se mantiene; (b) aceptarlo y etiquetarlo. Regla
-  nueva: `capa que se suma al estado` (capa con color RGB > 0 sobre un estado
-  que colorea ese fixture).
-- [ ] **`STROBO` / `STROBO SUAVE` no pueden ir a negro con la sala encendida.**
-  `Strobo Negro` (644) escribe solo canales Intensity a 0 (y el modo de los
-  paneles a 0); bajo cualquier estado el `Intensidad ...` mantiene los dimmers a
-  255 y `universe.cpp:951-956` rechaza el 0. La sala ve blanco / color-del-
-  estado, nunca blanco / negro; en los 7R la rueda de color va a blanco (4) y
-  vuelve al color del estado cada 125 ms. Solo funciona bajo `Todo Negro`.
-  Salida: estrobo por shutter donde lo hay (como `Strobo ON`) + matriz `Strobe`
-  en pixeles; para las barras (sin shutter) no hay negro posible sobre un
-  estado encendido. Regla: un chaser con forma de estrobo cuyo paso negro es
-  todo Intensity, reachable con un estado en marcha.
-- [ ] **`MultiColor BEAM` (pagina 3) deja el canal 9 de los 7R (media
-  posicion de color) a 255 para toda la noche.** Solo las escenas 614-621 lo
-  escriben; ningun estado, banco ni `Blanco Total` lo toca, y un Toggle al
-  apagarse retira su fader sin reponer nada. Desde ese momento cada color de la
-  rueda sale partido en dos - la "media luna" del 2026-08-29 tiene aqui otra
-  causa posible. Salida: todo lo que escribe ch8 en un 7R (`wheel_color_values`)
-  escribe tambien ch9=0, como ya escribe ch12=0. Regla: capa Toggle que escribe
-  un canal LTP que ningun estado escribe (`acento sin dueño` solo mira Flash).
-- [ ] **`BLANCO TOTAL` no aparca nada LTP.** Escribe en los 7R solo shutter,
-  dimmer, rueda blanca y ch12. Pulsado desde `Todo Negro` (o desde un momento
-  con gobos) hereda gobo, prisma insertado y girando, shake, foco y posicion:
-  la luz de trabajo son cuatro gobos blancos con prisma en las paredes.
-  `Momento Charla` si aparca todo (`Cabezas Centro`, `Gobo - White Light`,
-  `Prisma - None`); `Blanco Total` deberia llevar las mismas escenas. Regla:
-  traspaso de estado a estado en canales LTP (gobo, prisma, rotacion, foco,
-  modo) que el estado nuevo enciende y no escribe.
-- [ ] **Los LED de las 4 maquinas de humo vertical se apagan en `Nivel Peak`,
-  `Nivel Fiesta Dinamico` y `Momento Locura`** (28 % del ciclo de energia por
-  tiempo, dos de sus cuatro fases). `Intensidad Peak` (700) escribe la bomba a
-  0 y omite el dimmer ch2; `Dimmer Chase` no tiene EFX para ellas; la rueda les
-  escribe RGB. El item del montaje 2026-08-29 pide que "suban y bajen con los
-  niveles". Regla: `rule_intensity.py:84-91` excluye todo fixture de tipo
-  Smoke, tambien los que llevan LED - excluir solo la bomba.
-- [ ] **Los picks "en vivo" de la pagina 2 duran un paso del chaser del
-  estado.** Gobos (20 botones), prisma (8), `Escenario`/`Centro`, color de
-  beam: Toggles sobre canales LTP que un chaser del estado vuelve a escribir
-  (`Gobo Animacion` cada 4 s, `Prisma Animacion` 8 s, movimientos 15 s / 6 s,
-  `Rueda Colores` 3,3 s); el paso nuevo crea un fader mas tarde y gana. Bajo
-  Fiesta/Peak/Locura un gobo dura <= 4 s y apuntar las cabezas al que habla
-  (`Escenario`) <= 15 s; bajo Ambiente/Tranquilo/Charla se mantienen. Nadie lo
-  dice en la consola. Salida: decidir (un solo frame que pare el chaser, o
-  etiqueta). Regla: capa Toggle sobre un canal LTP que un chaser del estado
-  reescribe.
-- [ ] **`Rueda Colores` funde la rueda mecanica de los 7R 800 ms en cada
-  paso.** El fade del chaser alcanza todos los canales que escribe la escena;
-  ch8 (grupo Colour) es LTP pero fundible (`fixture.cpp:501-506`, sin
-  `<ExcludeFade>`) y arranca del valor actual (`genericfader.cpp:215-218`):
-  Rojo (12) -> Azul (43) pasa por naranja, amarillo y verde en 0,8 s, 21 pasos
-  cada 3,3 s toda la noche; las ruedas por grupo lo hacen en 400 ms. `rueda de
-  color girando` solo mira el valor final. Salida: `<ExcludeFade>` en las
-  ruedas o fade 0 en las escenas que mueven ruedas. Regla: fade > 0 sobre un
-  canal de rueda (Colour/Gobo/Prism con rangos).
-- [ ] **Los blancos no usan los emisores White.** `Blanco Total`, `Flash
-  100%/50%`, `Rig Blanco`, `Luz Charla` escriben RGB=255 y dejan a 0 el White
-  de las Mini Led (ch7) y los tres White de cada MAC WASH (ch12/16/20); ningun
-  generador escribe el rol `white` (`color_scene.py:43-54`). Mismo hueco para un
-  fixture CMY: el generador lo omite entero. Salida: `color_scene_values`
-  escribe White cuando el color pedido es blanco (y Amber/UV cuando toque);
-  regla: look blanco que deja a 0 un emisor White.
-- [ ] **`Vel. Paneles`: la etiqueta y `docs/show-operation.md:316-319` dicen
-  HTP; el canal es Speed (LTP).** Con Monitor, al mover el slider entra en
-  override (`vcslider.cpp:466-502`) y gana siempre, tambien a 0 (= lo mas
-  lento), hasta pulsar la X roja. Inofensivo; corregir texto y etiqueta.
-- [ ] **`HUMO VERT` escribe bomba y dimmer pero no RGB**: la columna sale del
-  color del estado, no blanca como dice el item del montaje (bajo `Todo Negro`,
-  LED apagados). Decidir si es lo querido (como `Flash Color`) y ajustar el
-  texto o la escena.
+- [ ] **Confirmar en sala los bancos y los picks mantenidos.** Desde
+  2026-09-02 los bancos de color (teclas 1-0), las mezclas, los gobos, el
+  prisma, el color de los beams y `Escenario` son Flash con `Override` (y
+  `ForceLTP` los de color): van mientras se mantiene la tecla y el estado
+  vuelve al soltar. El motor lo garantiza (`Scene::writeDMX` con
+  `forceLTP=true` salta el HTP; el fader Flashing va detras de todos), pero
+  nadie lo ha visto con el rig delante. Siguiente paso: con `AUTO` en cyan,
+  mantener `1` y comprobar que los cabezas salen rojos, no blancos, y que al
+  soltar vuelven a cyan sin salto.
+- [ ] **Confirmar `STROBO` / `STROBO SUAVE` mantenidos** (ahora escenas de
+  shutter, como `Flash Color`): las barras LED no estroban porque no tienen
+  shutter, y eso es fisica, no un fallo - si el dueño quiere las barras en el
+  estrobo, la unica forma sobre una sala encendida es una matriz `Strobe` en
+  su grupo, que suma HTP con el color de la rueda.
+- [ ] **`<ExcludeFade>` en las ruedas: mirar la rueda de color de los 7R
+  durante `AUTO`.** Debe saltar de color a color; si sigue barriendo los
+  intermedios, QLC+ 5.2.2 no honra el tag y hay que poner fade 0 en las
+  escenas que escriben ruedas (`rueda fundida` lo veria).
+- [ ] **Los blancos usan ahora el emisor White** (Mini Led ch7, MAC WASH
+  ch12/16/20, con `white_level` = min(r,g,b)). Puede que el blanco resulte
+  mas frio o mas brillante que el RGB de antes; decidir en sala si se quiere
+  el White a tope o proporcional.
+- [ ] **`HUMO VERT` saca la columna del color de la sala, no blanca** - es
+  decision del dueño del 2026-08-30 ("la luz solo salia la blanca, no hacia
+  las transiciones de colores"), no un fallo; el item del montaje del
+  2026-08-29 que pedia "columna blanca" esta desfasado.
 
 Descartado en la auditoria (para no repetirlo): el `<Mode>` numerico de los
 EFX es correcto (`efxfixture.cpp:291` usa `toInt()`); no hay sombra HTP dentro
@@ -158,17 +97,6 @@ que queda.
   el color real de cada posición de 8 en 8, y corregir los nombres en
   `BEAM-LIGHT-230W-7R.qxf` (los rangos no se tocan). Regenerar después: las
   escenas de rueda cambian de valor si cambian los nombres.
-- [ ] **Los canales de blanco no se encienden nunca.** Las dos MAC WASH 1915Z
-  llevan un LED blanco por anillo (canales 12, 16 y 20) y la Mini Led Moving
-  Head otro (canal 7); el show los escribe solo a 0 (apagado y blackout).
-  `generate/color_scene.py` reparte únicamente R, G y B, así que "Blanco",
-  "Luz Charla" (255,214,170) y el pad de blanco total salen mezclando los tres
-  LEDs de color, con menos luz y peor blanco que el emisor blanco que tienen
-  dedicado. Cambio de generador: cuando el color pedido es blanco o un blanco
-  cálido, escribir el rol `white` (y bajar el RGB, o sumarlo, según se vea en
-  sala). Con regla en `qlctool check` ("fixture con canal blanco y look blanco
-  que no lo escribe") y test. Ver en sala qué blanco gusta más antes de fijar
-  la mezcla.
 - [ ] **El zoom de las MAC WASH solo se usa abierto.** Es el único fixture del
   rig con el ancho del haz en un canal (6-50 grados) y el show manda el extremo
   abierto en todos los looks (`zoom_wide_pairs`; desde 2026-09-02 es 0, no
