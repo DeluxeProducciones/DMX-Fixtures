@@ -39,6 +39,20 @@ canales escribe el show y cuáles no toca nunca (script de cobertura sobre
 en `docs/rig.md` (tabla de verificación) y en `~/p/TODO_LOG.md`; esto es lo
 que queda.
 
+- [ ] **Los nombres de los colores de la rueda de las 7R, confirmar en sala
+  (2026-09-02).** El perfil `Beam 230 SC-295-16CH` de Daslight es nuestra
+  definición rango por rango (estrobo, pasos de color y gobo, prisma, reset,
+  lámpara), pero nombra los catorce colores como la rueda Sharpy que copian
+  los clones: blanco, rojo, naranja, aguamarina, verde, verde claro, lavanda,
+  rosa, amarillo, magenta, cyan, CTO 2, CTO 1, CTB, azul oscuro. La nuestra
+  dice rojo, naranja, amarillo, verde, azul, rosa, ice, rosa claro, blanco
+  claro, azul claro, blanco cálido, UV, gris, amarillo claro. Como
+  `color_wheel_match` elige el color del beam **por el nombre**, si la tabla
+  tiene razón `Azul` manda 40-47 (verde claro) y `Amarillo` 24-31
+  (aguamarina). En sala: `qlctool probe` sobre el canal 8 de una 7R, apuntar
+  el color real de cada posición de 8 en 8, y corregir los nombres en
+  `BEAM-LIGHT-230W-7R.qxf` (los rangos no se tocan). Regenerar después: las
+  escenas de rueda cambian de valor si cambian los nombres.
 - [ ] **Los canales de blanco no se encienden nunca.** Las dos MAC WASH 1915Z
   llevan un LED blanco por anillo (canales 12, 16 y 20) y la Mini Led Moving
   Head otro (canal 7); el show los escribe solo a 0 (apagado y blackout).
@@ -707,7 +721,7 @@ encoger:
       por encima del limite de lineas (`live_console.py` con 1160,
       `canonical_show.py` con 813, `cli.py` con 695). Tras cada arreglo,
       `uv run baseline-py baseline update` reescribe el registro.
-- [ ] `tools/smc-pad/reference` tiene tres scripts de Python, y `tools/lightkey`
-      uno (el decodificador de perfiles de Lightkey, 2026-09-02), fuera de todo
-      esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si
+- [ ] `tools/smc-pad/reference` tiene tres scripts de Python, `tools/lightkey`
+      uno y `tools/daslight` dos (los decodificadores de bibliotecas de
+      fixtures, 2026-09-02), fuera de todo esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si
       se integran en `qlctool` o se quedan como referencia suelta.
