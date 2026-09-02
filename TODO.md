@@ -178,23 +178,22 @@ que queda.
   bajarlo, y regenerar. Los washes siguen en 127 a propósito - nadie se ha
   quejado de ellos y un cono ancho aguanta el centro del recorrido.
 
-- [ ] **Las dos MAC WASH 1915Z: confirmar en sala lo que dice ChamSys
-  (2026-08-29, actualizado 2026-09-02).** Llegaron en lugar de las CromoWash,
-  parcheadas en 23 CH en DMX 345 y 368, en el sitio de las CromoWash del back
-  truss (4 y 7); las CromoWash siguen parcheadas y aparcadas como spares en el
-  plano. El manual oficial sólo da la tabla de canales. El 2026-09-02 la
-  personalidad de ChamSys MagicQ para esta lyre (Fixture Finder 46511) dio lo
-  que faltaba y la definición ya lo lleva:
+- [ ] **Las dos MAC WASH 1915Z: confirmar en sala lo que dice el manual de
+  su gemela (2026-08-29, actualizado 2026-09-02).** Llegaron en lugar de las
+  CromoWash, parcheadas en 23 CH en DMX 345 y 368, en el sitio de las
+  CromoWash del back truss (4 y 7); las CromoWash siguen parcheadas y
+  aparcadas como spares en el plano. El manual de Mac Mah sólo da la tabla de
+  canales; el de la **Algam MW19x15Z** (misma cabeza, misma matriz, manualslib
+  3158887) da lo que faltaba y la definición ya lo lleva:
   1. **Zoom: 0 = abierto, 255 = cerrado.** Lo teníamos al revés: el show mandó
-     255 en todo look hasta hoy, o sea las dos lyres a 6 grados toda la noche
-     del 29. Ahora manda 0. **Si en sala salen cerradas**, ChamSys se equivoca:
-     volver el preset a `SmallToBig` en el `.qxf` y regenerar.
-  2. **Estrobo: 0 abierto, 1-127 lento a rápido, 128-159 "sudden", 160-191
-     pulso, 192-255 aleatorio.** `Strobo ON` cae ahora en 1-127; antes caía en
-     el aleatorio.
-  3. **Function mode: 0 = control DMX** sigue siendo suposición; ChamSys lo
-     llama `Macro` y tampoco da rangos. Si en 0 la lyre corre un programa
-     propio, ignorará el RGB del show.
+     255 en todo look hasta el 2026-09-02, o sea las dos lyres a 6 grados toda
+     la noche del 29. Ahora manda 0. **Si en sala salen cerradas**, volver el
+     preset a `SmallToBig` en el `.qxf` y regenerar.
+  2. **Estrobo: 0-9 sin estrobo, 10-255 lento a rápido** (el manual). ChamSys
+     lo partía en cuatro bandas y ponía el reset en 100-109; el manual dice
+     reset 250-255. Manda el manual.
+  3. **Function mode: 0-29 = control DMX**, ya no es suposición: el manual da
+     la tabla entera (colores fijos, cambios de color y cuatro efectos auto).
   Y confirmar en el 3D que las dos caben donde estaban las CromoWash (son algo
   más grandes: 325x188 mm contra 296x184).
 
@@ -708,6 +707,7 @@ encoger:
       por encima del limite de lineas (`live_console.py` con 1160,
       `canonical_show.py` con 813, `cli.py` con 695). Tras cada arreglo,
       `uv run baseline-py baseline update` reescribe el registro.
-- [ ] `tools/smc-pad/reference` tiene tres scripts de Python fuera de todo
+- [ ] `tools/smc-pad/reference` tiene tres scripts de Python, y `tools/lightkey`
+      uno (el decodificador de perfiles de Lightkey, 2026-09-02), fuera de todo
       esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si
       se integran en `qlctool` o se quedan como referencia suelta.
