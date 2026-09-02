@@ -51,11 +51,12 @@ que queda.
   que no lo escribe") y test. Ver en sala qué blanco gusta más antes de fijar
   la mezcla.
 - [ ] **El zoom de las MAC WASH solo se usa abierto.** Es el único fixture del
-  rig con el ancho del haz en un canal (6-50 grados) y el show manda 255 en
-  todos los looks (`zoom_wide_pairs`). Cerrado da un haz tipo beam que en humo
+  rig con el ancho del haz en un canal (6-50 grados) y el show manda el extremo
+  abierto en todos los looks (`zoom_wide_pairs`; desde 2026-09-02 es 0, no
+  255, ver el item de las MAC WASH). Cerrado da un haz tipo beam que en humo
   se ve; un pulso de zoom al ritmo es un efecto que no cuesta nada. Decisión
-  del dueño, y después generador + regla (la regla `zoom_narrow` hoy prohíbe
-  justamente lo contrario, habría que darle una excepción con dueño).
+  del dueño, y después generador + regla (la regla `zoom sin declarar` hoy
+  exige justamente lo contrario, habría que darle una excepción con dueño).
 - [ ] **El frost ("Atomization", canal 12) de las 7R no se usa nunca.** Siempre
   a 0. Con frost el beam pasa a wash suave para el modo "tranquilo" o "charla".
   Probar en sala qué hace el canal (la definición solo tiene un rango 0-255) y
@@ -66,15 +67,17 @@ que queda.
   retardo, que es lo que queremos. No hay nada que cambiar mientras nadie lo
   escriba; si un día se quiere movimiento "suave" es este canal y no el tempo
   del EFX.
-- [ ] **Mini Led Moving Head: probar los canales 9-16 con el mapa candidato.**
-  Dos tablas OEM que coinciden en los ocho primeros canales dan 9-16 como
-  `velocidad pan/tilt, macro de color, velocidad macro, programa, velocidad
-  programa, pan fine, tilt fine, reset (150-200)` — detalle en `docs/rig.md`.
-  Hoy el show no escribe ninguno y a 0 todos están en la banda inerte. En sala:
-  `qlctool probe` sobre 18 o 19, subir el canal 10 por encima de 10 (debería
-  pisar el color), el 16 a 150-200 (debería resetear), y ver si el 8 a 0 es
-  shutter abierto. Si cuadra, la definición gana pan/tilt fine (no adyacentes:
-  `efx_16bit` ya sabe qué hacer) y el reset pasa a Maintenance.
+- [ ] **Mini Led Moving Head: confirmar en sala los canales 9-16 (adoptados
+  el 2026-09-02).** Tres fuentes que coinciden en los ocho primeros canales
+  (manual Betopper/Big Dipper LM108, manual SHEHDS 12x12W, personalidad
+  ChamSys LM108) dan 9-16 como `velocidad pan/tilt, macro de color, velocidad
+  macro, programa, velocidad programa, pan fine, tilt fine, reset (150-255)`,
+  y la definición ya lo declara así (detalle en `docs/rig.md`). El show
+  escribe a 0 el programa (con cada color) y los fine (con cada aim); nada
+  más. En sala: `qlctool probe` sobre 18 o 19, subir el canal 10 por encima
+  de 10 (debería pisar el color), el 16 a 150 (debería resetear), y ver si el
+  8 a 0 es shutter abierto. Si algo no cuadra, volver esos canales a
+  `NoFunction` y regenerar.
 - [ ] **Vortex PC-64: solo lo decide un banco de pruebas.** Búsqueda del
   2026-09-01 sin resultado (la marca no existe en internet; es etiqueta del
   dueño sobre un PAR genérico). Los PAR64 de 5 canales vienen en tres mapas
@@ -175,19 +178,23 @@ que queda.
   bajarlo, y regenerar. Los washes siguen en 127 a propósito - nadie se ha
   quejado de ellos y un cono ancho aguanta el centro del recorrido.
 
-- [ ] **Las dos MAC WASH 1915Z, tres cosas que hay que ver en sala
-  (2026-08-29).** Llegaron en lugar de las CromoWash, parcheadas en 23 CH en
-  DMX 345 y 368, en el sitio de las CromoWash del back truss (4 y 7); las
-  CromoWash siguen parcheadas y aparcadas como spares en el plano. El manual
-  oficial de Mac Mah está en `Manual/` y sólo da la tabla de canales: tres
-  cosas no las dice y están puestas por cómo funciona la plataforma:
-  1. **Qué extremo del zoom es abierto.** La definición declara `SmallToBig`,
-     así que el show manda 255 en todo look que las enciende
-     (`zoom_wide_pairs`). Si en sala salen cerradas, es cambiar el preset de
-     esa capacidad a `BigToSmall` en el `.qxf` y regenerar.
-  2. **El estrobo.** Declarado 0-10 sin estrobo, 11-255 de lento a rápido.
-  3. **El canal Function mode.** Declarado 0 = control DMX. Si en 0 la lyre
-     corre un programa propio, ignorará el RGB del show.
+- [ ] **Las dos MAC WASH 1915Z: confirmar en sala lo que dice ChamSys
+  (2026-08-29, actualizado 2026-09-02).** Llegaron en lugar de las CromoWash,
+  parcheadas en 23 CH en DMX 345 y 368, en el sitio de las CromoWash del back
+  truss (4 y 7); las CromoWash siguen parcheadas y aparcadas como spares en el
+  plano. El manual oficial sólo da la tabla de canales. El 2026-09-02 la
+  personalidad de ChamSys MagicQ para esta lyre (Fixture Finder 46511) dio lo
+  que faltaba y la definición ya lo lleva:
+  1. **Zoom: 0 = abierto, 255 = cerrado.** Lo teníamos al revés: el show mandó
+     255 en todo look hasta hoy, o sea las dos lyres a 6 grados toda la noche
+     del 29. Ahora manda 0. **Si en sala salen cerradas**, ChamSys se equivoca:
+     volver el preset a `SmallToBig` en el `.qxf` y regenerar.
+  2. **Estrobo: 0 abierto, 1-127 lento a rápido, 128-159 "sudden", 160-191
+     pulso, 192-255 aleatorio.** `Strobo ON` cae ahora en 1-127; antes caía en
+     el aleatorio.
+  3. **Function mode: 0 = control DMX** sigue siendo suposición; ChamSys lo
+     llama `Macro` y tampoco da rangos. Si en 0 la lyre corre un programa
+     propio, ignorará el RGB del show.
   Y confirmar en el 3D que las dos caben donde estaban las CromoWash (son algo
   más grandes: 325x188 mm contra 296x184).
 
