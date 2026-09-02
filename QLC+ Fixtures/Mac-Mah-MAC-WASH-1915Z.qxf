@@ -14,15 +14,25 @@
  <Channel Name="Tilt" Preset="PositionTilt"/>
  <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
  <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltFastSlow"/>
+ <!-- Which end is wide is not in the manual (it prints "Zoom 000-255" and
+      nothing else) and the first definition guessed narrow-to-wide, so every
+      look sent 255 and ran the wash at its narrowest. ChamSys MagicQ's own
+      MacMah MacWash1915Z personality (Fixture Finder ids 46510/46511, edited
+      2023-07-24) says "Wide to Narrow 0-255": 0 is the 50-degree end. Until
+      somebody in the room says otherwise, that is the better source. -->
  <Channel Name="Zoom">
   <Group Byte="0">Beam</Group>
-  <Capability Min="0" Max="255" Preset="SmallToBig">Zoom 6-50 degrees, narrow to wide</Capability>
+  <Capability Min="0" Max="255" Preset="BigToSmall">Zoom 50-6 degrees, wide to narrow</Capability>
  </Channel>
  <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <!-- Ranges from the same ChamSys personality; the manual gives none. -->
  <Channel Name="Strobe">
   <Group Byte="0">Shutter</Group>
-  <Capability Min="0" Max="10" Preset="ShutterOpen">No strobe</Capability>
-  <Capability Min="11" Max="255" Preset="StrobeFreqRange" Res1="1" Res2="20">Strobe 1-20Hz</Capability>
+  <Capability Min="0" Max="0" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="1" Max="127" Preset="StrobeSlowToFast">Strobe slow to fast</Capability>
+  <Capability Min="128" Max="159">Sudden strobe slow to fast</Capability>
+  <Capability Min="160" Max="191" Preset="PulseSlowToFast">Pulse slow to fast</Capability>
+  <Capability Min="192" Max="255" Preset="StrobeRandomSlowToFast">Random strobe slow to fast</Capability>
  </Channel>
  <Channel Name="Red" Preset="IntensityRed"/>
  <Channel Name="Green" Preset="IntensityGreen"/>
@@ -50,8 +60,9 @@
  </Channel>
  <Channel Name="Reset">
   <Group Byte="0">Maintenance</Group>
-  <Capability Min="0" Max="249">No function</Capability>
-  <Capability Min="250" Max="255" Preset="ResetAll">Reset</Capability>
+  <Capability Min="0" Max="99">No function</Capability>
+  <Capability Min="100" Max="109" Preset="ResetAll">Reset</Capability>
+  <Capability Min="110" Max="255">No function</Capability>
  </Channel>
  <Mode Name="15 Channel">
   <Channel Number="0">Pan</Channel>

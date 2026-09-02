@@ -34,11 +34,18 @@ it to that show. The CromoWash stay patched and park with the other spares in
 the plot. The MAC WASH is the first fixture in this rig whose **beam width is a
 DMX channel**: `zoom_wide_pairs` writes it wide in every look that lights it,
 `rule_zoom_narrow` fails any scene that forgets, and which end is wide comes
-from the definition's `SmallToBig` capability preset. Two things in its
-definition are read off the platform rather than out of the manual, which
-documents neither: the strobe's "0-10 no strobe / 11-255 slow to fast" split,
-and that 0 on the Function mode channel is DMX control. Both are one-line fixes
-in the `.qxf` if the room says otherwise.
+from the definition's capability preset. **That preset was wrong until
+2026-09-02.** The manual prints `Zoom 000-255` and nothing else, the first
+definition guessed `SmallToBig`, and the show sent 255 to every look - which
+on this unit is the 6-degree end, so both washes ran as pencils. ChamSys
+MagicQ's own personality for the MacMah MacWash1915Z (Fixture Finder ids
+46510 and 46511, edited 2023-07-24) says *Wide to Narrow 0-255*, and it also
+gives the strobe (0 open, 1-127 strobe slow to fast, 128-159 sudden, 160-191
+pulse, 192-255 random) and the reset (100-109) the manual leaves out. The
+definition carries all three now, `zoom_wide_pairs` writes 0, and `Strobo ON`
+lands inside 1-127 instead of in the random band. What stays a platform
+guess: that 0 on the Function mode channel is DMX control - ChamSys calls the
+channel `Macro` and gives it no ranges either.
 
 The rig has **not** been confirmed against the physical hardware. That check is
 an on-site job.
@@ -466,9 +473,9 @@ QLC+'s own definition, vendored here with one correction - see below.
 | Vortex PC-64 LED S | No manual found anywhere - searched again on 2026-09-01 (manufacturer, Spanish shops, manual sites, second-hand ads, all spellings): "Vortex" as a stage-lighting brand has no web presence, so the name is the owner's label on a rebadged can. Generic 5-channel PAR64s come in **three incompatible layouts** - `R, G, B, Dimmer, Strobe` (what the definition says), `R, G, B, Dimmer, Strobe` plus macros in an 8-channel mode, and Stairville's `Mode, R, G, B, Speed` with no dimmer or strobe at all, whose 290 x 260 mm body is uncomfortably close to this one's 292 x 266 - so paper cannot settle it. The hand-built show strobed them on channel 5 and the owner saw them flicker, which fits the first layout and not the last. Only the channel probe on one can settles it |
 | Stairville LED Bar 240/8 RGB | **Verified against `Manual/Stairville Led Bar 240.pdf`** on 2026-09-01 (7.7 and 8): the 24-channel mode is red, green, blue per segment, eight segments in order, exactly as QLC+'s own definition declares it, and the technical data matches - 240 LEDs in eight segments, 30 degrees, 36 W, 1064 x 88 x 65 mm, 2,6 kg. The other three modes (2, 3, 5 channels) are the bar's own programmes or one colour for the whole bar; 24 is the only one that gives the matrices eight cells. The definition is QLC+'s, not vendored |
 | Stairville AF-150 (fog) | **Manual in `Manual/`** since 2026-09-01 (Thomann's v7 of 2023, EN and ES). One DMX channel, 0-255 fog output, nothing else - so patching it as QLC+'s `Generic Smoke / Amount` is exact, and QLC+'s own `Stairville AF-150 / 1ch` differs only in the name and the physical block. The manual gives no dead band and no ready signal over DMX: 0 is "no fog", and whether it is warm is a green LED on the wired remote |
-| Mac Mah MAC WASH 1915Z | Manual in `Manual/` (official, six languages); it gives the channel table and the menu and nothing about ranges. The strobe's 0-10 / 11-255 split and the Function Mode channel's "0 = DMX" are read off the platform, not the manual - see the MAC WASH paragraph at the top of this page, and TODO |
+| Mac Mah MAC WASH 1915Z | Manual in `Manual/` (official, six languages): channel table and menu, no ranges. **Zoom, strobe and reset ranges verified against ChamSys MagicQ's personality on 2026-09-02** (Fixture Finder ids 46510/46511 - the search of other programs' fixture libraries was the owner's idea, and it was the only place that had this unit). The zoom ran backwards in the first definition; see the MAC WASH paragraph at the top of this page. The Function mode channel's "0 = DMX" is still a platform guess |
 | Generic LED Spray Fog (humo vertical) | Verified against the scanned leaflet and its clean twin, the Audibax Geyser 2000 RGB manual (same OEM map), both in `Manual/` - see [the four vertical fog machines](#the-four-vertical-fog-machines-replaced-the-spare-2026-08-29) |
-| LED Beam Mini | Declares 16ch with channels 9-16 "No function". **Almost certainly the OEM 36 x 3 W RGBW "LED beam/wash" firmware** (2026-09-01): the body in the definition - 310 x 210 x 365 mm, 6,7 kg - is an Oukaning 36x3W listing to the millimetre, and two published charts whose first eight channels are exactly ours (Betopper/Big Dipper LM108, which QLC+ ships as `Betopper-LM108.qxf`, and the SHEHDS 12x12W) both give 9-16 as `Pan/Tilt speed, Colour macro, Macro speed, Built-in program, Program speed, Pan fine, Tilt fine, Reset (150-200)`. So the "single 70 W LED" is a placeholder and the unit is not a mini. The show writes none of 9-16, so it sits at 0, which on that chart is the safe band everywhere - speed fastest, no macro, no programme, no reset. Not adopted into the definition from paper: the channel probe confirms it in five minutes on site (walk 9 to 16; 10 above ~10 should override the colour, 16 at 150-200 should reset), and only then do the fine channels and the speed become something the generator may write. Neither chart labels an open band on the strobe channel, so `0 = open` is on the same probe |
+| LED Beam Mini | **Channels 9-16 settled on 2026-09-02 off three agreeing sources** - the Betopper/Big Dipper LM108 manual, the SHEHDS 12x12W manual and ChamSys MagicQ's LM108 personality (id 10327), all of which share our first eight channels exactly - as `Pan/Tilt speed, Colour macro, Macro speed, Built-in program, Program speed, Pan fine, Tilt fine, Reset (150-255)`, with the strobe 0 = open and 1-255 slow to fast. The body in the definition (310 x 210 x 365 mm, 6,7 kg) is an Oukaning 36x3W RGBW listing to the millimetre, so the "single 70 W LED" is a placeholder and the unit is not a mini. The show writes the programme channel to 0 with every colour (`mode_park`) and the fine channels to 0 with every aim; nothing else of 9-16 is written, and 0 is the inert band on all of them. The fine channels sit at 14 and 15, not beside the coarse ones, so the Mini is on the 8-bit side of `efx_16bit` with the beams and every wash figure is now a 16-bit EFX plus an 8-bit one under a Collection. The channel probe on site is what promotes this from "the OEM's chart" to "this unit's": walk 9 to 16, 10 above 10 should override the colour, 16 at 150 should reset |
 
 ### The CLB2.4's beam angle was missing
 
@@ -575,3 +582,13 @@ are left alone.
 DMX channel of that fixture plus a walk chaser: press play and write down what
 each channel does. `--base` holds a dimmer open, since a head with a mechanical
 shutter shows nothing otherwise.
+
+Before the probe, the fixture libraries of other programs are worth an hour
+(2026-09-02, the owner's idea): a personality is somebody's reading of the
+manufacturer's chart, ranges included. ChamSys MagicQ's Fixture Finder
+(`secure.chamsys.co.uk/fixturefinder`, an open JSON endpoint at `lib.php`
+taking `manufacturers` and `fixturename`) had the MAC WASH 1915Z and the Mini's
+OEM; Open Fixture Library (722 fixtures), Freestyler (2,040 profiles),
+DMXControl's DDF API (1,536 devices), Avolites (metadata only, binaries behind
+a 404) and Daslight/Sunlite (no public search) had neither. Match on channel
+*order*, never on a name - these units are sold under a dozen names each.
