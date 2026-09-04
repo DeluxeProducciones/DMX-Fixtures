@@ -1,0 +1,207 @@
+
+        manuals.plus
+        HYULIGHTS
+        HYULIGHTS HYU-60PS Mini LED RGBW Strobe Light User Manual
+  HYULIGHTS HYU-60PS
+  Sign in to save this manual  Sign in to bookmark this manual and keep private notes.
+        HYULIGHTS HYU-60PS Mini LED RGBW Strobe Light
+        User Manual - Model: HYU-60PS
+            1. Introduction
+            Thank you for choosing the HYULIGHTS HYU-60PS Mini LED RGBW Strobe Light. This professional stage light is a powerful and versatile device designed for various lighting effects.
+            Package Contents
+            Upon unpacking the device, please ensure all items listed below are present and in good condition. If any damage is found, please consult your dealer immediately and do not attempt to install the device.
+                One (1) HYU-60PS Mini LED RGBW Strobe Light unit
+                One (1) Power Cable
+                One (1) User Manual
+                One (1) Bow Mount
+                Two (2) Screws for mounting
+                Figure 1: HYU-60PS Package Contents
+            2. Technical Specifications
+            The HYULIGHTS HYU-60PS Mini LED RGBW Strobe Light offers the following technical specifications:
+                        Parameter | 
+                        Value | 
+                 | 
+                    Voltage | 110V~240V, 50-60HZ | 
+                    Power Consumption | 60W | 
+                    LED Configuration | 280pcs 8 Partition SMD5050 RGB 3in1 0.2W LED + 56pcs 4 Partition White 0.2W | 
+                    DMX Channels | 4/6/12/24/30 Channel | 
+                    Strobe | Variable strobe speeds (any color) | 
+                    Dimmer | 0-100% smooth dimming | 
+                    DMX Interface | 3-pin XLR input/output | 
+                    Control Modes | Auto, Sound, DMX, Master/Slave | 
+                    Housing Material | Plastic Case | 
+                    Product Size | 25cm x 13cm x 7cm (9.84in x 5.12in x 2.76in) | 
+                    Net Weight | 0.7 kg (1.54 lbs) | 
+                    Luminous Flux | 2000-82000 | 
+                    Installation Method | Self-contained | 
+                    Certification | CE, FCC, RoHS, WEEE | 
+                    Occasion | Professional Stage & DJ | 
+                    Item Type | Stage Lighting Effect | 
+                Figure 2: Product Dimensions
+                Figure 3: Detailed Product Specifications
+            3. Setup
+            3.1 DMX-512 Control Connection
+            To connect the strobe light to a DMX controller, use a standard 3-pin XLR cable. Connect the XLR cable to the 3-pin XLR female output of your DMX controller and the other end to the 3-pin XLR male input of the strobe light. Multiple units can be chained together via a serial link. Ensure the required cable is a two-conductor shielded cable with XLR input and output connectors.
+                Figure 4: DMX-512 Wiring Diagram
+            3.2 Physical Installation
+            The HYU-60PS is designed for self-contained installation. Use the provided bow mount and screws to securely attach the light to a truss, stand, or other suitable mounting surface. Ensure the mounting location can support the weight of the fixture and that it is positioned safely to avoid obstruction or accidental dislodgement.
+                Figure 5: Rear Panel with DMX and Power Connections
+            4. Operation
+            4.1 Menu Functions
+            The device features a digital display and control buttons (MENU, UP, DOWN, ENTER) for navigating settings and selecting operating modes.
+                Figure 6: Control Panel and Digital Display
+            Below is a description of the main menu functions:
+                        Num | 
+                        Content | 
+                        Value | 
+                        Function Declaration | 
+                 | 
+                    1 | A001 | 001-512 | DMX512 address setting | 
+                    2 | 12CH | 4/6/12/24/30 | Channel mode setting | 
+                    3 | R255 | 000-255 | Red dimming, from dark to bright | 
+                    4 | G255 | 000-255 | Green dimming, from dark to bright | 
+                    5 | B255 | 000-255 | Blue dimming, from dark to bright | 
+                    6 | W255 | 000-255 | White dimming, from dark to bright | 
+                    7 | F000 | 005-255 | Total strobe, from slow to fast | 
+                    8 | AU01 | 01-08 | UP to switch the effect (Press ENTER to set the speed SP01-SP15) | 
+                    9 | EF01 | 00-20 | UP to switch the effect (Press ENTER to set the speed SP01-SP15) | 
+                    10 | UF01 | 00-45 | UP to switch the effect (Press ENTER to set the speed SP01-SP15) | 
+                    11 | SU01 | 01-03 | Sound mode (Press ENTER to set the sensitivity SE01-SE15) | 
+            4.2 DMX Channels
+            The HYU-60PS supports multiple DMX channel modes. Select the appropriate channel mode (4, 6, 12, 24, or 30 channels) via the menu to match your DMX controller setup. Each channel controls specific functions as detailed in the tables below.
+            4-Channel Mode
+                        Channel | 
+                        Value | 
+                        Function Declaration | 
+                 | 
+                    CH 1 | 000-255 | R red dimming, from dark to bright | 
+                    CH 2 | 000-255 | G Green dimming, from dark to bright | 
+                    CH 3 | 000-255 | B Blue dimming, from dark to bright | 
+                    CH 4 | 000-255 | W White dimming, from dark to bright | 
+            6-Channel Mode
+                        Channel | 
+                        Value | 
+                        Function Declaration | 
+                 | 
+                    CH 1 | 000-255 | Total dimming, from dark to bright | 
+                    CH 2 | 000-255 | Total strobe, from slow to fast | 
+                    CH 3 | 000-255 | R red dimming, from dark to bright | 
+                    CH 4 | 000-255 | G Green dimming, from dark to bright | 
+                    CH 5 | 000-255 | B Blue dimming, from dark to bright | 
+                    CH 6 | 000-255 | W White dimming, from dark to bright | 
+            12-Channel Mode
+                        Channel | 
+                        Value | 
+                        Function Declaration | 
+                 | 
+                    CH 1 | 000-255 | Total dimming, from dark to bright | 
+                    CH 2 | 005-255 | RGB strobe, from slow to fast (W strobe is CH6) | 
+                    CH 3 | 000-005 | Perform the CH9-CH11, RGB dimming | 
+                     | 006-010 | Static color, CH4 Select (red, green, blue, yellow, purple, cyan, white) | 
+                     | 011-015 | Breathing effect, CH5 Select color | 
+                     | 016-020 | Jump change effect | 
+                     | 021-025 | Gradient change effect | 
+                     | 026-030 | Pulse change effect, CH5 Select color | 
+                     | 031-032 | Autorun effect-1, CH5 Select color (cycle autorun) | 
+                     | 033-034 | Autorun effect-2, CH5 Select color | 
+                     | ... | ... | 
+                     | 203-204 | Autorun effect-87, CH5 Select color | 
+                     | 205-229 | Autorun effect-88 (full color effects) | 
+                     | 230-233 | Sound mode 1, CH5 Select color | 
+                     | 234-237 | Sound mode 2, CH5 Select color | 
+                     | ... | ... | 
+                     | 246-249 | Sound mode 5, CH5 Select color | 
+                     | 250-255 | Sound mode 6, CH5 Select color | 
+                    CH 4 | 000-255 | Autorun effect: adjustment speed, from slow to fast. Sound mode: adjustment sensitivity, from low to high (The highest sensitivity is the sensitivity set by the menu). | 
+                    CH 5 | 000-031 | Default color | 
+                     | 032-063 | Red, CH3 Manual color selection | 
+                     | 064-095 | Green, CH3 Manual color selection | 
+                     | 096-127 | Blue, CH3 Manual color selection | 
+                     | 128-159 | Yellow, CH3 Manual color selection | 
+                     | 160-191 | Purple, CH3 Manual color selection | 
+                     | 192-223 | Cyan, CH3 Manual color selection | 
+                     | 224-255 | White, CH3 Manual color selection | 
+                    CH 6 | 005-255 | W strobe, from slow to fast (RGB strobe is CH2) | 
+                     | 000-005 | Perform the CH12, W dimming | 
+                     | 006-010 | W effect-1 (cycle effect) | 
+                     | 011-015 | W effect-2 (W static effect) | 
+                    CH 7 | ... | ... | 
+                     | 206-210 | W effect-41 | 
+                     | 211-255 | W effect-42 | 
+                    CH 8 | 000-255 | W effect adjustment speed, from slow to fast | 
+                    CH 9 | 000-255 | R red dimming, from dark to bright | 
+                    CH 10 | 000-255 | G Green dimming, from dark to bright | 
+                    CH 11 | 000-255 | B Blue dimming, from dark to bright | 
+                    CH 12 | 000-255 | W White dimming, from dark to bright | 
+            24-Channel Mode (Point Control)
+                        Channel | 
+                        Value | 
+                        Function Declaration | 
+                 | 
+                    CH 1 | 000-255 | R1 red dimming, from dark to bright | 
+                    CH 2 | 000-255 | G1 green dimming, from dark to bright | 
+                    CH 3 | 000-255 | B1 blue dimming, from dark to bright | 
+                    ... | ... | ... | 
+                    CH 22 | 000-255 | R8 red dimming, from dark to bright | 
+                    CH 23 | 000-255 | G8 green dimming, from dark to bright | 
+                    CH 24 | 000-255 | B8 blue dimming, from dark to bright | 
+            30-Channel Mode (Point Control)
+                        Channel | 
+                        Value | 
+                        Function Declaration | 
+                 | 
+                    CH 1 | 000-255 | Total dimming, from dark to bright | 
+                    CH 2 | 000-255 | Total strobe, from slow to fast | 
+                    CH 3 | 000-255 | R1 red dimming, from dark to bright | 
+                    CH 4 | 000-255 | G1 green dimming, from dark to bright | 
+                    CH 5 | 000-255 | B1 blue dimming, from dark to bright | 
+                    ... | ... | ... | 
+                    CH 24 | 000-255 | R8 red dimming, from dark to bright | 
+                    CH 25 | 000-255 | G8 green dimming, from dark to bright | 
+                    CH 26 | 000-255 | B8 blue dimming, from dark to bright | 
+                    CH 27 | 000-255 | W1 white dimming, from dark to bright | 
+                    CH 28 | 000-255 | W2 white dimming, from dark to bright | 
+                    CH 29 | 000-255 | W3 white dimming, from dark to bright | 
+                    CH 30 | 000-255 | W4 white dimming, from dark to bright | 
+                    Your browser does not support the video tag.
+                Video 1: Product demonstration showing various light effects and features.
+                Figure 7: Dynamic Color Patterns and Effects
+                Figure 8: Smooth Dimming and Individual Color Effects
+            5. Maintenance
+            Proper maintenance ensures the longevity and optimal performance of your HYULIGHTS HYU-60PS strobe light.
+            5.1 Cleaning
+                Regularly clean the exterior of the fixture with a soft, lint-free cloth.
+                For stubborn dirt, use a slightly damp cloth. Avoid abrasive cleaners or solvents that could damage the finish or internal components.
+                Keep the LED surface free from dust and debris to maintain optimal light output.
+            5.2 Inspection
+                Periodically check all cables and connections for signs of wear, damage, or loose fittings.
+                Ensure mounting hardware is secure and free from corrosion.
+                Do not operate the device if any part is damaged.
+            5.3 Storage
+            When not in use, store the strobe light in a dry, dust-free environment. If storing for extended periods, consider using the original packaging or a protective case to prevent damage.
+            6. Troubleshooting
+            If you encounter issues with your HYULIGHTS HYU-60PS, refer to the following common problems and solutions:
+                No Power: Ensure the power cable is securely connected to both the fixture and a working power outlet. Check the power source for functionality.
+                No DMX Control: Verify that the DMX cable is correctly connected between the controller and the light. Check the DMX address setting on the light to ensure it matches your controller's output. Confirm the selected DMX channel mode is correct.
+                Lights Not Responding: Check the control mode setting on the fixture. If in DMX mode, ensure the DMX signal is present and correctly configured. If in Auto or Sound mode, verify the settings for these modes.
+                Inconsistent Light Output: Ensure all connections are secure. If using DMX, check for proper termination of the DMX chain.
+            If the problem persists after attempting these solutions, please contact your dealer or HYULIGHTS customer support for further assistance.
+            7. User Tips
+                Enhanced Effects: This product can achieve the best effects when paired with a fog machine, creating stunning visual displays.
+                Versatile Control: Take advantage of the multiple control modes (Auto, Sound, DMX, Master/Slave) to suit different event requirements and setups.
+                Smooth Transitions: Utilize the 0-100% smooth dimming feature for seamless light transitions and dynamic ambiance.
+                Professional Use: Ideal for professional stage and DJ applications, offering vibrant colors and reliable performance.
+            8. Warranty and Support
+            For warranty information, please refer to the terms and conditions provided at the time of purchase or contact your authorized HYULIGHTS dealer. Keep your purchase receipt as proof of purchase.
+            If you require technical support or have questions not covered in this manual, please contact HYULIGHTS customer service through the seller's platform or official contact channels.
+            Item guides & documents: A PDF version of the user manual is available for download. View User Manual (PDF)
+        © 2024 HYULIGHTS. All rights reserved.
+      Ask a question about this manual
+      Ask about setup, troubleshooting, compatibility, parts, safety, or missing instructions. Manuals+ will review the question and use this page’s manual context to help answer it.
+          Posting as .
+            Name
+            Email
+        Question
+        Details
+        Submit question
+  
