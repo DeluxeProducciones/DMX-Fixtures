@@ -12975,7 +12975,7 @@
           <ShowHeader>True</ShowHeader>
           <ShowEnableButton>False</ShowEnableButton>
           <Mixing>False</Mixing>
-          <ExcludeMonitored>True</ExcludeMonitored>
+          <ExcludeMonitored>False</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
           <Button Caption="AUTO — el show se lleva solo · Q" ID="4" Icon="">
@@ -13340,7 +13340,7 @@
           <ShowHeader>True</ShowHeader>
           <ShowEnableButton>False</ShowEnableButton>
           <Mixing>False</Mixing>
-          <ExcludeMonitored>True</ExcludeMonitored>
+          <ExcludeMonitored>False</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
           <Button Caption="HUMO cada 1 min · J" ID="30" Icon="">
@@ -13810,7 +13810,7 @@
           <ShowHeader>True</ShowHeader>
           <ShowEnableButton>False</ShowEnableButton>
           <Mixing>False</Mixing>
-          <ExcludeMonitored>True</ExcludeMonitored>
+          <ExcludeMonitored>False</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
           <Label Caption="Pick fijo; repetirlo lo para y deja la familia quieta. AUTO colores o Q/F1-F4 devuelve la rueda; pararla corta su fundido de 800 ms." ID="64">
@@ -14206,7 +14206,7 @@
           <ShowHeader>True</ShowHeader>
           <ShowEnableButton>False</ShowEnableButton>
           <Mixing>False</Mixing>
-          <ExcludeMonitored>True</ExcludeMonitored>
+          <ExcludeMonitored>False</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
           <Label Caption="Pulsa un efecto y se queda. AUTO paneles devuelve su ciclo." ID="92">
@@ -14444,7 +14444,7 @@
           <ShowHeader>True</ShowHeader>
           <ShowEnableButton>False</ShowEnableButton>
           <Mixing>False</Mixing>
-          <ExcludeMonitored>True</ExcludeMonitored>
+          <ExcludeMonitored>False</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
           <Label Caption="Bajo AUTO, el ciclo de energia lo recupera en su siguiente paso (8 min como mucho); para jugar largo pon antes un Momento." ID="109">
@@ -14697,7 +14697,7 @@
           <ShowHeader>True</ShowHeader>
           <ShowEnableButton>False</ShowEnableButton>
           <Mixing>False</Mixing>
-          <ExcludeMonitored>True</ExcludeMonitored>
+          <ExcludeMonitored>False</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
           <Button Caption="AUTO gobos · G" ID="127" Icon="">
@@ -15164,7 +15164,7 @@
           <ShowHeader>True</ShowHeader>
           <ShowEnableButton>False</ShowEnableButton>
           <Mixing>False</Mixing>
-          <ExcludeMonitored>True</ExcludeMonitored>
+          <ExcludeMonitored>False</ExcludeMonitored>
           <Collapsed>False</Collapsed>
           <Disabled>False</Disabled>
           <Label Caption="Bajo AUTO, el ciclo de energia lo recupera en su siguiente paso (8 min como mucho); para jugar largo pon antes un Momento." ID="160">
