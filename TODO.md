@@ -66,6 +66,9 @@ dia con ocho reglas nuevas, ocho tests de regresion y el generador corregido
   decision del dueño del 2026-08-30 ("la luz solo salia la blanca, no hacia
   las transiciones de colores"), no un fallo; el item del montaje del
   2026-08-29 que pedia "columna blanca" esta desfasado.
+- [ ] **Confirm JUGAR on site.** Under AUTO, pick red and verify the entire
+  rig, including the 7R heads and bars, turns red; press F1 and verify the
+  pick releases; press AUTO colores and verify the wheel returns.
 
 Descartado en la auditoria (para no repetirlo): el `<Mode>` numerico de los
 EFX es correcto (`efxfixture.cpp:291` usa `toInt()`); no hay sombra HTP dentro

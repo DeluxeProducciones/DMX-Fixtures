@@ -24,7 +24,7 @@ credentials - is deliberately not in it.
 ## The show, briefly
 
 The show is generated, not hand-built: `qlctool newshow` derives colour
-scenes, matrices, movement, gobo/prism animation, smoke and a three-page
+scenes, matrices, movement, gobo/prism animation, smoke and a four-page
 virtual console from the patch itself. One button (**AUTO**, key `Q`) runs
 the night; moments (`F1`-`F4`), hits (flash, smoke, strobe) and manual
 layers ride on top. [docs/show-operation.md](docs/show-operation.md) explains
