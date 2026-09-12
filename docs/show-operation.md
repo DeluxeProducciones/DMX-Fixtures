@@ -92,9 +92,9 @@ console" below.
   change is the enemy.
 - **Ambiente is alive, slowly.** The first cut parked every head at centre for
   four minutes, and pressing AUTO looked dead - "el auto es eso, como el modo
-  auto de las cabezas en si" (owner, 2026-08-27). Now the washes breathe
-  through `Movimientos Suaves` (two wide shapes at 28 s a lap), the beams hold
-  the static `Beams Abanico` fan - a needle's rest is a look - the gobo wheel
+  auto de las cabezas en si" (owner, 2026-08-27). `Movimientos Suaves` is the
+  Collection that starts both slow chasers: `Suaves Washes` carries the wide
+  wash shapes and `Suaves Beams` keeps the needles moving too. The gobo wheel
   is parked open, and the room sits on the low intensity base. Total stillness
   belongs to `Charla`, on purpose.
 - **Movement is per optics family.** A wash's soft wide beam and a 7R needle
@@ -207,7 +207,7 @@ tap makes the wheel, the prism and the dimmer exactly as long as each other,
 which is what "se vuelven todos los programas locos" was (owner, 2026-08-29).
 `qlctool check` refuses a flattened dial (`tap que aplana los programas`).
 
-The head movement has a **second dial**, `Vel. Movimiento` on page 2, bound to
+The head movement has a **second dial**, `Vel. Movimiento` on page 3, bound to
 the same `M`: a key press reaches every widget bound to it
 (`VCPage::handleKeyEvent` walks all matches), which is how the hand-built
 console drove three dials from one key. It is separate because its numbers
@@ -218,8 +218,8 @@ the figure it draws (`EFX::loopDuration`), so a fade left at fixed
 milliseconds stops the figure being a proportion of its step. Both dials also
 sit on the SMC-PAD's encoders 2 and 3.
 
-`Movimientos Suaves` is off the dial on purpose: it holds one shape for a
-minute, which is not something anybody taps.
+`Movimientos Suaves` is off the dial on purpose: its two slow chasers hold
+one shape for a minute, which is not something anybody taps.
 
 Two traps found on the show Mac's own QLC+ 5.2.2 the same night, both now
 rules:
@@ -262,8 +262,8 @@ the song, and a beat that never arrives must not be able to freeze it.
 ## The console
 
 Built to a fixed **1440x900** - the show laptop's screen - so nothing scrolls
-and nothing is off the edge. It is one multipage frame with three pages, and
-the pages answer three different questions. `PgDn` and `PgUp` change page; the
+and nothing is off the edge. It is one multipage frame with four pages, and
+the pages answer four different questions. `PgDn` and `PgUp` change page; the
 arrows in the frame header do the same.
 
 ### Page 1 - Show
@@ -288,41 +288,81 @@ unpressable. `ExcludeMonitored` is on, so a button only stops its function when
 that button started it or when the function is the workspace's startup function
 - which is what lets an autostarted `AUTO` still be taken over by a moment.
 
-### Page 2 - Manual
+### Page 2 - JUGAR
 
-For somebody who does know the rig: the layers, on top of whatever page 1 is
-running. The colour bank per fixture group on keys 1-0 (with the colour named
-on the button), the wheels, the movement shapes - with `Escenario` (the heads
-aimed at the stage, pan/tilt carried verbatim from the hand-built show's own
-scene, colour left to the running state) in the same solo frame, because a
-fixed aim and a drawn figure are exclusive - the beams' gobos and colour-wheel
-positions, a pad over the twelve heads big enough to aim with, the two speed
-dials, the dimmer looks, the fixture strobes, the `Master General` slider (the
-workspace's own GrandMaster, scaling every output under whatever is already
-running), and the audio triggers. The prism frame carries the hand-built
-console's per-beam picks beside all-on and all-off: `1`-`4`, `1 y 3`,
-`2 y 4`, the beams numbered by DMX address.
+The operator's family picker: use it to take one part of the look without
+building a new state. Its reset strip has `AUTO`, the four moments, `BLANCO
+TOTAL`, `TODO NEGRO`, `Flash 100%`, `Flash Color`, `Humo ON` and `Strobo
+Rapido`. `Escape` and `Backspace` are global controls rather than duplicated
+here; use `AUTO` twice if it is already green, or `Backspace` then `Q`, to
+return completely.
 
-**The colour banks, the wheel picks and `Escenario` are held, not latched**
-(2026-09-02). Two facts of the engine decide it. Red, green and blue are
-Intensity channels and QLC+ mixes those HTP - the higher value wins per
-channel - so a latched bank on top of a running state never showed its
-colour: AUTO on cyan plus key `1` was *white* on twenty-seven fixtures. And a
-wheel or a position is LTP, last writer wins, where "last" means the fader
-started most recently: a latched gobo pick lasted exactly until `Gobo
-Animacion`'s next step, four seconds later. A Flash button with **Override**
-puts its fader after every fader the state starts, however late, and with
-**ForceLTP** writes even the RGB channels as LTP (`Scene::writeDMX`,
-`forceLTP=true` skips the compare). So hold `1` and the heads are red - not
-red plus cyan - and let go and the state's colour is back the same frame.
-The `Centro` button is gone for the same reason: a parked head under a moving
-state is a lie that lasts one step, and the state that parks them is
-`Momento Charla`.
+| Frame | Hook first | Picks |
+| --- | --- | --- |
+| `COLOR` | `AUTO colores`, `Rueda Mezcla`, `Luz Charla` | wheel colours and both rainbows |
+| `PIXELES` | `AUTO paneles`, `Paneles Charla` | twelve panel effects and `Paneles Manual` |
+| `CABEZAS` | `AUTO lento`, `AUTO normal`, `AUTO rapido`, `Centro` | movement figures, fan, cross and stage aim |
+| `GOBOS` | `AUTO gobos`, `Reposo` | gobos, dealt gobos and shakes in two inner pages |
+| `PRISMA` | `AUTO prisma`, `Reposo` | all prism positions and rotations |
 
-The beams' wheels are here rather than in the library because picking a gobo is
-a live decision: somebody does it while the show runs.
+Every family is a `SoloFrame`: pressing a pick stops that family's AUTO hook,
+and pressing its hook releases the pick and gives the family back to the room
+state. The hooks are the state-owned interfaces, not extra looks: `Luz Charla`
+is a Collection over its warm base and the beams' white wheel position.
+`Paneles Charla` is the separate PIXELES hook: it sets only the programmed
+panels' manual/off programme mode. Its intensity bases (`Intensidad Total` and
+`Intensidad Charla Pixeles`) belong directly to `Momento Charla`, outside the
+COLOR and PIXELES frames, so pressing a pick cannot turn the talk look black.
+`Pixeles ON` leaves programme mode to `Ciclo Paneles Mixto` on those panels,
+while continuing to park the mode of other matrix-lit fixtures. A state change
+(`Q`, `F1`-`F4`) also brings its own family choices back.
 
-### Page 3 - Librería
+Pressing an active pick again stops it without restarting the hook, so that
+family stays still until its AUTO or a room state retakes it. Stopping the rig
+colour-wheel hook aborts its 800 ms crossfade; the pick enters over the outgoing
+scene's fade-out rather than as a hard cut.
+
+A Toggle button monitors its function whoever started it and reports the start
+to its SoloFrame (`VCButton::slotFunctionRunning` ->
+`VCSoloFrame::slotFunctionStarting`), while the button's own stop clears every
+source (`Function::stop`, `ManualVCWidget`), so a pick takes one family away
+from a running Collection without stopping that Collection.
+Duplicate Toggle buttons for one function both light (starter green, monitor
+orange), and `Blackout` is the only button that must not be duplicated, which
+is the basis of the `consola` rule change.
+
+The color and pixel picks are one-member Collection wrappers, rather than the
+state-owned leaf functions themselves: the SoloFrame can stop the wrapper
+without a room state later starting that same pick again. They stay until their
+family hook or a new room state releases them. Under AUTO, a head, gobo or
+prism pick can be recovered by the energy cycle at its next step (up to eight
+minutes); take a Moment first for a long manual look. `TODO NEGRO` is a normal
+Toggle Scene, so its zero values remain HTP and do not use `ForceLTP`; use the
+global `Backspace` panic control when an immediate stop of every running
+function is required. The seven global JUGAR hooks keep their letters; picks
+and reset-strip duplicates have no keyboard keys. The colour hits above the families are held `Flash`
+buttons with `Override` and `ForceLTP`; they replace the running colour only
+while pressed and never mix red over cyan into white.
+
+### Page 3 - Control
+
+For somebody who does know the rig: the direct controls that remain useful
+beside JUGAR. The colour bank per fixture group is on keys 1-0 (with the colour
+named on the button), alongside the XY pad, `Vel. Movimiento`, the dimmer
+looks, fixture strobes, the `Master General` slider (the workspace's own
+GrandMaster, scaling every output under whatever is already running),
+`Humo Vertical`, held beam-colour picks, and the audio triggers.
+
+**The colour banks and held beam-colour picks are held, not latched**
+(2026-09-02). Red, green and blue are Intensity channels and QLC+ mixes them
+HTP, so a latched bank on top of a running state never showed its colour: AUTO
+on cyan plus key `1` was *white* on twenty-seven fixtures. A Flash button with
+**Override** puts its fader after every fader the state starts, and with
+**ForceLTP** writes even RGB as LTP (`Scene::writeDMX`, `forceLTP=true` skips
+the compare). Hold `1` and the heads are red - not red plus cyan - and release
+it to restore the state's colour in the same frame.
+
+### Page 4 - Librería
 
 The material the show is built from, not buttons for a set: the two-colour
 mixes, the matrix effects, the per-group wheels and matrix cycles, the
@@ -336,13 +376,13 @@ the fader *monitors* the running value (the cycle's 200) until somebody moves
 it, and from then on its Override fader wins outright - at zero too, which is
 the slowest, not "the cycle's" - until the red reset X hands the channel back
 (`VCSlider::writeDMXLevel`, 2026-09-02). The two-colour mixes on this page
-are held with ForceLTP like the banks, for the reason given on page 2. The two
+are held with ForceLTP like the banks, for the reason given on page 3. The two
 multipage frames inside carry a label per page naming the group, because three
 pages of identically captioned buttons is not a page count, it is a guess - and
 the page carries a paragraph saying what it is for, because 180 buttons
 otherwise read as something somebody is supposed to be using.
 
-Two rules shape all three pages:
+Two rules shape all four pages:
 
 - **A function and the functions it starts never share a solo frame** - except
   where that is the point, above. A Toggle button reports its function starting
@@ -374,23 +414,24 @@ only keys that cannot collide with a colour bank on 1-0.
 | `Backspace` | PARAR TODO (StopAll) | page 1 |
 | `W` / `E` | Rueda Colores / Rueda Mezcla | page 2 |
 | `A` | Movimientos Cabezas | page 2 |
-| `G` / `P` | Gobos / prisma | page 2 |
-| `J` | Humo Auto (the haze timer; the rhythm row is on page 1) | page 1 |
+| `G` / `P` | Gobo Animacion / Prisma Animacion | page 2 |
 | `'` / `¡` | Arcoiris Simultaneo / Arcoiris Pasos (relative RGB rainbows) | page 2 |
-| `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 2 |
-| `Z` / `K` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 2 |
-| `S` / `D` | Strobo ON / OFF (shutter) | page 2 |
+| `1`-`0` | held colour banks | page 3 |
+| `J` | Humo Auto (the haze timer; the rhythm row is on page 1) | page 1 |
+| `V` / `B` | Dimmer Chase / Dimmer Chase 2 (the sweep, each way) | page 3 |
+| `Z` / `K` | Dimmer PingPong / Dimmer Secuencia (rotation of the three) | page 3 |
+| `S` / `D` | Strobo ON / OFF (shutter) | page 3 |
 | `M` | tap tempo on `Tempo Show` (tap the beat, every layer follows) | page 1 |
 | `PgDn` / `PgUp` | next / previous page | anywhere |
 
 Keys 1-0 are on every colour bank: every widget sees every key press, so `1`
 lights red on the heads, the bars and the PARs at once - for as long as it is
-held (the banks are Flash buttons with ForceLTP, see page 2). As on the hand-built
+held (the banks are Flash buttons with ForceLTP, see page 3). As on the hand-built
 console, `9` and `0` are not solids: they are the alternating `Azul / Rojo`
 and `Rojo / Azul` looks (restored 2026-08-28; Naranja and Rosa stay in the
 bank as keyless buttons). **Every widget sees
 every key press on every page too**, visible or not - which is why the page-1
-keys keep working while page 3 is on screen, and why every button's key is
+keys keep working while page 4 is on screen, and why every button's key is
 unique, checked by a test.
 
 ## The SMC-PAD
@@ -459,8 +500,8 @@ they answer on either bank. The arrows `<` and `>` page the console, and were
 measured not to move the pads' bank while doing it. Knob 1 is the grand master,
 knob 2 the tempo dial, knob 3 the movement dial.
 
-**Page 2 lives on the second bank.** Press `PAD BANK` and the same top two rows
-become the manual layer - Rueda Colores, Rueda Mezcla, Movimientos, Gobos on
+**JUGAR lives on the second bank.** Press `PAD BANK` and the same top two rows
+become the JUGAR hooks - Rueda Colores, Rueda Mezcla, Movimientos, Gobos on
 the top row; Prisma, Humo Auto and the two rainbows under them. It was written
 against `SHIFT` until a capture on 2026-08-29 proved SHIFT sends no MIDI at
 all: it selects the functions silkscreened on the pads themselves (SWING,
@@ -469,7 +510,7 @@ once fired from the hardware.
 
 **The trap: the pad remembers its bank, the show does not.** A pad left on bank
 2 at the end of a night comes back on bank 2, and the top rows will fire the
-manual layer where the page expects the hits. If the pads do the wrong thing,
+JUGAR layer where the page expects the hits. If the pads do the wrong thing,
 press `PAD BANK`. `qlctool check` refuses a console bound to a control the pad
 cannot send, but nothing in the file can see which bank the hardware is on.
 
@@ -534,7 +575,7 @@ strobe running unattended all night is not a decision to make by default.
 ## Audio triggers
 
 Five spectrum bands, one of them bound: the bass presses `Golpe Graves`, the
-plain white flash on page 2 beside the triggers widget. A Flash button is the
+plain white flash on page 3 beside the triggers widget. A Flash button is the
 right target for a bar, not the wrong one - a bar calls `pressFunction` on
 the way up and `releaseFunction` on the way down, exactly how a Flash button
 expects to be worked, so it lets go on its own the moment the level drops
@@ -581,5 +622,5 @@ copy of the Virtual Console - useful for confirming a look while standing at
 the rig instead of at the laptop, which is what most of the "confirm on site"
 items in `TODO.md` are waiting on. The web build declares Button, Frame and
 SpeedDial support (also Slider, XYPad, CueList, Clock, AudioTriggers), so page
-1's frames and buttons and page 2's two speed dials all come through - the
+1's frames and buttons, JUGAR's buttons, and page 3's two speed dials all come through - the
 phone shows what the laptop shows, not a cut-down page.
