@@ -12920,6 +12920,744 @@
     <Function ID="811" Type="Collection" Name="Jugar · Prisma Giro Inverso" Path="Jugar/Prisma">
       <Step Number="0">620</Step>
     </Function>
+    <Function ID="812" Type="Scene" Name="Desk · FLASH (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="6">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,255,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,255,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,255,5,255,6,255,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,255,5,255,6,255,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="30">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="31">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="32">0,255,1,255,2,255,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="36">0,255,1,255,2,255,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="813" Type="Chaser" Name="Desk · FLASH ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">812</Step>
+    </Function>
+    <Function ID="814" Type="Scene" Name="Desk · FLASH LENTO (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,202</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,202</FixtureVal>
+      <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="6">0,255,1,255,2,255,3,255,4,200</FixtureVal>
+      <FixtureVal ID="7">0,255,1,255,2,255,3,255,4,200</FixtureVal>
+      <FixtureVal ID="8">0,255,1,255,2,255,3,255,4,200</FixtureVal>
+      <FixtureVal ID="9">0,255,1,255,2,255,3,255,4,200</FixtureVal>
+      <FixtureVal ID="10">0,255,1,255,2,255,3,255,4,200</FixtureVal>
+      <FixtureVal ID="11">0,255,1,255,2,255,3,255,4,200</FixtureVal>
+      <FixtureVal ID="12">0,255,1,255,2,255,3,255,4,200</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,202</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,202</FixtureVal>
+      <FixtureVal ID="15">5,217,6,255,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="16">5,217,6,255,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,255,5,255,6,255,7,200,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,255,5,255,6,255,7,200,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,255,3,255,4,200,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,255,3,255,4,200,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255,4,200,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255,4,200,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="30">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="31">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="32">0,255,1,255,2,255,3,200</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="36">0,255,1,255,2,255,3,200</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,202,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,202,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,199,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,199,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,199,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,199,6,255,7,4,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="815" Type="Chaser" Name="Desk · FLASH LENTO ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">814</Step>
+    </Function>
+    <Function ID="816" Type="Scene" Name="Desk · FLASH COLOR (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">9,255,10,248</FixtureVal>
+      <FixtureVal ID="6">3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236</FixtureVal>
+      <FixtureVal ID="16">5,236</FixtureVal>
+      <FixtureVal ID="18">2,255,7,247</FixtureVal>
+      <FixtureVal ID="19">2,255,7,247</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255</FixtureVal>
+      <FixtureVal ID="24">0,255,4,247</FixtureVal>
+      <FixtureVal ID="25">0,255,4,247</FixtureVal>
+      <FixtureVal ID="27">0,255,4,247</FixtureVal>
+      <FixtureVal ID="28">0,255,4,247</FixtureVal>
+      <FixtureVal ID="29">0,255</FixtureVal>
+      <FixtureVal ID="32">3,247</FixtureVal>
+      <FixtureVal ID="33">0,255</FixtureVal>
+      <FixtureVal ID="36">3,247</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248</FixtureVal>
+    </Function>
+    <Function ID="817" Type="Chaser" Name="Desk · FLASH COLOR ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">816</Step>
+    </Function>
+    <Function ID="818" Type="Scene" Name="Desk · HUMO YA (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="17">0,255</FixtureVal>
+    </Function>
+    <Function ID="819" Type="Chaser" Name="Desk · HUMO YA ráfaga 3 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="3000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="3000" FadeOut="0">818</Step>
+    </Function>
+    <Function ID="820" Type="Scene" Name="Desk · HUMO VERT (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="37">0,255,1,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,255,1,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,255,1,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,255,1,255,5,0,6,0</FixtureVal>
+    </Function>
+    <Function ID="821" Type="Chaser" Name="Desk · HUMO VERT ráfaga 3 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="3000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="3000" FadeOut="0">820</Step>
+    </Function>
+    <Function ID="822" Type="Scene" Name="Desk · STROBO (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">10,248</FixtureVal>
+      <FixtureVal ID="1">10,248</FixtureVal>
+      <FixtureVal ID="6">4,247</FixtureVal>
+      <FixtureVal ID="7">4,247</FixtureVal>
+      <FixtureVal ID="8">4,247</FixtureVal>
+      <FixtureVal ID="9">4,247</FixtureVal>
+      <FixtureVal ID="10">4,247</FixtureVal>
+      <FixtureVal ID="11">4,247</FixtureVal>
+      <FixtureVal ID="12">4,247</FixtureVal>
+      <FixtureVal ID="13">10,248</FixtureVal>
+      <FixtureVal ID="14">10,248</FixtureVal>
+      <FixtureVal ID="15">5,236</FixtureVal>
+      <FixtureVal ID="16">5,236</FixtureVal>
+      <FixtureVal ID="18">7,247</FixtureVal>
+      <FixtureVal ID="19">7,247</FixtureVal>
+      <FixtureVal ID="20">5,234</FixtureVal>
+      <FixtureVal ID="21">5,234</FixtureVal>
+      <FixtureVal ID="22">5,234</FixtureVal>
+      <FixtureVal ID="23">5,234</FixtureVal>
+      <FixtureVal ID="24">4,247</FixtureVal>
+      <FixtureVal ID="25">4,247</FixtureVal>
+      <FixtureVal ID="27">4,247</FixtureVal>
+      <FixtureVal ID="28">4,247</FixtureVal>
+      <FixtureVal ID="32">3,247</FixtureVal>
+      <FixtureVal ID="36">3,247</FixtureVal>
+      <FixtureVal ID="41">7,248</FixtureVal>
+      <FixtureVal ID="42">7,248</FixtureVal>
+    </Function>
+    <Function ID="823" Type="Chaser" Name="Desk · STROBO ráfaga 4 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="4000" FadeOut="0">822</Step>
+    </Function>
+    <Function ID="824" Type="Scene" Name="Desk · STROBO SUAVE (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">10,202</FixtureVal>
+      <FixtureVal ID="1">10,202</FixtureVal>
+      <FixtureVal ID="6">4,200</FixtureVal>
+      <FixtureVal ID="7">4,200</FixtureVal>
+      <FixtureVal ID="8">4,200</FixtureVal>
+      <FixtureVal ID="9">4,200</FixtureVal>
+      <FixtureVal ID="10">4,200</FixtureVal>
+      <FixtureVal ID="11">4,200</FixtureVal>
+      <FixtureVal ID="12">4,200</FixtureVal>
+      <FixtureVal ID="13">10,202</FixtureVal>
+      <FixtureVal ID="14">10,202</FixtureVal>
+      <FixtureVal ID="15">5,217</FixtureVal>
+      <FixtureVal ID="16">5,217</FixtureVal>
+      <FixtureVal ID="18">7,200</FixtureVal>
+      <FixtureVal ID="19">7,200</FixtureVal>
+      <FixtureVal ID="20">5,199</FixtureVal>
+      <FixtureVal ID="21">5,199</FixtureVal>
+      <FixtureVal ID="22">5,199</FixtureVal>
+      <FixtureVal ID="23">5,199</FixtureVal>
+      <FixtureVal ID="24">4,200</FixtureVal>
+      <FixtureVal ID="25">4,200</FixtureVal>
+      <FixtureVal ID="27">4,200</FixtureVal>
+      <FixtureVal ID="28">4,200</FixtureVal>
+      <FixtureVal ID="32">3,200</FixtureVal>
+      <FixtureVal ID="36">3,200</FixtureVal>
+      <FixtureVal ID="41">7,202</FixtureVal>
+      <FixtureVal ID="42">7,202</FixtureVal>
+    </Function>
+    <Function ID="825" Type="Chaser" Name="Desk · STROBO SUAVE ráfaga 4 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="4000" FadeOut="0">824</Step>
+    </Function>
+    <Function ID="826" Type="Scene" Name="Desk · ROJO (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,0,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
+      <FixtureVal ID="3">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
+      <FixtureVal ID="6">0,255,1,0,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,255,1,0,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,255,1,0,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,255,1,0,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,255,1,0,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,255,1,0,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,255,1,0,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,255,7,0,8,0,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,255,7,0,8,0,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,0,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,0,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,0,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,0,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="30">0,255,1,0,2,0</FixtureVal>
+      <FixtureVal ID="31">0,255,1,0,2,0</FixtureVal>
+      <FixtureVal ID="32">0,255,1,0,2,0,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,0,3,0</FixtureVal>
+      <FixtureVal ID="34">0,255,1,0,2,0</FixtureVal>
+      <FixtureVal ID="35">0,255,1,0,2,0</FixtureVal>
+      <FixtureVal ID="36">0,255,1,0,2,0,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,0,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,0,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,0,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,0,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,255,9,0,10,0,11,0,12,255,13,0,14,0,15,0,16,255,17,0,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,255,9,0,10,0,11,0,12,255,13,0,14,0,15,0,16,255,17,0,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,12,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,12,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,12,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,12,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="827" Type="Chaser" Name="Desk · ROJO ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">826</Step>
+    </Function>
+    <Function ID="828" Type="Scene" Name="Desk · VERDE (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,0,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
+      <FixtureVal ID="3">0,0,1,255,2,0,3,0,4,255,5,0,6,0,7,255,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
+      <FixtureVal ID="6">0,0,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,0,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,0,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,0,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,0,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,0,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,0,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,0,7,255,8,0,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,0,7,255,8,0,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,0,4,255,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,0,4,255,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,0,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,0,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="30">0,0,1,255,2,0</FixtureVal>
+      <FixtureVal ID="31">0,0,1,255,2,0</FixtureVal>
+      <FixtureVal ID="32">0,0,1,255,2,0,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,0,2,255,3,0</FixtureVal>
+      <FixtureVal ID="34">0,0,1,255,2,0</FixtureVal>
+      <FixtureVal ID="35">0,0,1,255,2,0</FixtureVal>
+      <FixtureVal ID="36">0,0,1,255,2,0,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,0,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,0,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,0,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,0,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,0,9,255,10,0,11,0,12,0,13,255,14,0,15,0,16,0,17,255,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,0,9,255,10,0,11,0,12,0,13,255,14,0,15,0,16,0,17,255,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,35,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,35,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,35,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,35,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="829" Type="Chaser" Name="Desk · VERDE ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">828</Step>
+    </Function>
+    <Function ID="830" Type="Scene" Name="Desk · AZUL (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,0,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,0,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
+      <FixtureVal ID="3">0,0,1,0,2,255,3,0,4,0,5,255,6,0,7,0,8,255,9,0,10,0,11,255,12,0,13,0,14,255,15,0,16,0,17,255,18,0,19,0,20,255,21,0,22,0,23,255</FixtureVal>
+      <FixtureVal ID="6">0,0,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,0,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,0,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,0,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,0,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,0,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,0,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,0,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,0,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,0,7,0,8,255,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,0,7,0,8,255,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,0,4,0,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,0,4,0,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,0,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,0,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="30">0,0,1,0,2,255</FixtureVal>
+      <FixtureVal ID="31">0,0,1,0,2,255</FixtureVal>
+      <FixtureVal ID="32">0,0,1,0,2,255,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,0,2,0,3,255</FixtureVal>
+      <FixtureVal ID="34">0,0,1,0,2,255</FixtureVal>
+      <FixtureVal ID="35">0,0,1,0,2,255</FixtureVal>
+      <FixtureVal ID="36">0,0,1,0,2,255,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,0,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,0,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,0,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,0,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,0,9,0,10,255,11,0,12,0,13,0,14,255,15,0,16,0,17,0,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,0,9,0,10,255,11,0,12,0,13,0,14,255,15,0,16,0,17,0,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,43,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,43,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,43,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,43,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="831" Type="Chaser" Name="Desk · AZUL ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">830</Step>
+    </Function>
+    <Function ID="832" Type="Scene" Name="Desk · ULTRAVIOLETA (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,160,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,160,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,160,1,0,2,255,3,160,4,0,5,255,6,160,7,0,8,255,9,160,10,0,11,255,12,160,13,0,14,255,15,160,16,0,17,255,18,160,19,0,20,255,21,160,22,0,23,255</FixtureVal>
+      <FixtureVal ID="3">0,160,1,0,2,255,3,160,4,0,5,255,6,160,7,0,8,255,9,160,10,0,11,255,12,160,13,0,14,255,15,160,16,0,17,255,18,160,19,0,20,255,21,160,22,0,23,255</FixtureVal>
+      <FixtureVal ID="6">0,160,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,160,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,160,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,160,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,160,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,160,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,160,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,160,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,160,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,160,7,0,8,255,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,160,7,0,8,255,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,160,4,0,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,160,4,0,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,160,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,160,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,160,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,160,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,160,2,0,3,255</FixtureVal>
+      <FixtureVal ID="30">0,160,1,0,2,255</FixtureVal>
+      <FixtureVal ID="31">0,160,1,0,2,255</FixtureVal>
+      <FixtureVal ID="32">0,160,1,0,2,255,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,160,2,0,3,255</FixtureVal>
+      <FixtureVal ID="34">0,160,1,0,2,255</FixtureVal>
+      <FixtureVal ID="35">0,160,1,0,2,255</FixtureVal>
+      <FixtureVal ID="36">0,160,1,0,2,255,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,160,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,160,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,160,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,160,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,160,9,0,10,255,11,0,12,160,13,0,14,255,15,0,16,160,17,0,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,160,9,0,10,255,11,0,12,160,13,0,14,255,15,0,16,160,17,0,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,99,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,99,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,99,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,99,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="833" Type="Chaser" Name="Desk · ULTRAVIOLETA ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">832</Step>
+    </Function>
+    <Function ID="834" Type="Scene" Name="Desk · AMARILLO (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
+      <FixtureVal ID="3">0,255,1,255,2,0,3,255,4,255,5,0,6,255,7,255,8,0,9,255,10,255,11,0,12,255,13,255,14,0,15,255,16,255,17,0,18,255,19,255,20,0,21,255,22,255,23,0</FixtureVal>
+      <FixtureVal ID="6">0,255,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,255,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,255,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,255,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,255,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,255,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,255,1,255,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,255,7,255,8,0,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,255,7,255,8,0,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,255,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,255,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="30">0,255,1,255,2,0</FixtureVal>
+      <FixtureVal ID="31">0,255,1,255,2,0</FixtureVal>
+      <FixtureVal ID="32">0,255,1,255,2,0,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,255,3,0</FixtureVal>
+      <FixtureVal ID="34">0,255,1,255,2,0</FixtureVal>
+      <FixtureVal ID="35">0,255,1,255,2,0</FixtureVal>
+      <FixtureVal ID="36">0,255,1,255,2,0,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,255,9,255,10,0,11,0,12,255,13,255,14,0,15,0,16,255,17,255,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,255,9,255,10,0,11,0,12,255,13,255,14,0,15,0,16,255,17,255,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,27,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,27,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,27,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,27,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="835" Type="Chaser" Name="Desk · AMARILLO ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">834</Step>
+    </Function>
+    <Function ID="836" Type="Scene" Name="Desk · CYAN (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,0,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,0,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,0,1,255,2,255,3,0,4,255,5,255,6,0,7,255,8,255,9,0,10,255,11,255,12,0,13,255,14,255,15,0,16,255,17,255,18,0,19,255,20,255,21,0,22,255,23,255</FixtureVal>
+      <FixtureVal ID="3">0,0,1,255,2,255,3,0,4,255,5,255,6,0,7,255,8,255,9,0,10,255,11,255,12,0,13,255,14,255,15,0,16,255,17,255,18,0,19,255,20,255,21,0,22,255,23,255</FixtureVal>
+      <FixtureVal ID="6">0,0,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,0,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,0,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,0,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,0,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,0,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,0,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,0,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,0,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,0,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,0,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,0,4,255,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,0,4,255,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,0,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,0,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,0,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,0,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="30">0,0,1,255,2,255</FixtureVal>
+      <FixtureVal ID="31">0,0,1,255,2,255</FixtureVal>
+      <FixtureVal ID="32">0,0,1,255,2,255,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,0,2,255,3,255</FixtureVal>
+      <FixtureVal ID="34">0,0,1,255,2,255</FixtureVal>
+      <FixtureVal ID="35">0,0,1,255,2,255</FixtureVal>
+      <FixtureVal ID="36">0,0,1,255,2,255,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,0,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,0,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,0,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,0,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,0,9,255,10,255,11,0,12,0,13,255,14,255,15,0,16,0,17,255,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,0,9,255,10,255,11,0,12,0,13,255,14,255,15,0,16,0,17,255,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,59,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,59,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,59,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,59,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="837" Type="Chaser" Name="Desk · CYAN ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">836</Step>
+    </Function>
+    <Function ID="838" Type="Scene" Name="Desk · MAGENTA (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
+      <FixtureVal ID="3">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
+      <FixtureVal ID="6">0,255,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,255,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,255,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,255,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,255,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,255,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,255,1,0,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,255,7,0,8,255,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,255,7,0,8,255,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,0,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,0,5,255,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="30">0,255,1,0,2,255</FixtureVal>
+      <FixtureVal ID="31">0,255,1,0,2,255</FixtureVal>
+      <FixtureVal ID="32">0,255,1,0,2,255,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,0,3,255</FixtureVal>
+      <FixtureVal ID="34">0,255,1,0,2,255</FixtureVal>
+      <FixtureVal ID="35">0,255,1,0,2,255</FixtureVal>
+      <FixtureVal ID="36">0,255,1,0,2,255,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,0,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,255,9,0,10,255,11,0,12,255,13,0,14,255,15,0,16,255,17,0,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,255,9,0,10,255,11,0,12,255,13,0,14,255,15,0,16,255,17,0,18,255,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="839" Type="Chaser" Name="Desk · MAGENTA ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">838</Step>
+    </Function>
+    <Function ID="840" Type="Scene" Name="Desk · BLANCO (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+      <FixtureVal ID="6">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,255,1,255,2,255,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,255,6,255,7,255,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,255,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,255,7,255,8,255,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,255,5,255,6,255,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,255,5,255,6,255,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,255,3,255,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="30">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="31">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="32">0,255,1,255,2,255,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,255,3,255</FixtureVal>
+      <FixtureVal ID="34">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="35">0,255,1,255,2,255</FixtureVal>
+      <FixtureVal ID="36">0,255,1,255,2,255,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,255,4,255,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,4,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="841" Type="Chaser" Name="Desk · BLANCO ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">840</Step>
+    </Function>
+    <Function ID="842" Type="Scene" Name="Desk · NARANJA (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,127,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,255,6,127,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,255,1,127,2,0,3,255,4,127,5,0,6,255,7,127,8,0,9,255,10,127,11,0,12,255,13,127,14,0,15,255,16,127,17,0,18,255,19,127,20,0,21,255,22,127,23,0</FixtureVal>
+      <FixtureVal ID="3">0,255,1,127,2,0,3,255,4,127,5,0,6,255,7,127,8,0,9,255,10,127,11,0,12,255,13,127,14,0,15,255,16,127,17,0,18,255,19,127,20,0,21,255,22,127,23,0</FixtureVal>
+      <FixtureVal ID="6">0,255,1,127,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,255,1,127,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,255,1,127,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,255,1,127,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,255,1,127,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,255,1,127,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,255,1,127,2,0,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,255,6,127,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,255,6,127,7,0,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,255,7,127,8,0,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,255,7,127,8,0,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,127,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,127,5,0,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,127,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,127,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,127,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,127,3,0,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,127,3,0</FixtureVal>
+      <FixtureVal ID="30">0,255,1,127,2,0</FixtureVal>
+      <FixtureVal ID="31">0,255,1,127,2,0</FixtureVal>
+      <FixtureVal ID="32">0,255,1,127,2,0,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,127,3,0</FixtureVal>
+      <FixtureVal ID="34">0,255,1,127,2,0</FixtureVal>
+      <FixtureVal ID="35">0,255,1,127,2,0</FixtureVal>
+      <FixtureVal ID="36">0,255,1,127,2,0,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,127,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,127,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,127,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,127,4,0,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,255,9,127,10,0,11,0,12,255,13,127,14,0,15,0,16,255,17,127,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,255,9,127,10,0,11,0,12,255,13,127,14,0,15,0,16,255,17,127,18,0,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,19,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,19,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,19,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,19,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="843" Type="Chaser" Name="Desk · NARANJA ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">842</Step>
+    </Function>
+    <Function ID="844" Type="Scene" Name="Desk · ROSA (ráfaga)" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+      <FixtureVal ID="0">5,255,6,0,7,100,9,255,10,248</FixtureVal>
+      <FixtureVal ID="1">5,255,6,0,7,100,9,255,10,248</FixtureVal>
+      <FixtureVal ID="2">0,255,1,0,2,100,3,255,4,0,5,100,6,255,7,0,8,100,9,255,10,0,11,100,12,255,13,0,14,100,15,255,16,0,17,100,18,255,19,0,20,100,21,255,22,0,23,100</FixtureVal>
+      <FixtureVal ID="3">0,255,1,0,2,100,3,255,4,0,5,100,6,255,7,0,8,100,9,255,10,0,11,100,12,255,13,0,14,100,15,255,16,0,17,100,18,255,19,0,20,100,21,255,22,0,23,100</FixtureVal>
+      <FixtureVal ID="6">0,255,1,0,2,100,3,255,4,247</FixtureVal>
+      <FixtureVal ID="7">0,255,1,0,2,100,3,255,4,247</FixtureVal>
+      <FixtureVal ID="8">0,255,1,0,2,100,3,255,4,247</FixtureVal>
+      <FixtureVal ID="9">0,255,1,0,2,100,3,255,4,247</FixtureVal>
+      <FixtureVal ID="10">0,255,1,0,2,100,3,255,4,247</FixtureVal>
+      <FixtureVal ID="11">0,255,1,0,2,100,3,255,4,247</FixtureVal>
+      <FixtureVal ID="12">0,255,1,0,2,100,3,255,4,247</FixtureVal>
+      <FixtureVal ID="13">5,255,6,0,7,100,9,255,10,248</FixtureVal>
+      <FixtureVal ID="14">5,255,6,0,7,100,9,255,10,248</FixtureVal>
+      <FixtureVal ID="15">5,236,6,255,7,0,8,100,11,0</FixtureVal>
+      <FixtureVal ID="16">5,236,6,255,7,0,8,100,11,0</FixtureVal>
+      <FixtureVal ID="18">2,255,3,255,4,0,5,100,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="19">2,255,3,255,4,0,5,100,6,0,7,247,11,0</FixtureVal>
+      <FixtureVal ID="24">0,255,1,255,2,0,3,100,4,247,5,0</FixtureVal>
+      <FixtureVal ID="25">0,255,1,255,2,0,3,100,4,247,5,0</FixtureVal>
+      <FixtureVal ID="27">0,255,1,255,2,0,3,100,4,247,5,0</FixtureVal>
+      <FixtureVal ID="28">0,255,1,255,2,0,3,100,4,247,5,0</FixtureVal>
+      <FixtureVal ID="29">0,255,1,255,2,0,3,100</FixtureVal>
+      <FixtureVal ID="30">0,255,1,0,2,100</FixtureVal>
+      <FixtureVal ID="31">0,255,1,0,2,100</FixtureVal>
+      <FixtureVal ID="32">0,255,1,0,2,100,3,247</FixtureVal>
+      <FixtureVal ID="33">0,255,1,255,2,0,3,100</FixtureVal>
+      <FixtureVal ID="34">0,255,1,0,2,100</FixtureVal>
+      <FixtureVal ID="35">0,255,1,0,2,100</FixtureVal>
+      <FixtureVal ID="36">0,255,1,0,2,100,3,247</FixtureVal>
+      <FixtureVal ID="37">0,0,1,255,2,255,3,0,4,100,5,0,6,0</FixtureVal>
+      <FixtureVal ID="38">0,0,1,255,2,255,3,0,4,100,5,0,6,0</FixtureVal>
+      <FixtureVal ID="39">0,0,1,255,2,255,3,0,4,100,5,0,6,0</FixtureVal>
+      <FixtureVal ID="40">0,0,1,255,2,255,3,0,4,100,5,0,6,0</FixtureVal>
+      <FixtureVal ID="41">5,0,6,255,7,248,8,255,9,0,10,100,11,0,12,255,13,0,14,100,15,0,16,255,17,0,18,100,19,0,20,0</FixtureVal>
+      <FixtureVal ID="42">5,0,6,255,7,248,8,255,9,0,10,100,11,0,12,255,13,0,14,100,15,0,16,255,17,0,18,100,19,0,20,0</FixtureVal>
+      <FixtureVal ID="17">0,0</FixtureVal>
+      <FixtureVal ID="20">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+      <FixtureVal ID="21">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+      <FixtureVal ID="22">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+      <FixtureVal ID="23">5,234,6,255,7,51,8,0,11,0</FixtureVal>
+    </Function>
+    <Function ID="845" Type="Chaser" Name="Desk · ROSA ráfaga 8 s" Path="Desk">
+      <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
+      <Direction>Forward</Direction>
+      <RunOrder>SingleShot</RunOrder>
+      <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
+      <Step Number="0" FadeIn="0" Hold="8000" FadeOut="0">844</Step>
+    </Function>
   </Engine>
   <VirtualConsole>
     <Frame Caption="Página 1" ID="0">
@@ -22148,6 +22886,270 @@
           </Appearance>
           <SpectrumBar Name="Graves" Type="3" MinThreshold="12" MaxThreshold="51" Divisor="1" Index="0" WidgetID="245"/>
         </AudioTriggers>
+        <Label Caption="Tablet: ráfagas con límite; soltar las para antes. Colores pueden mezclarse." ID="660" Page="2">
+          <WindowState Visible="True" X="8" Y="68" Width="524" Height="22"/>
+          <Appearance>
+            <FrameStyle>None</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Sans Serif,11,-1,5,50,0,0,0,0,0</Font>
+          </Appearance>
+        </Label>
+        <Frame Caption="Ráfagas del desk" ID="661" Page="2">
+          <Appearance>
+            <FrameStyle>Sunken</FrameStyle>
+            <ForegroundColor>Default</ForegroundColor>
+            <BackgroundColor>Default</BackgroundColor>
+            <BackgroundImage>None</BackgroundImage>
+            <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+          </Appearance>
+          <WindowState Visible="True" X="8" Y="96" Width="524" Height="114"/>
+          <AllowChildren>True</AllowChildren>
+          <AllowResize>True</AllowResize>
+          <ShowHeader>True</ShowHeader>
+          <ShowEnableButton>False</ShowEnableButton>
+          <Collapsed>False</Collapsed>
+          <Disabled>False</Disabled>
+          <Button Caption="FLASH" ID="662" Icon="">
+            <WindowState Visible="True" X="6" Y="26" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="813"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="FLASH LENTO" ID="663" Icon="">
+            <WindowState Visible="True" X="92" Y="26" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="815"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="FLASH COLOR" ID="664" Icon="">
+            <WindowState Visible="True" X="178" Y="26" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="817"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="HUMO YA" ID="665" Icon="">
+            <WindowState Visible="True" X="264" Y="26" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="819"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="HUMO VERT" ID="666" Icon="">
+            <WindowState Visible="True" X="350" Y="26" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="821"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="STROBO" ID="667" Icon="">
+            <WindowState Visible="True" X="436" Y="26" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="823"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="STROBO SUAVE" ID="668" Icon="">
+            <WindowState Visible="True" X="6" Y="54" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="825"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="ROJO" ID="669" Icon="">
+            <WindowState Visible="True" X="92" Y="54" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="827"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="VERDE" ID="670" Icon="">
+            <WindowState Visible="True" X="178" Y="54" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="829"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="AZUL" ID="671" Icon="">
+            <WindowState Visible="True" X="264" Y="54" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="831"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="ULTRAVIOLETA" ID="672" Icon="">
+            <WindowState Visible="True" X="350" Y="54" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="833"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="AMARILLO" ID="673" Icon="">
+            <WindowState Visible="True" X="436" Y="54" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="835"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="CYAN" ID="674" Icon="">
+            <WindowState Visible="True" X="6" Y="82" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="837"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="MAGENTA" ID="675" Icon="">
+            <WindowState Visible="True" X="92" Y="82" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="839"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="BLANCO" ID="676" Icon="">
+            <WindowState Visible="True" X="178" Y="82" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="841"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="NARANJA" ID="677" Icon="">
+            <WindowState Visible="True" X="264" Y="82" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="843"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+          <Button Caption="ROSA" ID="678" Icon="">
+            <WindowState Visible="True" X="350" Y="82" Width="82" Height="24"/>
+            <Appearance>
+              <FrameStyle>None</FrameStyle>
+              <ForegroundColor>Default</ForegroundColor>
+              <BackgroundColor>Default</BackgroundColor>
+              <BackgroundImage>None</BackgroundImage>
+              <Font>Sans Serif,9,-1,5,75,0,0,0,0,0</Font>
+            </Appearance>
+            <Function ID="845"/>
+            <Action>Toggle</Action>
+            <Key/>
+            <Intensity Adjust="False">100</Intensity>
+          </Button>
+        </Frame>
       </Frame>
     </Frame>
   </VirtualConsole>
