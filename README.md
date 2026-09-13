@@ -18,6 +18,7 @@ credentials - is deliberately not in it.
 | `Manual/` | The rig's manuals, including the scanned leaflets nobody else has. |
 | `docs/` | The findings: file format, rig, operation, checks, toolkit. Start at [docs/README.md](docs/README.md). |
 | `tools/qlctool/` | The generator and checker. |
+| `tools/qlc-launcher/` | [The QLC+ Vibra Dock app](tools/qlc-launcher/README.md), which starts the show with verified tablet web access. |
 | `tools/smc-pad/` | The MIDI/BLE tools that mapped the controller and reverse-engineered its LED protocol. |
 | `TODO.md` | The backlog, including what is blocked on somebody standing at the rig. |
 

@@ -31,6 +31,21 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
   ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
   y cada una cambia como se opera. Se deciden, no se implementan de oficio.
 
+## Development environment
+
+- [ ] **Refresh the full-suite runtime estimate (2026-09-13).** The unchanged
+  qlctool suite finished with 440 passed and 9 skipped in 1788.17 seconds
+  (29m48s) while validating the launcher; the onboarding recipe still says
+  about five minutes. Collect `--durations=20` on the next scheduled full run
+  to identify the expensive regressions before updating the estimate or
+  optimizing repeated setup.
+
+- [ ] **Repair the upstream-source pointer (2026-09-13).** `CLAUDE.md`
+  directs QLC+ source questions to `~/p/qlcplus`, but that directory is absent
+  on this checkout's machine (`rg --files` returned "No such file or directory"
+  while verifying the launcher). Locate the maintained clone and update the
+  pointer before the next change that needs QLC+ internals.
+
 ## Auditoria cruzada de los programas (2026-09-02, Claude + Codex)
 
 Dos simuladores independientes de la salida DMX (ninguno usa las reglas de
