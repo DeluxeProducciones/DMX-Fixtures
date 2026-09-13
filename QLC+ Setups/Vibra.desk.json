@@ -2252,7 +2252,7 @@
    "functionType": "Chaser",
    "action": "toggle",
    "caption": "Luz del humo vertical",
-   "detail": "su luz",
+   "detail": "",
    "role": "toggle",
    "solo": null,
    "key": "N",
