@@ -70,4 +70,4 @@ algorithms.
   rig.
 
 The private context - the show machine, its access, and the decisions behind
-the work - is in `~/p/brain/projects/vibra-dmx.md`.
+the work - is in `~/p/wiki/brain/projects/vibra-dmx.md`.
