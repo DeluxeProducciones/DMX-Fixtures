@@ -8,3 +8,6 @@ __pycache__/
 # on a clean exit. It is transient editor state, not the show.
 *.autosave.qxw
 .coverage
+
+# CocoIndex Code (ccc)
+/.cocoindex_code/
