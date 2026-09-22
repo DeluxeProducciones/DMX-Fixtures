@@ -17,6 +17,46 @@
 
 ### 2026-09
 
+#### 2026-09-22 - Colores: ni blanco ni feria en las ruedas, multicolor aparte, mezclas con regla
+
+Tres quejas del dueño la misma noche ("los colores siguen siendo una feria",
+"las luces blancas en las ruedas de colores automáticas no", "tiene que haber
+alguna regla ... cuales casan mejor o usan los prods"), tres reglas nuevas en
+`qlctool check`, tres tests de regresión fechados, los tres workspaces
+regenerados y validados.
+
+- [x] 2026-09-22 - **Blanco fuera de toda rotación.**
+  - Resultado: `wheel_palette.py` (la paleta menos `Blanco`) alimenta la rueda
+    general, la simple, la pastel, las ruedas por grupo, las mezclas y los
+    ciclos de matrices; el blanco queda en `Blanco Total`, los flashes, la luz
+    de charla y el pick 8 de cada banco. Las dos matrices curadas en blanco
+    (Plasma Rainbow, que no lee el color, y 3D Starfield) pasan a cyan y
+    celeste. Regla `blanco en la rueda`, test
+    `test_2026_09_22_white_back_on_the_wheel`.
+  - Evidencia: antes, 83 hallazgos por show; tras regenerar,
+    `qlctool check` "522 botones revisados, ningun problema" en los tres.
+- [x] 2026-09-22 - **Multicolor en rueda propia, los estados a dos colores.**
+  - Resultado: `Rueda Multicolor` (tecla R, marco COLOR, glifo, dial de
+    tempo) con `Rig Multicolor 1/2` y `Rig 4 Colores 1-4` (el asiento blanco
+    del reparto pasa a amarillo); `Rueda Colores` queda en 17 sólidos y 5
+    contrastes. Regla `mas de dos colores en un estado`, test
+    `test_2026_09_22_the_multicolour_deal_back_in_the_state_wheel`.
+  - Evidencia: antes, 6 hallazgos por show (los seis pasos salvajes en la
+    rueda de AUTO); `test_the_multicolour_looks_rotate_on_a_wheel_no_state_starts`
+    comprueba que ni AUTO ni los momentos llegan a ella.
+- [x] 2026-09-22 - **Qué dos colores y dónde: la regla de los profesionales.**
+  - Resultado: `complementary_pairs.py` (entre roles, cálido sobre frío:
+    ámbar/azul, amarillo/azul, rojo/cyan, magenta/verde, más rojo/azul del
+    show) alimenta los contrastes `Cabezas X / Resto Y`; `analogous_pairs.py`
+    (vecinos, en ambos sentidos, más las teclas 9/0) alimenta `Rueda Mezcla`
+    por grupo, 16 pasos en vez de 30. Regla `complementarios en un mismo
+    lavado` (dos colores saturados a 150 grados o más alternando dentro de un
+    grupo), test `test_2026_09_22_complementary_colours_split_across_one_wash`.
+    Fuente: HARMAN vía `brain/topics/stage-lighting-design.md` -
+    complementarios en la misma superficie se desaturan hacia blanco.
+  - Evidencia: antes, 20 hallazgos por show (`Amarillo / Azul` y `Verde /
+    Magenta` en cinco grupos, dos sentidos).
+
 #### 2026-09-22 - Revision del backlog de DMX-Fixtures: cinco items cerrados y ocho con datos corregidos
 
 Se comprobo cada item de `DMX-Fixtures/TODO.md` contra el arbol en vez de

@@ -46,9 +46,14 @@ al final, que si es trabajo de teclado:
   nuevo el 2026-09-22).** `AGENTS.md` ya dice 34-42 min en vez de "~5 min": dos
   pasadas completas el 2026-09-22 dieron 458 tests en 2030 s (33m50s, carga de
   maquina ~70) y en 2494 s (41m34s, carga ~180-270), o sea que el numero
-  depende tanto de quien mas corre en el Mac como del codigo. Falta lo que
-  pedia el item original: un `--durations=20` en la proxima pasada completa
-  para saber que regresiones se llevan el tiempo antes de optimizar nada.
+  depende tanto de quien mas corre en el Mac como del codigo. Pasada con
+  `--durations=20` el 2026-09-22 por la noche: 462 tests en 1175 s (19m35s,
+  maquina tranquila). Los veinte mas lentos son todos regresiones de
+  `test_check.py`, entre 12 y 25 s cada una: cada una carga `Vibra-split.qxw`
+  y pasa `check_workspace` entero sobre el show. Siguiente paso: medir cuanto
+  de esos 12 s es el `check_workspace` completo y si compensa que cada
+  regresion corra solo su regla, o compartir el workspace cargado en un
+  fixture de modulo y copiarlo con `deepcopy` en vez de releer el XML.
 
 ## Repaso del dueño sobre la programación (2026-09-22)
 
@@ -57,13 +62,20 @@ cerró ese día está en `TODO_LOG.md` con la evidencia (cuatro reglas nuevas,
 cuatro tests de regresión, los tres workspaces regenerados y validados). Lo que
 queda espera al rig o a otro repositorio:
 
-- [ ] **Ver en sala los tres modos de color automáticos.** `Colores completos`
-  (W, los 18 de la paleta más los contrastes y los multicolor), `Colores
-  simples` (C, seis primarios y blanco) y `Pastel tenue` (L, los 18 mezclados
-  un 55% hacia el blanco). Los tres están en el marco COLOR de JUGAR, que es
-  solo: elegir uno para los otros dos. Siguiente paso: mirar si el pastel se
-  distingue del blanco en la sala encendida - si no, subir `SHARE` en
-  `qlctool/pastel.py`.
+- [ ] **Ver en sala los cuatro modos de color automáticos.** `Colores
+  completos` (W, los 17 de la paleta sin blanco más cinco contrastes de dos
+  colores), `Colores simples` (C, seis primarios), `Pastel tenue` (L, los 17
+  mezclados un 55% hacia el blanco) y `Multicolor` (R, los seis pasos salvajes,
+  "solo por si acaso", que ningún estado arranca). Desde la noche del
+  2026-09-22 ninguna rueda pisa el blanco ("en directo se ve todo iluminado")
+  y las que arranca un estado no ponen más de dos colores a la vez; los
+  contrastes son complementarios entre roles (ámbar/azul, amarillo/azul,
+  rojo/cyan, magenta/verde, rojo/azul) y las mezclas dentro de un grupo,
+  vecinos (rojo/amarillo, magenta/azul...). Los cuatro están en el marco COLOR
+  de JUGAR, que es solo: elegir uno para los otros. Siguiente paso: mirar si
+  el pastel se distingue del blanco en la sala encendida - si no, subir
+  `SHARE` en `qlctool/pastel.py` - y si los cinco contrastes se leen como dos
+  colores y no como "feria".
 - [ ] **Ver en sala los movimientos nuevos.** Cada figura tiene ahora tres
   botones: fase repartida (el de siempre), `Simultaneo` (todas las cabezas a
   la vez) y `Alternado` (cada cabeza al lado contrario, `every_other`). Los

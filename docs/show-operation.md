@@ -113,13 +113,30 @@ console" below.
   the PARs were on green. Most of its steps are the whole rig on one colour;
   five are the movers against everything else, so there is contrast on purpose
   rather than by drift.
-- **The automatic colour has three modes, and only one runs** (owner,
-  2026-09-22). `Colores completos` (`W`) is that wheel: the whole palette, the
-  five contrasts and the wild steps. `Colores simples` (`C`) is the six
-  primaries and white, one at a time. `Pastel tenue` (`L`) is the same eighteen
-  colours blended 55% towards white, which the white emitter carries where a
-  fixture has one. The three buttons sit in the JUGAR page's COLOR frame, which
-  is solo, so choosing one stops the other two.
+- **The automatic colour has four modes, and only one runs** (owner,
+  2026-09-22). `Colores completos` (`W`) is that wheel: the seventeen palette
+  colours and the five contrasts. `Colores simples` (`C`) is the six primaries,
+  one at a time. `Pastel tenue` (`L`) is the same seventeen colours blended 55%
+  towards white, which the white emitter carries where a fixture has one.
+  `Multicolor` (`R`) is the wild looks - every fixture its own colour, the
+  four-colour deals - on a wheel of their own that no state starts: "solo por
+  si acaso". The buttons sit in the JUGAR page's COLOR frame, which is solo, so
+  choosing one stops the others.
+- **No rotation steps white, and no rotation puts more than two colours on
+  the room** (owner, 2026-09-22): "en directo se ve todo iluminado y queda
+  horrible, luz blanca solo para blanco total". White is `Blanco Total`'s, the
+  flashes' and the talk light's; the wheels, the per-group wheels, the mix
+  wheels and the matrix cycles never land on it (`rule_wheel_white`), and the
+  wheels a state runs stop at two colours per step (`rule_state_palette`).
+- **Which two colours, and where, is the professionals' rule** (HARMAN's
+  colour theory, in the brain's stage-lighting note). Complementary colours -
+  amber over blue, yellow over blue, red over cyan, magenta over green, plus
+  the show's own red over blue - go *between roles*: `Cabezas X / Resto Y`,
+  the warm colour on the heads because warm dominates cool. Inside one wash,
+  where the pools overlap and mix, only neighbours: red/yellow, amber/red,
+  red/magenta, magenta/blue, cyan/blue, green/cyan, yellow/green, both ways
+  round, which is what the per-group `Rueda Mezcla` steps. Opposites on one
+  surface mix towards white (`rule_split_complementary`).
 - **A matrix cycle only runs under AUTO where a group is really pixels.** A
   matrix paints its own group's colour, so a cycle over the heads and another
   over the PARs desynchronises them again. The bars and panels keep theirs -
@@ -158,19 +175,22 @@ console" below.
   white on the same fixtures, which is why nobody could say what the difference
   was - there was none. What is left is a latched work light (`Blanco Total`)
   and a held hit (`Flash 100%`)
-- Rig-wide colour: a scene per colour over the whole patch, five
-  movers-against-the-rest contrasts, and the `Rig Multicolor` / `Rig 4 Colores`
-  wild steps - every fixture its own palette colour, the beams on their colour
-  wheel's rainbow scroll, the pixel groups on one plain colour matrix beside
-  them - all on the Random `Rueda Colores`, so the crazy look appears now and
-  then on the one clock. The rainbow plasma the bars used to run under those
-  steps went out on 2026-09-22 ("quitar multicolores muy feos", owner)
+- Rig-wide colour: a scene per colour over the whole patch (white excepted)
+  and five movers-against-the-rest contrasts, on the Random `Rueda Colores`.
+  The `Rig Multicolor` / `Rig 4 Colores` wild steps - every fixture its own
+  palette colour, the pixel groups on one plain colour matrix beside them -
+  rode that wheel until 2026-09-22 and are `Rueda Multicolor` now, a button
+  no state starts ("los colores siguen siendo una feria", owner). The rainbow
+  plasma the bars used to run under those steps went out the same day
+  ("quitar multicolores muy feos")
 - The panels' phase cycle, `Ciclo Paneles Mixto`: their own 41 programmes for
   eight minutes, then four in manual listening to the wheel's RGB - the wheel
   writes their colour on every step all night, the cycle only decides whether
   they are hearing it (one colour clock, one mode owner)
-- Per fixture group: a bank of solid colours, 30 two-colour mixes, a
-  `Rueda Colores <group>` and a `Rueda Mezcla <group>`, both Random
+- Per fixture group: a bank of solid colours, 16 two-colour mixes (neighbours
+  on the colour wheel, both ways round, plus the show's blue/red keys), a
+  `Rueda Colores <group>` (every solid but white) and a `Rueda Mezcla <group>`,
+  both Random
 - Matrix effects per group (algorithm x colour) with a cycle chaser
 - Movement per family: wash EFX and beam EFX per shape, phases spread evenly,
   each family on its own Random chaser, plus the slow wash pair for Ambiente
@@ -332,7 +352,7 @@ return completely.
 
 | Frame | Hook first | Picks |
 | --- | --- | --- |
-| `COLOR` | `Colores completos`, `Colores simples`, `Pastel tenue`, `Rueda Mezcla`, `Luz Charla` | the palette's colours and both rainbows |
+| `COLOR` | `Colores completos`, `Colores simples`, `Pastel tenue`, `Multicolor`, `Rueda Mezcla`, `Luz Charla` | the palette's colours (white excepted) and both rainbows |
 | `PIXELES` | `AUTO paneles`, `Paneles Charla` | twelve panel effects and `Paneles Manual` |
 | `CABEZAS` | `AUTO lento`, `AUTO normal`, `AUTO rapido`, `Centro` | movement figures, fan, cross and stage aim |
 | `GOBOS` | `AUTO gobos`, `Reposo` | gobos, dealt gobos and shakes in two inner pages |
@@ -445,7 +465,7 @@ only keys that cannot collide with a colour bank on 1-0.
 | `F` / `T` | Strobo Rapido / Medio (Flash - every shutter strobing, fast / slow) | page 1 |
 | `C` | Color Beam Animacion | page 1 |
 | `Backspace` | PARAR TODO (StopAll) | page 1 |
-| `W` / `C` / `L` | the three automatic colour modes: completos, simples, pastel | page 2 |
+| `W` / `C` / `L` / `R` | the four automatic colour modes: completos, simples, pastel, multicolor | page 2 |
 | `E` | Rueda Mezcla | page 2 |
 | `A` | Movimientos Cabezas | page 2 |
 | `G` / `P` | Gobo Animacion / Prisma Animacion | page 2 |
