@@ -1,16 +1,18 @@
 # TODO — Vibra Eventos (DMX / lighting)
 
-The backlog for this repo: the rig, the fixture definitions, the QLC+
-workspaces and `tools/qlctool`. It moved out of `~/p/TODO.md` on 2026-08-26 —
-the work has a repo of its own now, and the owner asked for it to live beside
-the thing it is about.
+> The backlog for this repo: the rig, the fixture definitions, the QLC+
+> workspaces and `tools/qlctool`. Last reviewed: 2026-09-22. History coverage:
+> Complete.
+>
+> States: `[ ]` pending · `[~]` partial or unverified · `[!]` blocked · `[x]`
+> verified complete · `[-]` obsolete or superseded. Closed work moves to
+> [TODO_LOG.md](TODO_LOG.md) in this repo.
 
-Status marks are the ones `~/p/CLAUDE.md` defines: `[ ]` pending, `[~]` partial
-or unverified, `[!]` blocked, `[x]` verified complete, `[-]` obsolete. Closed
-work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before — este
-repo no tiene `TODO_LOG.md` propio a proposito, lo dice su `CLAUDE.md`.
+Este backlog salio de `~/p/TODO.md` el 2026-08-26, para vivir al lado de la
+cosa de la que habla; su log llego detras el 2026-09-22, con la historia DMX
+entera que estaba en `~/p/TODO_LOG.md`.
 
-**Ultima revision: 2026-09-22.** Se comprobo item por item contra el arbol (no
+**Ultima revision, 2026-09-22.** Se comprobo item por item contra el arbol (no
 contra lo que decia el propio item): cinco se cerraron y estan en el log, y a
 ocho se les corrigieron numeros o afirmaciones que ya no eran verdad. Quedan 61
 `[ ]` y 8 `[~]`, y ningun cerrado en este fichero.
@@ -20,7 +22,7 @@ to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
 **Disposicion, 2026-08-31, recontada el 2026-09-22.** Se cerro todo lo que se
-podia cerrar sin el rig (nueve items, en `~/p/TODO_LOG.md`), incluida la
+podia cerrar sin el rig (nueve items, en `TODO_LOG.md`), incluida la
 rejilla: los grupos van ya en orden de escenario y las dos MAC WASH tienen
 grupo propio. Hoy quedan 61 `[ ]` y 8 `[~]`, y casi ninguno espera a que
 alguien escriba codigo — las excepciones son la seccion de calidad del codigo,
@@ -51,7 +53,7 @@ al final, que si es trabajo de teclado:
 ## Repaso del dueño sobre la programación (2026-09-22)
 
 El dueño revisó el show entero y pasó una lista de catorce cosas. Lo que se
-cerró ese día está en `~/p/TODO_LOG.md` con la evidencia (cuatro reglas nuevas,
+cerró ese día está en `TODO_LOG.md` con la evidencia (cuatro reglas nuevas,
 cuatro tests de regresión, los tres workspaces regenerados y validados). Lo que
 queda espera al rig o a otro repositorio:
 
@@ -116,7 +118,7 @@ Dos simuladores independientes de la salida DMX (ninguno usa las reglas de
 workspaces. `qlctool check` decia `503 botones revisados, ningun problema` en
 los tres. Encontraron diez cosas; nueve eran defectos y se cerraron el mismo
 dia con ocho reglas nuevas, ocho tests de regresion y el generador corregido
-(evidencia en `~/p/TODO_LOG.md`, 2026-09-02). Lo que queda de aquella lista:
+(evidencia en `TODO_LOG.md`, 2026-09-02). Lo que queda de aquella lista:
 
 - [ ] **Confirmar en sala los bancos y los picks mantenidos.** Desde
   2026-09-02 los bancos de color (teclas 1-0), las mezclas, los gobos, el
@@ -163,7 +165,7 @@ los beams es deliberado; una escena en marcha reescribe sus LTP cada ciclo
 Se buscó manual para todo lo parcheado y se midió, fixture por fixture, qué
 canales escribe el show y cuáles no toca nunca (script de cobertura sobre
 `checks/driven_channels.py`, los tres workspaces dan lo mismo). Lo cerrado está
-en `docs/rig.md` (tabla de verificación) y en `~/p/TODO_LOG.md`; esto es lo
+en `docs/rig.md` (tabla de verificación) y en `TODO_LOG.md`; esto es lo
 que queda.
 
 - [ ] **Los nombres de los colores de la rueda de las 7R, confirmar en sala

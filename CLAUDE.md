@@ -46,8 +46,9 @@ which loads it in headless QLC+.
 ## The backlog
 
 `TODO.md` in this repo, not `~/p/TODO.md` — it moved here on 2026-08-26. Read
-it at the start and end of related work; closed items go to `~/p/TODO_LOG.md`
-with the date and the evidence, then out of the backlog.
+it at the start and end of related work; closed items go to `TODO_LOG.md` in
+this repo with the date and the evidence, then out of the backlog. That log
+moved here from `~/p/TODO_LOG.md` on 2026-09-22, history and all.
 
 ## QLC+'s own source is at `~/p/qlcplus`
 
