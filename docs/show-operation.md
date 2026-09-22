@@ -113,6 +113,13 @@ console" below.
   the PARs were on green. Most of its steps are the whole rig on one colour;
   five are the movers against everything else, so there is contrast on purpose
   rather than by drift.
+- **The automatic colour has three modes, and only one runs** (owner,
+  2026-09-22). `Colores completos` (`W`) is that wheel: the whole palette, the
+  five contrasts and the wild steps. `Colores simples` (`C`) is the six
+  primaries and white, one at a time. `Pastel tenue` (`L`) is the same eighteen
+  colours blended 55% towards white, which the white emitter carries where a
+  fixture has one. The three buttons sit in the JUGAR page's COLOR frame, which
+  is solo, so choosing one stops the other two.
 - **A matrix cycle only runs under AUTO where a group is really pixels.** A
   matrix paints its own group's colour, so a cycle over the heads and another
   over the PARs desynchronises them again. The bars and panels keep theirs -
@@ -121,9 +128,18 @@ console" below.
 - **The beams' colour comes from the same wheel.** They have no RGB, so a colour
   scene could not reach them and `Color Beam Animacion` - which started after
   the colour wheel and therefore won their one colour channel - had them on a
-  colour of their own all night. The rig-wide scenes now put that wheel on the
+  colour of their own all night. The rig-wide scenes put that wheel on the
   position nearest the colour they paint (White, Yellow, Red, Blue, Green, UV,
-  Orange, Pink), and the animation is a button rather than part of `AUTO`.
+  Orange, Pink). Since 2026-09-22 there is no beam-wheel button at all: it
+  looked like an on/off switch and behaved like a colour pick ("el boton color
+  beam parece un on of pero realmente cambia como la rueda", owner), so the
+  beams simply follow the rig and key `C` went to the simple colour mode. The
+  wheel's fourteen positions stay as held picks on the CONTROL page.
+- **A hue that travels reaches the beams through their own rainbow spin.** Both
+  rainbows are EFX in RGB mode and an EFX cannot address a wheel, so each
+  rainbow button is the EFX plus `Color Beam - Arcoiris (capa)`, which puts the
+  7R colour wheel in its continuous rainbow range (128-191).
+  `rule_colour_animation_wheel` is what keeps it that way.
 - **Colour range comes from mixing.** The strongest looks in the hand-built show
   are two-colour: odd fixtures on one colour, even on the other ("Rojo / Azul"),
   stepped through by a mix wheel. Solid washes alone look thin.
@@ -143,10 +159,12 @@ console" below.
   was - there was none. What is left is a latched work light (`Blanco Total`)
   and a held hit (`Flash 100%`)
 - Rig-wide colour: a scene per colour over the whole patch, five
-  movers-against-the-rest contrasts, and two `Rig Multicolor` wild steps -
-  every fixture its own palette colour, the beams on their colour wheel's
-  rainbow scroll, the bars under a rainbow plasma - all on the Random
-  `Rueda Colores`, so the crazy look appears now and then on the one clock
+  movers-against-the-rest contrasts, and the `Rig Multicolor` / `Rig 4 Colores`
+  wild steps - every fixture its own palette colour, the beams on their colour
+  wheel's rainbow scroll, the pixel groups on one plain colour matrix beside
+  them - all on the Random `Rueda Colores`, so the crazy look appears now and
+  then on the one clock. The rainbow plasma the bars used to run under those
+  steps went out on 2026-09-22 ("quitar multicolores muy feos", owner)
 - The panels' phase cycle, `Ciclo Paneles Mixto`: their own 41 programmes for
   eight minutes, then four in manual listening to the wheel's RGB - the wheel
   writes their colour on every step all night, the cycle only decides whether
@@ -160,7 +178,13 @@ console" below.
   that steps it. The pro figures rotate among the shapes: `Ola Vertical`
   (the tilt wave - Line at width 0, Serial cascade), `Barrido Unison` (the
   synced push - every head in phase, the mirror making the sides meet), and
-  the two beam rests, `Beams Abanico` (the fan) and `Beams Cruce` (the X)
+  the two beam rests, `Beams Abanico` (the fan) and `Beams Cruce` (the X).
+  Since 2026-09-22 every shape carries every family - the beams gained `Square`
+  and `Lissajous`, so no shape button leaves four heads standing - and every
+  shape has three buttons: the phased one, a `Simultaneo` (all heads at phase
+  0) and an `Alternado` (alternate heads running the figure backwards, which is
+  "cada cabeza para un lado"). The beams' figure takes half the washes' time,
+  so the two families rhyme instead of drifting
 - `Cabezas Centro`, `Intensidad Ambiente` / `Intensidad Total`, and the four
   energy levels with `Ciclo Energia` over them - the way down from the peak
   is `Nivel Fiesta Dinamico`, party movement with the dimmers taking turns
@@ -274,12 +298,21 @@ only one built with big buttons and sentences on them.
 | Frame | What is in it |
 | --- | --- |
 | `LA SALA ESTÁ ASÍ` (solo) | `AUTO` at a quarter of the screen, the four moments, `BLANCO TOTAL` (work light) and `TODO NEGRO`. Exactly one runs at a time |
-| `GOLPES` (plain) | `FLASH`, `FLASH LENTO`, `FLASH COLOR`, `HUMO YA`, `STROBO`, `STROBO SUAVE`, `COLOR BEAM`. These add to whatever state is running |
+| `GOLPES` (plain) | `FLASH`, `FLASH LENTO`, `FLASH COLOR`, `HUMO YA`, `HUMO VERT`, `STROBO`, `STROBO SUAVE`. These add to whatever state is running |
 | `SI ALGO VA MAL` | `PARAR TODO` - a `StopAll` button with a 1 s fade, driving no function of its own. `APAGON` - a `Blackout` action, and it latches: the first press forces every output to zero regardless of what is running underneath; the second press lifts it and gives that back. AUTO does nothing while the room is blacked out - it has to be pressed after the second `APAGON`, not instead of it |
 
 Every button on this page carries its own key in its caption (`AUTO — el show
 se lleva solo · Q`), and five lines of plain Spanish under the frames say what
 the two halves of the page are for. Nobody reads a key map at a venue.
+
+**Each button also carries a glyph, and the caption starts with it** (`▶ AUTO`,
+`⚡ FLASH`, `☁ HUMO YA`, `↔ AUTO normal`): "ni un solo icono en los botones"
+(owner, 2026-09-22). QLC+'s own `<Icon>` is an absolute path into one machine's
+disk, so a real icon would break on any other Mac; a glyph is part of the
+caption and travels with the file. The glyph of a named button is in
+`control_glyph.py`, the glyph of a whole family of picks in `pick_marks.py`, and
+the tablet's map splits it back out into an `icon` field of its own so a tile
+can draw it at tile size (`leading_glyph.py`).
 
 **The solo frame is the fix, not a detail.** A solo frame stops every other
 widget's function as soon as one starts, so putting `AUTO`, the moments, the
@@ -299,7 +332,7 @@ return completely.
 
 | Frame | Hook first | Picks |
 | --- | --- | --- |
-| `COLOR` | `AUTO colores`, `Rueda Mezcla`, `Luz Charla` | wheel colours and both rainbows |
+| `COLOR` | `Colores completos`, `Colores simples`, `Pastel tenue`, `Rueda Mezcla`, `Luz Charla` | the palette's colours and both rainbows |
 | `PIXELES` | `AUTO paneles`, `Paneles Charla` | twelve panel effects and `Paneles Manual` |
 | `CABEZAS` | `AUTO lento`, `AUTO normal`, `AUTO rapido`, `Centro` | movement figures, fan, cross and stage aim |
 | `GOBOS` | `AUTO gobos`, `Reposo` | gobos, dealt gobos and shakes in two inner pages |
@@ -412,7 +445,8 @@ only keys that cannot collide with a colour bank on 1-0.
 | `F` / `T` | Strobo Rapido / Medio (Flash - every shutter strobing, fast / slow) | page 1 |
 | `C` | Color Beam Animacion | page 1 |
 | `Backspace` | PARAR TODO (StopAll) | page 1 |
-| `W` / `E` | Rueda Colores / Rueda Mezcla | page 2 |
+| `W` / `C` / `L` | the three automatic colour modes: completos, simples, pastel | page 2 |
+| `E` | Rueda Mezcla | page 2 |
 | `A` | Movimientos Cabezas | page 2 |
 | `G` / `P` | Gobo Animacion / Prisma Animacion | page 2 |
 | `'` / `¡` | Arcoiris Simultaneo / Arcoiris Pasos (relative RGB rainbows) | page 2 |

@@ -46,6 +46,67 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
   while verifying the launcher). Locate the maintained clone and update the
   pointer before the next change that needs QLC+ internals.
 
+## Repaso del dueño sobre la programación (2026-09-22)
+
+El dueño revisó el show entero y pasó una lista de catorce cosas. Lo que se
+cerró ese día está en `~/p/TODO_LOG.md` con la evidencia (cuatro reglas nuevas,
+cuatro tests de regresión, los tres workspaces regenerados y validados). Lo que
+queda espera al rig o a otro repositorio:
+
+- [ ] **Ver en sala los tres modos de color automáticos.** `Colores completos`
+  (W, los 18 de la paleta más los contrastes y los multicolor), `Colores
+  simples` (C, seis primarios y blanco) y `Pastel tenue` (L, los 18 mezclados
+  un 55% hacia el blanco). Los tres están en el marco COLOR de JUGAR, que es
+  solo: elegir uno para los otros dos. Siguiente paso: mirar si el pastel se
+  distingue del blanco en la sala encendida - si no, subir `SHARE` en
+  `qlctool/pastel.py`.
+- [ ] **Ver en sala los movimientos nuevos.** Cada figura tiene ahora tres
+  botones: fase repartida (el de siempre), `Simultaneo` (todas las cabezas a
+  la vez) y `Alternado` (cada cabeza al lado contrario, `every_other`). Los
+  beams han ganado `Square` y `Lissajous`, así que ya no se quedan quietos con
+  esos dos. Y la figura de los beams dura ahora la mitad que la de los washes
+  (8 s contra 16), para que rimen; confirmar que no queda demasiado rápido para
+  una 7R. Son 26 picks en el marco CABEZAS, a 15 columnas y dos filas: el marco
+  no puede crecer porque GOBOS empieza 148 px por debajo, así que los botones
+  son estrechos - mirar en la tablet si el texto se lee.
+- [ ] **Confirmar que los golpes de color salen del mismo color en toda la
+  sala.** El dueño vio "los rgb salen como mezclados con blanco". La mitad era
+  el emisor White sumándose al RGB (cerrado, `blanco pagado dos veces`) y la
+  otra mitad puede ser la tabla de nombres de la rueda de las 7R, que sigue sin
+  confirmar - ver el item del 2026-09-02 sobre `color_wheel_match`. Con la
+  rueda mal nombrada, un golpe rojo manda a los beams un color vecino.
+- [ ] **Decidir en sala la matriz de dos colores sobre Cabezas.** `Alternate
+  Verde Menta/Azul Profundo` pinta pares e impares de dos colores sobre los
+  ocho cabezas RGB y deja los cuatro beams en una posición fija de rueda. La
+  regla nueva no la mira (una matriz habla de píxeles, no de fixtures, como en
+  `rueda de color`), así que es una decisión: o se reparten los dos colores
+  entre los beams por su rueda, o se acepta.
+- [ ] **"Quitar y poner un color no apaga las beam" - probar la hipótesis en
+  sala antes de tocar nada.** Un pick de color en JUGAR es un Toggle en un marco
+  solo: al repetirlo se para y deja la familia quieta. Al pararse, el RGB se
+  suelta y esos aparatos se apagan, pero la rueda de color de las 7R es LTP -
+  nadie la reescribe - así que los beams se quedan con el color puesto y
+  encendidos por el nivel de energía. Es asimetría, no capricho. El arreglo
+  candidato es una escena base que corra siempre y sea dueña de la rueda: su
+  fader queda por debajo del pick (`Universe::requestFader` encola por
+  prioridad y orden), así que al soltar el pick la rueda volvería a la base.
+  Antes de implementarlo hay que verlo: con AUTO parado, pulsar un pick de
+  color, volver a pulsarlo, y apuntar qué hacen los cuatro beams. Si se quedan
+  encendidos, hace falta la base; si se apagan, el fallo era el botón COLOR BEAM
+  que ya no existe. Hay una segunda lectura, y es decisión del dueño: puede que
+  lo que sobre no sea el color de los beams sino que soltar un pick deje la sala
+  a oscuras en vez de devolverla a AUTO. Eso se decide, no se adivina.
+- [ ] **El desk de la tablet tiene que dibujar el campo `icon`.** `Vibra.desk.json`
+  lleva desde hoy un `icon` por control (111 de 138), separado del `caption`
+  (`leading_glyph`); el esquema sigue siendo 2 porque añadir un campo es
+  compatible. La app vive en otro repositorio: hasta que lo pinte, la tablet
+  sigue sin iconos aunque el mapa ya los traiga.
+- [ ] **Iconos en el resto de la consola.** 134 de 600 botones llevan glifo:
+  los estados, los golpes, el humo, las capas y los picks de las cinco
+  familias. Los bancos de color (teclas 1-0), la librería de matrices y la
+  rueda de los BEAM siguen sin marca. Decidir si hace falta o si el color del
+  botón ya lo dice.
+
 ## Auditoria cruzada de los programas (2026-09-02, Claude + Codex)
 
 Dos simuladores independientes de la salida DMX (ninguno usa las reglas de
