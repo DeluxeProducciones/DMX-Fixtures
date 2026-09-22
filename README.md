@@ -56,7 +56,7 @@ profile "M-VAVE SMC-PAD", MIDI channel **1-16**.
 ```bash
 cd tools/qlctool
 python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
-.venv/bin/python -m pytest tests/ -q        # ~5 min
+.venv/bin/python -m pytest tests/ -q        # ~35 s, parallel
 .venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
 ```
 

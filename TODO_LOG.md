@@ -17,6 +17,30 @@
 
 ### 2026-09
 
+#### 2026-09-22 - La suite de qlctool baja de 2 minutos a 35 segundos
+
+- [x] 2026-09-22 - **Entorno:** "genial hazlo todo": paralelizar la suite y
+  acortar la espera de `validate`.
+  - Resultado: `pytest-xdist` con `addopts = "-n auto"` en `pyproject.toml`
+    (`-n 0` para depurar). Los arranques de QLC+ no se podian paralelizar
+    porque la build QML comparte `~/QLC+.log`: dos validaciones a la vez se
+    truncan el log y la ultima en leer hereda la sesion de la otra. Ahora
+    `validate_workspace` toma un cerrojo `flock` (`validate.LAUNCH_LOCK`, en
+    el tempdir del usuario) alrededor del arranque en segundo plano, asi que
+    cualquier llamador queda serializado sin marcar tests. `quiet_period`
+    baja de 2 s a 1 s: medido en nueve arranques, la queja de un aparato sale
+    en la misma ventana de 20 ms que el primer marcador de carga y el log
+    deja de crecer 0,2 s despues; 1 s es margen 5x. Un paso de chaser que
+    apunta a una funcion inexistente no produce ninguna linea en QLC+ (eso
+    lo ve `qlctool check`, no `validate`).
+  - Evidencia: `test_two_validations_at_once_keep_their_own_verdicts`
+    (show real y show truncado desde dos hilos) falla 3 de 3 sin cerrojo
+    (el show real hereda "fixture 13 overlapping") y pasa 3 de 3 con el.
+    Suite: 463 passed en 46,81 s con `-n 4` y 32,45 s con `-n auto` (12
+    workers); 137,62 s en serie esa misma tarde. `pgrep -fl qlcplus-qml`
+    vacio despues. `codeality-py baseline check`: 0 new; deptry limpio con
+    `pytest-xdist` en DEP002 como plugin.
+
 #### 2026-09-22 - La suite de qlctool baja de 4 minutos a 2
 
 - [x] 2026-09-22 - **Entorno:** seguir apretando la suite ("lo mismo hay otros

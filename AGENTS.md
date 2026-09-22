@@ -42,7 +42,8 @@ hand.
 ```bash
 cd tools/qlctool
 python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
-.venv/bin/python -m pytest tests/ -q          # full suite, ~2-3 min since 2026-09-22 (was 19-42)
+.venv/bin/python -m pytest tests/ -q          # full suite, ~35 s on 12 workers (2026-09-22; was 19-42 min)
+.venv/bin/python -m pytest tests/ -q -n 0     # serial, for a debugger; QLC+ launches always serialise
 .venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
 ```
 
