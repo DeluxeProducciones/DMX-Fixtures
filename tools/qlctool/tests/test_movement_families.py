@@ -1,0 +1,207 @@
+"""Variety on top of the family split: rotation and serial cascades.
+
+All 23 EFX ran Rotation=0 and Parallel propagation - every shape an axis-aligned
+clone of the others (Codex A6). A Serial EFX delays each fixture by
+`loopDuration/(fixtureCount+1)*serialNumber` (efxfixture.cpp:380-386), which
+turns a plain shape into a cascade down the row for free. Two new figures use
+it - `Ola Suave` (washes, Line) and `Cascada Beams` (beams, Circle, Rotation
+45) - and two existing beam shapes get a rotation so they stop tracing the same
+axes as their wash counterparts.
+"""
+
+from pathlib import Path
+
+import pytest
+
+from qlctool.checks.run import check_workspace
+from qlctool.generate.movement_families import generate_movement_families
+from qlctool.library import FixtureLibrary
+from qlctool.monitor_positions import house_right_fixture_ids
+from qlctool.skeleton import strip_to_skeleton
+from qlctool.workspace import Workspace
+from qlctool.xmlutil import find_local, findall_local, iter_local
+
+REPO = Path(__file__).resolve().parents[3]
+SHOW = REPO / "QLC+ Setups" / "Vibra.qxw"
+
+
+@pytest.fixture(scope="module")
+def library():
+    return FixtureLibrary.load()
+
+
+def _efx_by_name(root):
+    """Every EFX by name - and a split figure by its plain name, via its first part.
+
+    A family that mixes fixtures on both sides of `efx_16bit` is generated as
+    one EFX per side under a Collection carrying the figure's name (the Mini
+    Led Moving Head put the washes there on 2026-09-02). The shape - algorithm,
+    propagation, speed, rotation - is the same on every part, so the plain
+    name resolves to the first; `_efx_parts` is for the per-fixture fields.
+    """
+    functions = {f.attrib["Name"]: f for f in iter_local(root, "Function")}
+    efx = {name: f for name, f in functions.items() if f.attrib.get("Type") == "EFX"}
+    for name, parts in _split_figures(root).items():
+        efx.setdefault(name, parts[0])
+    return efx
+
+
+def _efx_parts(root, name):
+    """The EFX elements behind one figure: itself, or the parts of its split."""
+    split = _split_figures(root)
+    if name in split:
+        return split[name]
+    return [_efx_by_name(root)[name]]
+
+
+def _split_figures(root):
+    by_id = {f.attrib["ID"]: f for f in iter_local(root, "Function") if "ID" in f.attrib}
+    split = {}
+    for f in iter_local(root, "Function"):
+        if f.attrib.get("Type") != "Collection":
+            continue
+        parts = [by_id.get((step.text or "").strip()) for step in findall_local(f, "Step")]
+        if parts and all(p is not None and p.attrib.get("Type") == "EFX" for p in parts):
+            split[f.attrib["Name"]] = parts
+    return split
+
+
+def _generated(library):
+    ws = strip_to_skeleton(Workspace.load(SHOW))
+    mirrored = house_right_fixture_ids(ws.root)
+    generate_movement_families(ws, library, mirrored_ids=mirrored)
+    return ws
+
+
+def test_ola_suave_is_a_serial_line_wash(library):
+    ws = _generated(library)
+    functions = _efx_by_name(ws.root)
+
+    assert "Ola Suave" in functions
+    ola = functions["Ola Suave"]
+    assert find_local(ola, "Algorithm").text == "Line"
+    assert find_local(ola, "PropagationMode").text == "Serial"
+    # Slow, the Suave duration class (28000ms family), not the faster Wash one.
+    assert int(find_local(ola, "Speed").attrib["Duration"]) == 28000
+
+
+def test_cascada_beams_is_a_serial_rotated_circle(library):
+    ws = _generated(library)
+    functions = _efx_by_name(ws.root)
+
+    assert "Cascada Beams" in functions
+    cascada = functions["Cascada Beams"]
+    assert find_local(cascada, "Algorithm").text == "Circle"
+    assert find_local(cascada, "PropagationMode").text == "Serial"
+    assert int(find_local(cascada, "Rotation").text) == 45
+
+
+def test_beam_diamond_and_leaf_break_the_axis_alignment(library):
+    ws = _generated(library)
+    functions = _efx_by_name(ws.root)
+
+    assert "Beam Diamante" in functions
+    assert int(find_local(functions["Beam Diamante"], "Rotation").text) == 90
+    assert "Beam Hoja" in functions
+    assert int(find_local(functions["Beam Hoja"], "Rotation").text) == 45
+
+    # The pre-existing wash shapes are untouched by this task.
+    assert int(find_local(functions["Wash Diamante"], "Rotation").text) == 0
+    assert int(find_local(functions["Wash Hoja"], "Rotation").text) == 0
+
+
+def test_the_far_side_still_runs_the_new_figures_backwards(library):
+    """The mirrored house-right logic must survive the new figures too - a
+    Serial or rotated EFX is still an EFX with a per-fixture Direction."""
+    ws = _generated(library)
+    mirrored = house_right_fixture_ids(ws.root)
+    functions = _efx_by_name(ws.root)
+
+    for name in ("Ola Suave", "Cascada Beams", "Beam Diamante", "Beam Hoja"):
+        assert name in functions
+        checked = 0
+        for part in _efx_parts(ws.root, name):
+            for fixture in findall_local(part, "Fixture"):
+                fixture_id = int(find_local(fixture, "ID").text)
+                direction = find_local(fixture, "Direction").text
+                expected = "Backward" if fixture_id in mirrored else "Forward"
+                assert direction == expected, f"{name}, fixture {fixture_id}"
+                checked += 1
+        assert checked, name
+
+
+def test_movement_families_still_pass_the_mixed_optics_rule(library):
+    """One optics family per EFX - adding cascades must not blur that line."""
+    ws = _generated(library)
+    findings = [
+        f for f in check_workspace(ws, library) if f.rule == "familias de movimiento mezcladas"
+    ]
+    assert not findings, "\n".join(str(f) for f in findings)
+
+
+def test_every_shipped_efx_still_has_the_family_shapes(library):
+    """No pre-existing figure lost its shape or its family in the process."""
+    ws = _generated(library)
+    functions = _efx_by_name(ws.root)
+    for name in ("Wash Circulo", "Beam Circulo", "Suave Circulo"):
+        assert name in functions
+
+
+def test_2026_09_22_every_shape_button_moves_the_beams_and_the_washes(library):
+    """The owner's night: "algunos movimientos de cabeza no incluyen las beam".
+
+    A shape button is a Collection of the per-family EFX that draw that figure,
+    and a family that never defined the shape simply did not appear in it - so
+    the button moved the six washes and left the four 7R standing, with nothing
+    in the file saying anything was missing. The invariant is coverage: every
+    movement Collection on the CABEZAS page drives pan and tilt on a fixture of
+    each family, whichever figure and whichever way it is phased.
+
+    A one-family look is a different function (`Cascada Beams`, `Beams Abanico`)
+    and lives under its own name, so it is not in this list: the picks here are
+    exactly what `generate_movement_families` returns as shape buttons.
+    """
+    from qlctool import roles
+    from qlctool.capabilities_of import capabilities_of
+    from qlctool.checks.driven_channels import driven_channels
+    from qlctool.checks.show_graph import group_fixtures
+
+    ws = strip_to_skeleton(Workspace.load(SHOW))
+    mirrored = house_right_fixture_ids(ws.root)
+    generated = generate_movement_families(ws, library, mirrored_ids=mirrored)
+    capabilities = {c.fixture.fixture_id: c for c in capabilities_of(ws.root, library)}
+    groups = group_fixtures(ws.root)
+    by_id = {f.attrib["ID"]: f for f in iter_local(ws.root, "Function") if "ID" in f.attrib}
+
+    def _moved(function):
+        """The fixture ids this function or its members put pan or tilt on."""
+        moved = set()
+        for step in findall_local(function, "Step"):
+            member = by_id.get((step.text or "").strip())
+            if member is not None:
+                moved |= _moved(member)
+        for fixture_id, pairs in driven_channels(function, capabilities, groups).items():
+            caps = capabilities.get(fixture_id)
+            if caps is None:
+                continue
+            for role in (roles.PAN, roles.TILT):
+                if any(offset in pairs for offset in caps.offsets_for_role(role)):
+                    moved.add(fixture_id)
+        return moved
+
+    def _is_beam(fixture_id):
+        return capabilities[fixture_id].has_role(roles.GOBO)
+
+    # A figure is a Collection of the per-family EFX that draw it; the aims and
+    # the fan are Scenes, and one of those is beams-only on purpose.
+    shapes = [
+        by_id[str(pick_id)]
+        for pick_id in generated.play_pick_ids
+        if by_id[str(pick_id)].attrib.get("Type") == "Collection"
+    ]
+    assert len(shapes) >= 21  # seven figures, each plain, together and opposed
+    for shape in shapes:
+        moved = _moved(shape)
+        name = shape.attrib["Name"]
+        assert any(_is_beam(fixture_id) for fixture_id in moved), name
+        assert any(not _is_beam(fixture_id) for fixture_id in moved), name

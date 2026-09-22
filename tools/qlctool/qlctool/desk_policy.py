@@ -1,0 +1,165 @@
+"""Which console frames become which desk pages, and what each control is.
+
+The tablet does not mirror the Mac's console; it reorganises the same widgets
+by what the operator is thinking about. This is the one place that says how:
+the frames are found by the captions the generators themselves define, so a
+renamed frame breaks here, loudly, rather than silently dropping a page.
+
+A Flash button is never an enabled desk control: the map replaces held
+accents with validated private bursts. Placement retains each source accent
+so its caption, section and swatches survive the replacement.
+"""
+
+import re
+from dataclasses import dataclass
+
+from .desk_widgets import DeskWidget
+from .leading_glyph import leading_glyph
+from .generate.live_console import (
+    CHASES_FRAME,
+    HITS_FRAME,
+    ROOM_FRAME,
+    SMOKE_FRAME,
+    SMOKE_LIGHT_CAPTION,
+)
+from .generate.play_page import COLOR_HITS_FRAME, FAMILY_FRAMES, PICK_PREFIX
+
+HELD_REASON = "held on the Mac"
+
+BURST_FRAME = "Ráfagas del desk"
+# Provisional durations in milliseconds, tunable by the owner after a rig test.
+BURST_MS = {
+    "flash": 8000,
+    "flash-lento": 8000,
+    "flash-color": 8000,
+    "strobo": 4000,
+    "strobo-suave": 4000,
+    "humo-ya": 3000,
+    "humo-vert": 3000,
+    "rojo": 8000,
+    "verde": 8000,
+    "azul": 8000,
+    "ultravioleta": 8000,
+    "amarillo": 8000,
+    "cyan": 8000,
+    "magenta": 8000,
+    "blanco": 8000,
+    "naranja": 8000,
+    "rosa": 8000,
+}
+
+PAGES = (
+    ("live", "LIVE"),
+    ("color", "COLOR"),
+    ("pixels", "PIXELES"),
+    ("heads", "CABEZAS"),
+    ("gobos", "GOBOS"),
+    ("prism", "PRISMA"),
+    ("control", "CONTROL"),
+)
+FAMILY_PAGES = dict(zip(FAMILY_FRAMES, ("color", "pixels", "heads", "gobos", "prism")))
+# The order sections take on a page: what the operator reaches for first,
+# and the bounded hits last.
+SECTION_ORDER = ("state", "hooks", "picks", "haze", "chases", "haze-light", "accents")
+
+# Words the tablet puts under a control where the show's own would mislead
+# an operator in the dark: a black look is not a stop, and a haze rhythm
+# fires the moment it starts. Keyed by the map key, or by role for a whole
+# section. The show's names are never touched.
+SAFETY_DETAIL_BY_KEY = {
+    "todo-negro": "no es parar",
+    "pares": "",
+    "humo-vertical": "",
+}
+# Names the tablet shows instead of the show's where the show's would be
+# read as something else: the fog fixture's light is not fog, and a chase
+# that alternates halves is one thing, not a name and a footnote.
+SAFETY_CAPTION_BY_KEY = {
+    "humo-vertical": "Luz del humo vertical",
+    "pares": "Pares / impares",
+}
+SAFETY_DETAIL_BY_ROLE = {
+    "haze": "dispara ya",
+}
+SECTION_TITLES = {
+    "state": "LA SALA ESTÁ ASÍ",
+    "accents": "GOLPES",
+    "haze": "HUMO AMBIENTE",
+    "hooks": "AUTO",
+    "picks": "ELEGIR",
+    "chases": "BARRIDOS DE INTENSIDAD",
+    "haze-light": "LUZ DEL HUMO VERTICAL",
+}
+
+
+@dataclass(frozen=True)
+class Placement:
+    page: str
+    section: str
+    role: str
+    enabled: bool
+    reason: str
+
+
+def place(
+    widget: DeskWidget,
+    frames: dict[int, DeskWidget],
+    function_name: str | None,
+    function_kind: str = "",
+) -> Placement | None:
+    """Where a widget goes on the desk, or None when the desk does not show it."""
+    if widget.kind != "Button" or widget.function is None:
+        return None
+    held = widget.action == "Flash"
+    if widget.action not in ("Toggle", "Flash"):
+        return None
+    heads = [_head(frames[fid].caption) for fid in widget.frames if fid in frames]
+    if _head(ROOM_FRAME) in heads:
+        return Placement("live", "state", "state", True, "")
+    if _head(HITS_FRAME) in heads:
+        if held:
+            return Placement("live", "accents", "accent", False, HELD_REASON)
+        return Placement("live", "accents", "toggle", True, "")
+    if _head(SMOKE_FRAME) in heads:
+        return Placement("live", "haze", "haze", True, "")
+    if _head(COLOR_HITS_FRAME) in heads:
+        return Placement("color", "accents", "accent", False, HELD_REASON)
+    for family, page in FAMILY_PAGES.items():
+        if family in heads:
+            if held:
+                return None
+            pick = (function_name or "").startswith(PICK_PREFIX)
+            return Placement(
+                page, "picks" if pick else "hooks", "pick" if pick else "hook", True, ""
+            )
+    if _head(CHASES_FRAME) in heads:
+        # The dimmer chases are what the desk offers here; the fixture strobe
+        # toggles beside them are Scenes and wait for a later phase.
+        if held or function_kind not in ("Chaser", "Collection", "Sequence"):
+            return None
+        return Placement("control", "chases", "chase", True, "")
+    # The console prefixes each master button with its glyph; the caption this
+    # compares against is the one the generator names (2026-09-22).
+    if leading_glyph(widget.caption)[1] == SMOKE_LIGHT_CAPTION:
+        return Placement("control", "haze-light", "toggle", True, "")
+    return None
+
+
+def split_caption(caption: str) -> tuple[str, str]:
+    """A Mac caption into the desk's two lines: the name and the explanation.
+
+    "AUTO — el show se lleva solo · Q" -> ("AUTO", "el show se lleva solo");
+    "AUTO colores · W" -> ("AUTO colores", ""); "Rig Rojo" -> ("Rig Rojo", "").
+    The key hint after " · " is the Mac keyboard's business, not the tablet's.
+    """
+    text = re.sub(r"\s·\s\S+$", "", caption).strip()
+    head, sep, detail = text.partition(" — ")
+    if not sep:
+        # A two-colour contrast, "Cabezas Rojo / Resto Azul", reads as a
+        # name and its second half rather than one long line.
+        head, sep, detail = text.partition(" / ")
+    return head.strip(), detail.strip() if sep else ""
+
+
+def _head(caption: str) -> str:
+    return caption.split(" — ", maxsplit=1)[0].strip()
