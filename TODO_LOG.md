@@ -17,6 +17,18 @@
 
 ### 2026-09
 
+#### 2026-09-23 - La suite de qlctool tiene presupuesto en el gate
+
+- [x] 2026-09-23 - **Entorno:** subir `syntopica-codeality-py` a 0.2.3 y
+  presupuestar la suite.
+  - Resultado: `test-budget-seconds = 120` en `codeality-py.toml` y el pin
+    `>=0.2.3,<1` en `pyproject.toml`. El gate marca la etapa pytest como
+    `over-budget` si la suite vuelve a crecer; lo aprendido esta noche esta en
+    codeality (`docs/standards/testing.md#suite-time-budget`).
+  - Evidencia: `codeality-py gate`: pytest passed en 37,41 s con
+    `--durations=10`; ruff, ruff-format y mypy siguen en findings con la deuda
+    conocida de TODO.md, nada nuevo.
+
 #### 2026-09-22 - La suite de qlctool baja de 2 minutos a 35 segundos
 
 - [x] 2026-09-22 - **Entorno:** "genial hazlo todo": paralelizar la suite y
