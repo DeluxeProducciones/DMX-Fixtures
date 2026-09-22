@@ -25,8 +25,7 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
   desde aqui es exactamente el fallo que este repo persigue.
 - **Cuatro esperan a algo externo**: renombrar la org de GitHub, `xcode-select` en el Mac del show (fuera
   de red), y comprar el reemplazo del dongle DMX.
-- **Dos esperan una decision del dueño**: quedarse con `Vibra-split.qxw`, y
-  mezclar la rama `qlctool` en `main`.
+- **Una espera una decision del dueño**: quedarse con `Vibra-split.qxw`.
 - **La auditoria de capacidades de QLC+** (sliders, MIDI, paletas, XY pad,
   ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
   y cada una cambia como se opera. Se deciden, no se implementan de oficio.
@@ -741,9 +740,12 @@ que queda.
   WX-60WPS. `qlctool` deliberately leaves them out of `Strobo ON`, because a
   guessed value closes a shutter instead of flashing it. The channel probe
   settles it in the same on-site session as the rest of the rig.
-- [ ] Merge branch `qlctool` into `main` once the fresh show is accepted. It
-  carries the whole toolkit plus three format variants of DeluxeEventos2 used as
-  test material.
+- [x] Merge branch `qlctool` into `main`. Done 2026-09-22 on the owner's word
+  ("mergea todo a main"): `ca38195` merges the branch and `a7dfb31` the two
+  commits `main` carried on its own (untracking `.serena`, the CocoIndex ignore
+  line, whose `.gitignore` was the only conflict). `origin/main` is at `a7dfb31`
+  and `qlctool check` is clean on the three workspaces from it, 592 buttons
+  each. The branch still exists, fully merged.
 
 ## QLC+ feature audit (2026-08-27)
 
