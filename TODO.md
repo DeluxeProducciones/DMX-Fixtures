@@ -42,6 +42,11 @@ al final, que si es trabajo de teclado:
 
 ## Development environment
 
+- [ ] Cuando `syntopica-codeality-py` 0.2.3 esté en PyPI, subirlo en
+      `tools/qlctool` y poner `test-budget-seconds = 120` en `codeality-py.toml`:
+      el gate marca la suite como `over-budget` si vuelve a crecer (32 s hoy con
+      `-n auto`; 19 min el 2026-09-22). La clave es desconocida para 0.2.2 y
+      rompe `load_config`, así que no antes de la actualización.
 
 ## Repaso del dueño sobre la programación (2026-09-22)
 
