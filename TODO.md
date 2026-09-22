@@ -789,7 +789,11 @@ modifiers, passthrough, extra universes.
 `~/p/codeality`): mismo esquema de configuracion, otros nombres de fichero
 (`baseline-py.toml` paso a `codeality-py.toml`, `.baseline-py-baseline.json` a
 `.codeality-py-baseline.json`) y el mando es `codeality-py`. El registro se
-reescribio con la herramienta nueva: 206 hallazgos, `0 new, 206 known`.
+reescribio con la herramienta nueva: 206 hallazgos, `0 new, 206 known`. El
+gate completo corrio el 2026-09-22 tras la migracion: pytest `passed` en
+1864 s con la cobertura por encima del 85, `codeality-py baseline check`,
+deptry y pip-audit `passed`; ruff, `ruff format --check` y mypy siguen en
+`findings` con la deuda de los items de abajo.
 
 **El gate hay que lanzarlo con el venv en el PATH** (`PATH="$PWD/.venv/bin:$PATH"
 codeality-py gate`): llama a las herramientas por su nombre pelado, asi que sin
