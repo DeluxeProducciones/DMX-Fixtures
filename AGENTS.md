@@ -42,7 +42,7 @@ hand.
 ```bash
 cd tools/qlctool
 python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
-.venv/bin/python -m pytest tests/ -q          # full suite, 34-42 min - looks hung, is not
+.venv/bin/python -m pytest tests/ -q          # full suite, ~4 min since 2026-09-22 (was 19-42)
 .venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
 ```
 

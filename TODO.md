@@ -15,7 +15,7 @@ entera que estaba en `~/p/TODO_LOG.md`.
 **Ultima revision, 2026-09-22.** Se comprobo item por item contra el arbol (no
 contra lo que decia el propio item): cinco se cerraron y estan en el log, y a
 ocho se les corrigieron numeros o afirmaciones que ya no eran verdad. Quedan 61
-`[ ]` y 8 `[~]`, y ningun cerrado en este fichero.
+`[ ]` y 7 `[~]`, y ningun cerrado en este fichero.
 
 **Before finishing anything here**, see `CLAUDE.md`: find the cause, add a rule
 to `qlctool check`, add a dated regression test, run it over all three
@@ -24,7 +24,7 @@ workspaces.
 **Disposicion, 2026-08-31, recontada el 2026-09-22.** Se cerro todo lo que se
 podia cerrar sin el rig (nueve items, en `TODO_LOG.md`), incluida la
 rejilla: los grupos van ya en orden de escenario y las dos MAC WASH tienen
-grupo propio. Hoy quedan 61 `[ ]` y 8 `[~]`, y casi ninguno espera a que
+grupo propio. Hoy quedan 61 `[ ]` y 7 `[~]`, y casi ninguno espera a que
 alguien escriba codigo — las excepciones son la seccion de calidad del codigo,
 al final, que si es trabajo de teclado:
 
@@ -42,18 +42,6 @@ al final, que si es trabajo de teclado:
 
 ## Development environment
 
-- [~] **Averiguar por que la suite tarda lo que tarda (2026-09-13, medido de
-  nuevo el 2026-09-22).** `AGENTS.md` ya dice 34-42 min en vez de "~5 min": dos
-  pasadas completas el 2026-09-22 dieron 458 tests en 2030 s (33m50s, carga de
-  maquina ~70) y en 2494 s (41m34s, carga ~180-270), o sea que el numero
-  depende tanto de quien mas corre en el Mac como del codigo. Pasada con
-  `--durations=20` el 2026-09-22 por la noche: 462 tests en 1175 s (19m35s,
-  maquina tranquila). Los veinte mas lentos son todos regresiones de
-  `test_check.py`, entre 12 y 25 s cada una: cada una carga `Vibra-split.qxw`
-  y pasa `check_workspace` entero sobre el show. Siguiente paso: medir cuanto
-  de esos 12 s es el `check_workspace` completo y si compensa que cada
-  regresion corra solo su regla, o compartir el workspace cargado en un
-  fixture de modulo y copiarlo con `deepcopy` en vez de releer el XML.
 
 ## Repaso del dueño sobre la programación (2026-09-22)
 

@@ -17,6 +17,27 @@
 
 ### 2026-09
 
+#### 2026-09-22 - La suite de qlctool baja de 19 minutos a 4
+
+- [x] 2026-09-13 - **Entorno:** averiguar por que la suite tarda lo que tarda.
+  - Resultado: no era la maquina, era el checker. Una pasada de
+    `check_workspace` costaba 11,5 s y `test_check.py` la hace 94 veces (~18
+    de los 19 min). Tres reglas se llevaban 9,4 s de los 11,5
+    (`check_strobe_restore` 4,8 s, `check_accent_restore` 2,9 s,
+    `check_pick_darkens` 1,7 s) porque `unowned_while_lit` creaba un
+    `InstantEvaluator` nuevo por llamada (20.627 evaluadores) y cada uno
+    reparseaba el texto `FixtureVal` de cada escena: 620.951 llamadas a
+    `driven_channels` por pasada. Arreglo: `ShowGraph.driven()` parsea cada
+    hoja una vez por grafo (`driven_cache`), `reach()` se memoiza igual
+    (`reach_cache`, devuelve copia) y las dos reglas de flash comparten un
+    evaluador por regla. Una pasada pasa a 1,9-2,0 s con los mismos 0
+    hallazgos en los tres shows.
+  - Evidencia: `pytest tests/ -q --durations=10`: 462 passed en 240,59 s
+    (4m00s) contra 1175,31 s (19m35s) la pasada anterior de la misma noche;
+    el test mas lento es ahora `test_qlcplus_loads_the_banks` a 4,38 s
+    (carga real de QLC+), ninguna regresion de `test_check.py` pasa de 4,3 s.
+    `codeality-py baseline check`: 0 new, 1 resolved.
+
 #### 2026-09-22 - Colores: ni blanco ni feria en las ruedas, multicolor aparte, mezclas con regla
 
 Tres quejas del dueño la misma noche ("los colores siguen siendo una feria",
