@@ -42,6 +42,45 @@ al final, que si es trabajo de teclado:
 
 ## Development environment
 
+## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
+
+Decision del dueño, 2026-09-23: el 3D de QLC+ 5 no vale como visor del show
+(sin pluma de humo, gobos planos, una barra de cuatro cabezas es una sola luz,
+los paneles en modo Auto no se pintan; todo medido en `docs/rig.md`). Se
+adopta **BlenderDMX** (gratis, GDTF/MVR, Art-Net y sACN, haces volumetricos,
+gobos con rotacion, fixtures multipixel) y, si aparecen cosas que mejorar, se
+contribuye al proyecto. Capture 2026 (Solo, 395 EUR) queda como plan B si
+Blender va lento en el mini.
+
+Instalado el 2026-09-23 en el Mac mini (`ssh macmini`, M1 16 GB, Blender
+5.2.2 LTS de brew): checkouts en `~/p/blender-dmx`, `~/p/python-gdtf` y
+`~/p/python-mvr` (upstream `open-stage`, main en `569040f`), extension
+construida con `Blender --command extension build` e instalada en el
+repositorio `user_default`, y la carpeta instalada sustituida por un symlink
+al checkout, como pide `DEVELOPMENT.md`. Verificado en headless: habilitada
+tras reinicio, `scene.dmx` registra `artnet_enabled`, `sacn_enabled`,
+`universes` y `fixtures`. Los mismos tres repos estan clonados en el MacBook
+(`~/p`) para desarrollar; ahi no esta instalada. Trampa de `DEVELOPMENT.md`:
+desinstalar desde Blender puede borrar el directorio, es decir el checkout;
+quitar el symlink a mano antes. El `ValueError: list.remove(x)` que Blender
+5.2 imprime al cerrar es suyo (`copy_global_transform.unregister`), salio
+antes de instalar nada.
+
+- [ ] **GDTF para los 11 `.qxf` del rig.** Ninguno tendra GDTF oficial.
+  Ruta: importar el `.qxf` en Open Fixture Library, exportar GDTF, retocar la
+  geometria (las 4 cabezas de la CLB2.4, los pixeles del WX-60WPS, las 3
+  cabezas de la MAC WASH) en GDTF Builder. Guardarlos en el repo.
+- [ ] **Segunda salida en QLC+.** El motor admite varios output patches por
+  universo (`m_outputPatchList`, `engine/src/universe.h`): DMX USB al rig y
+  Art-Net al mini a la vez. Decidir si va en el `.qxw` generado (entonces lo
+  escribe `qlctool`) o se configura a mano en el Mac del show.
+- [ ] **Escenario desde el plot.** `qlctool stage` ya tiene posiciones en mm;
+  exportar MVR (pymvr) para no colocar 35 aparatos a mano en Blender.
+- [ ] **Primera prueba en el mini.** Blender con la extension, patch de un
+  universo Art-Net, QLC+ emitiendo desde el MacBook, ver un color y un gobo.
+- [ ] **Lo que ningun visor pinta**: los paneles WX-60WPS en modo Auto (ch7
+  efecto, RGB a 0) generan el color en el hardware. Sigue siendo "en sala".
+
 ## Repaso del dueño sobre la programación (2026-09-22)
 
 El dueño revisó el show entero y pasó una lista de catorce cosas. Lo que se
