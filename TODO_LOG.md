@@ -17,6 +17,31 @@
 
 ### 2026-09
 
+#### 2026-09-22 - La suite de qlctool baja de 4 minutos a 2
+
+- [x] 2026-09-22 - **Entorno:** seguir apretando la suite ("lo mismo hay otros
+  sitios donde optimizar").
+  - Resultado: una pasada de `check_workspace` baja de 2,42 s a 0,83 s con
+    los mismos hallazgos (comparados uno a uno en los tres shows y en dos
+    shows mutados por los tests). Cinco causas: `find_local` / `findall_local`
+    / `iter_local` filtraban por `localname` en Python (2,7 M llamadas por
+    pasada) y ahora usan el comodin `{*}name` de lxml, que recorre en C;
+    `ShowGraph.descendants` se memoiza (36 000 llamadas); la clave de
+    `driven` / `reach` ya no reordena `groups` en cada llamada;
+    `InstantEvaluator` memoiza por raices y la clave de `_node_states` usa
+    `seen & descendants` en vez de `seen`, con lo que un nodo alcanzado por
+    dos caminos se evalua una vez; `family_frames` memoiza el handoff y los
+    problemas de cada marco (las reglas de capas releian el marco entero por
+    cada boton); `offsets_for_role` se calcula una vez por aparato.
+  - Evidencia: `pytest tests/ -q --durations=0`: 462 passed en 137,62 s con
+    la maquina a carga 25 (240,59 s por la tarde). `test_check.py` son 89,8 s
+    de los 133 s de tests (112 tests, 94 pasadas completas); los 14 tests que
+    arrancan QLC+ suman 39,6 s y son el siguiente techo: `validate.py`
+    espera 2 s de silencio por arranque y la build QML comparte `~/QLC+.log`,
+    asi que no se pueden paralelizar sin serializarlos.
+    `codeality-py baseline check`: 0 new, 1 resolved; mypy pasa de 100 a 91
+    errores conocidos.
+
 #### 2026-09-22 - La suite de qlctool baja de 19 minutos a 4
 
 - [x] 2026-09-13 - **Entorno:** averiguar por que la suite tarda lo que tarda.
