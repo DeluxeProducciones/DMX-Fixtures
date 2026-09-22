@@ -32,16 +32,17 @@ reference workspace into a temp dir).
 
 ## Branch model
 
-Work happens on `qlctool` (currently ~89 commits ahead); `main` is a year
-stale and the merge is an open TODO item. Push finished, verified work to
-`origin/qlctool`. A push is not a deploy - the show Mac pulls by hand.
+Work happens on `main` since 2026-09-22, when `qlctool` was merged into it
+(`ca38195`, `a7dfb31`); the branch still exists, fully merged. Push finished,
+verified work to `origin/main`. A push is not a deploy - the show Mac pulls by
+hand.
 
 ## Build and run
 
 ```bash
 cd tools/qlctool
 python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
-.venv/bin/python -m pytest tests/ -q          # full suite, ~5 min - looks hung, is not
+.venv/bin/python -m pytest tests/ -q          # full suite, 34-42 min - looks hung, is not
 .venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
 ```
 

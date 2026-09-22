@@ -7,24 +7,32 @@ the thing it is about.
 
 Status marks are the ones `~/p/CLAUDE.md` defines: `[ ]` pending, `[~]` partial
 or unverified, `[!]` blocked, `[x]` verified complete, `[-]` obsolete. Closed
-work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before.
+work goes to `~/p/TODO_LOG.md` with the date and the evidence, as before — este
+repo no tiene `TODO_LOG.md` propio a proposito, lo dice su `CLAUDE.md`.
+
+**Ultima revision: 2026-09-22.** Se comprobo item por item contra el arbol (no
+contra lo que decia el propio item): cinco se cerraron y estan en el log, y a
+ocho se les corrigieron numeros o afirmaciones que ya no eran verdad. Quedan 61
+`[ ]` y 8 `[~]`, y ningun cerrado en este fichero.
 
 **Before finishing anything here**, see `CLAUDE.md`: find the cause, add a rule
 to `qlctool check`, add a dated regression test, run it over all three
 workspaces.
 
-**Disposicion, 2026-08-31.** Se cerro todo lo que se podia cerrar sin el rig
-(nueve items, en `~/p/TODO_LOG.md`), incluida la rejilla: los grupos van ya en
-orden de escenario y las dos MAC WASH tienen grupo propio. De lo que queda,
-ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
+**Disposicion, 2026-08-31, recontada el 2026-09-22.** Se cerro todo lo que se
+podia cerrar sin el rig (nueve items, en `~/p/TODO_LOG.md`), incluida la
+rejilla: los grupos van ya en orden de escenario y las dos MAC WASH tienen
+grupo propio. Hoy quedan 61 `[ ]` y 8 `[~]`, y casi ninguno espera a que
+alguien escriba codigo — las excepciones son la seccion de calidad del codigo,
+al final, que si es trabajo de teclado:
 
 - **La mayoria espera al rig o al dueño** - humo, el RunMode de las lyres, la
   rejilla nueva, el tilt de las cabezas, el foco de los beams, los flashes, los
   niveles de energia, los thresholds de audio, el probe de los cuatro fixtures
   sin documentar y el pad en sala. Un valor DMX adivinado
   desde aqui es exactamente el fallo que este repo persigue.
-- **Cuatro esperan a algo externo**: renombrar la org de GitHub, `xcode-select` en el Mac del show (fuera
-  de red), y comprar el reemplazo del dongle DMX.
+- **Tres esperan a algo externo**: renombrar la org de GitHub, `xcode-select`
+  en el Mac del show (fuera de red), y comprar el reemplazo del dongle DMX.
 - **Una espera una decision del dueño**: quedarse con `Vibra-split.qxw`.
 - **La auditoria de capacidades de QLC+** (sliders, MIDI, paletas, XY pad,
   ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
@@ -32,18 +40,13 @@ ninguno de los 38 `[ ]` y 7 `[~]` esta esperando a que alguien escriba codigo:
 
 ## Development environment
 
-- [ ] **Refresh the full-suite runtime estimate (2026-09-13).** The unchanged
-  qlctool suite finished with 440 passed and 9 skipped in 1788.17 seconds
-  (29m48s) while validating the launcher; the onboarding recipe still says
-  about five minutes. Collect `--durations=20` on the next scheduled full run
-  to identify the expensive regressions before updating the estimate or
-  optimizing repeated setup.
-
-- [ ] **Repair the upstream-source pointer (2026-09-13).** `CLAUDE.md`
-  directs QLC+ source questions to `~/p/qlcplus`, but that directory is absent
-  on this checkout's machine (`rg --files` returned "No such file or directory"
-  while verifying the launcher). Locate the maintained clone and update the
-  pointer before the next change that needs QLC+ internals.
+- [~] **Averiguar por que la suite tarda lo que tarda (2026-09-13, medido de
+  nuevo el 2026-09-22).** `AGENTS.md` ya dice 34-42 min en vez de "~5 min": dos
+  pasadas completas el 2026-09-22 dieron 458 tests en 2030 s (33m50s, carga de
+  maquina ~70) y en 2494 s (41m34s, carga ~180-270), o sea que el numero
+  depende tanto de quien mas corre en el Mac como del codigo. Falta lo que
+  pedia el item original: un `--durations=20` en la proxima pasada completa
+  para saber que regresiones se llevan el tiempo antes de optimizar nada.
 
 ## Repaso del dueño sobre la programación (2026-09-22)
 
@@ -134,9 +137,11 @@ dia con ocho reglas nuevas, ocho tests de regresion y el generador corregido
   intermedios, QLC+ 5.2.2 no honra el tag y hay que poner fade 0 en las
   escenas que escriben ruedas (`rueda fundida` lo veria).
 - [ ] **Los blancos usan ahora el emisor White** (Mini Led ch7, MAC WASH
-  ch12/16/20, con `white_level` = min(r,g,b)). Puede que el blanco resulte
-  mas frio o mas brillante que el RGB de antes; decidir en sala si se quiere
-  el White a tope o proporcional.
+  ch12/16/20). Desde el 2026-09-22 el reparto lo hace `rgbw_split`, no
+  `white_level`: la parte acromatica sale del emisor blanco y se **resta** de
+  R, G y B, salvo cuando la peticion ya es acromatica (r = g = b: luz de
+  trabajo, flashes), que va a los cuatro emisores. Queda decidir en sala si el
+  blanco resulta mas frio o mas brillante que el RGB de antes.
 - [ ] **`HUMO VERT` saca la columna del color de la sala, no blanca** - es
   decision del dueño del 2026-08-30 ("la luz solo salia la blanca, no hacia
   las transiciones de colores"), no un fallo; el item del montaje del
@@ -230,7 +235,9 @@ que queda.
      sala en una direccion.
   3. **La consola crecio de 430 a 503 botones** con el banco nuevo, y la columna
      de bancos de la pagina manual se encoge para que quepan. Los marcos pasan
-     de 122 px de alto a 102. Confirmar que se sigue leyendo a 13".
+     de 122 px de alto a 102. Confirmar que se sigue leyendo a 13". (Al
+     2026-09-22 son 605 botones en cuatro paginas, y el marco CABEZAS baja a
+     15 columnas para meter sus 26 picks en dos filas: mirar eso tambien.)
 
 - [ ] **Humo, las dos cosas nuevas, verlas en sala (2026-08-30).** (1) La
   columna vertical ya no se pinta de blanco: `Humo Vertical YA` escribe solo la
@@ -368,35 +375,6 @@ que queda.
   `smc_pad_device.py`, así que **el mapa del show es el de fábrica y el pad no
   necesita configurarse**. Queda escrito en `docs/show-operation.md`: si los
   pads hacen lo que no toca, resetear el pad, no reconfigurarlo.
-- [x] **El mapa del pad estaba escrito tres veces y las tres discrepaban
-  (2026-08-29).** El perfil `QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` declaraba
-  las notas de fábrica 4-19 mientras el workspace estaba atado a 36-51, ocho
-  bindings de la página 2 vivían en notas que ningún control manda (SHIFT es
-  interno del aparato: elige SWING/LATCH/SYNC y no sale al cable), y ningún
-  workspace declaraba `<Input>`, así que QLC+ abría el show sin nadie
-  escuchando. Causa: el mapa vivía a mano en tres sitios. Ahora sale de
-  `generate/smc_pad_device.py`; el perfil se genera (`qlctool input-profile`),
-  el workspace se parchea solo (`input_binding.py`), la capa manual está en el
-  banco 2 (`PAD BANK`, medido: PAD1 = nota 52) y la regla
-  `binding a un control que el pad no manda` lo ve. Medido con
-  `tools/smc-pad/midicap.swift`: PAD13 = 48, PAD1 = 36, PAD16 = 51; `<`/`>`
-  **no** cambian de banco.
-- [!] **SMC-PAD pad RGB: proprietary BLE GATT, mechanism reverse-engineered
-  (2026-08-29).** Full writeup in `docs/smc-pad-led.md`. In short: plain MIDI
-  (full note sweep + CC, all three ports, owner watching) lights nothing.
-  Decompiling `MidiSuite.apk` with Blutter (Dart 3.9.2) shows colour is a
-  **Bluetooth LE GATT** write, not MIDI: `BleManager.sendColorData` ->
-  `writeData(list, cmd:5)` -> `makeWritePacket` frames `[0xB2, 0x44] + payload`
-  and writes it over `flutter_blue_plus`. GATT service `0xAE40`, characteristics
-  `0xAE41`/`0xAE42`. The Mac can be the BLE central directly (CoreBluetooth,
-  `blescan.swift` in scratch confirmed BLE works and is authorized) - no phone
-  or official app needed. Blocked on **one physical step**: put the pad in
-  Bluetooth mode (BT button) so it advertises; on USB alone it does not. Then:
-  connect, confirm the `B2 44 05 ...` colour packet byte-for-byte against the
-  lit pad, and write the bridge daemon (subscribes to QLC+ note/CC feedback ->
-  emits GATT colour writes; QLC+ cannot do GATT itself). Pad stays USB-MIDI in
-  to QLC+ and BLE out from the daemon at once.
-  Refs: github.com/worawit/blutter, github.com/cbix/mvave-chocolate-sysex.
 - [ ] **The USB-DMX dongle randomly flashes the rig (2026-08-29).** Owner: "de
   vez en cuando pega un flash como si mandara 255 a todos los canales". Cause:
   the FT232R clone has no frame buffer — a USB hiccup corrupts the DMX frame
@@ -499,8 +477,9 @@ que queda.
   `Ola Vertical` (onda de tilt, Line a Width 0 + Serial), `Barrido Unison`
   (empuje en fase, el espejo hace que los lados se encuentren), `Beams Cruce`
   (la X estática, espejo del abanico — mismo TILT, ajustar en sala),
-  `Rig Multicolor 1/2` en la rueda (beams en rainbow scroll ~186, plasma en
-  las barras), `Ciclo Paneles Mixto` (8 min efectos / 4 min manual siguiendo
+  `Rig Multicolor 1/2` en la rueda (beams en rainbow scroll ~186; el plasma de
+  las barras salio el 2026-09-22 y en su sitio va una matriz de color plano),
+  `Ciclo Paneles Mixto` (8 min efectos / 4 min manual siguiendo
   la rueda), `Nivel Fiesta Dinamico` (chase 30 s / ping-pong 8 s),
   `Gobo Shake` (jitter a 64) y el prisma girando a 25. Los holds y
   velocidades son opiniones hasta que alguien los vea.
@@ -569,10 +548,11 @@ que queda.
   Toggle "oye" arrancar su funcion la arranque quien la arranque
   (VCButton::slotFunctionRunning) y el solo frame paraba AUTO. Ahora pisan
   gemelas propias (`Strobo Blanco`/`Strobo Negro`); regla nueva `estado
-  pulsado por otra funcion` + test. (3) **COLOR BEAM (`C`) no esta roto**:
-  anima la rueda de color de los 4 BEAM 230W, no toca las PAR — probado en
-  casa solo con PARs delante era invisible por diseño. Verificar con los
-  beams montados.
+  pulsado por otra funcion` + test. (3) **COLOR BEAM (`C`) ya no existe**: animaba
+  la rueda de color de los 4 BEAM 230W y no tocaba las PAR, pero parecia un
+  on/off y se comportaba como un pick ("el boton color beam parece un on of
+  pero realmente cambia como la rueda", dueño, 2026-09-22). Los beams toman el
+  color del rig y la tecla `C` es ahora el modo de colores simples.
 - [ ] **Comprobar en sala los 4 grupos nuevos (2026-08-26).** Los 4 paneles
   WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque
   compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media
@@ -608,8 +588,8 @@ que queda.
   site, and check the LED bars too - they are pure RGB and should never have
   been affected.
 - [ ] **Try the new operator page on the show Mac before the next gig.** The
-  console is now three pages (`show` / `manual` / `librería`) built by
-  `qlctool newshow`; page 1 is seven mutually exclusive room states plus six
+  console is now four pages (`show` / `JUGAR` / `control` / `librería`) built by
+  `qlctool newshow`; page 1 is seven mutually exclusive room states plus the
   hits, and the energy levels are no longer buttons. Two things only a real
   screen can settle: whether the 28pt/15pt captions read across a dark room at
   1440x900, and whether `PgDn`/`PgUp` change page in operate mode without
@@ -636,14 +616,18 @@ que queda.
   <show> <fixture-id> --base "7=255" --buttons` builds one scene per channel
   plus a walk chaser - press play and write down what each channel does. Do it
   in the same session as the physical-rig confirmation.
-- [~] **Review `QLC+ Setups/Vibra.qxw`** - the fresh canonical show built by the
-  toolkit on branch `qlctool`. Rebuilt 2026-08-25 after the owner reported that
-  pressing AUTO stopped the show and that the console was an unusable 2662px
-  list. Both were real and are fixed (see `TODO_LOG.md`); it is now 288
-  functions and a 284-button console laid out to 1440x900 (extent 1432x890),
-  and QLC+ 5.2.2 loads it clean. Copies in `~/Demos-qlctool/` on both machines. Pending: owner runs
-  it on the show laptop and says whether AUTO now holds and the layout works,
-  then archiving the two DeluxeEventos workspaces and merging the branch.
+- [~] **Review `QLC+ Setups/Vibra.qxw`** - the canonical show built by the
+  toolkit. Rebuilt 2026-08-25 after the owner reported that pressing AUTO
+  stopped the show and that the console was an unusable 2662px list. Both were
+  real and are fixed (see `TODO_LOG.md`). Al 2026-09-22 son 1629 funciones y
+  605 botones en 1440x900, y QLC+ 5.2.2 lo carga limpio. Copias en
+  `~/Demos-qlctool/` en las dos maquinas. La rama ya esta mezclada
+  (2026-09-22). Queda: que el dueño lo corra en el portatil del show y diga si
+  AUTO aguanta y si la disposicion funciona, y despues archivar los dos
+  workspaces DeluxeEventos - hoy siguen en `QLC+ Setups/` y
+  `DeluxeEventos2.qxw` es el material de prueba de `tests/test_play_generators.py`
+  y `tests/test_old_show_recovery.py`, asi que archivarlo es mover tambien esos
+  tests.
 - [ ] Put the two CLB2.4 grids in a fixture group. They are in none, so they get
   no colour bank and no matrix - only the rig-wide `Rueda Colores` scenes reach
   them (which is why AUTO no longer leaves them dark, 2026-08-25). `qlctool
@@ -699,7 +683,8 @@ que queda.
   level). `Dimmer Chase` owning Peak's intensity is done - see TODO_LOG.md,
   2026-08-27.
 - [ ] Judge the energy levels against a real night. `Ciclo Energia` walks
-  Ambiente 4 min -> Fiesta 8 -> Peak 2 -> Fiesta 8, with the colour bed and the
+  Ambiente 4 min -> Fiesta 8 -> Peak 40 s -> Fiesta 8 (`AMBIENT_HOLD`,
+  `PARTY_HOLD`, `PEAK_HOLD` measured 2026-09-22), with the colour bed and the
   haze running underneath so a level change never blacks the room out. The
   numbers are a first guess: if the quiet level feels dead or the peak feels
   rationed, they are `AMBIENT_HOLD`, `PARTY_HOLD` and `PEAK_HOLD` in
@@ -740,12 +725,6 @@ que queda.
   WX-60WPS. `qlctool` deliberately leaves them out of `Strobo ON`, because a
   guessed value closes a shutter instead of flashing it. The channel probe
   settles it in the same on-site session as the rest of the rig.
-- [x] Merge branch `qlctool` into `main`. Done 2026-09-22 on the owner's word
-  ("mergea todo a main"): `ca38195` merges the branch and `a7dfb31` the two
-  commits `main` carried on its own (untracking `.serena`, the CocoIndex ignore
-  line, whose `.gitignore` was the only conflict). `origin/main` is at `a7dfb31`
-  and `qlctool check` is clean on the three workspaces from it, 592 buttons
-  each. The branch still exists, fully merged.
 
 ## QLC+ feature audit (2026-08-27)
 
@@ -753,22 +732,16 @@ Findings from a full scan of the QLC+ source clone (`~/p/qlcplus`, master =
 5.3.0-git of 2026-08-22 — **newer than the installed 5.2.2**, so every QLC+5
 feature below gets verified against the real binary before we build on it),
 the official docs (docs.qlcplus.org v5 + release notes), and the generated
-`Vibra-split.qxw`. The show uses 5 of 10 function types, 4 of 39 RGB scripts,
-0 sliders, 0 MIDI/OSC inputs. A Codex cross-check of these findings ran the
+`Vibra-split.qxw`. The show used 5 of 10 function types, 4 of 39 RGB scripts,
+0 sliders and 0 MIDI/OSC inputs when this was written; al 2026-09-22 son dos
+sliders y 24 bindings MIDI del SMC-PAD. A Codex cross-check of these findings ran the
 same day; anything it refutes gets corrected here.
-
-### Possible defects found by the audit
-
-- [x] ~~`PixelesLed` (group 3) missing matrices~~ — **not a bug**: the
-  generator deliberately skips matrix RGB for self-animating groups
-  (`generate/canonical_show.py:197-217`, `_all_self_animating()` at 598-604);
-  the panels run their 42 internal effects instead, and a matrix's RGB would
-  be ignored in Auto mode anyway (see the internal-program rule). The stale
-  "30 matrices más" claim in the 2026-08-26 item above is corrected there.
 
 ### Unused QLC+ capability worth adopting (priority order)
 
-- [ ] **Zero sliders on the console.** Three concrete uses: (a) Submaster
+- [ ] **Casi ningun slider en la consola** (dos al 2026-09-22: `Master
+  General` y el GrandMaster; el texto original decia cero). Three concrete
+  uses: (a) Submaster
   slider scaling Peak's frame — `Dimmer Chase` being HTP-shadowed by
   `Intensidad Total` there is fixed a different way now (TODO_LOG.md,
   2026-08-27: the chase owns Peak's dimmers outright), so this would be a
@@ -778,11 +751,6 @@ same day; anything it refutes gets corrected here.
   registered live attributes (`rgbmatrix.cpp` registerScriptPropertyAttributes).
   The GrandMaster slider (c) shipped separately — Task 3, TODO_LOG.md
   2026-08-27.
-- [ ] **MIDI controller for the operator.** 0 `<Input>` bindings; only 64 of
-  374 buttons have a key. QLC+5 has input autodetect, profiles with LED
-  feedback (APC colour tables in the MIDI docs), soft-takeover. An APC mini or
-  similar = operating in the dark without hunting keyboard keys. Blocked on:
-  owner picks/buys a controller.
 - [ ] **Beat-locked matrices**: RGBMatrix in Beats tempo defers a step change
   when within 1/16 beat to stay locked (`rgbmatrix.cpp` beat resync), and 5.2
   enabled audio BPM detection (BeatTracker, 50-240 BPM with confidence). Folds
@@ -814,27 +782,39 @@ modifiers, passthrough, extra universes.
 
 ## Calidad del codigo (baseline adoptado 2026-09-01)
 
-`tools/qlctool` corre el gate compartido (`uv run baseline-py gate`), hoy en
-verde. Lo que queda es deuda anotada con fecha, y cada lista solo puede
-encoger:
+`tools/qlctool` corre el gate compartido (`baseline-py gate`). **Ya no esta en
+verde** (medido 2026-09-22, ver el primer item). Lo que queda es deuda anotada
+con fecha; los numeros son los del 2026-09-22 y entre parentesis va el de la
+adopcion del 2026-09-01, para ver hacia donde se mueve cada lista:
 
-- [ ] Reducir el ratchet de ruff en `tools/qlctool/ruff.toml`: 142 simbolos
-      publicos sin docstring, 104 generadores con mas parametros de la cuenta
-      y 26 valores magicos (numeros de canal DMX y constantes de QLC+).
-- [ ] Decidir uno por uno los 24 `zip()` sin `strict=` (B905). No es cosmetico
-      aqui: dos listas que dejan de cuadrar en silencio son exactamente el
-      fallo que las reglas de `qlctool check` existen para cazar, asi que cada
-      sitio necesita saber si un desajuste de longitud es un bug o un recorte
-      esperado.
+- [ ] **Volver a poner el gate en verde.** `baseline-py gate` da hoy `findings`
+      en ruff (3 errores: `desk_swatch.py` UP031, `dimmerless_intensity.py`
+      I001, `tests/test_solo_handoff.py` PLC0207) y `ruff format --check` deja
+      8 ficheros sin formatear; mypy, baseline-py, deptry, pip-audit y pytest
+      salen `failed-to-run` en 0,00 s, o sea que ni se ejecutan desde el gate
+      aunque a mano si funcionan (`.venv/bin/mypy qlctool`,
+      `.venv/bin/baseline-py check`). Primero averiguar por que el gate no los
+      lanza; los tres errores de ruff son de una linea cada uno.
+- [ ] Reducir el ratchet de ruff en `tools/qlctool/ruff.toml`: 187 (142)
+      simbolos publicos sin docstring, 136 (104) generadores con mas
+      parametros de la cuenta y 30 (26) valores magicos (numeros de canal DMX
+      y constantes de QLC+). Las tres listas han crecido.
+- [ ] Decidir uno por uno los 13 (24) `zip()` sin `strict=` (B905). No es
+      cosmetico aqui: dos listas que dejan de cuadrar en silencio son
+      exactamente el fallo que las reglas de `qlctool check` existen para
+      cazar, asi que cada sitio necesita saber si un desajuste de longitud es
+      un bug o un recorte esperado.
 - [ ] Vaciar el ratchet de mypy en `tools/qlctool/mypy.ini`: 73 modulos con
-      `ignore_errors`, 266 errores casi todos por anotaciones que faltan.
-      `lxml-stubs` ya se instalo y quito 67 de golpe.
-- [ ] Bajar los 170 hallazgos estructurales de
-      `tools/qlctool/.baseline-py-baseline.json`: 100 modulos con mas de una
-      unidad, 62 nombres de fichero que no dicen lo que declaran y 8 ficheros
-      por encima del limite de lineas (`live_console.py` con 1160,
-      `canonical_show.py` con 813, `cli.py` con 695). Tras cada arreglo,
-      `uv run baseline-py baseline update` reescribe el registro.
+      `ignore_errors` y 89 (266) errores casi todos por anotaciones que
+      faltan. `lxml-stubs` ya se instalo y quito 67 de golpe.
+- [ ] Bajar los hallazgos estructurales: `baseline-py check` da 209 sobre 299
+      ficheros y el registro `.baseline-py-baseline.json` tiene 170 entradas,
+      o sea que hay drift sin registrar. Diez ficheros pasan del limite de
+      lineas (`live_console.py` 1105, `canonical_show.py` 951, `cli.py` 729,
+      `play_page.py` 658, `movement_families.py` 556, `validate.py` 191,
+      `rule_console.py` 177, `deskmap.py` 170, `unison_colors.py` 152,
+      `family_frames.py` 208). Tras cada arreglo,
+      `baseline-py baseline update` reescribe el registro.
 - [ ] `tools/smc-pad/reference` tiene tres scripts de Python, `tools/lightkey`
       uno y `tools/daslight` dos (los decodificadores de bibliotecas de
       fixtures, 2026-09-02), fuera de todo esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si
