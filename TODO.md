@@ -782,21 +782,30 @@ Sequence functions (no use case), OS2L (only if the DJ runs Virtual DJ),
 Simple Desk (no cue stacks in v5; keypad covered by `qlctool probe`), channel
 modifiers, passthrough, extra universes.
 
-## Calidad del codigo (baseline adoptado 2026-09-01)
+## Calidad del codigo (baseline adoptado 2026-09-01, codeality desde 2026-09-22)
 
-`tools/qlctool` corre el gate compartido (`baseline-py gate`). **Ya no esta en
-verde** (medido 2026-09-22, ver el primer item). Lo que queda es deuda anotada
-con fecha; los numeros son los del 2026-09-22 y entre parentesis va el de la
-adopcion del 2026-09-01, para ver hacia donde se mueve cada lista:
+`tools/qlctool` corre el gate compartido. El 2026-09-22 se cambio
+`busirocket-baseline-py` por su sucesor `syntopica-codeality-py` (el monorepo
+`~/p/codeality`): mismo esquema de configuracion, otros nombres de fichero
+(`baseline-py.toml` paso a `codeality-py.toml`, `.baseline-py-baseline.json` a
+`.codeality-py-baseline.json`) y el mando es `codeality-py`. El registro se
+reescribio con la herramienta nueva: 206 hallazgos, `0 new, 206 known`.
 
-- [ ] **Volver a poner el gate en verde.** `baseline-py gate` da hoy `findings`
-      en ruff (3 errores: `desk_swatch.py` UP031, `dimmerless_intensity.py`
-      I001, `tests/test_solo_handoff.py` PLC0207) y `ruff format --check` deja
-      8 ficheros sin formatear; mypy, baseline-py, deptry, pip-audit y pytest
-      salen `failed-to-run` en 0,00 s, o sea que ni se ejecutan desde el gate
-      aunque a mano si funcionan (`.venv/bin/mypy qlctool`,
-      `.venv/bin/baseline-py check`). Primero averiguar por que el gate no los
-      lanza; los tres errores de ruff son de una linea cada uno.
+**El gate hay que lanzarlo con el venv en el PATH** (`PATH="$PWD/.venv/bin:$PATH"
+codeality-py gate`): llama a las herramientas por su nombre pelado, asi que sin
+eso mypy, deptry, pip-audit y pytest salen `failed-to-run` en 0,00 s aunque a
+mano funcionen. Eso es lo que se veia como "el gate no las lanza".
+
+Lo que queda es deuda anotada con fecha; los numeros son los del 2026-09-22 y
+entre parentesis va el de la adopcion del 2026-09-01, para ver hacia donde se
+mueve cada lista:
+
+- [ ] **Volver a poner el gate en verde.** Quedan 3 errores de ruff
+      (`desk_swatch.py` UP031, `dimmerless_intensity.py` I001,
+      `tests/test_solo_handoff.py` PLC0207) y 8 ficheros sin formatear
+      (`ruff format --check`). Los tres errores son de una linea cada uno. El
+      `failed-to-run` de mypy, deptry, pip-audit y pytest era el PATH, no el
+      gate; ver la nota de arriba.
 - [ ] Reducir el ratchet de ruff en `tools/qlctool/ruff.toml`: 187 (142)
       simbolos publicos sin docstring, 136 (104) generadores con mas
       parametros de la cuenta y 30 (26) valores magicos (numeros de canal DMX
@@ -809,14 +818,22 @@ adopcion del 2026-09-01, para ver hacia donde se mueve cada lista:
 - [ ] Vaciar el ratchet de mypy en `tools/qlctool/mypy.ini`: 73 modulos con
       `ignore_errors` y 89 (266) errores casi todos por anotaciones que
       faltan. `lxml-stubs` ya se instalo y quito 67 de golpe.
-- [ ] Bajar los hallazgos estructurales: `baseline-py check` da 209 sobre 299
-      ficheros y el registro `.baseline-py-baseline.json` tiene 170 entradas,
-      o sea que hay drift sin registrar. Diez ficheros pasan del limite de
-      lineas (`live_console.py` 1105, `canonical_show.py` 951, `cli.py` 729,
-      `play_page.py` 658, `movement_families.py` 556, `validate.py` 191,
-      `rule_console.py` 177, `deskmap.py` 170, `unison_colors.py` 152,
-      `family_frames.py` 208). Tras cada arreglo,
-      `baseline-py baseline update` reescribe el registro.
+- [ ] Bajar los hallazgos estructurales: `codeality-py check` da 206 sobre 299
+      ficheros, todos registrados (`baseline check`: `0 new, 206 known`), asi
+      que el drift esta cerrado y cualquier hallazgo nuevo muerde. Diez
+      ficheros pasan del limite de lineas (`live_console.py` 1105,
+      `canonical_show.py` 951, `cli.py` 729, `play_page.py` 658,
+      `movement_families.py` 556, `family_frames.py` 208, `validate.py` 191,
+      `rule_console.py` 177, `deskmap.py` 170, `unison_colors.py` 152). La
+      masa del resto es BPY001: cada regla de `checks/` lleva sus ayudantes
+      privados en el mismo fichero, contra la regla de la casa de un solo
+      simbolo por fichero. Tras cada arreglo,
+      `codeality-py baseline update` reescribe el registro.
+- [ ] Tres modulos de datos (`pastel_palette.py`, `pick_marks.py`,
+      `simple_colors.py`) estan declarados `[roles] data` en
+      `codeality-py.toml` en vez de silenciados: son tablas de constantes y no
+      tienen unidad que exportar. Si aparece un cuarto, decirlo ahi, no
+      anotarlo como deuda.
 - [ ] `tools/smc-pad/reference` tiene tres scripts de Python, `tools/lightkey`
       uno y `tools/daslight` dos (los decodificadores de bibliotecas de
       fixtures, 2026-09-02), fuera de todo esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si

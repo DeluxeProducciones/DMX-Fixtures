@@ -50,6 +50,20 @@ python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
 are different questions; run both sides via the recipe below before calling
 show work done.
 
+The code quality gate is `syntopica-codeality-py` (the `~/p/codeality`
+monorepo; it replaced `busirocket-baseline-py` on 2026-09-22), configured by
+`codeality-py.toml` with its registered debt in `.codeality-py-baseline.json`:
+
+```bash
+cd tools/qlctool
+PATH="$PWD/.venv/bin:$PATH" .venv/bin/codeality-py gate    # runs the suite too
+PATH="$PWD/.venv/bin:$PATH" .venv/bin/codeality-py baseline check
+```
+
+**The venv must be on `PATH`.** The gate calls ruff, mypy, deptry, pip-audit
+and pytest by their bare names, so without it they report `failed-to-run` in
+0,00 s and the gate looks green-ish while having run almost nothing.
+
 ## Regenerating the show (verified recipe)
 
 All three workspaces regenerate together or not at all, each from its own
