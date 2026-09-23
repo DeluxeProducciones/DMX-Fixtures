@@ -98,21 +98,54 @@ instead of doubling it.
 
 ## Seeing it live from QLC+
 
-The `.blend` opens in Rendered shading through the camera, with every
-universe's input already set to Art-Net. Three things are not in the file:
+Verified on the Mac mini on 2026-09-23 with QLC+ 5.2.2 and Blender on the
+same machine: the console's *BLANCO TOTAL* held down lights the whole rig in
+Blender, *ROJO* held down turns it red.
 
-1. **Art-Net is off after every load.** BlenderDMX resets it in its load
-   handler (`linkFile` in `dmx.py`). In the DMX sidebar (`N`), *Protocols*,
-   tick *Art-Net*; leave the address at `0.0.0.0`, because a socket bound to
-   one interface's address does not receive broadcasts on macOS.
-2. **QLC+ universe 1 is Art-Net universe 0 by default**
-   (`outputUniverse` defaults to the universe index, `artnetcontroller.cpp`),
-   while the MVR addresses are 1-based and BlenderDMX uses them as they are:
-   the fixtures sit in its *Universe 1*, which listens on Art-Net universe 1.
-   In QLC+'s Art-Net output configuration set *Universe* to `1`.
-3. **Where to send it**: the machine running Blender, by its LAN address or
-   the subnet broadcast. Unicast is the safer choice on a venue network with
-   other Art-Net nodes.
+```bash
+Blender ~/p/vibra-blender/vibra.blend --python tools/blenderdmx/live.py
+```
+
+`live.py` does what the saved file cannot carry: it enables Art-Net (BlenderDMX
+resets `artnet_enabled` in its load handler, `linkFile` in `dmx.py`), and puts
+every 3D view in Rendered shading through the camera, because a scene saved by
+a `--background` run has no window and Blender opens it in its own Solid
+layout. Leave the Art-Net address at `0.0.0.0`; a socket bound to one
+interface's address does not receive broadcasts on macOS.
+
+On the QLC+ side, the universe needs a second output next to the DMX USB one
+(the engine allows several output patches per universe). The `.qxw` line is:
+
+```xml
+<Output Plugin="ArtNet" UID="" Line="0">
+  <PluginParameters outputIP="192.168.1.255" outputUni="1" transmitMode="Full"/>
+</Output>
+```
+
+- **`outputUni` is 1.** QLC+ universe 1 is Art-Net universe 0 by default
+  (`outputUniverse` defaults to the universe index, `artnetcontroller.cpp`),
+  while the MVR addresses are 1-based and BlenderDMX indexes its universe list
+  with the Art-Net universe as it comes: the fixtures sit in `universes[1]`.
+- **`Line` is the index into QLC+'s interface list, sorted by address**:
+  `127.0.0.1` is 0 on the mini. `outputIP` overrides the line's broadcast
+  address either way; the web page `/config` of a running QLC+ shows the list.
+- **Send to the subnet broadcast, not to `127.0.0.1`, when both run on one
+  machine.** Two sockets can share port 6454 only if both set `SO_REUSEPORT`
+  (Qt does; BlenderDMX did not: `Address already in use`, patched in the
+  checkout, commit `de60af6`, to be sent upstream). Once shared, a unicast to
+  the machine's own address reached only one of the sockets, and never the
+  visualiser; a listen-only third socket got nothing either. The broadcast
+  reached every socket, measured at 295 frames in 3 s. From the show Mac to
+  the mini, unicast to the mini's LAN address is fine: only one process there
+  listens.
+
+A running QLC+ with web access (`-w --wp 9998`, which the launcher uses) takes
+the new workspace and the button presses without a restart, which is how the
+test was driven: `curl -F "qlcprj=@file.qxw" http://127.0.0.1:9998/loadProject`
+loads a workspace; on the websocket `/qlcplusWS`, `<widget id>|255` presses a
+virtual console widget and `<widget id>|0` releases it;
+`QLC+API|getChannelsValues|1|1|390` answers with `channel|value|type|0`
+quadruples, the way to see what the console thinks it is sending.
 
 Until QLC+ sends, the fixtures show whatever the last DMX was, which after a
 load is nothing: the *Programmer* panel (select all with `A`, raise *Dimmer*,

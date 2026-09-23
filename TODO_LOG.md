@@ -17,6 +17,30 @@
 
 ### 2026-09
 
+#### 2026-09-23 - QLC+ y BlenderDMX conectados en el mini
+
+- [x] 2026-09-23 - **Primera prueba en vivo:** QLC+ emitiendo Art-Net y
+  Blender con ventana en la misma maquina, un color cambiando desde la consola.
+  - Resultado: `tools/blenderdmx/live.py` abre `vibra.blend` con Art-Net
+    activo y las vistas en Rendered por la camara (el `.blend` guardado sin
+    ventana abre en Solid, y BlenderDMX apaga Art-Net al cargar). El `.qxw`
+    lleva una segunda salida `ArtNet` en el universo 1 con `outputUni="1"` y
+    `outputIP="192.168.1.255"`. Dos causas que no se veian: BlenderDMX solo
+    ponia `SO_REUSEADDR` y en macOS el `bind` a 6454 fallaba con `Address
+    already in use` mientras QLC+ tenia el puerto (parche `de60af6` en
+    `~/p/blender-dmx`); y con el puerto compartido el unicast a `127.0.0.1`
+    nunca llegaba al visor (una tercera sonda solo-escucha tampoco recibia
+    nada), el broadcast de subred llega a todos.
+  - Evidencia: sonda `SO_REUSEPORT` en 6454 junto a QLC+ recibe unicast a
+    127.0.0.1, a 192.168.1.63 y broadcast; con la salida en broadcast, 295
+    tramas ArtDMX universo 1 en 3 s. Cargado el workspace en el QLC+ del
+    launcher por `/loadProject` (web 9998) y pulsado por websocket: BLANCO
+    TOTAL (`9|255`) mantenido, 250 canales activos en
+    `QLC+API|getChannelsValues` y el rig entero encendido en Blender (captura
+    de pantalla del mini, 13:40); ROJO (`52|255`) mantenido, 161 canales y
+    pars, pared y charcos de los beams en rojo. Suite de qlctool en el mini:
+    475 passed, 10 skipped, 40 s.
+
 #### 2026-09-23 - El escenario de QLC+ se ve en BlenderDMX
 
 - [x] 2026-09-23 - **Visor 3D:** "quiero ver el escenario que tenemos en qlc
