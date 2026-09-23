@@ -147,6 +147,15 @@ virtual console widget and `<widget id>|0` releases it;
 `QLC+API|getChannelsValues|1|1|390` answers with `channel|value|type|0`
 quadruples, the way to see what the console thinks it is sending.
 
+**Loading a workspace replaces what the tablet shows.** The web console
+fetches `vc.json` when its websocket opens, and a `/loadProject` drops the
+socket, so the tablet reconnects onto the new file's virtual console. On
+2026-09-23 the test loaded `Vibra-split.qxw` into the launcher's QLC+, which
+runs another `Vibra.qxw`: only 274 of 687 widget IDs kept their caption, the
+tablet's buttons moved, and the pad's LED bridge output was gone. For a live
+test, add the Art-Net output to the workspace the launcher is already running,
+not to another one; the patch addresses are the same in both.
+
 Until QLC+ sends, the fixtures show whatever the last DMX was, which after a
 load is nothing: the *Programmer* panel (select all with `A`, raise *Dimmer*,
 pick a colour) lights them by hand.
