@@ -103,6 +103,15 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
     `renderPolicy: OnDemand` esta comentado en `DeferredRenderer.qml:27`, asi
     que pinta cada fotograma aunque nada cambie.
   - Nada de esto pinta los paneles en modo Auto.
+  - Probado el mismo dia en el mini, rama local `multihead-colorchanger` de
+    `~/p/qlcplus` (commits `f067a79`, `e67caf2`, sin subir), compilado con Qt
+    6.11.2 de brew y lanzado desde `~/p/qlcplus-test` sin E/S:
+    - Cabezas: una CLB2.4 con cabezas roja, verde, azul y blanca pinta cuatro
+      haces; sin el cambio, un solo haz blanco (`multihead-before.png`,
+      `multihead-after.png`). Unas dos horas con la compilacion.
+    - Redibujado a peticion: escena quieta, GPU 100 % -> 12 % y CPU del
+      proceso ~72 % -> 10 %; con colores cambiando cada 0,3 s sigue
+      redibujando (GPU ~65 %). Sin probar: estrobos, pan/tilt animado, EFX.
 - [ ] **Lo que ningun visor pinta**: los paneles WX-60WPS en modo Auto (ch7
   efecto, RGB a 0) generan el color en el hardware. Sigue siendo "en sala".
 
