@@ -153,9 +153,18 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
         `src/plugins/renderers/opengl/renderer/renderview.cpp`, ultima linea
         de la funcion): busca `"envLightCount"` sin `static` en cada comando
         de cada fotograma, con un lock global, desde varios hilos. Es un bug
-        de Qt3D, no de QLC+. Siguiente paso: parche de una linea, compilar
-        solo `libopenglrenderer.dylib` contra el Qt de brew, medir, y
-        reportarlo a Qt.
+        de Qt3D, no de QLC+. Probado el 2026-09-24: Qt3D 6.11.2 compilado en
+        `~/p/qt3d` (sin assimp) y cargado solo en la instancia de prueba con
+        `DYLD_FRAMEWORK_PATH=~/p/qt3d/build/lib` y
+        `QT_PLUGIN_PATH=~/p/qt3d/build/share/qt/plugins`; el parche (hacer
+        `static` esa busqueda) esta en
+        `~/p/qlcplus-test/qt3d-envlightcount.patch`. Mismo build, una linea
+        de diferencia, `cpubench.sh`: sin parche 6,30 / 6,70 s de CPU en 8 s
+        (lookupId 16-20 %), con parche 5,23 / 6,23 s (lookupId desaparece);
+        ~12 % menos CPU. Siguiente paso: reportarlo a Qt (bugreports.qt.io o
+        Gerrit) - pide el visto bueno del dueño, es escritura externa.
+      - Ojo con `xctrace record`: una grabacion de 8 s se quedo colgada 8
+        minutos; lanzarlo siempre con `timeout`.
   - **Las LED Spray Fog echan el humo en horizontal en el 3D.** `smoke.dae` echa el humo
     por su frente (+Z de la malla, el disco `emitter` en z=0,516), y el parche
     las deja sin rotar, asi que el chorro sale horizontal hacia el publico.
