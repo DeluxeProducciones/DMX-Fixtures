@@ -12,7 +12,9 @@ universe buffers, the way its Art-Net receiver would.
 import math
 import os
 import sys
+import traceback
 from importlib import import_module
+from pathlib import Path
 
 import bpy
 
@@ -23,8 +25,10 @@ STAGE = (12.0, 8.0)  # metres, x across and y deep, centred on the origin
 
 def main() -> None:
     args = sys.argv[sys.argv.index("--") + 1 :]
-    mvr, png = args[0], args[1]
-    blend = args[2] if len(args) > 2 else None
+    # Blender resolves a relative render path against the .blend, and there is
+    # none yet: make every path absolute before it is handed over.
+    mvr, png = str(Path(args[0]).resolve()), str(Path(args[1]).resolve())
+    blend = str(Path(args[2]).resolve()) if len(args) > 2 else None
 
     if ADDON not in bpy.context.preferences.addons:
         bpy.ops.preferences.addon_enable(module=ADDON)
@@ -70,10 +74,6 @@ def main() -> None:
     if blend:
         bpy.ops.wm.save_as_mainfile(filepath=blend)
     print("INFO DONE", png)
-    sys.stdout.flush()
-    # The Art-Net listener is a thread Blender waits for on exit; the picture
-    # and the file are on disk, so leave without waiting.
-    os._exit(0)
 
 
 def light(fixture, index: int, data) -> None:
@@ -173,4 +173,15 @@ def render(png: str) -> None:
     bpy.ops.render.render(write_still=True)
 
 
-main()
+# The Art-Net listener is a thread Blender waits for on exit, so a normal
+# return hangs the process - and so does an exception once the listener is up.
+# The picture and the file are on disk, or the traceback is: leave either way.
+try:
+    main()
+except Exception:
+    traceback.print_exc()
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(1)
+sys.stdout.flush()
+os._exit(0)
