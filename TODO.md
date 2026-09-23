@@ -122,14 +122,24 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
       va en 3 s (chorro) o 30 s (hazer); un haz que lo cruza se ve mas
       denso. Con humo en el aire la GPU sube a ~85 %; sin humo vuelve a 10 %
       a los 5 s (`smoke-after.png`). Unas tres horas.
-    - Rendimiento, lo que NO era (medido con el `DebugOverlay` de Qt3D: 50
-      ms por fotograma, 152 render views): ni las 34 cabezas apagadas (sin
-      sus ramas, 17 render views, mismo 50 ms y GPU 84 %), ni los pixeles
-      (ventana a un cuarto, misma GPU: los targets son 1024x1024 fijos), ni
-      el formato RGBA32F (a RGBA16F, 84 -> 80 %). Siguiente paso: una traza
-      Metal System Trace (necesita Xcode, no instalado en el mini) antes de
-      tocar mas; el camino grande sigue siendo el renderer RHI, que brew ya
-      trae (`librhirenderer.dylib`).
+    - Rendimiento, medido con Metal System Trace (Xcode 27 ya estaba en el
+      mini; `xctrace` se usa directo en
+      `/Applications/Xcode.app/Contents/Developer/usr/bin/`, sin aceptar la
+      licencia). QLC+ renderiza a 50-60 fps en cuanto algo se mueve (cada
+      tick DMX de 50 Hz y las animaciones de pan/tilt redibujan):
+      - El humo costaba 9,5 ms por fotograma: marchaba una esfera de 8,7 m
+        alrededor de cada chorro. Con un cilindro ajustado al chorro
+        (`75c7ebe`) la pasada mas cara baja a 4 ms (GPU 105 % -> 82 %).
+      - Texturas RGBA32F -> RGBA16F (`6bcd3c8`): cuatro haces moviendose,
+        15,9 -> 9,9 ms por fotograma, 26 -> 57 fps, GPU 77 % -> 61 %. Imagen
+        igual. La prueba anterior (84 -> 80 %) estaba tapada por el humo.
+      - Lo que queda por fotograma, ~9,5 ms: G-buffer 1,8, luces 1,9, cada
+        haz encendido ~0,9 (ray-march), gamma/FXAA 1,3. Crece con cada haz
+        encendido; `Calidad` media en los ajustes del 3D baja los pasos.
+      - No eran: las 34 cabezas apagadas (no generan pasadas en GPU), ni los
+        pixeles de la ventana (los targets son 1024x1024 fijos).
+      - Siguiente paso: limitar el 3D a ~30 fps (la mitad de GPU) y medir un
+        show real con muchos haces a la vez.
   - **Las LED Spray Fog echan el humo en horizontal en el 3D.** `smoke.dae` echa el humo
     por su frente (+Z de la malla, el disco `emitter` en z=0,516), y el parche
     las deja sin rotar, asi que el chorro sale horizontal hacia el publico.
