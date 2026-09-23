@@ -138,8 +138,24 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
         encendido; `Calidad` media en los ajustes del 3D baja los pasos.
       - No eran: las 34 cabezas apagadas (no generan pasadas en GPU), ni los
         pixeles de la ventana (los targets son 1024x1024 fijos).
-      - Siguiente paso: limitar el 3D a ~30 fps (la mitad de GPU) y medir un
-        show real con muchos haces a la vez.
+      - 2026-09-24, mas en la rama: sin MSAA en el Scene3D (`0903b6a`, ya
+        hay FXAA; 11,1-11,7 -> 10,0-10,3 ms) y FXAA pinta directo en pantalla
+        sin la copia final (`531276f`, 9,4-10,1 ms, poco). Banco repetible:
+        `~/p/qlcplus-test/bench.sh <tag>` (`LOOP=dmxloop.py` para un fundido
+        de color sin movimiento).
+      - Limitar el 3D a 30 Hz agrupando cambios DMX: probado y deshecho. Con
+        un fundido a 50 Hz el 3D ya pinta solo ~20-25 fps (GPU 18-28 % sin
+        limite, 18-23 % con el; ruido). El freno es la CPU, no la GPU.
+      - CPU (Time Profiler, fundido de color): ~58 % de un nucleo; el hilo
+        principal hace todo el render de Qt Quick y Qt3D. El 11,4 % es
+        `StringToInt::lookupId` dentro de
+        `RenderView::updateLightUniforms` (Qt3D 6.11.2,
+        `src/plugins/renderers/opengl/renderer/renderview.cpp`, ultima linea
+        de la funcion): busca `"envLightCount"` sin `static` en cada comando
+        de cada fotograma, con un lock global, desde varios hilos. Es un bug
+        de Qt3D, no de QLC+. Siguiente paso: parche de una linea, compilar
+        solo `libopenglrenderer.dylib` contra el Qt de brew, medir, y
+        reportarlo a Qt.
   - **Las LED Spray Fog echan el humo en horizontal en el 3D.** `smoke.dae` echa el humo
     por su frente (+Z de la malla, el disco `emitter` en z=0,516), y el parche
     las deja sin rotar, asi que el chorro sale horizontal hacia el publico.
