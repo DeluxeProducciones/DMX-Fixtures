@@ -72,6 +72,7 @@ def main() -> None:
 
     render(png)
     if blend:
+        open_rendered_from_camera()
         bpy.ops.wm.save_as_mainfile(filepath=blend)
     print("INFO DONE", png)
 
@@ -152,6 +153,24 @@ def dress_the_room() -> None:
     camera.location = (0.0, -STAGE[1] / 2 - 7.0, 4.2)
     camera.rotation_euler = (math.radians(74), 0.0, 0.0)
     bpy.context.scene.camera = camera
+
+
+def open_rendered_from_camera() -> None:
+    """Every 3D viewport in the saved file starts in Rendered shading, through the camera.
+
+    The file is for someone who has never used Blender: opening it has to show
+    the lit stage, not grey boxes in an orthographic grid.
+    """
+    for screen in bpy.data.screens:
+        for area in screen.areas:
+            if area.type != "VIEW_3D":
+                continue
+            for space in area.spaces:
+                if space.type != "VIEW_3D":
+                    continue
+                space.shading.type = "RENDERED"
+                space.region_3d.view_perspective = "CAMERA"
+                space.overlay.show_overlays = False
 
 
 def render(png: str) -> None:
