@@ -47,7 +47,9 @@
     los 31 y el render muestra la barra de PAR en el truss, los cuatro 7R, las
     CLB2.4 con sus cuatro cabezas, las barras de pixeles, los cuatro paneles,
     los cuatro spray fog y las dos MAC WASH de pie junto a la mesa
-    (`~/p/vibra-blender/vibra.png`). Gate: `codeality-py baseline check` 0
+    (`~/p/vibra-blender/vibra.png`, `vibra.blend`; corrida final desde el
+    checkout `~/p/DMX-Fixtures` en `9ef5d94`, 31 aparatos importados, 4 s,
+    Blender sale solo). Gate: `codeality-py baseline check` 0
     nuevos con el paquete partido a una declaracion por modulo; ruff, mypy y
     ruff-format siguen con la deuda conocida, nada nuevo.
   - Trampas que costaron una iteracion cada una, escritas en
