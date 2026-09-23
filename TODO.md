@@ -87,6 +87,22 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
   `~/p/blender-dmx` (main local sobre `569040f` de upstream): sin el, Blender
   no puede escuchar en 6454 si QLC+ ya esta en la misma maquina. Hace falta un
   fork en GitHub y un PR a `open-stage/blender-dmx`.
+- [ ] **Decidir: arreglar el 3D de QLC+ o seguir con BlenderDMX.** Medido en
+  el codigo de QLC+ (`~/p/qlcplus`, master `82e541d`) el 2026-09-23, esfuerzo
+  para alguien nuevo en ese codigo, sin medir en pantalla:
+  - Barra de varias cabezas: 0,5-1 dia como barra de haces sin malla
+    (`MultiBeams3DItem`), 1,5-3 dias con una luz por cabeza en
+    `Fixture3DItem.qml:163-171`, que es donde se pierde la cabeza.
+  - Humo local que sigue al DMX de la maquina: 3-5 dias, visible solo dentro de
+    un haz; +3-5 dias para verlo salir de la maquina sin luz.
+  - Gobos: ya se proyectan en haz y suelo; mas nitidos y con color, 1-2 dias.
+  - GPU del Mac: ya usa la GPU, por OpenGL 3.3 que macOS traduce a Metal
+    (Qt 6.10.3; `qmlui/main.cpp:53-56` fuerza OpenGL). Metal nativo: 1-2
+    semanas reescribiendo 16 shaders para el backend RHI de Qt3D, modulo
+    deprecado desde Qt 6.8. Paso barato primero, 1-3 dias:
+    `renderPolicy: OnDemand` esta comentado en `DeferredRenderer.qml:27`, asi
+    que pinta cada fotograma aunque nada cambie.
+  - Nada de esto pinta los paneles en modo Auto.
 - [ ] **Lo que ningun visor pinta**: los paneles WX-60WPS en modo Auto (ch7
   efecto, RGB a 0) generan el color en el hardware. Sigue siendo "en sala".
 
