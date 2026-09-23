@@ -72,6 +72,10 @@ def main() -> None:
 
     render(png)
     if blend:
+        # Saved with the file, unlike `artnet_enabled`, which BlenderDMX resets
+        # to off on every load: the operator only has to tick Art-Net.
+        for universe in dmx.universes:
+            universe.input = "ARTNET"
         open_rendered_from_camera()
         bpy.ops.wm.save_as_mainfile(filepath=blend)
     print("INFO DONE", png)

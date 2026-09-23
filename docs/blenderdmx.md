@@ -96,6 +96,28 @@ Fixture UUIDs derive from the fixture ID and the fixture type ID from
 manufacturer and model, so a regenerated package updates what BlenderDMX has
 instead of doubling it.
 
+## Seeing it live from QLC+
+
+The `.blend` opens in Rendered shading through the camera, with every
+universe's input already set to Art-Net. Three things are not in the file:
+
+1. **Art-Net is off after every load.** BlenderDMX resets it in its load
+   handler (`linkFile` in `dmx.py`). In the DMX sidebar (`N`), *Protocols*,
+   tick *Art-Net*; leave the address at `0.0.0.0`, because a socket bound to
+   one interface's address does not receive broadcasts on macOS.
+2. **QLC+ universe 1 is Art-Net universe 0 by default**
+   (`outputUniverse` defaults to the universe index, `artnetcontroller.cpp`),
+   while the MVR addresses are 1-based and BlenderDMX uses them as they are:
+   the fixtures sit in its *Universe 1*, which listens on Art-Net universe 1.
+   In QLC+'s Art-Net output configuration set *Universe* to `1`.
+3. **Where to send it**: the machine running Blender, by its LAN address or
+   the subnet broadcast. Unicast is the safer choice on a venue network with
+   other Art-Net nodes.
+
+Until QLC+ sends, the fixtures show whatever the last DMX was, which after a
+load is nothing: the *Programmer* panel (select all with `A`, raise *Dimmer*,
+pick a colour) lights them by hand.
+
 ## What no visualiser shows
 
 The WX-60WPS panels in Auto mode (channel 7 an effect, RGB at 0) generate

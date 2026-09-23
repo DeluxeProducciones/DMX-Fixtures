@@ -83,8 +83,11 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
   escribe `qlctool`) o se configura a mano en el Mac del show.
 - [ ] **Primera prueba en vivo.** El render escribe el DMX directamente en los
   buffers de BlenderDMX; falta el camino real: Blender con ventana en el
-  mini, `artnet_enabled`, QLC+ emitiendo Art-Net desde el MacBook, ver un
-  color y un gobo cambiar desde la consola.
+  mini con Art-Net marcado (se apaga en cada carga), QLC+ emitiendo Art-Net
+  con *Universe* = 1 (el universo 1 de QLC+ sale como Art-Net 0 por defecto
+  y los aparatos estan en el universo 1 de BlenderDMX) a la IP del mini,
+  ver un color y un gobo cambiar desde la consola. Receta en
+  `docs/blenderdmx.md`.
 - [ ] **Lo que ningun visor pinta**: los paneles WX-60WPS en modo Auto (ch7
   efecto, RGB a 0) generan el color en el hardware. Sigue siendo "en sala".
 
