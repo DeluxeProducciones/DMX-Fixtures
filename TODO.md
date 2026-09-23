@@ -111,7 +111,43 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
       `multihead-after.png`). Unas dos horas con la compilacion.
     - Redibujado a peticion: escena quieta, GPU 100 % -> 12 % y CPU del
       proceso ~72 % -> 10 %; con colores cambiando cada 0,3 s sigue
-      redibujando (GPU ~65 %). Sin probar: estrobos, pan/tilt animado, EFX.
+      redibujando (GPU ~65 %). Estrobo (brillo alterna 142 / 220) y barrido
+      de pan redibujan bien a peticion. Sin probar: EFX.
+    - Gobos (`55faf9e`): el color del gobo tine el haz y el suelo, y la
+      textura lleva mipmaps y filtro anisotropico; antes el shader solo leia
+      el alfa, asi que un gobo de color salia blanco (`gobo-before-final.png`,
+      `gobo-after-final.png`).
+    - Humo (`ec41617`): cada maquina Smoke/Hazer pinta su chorro segun su
+      canal de salida, en el color de sus propios LEDs, sube en 1,5 s y se
+      va en 3 s (chorro) o 30 s (hazer); un haz que lo cruza se ve mas
+      denso. Con humo en el aire la GPU sube a ~85 %; sin humo vuelve a 10 %
+      a los 5 s (`smoke-after.png`). Unas tres horas.
+    - Rendimiento, lo que NO era (medido con el `DebugOverlay` de Qt3D: 50
+      ms por fotograma, 152 render views): ni las 34 cabezas apagadas (sin
+      sus ramas, 17 render views, mismo 50 ms y GPU 84 %), ni los pixeles
+      (ventana a un cuarto, misma GPU: los targets son 1024x1024 fijos), ni
+      el formato RGBA32F (a RGBA16F, 84 -> 80 %). Siguiente paso: una traza
+      Metal System Trace (necesita Xcode, no instalado en el mini) antes de
+      tocar mas; el camino grande sigue siendo el renderer RHI, que brew ya
+      trae (`librhirenderer.dylib`).
+  - **Las LED Spray Fog echan el humo en horizontal en el 3D.** `smoke.dae` echa el humo
+    por su frente (+Z de la malla, el disco `emitter` en z=0,516), y el parche
+    las deja sin rotar, asi que el chorro sale horizontal hacia el publico.
+    Para que suban hace falta `x_rot 90` (QLC+ gira -90 sobre X: +Z pasa a
+    +Y); probado a mano en `Vibra-offline.qxw`. Siguiente paso: regla en
+    `qlctool check` que vea una maquina de humo vertical sin rotar, test, y
+    el generador.
+  - **El QLC+ 5.2.2 del mini no tiene los gobos de la BEAM 230W 7R**
+    (`Resources/Gobos/` sin carpeta `BEAM-230W-7R`), asi que sus gobos no
+    salen ni en su 3D ni en sus miniaturas. Y `qlctool install --check` dice
+    "QLC+ has every one of the repo's 12 file(s)": es un verde falso.
+    `qlc_gobo_dir()` devuelve `None` porque `DEFAULT_BINARIES`
+    (`validate.py:59`) solo conoce `QLC+.app` y `QLC+ 4.app`, y el mini tiene
+    `QLC+ 4.13.1.app` y `QLC+ 5.2.2.app`; sin carpeta de gobos,
+    `install_plan` se salta los gobos sin decirlo. Siguiente paso: que
+    `--check` falle cuando no encuentra el bundle, test de regresion, y que
+    los gobos vayan a cada bundle instalado (el 5.x es el del show; la
+    validacion prefiere el 4.x).
 - [ ] **Lo que ningun visor pinta**: los paneles WX-60WPS en modo Auto (ch7
   efecto, RGB a 0) generan el color en el hardware. Sigue siendo "en sala".
 
