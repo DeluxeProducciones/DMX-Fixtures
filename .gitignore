@@ -11,3 +11,8 @@ __pycache__/
 
 # CocoIndex Code (ccc)
 /.cocoindex_code/
+
+# Blender saves the scene the render script builds from the MVR; it is a
+# by-product of `tools/blenderdmx/render_mvr.py`, regenerated on demand.
+*.blend
+*.blend1

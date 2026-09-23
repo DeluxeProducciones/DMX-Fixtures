@@ -66,18 +66,25 @@ quitar el symlink a mano antes. El `ValueError: list.remove(x)` que Blender
 5.2 imprime al cerrar es suyo (`copy_global_transform.unregister`), salio
 antes de instalar nada.
 
-- [ ] **GDTF para los 11 `.qxf` del rig.** Ninguno tendra GDTF oficial.
-  Ruta: importar el `.qxf` en Open Fixture Library, exportar GDTF, retocar la
-  geometria (las 4 cabezas de la CLB2.4, los pixeles del WX-60WPS, las 3
-  cabezas de la MAC WASH) en GDTF Builder. Guardarlos en el repo.
+El escenario ya se ve en BlenderDMX desde el 2026-09-23: `qlctool mvr`
+escribe `QLC+ Setups/Vibra-split.mvr` con un GDTF generado de cada `.qxf`
+dentro, y `tools/blenderdmx/render_mvr.py` lo importa sin ventana en el mini,
+lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
+
+- [ ] **Mirar el render y el `.blend` en el mini.** `~/p/vibra-blender/vibra.png`
+  y `vibra.blend` (abrirlo con Blender con ventana: `open -a Blender
+  ~/p/vibra-blender/vibra.blend`). Lo que se decide mirando: si las
+  primitivas (caja, base/horquilla/cabeza) bastan o hace falta malla por
+  aparato, si el humo (`volume_density` 0.08) y el angulo de los haces
+  convencen, y si algun aparato mira a donde no debe.
 - [ ] **Segunda salida en QLC+.** El motor admite varios output patches por
   universo (`m_outputPatchList`, `engine/src/universe.h`): DMX USB al rig y
   Art-Net al mini a la vez. Decidir si va en el `.qxw` generado (entonces lo
   escribe `qlctool`) o se configura a mano en el Mac del show.
-- [ ] **Escenario desde el plot.** `qlctool stage` ya tiene posiciones en mm;
-  exportar MVR (pymvr) para no colocar 35 aparatos a mano en Blender.
-- [ ] **Primera prueba en el mini.** Blender con la extension, patch de un
-  universo Art-Net, QLC+ emitiendo desde el MacBook, ver un color y un gobo.
+- [ ] **Primera prueba en vivo.** El render escribe el DMX directamente en los
+  buffers de BlenderDMX; falta el camino real: Blender con ventana en el
+  mini, `artnet_enabled`, QLC+ emitiendo Art-Net desde el MacBook, ver un
+  color y un gobo cambiar desde la consola.
 - [ ] **Lo que ningun visor pinta**: los paneles WX-60WPS en modo Auto (ch7
   efecto, RGB a 0) generan el color en el hardware. Sigue siendo "en sala".
 

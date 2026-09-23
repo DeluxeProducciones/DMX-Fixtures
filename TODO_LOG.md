@@ -17,6 +17,47 @@
 
 ### 2026-09
 
+#### 2026-09-23 - El escenario de QLC+ se ve en BlenderDMX
+
+- [x] 2026-09-23 - **Visor 3D:** "quiero ver el escenario que tenemos en qlc
+  pero en esta cosa nueva": GDTF para los 11 `.qxf`, escenario desde el plot,
+  primera prueba en el mini.
+  - Resultado: `qlctool mvr <workspace>` (`tools/qlctool/qlctool/mvr/`,
+    pygdtf 1.4.5 y pymvr 1.0.7) escribe un paquete MVR con un GDTF 1.2
+    generado de cada definicion del rig: geometria por primitivas (caja, o
+    base/horquilla/cabeza para un movil) con un `Beam` por cabeza, ruedas de
+    color y gobo con las imagenes del repo empaquetadas, un modo DMX por modo
+    QLC+ con las funciones por rango (obturador cerrado/abierto/estrobo, ranuras
+    de rueda como channel sets, giro) y los canales finos plegados en el
+    grueso. La ruta OFL + GDTF Builder del backlog no hizo falta. Posiciones:
+    `<Monitor>` leido de vuelta (`monitor_items`) y convertido a MVR
+    (`mvr_matrix`: z arriba, y hacia el fondo, escenario centrado, media
+    vuelta en X para los aparatos con malla y `-x_rot` para humo, barras y
+    estrobos, que QLC+ pinta encendiendo por arriba). Los repuestos ocultos
+    quedan fuera. `tools/blenderdmx/render_mvr.py` importa el MVR en
+    BlenderDMX sin ventana, escribe DMX en sus buffers (dimmer, obturador
+    abierto, un color por aparato, pan/tilt abiertos), pone suelo, camara y
+    volumen de humo, y renderiza.
+  - Evidencia: `pytest tests/ -q`: 491 passed (28 de ellos nuevos, en
+    `test_mvr_export.py`, uno por definicion valida el GDTF contra
+    `tests/gdtf.xsd` con xmllint); `qlctool check Vibra-split.qxw`: 522
+    botones, ningun problema; `qlctool mvr "QLC+ Setups/Vibra-split.qxw"`:
+    31 aparatos, 8 GDTF, 9 repuestos ocultos saltados. En el mini,
+    `Blender --background --python render_mvr.py -- Vibra-split.mvr` importa
+    los 31 y el render muestra la barra de PAR en el truss, los cuatro 7R, las
+    CLB2.4 con sus cuatro cabezas, las barras de pixeles, los cuatro paneles,
+    los cuatro spray fog y las dos MAC WASH de pie junto a la mesa
+    (`~/p/vibra-blender/vibra.png`). Gate: `codeality-py baseline check` 0
+    nuevos con el paquete partido a una declaracion por modulo; ruff, mypy y
+    ruff-format siguen con la deuda conocida, nada nuevo.
+  - Trampas que costaron una iteracion cada una, escritas en
+    `docs/blenderdmx.md`: pygdtf escribe `File="None"` en un modelo sin malla
+    y BlenderDMX falla al cargarlo (`model.file_attr = ""`); el esquema
+    prohibe `Default` en el canal y lo exige en la funcion; un obturador solo
+    con preset "slow to fast" se abre con el `dmx_from` exacto del set
+    abierto, no con `+1`; `artnet_enabled = True` arranca un hilo que impide
+    salir a Blender sin ventana (`os._exit(0)` tras guardar).
+
 #### 2026-09-23 - La suite de qlctool tiene presupuesto en el gate
 
 - [x] 2026-09-23 - **Entorno:** subir `syntopica-codeality-py` a 0.2.3 y
