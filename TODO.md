@@ -96,10 +96,11 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   `spectalive` (una marca de gafas "Specta"). TMview (busqueda aproximada) sin
   marca SPECTALIVE ni SPECTRALIVE; las mas cercanas son Spectalite (DPMA
   3020182100434, clases 1/17/42; India, clases 17/22/24/42) y SPECTRALITE (lentes
-  Zeiss/Sola, clase 9). Siguiente, con permiso del dueño (acciones externas):
-  registrar `spectalive.com` y `.io`, crear la org GitHub `spectalive`,
-  reservar Bluesky/npm y un handle alternativo para X/Instagram/YouTube
-  (p.ej. `spectalivehq`); valorar pedir la marca UE en clase 9 y 42.
+  Zeiss/Sola, clase 9). Autorizado por el dueño 2026-09-24:
+  org GitHub `spectalive`, npm y Bluesky, y solo el dominio `spectalive.com`,
+  registrado en Cloudflare Registrar con la cuenta BusiRocket (nada de
+  DonDominio, nada de `.io`). Pendiente de decidir: handles alternativos para
+  X/Instagram/YouTube (p.ej. `spectalivehq`) y la marca UE en clases 9 y 42.
 - [ ] **Org propia para el software**, separada de la empresa (decidido por el
   dueño 2026-09-24), con tambien los repos de hardware de la tablet (`taq102`
   sale de `CristianDeluxe`). Nombre: `spectalive`. Siguiente: crearla con
