@@ -74,9 +74,6 @@ vive en `~/p/brand-finder/TODO.md`.
 
 El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 
-- [ ] **El repo es publico y no tiene licencia**, asi que nadie puede usarlo
-  legalmente. Propuesta: Apache-2.0 para el codigo (la de QLC+), CC BY 4.0 para
-  show, docs, colores y gobos. Siguiente: que el dueño elija y añadir `LICENSE`.
 - [ ] **`Manual/` (42 MB) son PDFs de fabricantes con copyright**; abrir lo
   nuestro no nos da derecho a redistribuir lo suyo. Siguiente: sustituir cada
   PDF por su enlace (fabricante o Wayback) en un indice, y decidir si se purga

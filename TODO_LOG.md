@@ -17,6 +17,15 @@
 
 ### 2026-09
 
+#### 2026-09-24 - Licencias
+
+- [x] 2026-09-24 - **El repo tiene licencia**: Apache-2.0 para el codigo
+  (`tools/`, `QLC+ Fixtures/`, `QLC+ InputProfiles/`) y CC BY 4.0 para el
+  show (`QLC+ Setups/`, `docs/`, `Colores/`); `Manual/` queda fuera (copyright
+  de los fabricantes). `NOTICE` atribuye lo vendorizado de QLC+.
+  - Evidencia: `8c90813`; textos oficiales de apache.org y
+    creativecommons.org; GitHub detecta `Apache-2.0`.
+
 #### 2026-09-24 - Repos a sus orgs
 
 - [x] 2026-09-24 - **`DeluxeProducciones/DMX-Fixtures` es ahora
