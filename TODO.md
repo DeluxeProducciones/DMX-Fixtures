@@ -167,8 +167,21 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
         por comando en los dos renderers. Sin reporte previo: el JIRA de Qt
         (ahora `qt-project.atlassian.net`) solo nombra `envLightCount` en
         errores de shader, y Gerrit no tiene cambios sobre esa linea (los dos
-        que salen, 186545 y 204665, son de 2017). Siguiente paso: el dueño lo
-        reporta con su cuenta de Qt (texto preparado en la sesion).
+        que salen, 186545 y 204665, son de 2017). El cambio para Gerrit esta
+        listo en `~/p/qt3d`, rama `cache-envlightcount-id` sobre `dev`
+        (`45531a4`, los dos renderers, `Pick-to: 6.11 6.10`). Siguiente paso
+        [!]: el dueño crea su cuenta de Qt con `info@busirocket.com`, firma el
+        CLA, abre el JIRA (texto preparado en la sesion) y entonces
+        `git push` a `refs/for/dev` en codereview.qt-project.org.
+      - [~] 2026-09-24, enviado a QLC+ desde el fork `CristianDeluxe/qlcplus`
+        (autor `info@busirocket.com`): #2159 multicabeza, #2160 gobos, #2161
+        rendimiento (a peticion, RGBA16F, sin MSAA, FXAA sin copia), #2162
+        humo con el cilindro (encima de #2160, tocan la misma linea). Cada
+        rama compila sola desde `master` (`82e541d`); solo probado en macOS.
+        Tests de QLC+: `ninja check` necesita `lxml` en el PATH o da verde
+        sin correr nada; con el, engine pasa salvo
+        `InputOutputMap_Test::profileDirectories` (ruta de bundle macOS,
+        engine sin tocar) y el script para ahi. Falta: lo que diga el autor.
       - Ojo con `xctrace record`: una grabacion de 8 s se quedo colgada 8
         minutos; lanzarlo siempre con `timeout`.
   - **Las LED Spray Fog echan el humo en horizontal en el 3D.** `smoke.dae` echa el humo
