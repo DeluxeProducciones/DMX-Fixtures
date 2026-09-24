@@ -170,6 +170,14 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
 ## Development environment
 
+- [ ] **Reinstall qlctool in every other checkout after pulling Plan A Task 7**
+  (2026-09-24): the desk and pad checks now come from the `qlctool.rules`
+  entry points, and until the package metadata is rewritten `qlctool check`
+  and the suite fail with `RuntimeError` (by design, ruling R10). Done on this
+  checkout. Next: run `.venv/bin/pip install -e '.[dev]'` in `tools/qlctool`
+  on the MacBook checkout, on the show Mac (`vibra-oficina`), and in the
+  launcher's worktree on the Mac mini (`~/p/DMX-Fixtures-qlctool`) when it
+  advances to `main`.
 - [ ] **`--validate` no encuentra QLC+ en el mini** (2026-09-24, Task 1 del
   Plan A): `validate.py` `DEFAULT_BINARIES` busca `/Applications/QLC+.app` o
   `QLC+ 4.app`, y aqui estan `QLC+ 4.13.1.app` (Intel, `Bad CPU type`) y
