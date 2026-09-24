@@ -134,6 +134,13 @@ queda en `Vibra-Lab/vibra-lighting`).
     `check_generator_vocabulary` refuses `language != "es"` and overrides that
     change a name. Smallest next step: route `canonical_show`'s `master` keys
     through `Names.display`, then the console tables that key by them.
+  - [ ] **Plan B: carry the controller coupling out of core (R3, final review
+    of Plan A, 2026-09-24).** `checks/rule_held_column.py` still calls
+    `valid_desk_bursts`, and `checks/own_rule_providers.py` names the
+    controller providers inside core. Both must move behind the `tablet_desk` /
+    `smc-pad` providers before the `spectalive/qlctool` split. Smallest next
+    step: have the `tablet_desk` provider supply the held-column rule's burst
+    list.
 - [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
@@ -595,10 +602,12 @@ que queda.
   canal `Focus` de las 7R, o sea que los diecisiete gobos se han proyectado
   siempre con el foco en un extremo de su recorrido — la mitad de por que "se
   echaba en falta mas variedad". Ahora todas las escenas de gobo escriben
-  `BEAM_FOCUS = 127` (`generate/canonical_show.py`), que es el medio del
-  recorrido y una primera pasada, no una medida. En sala: poner un gobo,
-  subir/bajar ese canal a mano hasta que el dibujo este nitido a la distancia
-  real, y dejar ese numero en la constante. Mientras tanto tambien hay
+  `beam_focus = 127` (`tools/qlctool/qlctool/vibra/tuning.py`, y
+  `[fixture_tuning] beam_focus` en los tres `QLC+ Setups/vibra*.toml`), que es
+  el medio del recorrido y una primera pasada, no una medida. En sala: poner un
+  gobo, subir/bajar ese canal a mano hasta que el dibujo este nitido a la
+  distancia real, y dejar ese numero en los cuatro sitios: el test de igualdad
+  (`tests/test_load_show_description.py`) falla si solo se cambia una copia. Mientras tanto tambien hay
   `Gobo Repartido 1-8` (cada cabeza un gobo distinto) y el prisma girando en
   tres velocidades: mirar si el reparto se lee bien o marea.
 
@@ -999,12 +1008,15 @@ que queda.
   level). `Dimmer Chase` owning Peak's intensity is done - see TODO_LOG.md,
   2026-08-27.
 - [ ] Judge the energy levels against a real night. `Ciclo Energia` walks
-  Ambiente 4 min -> Fiesta 8 -> Peak 40 s -> Fiesta 8 (`AMBIENT_HOLD`,
-  `PARTY_HOLD`, `PEAK_HOLD` measured 2026-09-22), with the colour bed and the
+  Ambiente 4 min -> Fiesta 8 -> Peak 40 s -> Fiesta 8 (`ambient_ms`,
+  `party_ms`, `peak_ms` measured 2026-09-22), with the colour bed and the
   haze running underneath so a level change never blacks the room out. The
   numbers are a first guess: if the quiet level feels dead or the peak feels
-  rationed, they are `AMBIENT_HOLD`, `PARTY_HOLD` and `PEAK_HOLD` in
-  `tools/qlctool/qlctool/generate/canonical_show.py`.
+  rationed, they are `ambient_ms`, `party_ms` and `peak_ms` in
+  `tools/qlctool/qlctool/vibra/timing.py` and `[timing] levels` (`ambient_s`,
+  `party_s`, `peak_s`) in the three `QLC+ Setups/vibra*.toml`. Change all four
+  together: the equality tests (`tests/test_load_show_description.py`) fail if
+  only one copy is edited.
 - [ ] Check the mirrored movement from the floor. House-right movers (CromoWash
   #2, beams 21 and 23) now run the EFX backwards so the pairs open and close
   together instead of the rig sweeping in parallel. If it reads wrong it is the
