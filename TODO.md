@@ -115,6 +115,10 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   ocupado); "vibra" no. Con 4/4: Vibestrobe y Vibrakit (todo libre, `.com`
   incluido), Vibradesk (`.com` libre; `.app`/`.dev` dieron error),
   Vibraboard y Vibradeck (todo menos `.com`), Vibrapad, Vibrashow, Showvibe.
+  Spectalive (propuesta del dueño): 4/4 con `.com`, `.io`, `.app`, `.dev`,
+  GitHub, npm y Bluesky libres; YouTube `@spectalive` ocupado, X sin
+  verificar. Variantes: Spectaboard y Spectadesk libres en todo;
+  Spectashow 4/4 (YouTube ocupado); Spectadeck 3/4 (GitHub ocupado).
   Siguiente: elegir 3 con el dueño y comprobar marca en EUIPO/USPTO a mano
   antes de crear nada.
 - [ ] **Org propia para el software**, separada de la empresa (decidido por el
