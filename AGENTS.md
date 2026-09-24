@@ -85,6 +85,21 @@ cd tools/qlctool
   --out "../../QLC+ Setups/Vibra-split.qxw" --validate
 ```
 
+Since the show-description refactor (2026-09-24) the same three regenerate from
+their descriptions, which carry the patch, the plot and every show choice:
+
+```bash
+.venv/bin/qlctool newshow --description "../../QLC+ Setups/vibra.toml" --validate
+.venv/bin/qlctool newshow --description "../../QLC+ Setups/vibra-beats.toml" --validate
+.venv/bin/qlctool newshow --description "../../QLC+ Setups/vibra-split.toml" --validate
+```
+
+`.venv/bin/python tests/vibra_compare.py --descriptions --validate` does all
+three into a temp dir and fails on any changed byte, check finding or QLC+
+complaint. After a pull that touched `pyproject.toml`, run
+`.venv/bin/pip install -e '.[dev]'`: the desk and pad checks are found through
+its `qlctool.rules` entry points, and `qlctool check` refuses to run without them.
+
 If the SMC-PAD's map changed, regenerate its input profile in the same pass -
 the shows carry the profile's *name*, the profile carries the numbers:
 
