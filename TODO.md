@@ -66,9 +66,6 @@ vive en `~/p/brand-finder/TODO.md`.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.
-- [ ] **El MacBook Pro (`ssh macbook`) va 13 commits por detras en
-  `~/p/DMX-Fixtures`**, sin trabajo local propio (comprobado 2026-09-24).
-  Siguiente: `git pull` alli.
 - [ ] **Stash antiguo en `main` del mini:** `stash@{0}: On main: Tower
   Auto-Stash: 2025-08-28 20:48:51`. Siguiente: mirar su diff y guardarlo o
   tirarlo.
@@ -104,18 +101,10 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   admin) y org npm `@spectalive`. Pendiente: Bluesky (mejor
   `@spectalive.com` via TXT `_atproto` ahora que hay dominio). Pendiente de decidir: handles alternativos para
   X/Instagram/YouTube (p.ej. `spectalivehq`) y la marca UE en clases 9 y 42.
-- [ ] **Org propia para el software**, separada de la empresa (decidido por el
-  dueño 2026-09-24), con tambien los repos de hardware de la tablet (`taq102`
-  sale de `CristianDeluxe`). Nombre: `spectalive`. Siguiente: crearla con
-  permiso del dueño.
-- [ ] **Lo de la empresa va a `Vibra-Lab`** (decidido 2026-09-24; ya existe y
-  tiene `paperclip`). Sustituye al antiguo "renombrar `DeluxeProducciones`".
-  Siguiente: transferir `DMX-Fixtures` y renombrarlo a algo como `vibra-show`,
-  luego re-apuntar a mano los remotes (mini, MacBook, `~oficina` en el Mac del
-  show, el worktree `DMX-Fixtures-qlctool`), el marcador de la app QLC+ Vibra,
-  y las paginas del brain `business/access-map.md` y `projects/vibra-dmx.md`:
-  las redirecciones de GitHub crean clones duplicados en silencio (la trampa
-  de POIComb->POITools).
+- [ ] **Re-apuntar el clon del Mac del show** (`~oficina/DMX-Fixtures`) a
+  `git@github.com:Vibra-Lab/vibra-lighting.git` cuando este en red; hoy
+  funciona por la redireccion de GitHub, que se rompe si alguien crea otro
+  `DeluxeProducciones/DMX-Fixtures`.
 - [ ] **Pedir el nombre `vibra` a GitHub** (decidido 2026-09-24): hoy es una
   cuenta personal de 2015 sin repos. Siguiente: redactar la solicitud para que
   la envie el dueño por support.github.com.
@@ -125,7 +114,8 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 
 ### D. Partir este repo (cada parte con su propio diseño)
 
-Reparto propuesto; los nombres de repo esperan al nombre del producto.
+Reparto propuesto, cada parte a la org `spectalive` (salvo el show, que se
+queda en `Vibra-Lab/vibra-lighting`).
 
 - [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,

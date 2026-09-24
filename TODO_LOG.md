@@ -17,6 +17,22 @@
 
 ### 2026-09
 
+#### 2026-09-24 - Repos a sus orgs
+
+- [x] 2026-09-24 - **`DeluxeProducciones/DMX-Fixtures` es ahora
+  `Vibra-Lab/vibra-lighting`**; `CristianDeluxe/taq102` y el fork
+  `CristianDeluxe/qlcplus` son `spectalive/taq102` y `spectalive/qlcplus`
+  (org del software, creada por el dueño el mismo dia).
+  - Evidencia: `gh api repos/Vibra-Lab/vibra-lighting`,
+    `repos/spectalive/taq102` y `repos/spectalive/qlcplus` (fork de
+    `mcallegari/qlcplus`) responden; remotes re-apuntados en el mini
+    (`~/p/DMX-Fixtures` y su worktree `DMX-Fixtures-qlctool`, `~/p/taq102`,
+    remote `fork` de `~/p/qlcplus`) y en el MacBook; paginas del brain
+    `projects/vibra-dmx.md`, `projects/taq102.md`,
+    `personal/denver-taq102-tablet.md` y `business/access-map.md` (61f836d3).
+- [x] 2026-09-24 - **El MacBook Pro al dia en `~/p/DMX-Fixtures`**: arbol
+  limpio, 23 commits por detras, `git pull --ff-only` a `f8385ff`.
+
 #### 2026-09-24 - Nombre del software de control: Spectalive
 
 - [x] 2026-09-24 - **Nombre elegido: Spectalive** (propuesta y decision del
