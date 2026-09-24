@@ -17,6 +17,19 @@
 
 ### 2026-09
 
+#### 2026-09-24 - Nombre del software de control: Spectalive
+
+- [x] 2026-09-24 - **Nombre elegido: Spectalive** (propuesta y decision del
+  dueño: "Me gusta spectalive vamos con eso").
+  - Busqueda: brand-finder, proyecto `lighting-control-software`, 235
+    candidatos; criticos `.io`, `+control.com`, GitHub, App Store. Descartados
+    por el dueño: Fulgo, Oscila, Hertzline ("suena aleman"). Raices saturadas:
+    rig/cue/lux/touch/vibe y los inventados CVCV cortos. Finalistas 4/4:
+    Strobeboard, Strobepad, Vibrakit, Vibradesk, Spectaboard, Spectadesk.
+  - Evidencia: Spectalive 4/4 con `.com` (RDAP HTTP 404), `.io`, `.app`,
+    `.dev`, GitHub, npm y Bluesky libres; TMview sin marca SPECTALIVE ni
+    SPECTRALIVE; commits `c62081d`, `0c04ed4`, `f1b9aeb`.
+
 #### 2026-09-24 - El mapa de la tablet volvia a ser el del show viejo
 
 - [x] 2026-09-24 - **`Vibra.desk.json` reconstruido desde el `Vibra.qxw`

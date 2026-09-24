@@ -89,41 +89,21 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 
 ### C. Orgs y nombre
 
-- [ ] **Nombre del software de control** (cliente tactil + toolkit + host).
-  Debe sonar bien en ingles y a software profesional (grandMA, Hog, Eos, Onyx,
-  Titan, Madrix, Pixera, disguise, Notch), inspirado en vibra/vibe sin caer en
-  "vibe". Descartados: Fulgo; Oscila ("no suena cool en ingles", dueño);
-  Riglux y parecidos (raices saturadas: remote, lumi/lux/light, stage, DMX,
-  touch, cue, rig, beam, gobo); Vibron y Vibrae (choca con la app DMX Vibrio y
-  con vibrae.vip); Palco (SGM); Chispa (Match Group). Ojo: la ausencia de DNS
-  no prueba un dominio libre (`tremolo.com` y `tremo.com` estan registrados sin
-  NS); solo RDAP del registro vale. 2026-09-24: brand-finder ya comprueba el
-  nombre en todos los canales (proyecto `lighting-control-software`, 24
-  candidatos; criticos `.io`, `+control.com`, GitHub, App Store). Con 4/4:
-  Cuenix, Hertzline, Luxcue, Onrig, Riglux, Rigtouch (solo Rigtouch tiene
-  `.com`); de ellos solo Hertzline no usa una raiz saturada. Las palabras
-  inglesas obvias tienen `.io` ocupado (Pulsar, Vela, Overtone, Thrum, Quiver,
-  Shimmer, Throb, Timbre, Phaser). Hertzline descartado ("suena aleman; debe
-  ser algo simple de pronunciar", dueño). Tandas 2-4 (60 nombres mas, 210 en
-  el proyecto): los inventados cortos CVCV (Vayo, Kova, Zora, Vyro...) tienen
-  todos `.io` y GitHub ocupados (max 2/4); los compuestos de dos palabras
-  inglesas simples de iluminacion si salen. Con 4/4: Strobeboard y Strobepad
-  (11/11, `.com` incluido), Hazedeck y Strobedeck (todo menos `.com`),
-  Strobedesk, Hazedesk, Strobekit, Hazepad, Wavepad, Glowdash, Flaredeck.
-  Tanda vibe/vibra (a peticion del dueño, 230 candidatos): "vibe" como raiz
-  esta saturado (Vibeshow, Vibedeck, Vibepad, Vibekit... max 2/4, `.io`
-  ocupado); "vibra" no. Con 4/4: Vibestrobe y Vibrakit (todo libre, `.com`
-  incluido), Vibradesk (`.com` libre; `.app`/`.dev` dieron error),
-  Vibraboard y Vibradeck (todo menos `.com`), Vibrapad, Vibrashow, Showvibe.
-  Spectalive (propuesta del dueño): 4/4 con `.com`, `.io`, `.app`, `.dev`,
-  GitHub, npm y Bluesky libres; YouTube `@spectalive` ocupado, X sin
-  verificar. Variantes: Spectaboard y Spectadesk libres en todo;
-  Spectashow 4/4 (YouTube ocupado); Spectadeck 3/4 (GitHub ocupado).
-  Siguiente: elegir 3 con el dueño y comprobar marca en EUIPO/USPTO a mano
-  antes de crear nada.
+- [ ] **Asegurar el nombre Spectalive** (elegido por el dueño 2026-09-24;
+  busqueda cerrada en `TODO_LOG.md`). Libres: `spectalive.com`, `.io`, `.app`,
+  `.dev`, `spectalivecontrol.com`, GitHub `spectalive`, npm, Bluesky, App
+  Store. Ocupados: YouTube `@spectalive`, y X, Instagram y Facebook
+  `spectalive` (una marca de gafas "Specta"). TMview (busqueda aproximada) sin
+  marca SPECTALIVE ni SPECTRALIVE; las mas cercanas son Spectalite (DPMA
+  3020182100434, clases 1/17/42; India, clases 17/22/24/42) y SPECTRALITE (lentes
+  Zeiss/Sola, clase 9). Siguiente, con permiso del dueño (acciones externas):
+  registrar `spectalive.com` y `.io`, crear la org GitHub `spectalive`,
+  reservar Bluesky/npm y un handle alternativo para X/Instagram/YouTube
+  (p.ej. `spectalivehq`); valorar pedir la marca UE en clase 9 y 42.
 - [ ] **Org propia para el software**, separada de la empresa (decidido por el
   dueño 2026-09-24), con tambien los repos de hardware de la tablet (`taq102`
-  sale de `CristianDeluxe`). Siguiente: crearla cuando haya nombre.
+  sale de `CristianDeluxe`). Nombre: `spectalive`. Siguiente: crearla con
+  permiso del dueño.
 - [ ] **Lo de la empresa va a `Vibra-Lab`** (decidido 2026-09-24; ya existe y
   tiene `paperclip`). Sustituye al antiguo "renombrar `DeluxeProducciones`".
   Siguiente: transferir `DMX-Fixtures` y renombrarlo a algo como `vibra-show`,
