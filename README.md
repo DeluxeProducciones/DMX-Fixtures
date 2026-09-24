@@ -65,3 +65,20 @@ validating each in headless QLC+ (`--validate`); the exact commands are in
 [AGENTS.md](AGENTS.md), along with the traps. The engineering rules - above
 all *"a malfunction is not fixed until a check can see it"* - are in
 [CLAUDE.md](CLAUDE.md).
+
+## Licence
+
+Open, so anyone can use it:
+
+- **Code** - everything under `tools/`, the fixture definitions in
+  `QLC+ Fixtures/` and the input profiles in `QLC+ InputProfiles/` - is under
+  the [Apache License 2.0](LICENSE), the licence QLC+ itself uses.
+- **The show and its material** - the workspaces in `QLC+ Setups/`, `docs/`
+  and `Colores/` - is under [CC BY 4.0](LICENSE-CC-BY-4.0): use it, change
+  it, perform it, and credit Vibra.
+- **`Manual/` is not ours.** Those are the manufacturers' manuals, kept for
+  reference; they stay under their owners' copyright and neither licence
+  covers them.
+
+Files vendored from QLC+ keep QLC+'s own Apache 2.0 licence; see
+[NOTICE](NOTICE).
