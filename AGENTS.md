@@ -47,6 +47,10 @@ python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
 .venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
 ```
 
+qlctool finds the rig's definitions through the repo-root `qlctool.toml`; a
+rig elsewhere names them with `[rig] fixtures`, `QLCTOOL_FIXTURES` or
+`qlctool --fixtures DIR`.
+
 `qlctool check` (semantic rules) and `qlctool validate` (does QLC+ load it)
 are different questions; run both sides via the recipe below before calling
 show work done.

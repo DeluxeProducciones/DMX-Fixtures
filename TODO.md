@@ -121,7 +121,8 @@ queda en `Vibra-Lab/vibra-lighting`).
   paginas, controlador, estilo), guiado por capacidades; Vibra queda como un
   ejemplo (su descripcion + lo unico suyo) en `vibra-lighting`. Paso 1,
   aprobado: desenredar dentro de este repo (checks de escritorio/pad como
-  plugins por entry points, rutas de la libreria sin suponer este repo), con
+  plugins por entry points, rutas de la libreria sin suponer este repo - hecho
+  2026-09-25, Plan B Task 3, ver `TODO_LOG.md`), con
   los tres workspaces identicos. Luego `git filter-repo` a `spectalive/qlctool`
   y el show depende de un tag.
   - [ ] **Generator names through the catalogue** (next after Plan A, before

@@ -28,6 +28,24 @@
 - [x] 2026-09-25 - **Politica Registrar retirada del token v2 de Cloudflare**
   (nunca funciono; la ruta es el MCP): 6 -> 5 politicas, token sigue `active`.
 
+#### 2026-09-25 - Plan B Task 3: fixture definitions by configuration
+
+- [x] 2026-09-25 - **The toolkit found its fixtures only inside this repo**
+  (spec step 6): `library.REPO_ROOT` was `parents[3]` of the package, so a
+  copy anywhere else loaded no definition and `capabilities_of` skipped every
+  fixture without a word. Now `qlctool/fixture_dirs.py` resolves ruling B3
+  (`--fixtures` > `[rig] fixtures` > `QLCTOOL_FIXTURES` > the nearest
+  `qlctool.toml`), the repo root carries `qlctool.toml` naming its three
+  folders, `install_plan` takes a `ToolkitConfig`, and `warn_unresolved`
+  prints the fixtures with no definition and the folders searched.
+  `tests/test_no_repo_layout.py` refuses any repo folder name or
+  `parents[>=3]` in the package. Evidence: `pytest tests/ -q` -> `601
+  passed`; `test_a_rig_outside_the_repo_regenerates_vibra` rebuilds
+  `Vibra.qxw` from a tmp copy to the baseline sha256; `vibra_compare.py
+  --validate` -> three `identical, 0 finding(s), QLC+ loaded it`; the three
+  `qlctool check` -> `522 botones revisados, ningun problema`; `qlctool
+  install --check` -> `QLC+ has every one of the configured 30 file(s)`.
+
 #### 2026-09-25 - Plan B Task 1: find every installed QLC+
 
 - [x] 2026-09-25 - **`--validate` no encuentra QLC+ en el mini** (cerrado,

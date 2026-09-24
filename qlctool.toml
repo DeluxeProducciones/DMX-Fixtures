@@ -1,0 +1,6 @@
+# Where qlctool finds this repository's own files (spec step 6). Paths are
+# relative to this file. Overridden by `qlctool --fixtures`, a description's
+# [rig] fixtures, or QLCTOOL_FIXTURES, in that order.
+fixtures = ["QLC+ Fixtures"]
+input_profiles = ["QLC+ InputProfiles"]
+gobos = ["QLC+ Setups/Gobos"]
