@@ -169,12 +169,12 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
         errores de shader, y Gerrit no tiene cambios sobre esa linea (los dos
         que salen, 186545 y 204665, son de 2017). El cambio para Gerrit esta
         listo en `~/p/qt3d`, rama `cache-envlightcount-id` sobre `dev`
-        (`45531a4`, los dos renderers, `Pick-to: 6.11 6.10`). Siguiente paso
-        [!]: el dueño crea su cuenta de Qt con `info@busirocket.com`, firma el
+        (`0b8bb46`, los dos renderers, `Pick-to: 6.11 6.10`). Siguiente paso
+        [!]: el dueño crea su cuenta de Qt con `me@cristiandeluxe.dev`, firma el
         CLA, abre el JIRA (texto preparado en la sesion) y entonces
         `git push` a `refs/for/dev` en codereview.qt-project.org.
       - [~] 2026-09-24, enviado a QLC+ desde el fork `CristianDeluxe/qlcplus`
-        (autor `info@busirocket.com`): #2159 multicabeza, #2160 gobos, #2161
+        (autor `me@cristiandeluxe.dev`): #2159 multicabeza, #2160 gobos, #2161
         rendimiento (a peticion, RGBA16F, sin MSAA, FXAA sin copia), #2162
         humo con el cilindro (encima de #2160, tocan la misma linea). Cada
         rama compila sola desde `master` (`82e541d`); solo probado en macOS.
