@@ -170,6 +170,15 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
 ## Development environment
 
+- [ ] **`--validate` no encuentra QLC+ en el mini** (2026-09-24, Task 1 del
+  Plan A): `validate.py` `DEFAULT_BINARIES` busca `/Applications/QLC+.app` o
+  `QLC+ 4.app`, y aqui estan `QLC+ 4.13.1.app` (Intel, `Bad CPU type`) y
+  `QLC+ 5.2.2.app`; `qlcplus_binary()` devuelve `None` y `--validate` falla
+  con `FileNotFoundError`. Hoy funciona con
+  `QLCTOOL_QLCPLUS="/Applications/QLC+ 5.2.2.app/Contents/MacOS/qlcplus-qml"`.
+  Siguiente: buscar `/Applications/QLC+*.app` por patron (preferir la de la
+  arquitectura de la maquina) con un test.
+
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
 
 Decision del dueño, 2026-09-23: el 3D de QLC+ 5 no vale como visor del show
