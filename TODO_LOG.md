@@ -17,6 +17,24 @@
 
 ### 2026-09
 
+#### 2026-09-24 - Plan A: show description
+
+- [x] 2026-09-24 - **Plan A of the show description landed** (spec steps 1-5,
+  `docs/superpowers/plans/2026-09-24-show-description-plan-a.md`, commits
+  `7b3691e..723f273`). The show's own choices live in a `ShowDescription`;
+  names resolve by English identifier or any shipped spelling
+  (`qlctool/locales/{en,es}.toml`); the SMC-PAD and the tablet desk are
+  optional controller profiles whose checks come through the `qlctool.rules`
+  entry points; `qlctool newshow --description FILE` reads a TOML description,
+  refuses a malformed one while reading it (file and section named), and never
+  overwrites the patch unless `--out` or `[rig] output` says so. Vibra ships as
+  `QLC+ Setups/vibra.toml`, `vibra-beats.toml`, `vibra-split.toml`. Evidence:
+  571 passed, 10 skipped; `vibra_compare --validate` byte-identical for all
+  three workspaces with and without the descriptions; `qlctool check` clean x3;
+  final whole-branch review with fixes, re-review clean. Open follow-ups stay in
+  `TODO.md`: generator names through the catalogue, Plan B controller coupling,
+  reinstall in other checkouts.
+
 #### 2026-09-24 - Licencias
 
 - [x] 2026-09-24 - **El repo tiene licencia**: Apache-2.0 para el codigo

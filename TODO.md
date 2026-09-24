@@ -123,17 +123,14 @@ queda en `Vibra-Lab/vibra-lighting`).
   plugins por entry points, rutas de la libreria sin suponer este repo), con
   los tres workspaces identicos. Luego `git filter-repo` a `spectalive/qlctool`
   y el show depende de un tag.
-  - [~] Plan A (`docs/superpowers/plans/2026-09-24-show-description-plan-a.md`,
-    spec steps 1-5) landed: `ShowDescription`, `qlctool/locales/{en,es}.toml`,
-    controller profiles with `qlctool.rules` providers, `newshow --description`
-    and `QLC+ Setups/vibra*.toml`, all three workspaces byte-identical. Next,
-    before step 7's second rig: **generator names through the catalogue** - the
-    generators still write Spanish literals (`live_console`, `play_page`,
-    `control_glyph.GLYPHS`, `smc_pad_bindings`, `smc_pad_colors`,
-    `color_wheel_match.WHEEL_NAMES`, `canonical_show` master names), so
-    `check_generator_vocabulary` refuses `language != "es"` and overrides that
-    change a name. Smallest next step: route `canonical_show`'s `master` keys
-    through `Names.display`, then the console tables that key by them.
+  - [ ] **Generator names through the catalogue** (next after Plan A, before
+    step 7's second rig). The generators still write Spanish literals
+    (`live_console`, `play_page`, `control_glyph.GLYPHS`, `smc_pad_bindings`,
+    `smc_pad_colors`, `color_wheel_match.WHEEL_NAMES`, `canonical_show` master
+    names), so `check_generator_vocabulary` refuses `language != "es"` and
+    overrides that change a name. Smallest next step: route `canonical_show`'s
+    `master` keys through `Names.display`, then the console tables that key by
+    them.
   - [ ] **Plan B: carry the controller coupling out of core (R3, final review
     of Plan A, 2026-09-24).** `checks/rule_held_column.py` still calls
     `valid_desk_bursts`, and `checks/own_rule_providers.py` names the
