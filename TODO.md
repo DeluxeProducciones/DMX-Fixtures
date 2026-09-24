@@ -103,10 +103,15 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   Cuenix, Hertzline, Luxcue, Onrig, Riglux, Rigtouch (solo Rigtouch tiene
   `.com`); de ellos solo Hertzline no usa una raiz saturada. Las palabras
   inglesas obvias tienen `.io` ocupado (Pulsar, Vela, Overtone, Thrum, Quiver,
-  Shimmer, Throb, Timbre, Phaser). Siguiente: generar una segunda tanda de
-  nombres ingleses inventados (no palabras de diccionario) en brand-finder,
-  elegir 3 con el dueño y comprobar marca en EUIPO/USPTO a mano antes de crear
-  nada.
+  Shimmer, Throb, Timbre, Phaser). Hertzline descartado ("suena aleman; debe
+  ser algo simple de pronunciar", dueño). Tandas 2-4 (60 nombres mas, 210 en
+  el proyecto): los inventados cortos CVCV (Vayo, Kova, Zora, Vyro...) tienen
+  todos `.io` y GitHub ocupados (max 2/4); los compuestos de dos palabras
+  inglesas simples de iluminacion si salen. Con 4/4: Strobeboard y Strobepad
+  (11/11, `.com` incluido), Hazedeck y Strobedeck (todo menos `.com`),
+  Strobedesk, Hazedesk, Strobekit, Hazepad, Wavepad, Glowdash, Flaredeck.
+  Siguiente: elegir 3 con el dueño y comprobar marca en EUIPO/USPTO a mano
+  antes de crear nada.
 - [ ] **Org propia para el software**, separada de la empresa (decidido por el
   dueño 2026-09-24), con tambien los repos de hardware de la tablet (`taq102`
   sale de `CristianDeluxe`). Siguiente: crearla cuando haya nombre.
