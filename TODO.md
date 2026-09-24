@@ -97,9 +97,16 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   touch, cue, rig, beam, gobo); Vibron y Vibrae (choca con la app DMX Vibrio y
   con vibrae.vip); Palco (SGM); Chispa (Match Group). Ojo: la ausencia de DNS
   no prueba un dominio libre (`tremolo.com` y `tremo.com` estan registrados sin
-  NS); solo RDAP del registro vale. Siguiente: correr la busqueda en
-  brand-finder mejorado (dominios, GitHub, redes, tiendas) y comprobar marca
-  en EUIPO/USPTO antes de crear nada.
+  NS); solo RDAP del registro vale. 2026-09-24: brand-finder ya comprueba el
+  nombre en todos los canales (proyecto `lighting-control-software`, 24
+  candidatos; criticos `.io`, `+control.com`, GitHub, App Store). Con 4/4:
+  Cuenix, Hertzline, Luxcue, Onrig, Riglux, Rigtouch (solo Rigtouch tiene
+  `.com`); de ellos solo Hertzline no usa una raiz saturada. Las palabras
+  inglesas obvias tienen `.io` ocupado (Pulsar, Vela, Overtone, Thrum, Quiver,
+  Shimmer, Throb, Timbre, Phaser). Siguiente: generar una segunda tanda de
+  nombres ingleses inventados (no palabras de diccionario) en brand-finder,
+  elegir 3 con el dueño y comprobar marca en EUIPO/USPTO a mano antes de crear
+  nada.
 - [ ] **Org propia para el software**, separada de la empresa (decidido por el
   dueño 2026-09-24), con tambien los repos de hardware de la tablet (`taq102`
   sale de `CristianDeluxe`). Siguiente: crearla cuando haya nombre.
