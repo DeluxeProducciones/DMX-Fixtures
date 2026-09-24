@@ -161,8 +161,14 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
         `~/p/qlcplus-test/qt3d-envlightcount.patch`. Mismo build, una linea
         de diferencia, `cpubench.sh`: sin parche 6,30 / 6,70 s de CPU en 8 s
         (lookupId 16-20 %), con parche 5,23 / 6,23 s (lookupId desaparece);
-        ~12 % menos CPU. Siguiente paso: reportarlo a Qt (bugreports.qt.io o
-        Gerrit) - pide el visto bueno del dueño, es escritura externa.
+        ~12 % menos CPU. Verificado el 2026-09-24: sigue igual en `dev`,
+        6.12, 6.11 y 6.10, y el renderer RHI tiene lo mismo
+        (`rhi/renderer/renderview.cpp:1546`); es la unica busqueda sin cachear
+        por comando en los dos renderers. Sin reporte previo: el JIRA de Qt
+        (ahora `qt-project.atlassian.net`) solo nombra `envLightCount` en
+        errores de shader, y Gerrit no tiene cambios sobre esa linea (los dos
+        que salen, 186545 y 204665, son de 2017). Siguiente paso: el dueño lo
+        reporta con su cuenta de Qt (texto preparado en la sesion).
       - Ojo con `xctrace record`: una grabacion de 8 s se quedo colgada 8
         minutos; lanzarlo siempre con `timeout`.
   - **Las LED Spray Fog echan el humo en horizontal en el 3D.** `smoke.dae` echa el humo
