@@ -28,6 +28,27 @@
 - [x] 2026-09-25 - **Politica Registrar retirada del token v2 de Cloudflare**
   (nunca funciono; la ruta es el MCP): 6 -> 5 politicas, token sigue `active`.
 
+#### 2026-09-25 - Plan B Task 1: find every installed QLC+
+
+- [x] 2026-09-25 - **`--validate` no encuentra QLC+ en el mini** (cerrado,
+  Task 1 del Plan B del refactor de la descripcion del show): `DEFAULT_BINARIES`
+  solo conocia `QLC+.app` y `QLC+ 4.app`, no las carpetas versionadas que
+  instala el instalador (`QLC+ 4.13.1.app`, `QLC+ 5.2.2.app`), asi que diez
+  tests se saltaban en una maquina con QLC+ instalado. Nuevo
+  `qlctool/qlcplus_bundles.py` escanea `/Applications/QLC+ *.app` por patron,
+  mas nuevo primero; `qlctool/mach_o_architectures.py` lee la cabecera Mach-O
+  (delgada o universal) del binario; `qlctool/runs_here.py` decide si esta
+  CPU lo ejecuta (Rosetta incluida); `qlctool/qlcplus_candidates.py` combina
+  ambos con `DEFAULT_BINARIES` y descarta lo que no puede correr - el
+  `QLC+ 4.13.1.app` x86_64 se descarta en este Mac arm64 sin Rosetta.
+  `validate.qlcplus_binary()` pasa por ahi; `QLCTOOL_QLCPLUS` sigue ganando.
+  Evidencia: `env -u QLCTOOL_QLCPLUS .venv/bin/python -m pytest tests/ -q`
+  -> `588 passed` (era `571 passed, 10 skipped`), sin variable de entorno;
+  `qlcplus_binary()` -> `/Applications/QLC+ 5.2.2.app/Contents/MacOS/qlcplus-qml`;
+  `env -u QLCTOOL_QLCPLUS .venv/bin/qlctool install --check` -> `QLC+ has
+  every one of the repo's 30 file(s)`, exit 0; los tres `qlctool check` y
+  `vibra_compare.py --validate` en verde, los tres `.qxw` byte-identicos.
+
 #### 2026-09-24 - Plan A: show description
 
 - [x] 2026-09-24 - **Plan A of the show description landed** (spec steps 1-5,

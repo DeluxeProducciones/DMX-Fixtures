@@ -135,8 +135,10 @@ Smoke test, same date and machine:
   `Vibra-split.qxw` are each their own patch source. Regenerating Vibra from
   `DeluxeEventos2.qxw` fails - that reference patch is two fixtures behind
   the rig (see docs/rig.md).
-- `--validate` needs a QLC+ binary; discovery order is in
-  `qlctool/validate.py` (`QLCTOOL_QLCPLUS` env var overrides). Without one
+- `--validate` needs a QLC+ binary. `qlctool` finds `/Applications/QLC+
+  <version>.app` by itself, newest first, widgets build before QML, skipping a
+  binary this CPU cannot run (the x86_64 `QLC+ 4.13.1.app` on an arm64 Mac
+  without Rosetta). `QLCTOOL_QLCPLUS` still overrides it. Without any QLC+
   installed, validation silently cannot run - do not claim it passed.
 - `*.autosave.qxw` files are QLC+'s transient editor state, gitignored;
   never read one as the show.

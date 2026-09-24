@@ -194,14 +194,6 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   on the MacBook checkout, on the show Mac (`vibra-oficina`), and in the
   launcher's worktree on the Mac mini (`~/p/DMX-Fixtures-qlctool`) when it
   advances to `main`.
-- [ ] **`--validate` no encuentra QLC+ en el mini** (2026-09-24, Task 1 del
-  Plan A): `validate.py` `DEFAULT_BINARIES` busca `/Applications/QLC+.app` o
-  `QLC+ 4.app`, y aqui estan `QLC+ 4.13.1.app` (Intel, `Bad CPU type`) y
-  `QLC+ 5.2.2.app`; `qlcplus_binary()` devuelve `None` y `--validate` falla
-  con `FileNotFoundError`. Hoy funciona con
-  `QLCTOOL_QLCPLUS="/Applications/QLC+ 5.2.2.app/Contents/MacOS/qlcplus-qml"`.
-  Siguiente: buscar `/Applications/QLC+*.app` por patron (preferir la de la
-  arquitectura de la maquina) con un test.
 
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
 
@@ -360,14 +352,16 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
   - **El QLC+ 5.2.2 del mini no tiene los gobos de la BEAM 230W 7R**
     (`Resources/Gobos/` sin carpeta `BEAM-230W-7R`), asi que sus gobos no
     salen ni en su 3D ni en sus miniaturas. Y `qlctool install --check` dice
-    "QLC+ has every one of the repo's 12 file(s)": es un verde falso.
-    `qlc_gobo_dir()` devuelve `None` porque `DEFAULT_BINARIES`
-    (`validate.py:59`) solo conoce `QLC+.app` y `QLC+ 4.app`, y el mini tiene
-    `QLC+ 4.13.1.app` y `QLC+ 5.2.2.app`; sin carpeta de gobos,
+    "QLC+ has every one of the repo's 30 file(s)": es un verde falso.
+    `qlc_gobo_dir()` (2026-09-25, Task 1 del Plan B) ya resuelve
+    `DEFAULT_BINARIES` contra el bundle instalado que descubre
+    (`qlcplus_candidates`), asi que devuelve la carpeta `Gobos` del bundle
+    que encuentra - en el mini, `QLC+ 5.2.2.app/Contents/Resources/Gobos` -
+    y a esa carpeta le sigue faltando `BEAM-230W-7R`; sin ella,
     `install_plan` se salta los gobos sin decirlo. Siguiente paso: que
-    `--check` falle cuando no encuentra el bundle, test de regresion, y que
-    los gobos vayan a cada bundle instalado (el 5.x es el del show; la
-    validacion prefiere el 4.x).
+    `--check` falle cuando no encuentra la carpeta del gobo, test de
+    regresion, y que los gobos vayan a cada bundle instalado (el 5.x es el
+    del show; la validacion prefiere el 4.x cuando puede correr).
 - [ ] **Lo que ningun visor pinta**: los paneles WX-60WPS en modo Auto (ch7
   efecto, RGB a 0) generan el color en el hardware. Sigue siendo "en sala".
 
