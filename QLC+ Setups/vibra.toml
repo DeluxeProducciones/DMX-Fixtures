@@ -8,6 +8,7 @@ language = "es"
 
 [rig]
 workspace = "Vibra.qxw"
+output = "Vibra.qxw"
 stage_plot = "vibra-stage-plot.json"
 
 [controllers]

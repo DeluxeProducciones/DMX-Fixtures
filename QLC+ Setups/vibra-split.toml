@@ -8,6 +8,7 @@ language = "es"
 
 [rig]
 workspace = "Vibra-split.qxw"
+output = "Vibra-split.qxw"
 stage_plot = "vibra-stage-plot-split.json"
 
 [controllers]
