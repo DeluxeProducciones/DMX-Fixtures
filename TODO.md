@@ -95,8 +95,9 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   Cloudflare ($10.46/año, auto-renew activo, privacidad, zona activa con NS
   abby/gabe, expira 2027-09-24). Creadas por el dueño el mismo dia: org
   GitHub `spectalive` (https://github.com/spectalive, `CristianDeluxe`
-  admin) y org npm `@spectalive`. Pendiente: Bluesky (mejor
-  `@spectalive.com` via TXT `_atproto` ahora que hay dominio). Pendiente de decidir: handles alternativos para
+  admin) y org npm `@spectalive`. Bluesky `@spectalive.com` creado 2026-09-25 (DID
+  `did:plc:kgphqczajrhzs7mpetwuf76v`, TXT `_atproto` en Cloudflare, acceso en el
+  access-map del brain). Pendiente de decidir: handles alternativos para
   X/Instagram/YouTube (p.ej. `spectalivehq`) y la marca UE en clases 9 y 42.
 - [ ] **Re-apuntar el clon del Mac del show** (`~oficina/DMX-Fixtures`) a
   `git@github.com:Vibra-Lab/vibra-lighting.git` cuando este en red; hoy

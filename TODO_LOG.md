@@ -17,6 +17,17 @@
 
 ### 2026-09
 
+#### 2026-09-25 - Spectalive
+
+- [x] 2026-09-25 - **Bluesky `@spectalive.com`**: cuenta creada en el navegador
+  de Orca con `me@cristiandeluxe.dev` (verificado; hCaptcha lo resolvio el
+  dueño), handle propio probado por el TXT `_atproto.spectalive.com` =
+  `did=did:plc:kgphqczajrhzs7mpetwuf76v` (zona BusiRocket, via el MCP de
+  Cloudflare); plc.directory devuelve `at://spectalive.com`. Credenciales en el
+  access-map del brain.
+- [x] 2026-09-25 - **Politica Registrar retirada del token v2 de Cloudflare**
+  (nunca funciono; la ruta es el MCP): 6 -> 5 politicas, token sigue `active`.
+
 #### 2026-09-24 - Plan A: show description
 
 - [x] 2026-09-24 - **Plan A of the show description landed** (spec steps 1-5,
