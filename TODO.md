@@ -114,6 +114,15 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 Reparto propuesto, cada parte a la org `spectalive` (salvo el show, que se
 queda en `Vibra-Lab/vibra-lighting`).
 
+- [ ] **Objetivo del dueño (2026-09-24): "la idea es que cualquiera pueda usar
+  la herramienta para generar sus shows".** El generador (`generate/`) pasa
+  al toolkit y se alimenta de una descripcion del rig (fixtures, grupos,
+  paginas, controlador, estilo), guiado por capacidades; Vibra queda como un
+  ejemplo (su descripcion + lo unico suyo) en `vibra-lighting`. Paso 1,
+  aprobado: desenredar dentro de este repo (checks de escritorio/pad como
+  plugins por entry points, rutas de la libreria sin suponer este repo), con
+  los tres workspaces identicos. Luego `git filter-repo` a `spectalive/qlctool`
+  y el show depende de un tag.
 - [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
