@@ -168,11 +168,16 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
         (ahora `qt-project.atlassian.net`) solo nombra `envLightCount` en
         errores de shader, y Gerrit no tiene cambios sobre esa linea (los dos
         que salen, 186545 y 204665, son de 2017). El cambio para Gerrit esta
-        listo en `~/p/qt3d`, rama `cache-envlightcount-id` sobre `dev`
-        (`0b8bb46`, los dos renderers, `Pick-to: 6.11 6.10`). Siguiente paso
-        [!]: el dueño crea su cuenta de Qt con `me@cristiandeluxe.dev`, firma el
-        CLA, abre el JIRA (texto preparado en la sesion) y entonces
-        `git push` a `refs/for/dev` en codereview.qt-project.org.
+        enviado el 2026-09-24 como
+        https://codereview.qt-project.org/c/qt/qt3d/+/773761 (rama
+        `cache-envlightcount-id` de `~/p/qt3d`, commit `0b8bb46` sobre `dev`,
+        los dos renderers, `Pick-to: 6.11 6.10`), autor Cristian Deluxe
+        `me@cristiandeluxe.dev`, CLA individual firmado. Cuenta de Qt y
+        Atlassian en 1Password (boveda Cristian); accesos en el brain
+        (`access-map`, seccion Qt Project). Falta [!]: el ticket de JIRA; en
+        Orca el paso "Verificar" (SSO) de Atlassian no hace nada, asi que
+        hay que entrar una vez desde un Chrome real. Luego enlazarlo en
+        Gerrit.
       - [~] 2026-09-24, enviado a QLC+ desde el fork `CristianDeluxe/qlcplus`
         (autor `me@cristiandeluxe.dev`): #2159 multicabeza, #2160 gobos, #2161
         rendimiento (a peticion, RGBA16F, sin MSAA, FXAA sin copia), #2162
