@@ -99,9 +99,10 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   Zeiss/Sola, clase 9). Hecho 2026-09-24: `spectalive.com`
   registrado en Cloudflare Registrar, cuenta BusiRocket, via el MCP de
   Cloudflare ($10.46/año, auto-renew activo, privacidad, zona activa con NS
-  abby/gabe, expira 2027-09-24). Autorizado y pendiente (web, a mano del
-  dueño): org GitHub `spectalive`, org npm `spectalive`, Bluesky (mejor
-  `@spectalive.com` via DNS ahora que hay dominio). Pendiente de decidir: handles alternativos para
+  abby/gabe, expira 2027-09-24). Creadas por el dueño el mismo dia: org
+  GitHub `spectalive` (https://github.com/spectalive, `CristianDeluxe`
+  admin) y org npm `@spectalive`. Pendiente: Bluesky (mejor
+  `@spectalive.com` via TXT `_atproto` ahora que hay dominio). Pendiente de decidir: handles alternativos para
   X/Instagram/YouTube (p.ej. `spectalivehq`) y la marca UE en clases 9 y 42.
 - [ ] **Org propia para el software**, separada de la empresa (decidido por el
   dueño 2026-09-24), con tambien los repos de hardware de la tablet (`taq102`
