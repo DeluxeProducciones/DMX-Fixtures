@@ -174,10 +174,10 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
         los dos renderers, `Pick-to: 6.11 6.10`), autor Cristian Deluxe
         `me@cristiandeluxe.dev`, CLA individual firmado. Cuenta de Qt y
         Atlassian en 1Password (boveda Cristian); accesos en el brain
-        (`access-map`, seccion Qt Project). Falta [!]: el ticket de JIRA; en
-        Orca el paso "Verificar" (SSO) de Atlassian no hace nada, asi que
-        hay que entrar una vez desde un Chrome real. Luego enlazarlo en
-        Gerrit.
+        (`access-map`, seccion Qt Project). Reportado como
+        https://qt-project.atlassian.net/browse/QTBUG-150764 (Qt3D, 6.11.2),
+        enlazado en el change con `Fixes: QTBUG-150764` (patchset 2). Falta:
+        lo que diga la revision.
       - [~] 2026-09-24, enviado a QLC+ desde el fork `CristianDeluxe/qlcplus`
         (autor `me@cristiandeluxe.dev`): #2159 multicabeza, #2160 gobos, #2161
         rendimiento (a peticion, RGBA16F, sin MSAA, FXAA sin copia), #2162
