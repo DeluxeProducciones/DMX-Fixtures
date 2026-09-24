@@ -110,6 +110,11 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   inglesas simples de iluminacion si salen. Con 4/4: Strobeboard y Strobepad
   (11/11, `.com` incluido), Hazedeck y Strobedeck (todo menos `.com`),
   Strobedesk, Hazedesk, Strobekit, Hazepad, Wavepad, Glowdash, Flaredeck.
+  Tanda vibe/vibra (a peticion del dueño, 230 candidatos): "vibe" como raiz
+  esta saturado (Vibeshow, Vibedeck, Vibepad, Vibekit... max 2/4, `.io`
+  ocupado); "vibra" no. Con 4/4: Vibestrobe y Vibrakit (todo libre, `.com`
+  incluido), Vibradesk (`.com` libre; `.app`/`.dev` dieron error),
+  Vibraboard y Vibradeck (todo menos `.com`), Vibrapad, Vibrashow, Showvibe.
   Siguiente: elegir 3 con el dueño y comprobar marca en EUIPO/USPTO a mano
   antes de crear nada.
 - [ ] **Org propia para el software**, separada de la empresa (decidido por el
