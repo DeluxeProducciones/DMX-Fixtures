@@ -17,6 +17,24 @@
 
 ### 2026-09
 
+#### 2026-09-24 - El mapa de la tablet volvia a ser el del show viejo
+
+- [x] 2026-09-24 - **`Vibra.desk.json` reconstruido desde el `Vibra.qxw`
+  actual, con un test que lo vigila.**
+  - Resultado: tras `3491a11` el mapa seguia con el sha256 del workspace de
+    `ed1dac1` (`3eb53764...`); 36 de 144 widget ids y 141 function ids ya no
+    existian y `rig-blanco` era `multicolor`. `tests/test_shipped_deskmap.py`
+    reconstruye cada `*.desk.json` desde el workspace que nombra y exige
+    igualdad; fallaba antes de regenerar y pasa despues.
+  - Evidencia: `6d9da98`; suite 477 passed, 10 skipped; `qlctool check`
+    exit 0 en `Vibra.qxw` y `Vibra-split.qxw`.
+- [-] 2026-09-24 - **Renombrar la org `DeluxeProducciones`** (item de
+  2026-08-24). Sustituido por el plan de la seccion "Reorganizacion" de
+  `TODO.md`: lo de la empresa va a `Vibra-Lab`, el software a una org propia,
+  y se pide `vibra` a GitHub. Se conservan alli las trampas que traia: re-apuntar
+  remotes a mano (las redirecciones crean clones duplicados) y actualizar las
+  paginas del brain.
+
 #### 2026-09-23 - QLC+ y BlenderDMX conectados en el mini
 
 - [x] 2026-09-23 - **Primera prueba en vivo:** QLC+ emitiendo Art-Net y

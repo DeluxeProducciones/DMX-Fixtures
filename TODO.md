@@ -40,6 +40,133 @@ al final, que si es trabajo de teclado:
   ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
   y cada una cambia como se opera. Se deciden, no se implementan de oficio.
 
+## Reorganizacion: show vivo, licencias, orgs, nombre y cliente tactil (2026-09-24)
+
+Una sesion que empezo por "en AUTO salen colores que no pegan" y acabo
+replanteando como se reparte todo esto. Lo decidido por el dueño esta marcado
+como tal; lo demas es propuesta pendiente de su si. El trabajo de brand-finder
+vive en `~/p/brand-finder/TODO.md`.
+
+### A. El show vivo (primero: el mini y la tablet siguen con el show viejo)
+
+- [ ] **Poner el show de `main` en el mini y en la tablet a la vez.** La app
+  `~/Applications/QLC+ Vibra.app` carga `~/p/DMX-Fixtures-qlctool/QLC+
+  Setups/Vibra.qxw`, worktree en la rama `qlctool` parado en `ed1dac1`, sin
+  `3491a11` (colores armonicos, blanco fuera de las ruedas): `qlctool check`
+  da exit=1 en ese fichero con `blanco en la rueda`, `mas de dos colores en un
+  estado` y `complementarios en un mismo lavado`; el de `main` da exit=0. Pero
+  la tablet lleva el mapa dentro del firmware v89
+  (`/usr/share/dmxdesk/vibra.desk.json`, copiado de `taq102/show/vibra.desk.json`
+  al construir) y con el show nuevo 36 de 144 widget ids y 141 function ids
+  cambian (`rig-blanco` pasa a `multicolor`). Siguiente: copiar
+  `QLC+ Setups/Vibra.desk.json` a `~/p/taq102/show/`, reconstruir y flashear
+  v90, y en el mismo momento avanzar `qlctool` a `main`
+  (`git -C ~/p/DMX-Fixtures-qlctool merge --ff-only main`; vuelta atras:
+  `reset --hard ed1dac1`). Verificar tocando AUTO en la tablet.
+- [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
+  respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
+  sincronizar como en `docs/show-operation.md` y comprobar el hash.
+- [ ] **El MacBook Pro (`ssh macbook`) va 13 commits por detras en
+  `~/p/DMX-Fixtures`**, sin trabajo local propio (comprobado 2026-09-24).
+  Siguiente: `git pull` alli.
+- [ ] **Stash antiguo en `main` del mini:** `stash@{0}: On main: Tower
+  Auto-Stash: 2025-08-28 20:48:51`. Siguiente: mirar su diff y guardarlo o
+  tirarlo.
+
+### B. Licencias y lo que se publica
+
+El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
+
+- [ ] **El repo es publico y no tiene licencia**, asi que nadie puede usarlo
+  legalmente. Propuesta: Apache-2.0 para el codigo (la de QLC+), CC BY 4.0 para
+  show, docs, colores y gobos. Siguiente: que el dueño elija y añadir `LICENSE`.
+- [ ] **`Manual/` (42 MB) son PDFs de fabricantes con copyright**; abrir lo
+  nuestro no nos da derecho a redistribuir lo suyo. Siguiente: sustituir cada
+  PDF por su enlace (fabricante o Wayback) en un indice, y decidir si se purga
+  del historial.
+- [ ] **`Colores/Colors.psd` pesa 62 MB en git.** Siguiente: pasarlo a Git LFS
+  o a un release, al separar repos.
+
+### C. Orgs y nombre
+
+- [ ] **Nombre del software de control** (cliente tactil + toolkit + host).
+  Debe sonar bien en ingles y a software profesional (grandMA, Hog, Eos, Onyx,
+  Titan, Madrix, Pixera, disguise, Notch), inspirado en vibra/vibe sin caer en
+  "vibe". Descartados: Fulgo; Oscila ("no suena cool en ingles", dueño);
+  Riglux y parecidos (raices saturadas: remote, lumi/lux/light, stage, DMX,
+  touch, cue, rig, beam, gobo); Vibron y Vibrae (choca con la app DMX Vibrio y
+  con vibrae.vip); Palco (SGM); Chispa (Match Group). Ojo: la ausencia de DNS
+  no prueba un dominio libre (`tremolo.com` y `tremo.com` estan registrados sin
+  NS); solo RDAP del registro vale. Siguiente: correr la busqueda en
+  brand-finder mejorado (dominios, GitHub, redes, tiendas) y comprobar marca
+  en EUIPO/USPTO antes de crear nada.
+- [ ] **Org propia para el software**, separada de la empresa (decidido por el
+  dueño 2026-09-24), con tambien los repos de hardware de la tablet (`taq102`
+  sale de `CristianDeluxe`). Siguiente: crearla cuando haya nombre.
+- [ ] **Lo de la empresa va a `Vibra-Lab`** (decidido 2026-09-24; ya existe y
+  tiene `paperclip`). Sustituye al antiguo "renombrar `DeluxeProducciones`".
+  Siguiente: transferir `DMX-Fixtures` y renombrarlo a algo como `vibra-show`,
+  luego re-apuntar a mano los remotes (mini, MacBook, `~oficina` en el Mac del
+  show, el worktree `DMX-Fixtures-qlctool`), el marcador de la app QLC+ Vibra,
+  y las paginas del brain `business/access-map.md` y `projects/vibra-dmx.md`:
+  las redirecciones de GitHub crean clones duplicados en silencio (la trampa
+  de POIComb->POITools).
+- [ ] **Pedir el nombre `vibra` a GitHub** (decidido 2026-09-24): hoy es una
+  cuenta personal de 2015 sin repos. Siguiente: redactar la solicitud para que
+  la envie el dueño por support.github.com.
+- [ ] **Traer a `Vibra-Lab` los demas repos de musica y eventos**
+  (`BusiRocket/tieneslavibra` y los que salgan). Siguiente: inventario con el
+  dueño.
+
+### D. Partir este repo (cada parte con su propio diseño)
+
+Reparto propuesto; los nombres de repo esperan al nombre del producto.
+
+- [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
+  `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
+  mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
+  vivo. Se extrae con `git filter-repo` conservando historia.
+- [ ] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/`, y mandarlas tambien a
+  la libreria de QLC+ y a Open Fixture Library.
+- [ ] **Pad**: `tools/smc-pad`, puente de LEDs para pads MIDI.
+- [ ] **Host**: `tools/qlc-launcher` generalizado (elegir show, anunciarse por
+  mDNS/QR para que los clientes lo encuentren).
+- [ ] **El show** se queda aqui: workspaces, la receta que genera este show
+  (los generadores propios de Vibra) sobre el toolkit como dependencia, rig y
+  operacion.
+
+### E. Cliente tactil multiplataforma y multi-backend
+
+Plan del dueño: la UI de la tablet es la buena, asi que pasa a la consola
+virtual de QLC+, y la tablet muestra lo que QLC+ muestre, con todos los
+widgets, para portarla despues a otros dispositivos. Decidido: QLC+ parcheado
+desde el principio; nucleo en C portable reutilizando `dmxdesk`.
+
+- [ ] **Sacar `dmxdesk` de `taq102/src` a su propio repo**, con historia:
+  `core/` (sesion, `/vc.json`, layout, pintado, fuentes, busqueda del master) y
+  `platform/linux-fb/` (DRM, tactil, power, Wi-Fi, brillo). `taq102` lo
+  empaqueta fijado a una version.
+- [ ] **Multi-backend**: modelo de superficie propio y un adaptador por
+  programa; QLC+ primero, luego libres y de pago (Onyx, MagicQ, Lightkey,
+  Daslight...) por API, OSC o MIDI.
+- [ ] **Fork de QLC+ con `/vc.json` ampliado**: atajos de teclado,
+  `stopAllFadeOutTime`, `functionsList` y multiplicadores del Speed Dial, mas
+  de un color por widget; y PR a upstream. Hallazgos: se construye en
+  `WebAccessQml::getVCJson` (`webaccess/src/webaccess-qml.cpp:1356`); `type`
+  llega traducido ("Botón"), hay que usar `typeId` (1 Button ... 11 Clock);
+  el websocket maneja los 11 tipos salvo Label.
+- [ ] **Invertir la UI**: la receta del show genera la consola virtual con la
+  forma de la tablet, y el cliente pinta `/vc.json` de forma generica.
+  Entonces desaparecen `qlctool deskmap`, `Vibra.desk.json` y el mapa dentro
+  del firmware, y un show nuevo ya no pide reflashear.
+- [ ] **Otras plataformas despues**: SDL (Raspberry, portatil Linux), iOS,
+  Android, ESP32.
+- [ ] **Ideas de UX de otras apps** (investigadas 2026-09-24): zonas fijas de
+  movimiento / color / flash con velocidad y tap siempre a mano (Light Rider);
+  estado real en cada control, no el ultimo toque (Luminair, iHog); emparejar
+  por QR o mDNS (G3Link). La web de QLC+ no pinta el Speed Dial: soportar
+  todos los widgets ya diferencia.
+
 ## Development environment
 
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
@@ -764,15 +891,6 @@ que queda.
   1440x900, and whether `PgDn`/`PgUp` change page in operate mode without
   stealing focus. Files: `QLC+ Setups/Vibra-split.qxw` (current patch),
   `Vibra.qxw`, `Vibra-beats.qxw`.
-- [ ] **Rename the GitHub org `DeluxeProducciones` — the company is now "Vibra
-  Eventos", not Deluxe Producciones** (owner, 2026-08-24). When renaming: the
-  org and likely the `DMX-Fixtures` repo, then update every reference — brain
-  `business/access-map.md` and `projects/vibra-dmx.md` (source URLs + prose),
-  the local clone remotes (`~/p/DMX-Fixtures` and `~oficina/DMX-Fixtures` on the
-  show Mac), and the `qlctool` branch's origin. GitHub keeps old-path redirects,
-  but they silently spawn duplicate clones (same trap as the POIComb->POITools
-  rename), so re-point remotes explicitly. The `.qxw` `Author` field ("Oficina")
-  needs no change.
 - [~] **Verify the remaining undocumented fixtures on site.** Online search
   (2026-08-24) settled the Chauvet MiN Wash, and on 2026-09-01 its manual was
   recovered into `Manual/` and the definition corrected against it; the same
