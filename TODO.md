@@ -285,19 +285,6 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   Mac (`vibra-oficina`, off the network on 2026-09-25); the Mac mini's
   launcher worktree (`~/p/DMX-Fixtures-qlctool`, branch `qlctool`) does not
   use the toolkit and is left to the owner.
-- [ ] **GitHub release for v0.1.0 (owner).** The tag `v0.1.0` of
-  spectalive/qlctool exists and installs; no GitHub release was created
-  (ruling Q7, Plan C). Smallest next step: the owner decides whether to
-  publish one (`gh release create v0.1.0` in spectalive/qlctool).
-- [ ] **Tag `v0.1.1` and bump `requirements.txt` (owner, 2026-09-25).** The
-  final review of Plan C found two things on `v0.1.0` fixed afterwards on
-  the toolkit's `main`: the beam colour-wheel guard crashed `newshow` on a
-  gobo spot with no colour wheel (`canonical_show.py`), and the toolkit's
-  NOTICE, `tests/data/rig/README.txt` and README did not credit the two QLC+
-  Stairville definitions in its frozen rig. `v0.1.0` still builds this show
-  byte for byte, so the pin here did not move. Smallest next step: the owner
-  tags `v0.1.1` on that `main`, this repo bumps the tag in `requirements.txt`,
-  reinstalls and runs `tests/`.
 - [ ] **`QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` still names the toolkit's old
   in-repo path in its generated header comment (2026-09-25).** It is
   byte-tested against `qlctool input-profile` of the pinned release, so it is

@@ -19,6 +19,14 @@
 
 #### 2026-09-25 - Plan C: a second rig, and qlctool in its own repository
 
+- [x] 2026-09-25 - **`v0.1.1` tagged, both GitHub releases published, the pin
+  bumped.** Owner's go ("avanza con todo sigue haciendo todos releases").
+  spectalive/qlctool `v0.1.1` = `2b72474` (version bump on top of the final
+  review's fixes `08ea32d`, `52f62b3`, `a7ccff7`); releases
+  https://github.com/spectalive/qlctool/releases/tag/v0.1.0 and `/v0.1.1`.
+  `requirements.txt` now pins `v0.1.1`; installed version 0.1.1. Evidence from
+  the repository root: 30 passed, `vibra_compare --validate` identical x3 and
+  QLC+ loaded, `qlctool check` 522 clean x3, `install --check` exit 0.
 - [x] 2026-09-25 - **Plan C closed: final review and its fixes.** Seven tasks
   (`9957e1a..e575b72` here; `ba83536..fac1072` in the toolkit): the suite
   reads its rig through `tests/rig_root.py` (Task 1); three checker rules
