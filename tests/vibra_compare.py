@@ -17,7 +17,7 @@ import os
 import tempfile
 from pathlib import Path
 
-from qlctool.checks.run import check_workspace
+from qlctool.checks.check_workspace import check_workspace
 from qlctool.library import FixtureLibrary
 from qlctool.validate import validate_workspace
 from qlctool.workspace import Workspace

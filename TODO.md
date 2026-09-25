@@ -140,26 +140,6 @@ queda en `Vibra-Lab/vibra-lighting`).
   ver `TODO_LOG.md`): un segundo rig de ejemplo, `git filter-repo` a
   https://github.com/spectalive/qlctool, tag `v0.1.0`, y este repo depende del
   tag (`requirements.txt`).
-  - [~] **Spec step 3, a show described in any shipped language: partial,
-    waiting on the owner (ruling P19).** Since 2026-09-25 (Plan B Task 12a) an
-    English Vibra builds, passes `check_workspace` with no finding and loads in
-    QLC+ (`tests/test_english_vibra.py`); the generator names come from the
-    catalogue (see `TODO_LOG.md`). Open owner decision: accept ruling B10,
-    under which `check` messages and `Finding.rule` names stay Spanish on an
-    English show. Smallest next step: the owner accepts B10 or asks for the
-    item below first; then close this. Moves to spectalive/qlctool.
-  - [ ] **Check messages and `Finding.rule` names through the catalogue
-    (ruling B10, spec "Multilingual").** An English show's findings still read
-    in Spanish. Smallest next step: give `Finding` a `rule_id` and move the
-    messages into a `checks` catalogue section. Moves to spectalive/qlctool.
-  - [ ] **The English root console frame is captioned "Página 1" (final
-    review of Plan B, 2026-09-25).** `strip_to_skeleton` keeps the root
-    frame's caption from the input workspace, so an English Vibra's console
-    still says "Página 1" (`grep 'Caption="Página 1"'` on any generated
-    English workspace). The pseudo-locale scan does not see it because the
-    word is in no catalogue. Smallest next step: caption the root frame from
-    the catalogue in `strip_to_skeleton` (a new `console` identifier), then
-    re-baseline the three Vibra hashes with the owner's consent. Moves to spectalive/qlctool.
   - [ ] **An override that breaks ruling B7 crashes the build instead of being
     refused (final review of Plan B, 2026-09-25).** A `[names]` override such
     as `hit_button_flash = "BANG · Space"`, whose head no longer equals its

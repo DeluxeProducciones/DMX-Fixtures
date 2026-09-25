@@ -1,3 +1,3 @@
 # The toolkit this show is generated with, pinned to a release (ruling C7).
 # Reinstall after changing the tag: .venv/bin/pip install -r requirements.txt
-qlctool[dev] @ git+https://github.com/spectalive/qlctool.git@v0.1.3
+qlctool[dev] @ git+https://github.com/spectalive/qlctool.git@v0.1.4

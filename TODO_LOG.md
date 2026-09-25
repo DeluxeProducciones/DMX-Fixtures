@@ -154,6 +154,27 @@
   section except the `tools/smc-pad`/`lightkey`/`daslight` scripts item (gate
   back to green, ruff ratchet, `zip()` strict, mypy ratchet, structural
   findings and split debt, the three data modules).
+- [x] 2026-09-26 - **An English show reads in English end to end: check
+  rules and messages, the root console frame, and deskmap's refusal (qlctool
+  v0.1.4).** Closes spec step 3 (ruling P19), "Check messages and
+  `Finding.rule` names through the catalogue" (ruling B10, reversed: the
+  owner delegated the call on 2026-09-25 and the check side now follows the
+  spec) and "The English root console frame is captioned 'Pagina 1'". In
+  spectalive/qlctool: `e7cebb4` captions the root frame from the catalogue
+  ("Page 1" on the club); `026fca4`..`40fe10c` give every rule an English
+  `rule_id` and every finding a `message_id` rendered from the `[checks]`
+  and `[findings]` catalogues, with AST drift tests; round C (`e8a8ae3`..
+  `eda5f9b`) renders deskmap's refusal in the show's language, speeds the
+  check (one `check` on Vibra 1.44 s to 1.25 s, findings unchanged), tells a
+  PAR from a panel by its `<Dimensions>`, parks a wheel no look asks for and
+  renames `checks/run.py`, `deskmap.py`, `generate/color_banks.py` and
+  `generate/matrix_effects.py` after their unit. Each round reviewed and
+  approved. `v0.1.4` = `d45e2c5`; 762 passed in the toolkit, CI 36196691869
+  green. Here: `requirements.txt` pins `v0.1.4`, and two imports follow the
+  renames (`tests/test_shipped_deskmap.py`, `tests/vibra_compare.py`); on the
+  Mac mini 30 passed, `vibra_compare --validate` identical x3 and QLC+ loaded,
+  `check` 522 clean x3, `install --check` 0. Vibra's Spanish bytes and check
+  output are unchanged.
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 
