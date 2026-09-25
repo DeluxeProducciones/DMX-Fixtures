@@ -125,21 +125,18 @@ queda en `Vibra-Lab/vibra-lighting`).
   2026-09-25, Plan B Task 3, ver `TODO_LOG.md`), con
   los tres workspaces identicos. Luego `git filter-repo` a `spectalive/qlctool`
   y el show depende de un tag.
-  - [ ] **Generator names through the catalogue** (next after Plan A, before
-    step 7's second rig). The generators still write Spanish literals
-    (`live_console`, `play_page`, `control_glyph.GLYPHS`, `smc_pad_bindings`,
-    `smc_pad_colors`, `color_wheel_match.WHEEL_NAMES`, `canonical_show` master
-    names), so `check_generator_vocabulary` refuses `language != "es"` and
-    overrides that change a name. Smallest next step: route `canonical_show`'s
-    `master` keys through `Names.display`, then the console tables that key by
-    them.
-  - [ ] **Plan B: carry the controller coupling out of core (R3, final review
-    of Plan A, 2026-09-24).** `checks/rule_held_column.py` still calls
-    `valid_desk_bursts`, and `checks/own_rule_providers.py` names the
-    controller providers inside core. Both must move behind the `tablet_desk` /
-    `smc-pad` providers before the `spectalive/qlctool` split. Smallest next
-    step: have the `tablet_desk` provider supply the held-column rule's burst
-    list.
+  - [~] **Spec step 3, a show described in any shipped language: partial,
+    waiting on the owner (ruling P19).** Since 2026-09-25 (Plan B Task 12a) an
+    English Vibra builds, passes `check_workspace` with no finding and loads in
+    QLC+ (`tests/test_english_vibra.py`); the generator names come from the
+    catalogue (see `TODO_LOG.md`). Open owner decision: accept ruling B10,
+    under which `check` messages and `Finding.rule` names stay Spanish on an
+    English show. Smallest next step: the owner accepts B10 or asks for the
+    item below first; then close this.
+  - [ ] **Check messages and `Finding.rule` names through the catalogue
+    (ruling B10, spec "Multilingual").** An English show's findings still read
+    in Spanish. Smallest next step: give `Finding` a `rule_id` and move the
+    messages into a `checks` catalogue section.
 - [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en

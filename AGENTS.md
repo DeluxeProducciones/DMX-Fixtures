@@ -160,8 +160,13 @@ Smoke test, same date and machine:
   source of truth. Re-measuring the pad means editing `smc_pad_device.py` and
   regenerating - never hand-editing the `.qxi`, which is how it came to declare
   the pad's factory notes for a day while the show used different ones.
-- Widget captions and check output are **Spanish on purpose** (the operator
-  reads them); code, comments, commits and docs are English.
+- Every generated name comes from the catalogue in `[show] language` (`en` or
+  `es`, Spanish by default); a generator module may not spell a catalogue word
+  itself. `tests/test_generator_literals.py` holds every `generate/` module to
+  that, and `tests/test_english_vibra.py` builds Vibra in English and requires
+  every check to pass. Vibra itself is Spanish on purpose (the operator reads
+  it), and so is `check` output for now (ruling B10); code, comments, commits
+  and docs are English.
 
 ## Conventions
 

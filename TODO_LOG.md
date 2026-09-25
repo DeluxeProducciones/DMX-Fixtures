@@ -17,6 +17,26 @@
 
 ### 2026-09
 
+#### 2026-09-25 - Plan B Task 12a: any shipped language builds a show
+
+- [x] 2026-09-25 - **Generator names through the catalogue.** Tasks 4-11 moved
+  every name the generator, the live console, the JUGAR page and the desk map
+  write into `qlctool/locales/{en,es}.toml`; Task 12a removed
+  `check_generator_vocabulary` (the R1 gate) and renamed
+  `generator_language.py` to `default_language.py` (`DEFAULT_LANGUAGE = "es"`,
+  ruling B11). Evidence: `tests/test_english_vibra.py` builds Vibra with
+  `language = "en"`, `check_workspace` returns no finding, the desk map
+  builds, QLC+ 5.2.2 loads it, and JUGAR keeps the Spanish button count per
+  frame (11, 10, 25, 15, 30, 30, 11);
+  `test_every_generator_module_is_converted_or_excluded` holds every
+  `generate/` module clean or excluded under ruling B6; the three Vibra
+  workspaces and `Vibra.desk.json` stay byte-identical.
+- [x] 2026-09-25 - **Controller coupling carried out of core (R3).** Done by
+  Plan B Task 2 (`ca42443`): core checks reach the desk bursts only through
+  the `tablet_desk` provider, and `checks/` no longer names a provider.
+  Evidence: `tests/test_controllers.py`, and no `own_rule_providers.py` left in
+  `checks/`.
+
 #### 2026-09-25 - Spectalive
 
 - [x] 2026-09-25 - **Bluesky `@spectalive.com`**: cuenta creada en el navegador
