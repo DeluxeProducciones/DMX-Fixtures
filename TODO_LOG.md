@@ -19,6 +19,31 @@
 
 #### 2026-09-25 - Plan C: a second rig, and qlctool in its own repository
 
+- [x] 2026-09-25 - **`v0.1.3` released and pinned: a `check` rule for a
+  caption that promises what the rig lacks, and what it found.** Same
+  afternoon, owner's "continua con lo que puedas". In spectalive/qlctool
+  (`785f2ba..4b50144`, 704 tests): `rotulo que promete lo que no hay`
+  (`0dfa1e4`) matches a console caption's text against the shipped
+  catalogues and checks the capabilities it promises (gobos, prism, pixel
+  groups, built-in effects, haze, beam wheel) against the patch; on its first
+  run it caught the generator writing "y humo" in page 3's title on any rig
+  with panels, smoke machine or not (`723bc1a` fixes it, dated test = Vibra
+  without fixtures 17 and 29-32 builds and checks clean). Also: a known
+  model in a missing mode is a `sin definicion` finding and `newshow` says
+  repatch (`8ab9e30`, `5ae19c5`); the four-colour deal re-deals any group
+  that would get two opposite hues (`502176a`, `b4eb0c6`, `97a3022`); a head
+  no colour look reaches gets its self-running channel parked by the
+  intensity levels (`36eff3b`); a QLC+ Hazer is a smoke machine everywhere
+  (`97a3022`); `checks/run.py`, `color_banks.py`, `matrix_effects.py` split
+  into units, baseline 209 -> 206 (`415ff26..b431927`); the suite builds each
+  show shape once, and the measurement says the CI time is the checker
+  (`check_workspace` ~1.6 s x 98), not the builds (`fe126b1`, `fc64502`).
+  CI cut to one leg on a push to main after the owner's warning about
+  Actions credits (`15ac3a1`; the repo is public, net cost 0). Release
+  https://github.com/spectalive/qlctool/releases/tag/v0.1.3. Here:
+  `requirements.txt` pins `v0.1.3`; on the Mac mini 30 passed,
+  `vibra_compare --validate` identical x3 and QLC+ loaded, `check` 522 clean
+  x3, `install --check` 0.
 - [x] 2026-09-25 - **`v0.1.2` released and pinned: `newshow` refuses a rig
   below the minimum, `check` fails without definitions.** Closes the two Plan
   C final-review items. In spectalive/qlctool `8302997` + `e7ce236`: the

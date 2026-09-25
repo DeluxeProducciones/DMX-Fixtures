@@ -227,9 +227,9 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 ## Development environment
 
 - [ ] **Reinstall on the show Mac (AGENTS.md, 2026-09-25).** The toolkit left
-  this repository for https://github.com/spectalive/qlctool (`v0.1.2`);
+  this repository for https://github.com/spectalive/qlctool (`v0.1.3`);
   every checkout installs it from `requirements.txt` into a repo-root
-  `.venv`. Done on the Mac mini and on the MacBook (both on `v0.1.2`, 30
+  `.venv`. Done on the Mac mini and on the MacBook (both on `v0.1.3`, 30
   passed, `install --check` 0). Next: the steps in AGENTS.md "Reinstalling
   after the extraction" on the show Mac (`vibra-oficina`, off the network on
   2026-09-25: no Bonjour, `192.168.1.56` silent). The Mac mini's launcher
