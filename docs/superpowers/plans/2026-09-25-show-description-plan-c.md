@@ -73,9 +73,8 @@ Read these before every task. A task that breaks one is not done.
    dated regression test in `tests/test_check.py`, gate over every shipped
    workspace, then the generator fix.
 7. **Commits.** English, conventional, stage only the task's paths, no AI
-   attribution, every message ending with the line
-   `Claude-Session: https://claude.ai/code/session_012XuQbe2HPjWjZHsRx4HjVw`,
-   using the existing git identity (`Cristian Deluxe <me@cristiandeluxe.dev>`).
+   attribution and no `Claude-Session:` or co-author trailer (owner,
+   2026-09-25), using the existing git identity (`Cristian Deluxe <me@cristiandeluxe.dev>`).
    This repository: commit on `main` and push after Tasks 4 and 7. The new
    repository: its own `main`, pushed in Task 6.
 8. **Destructive steps name their target and what protects it.** Task 5 works
@@ -309,8 +308,6 @@ test(qlctool): the suite reads its rig through tests/rig_root.py
 Fifty-four test files computed the repository root as parents[3]; they
 now import RIG_ROOT, which the extracted toolkit points at a frozen copy
 of the rig, and conftest names the rig's definitions for the library.
-
-Claude-Session: https://claude.ai/code/session_012XuQbe2HPjWjZHsRx4HjVw
 ```
 
 ---
@@ -566,8 +563,6 @@ fix(qlctool): newshow builds on a rig with no gobo, prism or haze machine
 The gobo, beam-wheel and prism generators run only where a fixture has
 the role, the haze timer only where there is a fog-only machine, and
 AUTO, the levels and the moments leave out what was not built.
-
-Claude-Session: https://claude.ai/code/session_012XuQbe2HPjWjZHsRx4HjVw
 ```
 
 ---
@@ -692,8 +687,6 @@ fix(qlctool): a chaser of level collections is a structural cycle
 The small club's energy cycle writes one family, and family_frames took
 it for that family's owner. A chaser whose steps are all level
 Collections is now looked through like a multi-family cycle.
-
-Claude-Session: https://claude.ai/code/session_012XuQbe2HPjWjZHsRx4HjVw
 ```
 
 ---
@@ -833,8 +826,6 @@ feat(qlctool): the small-club example, a second rig described in English
 Six pars, two beams and two washes with no haze machine and no
 controllers, described in English: generated, checked with no finding,
 loaded in QLC+, and held byte-identical by a test.
-
-Claude-Session: https://claude.ai/code/session_012XuQbe2HPjWjZHsRx4HjVw
 ```
 
 `git pull --rebase origin main && git push origin main` (Task 5 clones from
@@ -998,8 +989,6 @@ chore: stand alone as spectalive/qlctool
 A frozen copy of the Vibra rig for the tests, the suite pointed at it,
 the README, NOTICE, package metadata and CI workflow rewritten for a
 repository of its own, and the SMC-PAD LED test left with the show.
-
-Claude-Session: https://claude.ai/code/session_012XuQbe2HPjWjZHsRx4HjVw
 MSG
 git log --format='%an <%ae>' -1
 ```
@@ -1242,8 +1231,6 @@ The toolkit and its docs moved, with their history, to
 github.com/spectalive/qlctool. This repository keeps the rig, the show
 and the tests that prove the pinned release still generates it byte for
 byte.
-
-Claude-Session: https://claude.ai/code/session_012XuQbe2HPjWjZHsRx4HjVw
 ```
 
 `git pull --rebase origin main && git push origin main`.
