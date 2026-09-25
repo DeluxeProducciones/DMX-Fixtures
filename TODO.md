@@ -66,6 +66,15 @@ vive en `~/p/brand-finder/TODO.md`.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.
+- [ ] **Historial reescrito el 2026-09-25: los demas clones no pueden hacer
+  `git pull`.** Se quito la linea de sesion de 179 mensajes y las menciones a
+  herramientas de IA de otros 11 (regla del dueño); los arboles no cambian,
+  todos los SHA desde el 2026-08-25 si. Mini (`~/p/DMX-Fixtures` y el
+  worktree `qlctool`) ya reseteado. Siguiente, en el Mac del show y en el
+  MacBook: `git status` (guardar lo local), luego `git fetch origin && git
+  reset --hard origin/main`. Copia previa y mapa viejo->nuevo en
+  `~/Backups/vibra-lighting-pre-trailer-rewrite-2026-09-25.bundle` y
+  `~/Backups/vibra-lighting-commit-map-2026-09-25.txt` (mini).
 - [ ] **Stash antiguo en `main` del mini:** `stash@{0}: On main: Tower
   Auto-Stash: 2025-08-28 20:48:51`. Siguiente: mirar su diff y guardarlo o
   tirarlo.
