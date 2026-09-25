@@ -145,6 +145,14 @@ queda en `Vibra-Lab/vibra-lighting`).
     word is in no catalogue. Smallest next step: caption the root frame from
     the catalogue in `strip_to_skeleton` (a new `console` identifier), then
     re-baseline the three Vibra hashes with the owner's consent.
+  - [ ] **An override that breaks ruling B7 crashes the build instead of being
+    refused (final review of Plan B, 2026-09-25).** A `[names]` override such
+    as `hit_button_flash = "BANG · Space"`, whose head no longer equals its
+    `hit_*` caption, makes the desk burst build fail deep in the generator with
+    no message naming the description. Smallest next step: a
+    `reject_hit_button_heads` rule beside `reject_frame_head_renames` that
+    refuses it while the description is read, with a refused and an accepted
+    test.
 - [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
