@@ -160,27 +160,6 @@ queda en `Vibra-Lab/vibra-lighting`).
     word is in no catalogue. Smallest next step: caption the root frame from
     the catalogue in `strip_to_skeleton` (a new `console` identifier), then
     re-baseline the three Vibra hashes with the owner's consent. Moves to spectalive/qlctool.
-  - [ ] **The tempo help promises gobos and prism on a rig with neither (Plan
-    C Task 4, 2026-09-25).** The small club's page-3 tempo label reads
-    "gobos, prism and dimmer follow your" (`tempo_2`, `TEMPO_LINES` in
-    `generate/live_console.py`; `grep 'gobos, prism' examples/small-club/club.qxw` in the toolkit),
-    though its heads have no gobo or prism wheel and `newshow` builds 0 of
-    either. Unlike page 3's title (`page_control_title`, same task) the tempo
-    lines have no capability-driven variant. Smallest next step: a
-    `tempo_2_no_wheels` identifier chosen when the show built no gobo or prism
-    scene, a dated assertion in `tests/test_small_rig.py`, then regenerate
-    `club.qxw` (Vibra's bytes do not move). Moves to spectalive/qlctool.
-  - [ ] **Page 4 of the club still talks about Vibra's bars and panels (final
-    review of Plan C, 2026-09-25).** With no LED bar and no panel in the
-    patch, `club.qxw` carries "the panels' 42 built-in effects", "Nobody has
-    watched the panels' 42 effects yet ... «Effect N»" and the solo frame
-    "Matrices — patterns on the bars and panels" (`locales/en.toml` around
-    lines 255, 319, 323 via `live_console.py:250,256,1144` in the toolkit).
-    Same class as the tempo item above. Smallest next step: capability-driven
-    variants - no panel lines unless a fixture has built-in effects, a
-    matrices caption that names no bars or panels - with a dated assertion in
-    `tests/test_small_rig.py`, then regenerate `club.qxw`. Moves to
-    spectalive/qlctool.
   - [ ] **`newshow` only builds one rig shape (final review of Plan C,
     2026-09-25).** With the small club's own stock definitions: pars only ->
     traceback `no fixture in this workspace has both pan and tilt`
@@ -268,14 +247,6 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
 ## Development environment
 
-- [ ] **spectalive/qlctool CI is red on mypy (2026-09-25).** Its `Quality`
-  workflow runs `codeality-py gate`, and run 36122117743 fails at "Run the
-  quality gate" with 97 mypy errors in 31 files (deskmap.py, cmd_deskmap.py,
-  rule_pick_darkens.py, rule_instant_dimmer.py, ...): the same failure this
-  repository's workflow had since 2026-09-22, never fixed. Local gates
-  (pytest, ruff, byte identity, QLC+ load) are green. Moves to
-  spectalive/qlctool. Next: run `codeality-py gate` locally in the toolkit
-  checkout, annotate or register the debt in its baseline, and re-run CI.
 - [ ] **Reinstall on the show Mac (AGENTS.md, 2026-09-25).** The toolkit left
   this repository for https://github.com/spectalive/qlctool (`v0.1.1`);
   every checkout installs it from `requirements.txt` into a repo-root

@@ -19,6 +19,33 @@
 
 #### 2026-09-25 - Plan C: a second rig, and qlctool in its own repository
 
+- [x] 2026-09-25 - **The club's console names no gobo, prism, bar or panel it
+  lacks, and page 4 counts the effects the rig built.** Closes the two Plan C
+  final-review items (tempo help promising gobos and prism; page 4 talking
+  about Vibra's bars and panels). In spectalive/qlctool: `b6849db` makes the
+  tempo help line, the matrices frame caption and the library help lines
+  capability-driven (`tempo_help_line.py`, `matrices_frame_caption.py`,
+  `library_help_lines.py`, `tests/test_caption_variants.py`); `3a39070`
+  renders the built-in effect count from what `generate_builtin_effects`
+  built (`{count}`, Vibra still 42) and passes the pixel-group flag
+  explicitly, with a mixed-rig test (`tests/test_mixed_rig_captions.py`).
+  Reviewed twice, approved at `9c7085e`. Evidence: 680 passed,
+  `vibra_compare --validate` identical x3 and QLC+ loaded, `check` 522 and
+  199 buttons clean, CI runs 36131008406 and 36132373485 green on 3.11 and
+  3.13. Still open in the toolkit's TODO: the "bars and panels" wording of
+  the matrices caption on any rig with pixel groups (changing it moves
+  Vibra's bytes; owner's call), and a `check` rule for a caption that
+  promises a function the show did not build.
+- [x] 2026-09-25 - **spectalive/qlctool CI is green.** The mypy failure
+  (97 errors in 31 files, run 36122117743) was cleared by a strict ratchet
+  in `mypy.ini` and the baseline (`de4b76f..fae5f1e`); the remaining
+  pytest `over-budget` failure (the suite takes 286-477 s on the 4-core
+  runners, against the local 120 s budget) closed with codeality-py 0.2.4's
+  `CODEALITY_PY_TEST_BUDGET_SECONDS`, set to 600 on the gate step of
+  `quality.yml` (`bfde7e9`); the local budget stays 120 s. Evidence: run
+  36131008406 green (pytest 476.8 s on 3.11, 359.9 s on 3.13). Open in the
+  toolkit's TODO: 3.11 uses 79% of that budget, so the show builds in
+  `tests/test_check.py` need to get cheaper.
 - [x] 2026-09-25 - **`v0.1.1` tagged, both GitHub releases published, the pin
   bumped.** Owner's go ("avanza con todo sigue haciendo todos releases").
   spectalive/qlctool `v0.1.1` = `2b72474` (version bump on top of the final
