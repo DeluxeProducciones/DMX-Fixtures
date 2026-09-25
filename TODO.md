@@ -170,6 +170,38 @@ queda en `Vibra-Lab/vibra-lighting`).
     `tempo_2_no_wheels` identifier chosen when the show built no gobo or prism
     scene, a dated assertion in `tests/test_small_rig.py`, then regenerate
     `club.qxw` (Vibra's bytes do not move). Moves to spectalive/qlctool.
+  - [ ] **Page 4 of the club still talks about Vibra's bars and panels (final
+    review of Plan C, 2026-09-25).** With no LED bar and no panel in the
+    patch, `club.qxw` carries "the panels' 42 built-in effects", "Nobody has
+    watched the panels' 42 effects yet ... «Effect N»" and the solo frame
+    "Matrices — patterns on the bars and panels" (`locales/en.toml` around
+    lines 255, 319, 323 via `live_console.py:250,256,1144` in the toolkit).
+    Same class as the tempo item above. Smallest next step: capability-driven
+    variants - no panel lines unless a fixture has built-in effects, a
+    matrices caption that names no bars or panels - with a dated assertion in
+    `tests/test_small_rig.py`, then regenerate `club.qxw`. Moves to
+    spectalive/qlctool.
+  - [ ] **`newshow` only builds one rig shape (final review of Plan C,
+    2026-09-25).** With the small club's own stock definitions: pars only ->
+    traceback `no fixture in this workspace has both pan and tilt`
+    (`movement_families.py:347`); washes only -> `no fixture in this workspace
+    has a dimmer` (`dimmer_chases.py:81`); one par and two MiN Wash with no
+    fixture group -> the show builds but its own `marco vacio` flags three
+    empty frames (Matrices, two-colour mixes, per-group wheels) plus `estrobo
+    enganchado` and `estrobo sin negro`; the same rig with one group -> 7
+    findings in 4 rules. The README said "for any rig". Smallest next step:
+    `newshow` refuses a rig below the minimum (a pan/tilt fixture with a
+    dimmer, one group) with a message instead of a traceback, and the README
+    states that minimum; then, rig by rig, make each shape build clean, each
+    with a dated test in `tests/test_small_rig.py`. Moves to spectalive/qlctool.
+  - [ ] **`qlctool check` passes with no definition resolved (final review of
+    Plan C, 2026-09-25).** From the toolkit root, `qlctool check
+    examples/small-club/club.qxw` warns "no fixture definition ... searched
+    no folder" and still prints `199 botones revisados, ningun problema`: a
+    false pass, and the first-run path of every new user. Predates Plan C
+    (step 6's cwd walk-up). Smallest next step: `check` exits non-zero when a
+    patched fixture has no definition, with a dated test. Moves to
+    spectalive/qlctool.
   - [ ] **An override that breaks ruling B7 crashes the build instead of being
     refused (final review of Plan B, 2026-09-25).** A `[names]` override such
     as `hit_button_flash = "BANG · Space"`, whose head no longer equals its
@@ -257,6 +289,15 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   spectalive/qlctool exists and installs; no GitHub release was created
   (ruling Q7, Plan C). Smallest next step: the owner decides whether to
   publish one (`gh release create v0.1.0` in spectalive/qlctool).
+- [ ] **Tag `v0.1.1` and bump `requirements.txt` (owner, 2026-09-25).** The
+  final review of Plan C found two things on `v0.1.0` fixed afterwards on
+  the toolkit's `main`: the beam colour-wheel guard crashed `newshow` on a
+  gobo spot with no colour wheel (`canonical_show.py`), and the toolkit's
+  NOTICE, `tests/data/rig/README.txt` and README did not credit the two QLC+
+  Stairville definitions in its frozen rig. `v0.1.0` still builds this show
+  byte for byte, so the pin here did not move. Smallest next step: the owner
+  tags `v0.1.1` on that `main`, this repo bumps the tag in `requirements.txt`,
+  reinstalls and runs `tests/`.
 - [ ] **`QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` still names the toolkit's old
   in-repo path in its generated header comment (2026-09-25).** It is
   byte-tested against `qlctool input-profile` of the pinned release, so it is

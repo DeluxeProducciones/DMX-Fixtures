@@ -10,7 +10,7 @@ in this file.
 A lighting-show repository, not an app: XML data (QLC+ `.qxw` workspaces,
 `.qxf` fixture definitions, one `.qxi` MIDI input profile) and the show's own
 tests in `tests/`. The Python toolkit that generates and checks the show,
-`qlctool` (Python >= 3.11, venv currently 3.14.7, lxml only), lives in
+`qlctool` (Python >= 3.11, venv currently 3.14.7; lxml, pygdtf, pymvr), lives in
 https://github.com/spectalive/qlctool since 2026-09-25 and is installed from a
 pinned tag (`requirements.txt`, `v0.1.0`) into the repo-root `.venv`. There is
 no CI and no server; the "deploy" is the show Mac pulling this repo by hand.

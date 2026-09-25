@@ -19,6 +19,30 @@
 
 #### 2026-09-25 - Plan C: a second rig, and qlctool in its own repository
 
+- [x] 2026-09-25 - **Plan C closed: final review and its fixes.** Seven tasks
+  (`9957e1a..e575b72` here; `ba83536..fac1072` in the toolkit): the suite
+  reads its rig through `tests/rig_root.py` (Task 1); three checker rules
+  the second rig forced - `referencia a una funcion que no existe`
+  (`rule_dangling_reference`), `marco vacio` (`rule_empty_frame`) and a chaser
+  of level Collections counted as a structural cycle (`steps_are_levels`) -
+  each with a dated test and the false positives on the club cleared (Tasks
+  2a, 2b, 3); page 3's title and the aim label made capability-driven and
+  count-free (owner decision 2026-09-25, Vibra's baseline re-recorded for that
+  caption only); the small club (Task 4); the extraction, publication and
+  the pinned dependency (Tasks 5-7). The final whole-plan review found the
+  beam colour-wheel guard keyed on gobo fixtures (a gobo spot with no colour
+  wheel crashed `newshow`) and the toolkit's NOTICE missing the two QLC+
+  Stairville definitions of its frozen rig; both fixed on the toolkit's
+  `main` (`08ea32d`, `52f62b3`, 665 passed, Vibra and the club
+  byte-identical) and left for the owner to tag as `v0.1.1` (open item). The
+  club's remaining Vibra-only text, the rig shapes `newshow` cannot build and
+  the `check` false pass without definitions are open items in `TODO.md`,
+  marked "Moves to spectalive/qlctool". Same day: the history of this
+  repository was rewritten to drop 179 session-link trailers and eleven tool
+  mentions from its commit messages (trees unchanged), the MacBook checkout
+  reset and reinstalled from the tag, the show Mac still off the network.
+  Rulings in `~/p/wiki/brain/projects/vibra-dmx.md` ("qlctool extracted",
+  "History rewrite").
 - [x] 2026-09-25 - **Spec step 7: a second example rig.** Plan C Tasks 2-4:
   the small club (`examples/small-club/` in the toolkit), a different patch -
   three of Vibra's models in other numbers, addresses and groups, with no haze
