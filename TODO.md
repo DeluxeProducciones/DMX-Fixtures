@@ -137,6 +137,14 @@ queda en `Vibra-Lab/vibra-lighting`).
     (ruling B10, spec "Multilingual").** An English show's findings still read
     in Spanish. Smallest next step: give `Finding` a `rule_id` and move the
     messages into a `checks` catalogue section.
+  - [ ] **The English root console frame is captioned "Página 1" (final
+    review of Plan B, 2026-09-25).** `strip_to_skeleton` keeps the root
+    frame's caption from the input workspace, so an English Vibra's console
+    still says "Página 1" (`grep 'Caption="Página 1"'` on any generated
+    English workspace). The pseudo-locale scan does not see it because the
+    word is in no catalogue. Smallest next step: caption the root frame from
+    the catalogue in `strip_to_skeleton` (a new `console` identifier), then
+    re-baseline the three Vibra hashes with the owner's consent.
 - [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
@@ -1138,14 +1146,20 @@ mueve cada lista:
 - [ ] Bajar los hallazgos estructurales: `codeality-py check` da 206 sobre 299
       ficheros, todos registrados (`baseline check`: `0 new, 206 known`), asi
       que el drift esta cerrado y cualquier hallazgo nuevo muerde. Diez
-      ficheros pasan del limite de lineas (`live_console.py` 1105,
-      `canonical_show.py` 951, `cli.py` 729, `play_page.py` 658,
-      `movement_families.py` 556, `family_frames.py` 208, `validate.py` 191,
-      `rule_console.py` 177, `deskmap.py` 170, `unison_colors.py` 152). La
+      ficheros pasan del limite de lineas (`wc -l`, 2026-09-25:
+      `canonical_show.py` 1460, `live_console.py` 1441, `cli.py` 945,
+      `play_page.py` 813, `movement_families.py` 725, `validate.py` 348,
+      `family_frames.py` 309, `unison_colors.py` 253, `rule_console.py` 240,
+      `deskmap.py` 216). La
       masa del resto es BPY001: cada regla de `checks/` lleva sus ayudantes
       privados en el mismo fichero, contra la regla de la casa de un solo
       simbolo por fichero. Tras cada arreglo,
       `codeality-py baseline update` reescribe el registro.
+      Split debt (final review of Plan B, 2026-09-25): these files break the
+      one-exported-unit-per-file rule, and the four largest grew 24-54% since
+      the 2026-09-22 count (Plans A and B). Smallest next step:
+      split them one file at a time, largest first (`canonical_show.py`),
+      each split its own commit with the three Vibra hashes unchanged.
 - [ ] Tres modulos de datos (`pastel_palette.py`, `pick_marks.py`,
       `simple_colors.py`) estan declarados `[roles] data` en
       `codeality-py.toml` en vez de silenciados: son tablas de constantes y no
