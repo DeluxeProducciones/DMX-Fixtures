@@ -17,6 +17,20 @@
 
 ### 2026-09
 
+#### 2026-09-25 - Plan B closed: final review and its fixes
+
+- [x] 2026-09-25 - **A `[names]` frame override silently dropped desk
+  bursts.** The final whole-branch review (`5fb685e..6a7b31b`) found
+  `desk_bursts.py` resolving frames through `default_names()`: English Vibra
+  with a renamed `hits` head built 20 of 34 Desk functions and
+  `check_workspace` reported nothing. Fixed in `1c52cdd` (vocabulary threaded
+  into `desk_burst_sources`; `reject_frame_head_renames` refuses a head rename
+  while the description is read; dated regression test). Evidence: 648 passed,
+  `vibra_compare --validate` identical x3, English plain/beats/split/no-pad
+  builds pass `check`, `test_pseudo_locale` now fails if no desk burst is
+  built (`dce1d86`). Rulings recorded in
+  `~/p/wiki/brain/projects/vibra-dmx.md` ("Plan B decisions").
+
 #### 2026-09-25 - Plan B Task 12a: any shipped language builds a show
 
 - [x] 2026-09-25 - **Generator names through the catalogue.** Tasks 4-11 moved
