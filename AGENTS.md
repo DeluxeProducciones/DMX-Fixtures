@@ -33,7 +33,7 @@ reference workspace into a temp dir).
 ## Branch model
 
 Work happens on `main` since 2026-09-22, when `qlctool` was merged into it
-(`ca38195`, `a7dfb31`); the branch still exists, fully merged. Push finished,
+(`40f06f8`, `4fa1a74`); the branch still exists, fully merged. Push finished,
 verified work to `origin/main`. A push is not a deploy - the show Mac pulls by
 hand.
 

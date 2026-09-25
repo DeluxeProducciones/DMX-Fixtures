@@ -48,7 +48,7 @@ Read these before every task. A task that breaks one is not done.
    The suite takes ~40 s on `-n auto`: run it in the foreground and **never
    pipe it through `tail`/`head`** (the exit code is lost, and a stopped suite
    leaves a headless QLC+ behind that makes later validation pass). Baseline on
-   2026-09-24 at `5c247e3`: `477 passed, 10 skipped`; each `check` prints
+   2026-09-24 at `c782f17`: `477 passed, 10 skipped`; each `check` prints
    `522 botones revisados, ningun problema` and exits 0. `vibra_compare.py
    --validate` (Task 1) regenerates all three into a temp dir, compares hashes,
    runs every check on them and loads each in headless QLC+; it must print three
@@ -176,7 +176,7 @@ they start with `qlctool/` or `tests/`, which are relative to
 
 ### Task 1: Baseline hashes and a regenerate-and-compare script
 
-Verified on 2026-09-24 at `5c247e3`: regenerating each workspace with the
+Verified on 2026-09-24 at `c782f17`: regenerating each workspace with the
 AGENTS.md recipe into a scratch directory reproduces the committed file byte
 for byte, so **the committed files are the baseline**:
 

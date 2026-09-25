@@ -20,15 +20,15 @@
 #### 2026-09-25 - Plan B closed: final review and its fixes
 
 - [x] 2026-09-25 - **A `[names]` frame override silently dropped desk
-  bursts.** The final whole-branch review (`5fb685e..6a7b31b`) found
+  bursts.** The final whole-branch review (`d1c31fb..45dd495`) found
   `desk_bursts.py` resolving frames through `default_names()`: English Vibra
   with a renamed `hits` head built 20 of 34 Desk functions and
-  `check_workspace` reported nothing. Fixed in `1c52cdd` (vocabulary threaded
+  `check_workspace` reported nothing. Fixed in `52c3f56` (vocabulary threaded
   into `desk_burst_sources`; `reject_frame_head_renames` refuses a head rename
   while the description is read; dated regression test). Evidence: 648 passed,
   `vibra_compare --validate` identical x3, English plain/beats/split/no-pad
   builds pass `check`, `test_pseudo_locale` now fails if no desk burst is
-  built (`dce1d86`). Rulings recorded in
+  built (`8fa6c73`). Rulings recorded in
   `~/p/wiki/brain/projects/vibra-dmx.md` ("Plan B decisions").
 
 #### 2026-09-25 - Plan B Task 12a: any shipped language builds a show
@@ -46,7 +46,7 @@
   `generate/` module clean or excluded under ruling B6; the three Vibra
   workspaces and `Vibra.desk.json` stay byte-identical.
 - [x] 2026-09-25 - **Controller coupling carried out of core (R3).** Done by
-  Plan B Task 2 (`ca42443`): core checks reach the desk bursts only through
+  Plan B Task 2 (`1e4f26e`): core checks reach the desk bursts only through
   the `tablet_desk` provider, and `checks/` no longer names a provider.
   Evidence: `tests/test_controllers.py`, and no `own_rule_providers.py` left in
   `checks/`.
@@ -105,7 +105,7 @@
 
 - [x] 2026-09-24 - **Plan A of the show description landed** (spec steps 1-5,
   `docs/superpowers/plans/2026-09-24-show-description-plan-a.md`, commits
-  `7b3691e..723f273`). The show's own choices live in a `ShowDescription`;
+  `76b9e25..9c9985d`). The show's own choices live in a `ShowDescription`;
   names resolve by English identifier or any shipped spelling
   (`qlctool/locales/{en,es}.toml`); the SMC-PAD and the tablet desk are
   optional controller profiles whose checks come through the `qlctool.rules`
@@ -125,7 +125,7 @@
   (`tools/`, `QLC+ Fixtures/`, `QLC+ InputProfiles/`) y CC BY 4.0 para el
   show (`QLC+ Setups/`, `docs/`, `Colores/`); `Manual/` queda fuera (copyright
   de los fabricantes). `NOTICE` atribuye lo vendorizado de QLC+.
-  - Evidencia: `8c90813`; textos oficiales de apache.org y
+  - Evidencia: `c823c80`; textos oficiales de apache.org y
     creativecommons.org; GitHub detecta `Apache-2.0`.
 
 #### 2026-09-24 - Repos a sus orgs
@@ -142,7 +142,7 @@
     `projects/vibra-dmx.md`, `projects/taq102.md`,
     `personal/denver-taq102-tablet.md` y `business/access-map.md` (61f836d3).
 - [x] 2026-09-24 - **El MacBook Pro al dia en `~/p/DMX-Fixtures`**: arbol
-  limpio, 23 commits por detras, `git pull --ff-only` a `f8385ff`.
+  limpio, 23 commits por detras, `git pull --ff-only` a `2bbe416`.
 
 #### 2026-09-24 - Nombre del software de control: Spectalive
 
@@ -155,18 +155,18 @@
     Strobeboard, Strobepad, Vibrakit, Vibradesk, Spectaboard, Spectadesk.
   - Evidencia: Spectalive 4/4 con `.com` (RDAP HTTP 404), `.io`, `.app`,
     `.dev`, GitHub, npm y Bluesky libres; TMview sin marca SPECTALIVE ni
-    SPECTRALIVE; commits `c62081d`, `0c04ed4`, `f1b9aeb`.
+    SPECTRALIVE; commits `69444d4`, `bea77df`, `d1a5a95`.
 
 #### 2026-09-24 - El mapa de la tablet volvia a ser el del show viejo
 
 - [x] 2026-09-24 - **`Vibra.desk.json` reconstruido desde el `Vibra.qxw`
   actual, con un test que lo vigila.**
-  - Resultado: tras `3491a11` el mapa seguia con el sha256 del workspace de
-    `ed1dac1` (`3eb53764...`); 36 de 144 widget ids y 141 function ids ya no
+  - Resultado: tras `29ddaf3` el mapa seguia con el sha256 del workspace de
+    `80261d0` (`3eb53764...`); 36 de 144 widget ids y 141 function ids ya no
     existian y `rig-blanco` era `multicolor`. `tests/test_shipped_deskmap.py`
     reconstruye cada `*.desk.json` desde el workspace que nombra y exige
     igualdad; fallaba antes de regenerar y pasa despues.
-  - Evidencia: `6d9da98`; suite 477 passed, 10 skipped; `qlctool check`
+  - Evidencia: `a0a04b6`; suite 477 passed, 10 skipped; `qlctool check`
     exit 0 en `Vibra.qxw` y `Vibra-split.qxw`.
 - [-] 2026-09-24 - **Renombrar la org `DeluxeProducciones`** (item de
   2026-08-24). Sustituido por el plan de la seccion "Reorganizacion" de
@@ -230,7 +230,7 @@
     CLB2.4 con sus cuatro cabezas, las barras de pixeles, los cuatro paneles,
     los cuatro spray fog y las dos MAC WASH de pie junto a la mesa
     (`~/p/vibra-blender/vibra.png`, `vibra.blend`; corrida final desde el
-    checkout `~/p/DMX-Fixtures` en `9ef5d94`, 31 aparatos importados, 4 s,
+    checkout `~/p/DMX-Fixtures` en `777d23a`, 31 aparatos importados, 4 s,
     Blender sale solo). Gate: `codeality-py baseline check` 0
     nuevos con el paquete partido a una declaracion por modulo; ruff, mypy y
     ruff-format siguen con la deuda conocida, nada nuevo.
@@ -425,10 +425,10 @@ trabajo pasa por la rama `qlctool` (ya mezclada).
 
 #### 2026-09-22 - The `qlctool` branch is merged into `main`
 
-The owner's word: "mergea todo a main". `ca38195` merges the branch,
-`a7dfb31` merges the two commits `main` carried on its own (untracking
+The owner's word: "mergea todo a main". `40f06f8` merges the branch,
+`4fa1a74` merges the two commits `main` carried on its own (untracking
 `.serena`, the CocoIndex ignore line) - their `.gitignore` was the only
-conflict, resolved as the union of both. `origin/main` is at `a7dfb31`, the
+conflict, resolved as the union of both. `origin/main` is at `4fa1a74`, the
 branch still exists and is fully merged, and `qlctool check` is clean on the
 three workspaces from the merged tree: 592 buttons each.
 

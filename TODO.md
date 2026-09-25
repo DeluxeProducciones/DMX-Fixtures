@@ -51,8 +51,8 @@ vive en `~/p/brand-finder/TODO.md`.
 
 - [ ] **Poner el show de `main` en el mini y en la tablet a la vez.** La app
   `~/Applications/QLC+ Vibra.app` carga `~/p/DMX-Fixtures-qlctool/QLC+
-  Setups/Vibra.qxw`, worktree en la rama `qlctool` parado en `ed1dac1`, sin
-  `3491a11` (colores armonicos, blanco fuera de las ruedas): `qlctool check`
+  Setups/Vibra.qxw`, worktree en la rama `qlctool` parado en `80261d0`, sin
+  `29ddaf3` (colores armonicos, blanco fuera de las ruedas): `qlctool check`
   da exit=1 en ese fichero con `blanco en la rueda`, `mas de dos colores en un
   estado` y `complementarios en un mismo lavado`; el de `main` da exit=0. Pero
   la tablet lleva el mapa dentro del firmware v89
@@ -62,7 +62,7 @@ vive en `~/p/brand-finder/TODO.md`.
   `QLC+ Setups/Vibra.desk.json` a `~/p/taq102/show/`, reconstruir y flashear
   v90, y en el mismo momento avanzar `qlctool` a `main`
   (`git -C ~/p/DMX-Fixtures-qlctool merge --ff-only main`; vuelta atras:
-  `reset --hard ed1dac1`). Verificar tocando AUTO en la tablet.
+  `reset --hard 80261d0`). Verificar tocando AUTO en la tablet.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.

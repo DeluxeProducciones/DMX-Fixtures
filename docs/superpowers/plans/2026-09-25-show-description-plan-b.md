@@ -58,7 +58,7 @@ Read these before every task. A task that breaks one is not done.
    .venv/bin/qlctool check "../../QLC+ Setups/Vibra-beats.qxw"
    .venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
    ```
-   Baseline on 2026-09-25 at `9266c18`: the suite prints `571 passed, 10
+   Baseline on 2026-09-25 at `e7de786`: the suite prints `571 passed, 10
    skipped` without `QLCTOOL_QLCPLUS` and `581 passed` (about 68 s) with it;
    after Task 1 it prints `581 passed` or more with no skip and no variable.
    Each `check` prints `522 botones revisados, ningun problema` and exits 0.
