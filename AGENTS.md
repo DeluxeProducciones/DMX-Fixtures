@@ -162,7 +162,7 @@ Smoke test, same date and machine:
   the pad's factory notes for a day while the show used different ones.
 - Every generated name comes from the catalogue in `[show] language` (`en` or
   `es`, Spanish by default); a generator module may not spell a catalogue word
-  itself. `tests/test_generator_literals.py` holds every `generate/` module to
+  itself, apart from ruling B6's listed exclusions. `tests/test_generator_literals.py` holds every `generate/` module to
   that, and `tests/test_english_vibra.py` builds Vibra in English and requires
   every check to pass. Vibra itself is Spanish on purpose (the operator reads
   it), and so is `check` output for now (ruling B10); code, comments, commits
