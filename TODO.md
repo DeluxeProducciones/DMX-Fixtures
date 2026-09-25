@@ -160,27 +160,6 @@ queda en `Vibra-Lab/vibra-lighting`).
     word is in no catalogue. Smallest next step: caption the root frame from
     the catalogue in `strip_to_skeleton` (a new `console` identifier), then
     re-baseline the three Vibra hashes with the owner's consent. Moves to spectalive/qlctool.
-  - [ ] **`newshow` only builds one rig shape (final review of Plan C,
-    2026-09-25).** With the small club's own stock definitions: pars only ->
-    traceback `no fixture in this workspace has both pan and tilt`
-    (`movement_families.py:347`); washes only -> `no fixture in this workspace
-    has a dimmer` (`dimmer_chases.py:81`); one par and two MiN Wash with no
-    fixture group -> the show builds but its own `marco vacio` flags three
-    empty frames (Matrices, two-colour mixes, per-group wheels) plus `estrobo
-    enganchado` and `estrobo sin negro`; the same rig with one group -> 7
-    findings in 4 rules. The README said "for any rig". Smallest next step:
-    `newshow` refuses a rig below the minimum (a pan/tilt fixture with a
-    dimmer, one group) with a message instead of a traceback, and the README
-    states that minimum; then, rig by rig, make each shape build clean, each
-    with a dated test in `tests/test_small_rig.py`. Moves to spectalive/qlctool.
-  - [ ] **`qlctool check` passes with no definition resolved (final review of
-    Plan C, 2026-09-25).** From the toolkit root, `qlctool check
-    examples/small-club/club.qxw` warns "no fixture definition ... searched
-    no folder" and still prints `199 botones revisados, ningun problema`: a
-    false pass, and the first-run path of every new user. Predates Plan C
-    (step 6's cwd walk-up). Smallest next step: `check` exits non-zero when a
-    patched fixture has no definition, with a dated test. Moves to
-    spectalive/qlctool.
   - [ ] **An override that breaks ruling B7 crashes the build instead of being
     refused (final review of Plan B, 2026-09-25).** A `[names]` override such
     as `hit_button_flash = "BANG · Space"`, whose head no longer equals its
@@ -248,9 +227,9 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 ## Development environment
 
 - [ ] **Reinstall on the show Mac (AGENTS.md, 2026-09-25).** The toolkit left
-  this repository for https://github.com/spectalive/qlctool (`v0.1.1`);
+  this repository for https://github.com/spectalive/qlctool (`v0.1.2`);
   every checkout installs it from `requirements.txt` into a repo-root
-  `.venv`. Done on the Mac mini and on the MacBook (both on `v0.1.1`, 30
+  `.venv`. Done on the Mac mini and on the MacBook (both on `v0.1.2`, 30
   passed, `install --check` 0). Next: the steps in AGENTS.md "Reinstalling
   after the extraction" on the show Mac (`vibra-oficina`, off the network on
   2026-09-25: no Bonjour, `192.168.1.56` silent). The Mac mini's launcher

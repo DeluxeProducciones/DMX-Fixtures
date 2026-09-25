@@ -19,6 +19,23 @@
 
 #### 2026-09-25 - Plan C: a second rig, and qlctool in its own repository
 
+- [x] 2026-09-25 - **`v0.1.2` released and pinned: `newshow` refuses a rig
+  below the minimum, `check` fails without definitions.** Closes the two Plan
+  C final-review items. In spectalive/qlctool `8302997` + `e7ce236`: the
+  minimum is what the generators need (a pan/tilt fixture, a fixture the
+  dimmer chase keeps, one group), checked in one unit before any generator
+  runs, with the chase's own predicates as shared units (`fader_dimmed`,
+  `is_pixel_group`, `all_self_animating`); pars only, washes only and no
+  group are refused with a catalogue message; six pars plus two MiN Wash
+  build (dated tests in `tests/test_rig_minimum.py`). `33de4c5` + `e7ce236`:
+  a patched fixture with no definition, or in a mode its definition lacks,
+  is a `sin definicion` finding through one shared `resolved_definition`
+  check, so `check` exits 1 (3 findings on the club without `--fixtures`).
+  Reviewed, one fix round, approved. `v0.1.2` = `785f2ba`, release
+  https://github.com/spectalive/qlctool/releases/tag/v0.1.2; 688 passed in
+  the toolkit, CI 36136963884 green on 3.11 and 3.13. Here: `requirements.txt`
+  pins `v0.1.2`; on the Mac mini 30 passed, `vibra_compare --validate`
+  identical x3 and QLC+ loaded, `check` 522 clean x3, `install --check` 0.
 - [x] 2026-09-25 - **The club's console names no gobo, prism, bar or panel it
   lacks, and page 4 counts the effects the rig built.** Closes the two Plan C
   final-review items (tempo help promising gobos and prism; page 4 talking
