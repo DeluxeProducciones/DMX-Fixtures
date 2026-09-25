@@ -20155,7 +20155,7 @@
             <Intensity Adjust="False">100</Intensity>
           </Button>
         </Frame>
-        <Label Caption="Apunta las 12 cabezas a mano — arrastra dentro del cuadro" ID="284" Page="2">
+        <Label Caption="Apunta las cabezas a mano — arrastra dentro del cuadro" ID="284" Page="2">
           <WindowState Visible="True" X="540" Y="224" Width="628" Height="20"/>
           <Appearance>
             <FrameStyle>None</FrameStyle>
