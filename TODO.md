@@ -70,9 +70,11 @@ vive en `~/p/brand-finder/TODO.md`.
   `git pull`.** Se quito la linea de sesion de 179 mensajes y las menciones a
   herramientas de IA de otros 11 (regla del dueño); los arboles no cambian,
   todos los SHA desde el 2026-08-25 si. Mini (`~/p/DMX-Fixtures` y el
-  worktree `qlctool`) ya reseteado. Siguiente, en el Mac del show y en el
-  MacBook: `git status` (guardar lo local), luego `git fetch origin && git
-  reset --hard origin/main`. Copia previa y mapa viejo->nuevo en
+  worktree `qlctool`) y MacBook (`ssh macbook`, estaba limpio en `f8385ff`,
+  qlctool reinstalado) ya reseteados. Falta el Mac del show, fuera de red el
+  2026-09-25 (ni Bonjour ni `192.168.1.56`). Siguiente, cuando este en red:
+  `git status` (guardar lo local), luego `git fetch origin && git reset
+  --hard origin/main` y `qlctool install --check`. Copia previa y mapa viejo->nuevo en
   `~/Backups/vibra-lighting-pre-trailer-rewrite-2026-09-25.bundle` y
   `~/Backups/vibra-lighting-commit-map-2026-09-25.txt` (mini).
 - [ ] **Stash antiguo en `main` del mini:** `stash@{0}: On main: Tower
