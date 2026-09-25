@@ -162,6 +162,15 @@ queda en `Vibra-Lab/vibra-lighting`).
     `reject_hit_button_heads` rule beside `reject_frame_head_renames` that
     refuses it while the description is read, with a refused and an accepted
     test.
+  - [ ] **Most of `function_references`' paths have no test (Task 2a review,
+    2026-09-25).** `rule_dangling_reference` is tested on a Collection step, a
+    button's `<Function>` and, since Plan C Task 3, a slider's `<Adjust
+    Function>`; a dangling id in a clock `<Schedule Function>`, an XY pad
+    `<FuncID>`, a cue list `<Chaser>`, a Show's `ShowFunction` or `Track
+    SceneID`, or a Sequence's `BoundScene` would go unreported if its branch
+    broke, and no shipped workspace carries any of them to notice. Smallest
+    next step: one parametrised case per path in `tests/test_check.py` that
+    writes the element with an id nothing carries and asserts the rule bites.
 - [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
