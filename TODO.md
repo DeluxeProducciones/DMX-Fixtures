@@ -276,15 +276,16 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   (pytest, ruff, byte identity, QLC+ load) are green. Moves to
   spectalive/qlctool. Next: run `codeality-py gate` locally in the toolkit
   checkout, annotate or register the debt in its baseline, and re-run CI.
-- [ ] **Reinstall on the MacBook and the show Mac (AGENTS.md, 2026-09-25).**
-  The toolkit left this repository for https://github.com/spectalive/qlctool
-  (`v0.1.0`); every checkout now installs it from `requirements.txt` into a
-  repo-root `.venv`. Done on the Mac mini's `~/p/DMX-Fixtures` (the
-  extraction commit's own gates ran there). Next: the steps in AGENTS.md
-  "Reinstalling after the extraction" on the MacBook checkout and on the show
-  Mac (`vibra-oficina`, off the network on 2026-09-25); the Mac mini's
-  launcher worktree (`~/p/DMX-Fixtures-qlctool`, branch `qlctool`) does not
-  use the toolkit and is left to the owner.
+- [ ] **Reinstall on the show Mac (AGENTS.md, 2026-09-25).** The toolkit left
+  this repository for https://github.com/spectalive/qlctool (`v0.1.1`);
+  every checkout installs it from `requirements.txt` into a repo-root
+  `.venv`. Done on the Mac mini and on the MacBook (both on `v0.1.1`, 30
+  passed, `install --check` 0). Next: the steps in AGENTS.md "Reinstalling
+  after the extraction" on the show Mac (`vibra-oficina`, off the network on
+  2026-09-25: no Bonjour, `192.168.1.56` silent). The Mac mini's launcher
+  worktree (`~/p/DMX-Fixtures-qlctool`, branch `qlctool`) does not use the
+  toolkit; its remote branch was deleted on 2026-09-25 (merged, `80261d0`),
+  the local branch stays until the launcher is pointed elsewhere.
 - [ ] **`QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` still names the toolkit's old
   in-repo path in its generated header comment (2026-09-25).** It is
   byte-tested against `qlctool input-profile` of the pinned release, so it is
