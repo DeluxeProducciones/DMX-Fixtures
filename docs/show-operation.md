@@ -25,7 +25,7 @@ console" below.
   fixture. Which is exactly what the old console let somebody press.
 - **Nothing here is trusted to stay true by itself.** Every rule in this
   section is a rule `qlctool check` enforces over every button on the console -
-  see [checks.md](checks.md). The show ran on luck until it had one.
+  see [checks.md](https://github.com/spectalive/qlctool/blob/v0.1.0/docs/checks.md). The show ran on luck until it had one.
 - **A fixture with no RGB has to be written to on purpose.** The four BEAM
   230W 7R carry their colour on a wheel, so every generator built on
   `color_scene_values` skipped them: it looks for a red channel and moves on.
@@ -657,7 +657,7 @@ Console (`-k`), fullscreen (`-f`), with the workspace loaded (`-o`) - no
 clicks needed at the laptop. There is no `-p` to add to that on this build:
 it was a v4-only operate flag, absent from the installed 5.2.2's option list
 (confirmed against the real binary, see
-[qlc5-verification.md](qlc5-verification.md)), and `-k` alone is what gets to
+[qlc5-verification.md](https://github.com/spectalive/qlctool/blob/v0.1.0/docs/qlc5-verification.md)), and `-k` alone is what gets to
 the console.
 
 **Kiosk mode has no on-screen exit.** `App::createKioskCloseButton()` is an

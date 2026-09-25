@@ -1,5 +1,5 @@
 # The Vibra show, described: every value the generator used to hard-code for it.
-# Regenerate:  cd tools/qlctool && .venv/bin/qlctool newshow --description "../../QLC+ Setups/vibra-split.toml" --validate
+# Regenerate:  .venv/bin/qlctool newshow --description "QLC+ Setups/vibra-split.toml" --validate
 # Format: docs/superpowers/specs/2026-09-24-show-description-design.md
 
 [show]

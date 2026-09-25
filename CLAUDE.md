@@ -1,7 +1,8 @@
 # DMX-Fixtures
 
 The Vibra lighting show: the fixture definitions, the QLC+ workspaces, and
-`tools/qlctool`, which generates the whole show and the console it is run from.
+the tests that prove the pinned `qlctool` release (https://github.com/spectalive/qlctool),
+which generates the whole show and the console it is run from, still builds it.
 
 The onboarding map - environment, the verified regeneration recipe, the traps
 and the blast radius - is [AGENTS.md](AGENTS.md); the human overview is
@@ -18,25 +19,28 @@ rule nobody had written down, so writing them down is the work:
    generator that reasons in red, green and blue says nothing at all to a
    fixture whose colour is a wheel" is a cause, and it predicts the next four
    bugs.
-2. **Add a rule to `qlctool check`** (`tools/qlctool/qlctool/checks/`) that
-   sees the cause. A rule reasons about capabilities and the function graph -
-   never about a function's name.
-3. **Add a regression test to `tests/test_check.py`** that puts the bug back
-   into a generated show and asserts the checker bites. Date it and say which
-   night it came from.
+2. **Add a rule to `qlctool check`** (`qlctool/checks/` in spectalive/qlctool)
+   that sees the cause. A rule reasons about capabilities and the function
+   graph - never about a function's name.
+3. **Add a regression test to `tests/test_check.py`** in spectalive/qlctool
+   that puts the bug back into a generated show and asserts the checker bites.
+   Date it and say which night it came from.
 4. **Run it over every workspace this repo ships**, which the gate test does.
    A rule that is only true of one file is not a rule.
-5. Only then fix the generator, and regenerate.
+5. Only then fix the generator, tag a toolkit release, bump the tag here in
+   `requirements.txt`, and regenerate.
 
 `qlctool check <workspace>` is the command. It is a different question from
 `qlctool validate`, which only asks whether QLC+ can load the file.
 
 ## Before finishing
 
+From the repository root:
+
 ```bash
-cd tools/qlctool
-.venv/bin/python -m pytest tests/ -q          # the whole suite
-.venv/bin/qlctool check "../../QLC+ Setups/Vibra-split.qxw"
+.venv/bin/python -m pytest -q                 # the show's tests against the pinned toolkit
+.venv/bin/python tests/vibra_compare.py --validate
+.venv/bin/qlctool check "QLC+ Setups/Vibra-split.qxw"
 ```
 
 Regenerating a show means regenerating all three (`Vibra.qxw`,
@@ -64,9 +68,13 @@ algorithms.
 
 - `QLC+ Setups/` - the workspaces. `Vibra-split.qxw` carries the current patch.
 - `QLC+ Fixtures/` - fixture definitions, verified against the manuals.
-- `docs/` - the public findings: the file format, the rig, how the show is
-  operated, the checks, the toolkit.
-- `tools/qlctool/` - the generator. One exported unit per file.
+- `docs/` - the public findings: the rig, how the show is operated. The file
+  format, the checks and the toolkit are documented in spectalive/qlctool.
+- `tests/` - the show's tests: the pinned toolkit still generates the three
+  Vibra workspaces byte for byte, and the shipped map, profile, definitions and
+  pad palette match it.
+- the toolkit, installed from `spectalive/qlctool` (pinned in
+  `requirements.txt`) into the repo-root `.venv`.
 - `TODO.md` - what is still open, and what is blocked on somebody watching the
   rig.
 

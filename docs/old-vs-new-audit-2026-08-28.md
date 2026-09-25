@@ -67,7 +67,7 @@ No old fixture, occupied DMX address, or old custom mode is silently missing fro
 - **Category:** Scenes / colour coverage.
 - **Old evidence:** old Scenes and RGBMatrices collectively emit 26 RGB triples. All 18 entries in `qlctool.palette.PALETTE` occur in the old show. Concrete examples include Scene 36 `Amarillo LEDs` using `(255,20,0)` on one triple, Scene 28 `Cyan LEDs` using `(0,200,255)` and `(0,35,255)`, Scene 127 `Rosa/Cyan LEDs` using `(0,127,255)`, and old matrix families `VerdeMar`, `Violeta`, and `Rosa` using `(0,255,128)`, `(85,0,255)`, and `(255,0,176)`.
 - **New state:** every new workspace emits only 13 RGB triples and only 11 of the canonical 18. Missing from all generated functions are `Rojo Fuego (255,20,0)`, `Verde Menta (0,255,128)`, `Celeste (0,200,255)`, `Azul Cielo (0,127,255)`, `Azul Profundo (0,35,255)`, `Morado (85,0,255)`, and `Fucsia (255,0,176)`. They exist only as unused Python constants. An unrelated new warm white `(255,214,170)` was added.
-- **Judgement: LIKELY FORGOTTEN.** This contradicts the generator's own claim that it mined every old triple (`tools/qlctool/qlctool/palette.py:1-7`) and the operating guide's promise of an 18-colour palette (`docs/show-operation.md:127-132`).
+- **Judgement: LIKELY FORGOTTEN.** This contradicts the generator's own claim that it mined every old triple (`qlctool/palette.py:1-7`, now in https://github.com/spectalive/qlctool) and the operating guide's promise of an 18-colour palette (`docs/show-operation.md:127-132`).
 
 ### 2.2 Four fixed four-colour head looks are gone
 

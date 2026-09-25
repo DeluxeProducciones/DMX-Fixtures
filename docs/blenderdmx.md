@@ -13,9 +13,8 @@ both from what this repo already has: the `.qxf` definitions and the positions
 ## The pipeline
 
 ```bash
-cd tools/qlctool
-.venv/bin/qlctool mvr "../../QLC+ Setups/Vibra-split.qxw"
-# Wrote ../../QLC+ Setups/Vibra-split.mvr: 31 fixtures placed, 8 GDTF fixture types inside.
+.venv/bin/qlctool mvr "QLC+ Setups/Vibra-split.qxw"
+# Wrote QLC+ Setups/Vibra-split.mvr: 31 fixtures placed, 8 GDTF fixture types inside.
 ```
 
 `--out` picks another file, `--gobos` another folder for the gobo images
@@ -41,7 +40,8 @@ frame. The `.blend` is what you open with a window to walk around the rig.
 
 One file per definition, `Manufacturer@Model@qlctool.gdtf`, schema-valid
 against GDTF 1.2 (`tests/gdtf.xsd`, checked with `xmllint` for every
-definition in the library by `tests/test_mvr_export.py`).
+definition in the library by `tests/test_mvr_export.py`, both in
+[spectalive/qlctool](https://github.com/spectalive/qlctool)).
 
 - **Geometry from `<Dimensions>` and the heads.** A static fixture is a box;
   a mover is base, yoke and head primitives (25/45/35 % of the height). One

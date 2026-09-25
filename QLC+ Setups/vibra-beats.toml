@@ -1,5 +1,5 @@
 # The Vibra show, described: every value the generator used to hard-code for it.
-# Regenerate:  cd tools/qlctool && .venv/bin/qlctool newshow --description "../../QLC+ Setups/vibra-beats.toml" --validate
+# Regenerate:  .venv/bin/qlctool newshow --description "QLC+ Setups/vibra-beats.toml" --validate
 # The same show with the chases on the music's beat: pick an audio input in QLC+'s Configuration, or nothing advances.
 # Format: docs/superpowers/specs/2026-09-24-show-description-design.md
 

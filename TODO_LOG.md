@@ -17,6 +17,43 @@
 
 ### 2026-09
 
+#### 2026-09-25 - Plan C: a second rig, and qlctool in its own repository
+
+- [x] 2026-09-25 - **Spec step 7: a second example rig.** Plan C Tasks 2-4:
+  the small club (`examples/small-club/` in the toolkit), a different patch -
+  three of Vibra's models in other numbers, addresses and groups, with no haze
+  machine and no controllers - described in English, generated, checked and
+  validated by a test, `club.qxw` held byte-identical (`08f1d95`, `9b85a0b`).
+- [x] 2026-09-25 - **Spec step 8: the toolkit extracted to
+  https://github.com/spectalive/qlctool, tag `v0.1.0` (`fac1072`).** Plan C
+  Tasks 5-6: `git filter-repo` with history, public repository, annotated tag,
+  no GitHub release (ruling Q7; open owner item in `TODO.md`). Task 7: this
+  repository installs the tag from `requirements.txt` into a root `.venv`,
+  keeps the show's own tests in `tests/` (`test_vibra_byte_identity.py`,
+  `test_shipped_deskmap.py`, `test_input_profile.py`,
+  `test_definition_schema.py`, `test_pad_palette.py` and their helpers), and
+  deleted the in-repo toolkit, its five docs (`toolkit.md`, `checks.md`,
+  `qxw-format.md`, `qlcplus-environment.md`, `qlc5-verification.md`) and its
+  CI workflow (red since 2026-09-22; it left with the directory). Evidence,
+  from the repository root against the installed `v0.1.0`, before and after
+  the deletion: `.venv/bin/python -m pytest -q` 30 passed;
+  `.venv/bin/python tests/vibra_compare.py --validate` three `identical, 0
+  finding(s), QLC+ loaded it`; `qlctool check` on the three workspaces `522
+  botones revisados, ningun problema` each; `qlctool install --check` exit 0.
+- [-] 2026-09-25 - **Reinstall qlctool in every other checkout after pulling
+  Plan A Task 7.** Superseded by "Reinstall on the show Mac and the Mac mini
+  (AGENTS.md, 2026-09-25)": the checkouts now install the tag instead of an
+  editable in-repo package.
+- Toolkit-only items left in `TODO.md`, marked "Moves to spectalive/qlctool"
+  in place rather than moved (ruling Q7: no push to the new repository
+  without the owner): spec step 3 (ruling B10), check messages through the
+  catalogue, the English root frame "Página 1", the tempo help promising
+  gobos and prism, the `[names]` override that breaks ruling B7, the
+  untested `function_references` paths, and the whole "Calidad del codigo"
+  section except the `tools/smc-pad`/`lightkey`/`daslight` scripts item (gate
+  back to green, ruff ratchet, `zip()` strict, mypy ratchet, structural
+  findings and split debt, the three data modules).
+
 #### 2026-09-25 - Plan B closed: final review and its fixes
 
 - [x] 2026-09-25 - **A `[names]` frame override silently dropped desk

@@ -179,7 +179,7 @@ manual no lo documenta:
 - Los knobs son CC 30-37 absolutos; los botones del borde CC 25-29.
 
 El mapa que usa el show vive en
-`tools/qlctool/qlctool/generate/smc_pad_device.py`, y de ahí salen tanto los
+`qlctool/generate/smc_pad_device.py` en https://github.com/spectalive/qlctool, y de ahí salen tanto los
 bindings como el perfil de entrada de QLC+. La configuración del propio aparato
 (notas, canal, colores por pad) se edita con **MidiSuite**, la aplicación del
 fabricante, no desde el panel.

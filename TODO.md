@@ -1,7 +1,9 @@
 # TODO — Vibra Eventos (DMX / lighting)
 
 > The backlog for this repo: the rig, the fixture definitions, the QLC+
-> workspaces and `tools/qlctool`. Last reviewed: 2026-09-22. History coverage:
+> workspaces and the show's tests. The toolkit, `qlctool`, is
+> https://github.com/spectalive/qlctool since 2026-09-25; items marked "Moves
+> to spectalive/qlctool" belong there. Last reviewed: 2026-09-22. History coverage:
 > Complete.
 >
 > States: `[ ]` pending · `[~]` partial or unverified · `[!]` blocked · `[x]`
@@ -134,8 +136,10 @@ queda en `Vibra-Lab/vibra-lighting`).
   aprobado: desenredar dentro de este repo (checks de escritorio/pad como
   plugins por entry points, rutas de la libreria sin suponer este repo - hecho
   2026-09-25, Plan B Task 3, ver `TODO_LOG.md`), con
-  los tres workspaces identicos. Luego `git filter-repo` a `spectalive/qlctool`
-  y el show depende de un tag.
+  los tres workspaces identicos. Hecho 2026-09-25 (spec steps 7 y 8, Plan C,
+  ver `TODO_LOG.md`): un segundo rig de ejemplo, `git filter-repo` a
+  https://github.com/spectalive/qlctool, tag `v0.1.0`, y este repo depende del
+  tag (`requirements.txt`).
   - [~] **Spec step 3, a show described in any shipped language: partial,
     waiting on the owner (ruling P19).** Since 2026-09-25 (Plan B Task 12a) an
     English Vibra builds, passes `check_workspace` with no finding and loads in
@@ -143,11 +147,11 @@ queda en `Vibra-Lab/vibra-lighting`).
     catalogue (see `TODO_LOG.md`). Open owner decision: accept ruling B10,
     under which `check` messages and `Finding.rule` names stay Spanish on an
     English show. Smallest next step: the owner accepts B10 or asks for the
-    item below first; then close this.
+    item below first; then close this. Moves to spectalive/qlctool.
   - [ ] **Check messages and `Finding.rule` names through the catalogue
     (ruling B10, spec "Multilingual").** An English show's findings still read
     in Spanish. Smallest next step: give `Finding` a `rule_id` and move the
-    messages into a `checks` catalogue section.
+    messages into a `checks` catalogue section. Moves to spectalive/qlctool.
   - [ ] **The English root console frame is captioned "Página 1" (final
     review of Plan B, 2026-09-25).** `strip_to_skeleton` keeps the root
     frame's caption from the input workspace, so an English Vibra's console
@@ -155,11 +159,11 @@ queda en `Vibra-Lab/vibra-lighting`).
     English workspace). The pseudo-locale scan does not see it because the
     word is in no catalogue. Smallest next step: caption the root frame from
     the catalogue in `strip_to_skeleton` (a new `console` identifier), then
-    re-baseline the three Vibra hashes with the owner's consent.
+    re-baseline the three Vibra hashes with the owner's consent. Moves to spectalive/qlctool.
   - [ ] **The tempo help promises gobos and prism on a rig with neither (Plan
     C Task 4, 2026-09-25).** The small club's page-3 tempo label reads
     "gobos, prism and dimmer follow your" (`tempo_2`, `TEMPO_LINES` in
-    `generate/live_console.py`; `grep 'gobos, prism' tools/qlctool/examples/small-club/club.qxw`),
+    `generate/live_console.py`; `grep 'gobos, prism' examples/small-club/club.qxw` in the toolkit),
     though its heads have no gobo or prism wheel and `newshow` builds 0 of
     either. Unlike page 3's title (`page_control_title`, same task) the tempo
     lines have no capability-driven variant. Smallest next step: a
@@ -173,7 +177,7 @@ queda en `Vibra-Lab/vibra-lighting`).
     no message naming the description. Smallest next step: a
     `reject_hit_button_heads` rule beside `reject_frame_head_renames` that
     refuses it while the description is read, with a refused and an accepted
-    test.
+    test. Moves to spectalive/qlctool.
   - [ ] **Most of `function_references`' paths have no test (Task 2a review,
     2026-09-25).** `rule_dangling_reference` is tested on a Collection step, a
     button's `<Function>` and, since Plan C Task 3, a slider's `<Adjust
@@ -182,11 +186,13 @@ queda en `Vibra-Lab/vibra-lighting`).
     SceneID`, or a Sequence's `BoundScene` would go unreported if its branch
     broke, and no shipped workspace carries any of them to notice. Smallest
     next step: one parametrised case per path in `tests/test_check.py` that
-    writes the element with an id nothing carries and asserts the rule bites.
-- [ ] **Toolkit de QLC+ + control por IA** (idea del dueño): `tools/qlctool`,
+    writes the element with an id nothing carries and asserts the rule bites. Moves to spectalive/qlctool.
+- [~] **Toolkit de QLC+ + control por IA** (idea del dueño): `qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
-  vivo. Se extrae con `git filter-repo` conservando historia.
+  vivo. Hecho 2026-09-25: `qlctool` y sus cinco docs, con historia, en
+  https://github.com/spectalive/qlctool (`v0.1.0`). Falta: `blenderdmx`,
+  `daslight`, `lightkey` y el servidor MCP.
 - [ ] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/`, y mandarlas tambien a
   la libreria de QLC+ y a Open Fixture Library.
 - [ ] **Pad**: `tools/smc-pad`, puente de LEDs para pads MIDI.
@@ -230,14 +236,24 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
 ## Development environment
 
-- [ ] **Reinstall qlctool in every other checkout after pulling Plan A Task 7**
-  (2026-09-24): the desk and pad checks now come from the `qlctool.rules`
-  entry points, and until the package metadata is rewritten `qlctool check`
-  and the suite fail with `RuntimeError` (by design, ruling R10). Done on this
-  checkout. Next: run `.venv/bin/pip install -e '.[dev]'` in `tools/qlctool`
-  on the MacBook checkout, on the show Mac (`vibra-oficina`), and in the
-  launcher's worktree on the Mac mini (`~/p/DMX-Fixtures-qlctool`) when it
-  advances to `main`.
+- [ ] **Reinstall on the show Mac and the Mac mini (AGENTS.md, 2026-09-25).**
+  The toolkit left this repository for https://github.com/spectalive/qlctool
+  (`v0.1.0`); every checkout now installs it from `requirements.txt` into a
+  repo-root `.venv`. Done on the Mac mini's `~/p/DMX-Fixtures` (the
+  extraction commit's own gates ran there). Next: the steps in AGENTS.md
+  "Reinstalling after the extraction" on the MacBook checkout and on the show
+  Mac (`vibra-oficina`, off the network on 2026-09-25); the Mac mini's
+  launcher worktree (`~/p/DMX-Fixtures-qlctool`, branch `qlctool`) does not
+  use the toolkit and is left to the owner.
+- [ ] **GitHub release for v0.1.0 (owner).** The tag `v0.1.0` of
+  spectalive/qlctool exists and installs; no GitHub release was created
+  (ruling Q7, Plan C). Smallest next step: the owner decides whether to
+  publish one (`gh release create v0.1.0` in spectalive/qlctool).
+- [ ] **`QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` still names the toolkit's old
+  in-repo path in its generated header comment (2026-09-25).** It is
+  byte-tested against `qlctool input-profile` of the pinned release, so it is
+  left as generated. Smallest next step: when a toolkit release changes the
+  header, bump the tag here and regenerate the profile.
 
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
 
@@ -635,12 +651,13 @@ que queda.
   canal `Focus` de las 7R, o sea que los diecisiete gobos se han proyectado
   siempre con el foco en un extremo de su recorrido — la mitad de por que "se
   echaba en falta mas variedad". Ahora todas las escenas de gobo escriben
-  `beam_focus = 127` (`tools/qlctool/qlctool/vibra/tuning.py`, y
+  `beam_focus = 127` (`qlctool/vibra/tuning.py` in spectalive/qlctool, y
   `[fixture_tuning] beam_focus` en los tres `QLC+ Setups/vibra*.toml`), que es
   el medio del recorrido y una primera pasada, no una medida. En sala: poner un
   gobo, subir/bajar ese canal a mano hasta que el dibujo este nitido a la
   distancia real, y dejar ese numero en los cuatro sitios: el test de igualdad
-  (`tests/test_load_show_description.py`) falla si solo se cambia una copia. Mientras tanto tambien hay
+  (`tests/test_load_show_description.py`, en spectalive/qlctool contra su copia
+  congelada del rig) falla si solo se cambia una copia. Mientras tanto tambien hay
   `Gobo Repartido 1-8` (cada cabeza un gobo distinto) y el prisma girando en
   tres velocidades: mirar si el reparto se lee bien o marea.
 
@@ -763,8 +780,8 @@ que queda.
   Shopping list and wiring table in the doc.
 - [ ] **Run `qlctool check` before every show file leaves this repo.** It reads
   what the room will do rather than whether QLC+ can load the file, and it found
-  four bugs on its first run. `cd tools/qlctool && .venv/bin/qlctool check
-  "../../QLC+ Setups/Vibra-split.qxw"`. New rule when something misbehaves: find
+  four bugs on its first run. `.venv/bin/qlctool check
+  "QLC+ Setups/Vibra-split.qxw"` from the repository root. New rule when something misbehaves: find
   the cause, add a rule, add a dated regression test, run it over all three
   workspaces — written down in the repo's `CLAUDE.md`.
 - [~] **Momento Locura ya no abre como pared blanca plana (2026-08-29 —
@@ -782,7 +799,7 @@ que queda.
 - [~] **Recuperado lo que el show viejo hacía y el generado perdió (auditoría
   2026-08-28, implementado 2026-08-29 — pendiente solo de verlo en el rig).**
   Informe completo en `docs/old-vs-new-audit-2026-08-28.md`; regresiones en
-  `tools/qlctool/tests/test_old_show_recovery.py` (10 tests fechados). Todo
+  `tests/test_old_show_recovery.py` de spectalive/qlctool (10 tests fechados). Todo
   el generador, regenerados los tres workspaces, `--validate` y `qlctool
   check` limpios, suite 288 pass. Lo recuperado:
   los 7 colores de paleta que nada emitía (van en matrices curadas nuevas:
@@ -984,8 +1001,9 @@ que queda.
   AUTO aguanta y si la disposicion funciona, y despues archivar los dos
   workspaces DeluxeEventos - hoy siguen en `QLC+ Setups/` y
   `DeluxeEventos2.qxw` es el material de prueba de `tests/test_play_generators.py`
-  y `tests/test_old_show_recovery.py`, asi que archivarlo es mover tambien esos
-  tests.
+  y `tests/test_old_show_recovery.py`; desde 2026-09-25 esos tests viven en
+  spectalive/qlctool y leen su copia congelada del rig, asi que archivarlo
+  aqui ya no los toca.
 - [ ] Put the two CLB2.4 grids in a fixture group. They are in none, so they get
   no colour bank and no matrix - only the rig-wide `Rueda Colores` scenes reach
   them (which is why AUTO no longer leaves them dark, 2026-08-25). `qlctool
@@ -1010,7 +1028,7 @@ que queda.
   web) corrected four things before any code; all three workspaces
   regenerated, validated in headless QLC+, `qlctool check` clean, 230 tests
   green. What changed:
-  - Six checker rules with dated regression tests (`docs/checks.md`):
+  - Six checker rules with dated regression tests (`docs/checks.md` in spectalive/qlctool):
     `estrobo demasiado rapido` (4 Hz cap; `Strobo Rapido` had shipped at
     10 Hz), `estrobo enganchado` (looping strobe behind a button; hits are
     SingleShot bursts now), `flash sin escena` (QLC+ only flashes Scenes),
@@ -1046,10 +1064,10 @@ que queda.
   haze running underneath so a level change never blacks the room out. The
   numbers are a first guess: if the quiet level feels dead or the peak feels
   rationed, they are `ambient_ms`, `party_ms` and `peak_ms` in
-  `tools/qlctool/qlctool/vibra/timing.py` and `[timing] levels` (`ambient_s`,
+  `qlctool/vibra/timing.py` in spectalive/qlctool and `[timing] levels` (`ambient_s`,
   `party_s`, `peak_s`) in the three `QLC+ Setups/vibra*.toml`. Change all four
-  together: the equality tests (`tests/test_load_show_description.py`) fail if
-  only one copy is edited.
+  together: the equality tests (`tests/test_load_show_description.py` in
+  spectalive/qlctool) fail if only one copy is edited.
 - [ ] Check the mirrored movement from the floor. House-right movers (CromoWash
   #2, beams 21 and 23) now run the EFX backwards so the pairs open and close
   together instead of the rig sweeping in parallel. If it reads wrong it is the
@@ -1143,7 +1161,7 @@ modifiers, passthrough, extra universes.
 
 ## Calidad del codigo (baseline adoptado 2026-09-01, codeality desde 2026-09-22)
 
-`tools/qlctool` corre el gate compartido. El 2026-09-22 se cambio
+Toda esta seccion se va a spectalive/qlctool (2026-09-25): el toolkit corre el gate compartido. El 2026-09-22 se cambio
 `busirocket-baseline-py` por su sucesor `syntopica-codeality-py` (el monorepo
 `~/p/codeality`): mismo esquema de configuracion, otros nombres de fichero
 (`baseline-py.toml` paso a `codeality-py.toml`, `.baseline-py-baseline.json` a
@@ -1168,19 +1186,19 @@ mueve cada lista:
       `tests/test_solo_handoff.py` PLC0207) y 8 ficheros sin formatear
       (`ruff format --check`). Los tres errores son de una linea cada uno. El
       `failed-to-run` de mypy, deptry, pip-audit y pytest era el PATH, no el
-      gate; ver la nota de arriba.
-- [ ] Reducir el ratchet de ruff en `tools/qlctool/ruff.toml`: 187 (142)
+      gate; ver la nota de arriba. Moves to spectalive/qlctool.
+- [ ] Reducir el ratchet de ruff en `ruff.toml` del toolkit: 187 (142)
       simbolos publicos sin docstring, 136 (104) generadores con mas
       parametros de la cuenta y 30 (26) valores magicos (numeros de canal DMX
-      y constantes de QLC+). Las tres listas han crecido.
+      y constantes de QLC+). Las tres listas han crecido. Moves to spectalive/qlctool.
 - [ ] Decidir uno por uno los 13 (24) `zip()` sin `strict=` (B905). No es
       cosmetico aqui: dos listas que dejan de cuadrar en silencio son
       exactamente el fallo que las reglas de `qlctool check` existen para
       cazar, asi que cada sitio necesita saber si un desajuste de longitud es
-      un bug o un recorte esperado.
-- [ ] Vaciar el ratchet de mypy en `tools/qlctool/mypy.ini`: 73 modulos con
+      un bug o un recorte esperado. Moves to spectalive/qlctool.
+- [ ] Vaciar el ratchet de mypy en `mypy.ini` del toolkit: 73 modulos con
       `ignore_errors` y 89 (266) errores casi todos por anotaciones que
-      faltan. `lxml-stubs` ya se instalo y quito 67 de golpe.
+      faltan. `lxml-stubs` ya se instalo y quito 67 de golpe. Moves to spectalive/qlctool.
 - [ ] Bajar los hallazgos estructurales: `codeality-py check` da 206 sobre 299
       ficheros, todos registrados (`baseline check`: `0 new, 206 known`), asi
       que el drift esta cerrado y cualquier hallazgo nuevo muerde. Diez
@@ -1197,12 +1215,12 @@ mueve cada lista:
       one-exported-unit-per-file rule, and the four largest grew 24-54% since
       the 2026-09-22 count (Plans A and B). Smallest next step:
       split them one file at a time, largest first (`canonical_show.py`),
-      each split its own commit with the three Vibra hashes unchanged.
+      each split its own commit with the three Vibra hashes unchanged. Moves to spectalive/qlctool.
 - [ ] Tres modulos de datos (`pastel_palette.py`, `pick_marks.py`,
       `simple_colors.py`) estan declarados `[roles] data` en
       `codeality-py.toml` en vez de silenciados: son tablas de constantes y no
       tienen unidad que exportar. Si aparece un cuarto, decirlo ahi, no
-      anotarlo como deuda.
+      anotarlo como deuda. Moves to spectalive/qlctool.
 - [ ] `tools/smc-pad/reference` tiene tres scripts de Python, `tools/lightkey`
       uno y `tools/daslight` dos (los decodificadores de bibliotecas de
       fixtures, 2026-09-02), fuera de todo esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si

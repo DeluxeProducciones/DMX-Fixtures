@@ -537,7 +537,7 @@ definition, which is the same class of fixture:
   exists on either machine. The images live in
   `QLC+ Setups/Gobos/BEAM-LIGHT-230W-7R/`; the definition now names them
   relatively (`BEAM-230W-7R/Gobo1.png`), which QLC+ resolves against its own
-  Gobos folder - see [qlcplus-environment.md](qlcplus-environment.md).
+  Gobos folder - see [qlcplus-environment.md](https://github.com/spectalive/qlctool/blob/v0.1.0/docs/qlcplus-environment.md).
 - **Presets that did not match their own labels**: prism rotation was
   `RotationIndexed` ("park at an angle") on a range labelled "forward slow to
   fast", the shutter's open and closed ranges carried no preset, and the gobo
