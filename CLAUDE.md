@@ -25,7 +25,9 @@ rule nobody had written down, so writing them down is the work:
 3. **Add a regression test to `tests/test_check.py`** in spectalive/qlctool
    that puts the bug back into a generated show and asserts the checker bites.
    Date it and say which night it came from.
-4. **Run it over every workspace this repo ships**, which the gate test does.
+4. **Run it over every workspace this repo ships**: the toolkit's gate test
+   covers its frozen rig copy, and `tests/vibra_compare.py` here runs every
+   rule over the three regenerated workspaces.
    A rule that is only true of one file is not a rule.
 5. Only then fix the generator, tag a toolkit release, bump the tag here in
    `requirements.txt`, and regenerate.

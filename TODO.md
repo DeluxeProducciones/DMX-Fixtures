@@ -3,7 +3,7 @@
 > The backlog for this repo: the rig, the fixture definitions, the QLC+
 > workspaces and the show's tests. The toolkit, `qlctool`, is
 > https://github.com/spectalive/qlctool since 2026-09-25; items marked "Moves
-> to spectalive/qlctool" belong there. Last reviewed: 2026-09-22. History coverage:
+> to spectalive/qlctool" belong there. Last reviewed: 2026-09-25. History coverage:
 > Complete.
 >
 > States: `[ ]` pending · `[~]` partial or unverified · `[!]` blocked · `[x]`
@@ -236,7 +236,15 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
 ## Development environment
 
-- [ ] **Reinstall on the show Mac and the Mac mini (AGENTS.md, 2026-09-25).**
+- [ ] **spectalive/qlctool CI is red on mypy (2026-09-25).** Its `Quality`
+  workflow runs `codeality-py gate`, and run 36122117743 fails at "Run the
+  quality gate" with 97 mypy errors in 31 files (deskmap.py, cmd_deskmap.py,
+  rule_pick_darkens.py, rule_instant_dimmer.py, ...): the same failure this
+  repository's workflow had since 2026-09-22, never fixed. Local gates
+  (pytest, ruff, byte identity, QLC+ load) are green. Moves to
+  spectalive/qlctool. Next: run `codeality-py gate` locally in the toolkit
+  checkout, annotate or register the debt in its baseline, and re-run CI.
+- [ ] **Reinstall on the MacBook and the show Mac (AGENTS.md, 2026-09-25).**
   The toolkit left this repository for https://github.com/spectalive/qlctool
   (`v0.1.0`); every checkout now installs it from `requirements.txt` into a
   repo-root `.venv`. Done on the Mac mini's `~/p/DMX-Fixtures` (the
@@ -655,9 +663,12 @@ que queda.
   `[fixture_tuning] beam_focus` en los tres `QLC+ Setups/vibra*.toml`), que es
   el medio del recorrido y una primera pasada, no una medida. En sala: poner un
   gobo, subir/bajar ese canal a mano hasta que el dibujo este nitido a la
-  distancia real, y dejar ese numero en los cuatro sitios: el test de igualdad
-  (`tests/test_load_show_description.py`, en spectalive/qlctool contra su copia
-  congelada del rig) falla si solo se cambia una copia. Mientras tanto tambien hay
+  distancia real, y dejar ese numero en los cuatro sitios, en este orden:
+  `tuning.py` y los `vibra*.toml` del rig congelado en spectalive/qlctool (su
+  test de igualdad `tests/test_load_show_description.py` falla si solo se
+  cambia una copia), release y tag, subir el tag en `requirements.txt`, los
+  tres `vibra*.toml` de aqui, y re-grabar `tests/vibra_baseline.json` con el
+  visto bueno del dueño. Mientras tanto tambien hay
   `Gobo Repartido 1-8` (cada cabeza un gobo distinto) y el prisma girando en
   tres velocidades: mirar si el reparto se lee bien o marea.
 
@@ -1066,8 +1077,11 @@ que queda.
   rationed, they are `ambient_ms`, `party_ms` and `peak_ms` in
   `qlctool/vibra/timing.py` in spectalive/qlctool and `[timing] levels` (`ambient_s`,
   `party_s`, `peak_s`) in the three `QLC+ Setups/vibra*.toml`. Change all four
-  together: the equality tests (`tests/test_load_show_description.py` in
-  spectalive/qlctool) fail if only one copy is edited.
+  in order: `timing.py` and the frozen rig's tomls in spectalive/qlctool (its
+  equality test `tests/test_load_show_description.py` fails if only one copy
+  is edited), release and tag, bump the tag in `requirements.txt`, the three
+  tomls here, and re-record `tests/vibra_baseline.json` with the owner's
+  consent.
 - [ ] Check the mirrored movement from the floor. House-right movers (CromoWash
   #2, beams 21 and 23) now run the EFX backwards so the pairs open and close
   together instead of the rig sweeping in parallel. If it reads wrong it is the

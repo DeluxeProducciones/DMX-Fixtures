@@ -46,7 +46,7 @@ From the repository root:
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python -m pytest -q                 # the show's tests against the pinned toolkit
-.venv/bin/python -m pytest -q -n 0            # serial, for a debugger; QLC+ launches always serialise
+.venv/bin/python -m pytest -q -n 0            # serial, for a debugger
 .venv/bin/qlctool check "QLC+ Setups/Vibra-split.qxw"
 ```
 
@@ -66,6 +66,7 @@ show work done.
 
 ```text
 Every checkout that had the in-repo toolkit and its venv:
+  git status --short && git stash    # FIRST: the show Mac saves workspaces in place; a reset erases them
   git fetch origin && git reset --hard origin/main   # not git pull: the history was rewritten on 2026-09-25
   (cd tools && rm -rf qlctool)    # only the ignored venv and caches are left there
   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
@@ -78,7 +79,7 @@ Changing the toolkit: work in spectalive/qlctool, tag a release, bump the tag
 in requirements.txt, reinstall, and run the show's tests here.
 ```
 
-Save anything local (`git status`, `git stash`) before the reset.
+After the reset, `git stash pop` (or copy the saved workspace back) and diff it.
 
 ## Regenerating the show (verified recipe)
 

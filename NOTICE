@@ -1,2 +1,8 @@
 vibra-lighting
 Copyright 2024-2026 Cristian Deluxe
+
+This product includes a fixture definition developed as part of Q Light
+Controller Plus (QLC+), https://github.com/mcallegari/qlcplus, licensed
+under the Apache License, Version 2.0: QLC+ Fixtures/Stairville-CLB2.4-CompactLED.qxf
+(modified: the lens angle) and QLC+ Fixtures/Stairville-CLB2.4-PAR-Strobe.qxf,
+which is split from it.

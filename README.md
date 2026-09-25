@@ -85,5 +85,8 @@ Open, so anyone can use it:
   reference; they stay under their owners' copyright and neither licence
   covers them.
 
-The toolkit, and the QLC+ files it vendors, carry their licences in their own
-repository, [spectalive/qlctool](https://github.com/spectalive/qlctool).
+Two fixture definitions are QLC+'s own, under QLC+'s Apache-2.0 (see
+[NOTICE](NOTICE)): `Stairville-CLB2.4-CompactLED.qxf` and the
+`Stairville-CLB2.4-PAR-Strobe.qxf` split from it. The toolkit, and the QLC+
+files it vendors, carry their licences in their own repository,
+[spectalive/qlctool](https://github.com/spectalive/qlctool).
