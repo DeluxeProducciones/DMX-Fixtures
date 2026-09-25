@@ -156,6 +156,16 @@ queda en `Vibra-Lab/vibra-lighting`).
     word is in no catalogue. Smallest next step: caption the root frame from
     the catalogue in `strip_to_skeleton` (a new `console` identifier), then
     re-baseline the three Vibra hashes with the owner's consent.
+  - [ ] **The tempo help promises gobos and prism on a rig with neither (Plan
+    C Task 4, 2026-09-25).** The small club's page-3 tempo label reads
+    "gobos, prism and dimmer follow your" (`tempo_2`, `TEMPO_LINES` in
+    `generate/live_console.py`; `grep 'gobos, prism' tools/qlctool/examples/small-club/club.qxw`),
+    though its heads have no gobo or prism wheel and `newshow` builds 0 of
+    either. Unlike page 3's title (`page_control_title`, same task) the tempo
+    lines have no capability-driven variant. Smallest next step: a
+    `tempo_2_no_wheels` identifier chosen when the show built no gobo or prism
+    scene, a dated assertion in `tests/test_small_rig.py`, then regenerate
+    `club.qxw` (Vibra's bytes do not move). Moves to spectalive/qlctool.
   - [ ] **An override that breaks ruling B7 crashes the build instead of being
     refused (final review of Plan B, 2026-09-25).** A `[names]` override such
     as `hit_button_flash = "BANG · Space"`, whose head no longer equals its
