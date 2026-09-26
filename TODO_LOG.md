@@ -19,6 +19,13 @@
 
 #### 2026-09-26 - qlctool v0.1.7 pinned
 
+- [x] 2026-09-26 - **The toolkit's items leave this backlog.** Two closed in
+  qlctool v0.1.6 (round D1): the B7 `[names]` override is refused while the
+  description is read (`reject_hit_button_heads`), and `rule_dangling_reference`
+  is tested on every path a function id can take. The code-quality section
+  (ruff, mypy and codeality ratchets, the file splits) moved to
+  spectalive/qlctool's `TODO.md` in round G (`90dbc17`), with that day's
+  numbers; `canonical_show.py` is already split (`d555b53`).
 - [x] 2026-09-26 - **`v0.1.7` released and pinned: `qlctool mcp`, and a
   `validate` that touches nothing but itself.** In spectalive/qlctool
   (`e555cfd..bc18a61`, 851 tests, tag CI 36246831408 green): the MCP server

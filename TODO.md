@@ -2,8 +2,8 @@
 
 > The backlog for this repo: the rig, the fixture definitions, the QLC+
 > workspaces and the show's tests. The toolkit, `qlctool`, is
-> https://github.com/spectalive/qlctool since 2026-09-25; items marked "Moves
-> to spectalive/qlctool" belong there. Last reviewed: 2026-09-25. History coverage:
+> https://github.com/spectalive/qlctool since 2026-09-25; its debt is in
+> that repository's `TODO.md`. Last reviewed: 2026-09-26. History coverage:
 > Complete.
 >
 > States: `[ ]` pending · `[~]` partial or unverified · `[!]` blocked · `[x]`
@@ -149,23 +149,6 @@ queda en `Vibra-Lab/vibra-lighting`).
   ver `TODO_LOG.md`): un segundo rig de ejemplo, `git filter-repo` a
   https://github.com/spectalive/qlctool, tag `v0.1.0`, y este repo depende del
   tag (`requirements.txt`).
-  - [ ] **An override that breaks ruling B7 crashes the build instead of being
-    refused (final review of Plan B, 2026-09-25).** A `[names]` override such
-    as `hit_button_flash = "BANG · Space"`, whose head no longer equals its
-    `hit_*` caption, makes the desk burst build fail deep in the generator with
-    no message naming the description. Smallest next step: a
-    `reject_hit_button_heads` rule beside `reject_frame_head_renames` that
-    refuses it while the description is read, with a refused and an accepted
-    test. Moves to spectalive/qlctool.
-  - [ ] **Most of `function_references`' paths have no test (Task 2a review,
-    2026-09-25).** `rule_dangling_reference` is tested on a Collection step, a
-    button's `<Function>` and, since Plan C Task 3, a slider's `<Adjust
-    Function>`; a dangling id in a clock `<Schedule Function>`, an XY pad
-    `<FuncID>`, a cue list `<Chaser>`, a Show's `ShowFunction` or `Track
-    SceneID`, or a Sequence's `BoundScene` would go unreported if its branch
-    broke, and no shipped workspace carries any of them to notice. Smallest
-    next step: one parametrised case per path in `tests/test_check.py` that
-    writes the element with an id nothing carries and asserts the rule bites. Moves to spectalive/qlctool.
 - [~] **Toolkit de QLC+ + control por IA** (idea del dueño): `qlctool`,
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
@@ -1164,67 +1147,9 @@ Sequence functions (no use case), OS2L (only if the DJ runs Virtual DJ),
 Simple Desk (no cue stacks in v5; keypad covered by `qlctool probe`), channel
 modifiers, passthrough, extra universes.
 
-## Calidad del codigo (baseline adoptado 2026-09-01, codeality desde 2026-09-22)
+## Calidad del codigo
 
-Toda esta seccion se va a spectalive/qlctool (2026-09-25): el toolkit corre el gate compartido. El 2026-09-22 se cambio
-`busirocket-baseline-py` por su sucesor `syntopica-codeality-py` (el monorepo
-`~/p/codeality`): mismo esquema de configuracion, otros nombres de fichero
-(`baseline-py.toml` paso a `codeality-py.toml`, `.baseline-py-baseline.json` a
-`.codeality-py-baseline.json`) y el mando es `codeality-py`. El registro se
-reescribio con la herramienta nueva: 206 hallazgos, `0 new, 206 known`. El
-gate completo corrio el 2026-09-22 tras la migracion: pytest `passed` en
-1864 s con la cobertura por encima del 85, `codeality-py baseline check`,
-deptry y pip-audit `passed`; ruff, `ruff format --check` y mypy siguen en
-`findings` con la deuda de los items de abajo.
-
-**El gate hay que lanzarlo con el venv en el PATH** (`PATH="$PWD/.venv/bin:$PATH"
-codeality-py gate`): llama a las herramientas por su nombre pelado, asi que sin
-eso mypy, deptry, pip-audit y pytest salen `failed-to-run` en 0,00 s aunque a
-mano funcionen. Eso es lo que se veia como "el gate no las lanza".
-
-Lo que queda es deuda anotada con fecha; los numeros son los del 2026-09-22 y
-entre parentesis va el de la adopcion del 2026-09-01, para ver hacia donde se
-mueve cada lista:
-
-- [ ] **Volver a poner el gate en verde.** Quedan 3 errores de ruff
-      (`desk_swatch.py` UP031, `dimmerless_intensity.py` I001,
-      `tests/test_solo_handoff.py` PLC0207) y 8 ficheros sin formatear
-      (`ruff format --check`). Los tres errores son de una linea cada uno. El
-      `failed-to-run` de mypy, deptry, pip-audit y pytest era el PATH, no el
-      gate; ver la nota de arriba. Moves to spectalive/qlctool.
-- [ ] Reducir el ratchet de ruff en `ruff.toml` del toolkit: 187 (142)
-      simbolos publicos sin docstring, 136 (104) generadores con mas
-      parametros de la cuenta y 30 (26) valores magicos (numeros de canal DMX
-      y constantes de QLC+). Las tres listas han crecido. Moves to spectalive/qlctool.
-- [ ] Decidir uno por uno los 13 (24) `zip()` sin `strict=` (B905). No es
-      cosmetico aqui: dos listas que dejan de cuadrar en silencio son
-      exactamente el fallo que las reglas de `qlctool check` existen para
-      cazar, asi que cada sitio necesita saber si un desajuste de longitud es
-      un bug o un recorte esperado. Moves to spectalive/qlctool.
-- [ ] Vaciar el ratchet de mypy en `mypy.ini` del toolkit: 73 modulos con
-      `ignore_errors` y 89 (266) errores casi todos por anotaciones que
-      faltan. `lxml-stubs` ya se instalo y quito 67 de golpe. Moves to spectalive/qlctool.
-- [ ] Bajar los hallazgos estructurales: `codeality-py check` da 206 sobre 299
-      ficheros, todos registrados (`baseline check`: `0 new, 206 known`), asi
-      que el drift esta cerrado y cualquier hallazgo nuevo muerde. Diez
-      ficheros pasan del limite de lineas (`wc -l`, 2026-09-25:
-      `canonical_show.py` 1460, `live_console.py` 1441, `cli.py` 945,
-      `play_page.py` 813, `movement_families.py` 725, `validate.py` 348,
-      `family_frames.py` 309, `unison_colors.py` 253, `rule_console.py` 240,
-      `deskmap.py` 216). La
-      masa del resto es BPY001: cada regla de `checks/` lleva sus ayudantes
-      privados en el mismo fichero, contra la regla de la casa de un solo
-      simbolo por fichero. Tras cada arreglo,
-      `codeality-py baseline update` reescribe el registro.
-      Split debt (final review of Plan B, 2026-09-25): these files break the
-      one-exported-unit-per-file rule, and the four largest grew 24-54% since
-      the 2026-09-22 count (Plans A and B). Smallest next step:
-      split them one file at a time, largest first (`canonical_show.py`),
-      each split its own commit with the three Vibra hashes unchanged. Moves to spectalive/qlctool.
-- [ ] Tres modulos de datos (`pastel_palette.py`, `pick_marks.py`,
-      `simple_colors.py`) estan declarados `[roles] data` en
-      `codeality-py.toml` en vez de silenciados: son tablas de constantes y no
-      tienen unidad que exportar. Si aparece un cuarto, decirlo ahi, no
-      anotarlo como deuda. Moves to spectalive/qlctool.
-- Los tres scripts de Python de `tools/smc-pad/reference` se fueron con el
-  pad a spectalive/smc-pad el 2026-09-26; el item sigue en su `TODO.md`.
+La deuda de calidad del toolkit vive en el `TODO.md` de spectalive/qlctool
+desde el 2026-09-26 (ronda G): ratchets de ruff y mypy, baseline estructural
+de codeality y el siguiente fichero a partir (`live_console.py`). Este repo ya
+no tiene codigo de toolkit propio.
