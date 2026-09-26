@@ -17,6 +17,22 @@
 
 ### 2026-09
 
+#### 2026-09-26 - qlctool v0.1.8 pinned (round G)
+
+- [x] 2026-09-26 - **`v0.1.8` released and pinned: the toolkit's debt round.**
+  In spectalive/qlctool (`bc18a61..` the release commit, tag CI 36253045914
+  green): `newshow` builds pars-, washes-, beams-, panels-, bars- and
+  smoke-only rigs as long as one group has two or more fixtures, and
+  `tests/test_every_single_model_rig.py` (21 models and modes x 1, 2, 4
+  fixtures) holds that every rig it accepts passes `check`; `check` is faster
+  (Vibra-split 1.2 s -> 0.75-1.0 s, 2471 findings identical); `validate`'s
+  reads are bounded; `canonical_show.py` split; every `zip()` strict. Three
+  reviews (the first two CHANGES_REQUIRED: rigs newshow accepted and check
+  refused). Here the pad profile is regenerated: no channel-aftertouch 37376
+  and CC 28 `Stop (PARAR TODO)`, installed on the mini (`install --check` 30
+  files). 33 passed; `vibra_compare --validate` and `--descriptions
+  --validate` identical x3 and loaded; `check` 522 buttons x3, no problems.
+
 #### 2026-09-26 - qlctool v0.1.7 pinned
 
 - [x] 2026-09-26 - **The toolkit's items leave this backlog.** Two closed in
