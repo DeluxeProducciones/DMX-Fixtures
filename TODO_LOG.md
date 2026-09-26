@@ -215,6 +215,30 @@
   during, back to `0,0,255,0,0,0,0` when it ends and when stopped early.
   The earlier note that `Flash 100%` has the same exposure was wrong for the
   same reason.
+- [x] 2026-09-26 - **The Mac mini runs the show of `main`.** Owner: "de
+  momento que funcione todo en este ordenador". The launcher (`~/Applications/
+  QLC+ Vibra.app` -> `tools/qlc-launcher/launch.py`) loads the worktree
+  `~/p/DMX-Fixtures-qlctool` (branch `qlctool`), which sat at `80261d0`;
+  fast-forwarded to `main` (`5420ae2`, the v0.1.5 show, `Vibra.qxw` sha256
+  `12a75704...`). Undo: `git -C ~/p/DMX-Fixtures-qlctool reset --hard
+  80261d0`. Verified with `launch.py --test-no-output`: QLC+ 5.2.2 started,
+  HTTP check passed on port 9998, stopped itself. The tablet's baked-in map
+  no longer matches until firmware v90 (open in `TODO.md`).
+- [-] 2026-09-26 - **`Manual/` PDFs stay.** Owner: most are manufacturers
+  with new product lines who do not mind a manual circulating.
+- [x] 2026-09-26 - **`Colores/Colors.psd` (62 MB) replaced by a 50-line
+  generator.** Owner: "lo de los colores mira a ver si se puede hacer de otra
+  manera, por entonces yo lo hice asi". The PSD held 49 artboards, each a
+  500x500 tile split on the diagonal into two flat colours, plus a drawn
+  rainbow; its exports in `QLC+ Setups/Colores/` are the button backgrounds of
+  the old `DeluxeEventos*.qxw` (Vibra uses none). Now `tools/colour-tiles/
+  tiles.toml` holds the 50 pairs (colours read from the PSD's fills; plus
+  `Rosa-Cyan`, a separate export) and `write_tiles.py` writes the PNGs with
+  the standard library only; `Arcoiris.png` stays as drawn.
+  `tests/test_colour_tiles.py` pins regeneration byte for byte. Against the
+  Photoshop exports the worst channel difference is 17/255, on the
+  anti-aliased diagonal only; the folder went from 632 KB to 308 KB. The PSD
+  is out of the tree but still in history (open in `TODO.md`).
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 

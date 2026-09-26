@@ -51,20 +51,14 @@ vive en `~/p/brand-finder/TODO.md`.
 
 ### A. El show vivo (primero: el mini y la tablet siguen con el show viejo)
 
-- [ ] **Poner el show de `main` en el mini y en la tablet a la vez.** La app
-  `~/Applications/QLC+ Vibra.app` carga `~/p/DMX-Fixtures-qlctool/QLC+
-  Setups/Vibra.qxw`, worktree en la rama `qlctool` parado en `80261d0`, sin
-  `29ddaf3` (colores armonicos, blanco fuera de las ruedas): `qlctool check`
-  da exit=1 en ese fichero con `blanco en la rueda`, `mas de dos colores en un
-  estado` y `complementarios en un mismo lavado`; el de `main` da exit=0. Pero
-  la tablet lleva el mapa dentro del firmware v89
-  (`/usr/share/dmxdesk/vibra.desk.json`, copiado de `taq102/show/vibra.desk.json`
-  al construir) y con el show nuevo 36 de 144 widget ids y 141 function ids
-  cambian (`rig-blanco` pasa a `multicolor`). Siguiente: copiar
-  `QLC+ Setups/Vibra.desk.json` a `~/p/taq102/show/`, reconstruir y flashear
-  v90, y en el mismo momento avanzar `qlctool` a `main`
-  (`git -C ~/p/DMX-Fixtures-qlctool merge --ff-only main`; vuelta atras:
-  `reset --hard 80261d0`). Verificar tocando AUTO en la tablet.
+- [ ] **La tablet con el show de `main` (firmware v90).** El mini ya
+  carga el show de `main` desde el 2026-09-26 (ver `TODO_LOG.md`), por orden
+  del dueño: "de momento que funcione todo en este ordenador". La tablet lleva
+  el mapa v89 dentro del firmware (`/usr/share/dmxdesk/vibra.desk.json`) y
+  con el show nuevo 36 de 144 widget ids y 141 function ids cambian, asi que
+  hasta la v90 sus botones no casan. Siguiente, cuando el dueño lo pida:
+  copiar `QLC+ Setups/Vibra.desk.json` a `~/p/taq102/show/`, reconstruir y
+  flashear v90, y verificar tocando AUTO en la tablet.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.
@@ -87,12 +81,13 @@ vive en `~/p/brand-finder/TODO.md`.
 
 El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 
-- [ ] **`Manual/` (42 MB) son PDFs de fabricantes con copyright**; abrir lo
-  nuestro no nos da derecho a redistribuir lo suyo. Siguiente: sustituir cada
-  PDF por su enlace (fabricante o Wayback) en un indice, y decidir si se purga
-  del historial.
-- [ ] **`Colores/Colors.psd` pesa 62 MB en git.** Siguiente: pasarlo a Git LFS
-  o a un release, al separar repos.
+- [ ] **`Colores/Colors.psd` sigue en el historial de git (62 MB).** Desde
+  el 2026-09-26 ya no esta en el arbol: lo sustituyen `tools/colour-tiles/`
+  y `tests/test_colour_tiles.py` (ver `TODO_LOG.md`), pero cada clon sigue
+  bajando el blob. Siguiente, solo si el dueño lo quiere: purgarlo con
+  `git filter-repo --path Colores/Colors.psd --invert-paths` en la misma
+  ventana en que el Mac del show se resetee por la reescritura del
+  2026-09-25, para que los clones solo se rompan una vez.
 
 ### C. Orgs y nombre
 
