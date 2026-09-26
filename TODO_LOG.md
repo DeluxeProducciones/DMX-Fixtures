@@ -278,7 +278,26 @@
   here; `README.md` carries the install command for this rig, `AGENTS.md` and
   `TODO.md` point at the new repo, whose `TODO.md` keeps mDNS/QR. Gates: 31
   passed, `vibra_compare.py --validate` identical with 0 findings for all
-  three, `qlctool check` 522 buttons clean.
+  three, `qlctool check` 522 buttons clean. The old app was then moved out of
+  the scratchpad to `~/Library/Application Support/QLC+ Vibra/old-launcher`
+  so the undo survives a reboot. The round's review approved it; its three
+  minor findings are in qlc-launcher's `TODO.md` (`a0d5b59`).
+- [x] 2026-09-26 - **`dmxdesk` in its own repository; `taq102` builds it from
+  there.** Plan ruling D-R5. `git filter-repo` with history (93 commits) ->
+  https://github.com/spectalive/dmxdesk (`9a1b80f`, tag `v0.1.0`, GPL-2.0 as
+  taq102; no AI tool and no secret in the history, checked), cloned to
+  `~/p/dmxdesk`. spectalive/taq102 `47b8d10`: the Buildroot package downloads
+  the `v0.1.0` release against a hash file, `tools/get-dmxdesk.sh` checks out
+  the same tag for the desk scripts, and the 32 sources the desk shares with
+  the appliance's programs stay in `src/` as copies listed in
+  `src/dmxdesk-shared.txt`. Tests: dmxdesk 39/39 on macOS from a fresh clone;
+  taq102 host 19/19 and boot 9/9; the package built in the VM up to the build
+  step; the desk binary from `tools/build-dmxdesk.sh` has a code section
+  identical to v89's; the nine other programs still cross-compile. Nothing
+  was flashed. The desk map now lives in dmxdesk's `show/`, so the tablet's v90
+  item in `TODO.md` goes through a dmxdesk tag. Open: six dmxdesk tests fail
+  on Linux (test-side leaks, `-Werror` warnings, one timing assert), in its
+  `TODO.md`; the `core/` and `platform/` split stays in `TODO.md` here.
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 

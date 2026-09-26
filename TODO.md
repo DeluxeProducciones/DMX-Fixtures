@@ -57,7 +57,10 @@ vive en `~/p/brand-finder/TODO.md`.
   el mapa v89 dentro del firmware (`/usr/share/dmxdesk/vibra.desk.json`) y
   con el show nuevo 36 de 144 widget ids y 141 function ids cambian, asi que
   hasta la v90 sus botones no casan. Siguiente, cuando el dueño lo pida:
-  copiar `QLC+ Setups/Vibra.desk.json` a `~/p/taq102/show/`, reconstruir y
+  copiar `QLC+ Setups/Vibra.desk.json` a `show/` de spectalive/dmxdesk
+  (`~/p/dmxdesk`, desde el 2026-09-26 el mapa vive alli), etiquetar una
+  version nueva de dmxdesk, subir esa version en el paquete de `~/p/taq102`
+  (`br2-external/package/dmxdesk/` y `tools/get-dmxdesk.sh`), reconstruir y
   flashear v90, y verificar tocando AUTO en la tablet.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
@@ -187,10 +190,13 @@ virtual de QLC+, y la tablet muestra lo que QLC+ muestre, con todos los
 widgets, para portarla despues a otros dispositivos. Decidido: QLC+ parcheado
 desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
-- [ ] **Sacar `dmxdesk` de `taq102/src` a su propio repo**, con historia:
-  `core/` (sesion, `/vc.json`, layout, pintado, fuentes, busqueda del master) y
-  `platform/linux-fb/` (DRM, tactil, power, Wi-Fi, brillo). `taq102` lo
-  empaqueta fijado a una version.
+- [~] **Separar `dmxdesk` en `core/` y `platform/linux-fb/`.** Ya vive en
+  spectalive/dmxdesk con su historia (v0.1.0, 2026-09-26; `taq102` lo
+  empaqueta fijado a esa version, ver `TODO_LOG.md`), pero sigue plano en
+  `src/`. Falta partirlo: `core/` (sesion, `/vc.json`, layout, pintado,
+  fuentes, busqueda del master) y `platform/linux-fb/` (DRM, tactil, power,
+  Wi-Fi, brillo). Siguiente: hacerlo en dmxdesk cuando empiece el
+  multi-backend.
 - [ ] **Multi-backend**: modelo de superficie propio y un adaptador por
   programa; QLC+ primero, luego libres y de pago (Onyx, MagicQ, Lightkey,
   Daslight...) por API, OSC o MIDI.
