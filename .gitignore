@@ -9,6 +9,10 @@ __pycache__/
 *.autosave.qxw
 .coverage
 
+# `qlctool validate` loads an I/O-free copy written beside the workspace and
+# deletes it afterwards; an interrupted run can leave one behind.
+.*.qlctool-validate-*.qxw
+
 # CocoIndex Code (ccc)
 /.cocoindex_code/
 
