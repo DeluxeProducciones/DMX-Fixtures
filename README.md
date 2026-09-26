@@ -21,7 +21,6 @@ credentials - is deliberately not in it.
 | `docs/` | The findings: rig, operation, controller, viewer. Start at [docs/README.md](docs/README.md). The file format, checks and toolkit docs moved with the toolkit to [spectalive/qlctool](https://github.com/spectalive/qlctool). |
 | `tests/` | The show's tests: the pinned toolkit still generates the three workspaces byte for byte. |
 | `requirements.txt` | The toolkit, pinned to a `spectalive/qlctool` release. |
-| `tools/qlc-launcher/` | [The QLC+ Vibra Dock app](tools/qlc-launcher/README.md), which starts the show with verified tablet web access. |
 | `tools/smc-pad/` | The MIDI/BLE tools that mapped the controller and reverse-engineered its LED protocol. |
 | `TODO.md` | The backlog, including what is blocked on somebody standing at the rig. |
 
@@ -53,6 +52,20 @@ capture notes:
 QLC+ setup on a new machine: copy the `.qxi` into QLC+'s InputProfiles
 folder, then Inputs/Outputs -> universe 1 -> Input on `SMC-PAD-Master`,
 profile "M-VAVE SMC-PAD", MIDI channel **1-16**.
+
+## Opening the show from the Dock
+
+[spectalive/qlc-launcher](https://github.com/spectalive/qlc-launcher) (here
+until 2026-09-26) builds a Dock app that opens a workspace with QLC+'s web
+interface on, verifies it answered, and notifies the address the tablet
+uses. For this rig, from a clone next to this one:
+
+```bash
+python3 ../qlc-launcher/install.py \
+  --workspace "$PWD/QLC+ Setups/Vibra.qxw" \
+  --qlcplus "/Applications/QLC+ 5.2.2.app/Contents/MacOS/qlcplus-qml" \
+  --name "QLC+ Vibra"
+```
 
 ## Working on it
 

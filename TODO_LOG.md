@@ -258,6 +258,27 @@
   public, Apache-2.0 (as qlctool), a README that stands for any rig, tag
   `v0.1.0`; no commit message names an AI tool (checked). Deleted here, and
   `docs/README.md`, `docs/rig.md`, `.gitignore` and `TODO.md` link to them.
+- [x] 2026-09-26 - **The Dock launcher in its own repository, configured
+  per install; the Mac mini moved over.** Plan ruling D-R3; owner: "de
+  momento que funcione todo en este ordenador". `git filter-repo` with
+  history: `tools/qlc-launcher/` -> https://github.com/spectalive/qlc-launcher
+  (public, Apache-2.0, tag `v0.1.0`; no secret and no AI tool in the history,
+  checked). The workspace and the QLC+ binary now come from
+  `~/Library/Application Support/NAME/launcher.toml`, written by
+  `install.py --workspace --qlcplus --name`; the app bookmarks the launcher
+  checkout and the workspace's folder (a file bookmark cannot follow a `.qxw`
+  that git replaced once its folder has moved). Defaults keep the name, the
+  bundle id `com.busirocket.qlc-vibra` and the state folder. Launcher tests:
+  27 unit tests (7 new) and the bookmark check pass. On the mini the old
+  `QLC+ Vibra.app` and `Repository.bookmark` were kept in the round's
+  scratchpad, the app reinstalled from `~/p/qlc-launcher` for
+  `~/p/DMX-Fixtures-qlctool/QLC+ Setups/Vibra.qxw`, and
+  `launch.py --test-no-output` passed its HTTP check on 9998 and stopped its
+  own QLC+, only `None` patches in the log, no QLC+ before or after. Deleted
+  here; `README.md` carries the install command for this rig, `AGENTS.md` and
+  `TODO.md` point at the new repo, whose `TODO.md` keeps mDNS/QR. Gates: 31
+  passed, `vibra_compare.py --validate` identical with 0 findings for all
+  three, `qlctool check` 522 buttons clean.
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 

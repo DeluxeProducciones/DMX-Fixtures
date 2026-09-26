@@ -172,8 +172,10 @@ queda en `Vibra-Lab/vibra-lighting`).
 - [ ] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/`, y mandarlas tambien a
   la libreria de QLC+ y a Open Fixture Library.
 - [ ] **Pad**: `tools/smc-pad`, puente de LEDs para pads MIDI.
-- [ ] **Host**: `tools/qlc-launcher` generalizado (elegir show, anunciarse por
-  mDNS/QR para que los clientes lo encuentren).
+- **Host**: movido el 2026-09-26, con historia, a
+  https://github.com/spectalive/qlc-launcher (`v0.1.0`), con el show y QLC+ en
+  una config; lo que queda (mDNS/QR, elegir show al lanzar) esta en su
+  `TODO.md`.
 - [ ] **El show** se queda aqui: workspaces, la receta que genera este show
   (los generadores propios de Vibra) sobre el toolkit como dependencia, rig y
   operacion.
@@ -219,9 +221,11 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   passed, `install --check` 0). Next: the steps in AGENTS.md "Reinstalling
   after the extraction" on the show Mac (`vibra-oficina`, off the network on
   2026-09-25: no Bonjour, `192.168.1.56` silent). The Mac mini's launcher
-  worktree (`~/p/DMX-Fixtures-qlctool`, branch `qlctool`) does not use the
-  toolkit; its remote branch was deleted on 2026-09-25 (merged, `80261d0`),
-  the local branch stays until the launcher is pointed elsewhere.
+  (spectalive/qlc-launcher in `~/p/qlc-launcher` since 2026-09-26) opens the
+  workspace in the worktree `~/p/DMX-Fixtures-qlctool` (branch `qlctool`),
+  which does not use the toolkit; its remote branch was deleted on 2026-09-25
+  (merged, `80261d0`), the local branch stays until the launcher is pointed
+  at another checkout (`install.py --workspace`).
 - [ ] **`QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` still names the toolkit's old
   in-repo path in its generated header comment (2026-09-25).** It is
   byte-tested against `qlctool input-profile` of the pinned release, so it is

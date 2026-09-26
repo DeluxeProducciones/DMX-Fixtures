@@ -72,9 +72,9 @@ Every checkout that had the in-repo toolkit and its venv:
   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
   .venv/bin/qlctool install --check
 Machines: the MacBook, the show Mac (vibra-oficina), the Mac mini. The Mac
-mini's launcher opens the workspace in the DMX-Fixtures-qlctool worktree
-(branch qlctool) and does not use the toolkit; that worktree is left to the
-owner.
+mini's launcher (spectalive/qlc-launcher, ~/p/qlc-launcher) opens the
+workspace in the DMX-Fixtures-qlctool worktree (branch qlctool), which does
+not use the toolkit; that worktree is left to the owner.
 Changing the toolkit: work in spectalive/qlctool, tag a release, bump the tag
 in requirements.txt, reinstall, and run the show's tests here.
 ```
