@@ -282,6 +282,16 @@
   the scratchpad to `~/Library/Application Support/QLC+ Vibra/old-launcher`
   so the undo survives a reboot. The round's review approved it; its three
   minor findings are in qlc-launcher's `TODO.md` (`a0d5b59`).
+- [x] 2026-09-26 - **`Colors.psd` purged from all history.** Owner: "Si,
+  purgar ya". The 64.7 MB blob `6029d23c` sat under `Colors/` and then
+  `Colores/` from 2024-08-31 until it was replaced by
+  `tools/colour-tiles/` earlier today; a path filter missed the older path, so
+  it was stripped by blob id (`git filter-repo --strip-blobs-with-ids`). No
+  `.psd` object remains; 320 SHAs changed, the final tree is identical
+  (`58ff88fd`), main is `6f9f555`, the pack went from 45.1 to 42.8 MiB (the
+  PSD's flat layers compressed well). Mini, its show worktree and the MacBook
+  reset; backup and old->new map in `~/Backups/*-2026-09-26-psd*` (mini).
+  Every SHA quoted in this log before today's rewrites predates them.
 - [x] 2026-09-26 - **The panel photo's GPS removed from all history, here
   and in spectalive/smc-pad.** The review of the smc-pad split found GPS
   coordinates in `docs/smc-pad-panel.jpg`'s EXIF (public since `fd397da`);

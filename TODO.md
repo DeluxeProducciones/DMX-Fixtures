@@ -86,6 +86,14 @@ vive en `~/p/brand-finder/TODO.md`.
   `~/Backups/vibra-lighting-commit-map-2026-09-26-gps.txt` (mini). GitHub
   puede seguir sirviendo los commits viejos por SHA hasta que su cache los
   purgue; para borrarlos del todo hay que pedirselo a GitHub Support.
+  **Tercera reescritura, 2026-09-26** ("Si, purgar ya"): el blob de
+  `Colors.psd` (64,7 MB, `6029d23c`, bajo `Colors/` y `Colores/` desde
+  2024-08-31) quitado de todo el historial con `--strip-blobs-with-ids`; 320
+  SHA cambian, arbol final identico; `main` en `6f9f555`. Mini, worktree y
+  MacBook ya reseteados. Copia y mapa:
+  `~/Backups/vibra-lighting-pre-psd-purge-2026-09-26.bundle` y
+  `~/Backups/vibra-lighting-commit-map-2026-09-26-psd.txt`. El Mac del show
+  sigue necesitando un solo `fetch` + `reset --hard origin/main` para las tres.
 - [ ] **Stash antiguo en `main` del mini:** `stash@{0}: On main: Tower
   Auto-Stash: 2025-08-28 20:48:51`. Siguiente: mirar su diff y guardarlo o
   tirarlo.
@@ -94,13 +102,6 @@ vive en `~/p/brand-finder/TODO.md`.
 
 El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 
-- [ ] **`Colores/Colors.psd` sigue en el historial de git (62 MB).** Desde
-  el 2026-09-26 ya no esta en el arbol: lo sustituyen `tools/colour-tiles/`
-  y `tests/test_colour_tiles.py` (ver `TODO_LOG.md`), pero cada clon sigue
-  bajando el blob. Siguiente, solo si el dueño lo quiere: purgarlo con
-  `git filter-repo --path Colores/Colors.psd --invert-paths` en la misma
-  ventana en que el Mac del show se resetee por la reescritura del
-  2026-09-25, para que los clones solo se rompan una vez.
 
 ### C. Orgs y nombre
 
