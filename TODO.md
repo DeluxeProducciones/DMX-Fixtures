@@ -51,11 +51,6 @@ vive en `~/p/brand-finder/TODO.md`.
 
 ### A. El show vivo (primero: el mini y la tablet siguen con el show viejo)
 
-- [~] **La tablet con el show de `main` (firmware v90).** Flasheada el
-  2026-09-26 con dmxdesk v0.1.1 (mapa 4da61399..., show 12a75704...): arranca
-  en el escritorio, cuatro reinicios y glcube al quinto, y vuelve al escritorio
-  tras reiniciar (ver `TODO_LOG.md` de `~/p/taq102`). Falta: abrir QLC+ Vibra
-  en el mini y que el dueño toque AUTO en la tablet y diga que ve.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.

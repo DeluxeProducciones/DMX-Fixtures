@@ -17,6 +17,17 @@
 
 ### 2026-09
 
+- [x] 2026-09-26 - **La tablet con el show de `main` (firmware v90),
+  probada de punta a punta en el mini.** v90 lleva dmxdesk v0.1.1 (mapa
+  4da61399..., show 12a75704...). Con QLC+ Vibra abierto en el mini (web
+  9998, `Vibra.qxw` 12a75704...): la tablet enlaza (`148 of 144 controls
+  enabled`, TCP a .63:9998); los 144 controles activos del mapa existen en el
+  QLC+ vivo (620 widgets, 943 funciones, 0 problemas); un toque inyectado en
+  `/dev/input/event0` sobre AUTO (pantalla 71,120, raw 115,179 con la escala
+  0.615x0.670 del rango 1663x895) paso la funcion 807 `AUTO` de Stopped a
+  Running, y el universo 1 quedo con 203 de 512 canales encendidos y 163
+  cambiando en 2 s. Un primer toque con la escala vieja (2048x1536) cayo en
+  FLASH (910), un destello de 200 ms.
 #### 2026-09-26 - qlctool v0.1.8 pinned (round G)
 
 - [x] 2026-09-26 - **Toolkit de QLC+ + control por IA** (idea del dueño): `qlctool`,
