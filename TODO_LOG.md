@@ -282,6 +282,24 @@
   the scratchpad to `~/Library/Application Support/QLC+ Vibra/old-launcher`
   so the undo survives a reboot. The round's review approved it; its three
   minor findings are in qlc-launcher's `TODO.md` (`a0d5b59`).
+- [x] 2026-09-26 - **Fixture definitions sent upstream, and the MiN Wash's
+  own errors fixed here.** Owner: "Preparar y abrir los PRs". Opened as
+  CristianDeluxe (QLC+ from the existing fork, now `spectalive/qlcplus`):
+  mcallegari/qlcplus#2166 (CromoWash100 and CLB2.4 corrections), #2167
+  (Chauvet MiN Wash), #2168 (M-VAVE SMC-PAD input profile);
+  OpenLightingProject/open-fixture-library#6164 (MiN Wash), #6165
+  (CromoWash100). Each project's own fixture checks pass. Held back, with
+  reasons in the round's report: MAC WASH 1915Z, BEAM 230W 7R, Mini Led
+  Moving Head, Vortex PC-64, WX-60WPS, the generic fog, Audibax IOWA70
+  (upstream's is better), the CLB2.4 PAR Strobe split. Preparing them found
+  factual errors in our `Chauvet-MiN-Wash.qxf`, fixed here: "689 lumens" was
+  lux (now unknown, 0), the 4500 K colour temperature was invented (0),
+  height and depth were swapped, the vector speed claimed a slow-to-fast
+  direction the manual does not give, the two colour-change macros were
+  tagged as fixed green and blue, and pan carried a meaningless `ActsOn`
+  pointing at the reserved channel. Show unchanged: 33 passed, `vibra_compare.py
+  --validate` identical x3 with 0 findings, `check` 522 clean x3;
+  `qlctool install` copied it to the mini's QLC+.
 - [x] 2026-09-26 - **Every Vibra variant lights the pad like the shipped
   palette.** Only `Vibra.pads.json` ships, while the show Mac runs
   `Vibra-split.qxw`. `tests/test_pad_palette.py` now writes the palette of
