@@ -495,17 +495,16 @@ The hardware surface. Universe 0 carries its MIDI input patch, on the
 fixed MIDI channel QLC+ stops folding the channel into the input number and
 every pad addresses the wrong control.
 
-**Plugged into USB, the pad stops speaking Bluetooth.** Measured here
-([spectalive/smc-pad](https://github.com/spectalive/smc-pad)): with the USB cable in, the pad routes its MIDI
-over USB and the BLE side goes silent - so a workspace bound to `ble device`
-hears nothing at all, and no amount of resetting the pad changes that. It cost
-a whole show on 2026-08-29: "no pude usar el pad porque ni reseteándolo
-reconocía las teclas", with the cable and Bluetooth both on. Either **unplug
-USB** (which is also what the LED bridge wants - it holds the pad over BLE), or
-point universe 1's input at the USB port in Inputs/Outputs and save the file.
-`swift midiports.swift` (in spectalive/smc-pad) prints every port under the name QLC+
-uses for it, next to the name macOS shows, which is the only way to tell which
-line is which.
+**The USB cable may stay in.** The pad sends on every transport it has open
+at once: with USB connected and its three `SINCO` ports enumerated, presses
+still arrive over Bluetooth (measured on the device on 2026-08-29, see
+[spectalive/smc-pad](https://github.com/spectalive/smc-pad)). An earlier
+version of this page said the BLE side goes silent under USB; that was wrong.
+The show lost on 2026-08-29 - "no pude usar el pad porque ni reseteándolo
+reconocía las teclas" - was a port picked by its display name, below.
+`swift midiports.swift` (in spectalive/smc-pad) prints every port under the
+name QLC+ uses for it, next to the name macOS shows, which is the only way to
+tell which line is which.
 
 **Which port** is the machine's business, not the show's, and regenerating
 leaves it alone. QLC+ names a MIDI port by its CoreMIDI `Model` property, which

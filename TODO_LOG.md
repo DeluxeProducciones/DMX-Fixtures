@@ -282,6 +282,21 @@
   the scratchpad to `~/Library/Application Support/QLC+ Vibra/old-launcher`
   so the undo survives a reboot. The round's review approved it; its three
   minor findings are in qlc-launcher's `TODO.md` (`a0d5b59`).
+- [x] 2026-09-26 - **The panel photo's GPS removed from all history, here
+  and in spectalive/smc-pad.** The review of the smc-pad split found GPS
+  coordinates in `docs/smc-pad-panel.jpg`'s EXIF (public since `fd397da`);
+  owner: strip and rewrite both. The blob was replaced everywhere by the same
+  JPEG with every tag removed except orientation and the colour profile
+  (`exiftool -all= -tagsfromfile @ -Orientation -ICC_Profile`); a scan of
+  all 118 image blobs in this history found no other GPS. Here: 189 SHAs
+  after 2026-08-29 changed, the final tree is identical (`1940e20e`), main
+  now `3e9370f`; every SHA quoted in this log after that date is from before
+  the rewrite, and `~/Backups/vibra-lighting-commit-map-2026-09-26-gps.txt`
+  (mini) maps it. smc-pad: 22 commits rewritten, `v0.1.0` re-pointed. The
+  decompiled M-VAVE code in smc-pad stays, excluded from its licence by a
+  NOTICE (owner). The review's other finding here: `docs/show-operation.md`
+  still said the pad's Bluetooth goes silent under USB, which the device
+  disproved on 2026-08-29; corrected.
 - [x] 2026-09-26 - **qlctool `v0.1.6` pinned: the pad palette comes from
   the toolkit, and four toolkit debts closed.** spectalive/qlctool
   `629197f..0fdf82e` plus the release commit, reviewed twice (5 minor and 4
