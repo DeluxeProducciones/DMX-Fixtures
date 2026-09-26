@@ -282,6 +282,21 @@
   the scratchpad to `~/Library/Application Support/QLC+ Vibra/old-launcher`
   so the undo survives a reboot. The round's review approved it; its three
   minor findings are in qlc-launcher's `TODO.md` (`a0d5b59`).
+- [x] 2026-09-26 - **qlctool `v0.1.6` pinned: the pad palette comes from
+  the toolkit, and four toolkit debts closed.** spectalive/qlctool
+  `629197f..0fdf82e` plus the release commit, reviewed twice (5 minor and 4
+  nit findings: all fixed but one nit, parked in its `TODO.md`): `qlctool pad-palette`
+  writes the SMC-PAD LED palette as JSON (format 1, workspace sha256, idle =
+  active // 6); `check --description` renders `[names]` overrides; the desk
+  map refusal reads in the show's language; a `[names]` override that parts a
+  hit button from its hit is refused while the description is read, by the
+  desk's own test; every function-reference path has a dangling-id test.
+  Toolkit gate: 794 passed after one fix. Here: `requirements.txt` ->
+  `v0.1.6`; 31 passed, `vibra_compare.py --validate` and
+  `--descriptions --validate` identical with 0 findings for all three and
+  loaded by QLC+, `qlctool check` 522 buttons clean on each,
+  `qlctool install --check` complete; `pad-palette` on `Vibra.qxw` writes 32
+  pads, 22 lit. Workspaces and desk map unchanged, so nothing regenerated.
 - [x] 2026-09-26 - **`dmxdesk` in its own repository; `taq102` builds it from
   there.** Plan ruling D-R5. `git filter-repo` with history (93 commits) ->
   https://github.com/spectalive/dmxdesk (`9a1b80f`, tag `v0.1.0`, GPL-2.0 as
