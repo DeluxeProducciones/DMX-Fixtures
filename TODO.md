@@ -51,17 +51,11 @@ vive en `~/p/brand-finder/TODO.md`.
 
 ### A. El show vivo (primero: el mini y la tablet siguen con el show viejo)
 
-- [ ] **La tablet con el show de `main` (firmware v90).** El mini ya
-  carga el show de `main` desde el 2026-09-26 (ver `TODO_LOG.md`), por orden
-  del dueño: "de momento que funcione todo en este ordenador". La tablet lleva
-  el mapa v89 dentro del firmware (`/usr/share/dmxdesk/vibra.desk.json`) y
-  con el show nuevo 36 de 144 widget ids y 141 function ids cambian, asi que
-  hasta la v90 sus botones no casan. Siguiente, cuando el dueño lo pida:
-  copiar `QLC+ Setups/Vibra.desk.json` a `show/` de spectalive/dmxdesk
-  (`~/p/dmxdesk`, desde el 2026-09-26 el mapa vive alli), etiquetar una
-  version nueva de dmxdesk, subir esa version en el paquete de `~/p/taq102`
-  (`br2-external/package/dmxdesk/` y `tools/get-dmxdesk.sh`), reconstruir y
-  flashear v90, y verificar tocando AUTO en la tablet.
+- [~] **La tablet con el show de `main` (firmware v90).** Flasheada el
+  2026-09-26 con dmxdesk v0.1.1 (mapa 4da61399..., show 12a75704...): arranca
+  en el escritorio, cuatro reinicios y glcube al quinto, y vuelve al escritorio
+  tras reiniciar (ver `TODO_LOG.md` de `~/p/taq102`). Falta: abrir QLC+ Vibra
+  en el mini y que el dueño toque AUTO en la tablet y diga que ve.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.
