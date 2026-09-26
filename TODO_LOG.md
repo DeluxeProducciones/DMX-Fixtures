@@ -19,6 +19,16 @@
 
 #### 2026-09-26 - qlctool v0.1.8 pinned (round G)
 
+- [x] 2026-09-26 - **Toolkit de QLC+ + control por IA** (idea del dueño): `qlctool`,
+  `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
+  mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
+  vivo. Hecho 2026-09-25: `qlctool` y sus cinco docs, con historia, en
+  https://github.com/spectalive/qlctool (`v0.1.0`). Hecho 2026-09-26:
+  `blenderdmx` en https://github.com/spectalive/qlc-blenderdmx y `daslight` +
+  `lightkey` en https://github.com/spectalive/fixture-sources (`v0.1.0` los
+  dos, con historia). El servidor MCP, `qlctool mcp`, salio en `v0.1.7`
+  (2026-09-26, `docs/mcp.md` en spectalive/qlctool).
+  Cerrado con `qlctool mcp` en v0.1.7.
 - [x] 2026-09-26 - **`v0.1.8` released and pinned: the toolkit's debt round.**
   In spectalive/qlctool (`bc18a61..` the release commit, tag CI 36253045914
   green): `newshow` builds pars-, washes-, beams-, panels-, bars- and

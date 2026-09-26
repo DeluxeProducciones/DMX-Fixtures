@@ -149,19 +149,12 @@ queda en `Vibra-Lab/vibra-lighting`).
   ver `TODO_LOG.md`): un segundo rig de ejemplo, `git filter-repo` a
   https://github.com/spectalive/qlctool, tag `v0.1.0`, y este repo depende del
   tag (`requirements.txt`).
-- [~] **Toolkit de QLC+ + control por IA** (idea del dueño): `qlctool`,
-  `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
-  mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
-  vivo. Hecho 2026-09-25: `qlctool` y sus cinco docs, con historia, en
-  https://github.com/spectalive/qlctool (`v0.1.0`). Hecho 2026-09-26:
-  `blenderdmx` en https://github.com/spectalive/qlc-blenderdmx y `daslight` +
-  `lightkey` en https://github.com/spectalive/fixture-sources (`v0.1.0` los
-  dos, con historia). Falta: el servidor MCP (plan D, ronda 6).
 - [~] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/` se quedan aqui; las
-  verificadas estan en PRs abiertos el 2026-09-26 (qlcplus #2166-#2168, OFL
-  #6164-#6165, ver `TODO_LOG.md`). Siguiente: atender las revisiones; si el
+  verificadas estan en PRs abiertos el 2026-09-26 (qlcplus #2166-#2167, OFL
+  #6164-#6165, ver `TODO_LOG.md`); el perfil del SMC-PAD (#2168) lo fusiono
+  el mantenedor el mismo dia. Siguiente: atender las revisiones; si el
   mantenedor de QLC+ pide ficheros guardados con QLC+, abrir y guardar la MiN
-  Wash y el perfil del SMC-PAD en su editor. Las retenidas se mandan cuando
+  Wash en su editor. Las retenidas se mandan cuando
   se confirmen en sala.
 - **Pad**: movido el 2026-09-26, con historia, a
   https://github.com/spectalive/smc-pad (`v0.1.0`). El puente ya no lleva los colores de
