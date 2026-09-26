@@ -175,6 +175,25 @@
   Mac mini 30 passed, `vibra_compare --validate` identical x3 and QLC+ loaded,
   `check` 522 clean x3, `install --check` 0. Vibra's Spanish bytes and check
   output are unchanged.
+- [x] 2026-09-26 - **Flash Color lights the smoke columns white (owner's
+  decision, qlctool v0.1.5).** Owner: "Si, el flash enciende las maquinas de
+  humo en blanco". Measured before: `Flash 100%` and `Flash 50%` already
+  wrote the four `LED Spray Fog` (fixtures 29-32) white, and only `Flash
+  Color` skipped them, so the columns sat out the colour flash. In
+  spectalive/qlctool: a `check` rule sees the cause (`flash_lit_smoke`: a
+  held flash that raises light on the rig but leaves a lit smoke machine
+  unlit; the three pre-fix Vibra workspaces trip it once each), then
+  `7740c73` gives each lit smoke machine dimmer and RGB at 255 in `Flash
+  Color` and its desk-burst copy, no pump value, no strobe; `a6c6647` keeps
+  the tablet's FLASH COLOR tile without a white swatch (smoke machines are
+  not read for swatches). Reviewed, one fix round. `v0.1.5` = `4705aff`.
+  Here: `requirements.txt` pins `v0.1.5`; the three workspaces regenerated
+  from their descriptions (each gains the same eight `FixtureVal` lines),
+  `Vibra.desk.json` rebuilt (only its workspace hash moved) and
+  `tests/vibra_baseline.json` re-baselined to the toolkit's hashes, with the
+  owner's consent for this change only. Mac mini: 30 passed,
+  `vibra_compare --validate` and `--descriptions --validate` identical x3
+  with QLC+ loaded, `check` 522 clean x3, `install --check` 0.
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 
