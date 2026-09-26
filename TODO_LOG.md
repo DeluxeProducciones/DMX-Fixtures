@@ -17,6 +17,22 @@
 
 ### 2026-09
 
+#### 2026-09-26 - qlctool v0.1.7 pinned
+
+- [x] 2026-09-26 - **`v0.1.7` released and pinned: `qlctool mcp`, and a
+  `validate` that touches nothing but itself.** In spectalive/qlctool
+  (`e555cfd..bc18a61`, 851 tests, tag CI 36246831408 green): the MCP server
+  (`559cd3b`, `e555cfd`); `validate` loads an I/O-free copy (patches removed,
+  audio beat set to internal, network server off), starts QLC+ as its own
+  child and stops only that pid (`80f9289`); refuses when QLC+'s saved
+  settings carry default I/O patches, overridable with
+  `QLCTOOL_ALLOW_SAVED_IO=1`, and reads QLC+'s output unbuffered (`c21726f`).
+  Before, it loaded the real patch and SIGTERMed any QLC+ that appeared in its
+  window. Here: 33 passed; `vibra_compare --validate` and
+  `--descriptions --validate` identical x3 and loaded; `check` 522 buttons x3,
+  no problems; `install --check` 30 files. Reviews:
+  `.superpowers/sdd/review-round-d6.md` and two scoped re-reviews, approved.
+
 #### 2026-09-25 - Plan C: a second rig, and qlctool in its own repository
 
 - [x] 2026-09-25 - **`v0.1.3` released and pinned: a `check` rule for a
