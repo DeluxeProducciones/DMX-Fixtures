@@ -194,6 +194,27 @@
   owner's consent for this change only. Mac mini: 30 passed,
   `vibra_compare --validate` and `--descriptions --validate` identical x3
   with QLC+ loaded, `check` 522 clean x3, `install --check` 0.
+- [x] 2026-09-26 - **Releasing Flash Color does not leave the smoke columns
+  white: verified in a live QLC+ 5.2.2.** Owner: "intenta solucionar el
+  problema de flash", the open end of the v0.1.5 entry. Nothing to fix. In
+  the engine (`~/p/qlcplus`, `Scene::writeDMX` and `GenericFader::write`) a
+  released flash drops its fader, and `Universe::processFaders` resets every
+  Intensity channel each cycle (`zeroIntensityChannels`); the columns'
+  dimmer and RGB are Intensity presets, so they return to whatever is running
+  on the next tick. Their two LTP channels (Strobe, Colour Change) are written
+  0 by the flash, which is "no strobe" / "no change". Measured on a copy of
+  `Vibra.qxw` with its inputs and outputs stripped, in a second QLC+ 5.2.2
+  launched with `open -n -g -a "/Applications/QLC+ 5.2.2.app" --args -w --wp
+  9997 -o <copy>` (none was running; QLC+ 4.13.1 is Intel-only and does not
+  start here), driven over the websocket with `QLC+API|setFunctionStatus` and
+  `QLC+API|getChannelsValues|1|317|28` (reply: addr|value|type|flag per
+  channel), fixtures 29-32 read channels 0-6:
+  `Rig Rojo` running `0,0,255,0,0,0,0`; FLASH COLOR held (button 14)
+  `0,255,255,255,255,0,0`; released `0,0,255,0,0,0,0` at once and 1.5 s
+  later. The tablet burst (chaser 914, 8 s single shot over scene 913): white
+  during, back to `0,0,255,0,0,0,0` when it ends and when stopped early.
+  The earlier note that `Flash 100%` has the same exposure was wrong for the
+  same reason.
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 
