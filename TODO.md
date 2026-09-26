@@ -94,9 +94,6 @@ vive en `~/p/brand-finder/TODO.md`.
   `~/Backups/vibra-lighting-pre-psd-purge-2026-09-26.bundle` y
   `~/Backups/vibra-lighting-commit-map-2026-09-26-psd.txt`. El Mac del show
   sigue necesitando un solo `fetch` + `reset --hard origin/main` para las tres.
-- [ ] **Stash antiguo en `main` del mini:** `stash@{0}: On main: Tower
-  Auto-Stash: 2025-08-28 20:48:51`. Siguiente: mirar su diff y guardarlo o
-  tirarlo.
 
 ### B. Licencias y lo que se publica
 
@@ -190,11 +187,6 @@ queda en `Vibra-Lab/vibra-lighting`).
   Vibra: lee `QLC+ Setups/Vibra.pads.json`, que escribe `qlctool pad-palette`
   y fija `tests/test_pad_palette.py`. Lo que queda del puente (instalarlo y
   verificarlo con el pad delante) esta en su `TODO.md`.
-- [ ] **Solo se fija la paleta de `Vibra.qxw`, y el Mac del show corre
-  `Vibra-split.qxw`** (revision del 2026-09-26). Hoy las tres dan los mismos
-  32 pads (comprobado por el revisor), pero nada lo mantiene. Siguiente: que
-  `tests/test_pad_palette.py` compruebe que `pad-palette` de `Vibra-split` y
-  `Vibra-beats` da los mismos `pads` que el fichero enviado.
 - **Host**: movido el 2026-09-26, con historia, a
   https://github.com/spectalive/qlc-launcher (`v0.1.0`), con el show y QLC+ en
   una config; lo que queda (mDNS/QR, elegir show al lanzar) esta en su

@@ -37,3 +37,19 @@ def test_the_shipped_palette_is_rewritten_byte_for_byte_from_its_workspace(path,
         f"run `qlctool pad-palette --out '{path}' '{workspace_path}'`"
     )
     assert path.read_bytes() == rewritten.read_bytes()
+
+
+# Only Vibra.qxw's palette ships, but the show Mac runs Vibra-split.qxw and the
+# beats variant exists too: the pad must light the same way whichever of the
+# three is loaded (review of the smc-pad split, 2026-09-26). Widget ids differ
+# between the variants and the bridge never reads them: it paints by note.
+@pytest.mark.parametrize("variant", ["Vibra-split.qxw", "Vibra-beats.qxw"])
+def test_every_vibra_variant_lights_the_pad_like_the_shipped_palette(variant, tmp_path):
+    shipped = json.loads((SETUPS / "Vibra.pads.json").read_text(encoding="utf-8"))
+    rewritten = tmp_path / "variant.pads.json"
+    cmd_pad_palette(argparse.Namespace(workspace=str(SETUPS / variant), out=str(rewritten)))
+    fresh = json.loads(rewritten.read_text(encoding="utf-8"))
+    painted = ("note", "control", "lit", "active", "idle")
+    assert [{k: pad[k] for k in painted} for pad in fresh["pads"]] == [
+        {k: pad[k] for k in painted} for pad in shipped["pads"]
+    ]

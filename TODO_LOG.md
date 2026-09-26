@@ -282,6 +282,21 @@
   the scratchpad to `~/Library/Application Support/QLC+ Vibra/old-launcher`
   so the undo survives a reboot. The round's review approved it; its three
   minor findings are in qlc-launcher's `TODO.md` (`a0d5b59`).
+- [x] 2026-09-26 - **Every Vibra variant lights the pad like the shipped
+  palette.** Only `Vibra.pads.json` ships, while the show Mac runs
+  `Vibra-split.qxw`. `tests/test_pad_palette.py` now writes the palette of
+  `Vibra-split.qxw` and `Vibra-beats.qxw` and compares note, control, lit,
+  active and idle for all 32 pads with the shipped file; the widget ids differ
+  between variants (beats' `prism_animation` is widget 169, not 173) and the
+  bridge never reads them. 4 passed.
+- [x] 2026-09-26 - **The mini's 2025 stash, read and dropped.**
+  `stash@{0}: Tower Auto-Stash 2025-08-28` held a QLC+ autosave of
+  `DeluxeEventos.qxw` from a machine without the DMX dongle (its output patch
+  lost the device: `UID="None"`), attribute reorders, and executable bits on
+  the colour tiles regenerated earlier today. Nothing worth keeping, and
+  applying it would unpatch the output. Saved as
+  `~/Backups/vibra-lighting-stash-2025-08-28-tower-autostash.patch` (mini),
+  then dropped.
 - [x] 2026-09-26 - **`Colors.psd` purged from all history.** Owner: "Si,
   purgar ya". The 64.7 MB blob `6029d23c` sat under `Colors/` and then
   `Colores/` from 2024-08-31 until it was replaced by
