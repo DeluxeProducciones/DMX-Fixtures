@@ -21,7 +21,7 @@ credentials - is deliberately not in it.
 | `docs/` | The findings: rig, operation, controller, viewer. Start at [docs/README.md](docs/README.md). The file format, checks and toolkit docs moved with the toolkit to [spectalive/qlctool](https://github.com/spectalive/qlctool). |
 | `tests/` | The show's tests: the pinned toolkit still generates the three workspaces byte for byte. |
 | `requirements.txt` | The toolkit, pinned to a `spectalive/qlctool` release. |
-| `tools/smc-pad/` | The MIDI/BLE tools that mapped the controller and reverse-engineered its LED protocol. |
+| `QLC+ Setups/Vibra.pads.json` | The pad palette for the SMC-PAD LED bridge, written by `qlctool pad-palette` from `Vibra.qxw` and pinned byte for byte by `tests/test_pad_palette.py`. The bridge, and the MIDI/BLE tools that mapped the controller and reverse-engineered its LED protocol, live in [spectalive/smc-pad](https://github.com/spectalive/smc-pad). |
 | `TODO.md` | The backlog, including what is blocked on somebody standing at the rig. |
 
 ## The show, briefly

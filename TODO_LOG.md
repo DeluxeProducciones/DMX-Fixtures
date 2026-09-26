@@ -313,6 +313,30 @@
   item in `TODO.md` goes through a dmxdesk tag. Open: six dmxdesk tests fail
   on Linux (test-side leaks, `-Werror` warnings, one timing assert), in its
   `TODO.md`; the `core/` and `platform/` split stays in `TODO.md` here.
+- [x] 2026-09-26 - **The SMC-PAD LED bridge in its own repository, and its
+  palette comes from the show.** Plan ruling D-R2, round 2. `git filter-repo`
+  with history (20 commits): `tools/smc-pad/` (to the root),
+  `docs/smc-pad-led.md` and `docs/smc-pad-panel.jpg` ->
+  https://github.com/spectalive/smc-pad (public, Apache-2.0, tag `v0.1.0` at
+  `393cf3d`), cloned to `~/p/smc-pad`. `reference/` read before publishing:
+  captured device traffic, decompiled codec, protocol notes, no personal data;
+  no secret and no AI tool in the history (checked). The bridge (`c040406`)
+  no longer carries Vibra's arrays or `DIM`: it reads a format-1
+  `qlctool pad-palette` file (`--palette`, or `palette.json` in its bundle,
+  which `install-bridge.sh <palette.json>` copies there because a Finder
+  launch passes no arguments), refuses any other format, and keeps the flash
+  layout. `tests/test_print_palette.sh` compiles it and reads the Vibra
+  fixture as the old arrays painted it (32 notes, active and idle identical)
+  and checks five refusals. Here: `QLC+ Setups/Vibra.pads.json` written by
+  the pinned toolkit from `Vibra.qxw` (32 pads, 22 lit), and
+  `tests/test_pad_palette.py` is now its byte-for-byte pin (seen failing on
+  a one-byte edit). Deleted here; `README.md`, `docs/README.md`,
+  `docs/show-operation.md` (with this rig's install command), the SMC-PAD
+  manual transcription and `TODO.md` point at the new repo, whose `TODO.md`
+  holds the bridge-only items. Not installed anywhere: it needs the pad and a
+  human to accept the Bluetooth prompt. Gates: 31 passed,
+  `vibra_compare.py --validate` identical with 0 findings for all three and
+  loaded by QLC+, `qlctool check` 522 buttons clean, no QLC+ left running.
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 

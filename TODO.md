@@ -174,7 +174,11 @@ queda en `Vibra-Lab/vibra-lighting`).
   dos, con historia). Falta: el servidor MCP (plan D, ronda 6).
 - [ ] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/`, y mandarlas tambien a
   la libreria de QLC+ y a Open Fixture Library.
-- [ ] **Pad**: `tools/smc-pad`, puente de LEDs para pads MIDI.
+- **Pad**: movido el 2026-09-26, con historia, a
+  https://github.com/spectalive/smc-pad (`v0.1.0`). El puente ya no lleva los colores de
+  Vibra: lee `QLC+ Setups/Vibra.pads.json`, que escribe `qlctool pad-palette`
+  y fija `tests/test_pad_palette.py`. Lo que queda del puente (instalarlo y
+  verificarlo con el pad delante) esta en su `TODO.md`.
 - **Host**: movido el 2026-09-26, con historia, a
   https://github.com/spectalive/qlc-launcher (`v0.1.0`), con el show y QLC+ en
   una config; lo que queda (mDNS/QR, elegir show al lanzar) esta en su
@@ -651,13 +655,13 @@ que queda.
 - [ ] **El pad, la proxima vez: USB o Bluetooth, no los dos (2026-08-30).** La
   noche del 29 "no pude usar el pad porque ni reseteandolo reconocia las
   teclas", con el cable y el BT puestos a la vez. Causa, ya medida y escrita en
-  `tools/smc-pad/README.md`: **con USB conectado el pad manda su MIDI por USB y
+  el README de spectalive/smc-pad: **con USB conectado el pad manda su MIDI por USB y
   el lado BLE se queda mudo**, y el workspace escucha el puerto `ble device`.
   Resetear el pad no arregla eso. Comprobar en sala: quitar el USB (que es
   ademas lo que quiere el puente de LEDs, que sostiene el BLE), o dejar el USB
   y en Entradas/Salidas apuntar el universo 1 al puerto USB y **guardar el
   fichero** — `newshow` respeta el puerto que el fichero ya trae.
-  `swift tools/smc-pad/midiports.swift` lista los puertos con el nombre que usa
+  `swift midiports.swift` (spectalive/smc-pad) lista los puertos con el nombre que usa
   QLC+ (propiedad `Model`), que es lo unico que permite saber cual es cual.
 
 - [ ] **Afinar el tilt al que apuntan las lyres en sala (2026-08-29).**
@@ -702,26 +706,31 @@ que queda.
 
 - [~] **SMC-PAD LED feedback en QLC+ — funcionando, con pulido pendiente
   (2026-08-29).** Todo el protocolo resuelto y documentado en
-  `tools/smc-pad/` (README + decompile). El puente `qlc_led_bridge.swift`
+  https://github.com/spectalive/smc-pad (README + decompile; hasta el 2026-09-26 en
+  `tools/smc-pad/`). El puente `qlc_led_bridge.swift`
   mantiene la sesión GATT del pad, publica el puerto MIDI virtual
   "SMC-PAD LED Bridge" y pinta cada pad con su color de paleta
-  (`generate/smc_pad_colors.py`): atenuado en reposo, full al activarse el
+  (`QLC+ Setups/Vibra.pads.json`, de `qlctool pad-palette`): atenuado en reposo, full al activarse el
   botón en QLC+. Los botones de la consola llevan el mismo color. Verificado:
   QLC+ feedback -> pad enciende. **Se instala una vez con
-  `tools/smc-pad/install-bridge.sh`** y arranca solo en cada inicio de sesión
+  `~/p/smc-pad/install-bridge.sh ~/p/DMX-Fixtures-qlctool/"QLC+ Setups/Vibra.pads.json"`**
+  (hoy no esta instalado en el mini: pide el pad delante y aceptar el
+  permiso de Bluetooth; en el `TODO.md` de smc-pad) y arranca solo en cada inicio de sesión
   (agente de launchd, `.app` firmada, se resucita si se cae — verificado
   2026-08-29 matándolo). Cargar `Vibra.qxw` después del puente, no antes. En
   Entradas/Salidas el universo 1 debe tener Input "ble device" (omni "1-16") y
   el bridge como Output **y Feedback** (el `<Feedback>` es el truco: el ojo de
   QLC+ no lo crea solo; ya está en el .qxw). Pendiente:
-  1. Afinar la paleta y el brillo de reposo (`DIM` en el puente) en sala.
+  1. Afinar la paleta y el brillo de reposo en sala. Los dos los calcula
+     qlctool (`smc_pad_colors.py`, `idle` = `active // 6`): cambiar alli,
+     regenerar `Vibra.pads.json` y reinstalar el puente.
   2. **Probar la capa manual (banco 2) con el pad delante.** El remapeo de
      2026-08-29 la movió de SHIFT (que no manda MIDI) a `PAD BANK`, y el
      puente ya pinta las notas 52-67; falta pulsar `PAD BANK` en sala y
      confirmar que los ocho botones de la página 2 disparan y encienden.
-  3. Si se reinicia el puente hay que recargar el workspace: el puerto MIDI
-     virtual se recrea con identidad nueva y QLC+ solo lo resuelve al cargar.
-     Molesto si pasa en mitad de una noche; no hay arreglo desde nuestro lado.
+  3. Si se reinicia el puente hay que recargar el workspace (el puerto MIDI
+     virtual se recrea con identidad nueva). Movido al `TODO.md` de
+     spectalive/smc-pad el 2026-09-26.
 - [~] **SHIFT reconfigura el pad, y lo descubrimos pulsándolo a ciegas
   (2026-08-29).** El pad dejó de disparar nada a media tarde: PAD1 pasó de
   ch10 nota 36 a ch10 nota 35, PAD13 de ch10 nota 48 a ch1 nota 47, knobs y
@@ -1211,7 +1220,5 @@ mueve cada lista:
       `codeality-py.toml` en vez de silenciados: son tablas de constantes y no
       tienen unidad que exportar. Si aparece un cuarto, decirlo ahi, no
       anotarlo como deuda. Moves to spectalive/qlctool.
-- [ ] `tools/smc-pad/reference` tiene tres scripts de Python fuera de todo
-      gate (no hay `pyproject.toml` ahi). Los de `lightkey` y `daslight` se
-      fueron a spectalive/fixture-sources el 2026-09-26. Se decide al sacar
-      el pad a su repo (plan D, ronda 2).
+- Los tres scripts de Python de `tools/smc-pad/reference` se fueron con el
+  pad a spectalive/smc-pad el 2026-09-26; el item sigue en su `TODO.md`.

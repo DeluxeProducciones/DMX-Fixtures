@@ -496,14 +496,14 @@ fixed MIDI channel QLC+ stops folding the channel into the input number and
 every pad addresses the wrong control.
 
 **Plugged into USB, the pad stops speaking Bluetooth.** Measured here
-(`tools/smc-pad/README.md`): with the USB cable in, the pad routes its MIDI
+([spectalive/smc-pad](https://github.com/spectalive/smc-pad)): with the USB cable in, the pad routes its MIDI
 over USB and the BLE side goes silent - so a workspace bound to `ble device`
 hears nothing at all, and no amount of resetting the pad changes that. It cost
 a whole show on 2026-08-29: "no pude usar el pad porque ni reseteándolo
 reconocía las teclas", with the cable and Bluetooth both on. Either **unplug
 USB** (which is also what the LED bridge wants - it holds the pad over BLE), or
 point universe 1's input at the USB port in Inputs/Outputs and save the file.
-`swift tools/smc-pad/midiports.swift` prints every port under the name QLC+
+`swift midiports.swift` (in spectalive/smc-pad) prints every port under the name QLC+
 uses for it, next to the name macOS shows, which is the only way to tell which
 line is which.
 
@@ -535,7 +535,7 @@ room's states on the bottom two. The owner has also written it on the pads
 themselves in marker (`Blan`, `Negro`, `Char`, `A`, `Fiest`, `Loc`, `Tran`,
 `HV`, `H`, `ST`, `ST/SO`, `F`, `F/SO`, `F/C`, `C.B.A`), so the surface reads
 correctly even with the LEDs dark. A photo of the panel is at
-[`smc-pad-panel.jpg`](smc-pad-panel.jpg), and it is also where to check what
+[`smc-pad-panel.jpg`](https://github.com/spectalive/smc-pad/blob/main/docs/smc-pad-panel.jpg), and it is also where to check what
 `SHIFT` does, because the device prints that above every pad too. Changing this
 table means changing what is written on the hardware.
 
@@ -570,11 +570,19 @@ cannot send, but nothing in the file can see which bank the hardware is on.
 
 The pad's LEDs are lit by a small daemon, over Bluetooth, in the same colours as
 the console buttons - dim while idle, full-bright while the function runs. It is
-separate from QLC+ because the LEDs are not MIDI at all; `docs/smc-pad-led.md`
-is the whole story. On a machine that runs the show it is installed once with
-`tools/smc-pad/install-bridge.sh` and starts at login, ahead of QLC+, which is
-the order it needs: the daemon publishes a MIDI port and QLC+ binds to it when
-the workspace loads.
+separate from QLC+ because the LEDs are not MIDI at all; it lives in
+[spectalive/smc-pad](https://github.com/spectalive/smc-pad), whose
+`docs/smc-pad-led.md` is the whole story. Its colours are this show's
+`QLC+ Setups/Vibra.pads.json`, which `qlctool pad-palette` writes from
+`Vibra.qxw` and `tests/test_pad_palette.py` pins. On a machine that runs the
+show it is installed once, and again whenever that file changes:
+
+```sh
+~/p/smc-pad/install-bridge.sh ~/p/DMX-Fixtures-qlctool/"QLC+ Setups/Vibra.pads.json"
+```
+
+It starts at login, ahead of QLC+, which is the order it needs: the daemon
+publishes a MIDI port and QLC+ binds to it when the workspace loads.
 
 Two consequences worth knowing at a venue. If the daemon is restarted, the pads
 stop updating until the workspace is reloaded - the show itself is unaffected,

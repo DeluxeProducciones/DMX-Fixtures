@@ -100,7 +100,7 @@ guardado en el pad, y el cambio sobrevive al apagado.
 
 Y no hace falta el manual para saberlo: **está serigrafiado encima de cada
 pad**. La foto del panel real está en
-[`../docs/smc-pad-panel.jpg`](../docs/smc-pad-panel.jpg) y se lee
+[`smc-pad-panel.jpg`](https://github.com/spectalive/smc-pad/blob/main/docs/smc-pad-panel.jpg) (en spectalive/smc-pad) y se lee
 `PAD13 TRANSPOSE −`, `PAD14 TRANSPOSE +`, `PAD15 OCTAVE −`,
 `PAD16 OCTAVE +`, `PAD9-12 VELOCITY 1-4`, `PAD1-8 PRESETS 1-8`. El día que se
 descolocó el pad, la explicación estaba impresa en el aparato que teníamos
@@ -165,7 +165,7 @@ for a MIDI keyboard in your MIDI device and connect it."
 
 ## Lo que el manual no dice y este show sí necesita
 
-Medido sobre el aparato el 2026-08-29 (`tools/smc-pad/midicap.swift`), porque el
+Medido sobre el aparato el 2026-08-29 (`midicap.swift`, hoy en [spectalive/smc-pad](https://github.com/spectalive/smc-pad)), porque el
 manual no lo documenta:
 
 - Los pads mandan en **canal MIDI 10**; los knobs y los cinco botones del borde
