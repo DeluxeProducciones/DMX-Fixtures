@@ -105,8 +105,12 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   GitHub `spectalive` (https://github.com/spectalive, `CristianDeluxe`
   admin) y org npm `@spectalive`. Bluesky `@spectalive.com` creado 2026-09-25 (DID
   `did:plc:kgphqczajrhzs7mpetwuf76v`, TXT `_atproto` en Cloudflare, acceso en el
-  access-map del brain). Pendiente de decidir: handles alternativos para
-  X/Instagram/YouTube (p.ej. `spectalivehq`) y la marca UE en clases 9 y 42.
+  access-map del brain). Decidido 2026-09-26 (dueño: "prefiero spectralive.com como nombre en
+  redes"; `spectralive.com` con r es de otro desde 2015, NameBright, asi que se
+  lee como el dominio propio): en redes el nombre es `spectalive.com` donde se
+  admite el punto (Instagram, TikTok, YouTube) y `spectalive_com` en X, que no
+  lo admite. Siguiente: que el dueño cree esas cuentas (piden su login y su
+  telefono). Pendiente de decidir: la marca UE en clases 9 y 42.
 - [ ] **Re-apuntar el clon del Mac del show** (`~oficina/DMX-Fixtures`) a
   `git@github.com:Vibra-Lab/vibra-lighting.git` cuando este en red; hoy
   funciona por la redireccion de GitHub, que se rompe si alguien crea otro
@@ -114,9 +118,14 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 - [ ] **Pedir el nombre `vibra` a GitHub** (decidido 2026-09-24): hoy es una
   cuenta personal de 2015 sin repos. Siguiente: redactar la solicitud para que
   la envie el dueño por support.github.com.
-- [ ] **Traer a `Vibra-Lab` los demas repos de musica y eventos**
-  (`BusiRocket/tieneslavibra` y los que salgan). Siguiente: inventario con el
-  dueño.
+- [!] **`BusiRocket/tieneslavibra` no se puede transferir a `Vibra-Lab`.**
+  Es un fork privado de `dovaldev/tieneslavibra` (usuario), y GitHub responde
+  `422 Repository can't be transferred`, tambien con los forks privados
+  permitidos en `Vibra-Lab` (se probo y se volvio a dejar en `false`). Los
+  otros cinco ya se movieron (ver `TODO_LOG.md`). Siguiente: pedir a GitHub
+  Support que lo desvincule de la red de forks ("detach fork") y transferirlo
+  despues; sus 4 secretos de despliegue y su deploy key viajan con el repo, y
+  el clon local `~/p/tieneslavibra` pasa a `Vibra-Lab` con un `remote set-url`.
 
 ### D. Partir este repo (cada parte con su propio diseño)
 

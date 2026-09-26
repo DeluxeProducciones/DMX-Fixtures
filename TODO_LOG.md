@@ -239,6 +239,16 @@
   Photoshop exports the worst channel difference is 17/255, on the
   anti-aliased diagonal only; the folder went from 632 KB to 308 KB. The PSD
   is out of the tree but still in history (open in `TODO.md`).
+- [x] 2026-09-26 - **Music and events repos moved to `Vibra-Lab`.** Owner:
+  "haz lo del resto de repos". Transferred with `gh api -X POST
+  repos/<owner>/<repo>/transfer -f new_owner=Vibra-Lab`: `vibra-contratos`
+  (from BusiRocket), `contratos` (archived VIBRA contract generator),
+  `Attendize` (public ticketing fork), `DJCenterDeluxe` and `djplayerdeluxe`
+  (all from CristianDeluxe); each answers at `Vibra-Lab/<name>`, and the local
+  clones in `~/p` (`contratos`, `attendize`, `DJCenterDeluxe`,
+  `djplayerdeluxe`) point there. Left out on purpose: `BusiRocket/dj-rocket-ui`
+  (the DJ-Rocket product, which has its own `DJ-Rocket` org) and `Contratica`
+  (own org). `tieneslavibra` could not move (open in `TODO.md`).
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 
