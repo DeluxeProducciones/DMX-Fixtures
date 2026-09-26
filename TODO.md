@@ -165,8 +165,10 @@ queda en `Vibra-Lab/vibra-lighting`).
   `blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,
   mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en
   vivo. Hecho 2026-09-25: `qlctool` y sus cinco docs, con historia, en
-  https://github.com/spectalive/qlctool (`v0.1.0`). Falta: `blenderdmx`,
-  `daslight`, `lightkey` y el servidor MCP.
+  https://github.com/spectalive/qlctool (`v0.1.0`). Hecho 2026-09-26:
+  `blenderdmx` en https://github.com/spectalive/qlc-blenderdmx y `daslight` +
+  `lightkey` en https://github.com/spectalive/fixture-sources (`v0.1.0` los
+  dos, con historia). Falta: el servidor MCP (plan D, ronda 6).
 - [ ] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/`, y mandarlas tambien a
   la libreria de QLC+ y a Open Fixture Library.
 - [ ] **Pad**: `tools/smc-pad`, puente de LEDs para pads MIDI.
@@ -252,8 +254,9 @@ antes de instalar nada.
 
 El escenario ya se ve en BlenderDMX desde el 2026-09-23: `qlctool mvr`
 escribe `QLC+ Setups/Vibra-split.mvr` con un GDTF generado de cada `.qxf`
-dentro, y `tools/blenderdmx/render_mvr.py` lo importa sin ventana en el mini,
-lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
+dentro, y `render_mvr.py` de [spectalive/qlc-blenderdmx](https://github.com/spectalive/qlc-blenderdmx) lo importa sin
+ventana en el mini, lo enciende y lo renderiza (`docs/blenderdmx.md` alli;
+cerrado en `TODO_LOG.md`).
 
 - [ ] **Mirar el render y el `.blend` en el mini.** `~/p/vibra-blender/vibra.png`
   y `vibra.blend` (abrirlo con Blender con ventana: `open -a Blender
@@ -264,7 +267,7 @@ lo enciende y lo renderiza (`docs/blenderdmx.md`; cerrado en `TODO_LOG.md`).
 - [ ] **Segunda salida en QLC+.** El motor admite varios output patches por
   universo (`m_outputPatchList`, `engine/src/universe.h`): DMX USB al rig y
   Art-Net al mini a la vez. Probado el 2026-09-23 con el `.qxw` editado a mano
-  (la linea exacta esta en `docs/blenderdmx.md`). Falta decidir si la escribe
+  (la linea exacta esta en `docs/blenderdmx.md` de spectalive/qlc-blenderdmx). Falta decidir si la escribe
   `qlctool` (con la IP del mini como parametro) o se pone a mano en el Mac
   del show. Mientras, la copia probada no esta en el repo.
 - [ ] **Subir el parche de `SO_REUSEPORT` a BlenderDMX.** Commit `de60af6` en
@@ -1198,7 +1201,7 @@ mueve cada lista:
       `codeality-py.toml` en vez de silenciados: son tablas de constantes y no
       tienen unidad que exportar. Si aparece un cuarto, decirlo ahi, no
       anotarlo como deuda. Moves to spectalive/qlctool.
-- [ ] `tools/smc-pad/reference` tiene tres scripts de Python, `tools/lightkey`
-      uno y `tools/daslight` dos (los decodificadores de bibliotecas de
-      fixtures, 2026-09-02), fuera de todo esto: no hay `pyproject.toml` ahi y no entran en ningun gate. Decidir si
-      se integran en `qlctool` o se quedan como referencia suelta.
+- [ ] `tools/smc-pad/reference` tiene tres scripts de Python fuera de todo
+      gate (no hay `pyproject.toml` ahi). Los de `lightkey` y `daslight` se
+      fueron a spectalive/fixture-sources el 2026-09-26. Se decide al sacar
+      el pad a su repo (plan D, ronda 2).

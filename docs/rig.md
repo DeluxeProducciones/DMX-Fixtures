@@ -595,7 +595,7 @@ taking `manufacturers` and `fixturename`) had the MAC WASH 1915Z and the Mini's
 OEM; Open Fixture Library (722 fixtures), Freestyler (2,040 profiles),
 DMXControl's DDF API (1,536 devices), Avolites (metadata only, binaries behind
 a 404) and Daslight/Sunlite (no public search) had neither. Lightkey (`brew install --cask lightkey`) ships 7,704 profiles as binary
-plists under `Fixture Profiles/` in its bundle; `tools/lightkey/decode_profile.py`
+plists under `Fixture Profiles/` in its bundle; `lightkey/decode_profile.py` in [spectalive/fixture-sources](https://github.com/spectalive/fixture-sources)
 decodes them and prints the channel table, and a fingerprint scan over all of
 them found the MAC WASH's twin and the Mini's OEM in a minute. Its value ranges
 are typed capabilities rather than text, and a zoom with no `transformation`
@@ -604,8 +604,8 @@ measurement, which is how it got the MW19x15Z backwards.
 
 Daslight 5 (Nicolaudie) ships 25,610 profiles as AraCrypt-encrypted XML under
 `/Applications/Daslight 5/ScanLibrary`; the npm package `ssl2-tools` decrypts
-them, `tools/daslight/bulk_decrypt.mjs` does the whole library into one JSON
-file and `tools/daslight/scan_fingerprints.py` runs the fingerprints. Nicolaudie's
+them, `daslight/bulk_decrypt.mjs` there does the whole library into one JSON
+file and `daslight/scan_fingerprints.py` runs the fingerprints. Nicolaudie's
 own profiles are coarse on ranges, but the channel orders are exact and it is
 the biggest of the four - it had the MAC WASH under Mac Mah's own name and
 six 7R in our order. Match on channel *order*, never on a name - these units

@@ -249,6 +249,15 @@
   `djplayerdeluxe`) point there. Left out on purpose: `BusiRocket/dj-rocket-ui`
   (the DJ-Rocket product, which has its own `DJ-Rocket` org) and `Contratica`
   (own org). `tieneslavibra` could not move (open in `TODO.md`).
+- [x] 2026-09-26 - **BlenderDMX scripts and fixture-library readers in their
+  own spectalive repositories.** Owner: "sigue con el resto" (plan
+  `.superpowers/sdd/plan-d-split.md`, ruling D-R4). `git filter-repo` with
+  history: `tools/blenderdmx/` + `docs/blenderdmx.md` ->
+  https://github.com/spectalive/qlc-blenderdmx; `tools/daslight/` +
+  `tools/lightkey/` -> https://github.com/spectalive/fixture-sources. Both
+  public, Apache-2.0 (as qlctool), a README that stands for any rig, tag
+  `v0.1.0`; no commit message names an AI tool (checked). Deleted here, and
+  `docs/README.md`, `docs/rig.md`, `.gitignore` and `TODO.md` link to them.
 
 #### 2026-09-25 - Plan B closed: final review and its fixes
 

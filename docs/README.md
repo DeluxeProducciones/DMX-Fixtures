@@ -19,7 +19,7 @@ the rows below link the `v0.1.0` copies.
 | [old-vs-new-audit-2026-08-28.md](old-vs-new-audit-2026-08-28.md) | The hand-built show audited against the generated one: what the old one still did better |
 | [smc-pad-led.md](smc-pad-led.md) | Lighting the SMC-PAD's pads from the show: why MIDI cannot, the BLE GATT protocol the app uses, and what a bridge would do |
 | [usb-dmx-interface.md](usb-dmx-interface.md) | Why the FT232R dongle randomly flashes the rig, the gig-day mitigations, and the researched DIY replacement (Pico or Raspberry Pi) |
-| [blenderdmx.md](blenderdmx.md) | The 3D previsualiser: how the rig gets from the QLC+ workspace into BlenderDMX as MVR and GDTF, the coordinate rules, the headless render that proves an export, and what no visualiser shows |
+| [spectalive/qlc-blenderdmx](https://github.com/spectalive/qlc-blenderdmx) (`docs/blenderdmx.md`) | The 3D previsualiser: how the rig gets from the QLC+ workspace into BlenderDMX as MVR and GDTF, the coordinate rules, the headless render that proves an export, and what no visualiser shows |
 
 This repository is **public**. Machine access - addresses, accounts,
 credentials, SSH - is deliberately not written here; it lives in the owner's
